@@ -1,6 +1,6 @@
-"""Langues (4.16).
+"""Langues.
 
-- Toutes les chaînes viennent de fichiers lang/<code>.json (I7).
+- Toutes les chaînes viennent de fichiers lang/<code>.json.
 - Langues personnelles : %APPDATA%\\FSPassion\\lang\\ (ou data\\lang\\ en mode
   portable). C'est l'utilisateur qui nomme sa langue dans le fichier
   (_meta.name). Un fichier personnel qui porte le code d'une langue fournie la

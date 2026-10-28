@@ -1,4 +1,4 @@
-// Glisser-déposer entre les trois listes (4.6, réponse Q3).
+// Glisser-déposer entre les trois listes (réponse).
 //
 // | Liste 1 → liste 2     | ajouter à la partie                       |
 // | Liste 1 → liste 3     | ajouter aux mods communs                  |
@@ -6,7 +6,7 @@
 // | Liste 3 → liste 2     | déplacer (retirer des communs, ajouter)   |
 // | Liste 2 ou 3 → 1      | retirer de la liste d'origine             |
 //
-// 0.4 (correction) : maintenir Ctrl pendant le glisser COPIE au lieu de déplacer,
+// Maintenir Ctrl pendant le glisser COPIE au lieu de déplacer,
 // entre les listes 2 et 3 (le mod reste dans la liste d'origine). Ctrl ne change
 // rien vers la liste 1, qui ne peut pas recevoir de copie.
 //
@@ -104,7 +104,7 @@ function begin(src, ids) {
   document.documentElement.classList.add('is-dragging');
 }
 
-// Ctrl maintenu : copie (0.4, correction), sauf vers la liste 1.
+// Ctrl maintenu : copie, sauf vers la liste 1.
 function copyKey(ev) {
   return !!(ev.ctrlKey || ev.metaKey);
 }

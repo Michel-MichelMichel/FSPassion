@@ -1,4 +1,4 @@
-"""« Ne plus utiliser FS Passion », et désinstallation (4.18, version 0.7.0).
+"""« Ne plus utiliser FS Passion », et désinstallation.
 
 Le même code sert aux deux chemins :
 A. le bouton « Ne plus utiliser FS Passion » des paramètres ;
@@ -95,7 +95,7 @@ def restore_override(vp: VersionPaths) -> dict[str, Any]:
 
 def remove_tree(path: Path) -> None:
     """Supprime un dossier de FS Passion sans jamais traverser un lien : un lien
-    symbolique ou une jonction trouvé dedans est retiré comme un lien (I10)."""
+    symbolique ou une jonction trouvé dedans est retiré comme un lien."""
     if not os.path.lexists(path):
         return
     if links.is_link(path):
@@ -255,7 +255,7 @@ def _try_remove(p: Path) -> bool:
 
 
 def uninstaller() -> Path | None:
-    """Désinstalleur Inno Setup (0.8), en mode installé seulement."""
+    """Désinstalleur Inno Setup, en mode installé seulement."""
     if not config.is_frozen() or config.is_portable():
         return None
     p = config.exe_dir() / "unins000.exe"

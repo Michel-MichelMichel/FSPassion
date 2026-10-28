@@ -26,7 +26,7 @@ Jeu de caractères de chaque police :
 - plus tous les caractères des fichiers lang/ja.json, lang/ko.json,
   lang/zh-Hans.json et lang/zh-Hant.json quand ils existent : relancer le
   script après l'ajout ou la modification d'une de ces traductions (le test
-  tests/test_v094.py vérifie qu'aucun caractère ne manque).
+  tests/test_cjk_readme.py vérifie qu'aucun caractère ne manque).
 
 Les glyphes CJK de Sarasa viennent de Source Han Sans, dont la licence SIL OFL
 réserve le nom « Source » : les polices réduites sont des versions modifiées

@@ -1,7 +1,7 @@
-"""Chemins d'une version du jeu : saisis, déduits et contrôlés (2.3 et 4.13).
+"""Chemins d'une version du jeu : saisis, déduits et contrôlés.
 
 Trois chemins sont saisis par version (game_exe, user_dir, mods_dir), plus
-jusqu'à deux dossiers de stockage supplémentaires (v0.5). Les autres en sont
+jusqu'à deux dossiers de stockage supplémentaires. Les autres en sont
 déduits et affichés en lecture seule.
 """
 
@@ -53,7 +53,7 @@ class VersionPaths:
 
     @property
     def storages(self) -> list[Path]:
-        """Dossiers de stockage des mods : principal, puis supplémentaires (0.6).
+        """Dossiers de stockage des mods : principal, puis supplémentaires.
         Un chemin supplémentaire qui chevauche le principal, le dossier
         FSPassion\\ ou un chemin précédent est écarté (signalé dans les
         paramètres) : un mod ne doit jamais être lu deux fois."""
@@ -65,7 +65,7 @@ class VersionPaths:
 
     @property
     def fsp_dir(self) -> Path | None:
-        """Dossier FSPassion\\<version>\\, à côté du dossier de mods principal (3.1)."""
+        """Dossier FSPassion\\<version>\\, à côté du dossier de mods principal."""
         if self.mods_dir is None:
             return None
         return self.mods_dir.parent / "FSPassion" / self.version.id
@@ -123,14 +123,14 @@ def from_cfg(v: GameVersion, cfg: dict[str, Any]) -> VersionPaths:
     user_dir = _p(cfg.get("user_dir"))
     mods_dir = _p(cfg.get("mods_dir"))
     if v.mods_dir_fixed and user_dir is not None:
-        # FS2011 : le dossier de mods n'est pas déplaçable (2.1).
+        # FS2011 : le dossier de mods n'est pas déplaçable.
         mods_dir = user_dir / "mods"
     extra = [Path(p) for p in (cfg.get("extra_mods_dirs") or []) if p]
     return VersionPaths(v, _p(cfg.get("game_exe")), user_dir, mods_dir, extra)
 
 
 # --------------------------------------------------------------------------
-# Contrôle des champs (messages de 4.13). Les textes sont des clés de langue.
+# Contrôle des champs (messages). Les textes sont des clés de langue.
 # --------------------------------------------------------------------------
 
 def _status(level: str, key: str, **params: Any) -> dict[str, Any]:

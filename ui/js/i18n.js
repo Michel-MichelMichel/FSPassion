@@ -1,4 +1,4 @@
-// Textes de l'interface (4.16). Tout vient des fichiers de langue (I7).
+// Textes de l'interface. Tout vient des fichiers de langue.
 // Les textes sont toujours insérés comme du texte brut (textContent), jamais
 // interprétés comme du HTML : un fichier de langue ne peut rien exécuter.
 
@@ -70,7 +70,7 @@ export function t(key, params = {}) {
   return format(String(v), params);
 }
 
-// Bloc de texte riche sans HTML : liste de { h | p | ul } (notice, 4.15).
+// Bloc de texte riche sans HTML : liste de { h | p | ul } (notice).
 export function blocks(key) {
   const v = lookup(key);
   return Array.isArray(v) ? v : [];
@@ -96,7 +96,7 @@ export function applyI18n(root = document) {
 
 // Titre d'un mod dans la langue de l'interface, sinon l'anglais, sinon la
 // première langue disponible. L'allemand n'est affiché qu'aux utilisateurs
-// dont l'interface est en allemand, ou quand c'est la seule langue (4.4).
+// dont l'interface est en allemand, ou quand c'est la seule langue.
 // Codes de langue des modDesc.xml (propres au jeu) : « cz » pour le tchèque,
 // « cs » pour le chinois simplifié, « jp », « kr », « br », « ea »…
 const FS_LANG = {
@@ -117,7 +117,7 @@ export function pickTitle(titles) {
   return map.de || '';
 }
 
-// Nom affiché d'un mod (0.2.1) : le titre complet de son modDesc.xml (balise
+// Nom affiché d'un mod : le titre complet de son modDesc.xml (balise
 // <title>, dans la langue de l'interface si elle existe), sinon le nom court
 // du fichier.
 export function modTitle(m) {

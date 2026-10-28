@@ -1,4 +1,4 @@
-"""Dialogues Windows natifs (« Chercher… », « Enregistrer sous »), 7.3.
+"""Dialogues Windows natifs (« Chercher… », « Enregistrer sous »).
 
 Ils sont ouverts par le cœur, au premier plan, que l'interface soit dans la
 fenêtre de l'application ou dans le navigateur :

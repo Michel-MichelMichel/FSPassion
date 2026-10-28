@@ -1,4 +1,4 @@
-// Tour guidé (0.9.0) : l'ampoule de l'en-tête lance une visite de l'interface.
+// Tour guidé : l'ampoule de l'en-tête lance une visite de l'interface.
 //
 // - Toute l'interface s'assombrit ; un « puits de lumière » (un rectangle aux
 //   coins arrondis entouré d'une ombre immense) se déplace d'un élément à
@@ -12,7 +12,7 @@
 // - Premier lancement : après la bienvenue et la notice, l'ampoule est mise
 //   en évidence une seule fois (réglage tour_hint_shown).
 //
-// 0.9.1 : deux étapes de plus (bouton des téléchargements ; croix de la
+// Deux étapes de plus (bouton des téléchargements ; croix de la
 // fenêtre et zone de notification, avec un aperçu de la barre des tâches).
 //
 // Rien n'est modifié pendant le tour : les faux éléments sont dessinés
@@ -1007,7 +1007,7 @@ const STEPS = [
       ctx.untip(tip);
     },
   },
-  // 8. Liste 1 : nouveaux mods dans les téléchargements (0.9.1)
+  // 8. Liste 1 : nouveaux mods dans les téléchargements
   {
     id: 'downloads',
     targets: () => [q('.find-new-btn')],
@@ -1063,7 +1063,7 @@ const STEPS = [
       return [t('tour.keys.body'), grid];
     },
   },
-  // 14. La croix : FS Passion reste dans la zone de notification (0.9.1)
+  // 14. La croix : FS Passion reste dans la zone de notification
   {
     id: 'close',
     targets: () => [],
@@ -1246,7 +1246,7 @@ async function playMove(ctx) {
       ...keys.map((k) => h('kbd', { class: 'tour-kbd', text: k })));
     els.stage.append(ghost);
     const total = path.getTotalLength();
-    const dur = 2200; // 0.9.1 : deux fois plus lent, plus facile à suivre
+    const dur = 2200; // Deux fois plus lent, plus facile à suivre
     let t0 = 0;
     const stepFn = (ts) => {
       if (!t0) t0 = ts;
@@ -1297,7 +1297,7 @@ async function playMove(ctx) {
   await fly(back, names[4] || '');
 }
 
-// -- Nouveaux mods dans les téléchargements (0.9.1) ------------------------------
+// -- Nouveaux mods dans les téléchargements ------------------------------
 
 const DEMO_DOWNLOADS = [
   ['FS25_Tractor6Cyl.zip', 'FS25'],
@@ -1357,7 +1357,7 @@ async function playDownloads(ctx) {
   ctx.untip(tip);
 }
 
-// -- La croix et la zone de notification (0.9.1) -------------------------------
+// -- La croix et la zone de notification -------------------------------
 
 const SVG_ICONS = {
   // Logo de Démarrer : quatre carreaux

@@ -1,4 +1,4 @@
-"""Exporter et importer la configuration (4.17, version 0.7.0).
+"""Exporter et importer la configuration.
 
 Un fichier d'export (« fspassion-export-AAAA-MM-JJ.json ») contient :
 - les réglages de FS Passion, sans ce qui ne vaut que pour cette installation
@@ -50,7 +50,7 @@ PATH_KEYS = ("versions", "downloads_dir", "override_ignored", "downloads_ignored
 
 
 class BackupError(Exception):
-    """Erreur prévue, avec une clé de langue (I7)."""
+    """Erreur prévue, avec une clé de langue."""
 
     def __init__(self, key: str, status: int = 400, **params: Any) -> None:
         super().__init__(key)

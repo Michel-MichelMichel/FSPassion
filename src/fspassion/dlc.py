@@ -1,16 +1,16 @@
-"""Les DLC (4.11) : affichage informatif en V1.
+"""Les DLC : affichage informatif en V1.
 
 - Détection : fichiers .dlc (payants, chiffrés) et .zip (gratuits) des deux
   dossiers DLC de la version. Un DLC présent aux deux endroits n'apparaît
   qu'une fois.
-- Nom (0.2.1) : le nom du catalogue (titres du wiki Farming Simulator), pour
+- Nom : le nom du catalogue (titres du wiki Farming Simulator), pour
   un .dlc comme pour un .zip ; sinon le titre du modDesc.xml d'un .zip ;
   repli : nom de fichier rendu lisible.
 - Règles par mots-clés : une entrée du catalogue avec « keywords » reconnaît
   tout DLC dont le nom de fichier contient ces mots (ex. « profarm » en FS2011).
 - Icône : toujours celle du dossier icons_dlc_<version>, jamais celle du .zip.
 - Catalogue : instantané embarqué (assets\\fallback) ou catalogue téléchargé
-  depuis GitHub (0.7.0, dlcremote.py) ; le plus récent des deux l'emporte.
+  depuis GitHub (dlcremote.py) ; le plus récent des deux l'emporte.
 """
 
 from __future__ import annotations
@@ -49,7 +49,7 @@ def catalog_paths() -> list[Path]:
 
 def load_catalog() -> dict[str, Any]:
     """Le catalogue le plus récent (champ « updated ») : celui téléchargé depuis
-    GitHub (0.7.0), ou l'instantané embarqué. À égalité, le téléchargé."""
+    GitHub, ou l'instantané embarqué. À égalité, le téléchargé."""
     best: dict[str, Any] | None = None
     for i, p in enumerate(catalog_paths()):
         data = fsutil.read_json(p, None)
@@ -108,7 +108,7 @@ def scan_dlc(v: GameVersion, dlc_dirs: list[Path], lang: str | None = None) -> l
     entries = vcat.get("dlc") or []
     folder_name = vcat.get("icons_folder") or v.dlc_icons_folder
 
-    # 0.8.4 : « fixed_order » (FS2011) — les DLC gardent l'ordre du catalogue.
+    # « fixed_order » (FS2011) — les DLC gardent l'ordre du catalogue.
     fixed = bool(vcat.get("fixed_order"))
     rank_of = {id(e): i for i, e in enumerate(entries)}
 
@@ -168,7 +168,7 @@ def scan_dlc(v: GameVersion, dlc_dirs: list[Path], lang: str | None = None) -> l
             }
             if fixed:
                 seen[key]["rank"] = rank_of.get(id(entry), len(entries)) if entry is not None else len(entries)
-    # 0.7.5 : les DLC du catalogue absents de ce PC, affichés estompés.
+    # Les DLC du catalogue absents de ce PC, affichés estompés.
     for i, entry in enumerate(entries):
         if id(entry) in matched or not entry.get("name"):
             continue

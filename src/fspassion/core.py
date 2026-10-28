@@ -73,7 +73,7 @@ SETTABLE: dict[str, type | tuple[type, ...]] = {
     "internet_access": bool,
     "show_notice_at_start": bool,
     "welcome_done": bool,
-    # Tour guidé (0.9.0) : l'ampoule a été mise en évidence au premier lancement.
+    # Tour guidé : l'ampoule a été mise en évidence au premier lancement.
     "tour_hint_shown": bool,
     "minimize_on_launch": bool,
     "close_to_tray": bool,
@@ -86,7 +86,7 @@ LAUNCH_METHODS = ("auto", "platform", "exe")
 
 
 class AppError(Exception):
-    """Erreur prévue, avec une clé de langue (jamais de texte en dur, I7)."""
+    """Erreur prévue, avec une clé de langue (jamais de texte en dur)."""
 
     def __init__(self, key: str, status: int = 400, **params: Any) -> None:
         super().__init__(key)
@@ -105,30 +105,30 @@ class Core:
         self.monitor = launcher.GameMonitor(self.bus, self._on_game_exit)
         self.app_info = config.load_app_info()
         self.detecting = False
-        self.restart_elevated = False  # relance en administrateur demandée (0.6, 4.20)
+        self.restart_elevated = False  # relance en administrateur demandée
         self._detect_lock = threading.Lock()
         self._parties: dict[str, PartiesStore] = {}
         self._parties_lock = threading.Lock()
         self._parties_notices: dict[str, dict[str, Any]] = {}
         # Une seule opération sur les dossiers de parties à la fois, par version.
         self._apply_locks: dict[str, threading.Lock] = {}
-        # Zone de notification (0.2.1) : posée par app.py quand l'icône existe.
+        # Zone de notification : posée par app.py quand l'icône existe.
         self.tray: Any = None
-        # Plateforme de chaque exécutable (Steam, Epic…), lue une fois (0.4).
+        # Plateforme de chaque exécutable (Steam, Epic…), lue une fois.
         self._platforms: dict[str, dict[str, Any]] = {}
-        # Réconciliation au démarrage (0.4) : une fois par version et par session,
+        # Réconciliation au démarrage : une fois par version et par session,
         # quand sa bibliothèque est lue pour la première fois.
         self._reconciled: set[str] = set()
-        # Import de la configuration (0.7.0) : fichier lu et contrôlé, en attente
+        # Import de la configuration : fichier lu et contrôlé, en attente
         # de confirmation (jeton, contenu).
         self._import_pending: dict[str, Any] | None = None
-        # Catalogue des DLC distant (0.7.0) : une mise à jour à la fois.
+        # Catalogue des DLC distant : une mise à jour à la fois.
         self._remote_lock = threading.Lock()
-        # « Ne plus utiliser FS Passion » (0.7.0) : fait, mode désinstallation
+        # « Ne plus utiliser FS Passion » : fait, mode désinstallation
         # (--uninstall), suppressions à faire à la fermeture, désinstalleur.
         self.stopped = False
         self.uninstall_mode = False
-        # Mesures de performance (0.7.0, R11) : démarrage du cœur, et mesures
+        # Mesures de performance : démarrage du cœur, et mesures
         # envoyées par l'interface (affichage prêt, fluidité du défilement).
         self.started_at = time.time()
         self.ui_perf: dict[str, Any] = {}
@@ -168,7 +168,7 @@ class Core:
         self._ensure_backups()
 
         if not s.get("first_detection_done"):
-            # Tout premier lancement : la détection s'exécute en silence (4.13).
+            # Tout premier lancement : la détection s'exécute en silence.
             threading.Thread(target=self._first_detection, name="detect", daemon=True).start()
         else:
             self.libs.get(self.active_version()).request_scan()
@@ -206,7 +206,7 @@ class Core:
         return gamepaths.from_cfg(versions.require(vid), self.settings.version(vid))
 
     def applied_state(self, vid: str) -> dict[str, Any]:
-        """Partie appliquée d'après la ligne d'override (lecture seule en v0.1)."""
+        """Partie appliquée d'après la ligne d'override (lecture seule)."""
         vp = self.paths(vid)
         v = vp.version
         if not v.has_override:
@@ -262,7 +262,7 @@ class Core:
         if v.available:
             out["launch"] = self.launch_info(vid, cfg, vp)
         if v.available and v.has_override and not v.mods_dir_fixed:
-            # Stockage sur plusieurs disques (0.6, 4.20) : état des chemins n° 2 et 3.
+            # Stockage sur plusieurs disques : état des chemins n° 2 et 3.
             out["storage"] = {
                 "max_extra": storage.MAX_EXTRA,
                 "extra": [storage.check_extra(vp, i) for i in range(len(vp.extra_mods_dirs))],
@@ -380,7 +380,7 @@ class Core:
         return self.version_state(vid)
 
     # ------------------------------------------------------------------
-    # Stockage sur plusieurs disques (0.6, 4.20)
+    # Stockage sur plusieurs disques
     # ------------------------------------------------------------------
 
     def _needs_symlinks(self) -> bool:
@@ -424,7 +424,7 @@ class Core:
         return out
 
     def rights_action(self, action: str) -> dict[str, Any]:
-        """Droits pour les liens symboliques (4.20) :
+        """Droits pour les liens symboliques :
         - « check » : nouvel essai (Mode développeur activé entre-temps) ;
         - « admin » : coche « Exécuter ce programme en tant qu'administrateur »
           et demande la relance de FS Passion en administrateur ;
@@ -479,7 +479,7 @@ class Core:
 
     def launch_info(self, vid: str, cfg: dict[str, Any] | None = None,
                     vp: gamepaths.VersionPaths | None = None) -> dict[str, Any]:
-        """Arguments de lancement et chemin qu'ils prennent (0.4) : ajoutés par FS
+        """Arguments de lancement et chemin qu'ils prennent : ajoutés par FS
         Passion (exécutable), à copier dans Steam ou Epic, ou impossibles
         (Microsoft Store / Xbox). État de la console dans game.xml."""
         cfg = cfg if cfg is not None else self.settings.version(vid)
@@ -500,7 +500,7 @@ class Core:
         }
 
     def enable_console(self, vid: str) -> dict[str, Any]:
-        """Bouton « Activer dans game.xml » (0.4) : <development><controls> à true."""
+        """Bouton « Activer dans game.xml » : <development><controls> à true."""
         if versions.get(vid) is None:
             raise AppError("error.bad_request")
         state = self.version_state(vid)
@@ -509,7 +509,7 @@ class Core:
         return state
 
     def set_launch_args(self, vid: str, skip_start_videos: bool, cheats: bool) -> dict[str, Any]:
-        """Arguments de lancement cochés pour une version (0.3).
+        """Arguments de lancement cochés pour une version.
 
         Cocher la console de développement passe aussi <controls> à true dans
         game.xml (dossier du jeu) ; le résultat indique « game_xml » :
@@ -538,7 +538,7 @@ class Core:
             return "error"
 
     def detect(self, vid: str | None, silent: bool = False) -> dict[str, Any]:
-        """Détection des installations et préremplissage (4.13, 4.14)."""
+        """Détection des installations et préremplissage."""
         if self.settings.demo_active():
             raise AppError("demo.no_detect", status=409)
         if not self._detect_lock.acquire(blocking=False):
@@ -553,7 +553,7 @@ class Core:
                 if not v.available or (vid and v.id != vid):
                     continue
                 det = results.get(v.id) or {}
-                # 0.7.1 : lecture et écriture en un seul bloc, pour ne pas écraser
+                # Lecture et écriture en un seul bloc, pour ne pas écraser
                 # une case cochée pendant la détection (cf. Settings.modify_version).
                 fields = self.settings.modify_version(
                     v.id, lambda cfg, det=det, vid_=v.id: detect.prefill(cfg, det, vid_), save=False)
@@ -604,7 +604,7 @@ class Core:
     def _missing_anomalies(self, vid: str, store: PartiesStore | None,
                            snap: dict[str, Any] | None = None) -> list[dict[str, Any]]:
         """A7 : mods référencés par une partie ou par les mods communs, mais absents
-        des dossiers de stockage. A8 (0.4) : mod supprimé à la main du dossier de
+        des dossiers de stockage. A8 : mod supprimé à la main du dossier de
         mods, mais dont une copie existe encore par ses liens dans un dossier de
         partie. Seulement quand la lecture des mods est terminée."""
         lib = self.libs.get(vid)
@@ -636,13 +636,13 @@ class Core:
             return {}
 
     def missing_resolve(self, vid: str, action: str, ids: Any) -> dict[str, Any]:
-        """Mods absents du dossier de mods mais présents dans des parties (A7, A8,
-        fenêtre du démarrage, 0.4) :
+        """Mods absents du dossier de mods mais présents dans des parties (A7, A8),
+        proposées dans la fenêtre du démarrage :
         - « remove » : retirés de toutes les listes (aucun fichier touché) ;
-        - « restore » (A8) : la copie encore présente dans une partie redevient le
+        - « restore » : la copie encore présente dans une partie redevient le
           mod du dossier de mods (un nom de plus pour le même fichier, lien dur ;
           si le disque ne le permet pas, le fichier est copié) ;
-        - « delete » (A8) : copies supprimées (Corbeille), et retrait des listes.
+        - « delete » : copies supprimées (Corbeille), et retrait des listes.
         """
         if not isinstance(ids, list) or not all(isinstance(x, str) for x in ids) or not ids:
             raise AppError("error.bad_request")
@@ -720,20 +720,20 @@ class Core:
         return cfg
 
     # ------------------------------------------------------------------
-    # Parties (4.1) et classement des mods (4.6) — parties.json seulement
+    # Parties et classement des mods — parties.json seulement
     # ------------------------------------------------------------------
 
     def _store(self, vid: str) -> PartiesStore:
         """parties.json de la version, chargé à la demande."""
         if self.stopped:
-            # « Ne plus utiliser FS Passion » (0.7.0) : plus rien n'est réécrit,
+            # « Ne plus utiliser FS Passion » : plus rien n'est réécrit,
             # en particulier un parties.json que l'utilisateur vient de supprimer.
             raise AppError("stop.stopped", status=409)
         v = versions.get(vid)
         if v is None or not v.available:
             raise AppError("error.bad_request")
         if not v.has_override:
-            # FS2011 : pas d'override, donc pas de parties (2.1).
+            # FS2011 : pas d'override, donc pas de parties.
             raise AppError("lists.no_parties", game=v.name)
         vp = self.paths(vid)
         if vp.fsp_dir is None or vp.mods_dir is None or not vp.mods_dir.is_dir():
@@ -746,7 +746,7 @@ class Core:
             st = PartiesStore(vid, path, str(vp.mods_dir), [str(p) for p in vp.extra_mods_dirs])
             st.load()
             if not st.exists:
-                # Premier lancement (4.1) : la partie sélectionnée est celle qui
+                # Premier lancement : la partie sélectionnée est celle qui
                 # correspond à l'état réel du jeu, en général la Partie Pleine.
                 st.init_selection(self._observed_applied(vid, st) or FULL)
             if st.recovered:
@@ -759,7 +759,7 @@ class Core:
         return st
 
     # ------------------------------------------------------------------
-    # Dossiers de parties (0.3)
+    # Dossiers de parties
     # ------------------------------------------------------------------
 
     def _apply_lock(self, vid: str) -> threading.Lock:
@@ -775,7 +775,7 @@ class Core:
 
     def _recover(self, vid: str) -> None:
         """Opération interrompue (coupure de courant…) : terminée ou annulée au
-        démarrage (I8), jamais pendant que le jeu tourne (I5)."""
+        démarrage, jamais pendant que le jeu tourne."""
         if self.monitor.is_running(vid):
             return
         st = self._parties.get(vid)
@@ -797,13 +797,13 @@ class Core:
                                           "params": {"game": versions.require(vid).name}}
 
     def _require_stopped(self, vid: str, key: str = "apply.running") -> None:
-        """I5 : rien ne touche aux dossiers de parties ni à gameSettings.xml
+        """Rien ne touche aux dossiers de parties ni à gameSettings.xml
         pendant que le jeu tourne."""
         if self.monitor.is_running(vid):
             raise AppError(key, status=409, game=versions.require(vid).name)
 
     # ------------------------------------------------------------------
-    # Réconciliation (4.9, 0.4)
+    # Réconciliation
     # ------------------------------------------------------------------
 
     def _library_ready(self, vid: str) -> None:
@@ -832,8 +832,8 @@ class Core:
         return reconcile.Reconciler(folders).run(vp.pending_downloads, applied)
 
     def reconcile(self, vid: str, reason: str = "manual", publish: bool = True) -> dict[str, Any]:
-        """Remet en ordre tous les dossiers de parties de la version (4.9).
-        Jamais pendant que le jeu tourne (I5) ; silencieux s'il n'y a rien à faire."""
+        """Remet en ordre tous les dossiers de parties de la version.
+        Jamais pendant que le jeu tourne ; silencieux s'il n'y a rien à faire."""
         v = versions.get(vid)
         if v is None or not v.available or not v.has_override:
             raise AppError("error.bad_request")
@@ -860,7 +860,7 @@ class Core:
         return out
 
     def party_apply(self, vid: str, pid: str | None = None) -> dict[str, Any]:
-        """« Appliquer » (4.2) : la partie sélectionnée, ou `pid`."""
+        """« Appliquer » : la partie sélectionnée, ou `pid`."""
         v = versions.get(vid)
         if v is None or not v.available or not v.has_override:
             raise AppError("error.bad_request")
@@ -878,7 +878,7 @@ class Core:
         try:
             folders = self._folders(vid)
             try:
-                # 0.4 : réconciliation de toutes les parties avant d'appliquer
+                # Réconciliation de toutes les parties avant d'appliquer
                 # (mises à jour du jeu, pending_downloads, liens orphelins).
                 report = self._reconcile_locked(vid, st)
                 res = folders.apply(pid)
@@ -904,7 +904,7 @@ class Core:
         return res
 
     def older_resolve(self, vid: str, path: Any, action: str) -> dict[str, Any]:
-        """Version plus ancienne déposée par le jeu (4.9) : « keep » garde la
+        """Version plus ancienne déposée par le jeu : « keep » garde la
         version de l'utilisateur (le fichier reste dans Recovered) ; « use » met la
         version du jeu à sa place, dans son dossier de stockage, l'ancienne allant dans
         Old versions, et les liens de toutes les parties suivent."""
@@ -948,7 +948,7 @@ class Core:
         return {"ok": True, "state": self.parties_state(vid)}
 
     def override_resolve(self, vid: str, action: str, directory: str | None, pid: str | None) -> dict[str, Any]:
-        """Contrôle de l'override au démarrage (3.5) : l'override pointe vers un
+        """Contrôle de l'override au démarrage : l'override pointe vers un
         dossier inconnu (modification à la main ou par un autre outil)."""
         if action == "adopt":
             if not directory:
@@ -1006,7 +1006,7 @@ class Core:
         observed = self._observed_applied(vid, st, applied)
         if observed is not None:
             # La partie appliquée est celle vers laquelle pointe l'override : on
-            # la note, avec l'historique des 10 dernières (4.1).
+            # la note, avec l'historique des 10 dernières.
             try:
                 if st.record_applied(observed):
                     log.info("Partie appliquée %s : %s", vid, observed)
@@ -1019,7 +1019,7 @@ class Core:
         try:
             folders = apply.VersionFolders(self.paths(vid), st, lambda: self._lib_index(vid))
             older = [{k: x.get(k) for k in ("name", "path", "new", "old")} for x in folders.older_list()]
-            # Partie Pleine avec plusieurs stockages (0.6) : dossier de liens, à
+            # Partie Pleine avec plusieurs stockages : dossier de liens, à
             # réappliquer quand les mods changent, comme une partie ordinaire.
             if observed and (not apply.is_special(observed) or observed == FULL) \
                     and self.libs.get(vid).status == "ready":
@@ -1029,7 +1029,7 @@ class Core:
         kind = applied.get("kind")
         if observed is None and kind in ("other", "party") and applied.get("directory"):
             # Override vers un dossier inconnu : l'interface propose « Adopter »,
-            # « Réappliquer » ou « Ne rien faire » (3.5).
+            # « Réappliquer » ou « Ne rien faire ».
             ignored = (self.settings.get("override_ignored") or {}).get(vid)
             if not ignored or not same_path(ignored, applied["directory"]):
                 last = snap.get("applied")
@@ -1047,7 +1047,7 @@ class Core:
             "applied_stale": stale,
             "needs_apply": observed != snap["selected"] or stale,
             "override_check": check,
-            # Versions plus anciennes déposées par le jeu, à confirmer (4.9, 0.6.2).
+            # Versions plus anciennes déposées par le jeu, à confirmer.
             "older": older,
             "path": str(st.path),
             "notice": self._parties_notices.pop(vid, None),
@@ -1055,7 +1055,7 @@ class Core:
         return out
 
     def _running_guard(self, vid: str, pid: str, key: str) -> None:
-        """I5 : la partie appliquée n'est pas touchée pendant que le jeu tourne."""
+        """La partie appliquée n'est pas touchée pendant que le jeu tourne."""
         if not self.monitor.is_running(vid):
             return
         st = self._store(vid)
@@ -1064,9 +1064,9 @@ class Core:
 
     def party_create(self, vid: str, name: Any, from_map: str | None = None,
                      optional: Any = None) -> dict[str, Any]:
-        """Créer (＋), ou « ＋ Partie » depuis une map avec ses dépendances (4.5).
+        """Créer (＋), ou « ＋ Partie » depuis une map avec ses dépendances.
 
-        0.7.3 : `optional`, les mods facultatifs cochés (<SearchMods>) ; seuls
+        Les mods facultatifs cochés (<SearchMods>, `optional`) ; seuls
         ceux de la map (ou de ses dépendances) présents dans les mods sont pris."""
         st = self._store(vid)
         mods: list[str] = []
@@ -1103,7 +1103,7 @@ class Core:
         return (vp.fsp_dir / apply.PARTIES / party["folder"]).exists()
 
     def party_rename(self, vid: str, pid: str, name: Any) -> dict[str, Any]:
-        """Renommer (4.1) : le dossier sur le disque est renommé, et l'override
+        """Renommer : le dossier sur le disque est renommé, et l'override
         suit si c'est la partie appliquée."""
         self._running_guard(vid, pid, "parties.running_rename")
         st = self._store(vid)
@@ -1133,9 +1133,9 @@ class Core:
         return {"party": party, "state": self.parties_state(vid)}
 
     def party_delete(self, vid: str, pid: str) -> dict[str, Any]:
-        """Supprimer (4.1). Si c'est la partie appliquée, la partie appliquée
+        """Supprimer. Si c'est la partie appliquée, la partie appliquée
         précédente est d'abord réappliquée (historique, sinon Partie Pleine) :
-        jamais d'override vers un dossier supprimé (B2, Q9). Le dossier est vidé
+        jamais d'override vers un dossier supprimé. Le dossier est vidé
         lien par lien ; ses fichiers physiques sont rapatriés."""
         self._running_guard(vid, pid, "parties.running_delete")
         st = self._store(vid)
@@ -1221,7 +1221,7 @@ class Core:
         return resolve_dependencies(ids, lib.index(), lib.dlc_ids())
 
     # ------------------------------------------------------------------
-    # Téléchargements et intégration (4.8) — 0.4
+    # Téléchargements et intégration
     # ------------------------------------------------------------------
 
     def _downloads_folder(self) -> Path:
@@ -1254,7 +1254,7 @@ class Core:
             "items": items,
             "versions": [{"id": v.id, "name": v.name, "short": v.short, "logo": v.logo,
                           "running": self.monitor.is_running(v.id),
-                          # Dossiers de stockage (0.6) : colonne « Stockage » s'il y en a plusieurs.
+                          # Dossiers de stockage : colonne « Stockage » s'il y en a plusieurs.
                           "storages": [str(p) for p in self.paths(v.id).storages if p.is_dir()]}
                          for v in ready],
             "active": active,
@@ -1360,7 +1360,7 @@ class Core:
             return {**out, "error": "downloads.failed", "detail": str(exc)}
         out.update(res)
         out["id"] = mod_id
-        # Classement d'un mod nouveau (4.8, colonne « Destination »).
+        # Classement d'un mod nouveau (colonne « Destination »).
         if res["result"] == "new" and spec["destination"] != "none":
             st = self._store_or_none(vid)
             if st is not None:
@@ -1396,7 +1396,7 @@ class Core:
                 lib.request_scan()
 
     def downloads_postponed(self, vid: str) -> dict[str, Any] | None:
-        """Intégrations reportées parce que le jeu tournait (4.8) : faites à sa
+        """Intégrations reportées parce que le jeu tournait : faites à sa
         fermeture, avec un message."""
         cur = [x for x in self.settings.get("downloads_postponed") or [] if isinstance(x, dict)]
         mine = [x for x in cur if x.get("version") == vid]
@@ -1413,7 +1413,7 @@ class Core:
         return {"done": ok}
 
     # ------------------------------------------------------------------
-    # Supprimer définitivement (4.7) et renommer un mod (4.21) — 0.4
+    # Supprimer définitivement et renommer un mod
     # ------------------------------------------------------------------
 
     def _ready_library(self, vid: str) -> dict[str, dict[str, Any]]:
@@ -1427,7 +1427,7 @@ class Core:
         return {"parties": ref.get("parties", []), "common": bool(ref.get("common"))}
 
     def mods_delete_preview(self, vid: str, ids: Any) -> dict[str, Any]:
-        """Fenêtre d'avertissement (4.7) : les mods, les parties qui les
+        """Fenêtre d'avertissement : les mods, les parties qui les
         contiennent, et la Corbeille (disponible ou non sur leur disque)."""
         if versions.get(vid) is None or not isinstance(ids, list) or not all(isinstance(x, str) for x in ids):
             raise AppError("error.bad_request")
@@ -1448,10 +1448,10 @@ class Core:
         return {"mods": mods, "recycle": recycle and bool(mods), "running": self.monitor.is_running(vid)}
 
     def mods_delete(self, vid: str, ids: Any, confirm: Any) -> dict[str, Any]:
-        """Supprimer définitivement (4.7) : retrait de toutes les listes → retrait
+        """Supprimer définitivement : retrait de toutes les listes → retrait
         des liens dans tous les dossiers de parties → Corbeille (ou suppression
         si le disque n'en a pas). Double validation faite par l'interface
-        (`confirm`). Refusé pendant que le jeu tourne (I5)."""
+        (`confirm`). Refusé pendant que le jeu tourne."""
         if versions.get(vid) is None or confirm is not True or not isinstance(ids, list) \
                 or not all(isinstance(x, str) for x in ids) or not ids:
             raise AppError("error.bad_request")
@@ -1478,7 +1478,7 @@ class Core:
             for e in entries:
                 path = vp.storages[int(e.get("storage") or 0)] / e["file"]
                 try:
-                    # 2. Liens dans les dossiers de parties (comme des liens, I10)
+                    # 2. Liens dans les dossiers de parties (comme des liens)
                     if folders is not None:
                         modops.unlink_everywhere(folders, e["file"], path)
                     # 3. Le mod lui-même : Corbeille, sinon suppression
@@ -1498,7 +1498,7 @@ class Core:
                 "state": self.parties_state(vid) if st is not None else None}
 
     def mod_rename_preview(self, vid: str, mod_id: Any) -> dict[str, Any]:
-        """Fenêtre de renommage (4.21) : préfixe de version conservé, noms déjà
+        """Fenêtre de renommage : préfixe de version conservé, noms déjà
         pris (contrôle en direct), listes et dépendances concernées."""
         if versions.get(vid) is None or not isinstance(mod_id, str):
             raise AppError("error.bad_request")
@@ -1519,10 +1519,10 @@ class Core:
         }
 
     def mod_rename(self, vid: str, mod_id: Any, new_id: Any) -> dict[str, Any]:
-        """Renommer un mod (4.21) : le fichier (ou le dossier) est renommé dans son
-        dossier de stockage, sans toucher à son contenu (I9) ; les listes, les
+        """Renommer un mod : le fichier (ou le dossier) est renommé dans son
+        dossier de stockage, sans toucher à son contenu ; les listes, les
         liens des dossiers de parties et l'inventaire suivent. Refusé pendant que
-        le jeu tourne (I5)."""
+        le jeu tourne."""
         if versions.get(vid) is None or not isinstance(mod_id, str) or not isinstance(new_id, str):
             raise AppError("error.bad_request")
         self._require_stopped(vid, "rename.running")
@@ -1539,7 +1539,7 @@ class Core:
         vp = self.paths(vid)
         st = self._store_or_none(vid)
         # Listes où figure l'ancien nom, avant le renommage : l'interface demande
-        # ensuite s'il doit les suivre (0.4, correction).
+        # ensuite s'il doit les suivre.
         where = self._lists_of(st, e["id"])
         with self._apply_lock(vid):
             try:
@@ -1569,7 +1569,7 @@ class Core:
         return res
 
     def mod_lists_rename(self, vid: str, old_id: Any, new_id: Any) -> dict[str, Any]:
-        """Deuxième temps du renommage (0.4, correction) : après confirmation de
+        """Deuxième temps du renommage : après confirmation de
         l'utilisateur, les listes suivent le nouveau nom. Sans confirmation, elles
         gardent l'ancien nom (rien n'est changé)."""
         if versions.get(vid) is None or not isinstance(old_id, str) or not isinstance(new_id, str):
@@ -1590,7 +1590,7 @@ class Core:
     # ------------------------------------------------------------------
 
     def launch(self, vid: str, apply_first: bool = False) -> dict[str, Any]:
-        """Lancer le jeu (4.3), après avoir appliqué la partie sélectionnée si
+        """Lancer le jeu, après avoir appliqué la partie sélectionnée si
         l'interface le demande (« Appliquer la partie X puis lancer le jeu ? »)."""
         v = versions.get(vid)
         if v is None or not v.available:
@@ -1610,7 +1610,7 @@ class Core:
         if res.get("ok") and self.settings.get("minimize_on_launch"):
             try:
                 native.minimize()
-                # 0.9.1 : pendant le jeu, l'interface réduite se met en veille.
+                # Pendant le jeu, l'interface réduite se met en veille.
                 native.sleep_later(3.0)
             except Exception:  # noqa: BLE001
                 pass
@@ -1618,9 +1618,9 @@ class Core:
 
     def _on_game_exit(self, vid: str) -> None:
         """À la fermeture du jeu : reprise d'une opération restée en attente,
-        réconciliation (mises à jour faites dans le jeu, 0.4), intégration des
+        réconciliation (mises à jour faites dans le jeu), intégration des
         téléchargements reportés, nouveau scan rapide ; FS Passion revient au
-        premier plan (réglage, 0.2.1)."""
+        premier plan (réglage)."""
         if vid in self._parties:
             self._recover(vid)
         v = versions.get(vid)
@@ -1643,7 +1643,7 @@ class Core:
                 log.debug("Retour au premier plan impossible", exc_info=True)
 
     # ------------------------------------------------------------------
-    # Mode démonstration (14.2)
+    # Mode démonstration
     # ------------------------------------------------------------------
 
     def demo_state(self) -> dict[str, Any]:
@@ -1724,7 +1724,7 @@ class Core:
         self.settings.set("demo", state)
 
     # ------------------------------------------------------------------
-    # Catalogue des DLC distant (4.11, 7.6) — 0.7.0
+    # Catalogue des DLC distant
     # ------------------------------------------------------------------
 
     def dlc_catalog_state(self) -> dict[str, Any]:
@@ -1787,7 +1787,7 @@ class Core:
         threading.Thread(target=work, name="dlc-remote", daemon=True).start()
 
     # ------------------------------------------------------------------
-    # Exporter et importer la configuration (4.17) — 0.7.0
+    # Exporter et importer la configuration
     # ------------------------------------------------------------------
 
     def _no_demo(self) -> None:
@@ -1957,7 +1957,7 @@ class Core:
                 "removed_folders": removed, "fallback": fallback}
 
     # ------------------------------------------------------------------
-    # Ne plus utiliser FS Passion, et désinstallation (4.18) — 0.7.0
+    # Ne plus utiliser FS Passion, et désinstallation
     # ------------------------------------------------------------------
 
     def _stop_versions(self) -> list[str]:
@@ -2004,7 +2004,7 @@ class Core:
         }
 
     def stop_using(self, options: Any, confirm: Any) -> dict[str, Any]:
-        """« Ne plus utiliser FS Passion » (4.18, étapes 3 à 5). Jeu fermé."""
+        """« Ne plus utiliser FS Passion » (étapes 3 à 5). Jeu fermé."""
         if confirm is not True:
             raise AppError("error.bad_request")
         chosen = {o for o in (options or []) if o in stopuse.OPTIONS} if isinstance(options, list) else set()
@@ -2024,7 +2024,7 @@ class Core:
         for vid in vids:
             rows.append(self._stop_version(vid, chosen))
         if config.is_frozen() and winapi.run_as_admin_flag():
-            # Réglage « administrateur » posé par FS Passion (4.20) : retiré.
+            # Réglage « administrateur » posé par FS Passion : retiré.
             winapi.set_run_as_admin_flag(False)
         done = stopuse.app_data_now(chosen)
         if "settings" in chosen:
@@ -2038,9 +2038,9 @@ class Core:
                 "uninstall_mode": self.uninstall_mode}
 
     def uninstall_minimal(self) -> list[str]:
-        """Désinstalleur Windows (0.8) fermé sans confirmer « Ne plus utiliser
+        """Désinstalleur Windows fermé sans confirmer « Ne plus utiliser
         FS Passion » (Annuler, croix) : la ligne d'override est quand même
-        rétablie (4.18 B, « toujours faite »), pour que le jeu ne charge plus un
+        rétablie (option « toujours faite »), pour que le jeu ne charge plus un
         dossier de parties d'une application désinstallée. Rien n'est supprimé.
         Une version dont le jeu tourne est laissée : il réécrirait le fichier.
         Renvoie les versions rétablies."""
@@ -2138,7 +2138,7 @@ class Core:
         return winapi.open_url(url)
 
     def open_mod_link(self, vid: str, mod_id: Any, url: Any) -> bool:
-        """0.7.3 : ouvre dans le navigateur le lien de téléchargement d'un mod
+        """Ouvre dans le navigateur le lien de téléchargement d'un mod
         requis ou facultatif. Seule une adresse écrite dans le modDesc.xml de ce
         mod (<SearchMods>) est ouverte, en http ou https."""
         if versions.get(vid) is None or not isinstance(mod_id, str) or not isinstance(url, str):
@@ -2166,7 +2166,7 @@ class Core:
 
     def reveal_item(self, vid: str, storage: Any, name: Any) -> bool:
         """Montre un élément d'un dossier de stockage dans l'Explorateur
-        (anomalies, 0.2.1). Seul un nom simple de ce dossier est accepté ;
+        (anomalies). Seul un nom simple de ce dossier est accepté ;
         un élément absent (mod manquant) ouvre le dossier de stockage."""
         if versions.get(vid) is None or not isinstance(name, str) or not isinstance(storage, int):
             raise AppError("error.bad_request")
@@ -2182,7 +2182,7 @@ class Core:
         return winapi.open_folder(folder)
 
     # ------------------------------------------------------------------
-    # Mesures de performance (0.7.0, chapitre 8 R11, 4.12) — diagnostic
+    # Mesures de performance — diagnostic
     # ------------------------------------------------------------------
 
     def record_ui_perf(self, data: Any) -> dict[str, Any]:
@@ -2246,7 +2246,7 @@ class Core:
         try:
             import psutil
 
-            # 0.7.1 : mémoire propre (USS) de chaque processus, pour ne pas compter
+            # Mémoire propre (USS) de chaque processus, pour ne pas compter
             # deux fois les pages partagées entre les processus WebView2 (RSS).
             def private_bytes(p: psutil.Process) -> int:
                 try:
@@ -2270,7 +2270,7 @@ class Core:
         return out
 
     def diagnostic(self) -> str:
-        """« Copier le diagnostic » (4.19) : version, Windows, chemins de chaque
+        """« Copier le diagnostic » : version, Windows, chemins de chaque
         version, droits, catalogue des DLC, dernières erreurs. Anonymisé."""
         states = []
         for v in versions.all_versions():

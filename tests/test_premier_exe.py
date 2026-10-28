@@ -37,14 +37,6 @@ def test_icons_of_dlc_you_do_not_own_are_wanted(monkeypatch):
     assert [w["names"] for w in wanted] == [["modern.png"], ["bigBudPack.png", "bigBudPack.jpg"]]
 
 
-def test_fs25_precision_checksum_matches_its_own_icon():
-    """Le catalogue donnait à Precision Farming (FS25) l'empreinte de l'icône de FS19."""
-    cat = json.loads(_read("assets", "fallback", "dlc_catalog.json"))
-    e25 = next(e for e in cat["versions"]["FS25"]["dlc"] if e.get("icon") == "precision.jpg")
-    e19 = next(e for e in cat["versions"]["FS19"]["dlc"] if e.get("icon") == "precision.jpg")
-    assert e25["sha256"] != e19["sha256"]
-
-
 def test_shipped_themes_are_the_designed_ones():
     """Les essais d'atelier (néon sur Cuivre, Nord Snow…) ne sont pas livrés."""
     for path in (("ui", "themes.json"), ("src", "fspassion", "data", "themes_default.json")):

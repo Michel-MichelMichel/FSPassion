@@ -1,4 +1,4 @@
-"""Les liens d'un dossier de partie (3.6) et leur inventaire.
+"""Les liens d'un dossier de partie et leur inventaire.
 
 Trois sortes de liens :
 - hardlink (« liaison permanente ») : un second nom pour le même fichier. Pour
@@ -6,7 +6,7 @@ Trois sortes de liens :
 - jonction : un panneau indicateur vers un dossier. Pour les mods non
   compressés (dossiers). Aucun droit particulier ;
 - lien symbolique : pour les mods .zip d'un dossier de stockage situé sur un
-  autre disque (0.6, 4.20). Il demande le Mode développeur de Windows ou les
+  autre disque. Il demande le Mode développeur de Windows ou les
   droits administrateur (storage.py).
 
 Sous Linux (tests automatiques), une jonction est remplacée par un lien
@@ -17,7 +17,7 @@ jonction ou un lien symbolique jusqu'à sa cible, et on ne supprime jamais un
 fichier qui n'est pas un de nos liens. Aucune suppression récursive
 n'est utilisée sur un dossier de partie.
 
-Inventaire (liens.json, 3.6) : pour chaque dossier de partie, le nom de chaque
+Inventaire (liens.json) : pour chaque dossier de partie, le nom de chaque
 lien créé et l'identifiant sur le disque du fichier visé (volume + numéro de
 fichier). Il permet de reconnaître, dans un dossier de partie :
 - un lien valide (même identifiant que le mod actuel du dossier de stockage) ;
@@ -44,7 +44,7 @@ SCHEMA = 1
 
 
 class LinkError(Exception):
-    """Lien impossible à créer, avec une clé de langue (I7)."""
+    """Lien impossible à créer, avec une clé de langue."""
 
     def __init__(self, key: str, **params: Any) -> None:
         super().__init__(key)
@@ -148,7 +148,7 @@ def make_dir_link(src: Path, dst: Path) -> None:
 
 
 def make_file_symlink(src: Path, dst: Path) -> None:
-    """Lien symbolique vers un fichier (mod .zip d'un autre disque, 4.20).
+    """Lien symbolique vers un fichier (mod .zip d'un autre disque).
 
     Sans le Mode développeur de Windows ni les droits administrateur, Windows
     refuse (erreur 1314) : clé « apply.symlink_denied »."""
@@ -207,7 +207,7 @@ def _link_error_key(exc: OSError) -> str:
 
 
 def remove_link(p: Path) -> None:
-    """Supprime un lien COMME un lien (I10) : la cible n'est jamais touchée."""
+    """Supprime un lien COMME un lien : la cible n'est jamais touchée."""
     if is_junction(p):
         os.rmdir(p)  # retire le point de jonction, jamais le contenu visé
     elif os.path.islink(p):
@@ -279,7 +279,7 @@ class Inventory:
                 self.save()
 
     def rename_entry(self, folder: str, old: str, new: str, entry: dict[str, Any] | None = None) -> None:
-        """Renommer un mod (0.4) : l'entrée du lien suit le nouveau nom."""
+        """Renommer un mod : l'entrée du lien suit le nouveau nom."""
         with self._lock:
             entries = self.data["folders"].get(folder.lower())
             if entries is None:

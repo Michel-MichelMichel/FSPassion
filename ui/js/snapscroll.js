@@ -1,4 +1,4 @@
-// Défilement « par blocs » à la molette (0.3) : un cran de molette fait
+// Défilement « par blocs » à la molette : un cran de molette fait
 // glisser la zone jusqu'au bloc suivant (ou précédent), avec la même animation
 // que la liste 1 (170 ms, décélération). Utilisé par les Paramètres : un cran
 // = une section entière.
@@ -48,7 +48,7 @@ export function snapWheel(scroller, getSnaps) {
 
   const onWheel = (e) => {
     if (e.ctrlKey) return;
-    // 0.7.4 : une liste ouverte par-dessus (langues) défile elle-même.
+    // Une liste ouverte par-dessus (langues) défile elle-même.
     if (e.target instanceof Element && e.target.closest('[data-own-scroll]')) return;
     const unit = e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? scroller.clientHeight : 1;
     const dy = e.deltaY * unit;

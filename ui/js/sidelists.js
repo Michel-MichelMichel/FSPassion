@@ -1,4 +1,4 @@
-// Listes 2 (Mods de la partie) et 3 (Mods communs), à droite (4.6).
+// Listes 2 (Mods de la partie) et 3 (Mods communs), à droite.
 //
 // - Tuiles horizontales de hauteur fixe : petite icône à gauche, nom à droite.
 //   Seules les tuiles proches de la vue sont dessinées.
@@ -8,7 +8,7 @@
 // - Survol d'une tuile : icône agrandie à ~300 px, en vraies couleurs.
 // - Défilement animé : un cran de molette fait glisser la liste de trois
 //   tuiles ; un repère affiche le nom du mod au centre pendant un défilement.
-//   Comme dans la liste 1 (0.2.0), les tuiles s'affichent sans délai.
+//   Comme dans la liste 1, les tuiles s'affichent sans délai.
 // - Mod manquant : tuile atténuée, icône d'alerte, « Remplacer par… ».
 
 import { isDemo } from './demo.js';
@@ -26,7 +26,7 @@ import {
   EMPTY, FULL, activeVersion, membership, modIndex, partiesSupported, selectedParty, store, userParty, versionInfo,
 } from './state.js';
 
-const ROW_H = 64; // 0.2.1 : police agrandie
+const ROW_H = 64; // Police agrandie
 const WHEEL_ROWS = 3;
 const WHEEL_MS = 170;
 const STABLE_MS = 100;
@@ -145,7 +145,7 @@ class RowList {
     this.body.hidden = !items.length;
     this.canvas.style.height = `${items.length * ROW_H}px`;
     if (animate) {
-      // Nouveau contenu (changement de partie, 5.7) : les tuiles apparaissent
+      // Nouveau contenu (changement de partie) : les tuiles apparaissent
       // les unes après les autres, avec un micro-délai.
       for (const [k, el] of this.attached) this.release(k, el);
       this.body.scrollTop = 0;
@@ -238,7 +238,7 @@ class RowList {
         this.attached.set(it.key, el);
         this.canvas.append(el);
         const img = el.querySelector('.row-img');
-        if (img) img.src = img.dataset.src; // sans délai (0.2.0)
+        if (img) img.src = img.dataset.src; // sans délai
         if (this.deployFrom && !reducedMotion()) {
           el.style.setProperty('--deploy-delay', `${Math.min(i * 15, 300)}ms`);
           el.classList.add('deploy');
@@ -272,7 +272,7 @@ class RowList {
       el.classList.toggle('is-selected', sel);
       el.setAttribute('aria-selected', sel ? 'true' : 'false');
       el.tabIndex = it.key === tabKey ? 0 : -1;
-      // Repère discret : le mod est aussi dans l'autre liste (Q2).
+      // Repère discret : le mod est aussi dans l'autre liste.
       const other = this.id === 'l2' ? m.common.has(it.key) : m.party.has(it.key);
       const sig = other ? 'o' : '';
       if (sig !== el._marksSig) {
@@ -555,7 +555,7 @@ function showPreview(el) {
   const art = h('div', { class: 'pv-art' });
   if (it.mod && it.mod.icon) art.append(h('img', { src: iconUrl(activeVersion(), it.mod.icon), alt: '', draggable: 'false' }));
   else art.append(icon(it.missing ? 'triangle-alert' : 'package'));
-  // Nom complet, puis le nom du fichier (0.2.1).
+  // Nom complet, puis le nom du fichier.
   const file = it.mod ? it.mod.file : it.id;
   previewEl.append(art, h('div', { class: 'pv-name', text: it.name }));
   if (file && file !== it.name) previewEl.append(h('div', { class: 'pv-title', text: file }));
@@ -654,7 +654,7 @@ function itemsOf(ids) {
       sig: `${mod ? mod.icon || '' : ''}|${missing ? 1 : 0}|${mod ? modTitle(mod) : id}`,
     };
   });
-  // La map (ou les maps) en tête de liste (0.2.1), puis l'ordre alphabétique.
+  // La map (ou les maps) en tête de liste, puis l'ordre alphabétique.
   const isMap = (it) => (it.mod && it.mod.is_map ? 1 : 0);
   out.sort((a, b) => isMap(b) - isMap(a) || coll.compare(a.name, b.name));
   return out;

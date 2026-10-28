@@ -1,4 +1,4 @@
-"""Anomalies (4.10) : non bloquantes, au ton informatif.
+"""Anomalies : non bloquantes, au ton informatif.
 
 | A1 | .rar ou .7z dans un dossier de stockage            |
 | A2 | .zip sans modDesc.xml à sa racine                  |
@@ -57,7 +57,7 @@ def visible(
     hidden_types: list[str],
     hidden_folders: list[str],
 ) -> list[dict[str, Any]]:
-    """Anomalies à afficher, sans les types masqués ni les dossiers masqués (A4)."""
+    """Anomalies à afficher, sans les types masqués ni les dossiers masqués."""
     hidden_t = set(hidden_types)
     hidden_f = {f.lower() for f in hidden_folders}
     out = []

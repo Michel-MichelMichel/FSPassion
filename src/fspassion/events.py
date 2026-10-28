@@ -1,7 +1,7 @@
 """Flux d'événements vers l'interface (progression, messages, changements).
 
 Chaque client (fenêtre de l'application, onglet du navigateur) a sa propre
-file. Le serveur les envoie en « Server-Sent Events » (7.3).
+file. Le serveur les envoie en « Server-Sent Events ».
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ class EventBus:
                     pass
 
     def toast(self, key: str, level: str = "info", **params: Any) -> None:
-        """Message court traduit par l'interface (I7 : jamais de texte en dur)."""
+        """Message court traduit par l'interface (jamais de texte en dur)."""
         self.publish("toast", key=key, level=level, params=params)
 
 

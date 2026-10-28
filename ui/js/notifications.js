@@ -1,4 +1,4 @@
-// Bouton « Notifications » (cloche) de l'en-tête (0.2.1) : relire les messages
+// Bouton « Notifications » (cloche) de l'en-tête : relire les messages
 // courts déjà disparus. Pastille = nombre de messages non lus. L'historique
 // dure le temps de la session.
 

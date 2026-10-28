@@ -43,7 +43,7 @@ export function isDialogOpen() {
 }
 
 // opts : { title, cls, dismissible, backdropClose, dragWindow, onClose, headerExtra }
-// dragWindow (0.8.4) : tout le fond (voile et zones vides de la fenêtre
+// dragWindow : tout le fond (voile et zones vides de la fenêtre
 // interne) déplace la fenêtre de FS Passion, comme l'en-tête.
 export function openDialog(body, opts = {}) {
   const prevFocus = document.activeElement;

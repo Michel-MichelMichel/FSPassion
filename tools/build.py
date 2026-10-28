@@ -40,10 +40,8 @@ DIST = BUILD / "dist"
 APP_DIR = DIST / "FSPassion"
 RELEASE = BUILD / "release"
 WEBVIEW2_URL = "https://go.microsoft.com/fwlink/p/?LinkId=2124703"  # programme d'installation « Evergreen »
-# Empreinte SHA-256 attendue du programme d'installation WebView2 (fichier de Microsoft
-# à l'adresse ci-dessus). Tant qu'elle est None, la fabrication s'arrête avant d'embarquer
-# le fichier : renseigner l'empreinte après l'avoir vérifiée auprès de Microsoft.
-WEBVIEW2_SHA256: str | None = None
+# Microsoft ne publie pas d'empreinte SHA-256 pour ce programme d'installation : il est
+# signé par Microsoft, et sa signature Authenticode est vérifiée à chaque fabrication.
 ISCC_PATHS = [
     Path(os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)")) / "Inno Setup 6" / "ISCC.exe",
     Path(os.environ.get("ProgramFiles", r"C:\Program Files")) / "Inno Setup 6" / "ISCC.exe",
@@ -269,21 +267,26 @@ def find_iscc() -> Path | None:
 
 
 def verify_webview2(path: Path) -> None:
-    """Refuse un programme d'installation WebView2 dont l'empreinte n'est pas celle attendue."""
-    digest = hashlib.sha256(path.read_bytes()).hexdigest()
-    if digest != WEBVIEW2_SHA256.lower():
+    """Refuse un programme d'installation WebView2 qui n'est pas signé par Microsoft."""
+    script = (
+        "$s = Get-AuthenticodeSignature -LiteralPath $env:WV2_PATH; "
+        "if ($s.Status -eq 'Valid' -and $s.SignerCertificate.Subject -like '*O=Microsoft Corporation*') "
+        "{ exit 0 } else { exit 1 }"
+    )
+    if os.name != "nt":
+        raise SystemExit("Vérification de la signature de WebView2 : Windows requis.")
+    res = subprocess.run(
+        ["powershell", "-NoProfile", "-NonInteractive", "-Command", script],
+        env={**os.environ, "WV2_PATH": str(path)},
+    )
+    if res.returncode != 0:
         path.unlink(missing_ok=True)
-        raise SystemExit(f"Empreinte SHA-256 de WebView2 inattendue ({digest}) : fabrication arrêtée.")
+        raise SystemExit("Signature Microsoft de WebView2 absente ou invalide : fabrication arrêtée.")
 
 
 def webview2_bootstrapper(given: str | None) -> Path | None:
     """Petit programme de Microsoft (environ 2 Mo) qui installe WebView2 s'il
     manque (Windows 10). Embarqué dans l'installeur, lancé seulement si besoin."""
-    if WEBVIEW2_SHA256 is None:
-        raise SystemExit(
-            "Empreinte SHA-256 de WebView2 non renseignée (WEBVIEW2_SHA256 dans tools/build.py) : "
-            "fabrication arrêtée, le programme d'installation ne peut pas être vérifié."
-        )
     if given:
         p = Path(given)
         if not p.is_file():

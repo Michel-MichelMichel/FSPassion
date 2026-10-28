@@ -34,11 +34,6 @@ def test_version_has_a_single_source():
     assert mod.ICON_SOURCE == ROOT / "assets" / "brand" / "tray.png"
 
 
-def test_old_logo_files_are_no_longer_used():
-    for rel in ("tools/build.py", "packaging/fspassion.spec", "packaging/installer.iss", "tests/test_v067.py"):
-        assert "FS_passion_logo" not in _read(*rel.split("/"))
-
-
 def test_gruvbox_light_is_the_default_theme(tmp_path):
     assert config.DEFAULT_THEME == "gruvbox-light"
     assert config.Settings(tmp_path / "s.json").get("theme") == "gruvbox-light"

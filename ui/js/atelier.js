@@ -1,8 +1,8 @@
-// Atelier de thèmes (5.5) : outil de développement, dans le navigateur.
+// Atelier de thèmes : outil de développement, dans le navigateur.
 // Deux couleurs (fond Mica et accent), lueurs du Mica, grain, effet ;
-// 0.6.3 : mode clair ou sombre, couleur des textes, plusieurs couleurs
-// d'accent (jusqu'à 4), thème jumeau pour le bouton soleil/lune ; 0.6.4 :
-// dégradé bicolore ; 0.7.8 : style (bicolore, palette), surfaces et textes
+// Mode clair ou sombre, couleur des textes, plusieurs couleurs
+// d'accent (jusqu'à 4), thème jumeau pour le bouton soleil/lune ;
+// dégradé bicolore ; style (bicolore, palette), surfaces et textes
 // officiels, effet néon ;
 // application instantanée à toute l'interface,
 // contraste affiché ; enregistrement dans ui/themes.json ou copie de la
@@ -67,7 +67,7 @@ function colorRow(label, key) {
   return h('div', { class: 'at-row' }, h('label', { text: label }), color, text);
 }
 
-// Couleur n° i d'une liste (accents 0.6.3, dégradé 0.6.4).
+// Couleur n° i d'une liste (accents, dégradé).
 function listColorRow(key, i, label) {
   const value = editing[key][i] || editing.light;
   const color = h('input', { type: 'color', value: value.toLowerCase() });
@@ -126,7 +126,7 @@ function live() {
 }
 
 function render() {
-  // 0.7.9 : le panneau défile ; on garde la position quand il est reconstruit.
+  // Le panneau défile ; on garde la position quand il est reconstruit.
   const keepScroll = panel.querySelector('.atelier-body')?.scrollTop || 0;
   clear(panel);
   const effect = h('select', { class: 'field-input' },
@@ -219,7 +219,7 @@ function render() {
       rangeRow(t('atelier.grain'), 'grain'),
       h('div', { class: 'at-row' }, h('label', { text: t('atelier.effect') }), effect),
       rangeRow(t('atelier.intensity'), 'effect_intensity')),
-    // 0.7.9 : boutons hors de la zone qui défile, toujours visibles.
+    // Boutons hors de la zone qui défile, toujours visibles.
     h('div', { class: 'at-actions' },
         h('button', { class: 'btn btn-s btn-primary', type: 'button', onclick: save }, icon('check', 'ico-s'), t('atelier.save')),
         h('button', { class: 'btn btn-s', type: 'button', onclick: copyDef }, icon('clipboard-copy', 'ico-s'), t('atelier.copy')),
@@ -245,11 +245,11 @@ function definition() {
     effect: editing.effect || 'none',
     effect_intensity: editing.effect_intensity ?? 0,
   };
-  // Champs de la 0.6.3, seulement s'ils servent (un thème d'origine reste identique).
+  // Champs optionnels, seulement s'ils servent (un thème d'origine reste identique).
   const style = themeStyle(editing);
   if (style !== 'classic') out.style = style;
   if (themeMode(editing) === 'light') out.mode = 'light';
-  // 0.7.8 : surfaces et textes officiels (thème palette), néon.
+  // Surfaces et textes officiels (thème palette), néon.
   const surf = (editing.surfaces || []).filter((c) => hexToRgb(c));
   if (style === 'palette' && surf.length >= 2) {
     out.surfaces = surf;
@@ -268,7 +268,7 @@ function definition() {
 }
 
 async function copyDef(e) {
-  // 0.6 : pas de notification, la coche du bouton suffit.
+  // Pas de notification, la coche du bouton suffit.
   if (await copyText(JSON.stringify(definition(), null, 2))) flashCopied(e?.currentTarget);
 }
 

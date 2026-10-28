@@ -1,4 +1,4 @@
-// Mesures de performance (0.7.0, chapitre 8 R11) : temps d'affichage au
+// Mesures de performance : temps d'affichage au
 // démarrage et fluidité réelle du défilement des listes, sur le PC de
 // l'utilisateur. Rien n'est affiché : les chiffres rejoignent la section
 // « Performance » de « Copier le diagnostic ». Rien ne sort du PC.

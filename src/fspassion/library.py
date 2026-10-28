@@ -1,8 +1,8 @@
-"""La bibliothèque de mods (4.4) : scan des dossiers de stockage, cache, icônes.
+"""La bibliothèque de mods : scan des dossiers de stockage, cache, icônes.
 
 - Scan des dossiers de stockage, sans les sous-dossiers. Chaque élément est
-  classé : mod .zip, mod non compressé, ou anomalie (4.10).
-- Cache (3.4) : FSPassion\\<version>\\cache\\mods.json ; seuls les mods nouveaux
+  classé : mod .zip, mod non compressé, ou anomalie.
+- Cache : FSPassion\\<version>\\cache\\mods.json ; seuls les mods nouveaux
   ou modifiés sont relus. Les entrées des mods disparus sont purgées.
 - Le premier scan se fait en arrière-plan ; l'interface est prévenue au fur et
   à mesure (les tuiles apparaissent progressivement).
@@ -49,7 +49,7 @@ class Library:
     def __init__(self, vid: str, bus: EventBus, paths_provider: Callable[[], VersionPaths],
                  on_ready: Callable[[str], None] | None = None) -> None:
         self.vid = vid
-        # Appelé à la fin de chaque scan réussi (0.4 : réconciliation au démarrage).
+        # Appelé à la fin de chaque scan réussi (réconciliation au démarrage).
         self.on_ready = on_ready
         self.version = versions.require(vid)
         self.bus = bus
@@ -71,10 +71,10 @@ class Library:
         self._last_publish = 0.0
         self._executor: ThreadPoolExecutor | None = None
         self.scanned_at: float | None = None
-        # Mesures de performance (0.7.0, diagnostic) : durée du dernier scan
+        # Mesures de performance (diagnostic) : durée du dernier scan
         # complet et de la dernière conversion d'icônes.
         self.perf: dict[str, Any] = {"scan_s": None, "icons_s": None, "icons_converted": 0}
-        # « Ne plus utiliser FS Passion » (0.7.0) : plus aucun scan, donc plus
+        # « Ne plus utiliser FS Passion » : plus aucun scan, donc plus
         # aucune écriture dans le cache, une fois les données supprimées.
         self.disabled = False
 
@@ -84,8 +84,8 @@ class Library:
 
     def snapshot(self) -> dict[str, Any]:
         with self._lock:
-            # Un identifiant n'apparaît qu'une fois (0.4) : en double, c'est celui
-            # de l'index qui compte, l'autre est signalé (A9).
+            # Un identifiant n'apparaît qu'une fois : en double, c'est celui
+            # de l'index qui compte, l'autre est signalé.
             mods = sorted(self.index().values(), key=lambda e: e["id"].lower())
             return {
                 "version": self.vid,
@@ -112,7 +112,7 @@ class Library:
         cas de doublon entre deux dossiers de stockage, A9)."""
         with self._lock:
             # Le dossier principal l'emporte ; dans un même dossier, l'archive
-            # l'emporte sur un dossier du même nom (0.4, A9).
+            # l'emporte sur un dossier du même nom.
             entries = sorted(self.entries.values(),
                              key=lambda e: (-int(e.get("storage") or 0), e.get("kind") == "zip"))
             return {e["id"].lower(): e for e in entries}
@@ -168,7 +168,7 @@ class Library:
         assert self.cache_dir is not None
         data = fsutil.read_json(self.cache_dir / "mods.json", None)
         if isinstance(data, dict) and data.get("schema") == CACHE_SCHEMA:
-            # 0.7.6 : une icône au format de cache précédent (sans le suffixe de format)
+            # Une icône au format de cache précédent (sans le suffixe de format)
             # est relue, pour obtenir ses variantes 300 px et 512 px.
             def stale(item: Any) -> bool:
                 base = (item.get("entry") or {}).get("_icon_base") if isinstance(item, dict) else None
@@ -230,7 +230,7 @@ class Library:
             self._scan_lock.release()
 
     def scan_now(self) -> None:
-        """Scan immédiat, dans le fil d'exécution de l'appelant (0.4 : après un
+        """Scan immédiat, dans le fil d'exécution de l'appelant (après un
         renommage ou une suppression, la bibliothèque doit être à jour avant de
         répondre à l'interface). Attend un scan déjà en cours."""
         with self._scan_lock:
@@ -336,7 +336,7 @@ class Library:
                     )
                 )
 
-        # A9 (0.4) : même identifiant deux fois, dans deux dossiers de stockage ou
+        # A9 : même identifiant deux fois, dans deux dossiers de stockage ou
         # dans le même (archive « Nom.zip » et dossier « Nom » côte à côte). Le jeu
         # n'en charge qu'un, et le ModHub ne peut pas mettre ce mod à jour.
         by_id: dict[str, list[dict[str, Any]]] = {}
@@ -541,7 +541,7 @@ class Library:
             for item in self._cache.values():
                 base = (item.get("entry") or {}).get("_icon_base")
                 if base:
-                    # 0.7.9 : avant FS25, plus de variante moyenne ; celles déjà
+                    # Avant FS25, plus de variante moyenne ; celles déjà
                     # créées sont effacées ici (la grande sert à leur place).
                     keep.update(icons.icon_names(base, icons.has_medium(self.vid)))
         folder = self.cache_dir / "icons"
@@ -680,7 +680,7 @@ class LibraryManager:
             return dict(self._libs)
 
     def disable_all(self) -> None:
-        """« Ne plus utiliser FS Passion » (0.7.0) : aucune bibliothèque, actuelle
+        """« Ne plus utiliser FS Passion » : aucune bibliothèque, actuelle
         ou future, ne relit plus les mods ni n'écrit dans son cache."""
         with self._lock:
             self._disabled = True

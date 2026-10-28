@@ -1,4 +1,4 @@
-// Réconciliation (4.9) et mods absents (A7, A8) — version 0.4.
+// Réconciliation et mods absents.
 // - Messages discrets après une réconciliation faite par le cœur (démarrage,
 //   fermeture du jeu) : « 4 mises à jour récupérées »…
 // - Au démarrage, fenêtre « Ces mods sont absents de votre dossier de mods
@@ -19,7 +19,7 @@ import { toast, toastError } from './toast.js';
 const asked = new Set();
 let dlg = null;
 
-// Message discret, seulement s'il s'est passé quelque chose (4.9, étape 7).
+// Message discret, seulement s'il s'est passé quelque chose (étape 7).
 export function reportReconcile(rep) {
   if (!rep) return;
   const updated = rep.updated || [];
@@ -29,7 +29,7 @@ export function reportReconcile(rep) {
   }
   if ((rep.unclassified || []).length) toast('reconcile.unclassified', { count: rep.unclassified.length }, 'info');
   if ((rep.reshaped || []).length) toast('reconcile.reshaped', { count: rep.reshaped.length, list: rep.reshaped.join(', ') }, 'info');
-  // Une version plus ancienne déposée par le jeu a sa propre fenêtre (0.6.2).
+  // Une version plus ancienne déposée par le jeu a sa propre fenêtre.
   const aside = (rep.set_aside || []).length + (rep.old_versions || []).length - (rep.older || []).length;
   if (aside > 0) toast('apply.set_aside', { count: aside }, 'warn');
   if ((rep.errors || []).length) toast('reconcile.errors', { count: rep.errors.length, list: rep.errors.join(', ') }, 'warn');
@@ -151,7 +151,7 @@ export function refreshMissingDialog() {
 }
 
 // ---------------------------------------------------------------------------
-// Version plus ancienne déposée par le jeu (4.9, 0.6.2). Le ModHub propose
+// Version plus ancienne déposée par le jeu. Le ModHub propose
 // souvent sa version d'origine d'un mod modifié par l'utilisateur : le numéro de
 // version du jeu est alors plus ancien. FS Passion l'a mise de côté
 // (Recovered) et demande quoi faire. « Plus tard » : la question revient au

@@ -1,4 +1,4 @@
-// Fenêtre « Anomalies détectées » (4.10). Ce ne sont pas des événements
+// Fenêtre « Anomalies détectées ». Ce ne sont pas des événements
 // graves : le ton reste informatif.
 
 import { replaceMissing } from './actions.js';
@@ -45,7 +45,7 @@ async function act(action, value) {
   }
 }
 
-// A7 / A8 (0.4) : retirer des listes, restaurer la copie, ou supprimer.
+// A7 / A8 : retirer des listes, restaurer la copie, ou supprimer.
 async function missing(action, id) {
   if (action !== 'remove' && isRunning()) {
     toast('apply.running', { game: (versionInfo() || {}).name || '' }, 'warn');
@@ -69,7 +69,7 @@ async function missing(action, id) {
 }
 
 // Nom de l'élément : un lien qui ouvre l'Explorateur dans le dossier de mods,
-// l'élément sélectionné (0.2.1).
+// l'élément sélectionné.
 async function reveal(a) {
   try {
     await api.post('/api/reveal', { version: activeVersion(), storage: a.storage, name: a.name });
@@ -78,7 +78,7 @@ async function reveal(a) {
   }
 }
 
-// Version du jeu concernée et dossier(s) de mods (0.2.1).
+// Version du jeu concernée et dossier(s) de mods.
 function gameLine() {
   const v = versionInfo();
   const lib = store.library;
@@ -118,21 +118,21 @@ function build(body) {
         actions.append(h('label', { class: 'check' }, c, t('anomalies.hide_folder')));
       }
       if (a.type === 'A7') {
-        // « Remplacer par… » : un mod renommé par son auteur reprend sa place (R14).
+        // « Remplacer par… » : un mod renommé par son auteur reprend sa place.
         actions.append(h('button', { class: 'btn btn-s', type: 'button', onclick: () => replaceMissing(a.name) },
           icon('arrow-right-left', 'ico-s'), t('lists.replace')));
         actions.append(h('button', { class: 'btn btn-s', type: 'button', onclick: () => missing('remove', a.name) },
           icon('minus', 'ico-s'), t('missing.remove')));
       }
       if (a.type === 'A8') {
-        // Mod supprimé à la main, encore présent par ses liens (4.9, étape 5).
+        // Mod supprimé à la main, encore présent par ses liens (étape 5).
         actions.append(h('button', { class: 'btn btn-s', type: 'button', onclick: () => missing('restore', a.name) },
           icon('rotate-ccw', 'ico-s'), t('missing.restore')));
         actions.append(h('button', { class: 'btn btn-s btn-danger', type: 'button', onclick: () => missing('delete', a.name) },
           icon('trash-2', 'ico-s'), t('actions.delete')));
       }
       if (a.type === 'A5' && a.detail && a.detail.kind) {
-        // Renommer… (4.21), avec le nom corrigé proposé.
+        // Renommer…, avec le nom corrigé proposé.
         const id = a.detail.kind === 'zip' && a.name.toLowerCase().endsWith('.zip') ? a.name.slice(0, -4) : a.name;
         actions.append(h('button', { class: 'btn btn-s', type: 'button', onclick: () => openRename(id) },
           icon('pencil', 'ico-s'), t('anomalies.rename')));

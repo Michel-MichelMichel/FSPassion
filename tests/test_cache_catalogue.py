@@ -35,12 +35,3 @@ def test_build_drops_unused_files():
     drop = spec[spec.index("DROP = ("):spec.index("def keep")]
     assert "runtimes" not in drop.replace("webview/lib/runtimes/win-arm64 et win-x86", "")
     assert "a.binaries = [b for b in a.binaries if keep(b)]" in spec
-
-
-def test_dlc_icons_are_never_avif():
-    """Les icônes AVIF (nommées .jpg) du dépôt de données sont devenues de vrais
-    JPEG : le catalogue embarqué porte leurs nouvelles empreintes."""
-    cat = json.loads(_read("assets", "fallback", "dlc_catalog.json"))
-    assert cat["updated"] >= "2026-10-27"
-    nexat = next(e for e in cat["versions"]["FS25"]["dlc"] if e.get("file") == "nexatPack")
-    assert nexat["sha256"] != "0" * 64

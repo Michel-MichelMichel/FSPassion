@@ -1,10 +1,10 @@
-// Ne plus utiliser FS Passion (4.18) — version 0.7.0.
+// Ne plus utiliser FS Passion.
 // 1. invitation à exporter la configuration d'abord (bouton sur place) ;
 // 2. ce qui va se passer, version par version ;
 // 3. cases à cocher : supprimer aussi les parties, caches, réglages, journaux,
 //    langues personnelles (aucune cochée par défaut) ;
 // 4. confirmation explicite, puis bilan et fermeture de FS Passion.
-// Le désinstalleur Windows (0.8) ouvre directement cette fenêtre (--uninstall).
+// Le désinstalleur Windows ouvre directement cette fenêtre (--uninstall).
 
 import { api, shell } from './api.js';
 import { exportConfig } from './backup.js';

@@ -1,9 +1,9 @@
-"""Conversion des icônes des mods (3.4 et 4.12).
+"""Conversion des icônes des mods.
 
 - Source : DDS (décodé par Pillow : DXT1, DXT3, DXT5, BC7, non compressé) ou PNG.
 - Fichiers WebP par icône : la grande, à la résolution d'origine (plafonnée à
   512 px) ; une moyenne de 300 px pour les tuiles de la liste 1, seulement pour
-  FS25 et FS28 (0.7.9 : les icônes des versions précédentes font au plus
+  FS25 et FS28 (les icônes des versions précédentes font au plus
   256 px, la grande sert donc directement) ; une petite de 96 px pour les
   listes 2 et 3.
 - Noms : <identifiant>-<taille>-<date>.webp, …-medium.webp et …-small.webp.
@@ -27,7 +27,7 @@ BIG_SIZE = 512           # plafond de la grande variante (écrans à 125 % et pl
 # Versions dont les icônes dépassent 300 px (512 ou 1024 px) : elles seules ont
 # la variante moyenne. Avant FS25, les icônes d'origine font 256 px au plus.
 MEDIUM_VERSIONS = frozenset({"FS25", "FS28"})
-# Suffixe du nom de base : le changer force la reconversion du cache (0.7.5).
+# Suffixe du nom de base : le changer force la reconversion du cache.
 ICON_CACHE_FORMAT = "r512"
 WEBP_QUALITY = 92        # réglage visuellement sans perte
 WEBP_QUALITY_SMALL = 90
@@ -126,7 +126,7 @@ def image_size(path: Path) -> tuple[int, int] | None:
 
 
 def small_data_url(data: bytes, size: int = SMALL_SIZE) -> str | None:
-    """Petite icône en adresse « data: » (fenêtre des téléchargements, 0.4) :
+    """Petite icône en adresse « data: » (fenêtre des téléchargements) :
     rien n'est écrit sur le disque pour un mod qui n'est pas encore intégré."""
     import base64
 

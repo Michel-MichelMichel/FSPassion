@@ -43,7 +43,7 @@ POLL_SECONDS = 2.0
 RESTART_ARG_VERSIONS = frozenset({"FS2011", "FS2013", "FS15", "FS17", "FS19"})
 STEAM_RUNGAMEID_RE = re.compile(r"^steam://rungameid/(\d+)$")
 
-# Où passent les arguments de lancement (0.4), selon la façon dont le jeu est lancé :
+# Où passent les arguments de lancement, selon la façon dont le jeu est lancé :
 # - « command » : FS Passion lance l'exécutable et ajoute les arguments ;
 # - « steam » / « epic » : la plateforme refuse les arguments venus d'un autre
 #   programme (Steam demande de confirmer à chaque lancement). L'utilisateur les
@@ -53,7 +53,7 @@ ARGS_MODES = ("command", "steam", "epic", "unsupported")
 
 
 def launch_args(vid: str, opts: dict[str, Any] | None) -> list[str]:
-    """Arguments de lancement cochés pour une version (0.3)."""
+    """Arguments de lancement cochés pour une version."""
     opts = opts or {}
     out: list[str] = []
     if opts.get("skip_start_videos"):
@@ -92,7 +92,7 @@ def args_mode(method: str, info: dict[str, Any]) -> str:
 def steam_uri_with_args(uri: str, args: list[str]) -> str | None:
     """steam://rungameid/<appid> → steam://run/<appid>//<args>/.
 
-    N'est plus utilisé pour lancer le jeu (0.4) : Steam demande alors à chaque
+    N'est plus utilisé pour lancer le jeu : Steam demande alors à chaque
     lancement de confirmer les arguments. Gardé pour les tests et le diagnostic.
     """
     m = STEAM_RUNGAMEID_RE.match(uri)
@@ -191,7 +191,7 @@ def _start(target: str, cwd: str | None = None, args: list[str] | None = None) -
 def launch(vid: str, cfg: dict[str, Any], info: dict[str, Any] | None = None) -> dict[str, Any]:
     """Lance le jeu. Renvoie {ok, key, params, platform, args_mode}.
 
-    Arguments de lancement (0.4) : ajoutés à la commande seulement quand FS
+    Arguments de lancement : ajoutés à la commande seulement quand FS
     Passion lance l'exécutable. Par Steam ou Epic, le jeu est lancé sans
     arguments : ils sont à indiquer une fois dans la plateforme (Paramètres →
     Jeu et chemins → Arguments de lancement donne le texte à copier).

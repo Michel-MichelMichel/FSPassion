@@ -3,7 +3,7 @@
 pytest==9.1.1
 ruff==0.17.0
 mypy==2.4.0
-# Polices CJK : tools/build_cjk_fonts.py et tests/test_v094.py
+# Polices CJK : tools/build_cjk_fonts.py et tests/test_cjk_readme.py
 fonttools==4.66.1
 brotli==1.2.1
 py7zr==1.1.4

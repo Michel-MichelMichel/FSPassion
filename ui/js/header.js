@@ -1,8 +1,8 @@
-// En-tête (5.2) : logo à gauche ; à droite, la barre « Partie en cours »
+// En-tête : logo à gauche ; à droite, la barre « Partie en cours »
 // (menu des parties, actions sur les parties, mods communs, Appliquer,
 // paramètres) ; l'icône de la version active à mi-distance des deux.
 // Les boutons de fenêtre sont à part, collés à l'angle (frame.js).
-// Repère d'état discret sous le menu des parties (0.3).
+// Repère d'état discret sous le menu des parties.
 
 import {
   createParty, deleteParty, duplicateParty, partyLabel, renameParty, selectParty, setCommonEnabled,
@@ -30,19 +30,19 @@ export function initHeader(el, { onSettings }) {
   topbar = el;
   openSettings = onSettings;
   makeDragZone(topbar);
-  // 0.7.2 : l'en-tête passe sur 2 lignes quand la fenêtre est trop étroite.
+  // L'en-tête passe sur 2 lignes quand la fenêtre est trop étroite.
   window.addEventListener('resize', fitHeader);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHeader).catch(() => {});
 }
 
-// 0.7.2 : en-tête sur 2 lignes quand la barre « Partie en cours » ne tient
+// En-tête sur 2 lignes quand la barre « Partie en cours » ne tient
 // plus sur une seule ligne (fenêtre étroite, langue aux textes longs, mode
 // démonstration…). Ligne du haut : « Partie en cours » puis le menu des
 // parties ; ligne du dessous : Ajouter, Dupliquer, Renommer, Supprimer, Mods
 // communs, Appliquer, thème, notifications, paramètres. Mesure faite dans le
 // repère de l'interface (offsetLeft, offsetWidth), indépendante de la
 // réduction d'échelle.
-// 0.7.9 (redimensionnement) :
+// Redimensionnement :
 // - hystérésis : l'en-tête passe sur 2 lignes dès que la barre déborde, mais
 //   ne revient sur 1 ligne qu'avec RELAX px de marge. Sans elle, une fenêtre
 //   redimensionnée autour du seuil faisait alterner les deux dispositions ;
@@ -68,7 +68,7 @@ export function fitHeader() {
   setContentMinWidth(naturalWidth(cs));
   topbar.classList.remove('is-compact');
   oneLineBarW = bar.offsetWidth;
-  // 0.8.0 (correction de la 0.7.9) : sur 1 ligne, les espaces extensibles
+  // Sur 1 ligne, les espaces extensibles
   // prennent toute la place libre, la barre touche donc toujours le bord
   // droit. La marge disponible se lit dans les espaces (au-delà de leur
   // largeur minimale), pas au bord : l'en-tête restait bloqué sur 2 lignes.
@@ -125,7 +125,7 @@ export function renderHeader() {
     h('div', { class: 'brand', role: 'img', 'aria-label': 'FS Passion' }, h('span', { class: 'app-logo app-logo-art', 'aria-hidden': 'true' })),
     ...[demoPill()].filter(Boolean),
     h('div', { class: 'topbar-spacer' }),
-    // Logo Farming Simulator (0.6.3), presque collé à l'icône de version,
+    // Logo Farming Simulator, presque collé à l'icône de version,
     // aligné sur son bas. Décoratif : aucune interaction.
     h('div', { class: 'version-zone' },
       h('span', { class: 'fs-logo', 'aria-hidden': 'true' }),
@@ -151,7 +151,7 @@ export function renderHeader() {
 // ---------------------------------------------------------------------------
 // Version active : une icône, celle de la version en cours. Au survol (après
 // ~150 ms), les versions s'affichent en rangée horizontale, icônes seules
-// (0.6) ; l'icône survolée grossit, un clic choisit la version.
+// ; l'icône survolée grossit, un clic choisit la version.
 // ---------------------------------------------------------------------------
 
 function buildVersionPicker(v) {
@@ -168,7 +168,7 @@ function buildVersionPicker(v) {
     clear(menu);
     for (const ver of store.app.versions) {
       const coming = !ver.available;
-      // 0.9.0 : une version absente (ni le jeu, ni son dossier « Mes
+      // Une version absente (ni le jeu, ni son dossier « Mes
       // documents », ni un dossier de mods) est grisée, ne grossit pas au
       // survol et ne se choisit pas ici. Elle reste réglable dans Paramètres →
       // Jeu et chemins (installation à un endroit inhabituel).
@@ -245,8 +245,7 @@ function buildVersionPicker(v) {
   return wrap;
 }
 
-// Navigation au clavier dans un menu vertical (menu des parties). Rétablie en
-// 0.6.3 : supprimée par erreur en 0.5 avec l'ancien menu des versions.
+// Navigation au clavier dans un menu vertical (menu des parties).
 function menuKeys(e, menu, close, btn) {
   const items = [...menu.querySelectorAll('.menu-item:not([aria-disabled])')];
   const i = items.indexOf(document.activeElement);
@@ -267,7 +266,7 @@ function menuKeys(e, menu, close, btn) {
 }
 
 // ---------------------------------------------------------------------------
-// Interface claire ou sombre (0.6.3) : soleil en mode sombre (passer au clair),
+// Interface claire ou sombre : soleil en mode sombre (passer au clair),
 // lune en mode clair. Bascule vers le thème jumeau (Catppuccin Mocha ↔ Latte,
 // Nord ↔ Nord Snow) ; pour un thème sans jumeau, le premier thème de l'autre mode.
 // ---------------------------------------------------------------------------
@@ -314,7 +313,7 @@ export async function selectVersion(vid) {
 }
 
 // ---------------------------------------------------------------------------
-// Partie en cours (4.1, 5.2)
+// Partie en cours
 // ---------------------------------------------------------------------------
 
 // Nom d'après l'override, quand les parties ne sont pas disponibles.
@@ -493,7 +492,7 @@ function buildApply(v) {
     btn.dataset.tipText = t(why, { game: v ? v.name : '' });
   } else {
     // Mis en évidence quand la partie sélectionnée n'est pas appliquée, ou a
-    // changé depuis sa dernière application (4.2).
+    // changé depuis sa dernière application.
     btn.dataset.tipText = needsApply() ? t('header.apply_tip') : t('header.apply_done_tip');
   }
   btn.addEventListener('click', () => {
@@ -505,7 +504,7 @@ function buildApply(v) {
 }
 
 // ---------------------------------------------------------------------------
-// Repère d'état (0.3) : une ligne courte sous le menu des parties, au lieu
+// Repère d'état : une ligne courte sous le menu des parties, au lieu
 // d'un bandeau sur toute la largeur de la fenêtre.
 // ---------------------------------------------------------------------------
 
@@ -531,7 +530,7 @@ export function renderStatus() {
     text = t('status.other_folder_path', { path: v.applied.directory });
     level = 'warn';
   } else if (partiesSupported() && store.parties.applied && store.parties.applied !== store.parties.selected) {
-    // La partie sélectionnée n'est pas celle que le jeu charge (5.2).
+    // La partie sélectionnée n'est pas celle que le jeu charge.
     text = t('status.applied', { name: partyLabel(store.parties.applied) });
   } else if (partiesSupported() && store.parties.applied_stale) {
     text = t('status.stale');

@@ -1,4 +1,4 @@
-// Fenêtre sans barre de titre (5.1) : boutons Réduire / Agrandir / Fermer,
+// Fenêtre sans barre de titre : boutons Réduire / Agrandir / Fermer,
 // déplacement par l'en-tête, double-clic pour agrandir, redimensionnement par
 // des zones de saisie invisibles sur les quatre bords et les quatre coins.
 
@@ -85,7 +85,7 @@ export function mountWindowControls(app, topbar) {
 export function makeDragZone(el) {
   if (!inWindow()) return;
   const isFree = (target) => !target.closest('button, input, select, textarea, a, [role="listbox"], [role="menu"], .no-drag');
-  // 0.8.4 : une barre de défilement (notice) reste une barre de défilement.
+  // Une barre de défilement (notice) reste une barre de défilement.
   const onScrollbar = (e) => {
     const t = e.target;
     return t instanceof HTMLElement && t.clientWidth && e.offsetX >= t.clientWidth && t.scrollHeight > t.clientHeight;
@@ -147,7 +147,7 @@ async function onEdgeDown(e, edge, zone) {
   const dpr = window.devicePixelRatio || 1;
   const sx = e.screenX;
   const sy = e.screenY;
-  const minW = 960 * (rect.dpi / 96); // 0.7.2 : 1280 → 960 (comme app.py, MIN_WINDOW)
+  const minW = 960 * (rect.dpi / 96); // Même minimum que app.py (MIN_WINDOW)
   const minH = 720 * (rect.dpi / 96);
   let pending = null;
   let busy = false;

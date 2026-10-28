@@ -1,4 +1,4 @@
-"""Fenêtre sans barre de titre ni bordure visible (5.1).
+"""Fenêtre sans barre de titre ni bordure visible.
 
 Exigences : redimensionnable par ses quatre bords et ses quatre coins,
 déplaçable par l'en-tête, double-clic = agrandir/restaurer, raccourcis de
@@ -10,13 +10,13 @@ les bords ; quand la souris y est enfoncée, elle prévient le cœur, qui confie
 le redimensionnement (ou le déplacement) à Windows lui-même. C'est la technique
 des applications à cadre personnalisé (Electron, Tauri).
 
-Trois techniques, choisies par le réglage « window_mode » (v0.1 : à valider) :
+Trois techniques, choisies par le réglage « window_mode » :
 - « native » (par défaut) : style WS_THICKFRAME ajouté et cadre masqué
   (WM_NCCALCSIZE). Redimensionnement et déplacement natifs, ancrage Windows,
   agrandissement natif qui respecte la barre des tâches.
 - « script » : redimensionnement calculé par l'interface (repli si la
   technique native échoue).
-- « thin » : cadre natif très fin (solution de repli du cahier des charges).
+- « thin » : cadre natif très fin (solution de repli).
 """
 
 from __future__ import annotations
@@ -125,7 +125,7 @@ class NativeWindow:
         self._pseudo_max = False
         self._restore_rect: tuple[int, int, int, int] | None = None
         self._lock = threading.Lock()
-        # Dormance (0.9.1) : interface suspendue quand la fenêtre est cachée.
+        # Dormance : interface suspendue quand la fenêtre est cachée.
         self.asleep = False
         self._sleep_timer: threading.Timer | None = None
         self._form_hooked = False
@@ -291,8 +291,8 @@ class NativeWindow:
             self.window.destroy()
 
     def focus(self) -> None:
-        """Ramène la fenêtre au premier plan (seconde instance 5.1, icône de la
-        zone de notification et fin du jeu 0.2.1), même si elle était cachée."""
+        """Ramène la fenêtre au premier plan (seconde instance, icône de la
+        zone de notification et fin du jeu), même si elle était cachée."""
         if not self.available:
             return
 
@@ -307,7 +307,7 @@ class NativeWindow:
         self._on_ui(do, wait=False)
 
     def hide(self) -> bool:
-        """Cache la fenêtre (zone de notification, 0.2.1). Asynchrone : peut
+        """Cache la fenêtre (zone de notification). Asynchrone : peut
         être appelé pendant l'événement de fermeture sans bloquer l'interface."""
         if not self.available:
             return False
@@ -318,7 +318,7 @@ class NativeWindow:
         return self.available and not user32.IsWindowVisible(self.hwnd)
 
     # ------------------------------------------------------------------
-    # Dormance (0.9.1)
+    # Dormance
     # ------------------------------------------------------------------
     #
     # Fenêtre cachée (zone de notification) ou réduite au lancement du jeu :
@@ -470,7 +470,7 @@ class NativeWindow:
 
 
 def trim_memory_later(delay: float = 1.5) -> None:
-    """Rend à Windows la mémoire inutilisée du cœur Python (dormance, 0.9.1).
+    """Rend à Windows la mémoire inutilisée du cœur Python (dormance).
     Sans effet sur ce qui tourne : les pages reviennent à la demande."""
     if not IS_WINDOWS:
         return

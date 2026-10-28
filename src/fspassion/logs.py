@@ -1,4 +1,4 @@
-"""Journaux et diagnostic (4.19).
+"""Journaux et diagnostic.
 
 - %LOCALAPPDATA%\\FSPassion\\logs\\fspassion.log, rotation de 5 fichiers de 1 Mo.
 - Niveaux : information (opérations), avertissement, erreur (avec le détail).

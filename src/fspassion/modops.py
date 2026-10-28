@@ -1,15 +1,15 @@
-"""Opérations sur les fichiers des mods (0.4) : supprimer définitivement (4.7)
-et renommer (4.21).
+"""Opérations sur les fichiers des mods : supprimer définitivement
+et renommer.
 
 Ce sont les deux seules opérations de FS Passion qui touchent aux mods
-eux-mêmes, et seulement sur demande explicite de l'utilisateur (I4, I9) :
+eux-mêmes, et seulement sur demande explicite de l'utilisateur :
 - supprimer : retrait de toutes les listes → retrait des liens dans tous les
   dossiers de parties → envoi du mod dans la Corbeille de Windows (suppression
   définitive seulement si le disque n'a pas de Corbeille, et c'est annoncé) ;
 - renommer : le fichier (ou le dossier) change de nom, son contenu jamais. Les
   listes, les liens des dossiers de parties et l'inventaire suivent.
 
-Refusés pendant que le jeu tourne (I5) : c'est à l'appelant de le vérifier.
+Refusés pendant que le jeu tourne : c'est à l'appelant de le vérifier.
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ _PREFIX_RE = re.compile(r"^((?:FS|LS)(?:\d{2}|20\d{2})_)", re.IGNORECASE)
 
 def split_prefix(mod_id: str) -> tuple[str, str]:
     """« FS25_HofBergmann » → (« FS25_ », « HofBergmann »). Le préfixe de version
-    est conservé au renommage (4.21)."""
+    est conservé au renommage."""
     m = _PREFIX_RE.match(mod_id)
     if not m:
         return "", mod_id
@@ -76,7 +76,7 @@ def storage_names(storages: list[Path]) -> set[str]:
 
 def remove_tree(path: Path) -> None:
     """Supprime un dossier (mod non compressé) sans jamais suivre un lien ou une
-    jonction qu'il contiendrait (I10) : un lien est retiré comme un lien."""
+    jonction qu'il contiendrait : un lien est retiré comme un lien."""
     for entry in list(path.iterdir()):
         kind = links.kind_of(entry)
         if kind in ("junction", "symlink"):
@@ -142,12 +142,12 @@ def unlink_everywhere(folders: VersionFolders, file: str, storage_path: Path) ->
 
 
 # --------------------------------------------------------------------------
-# Renommer (avec journal, I8)
+# Renommer (avec journal)
 # --------------------------------------------------------------------------
 
 def rename_links(folders: VersionFolders, old_file: str, new_file: str, new_path: Path) -> int:
     """Les liens à l'ancien nom sont remplacés par des liens au nouveau nom, dans
-    les mêmes dossiers de parties (4.21). Un hardlink garde le même fichier : son
+    les mêmes dossiers de parties. Un hardlink garde le même fichier : son
     nom change simplement. Une jonction ou un lien symbolique visait l'ancien
     chemin : il est refait."""
     base = folders.parties_dir
@@ -167,7 +167,7 @@ def rename_links(folders: VersionFolders, old_file: str, new_file: str, new_path
             os.rename(item, dst)
             folders.inventory.rename_entry(folder.name, old_file, new_file)
         elif kind in ("junction", "symlink"):
-            # Jonction ou lien symbolique (mod d'un autre disque, 0.6) : ils
+            # Jonction ou lien symbolique (mod d'un autre disque) : ils
             # visaient l'ancien chemin, ils sont refaits vers le nouveau.
             links.remove_link(item)
             if links.kind_of(new_path) == "dir":
@@ -184,7 +184,7 @@ def rename_links(folders: VersionFolders, old_file: str, new_file: str, new_path
 
 
 def rename_mod(folders: VersionFolders, entry: dict[str, Any], new_id: str) -> dict[str, Any]:
-    """Renomme un mod de la bibliothèque (4.21). `entry` : le mod (index de la
+    """Renomme un mod de la bibliothèque. `entry` : le mod (index de la
     bibliothèque). Renvoie {old, new, file, links, lists}."""
     storages = folders.vp.storages
     index = int(entry.get("storage") or 0)
@@ -222,7 +222,7 @@ def rename_mod(folders: VersionFolders, entry: dict[str, Any], new_id: str) -> d
 
 def finish_rename(folders: VersionFolders, old_id: str, new_id: str, old_file: str, new_file: str,
                   new_path: Path) -> dict[str, Any]:
-    """Suite d'un renommage (aussi rejouée après une coupure, I8) : liens, puis
+    """Suite d'un renommage (aussi rejouée après une coupure) : liens, puis
     listes. Chaque étape peut être refaite sans dommage."""
     folders._journal(op="mod_rename", old_id=old_id, new_id=new_id, old_file=old_file, new_file=new_file,
                      step="links")
@@ -231,7 +231,7 @@ def finish_rename(folders: VersionFolders, old_id: str, new_id: str, old_file: s
     except (OSError, LinkError) as exc:
         log.error("Liens non renommés (%s → %s) : %s", old_file, new_file, exc)
         n_links = 0  # la réconciliation et « Appliquer » les referont
-    # Les listes ne sont PAS modifiées ici (0.4, correction) : FS Passion demande
+    # Les listes ne sont PAS modifiées ici : FS Passion demande
     # ensuite à l'utilisateur si elles doivent suivre le nouveau nom (mod_lists_rename).
     return {"old": old_id, "new": new_id, "file": new_file, "links": n_links, "lists": 0}
 

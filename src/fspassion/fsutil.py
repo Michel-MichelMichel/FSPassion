@@ -1,6 +1,6 @@
 """Outils de fichiers : écritures atomiques, JSON, comparaison de chemins.
 
-Invariant I8 : aucune écriture ne laisse un fichier à moitié écrit. On écrit
+Règle : aucune écriture ne laisse un fichier à moitié écrit. On écrit
 toujours dans un fichier temporaire du même dossier, puis on le substitue d'un
 coup au fichier final (os.replace est atomique sur un même volume).
 """
@@ -108,12 +108,12 @@ def human_size(n: int) -> dict[str, Any]:
 
 
 # --------------------------------------------------------------------------
-# Déplacement vérifié d'un fichier (0.4 : intégration des téléchargements,
+# Déplacement vérifié d'un fichier (intégration des téléchargements,
 # dossier pending_downloads)
 # --------------------------------------------------------------------------
 
 class MoveError(OSError):
-    """Déplacement impossible ; `key` est une clé de langue (I7)."""
+    """Déplacement impossible ; `key` est une clé de langue."""
 
     def __init__(self, key: str, detail: str = "") -> None:
         super().__init__(detail or key)
@@ -130,7 +130,7 @@ def is_cross_device(exc: OSError) -> bool:
 def relocate(src: Path, dst: Path, verify: Any = None) -> str:
     """Déplace un fichier ou un dossier vers `dst` (qui ne doit pas exister).
 
-    Même disque : simple changement de nom. Autre disque (0.6, stockage sur
+    Même disque : simple changement de nom. Autre disque (stockage sur
     plusieurs disques) : copie vérifiée d'un fichier (move_file). Un dossier ne
     traverse jamais les disques : MoveError (rien n'est touché).
     """

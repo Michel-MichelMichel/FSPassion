@@ -1,4 +1,4 @@
-// Lueur qui court le long des contours (0.7.8, thèmes bicolores).
+// Lueur qui court le long des contours (thèmes bicolores).
 //
 // Les listes 1, 2 et 3 et les fenêtres internes reçoivent un petit SVG posé
 // sur leur contour : un segment lumineux (et sa traîne) en fait le tour, à

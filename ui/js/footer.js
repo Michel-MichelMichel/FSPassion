@@ -1,4 +1,4 @@
-// Pied de page (5.4) : lien GitHub à gauche ; « Lancer le jeu » et « Quitter » à droite.
+// Pied de page : lien GitHub à gauche ; « Lancer le jeu » et « Quitter » à droite.
 
 import { api } from './api.js';
 import { launchGame } from './apply.js';

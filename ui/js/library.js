@@ -1,15 +1,15 @@
-// Liste 1 — Tous les mods (4.6).
+// Liste 1 — Tous les mods.
 // Grille de tuiles de ~300 px, catégories (Non classés, DLC, Maps, Autres
 // mods), recherche, défilement d'une rangée par cran de molette, repère
 // alphabétique. Seules les tuiles proches de la vue sont dessinées : 2 000 mods
 // défilent sans ralentir.
 //
-// 0.2.0 — affichage sans délai : une tuile qui entre pendant un défilement
+// Affichage sans délai : une tuile qui entre pendant un défilement
 // s'affiche tout de suite, avec son icône (chargée dès qu'elle approche de la
 // vue). Le déploiement des tuiles les unes après les autres reste réservé à
 // l'ouverture de la liste et aux changements de contenu (recherche, version).
 //
-// Sélection (4.6) : clic, Ctrl+clic, Maj+clic, lasso depuis une zone vide,
+// Sélection : clic, Ctrl+clic, Maj+clic, lasso depuis une zone vide,
 // Ctrl+A, Échap, flèches et Espace. Glisser-déposer vers les listes 2 et 3.
 
 import { demoBadge, isDemo } from './demo.js';
@@ -32,7 +32,7 @@ import { toast } from './toast.js';
 const TILE_W = 300;
 const ART_H = 300;
 const WIDE_H = 140;
-const NAME_H = 76; // nom sur 2 lignes de 30 px (0.2.1 : police agrandie)
+const NAME_H = 76; // nom sur 2 lignes de 30 px (police agrandie)
 const GAP_Y = 30;
 const HEAD_H = 64;
 const CAT_SPACE = 10;
@@ -43,7 +43,7 @@ const STABLE_MS = 100; // fin du défilement : ~100 ms sans mouvement
 const HINT_DELAY = 300; // repère seulement si le défilement dure (plus d'un cran)
 const HINT_HIDE = 400;
 const WHEEL_MS = 170; // durée du glissement d'une rangée
-const DEPLOY_STEP = 15; // micro-délai entre deux tuiles (5.7)
+const DEPLOY_STEP = 15; // micro-délai entre deux tuiles
 const DEPLOY_MAX = 300;
 const DECODE_WAIT = 160; // attente maximale du décodage des icônes avant le déploiement
 const DETACHED_MAX = 160;
@@ -69,7 +69,7 @@ let modOrder = []; // identifiants (minuscules) des mods sélectionnables, dans 
 let totalH = 0;
 let cols = 2;
 let gapX = MIN_GAP_X;
-let offsetX = PAD_X; // marge gauche de la grille, centrée (0.4)
+let offsetX = PAD_X; // marge gauche de la grille, centrée
 let lastWidth = 0;
 const attached = new Map(); // clé → nœud affiché
 const detached = new Map(); // clé → nœud gardé pour réutilisation
@@ -130,13 +130,13 @@ function buildCategories() {
   if (!lib) return [];
   const q = fold(store.search.trim());
   const match = (text, extra) => !q || fold(text).includes(q) || (extra && fold(extra).includes(q));
-  // 0.4 (correction) : la recherche porte aussi sur le nom de l'auteur. Les mods
+  // La recherche porte aussi sur le nom de l'auteur. Les mods
   // trouvés par leur nom restent en place ; ceux trouvés seulement par leur
   // auteur vont plus bas, dans une catégorie « Par nom d'auteur ».
   const byAuthor = (author) => !!q && !!author && fold(author).includes(q);
   const coll = collator();
   const byName = (a, b) => coll.compare(a.name, b.name);
-  // Maps d'abord (0.2.1) : au premier lancement, tous les mods sont « Non
+  // Maps d'abord : au premier lancement, tous les mods sont « Non
   // classés » ; les maps en tête permettent de créer tout de suite les parties.
   const mapsFirst = (a, b) => (b.data.is_map ? 1 : 0) - (a.data.is_map ? 1 : 0) || byName(a, b);
 
@@ -152,11 +152,11 @@ function buildCategories() {
     .map((d) => ({ type: 'dlc', key: `d:${d.id.toLowerCase()}`, name: pickName(d.names) || d.id, data: d }))
     .filter((it) => match(it.name, it.data.id));
 
-  // 0.8.4 : ordre imposé par le catalogue (FS2011), sinon ordre alphabétique.
+  // Ordre imposé par le catalogue (FS2011), sinon ordre alphabétique.
   const byRank = (a, b) => (a.data.rank ?? 1e9) - (b.data.rank ?? 1e9) || byName(a, b);
   const out = [];
   if (lib.classification && partiesSupported()) {
-    // Non classés (4.6) : ni dans les mods communs, ni dans aucune partie. Le
+    // Non classés : ni dans les mods communs, ni dans aucune partie. Le
     // jeu ne les verra jamais tant qu'ils ne sont pas classés. Un mod quitte
     // cette catégorie dès qu'il est classé.
     const m = membership();
@@ -192,7 +192,7 @@ function layout() {
   lastWidth = width;
   cols = Math.max(2, Math.floor((width + MIN_GAP_X) / (TILE_W + MIN_GAP_X)));
   gapX = cols > 1 ? Math.min(MAX_GAP_X, Math.max(MIN_GAP_X, (width - cols * TILE_W) / (cols - 1))) : 0;
-  // 0.4 (correction) : la grille est centrée horizontalement dans la liste.
+  // La grille est centrée horizontalement dans la liste.
   const used = cols * TILE_W + (cols - 1) * gapX;
   offsetX = PAD_X + Math.max(0, Math.round((width - used) / 2));
   rows = [];
@@ -248,7 +248,7 @@ function firstRowAt(y) {
 // ---------------------------------------------------------------------------
 
 function makeHead(cat) {
-  // 0.6.3 : chaque catégorie prend une couleur du thème (couleur pleine).
+  // Chaque catégorie prend une couleur du thème (couleur pleine).
   const acc = { unclassified: 1, dlc: 2, maps: 3, others: 4, by_author: 1 }[cat.id] || 1;
   const el = h('div', { class: `cat-head acc-${acc}${cat.id === 'unclassified' ? ' is-unclassified' : ''}` },
     h('span', { text: cat.label }),
@@ -284,7 +284,7 @@ function makeTile(it) {
     el._img = img;
     el.classList.add('has-img');
   }
-  // Trait fin intérieur de la carte, par-dessus l'image (0.2.2).
+  // Trait fin intérieur de la carte, par-dessus l'image.
   art.append(h('div', { class: 'tile-edge', 'aria-hidden': 'true' }));
   if (!isDlc) {
     // Contour en pointillés des mods non classés (dessiné par un masque SVG :
@@ -297,12 +297,12 @@ function makeTile(it) {
       badges.push(h('span', { class: 'badge', 'data-i18n-tip': 'mod.unpacked', 'aria-label': t('mod.unpacked') }, icon('folder')));
     }
     if (badges.length) art.append(h('div', { class: 'tile-badges' }, ...badges));
-    // Badge de map (0.2.1) : icône « map », en bas à gauche de l'image.
+    // Badge de map : icône « map », en bas à gauche de l'image.
     if (d.is_map) {
       art.append(h('div', { class: 'tile-map' },
         h('span', { class: 'badge', 'data-i18n-tip': 'mod.map', 'aria-label': t('mod.map') }, icon('map'))));
     }
-    // 0.7.3 : bouton « i » en haut à droite de l'image : épingle la fiche du
+    // Bouton « i » en haut à droite de l'image : épingle la fiche du
     // mod (elle reste à l'écran, ses liens se cliquent). Au clavier, touche I.
     const info = h('button', {
       class: 'tile-info', type: 'button', tabindex: '-1', 'data-i18n-tip': 'list1.info_tip',
@@ -317,7 +317,7 @@ function makeTile(it) {
     el._marksSig = '';
     art.append(el._marks);
     if (d.is_map) {
-      // « ＋ Partie » (4.5) : au centre de l'image, visible au survol ; au
+      // « ＋ Partie » : au centre de l'image, visible au survol ; au
       // clavier, touche Entrée.
       const plus = h('button', {
         class: 'tile-plus', type: 'button', tabindex: '-1', 'data-i18n-tip': 'list1.plus_party_tip',
@@ -520,7 +520,7 @@ function scheduleRender() {
 
 // Tuiles en attente (ouverture de la liste, recherche, nouveau contenu) : celles
 // de la vue se déploient dans l'ordre de lecture, avec un micro-délai entre
-// deux tuiles (5.7) ; les autres s'affichent aussitôt.
+// deux tuiles ; les autres s'affichent aussitôt.
 function reveal() {
   const top = scroller.scrollTop;
   const vh = scroller.clientHeight;
@@ -563,7 +563,7 @@ function reveal() {
 }
 
 // ---------------------------------------------------------------------------
-// Molette : un cran = une rangée (4.6)
+// Molette : un cran = une rangée
 // ---------------------------------------------------------------------------
 
 function onWheel(e) {
@@ -632,7 +632,7 @@ function stopWheel() {
 }
 
 // ---------------------------------------------------------------------------
-// Défilement et repère alphabétique (4.6)
+// Défilement et repère alphabétique
 // ---------------------------------------------------------------------------
 
 function onScroll() {
@@ -713,7 +713,7 @@ function updateHint() {
   setHintName(it.name);
 }
 
-// Nom du repère (0.5) : les 3 premières lettres en accent, le reste en gris.
+// Nom du repère : les 3 premières lettres en accent, le reste en gris.
 // Les caractères qui précèdent la première lettre (« [Map] ») restent gris.
 let hintShown = '';
 function setHintName(name) {
@@ -763,7 +763,7 @@ function onPointerDown(e) {
   startLasso(e);
 }
 
-// Lasso : rectangle tracé depuis une zone vide (4.6). Les positions viennent
+// Lasso : rectangle tracé depuis une zone vide. Les positions viennent
 // de la mise en page, pas des tuiles affichées : le lasso peut couvrir des
 // rangées hors de la vue (défilement automatique près des bords).
 function startLasso(e) {
@@ -924,7 +924,7 @@ function onKeyDown(e) {
       return undefined;
     case 'i':
     case 'I': {
-      // 0.7.3 : épingle (ou referme) la fiche de la tuile qui a le focus.
+      // Épingle (ou referme) la fiche de la tuile qui a le focus.
       const el = cur && cur.type === 'mod' ? attached.get(cur.key) : null;
       if (el && !e.ctrlKey && !e.altKey && !e.metaKey) {
         e.preventDefault();
@@ -933,7 +933,7 @@ function onKeyDown(e) {
       return undefined;
     }
     case 'F2': {
-      // Renommer (4.21) : un seul mod sélectionné, ou la tuile qui a le focus.
+      // Renommer : un seul mod sélectionné, ou la tuile qui a le focus.
       e.preventDefault();
       const ids = selectionList() === 'l1' && selectionSize() === 1 ? selectedIds()
         : (cur && cur.type === 'mod' ? [cur.data.id] : []);
@@ -985,13 +985,13 @@ function buildHeader() {
   const counters = h('div', { class: 'counters', 'aria-live': 'polite' });
   const progress = h('div', { class: 'lib-progress' });
   const anomBtn = h('button', { class: 'anomaly-indicator', type: 'button', hidden: true, onclick: () => callbacks.onAnomalies() });
-  // Rechercher de nouveaux mods dans les téléchargements (4.8, 0.4).
+  // Rechercher de nouveaux mods dans les téléchargements.
   const newMods = h('button', {
     class: 'icon-btn find-new-btn', type: 'button', 'data-tip-text': t('list1.find_new'), 'aria-label': t('list1.find_new'),
     onclick: () => openDownloads(),
   }, icon('folder-sync'));
 
-  // Titre et compteurs alignés sur la même ligne de base (0.2.1).
+  // Titre et compteurs alignés sur la même ligne de base.
   const head = h('div', { class: 'lib-head' },
     h('div', { class: 'lib-titlebar' }, h('h1', { class: 'lib-title mgrad', text: t('list1.title') }), counters),
     h('div', { class: 'lib-tools' }, progress, anomBtn, newMods,
@@ -1000,7 +1000,7 @@ function buildHeader() {
   return head;
 }
 
-// Compteurs « Sélectionnés · Actifs · Tous » (4.6).
+// Compteurs « Sélectionnés · Actifs · Tous ».
 function updateCounters() {
   const { counters } = headerEls;
   if (!counters) return;
@@ -1055,7 +1055,7 @@ export function focusSearch() {
 function emptyState() {
   const v = versionInfo();
   const lib = store.library;
-  // 0.8.4 : le message est posé dans une carte opaque, lisible sur tout fond.
+  // Le message est posé dans une carte opaque, lisible sur tout fond.
   const box = (ico, title, text, action) => h('div', { class: 'grid-empty' },
     h('div', { class: 'grid-empty-card' },
       icon(ico, ico === 'loader-circle' ? 'spin' : ''), h('h3', { text: title }), text ? h('p', { text }) : null, action || null));
@@ -1130,7 +1130,7 @@ export function rebuild({ resetScroll = false, animate = false } = {}) {
   const empty = emptyState();
   clear(emptyEl);
   if (empty) emptyEl.append(empty);
-  // 0.8.4 : version non configurée ou illisible — le message s'affichait
+  // Version non configurée ou illisible — le message s'affichait
   // par-dessus les DLC du catalogue (illisible) ; la grille reste vide.
   const v = versionInfo();
   if (v && (!v.ready || (store.library?.status === 'error' && store.library.error))) cats = [];

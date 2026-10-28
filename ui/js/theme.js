@@ -1,22 +1,22 @@
-// Thèmes, grain et reflet métallique (5.5).
+// Thèmes, grain et reflet métallique.
 // Un thème = au moins deux couleurs : le fond (Mica, champ « dark ») et
 // l'accent (champ « light »). Les surfaces sont des voiles neutres posés sur le
-// fond, l'accent colore contours, logos et icônes (0.2.2). Changer de thème est
+// fond, l'accent colore contours, logos et icônes. Changer de thème est
 // instantané.
 //
-// 0.6.3 :
+// Champs d'un thème :
 // - « mode » : « dark » (défaut) ou « light » : interface sombre ou claire ;
 // - « text » : couleur des textes (défaut : blanc en sombre, presque noir en clair) ;
 // - « accents » : jusqu'à 4 couleurs (orange, vert, bleu, violet pour Catppuccin
 //   et Nord). Chaque zone de l'interface prend la sienne (--c1 à --c4) ;
-// - « gradient » (0.6.4) : 2 couleurs, pour quelques textes importants et
+// - « gradient » : 2 couleurs, pour quelques textes importants et
 //   l'animation des boutons « Appliquer » et « Lancer le jeu ». Icônes, images
 //   et interrupteurs restent en couleurs pleines ;
 // - « pair » : le thème jumeau de l'autre mode (bouton soleil/lune).
 // Les accents trop peu contrastés sur le fond sont assombris (mode clair) ou
 // éclaircis (mode sombre) automatiquement : la teinte reste, la lisibilité aussi.
 //
-// 0.7.8 (thèmes définitifs) :
+// Champs complémentaires :
 // - « style » : « duo » (thème bicolore : la couleur sombre partout, la couleur
 //   dominante dans tous les textes et les icônes, des contours fins à la place
 //   des nuances de fond, une lueur qui court le long des contours) ou
@@ -31,7 +31,7 @@
 const root = document.documentElement;
 let themes = [];
 let current = null; // thème appliqué (choisi ou en aperçu)
-let chosenId = 'gruvbox-light'; // 0.8.4 : thème par défaut
+let chosenId = 'gruvbox-light'; // Thème par défaut
 let loopTimer = 0;
 let options = { lightEffects: true, reduceMotion: null, loop: false };
 
@@ -101,7 +101,7 @@ export function readableColor(color, bg, target = 4.5) {
   const back = hexToRgb(bg);
   if (!base || !back) return color;
   if (contrast(color, bg) >= target) return color;
-  // 0.7.8 : on va vers le noir si la couleur est plus sombre que le fond, vers
+  // On va vers le noir si la couleur est plus sombre que le fond, vers
   // le blanc sinon (un fond clair grisé comme Catppuccin Latte, luminance 0,35,
   // était traité comme un fond sombre).
   const toward = luminance(base) < luminance(back) ? 0 : 255;
@@ -116,7 +116,7 @@ export function smallTextColor(light, dark) {
   return readableColor(light, dark, 4.5);
 }
 
-// Dégradé bicolore d'un thème (0.6.4) : [départ, arrivée], ou [] s'il n'en a pas.
+// Dégradé bicolore d'un thème : [départ, arrivée], ou [] s'il n'en a pas.
 export function themeGradient(theme) {
   const g = Array.isArray(theme.gradient) ? theme.gradient.filter((c) => hexToRgb(c)) : [];
   return g.length === 2 ? g : [];
@@ -126,19 +126,19 @@ export function themeMode(theme) {
   return theme && theme.mode === 'light' ? 'light' : 'dark';
 }
 
-// Style d'un thème (0.7.8) : « duo » (bicolore), « palette », ou « classic »
+// Style d'un thème : « duo » (bicolore), « palette », ou « classic »
 // (ancien thème sans style : voiles calculés, comme avant).
 export function themeStyle(theme) {
   return theme && (theme.style === 'duo' || theme.style === 'palette') ? theme.style : 'classic';
 }
 
-// Surfaces officielles d'un thème (0.7.8) : 0 à 4 couleurs valides.
+// Surfaces officielles d'un thème : 0 à 4 couleurs valides.
 export function themeSurfaces(theme) {
   const list = Array.isArray(theme && theme.surfaces) ? theme.surfaces.filter((c) => hexToRgb(c)) : [];
   return list.slice(0, 4);
 }
 
-// Couleurs de texte officielles (0.7.8) : 0 à 4 couleurs valides.
+// Couleurs de texte officielles : 0 à 4 couleurs valides.
 export function themeTexts(theme) {
   const list = Array.isArray(theme && theme.texts) ? theme.texts.filter((c) => hexToRgb(c)) : [];
   return list.slice(0, 4);
@@ -152,7 +152,7 @@ export function themeWindow(theme) {
 
 // Pastille d'un thème (Paramètres, atelier) : fond en haut à gauche, couleur
 // dominante (ou roue des couleurs d'accent) en bas à droite. Pour un thème
-// palette, le fond montré est celui des listes (0.7.8).
+// palette, le fond montré est celui des listes.
 export function paintSwatch(dot, th) {
   const surf = themeSurfaces(th);
   dot.style.setProperty('--sw-dark', surf[1] || themeWindow(th));
@@ -230,7 +230,7 @@ export function applyTheme(theme, { preview = false } = {}) {
   root.style.setProperty('--fg-text', smallTextColor(light, ref));
   root.dataset.mode = mode;
   root.dataset.style = style;
-  // Surfaces officielles (0.7.8) : fenêtre, listes, sections, sous-sections.
+  // Surfaces officielles : fenêtre, listes, sections, sous-sections.
   if (surf.length >= 2 && style !== 'duo') {
     const [s0, s1, s2 = s1, s3 = s2] = surf;
     root.style.setProperty('--surf-window', s0);
@@ -243,7 +243,7 @@ export function applyTheme(theme, { preview = false } = {}) {
     delete root.dataset.surfaces;
   }
   // Textes : bicolore = la couleur dominante partout ; sinon la couleur des
-  // textes du thème (0.6.3) et ses couleurs secondaires officielles (0.7.8).
+  // textes du thème et ses couleurs secondaires officielles.
   const fallback = mode === 'light' ? '#1B1B1F' : '#FFFFFF';
   const text = style === 'duo' ? light : (hexToRgb(theme.text) ? theme.text : fallback);
   const base = readableColor(readableColor(text, ref, 7), dark, 4.5);
@@ -267,7 +267,7 @@ export function applyTheme(theme, { preview = false } = {}) {
   });
   if (accents.length > 1) root.dataset.multi = '1';
   else delete root.dataset.multi;
-  // Dégradé bicolore (0.6.4), lisible sur le fond (3:1 : grands textes).
+  // Dégradé bicolore, lisible sur le fond (3:1 : grands textes).
   const grad = style === 'duo' ? [] : themeGradient(theme).map((c) => readableColor(readableColor(c, ref, 3), dark, 3));
   if (grad.length === 2) root.dataset.grad = '1';
   else delete root.dataset.grad;
@@ -276,10 +276,10 @@ export function applyTheme(theme, { preview = false } = {}) {
   root.style.setProperty('--grad-b', gb);
   root.style.setProperty('--accent-grad', `linear-gradient(100deg, ${ga}, ${gb})`);
   root.style.setProperty('--grain', grainImage(theme.grain));
-  // Intensité des lueurs du fond Mica (0.2.2) ; 60 si le thème ne la donne pas.
+  // Intensité des lueurs du fond Mica ; 60 si le thème ne la donne pas.
   root.style.setProperty('--mica', String(Math.max(0, Math.min(100, theme.mica ?? 60)) / 100));
   root.style.setProperty('--metal-strength', String((theme.effect_intensity ?? 60) / 100));
-  // Effet néon (0.7.8) : intensité de 0 à 1.
+  // Effet néon : intensité de 0 à 1.
   const neon = Math.max(0, Math.min(100, Number(theme.neon) || 0));
   root.style.setProperty('--neon', String(neon / 100));
   if (neon > 0) root.dataset.neon = '1';
@@ -300,7 +300,7 @@ export function endPreview() {
   applyTheme(chosenTheme());
 }
 
-// Bouton soleil/lune (0.6.3) : le thème jumeau de l'autre mode (« pair »),
+// Bouton soleil/lune : le thème jumeau de l'autre mode (« pair »),
 // sinon le premier thème de l'autre mode, sinon rien (null).
 export function oppositeTheme(theme = chosenTheme()) {
   if (!theme) return null;
@@ -331,7 +331,7 @@ export function setOptions(next) {
   updateLoop();
 }
 
-// Effets de lumière des thèmes (0.7.8) : lueurs qui courent le long des
+// Effets de lumière des thèmes : lueurs qui courent le long des
 // contours (thèmes bicolores) et effet néon. Coupés avec « Effets de
 // lumière » ; les lueurs animées s'arrêtent aussi avec « Réduire les
 // animations » et quand la fenêtre n'est pas au premier plan.
@@ -383,8 +383,8 @@ export function initMetal(el) {
     updateMetal();
     root.classList.remove('is-idle');
   });
-  document.addEventListener('mouseleave', () => metalEl && metalEl.classList.remove('lit'));
-  document.addEventListener('mouseenter', () => metalEl && metalOn && metalEl.classList.add('lit'));
+  document.documentElement.addEventListener('pointerleave', () => metalEl && metalEl.classList.remove('lit'));
+  document.documentElement.addEventListener('pointerenter', () => metalEl && metalOn && metalEl.classList.add('lit'));
   updateMetal();
 }
 

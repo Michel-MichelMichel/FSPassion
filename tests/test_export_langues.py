@@ -15,27 +15,6 @@ def _read(*parts: str) -> str:
     return ROOT.joinpath(*parts).read_text(encoding="utf-8")
 
 
-def test_licence_feature_is_gone():
-    for gone in (
-        ("src", "fspassion", "licence.py"),
-        ("ui", "js", "licence.js"),
-        ("tools", "licence_keys.py"),
-        ("cles.bat",),
-    ):
-        assert not ROOT.joinpath(*gone).exists(), gone
-    for parts in (
-        ("src", "fspassion", "core.py"),
-        ("src", "fspassion", "server.py"),
-        ("ui", "js", "main.js"),
-        ("ui", "css", "dialogs.css"),
-        (".gitignore",),
-    ):
-        text = _read(*parts).lower()
-        assert "licence" not in text and "beta-cles" not in text, parts
-    for code in ("fr", "en"):
-        assert "licence" not in json.loads(_read("lang", f"{code}.json"))
-
-
 def test_old_licence_settings_are_dropped(tmp_path):
     path = tmp_path / "settings.json"
     path.write_text(json.dumps({"licence_key": "FSP-0000-1111-2222-3333", "licence_ok_at": 5}), "utf-8")

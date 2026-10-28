@@ -1,16 +1,15 @@
-// Détail d'un mod (4.4) : survol prolongé d'une tuile, ou focus au clavier.
-// Pour une map : la liste des dépendances et leur état (4.5).
-// 0.7.3 : mods facultatifs et liens de téléchargement (<SearchMods> des
+// Détail d'un mod : survol prolongé d'une tuile, ou focus au clavier.
+// Pour une map : la liste des dépendances et leur état.
+// Mods facultatifs et liens de téléchargement (<SearchMods> des
 // anciennes versions) ; bouton « i » des tuiles : la fiche est épinglée, elle
 // reste à l'écran et ses liens se cliquent. Elle se ferme par sa croix, Échap,
 // un clic ailleurs, un nouveau clic sur « i », ou le défilement de la liste.
 
-import { partiesText } from './actions.js';
 import { api } from './api.js';
 import { clear, h, icon } from './dom.js';
 import { formatNumber, modTitle, pickName, t } from './i18n.js';
 import { localRect } from './scale.js';
-import { activeVersion, store } from './state.js';
+import { activeVersion, membership, store } from './state.js';
 import { toast, toastError } from './toast.js';
 
 const MAX_DEPS = 14; // fiche au survol ; épinglée, elle montre tout
@@ -20,7 +19,7 @@ let timer = 0;
 let current = null;
 let pinned = null; // tuile dont la fiche est épinglée
 
-// 0.7.9 : pendant un redimensionnement de la fenêtre, les tuiles se
+// Pendant un redimensionnement de la fenêtre, les tuiles se
 // réorganisent sous la souris immobile : chacune recevait un survol et ouvrait
 // sa fiche, qui apparaissait et disparaissait au hasard. Classe « is-resizing »
 // sur la page jusqu'à 350 ms après le dernier changement de taille : plus de
@@ -87,7 +86,7 @@ export function unpinCard() {
   hideCard();
 }
 
-// 0.7.3 : lien de téléchargement d'un mod requis ou facultatif, ouvert dans le
+// Lien de téléchargement d'un mod requis ou facultatif, ouvert dans le
 // navigateur par le cœur (seule une adresse du modDesc.xml de `modId` est acceptée).
 export async function openModLink(modId, url) {
   try {
@@ -104,6 +103,15 @@ export function linkHost(url) {
   } catch {
     return url;
   }
+}
+
+// Noms à afficher pour un mod (détail du mod) : parties qui le contiennent.
+export function partiesText(id) {
+  const low = String(id).toLowerCase();
+  const m = membership();
+  const names = (m.partiesOf.get(low) || []).slice().sort((a, b) => a.localeCompare(b));
+  if (m.common.has(low)) names.push(t('list3.title'));
+  return names.length ? names.join(', ') : t('mod.parties_none');
 }
 
 // Bouton-lien : le nom du site ; l'adresse complète dans l'infobulle.
@@ -154,7 +162,7 @@ export function dependencyState(dep) {
   return { dlc: false, ok };
 }
 
-// Nom affiché d'une dépendance (0.2.1) : titre du mod ou nom du DLC quand ils
+// Nom affiché d'une dépendance : titre du mod ou nom du DLC quand ils
 // sont présents, sinon l'identifiant tel qu'il est écrit dans le modDesc.xml.
 function depName(dep, st) {
   const lib = store.library;
@@ -204,7 +212,7 @@ function buildMod(mod, pin = false) {
   const depRow = (d, st, label) => {
     const url = linkOf(mod, d);
     if (url) links++;
-    // Nom, puis le lien sur une seconde ligne (0.7.3) : le nom reste lisible.
+    // Nom, puis le lien sur une seconde ligne : le nom reste lisible.
     return h('div', { class: `hc-dep ${st.ok ? '' : 'is-absent'}` },
       icon(st.ok ? 'circle-check' : (st.dlc ? 'package' : 'circle-x')),
       h('span', { class: 'dep-main' },
@@ -223,7 +231,7 @@ function buildMod(mod, pin = false) {
   } else if (mod.is_map) {
     out.push(h('div', { class: 'hc-section', text: t('mod.no_dependencies') }));
   }
-  // 0.7.3 : mods facultatifs (<SearchMods><optionalMod>), jamais exigés par le jeu.
+  // Mods facultatifs (<SearchMods><optionalMod>), jamais exigés par le jeu.
   if (optional.length) {
     out.push(h('div', { class: 'hc-section', text: t('mod.optional', { count: optional.length }) }));
     out.push(h('div', { class: 'hc-deps is-optional' }, optional.slice(0, max).map((o) => {

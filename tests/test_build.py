@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 from fspassion import app, launcher
-from test_v070 import env, make_party, override_dir  # noqa: F401 (fixture)
+from test_sauvegarde_dlc import env, make_party, override_dir  # noqa: F401 (fixture)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -77,7 +77,7 @@ def test_github_workflow():
         assert live.read_text(encoding="utf-8").replace("\r\n", "\n") == wf.replace("\r\n", "\n")
     assert "runs-on: windows-2022" in wf and "python tools/build.py" in wf
     assert "tags: [\"v*.*.*\"]" in wf and "gh release create" in wf and "--draft" in wf
-    assert "actions/upload-artifact@v4" in wf
+    assert "actions/upload-artifact@v5" in wf
     assert re.search(r"permissions:\s*\n\s*contents: read", wf)
 
 

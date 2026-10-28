@@ -182,7 +182,7 @@ def open_folder(path: str | os.PathLike[str]) -> bool:
 
 def reveal(path: str | os.PathLike[str]) -> bool:
     """Ouvre l'Explorateur sur le dossier qui contient `path`, l'élément
-    sélectionné (0.2.1). Repli : le dossier lui-même."""
+    sélectionné. Repli : le dossier lui-même."""
     p = Path(path)
     if not p.exists():
         return open_folder(p.parent) if p.parent.exists() else False
@@ -218,7 +218,7 @@ def open_url(url: str) -> bool:
 def start_via_explorer(target: str) -> bool:
     """Lance une cible par l'Explorateur Windows, donc avec des droits normaux.
 
-    Utilisé quand FS Passion tourne en administrateur (4.3) : sinon le jeu et
+    Utilisé quand FS Passion tourne en administrateur : sinon le jeu et
     sa plateforme hériteraient des droits administrateur.
     """
     if not IS_WINDOWS:
@@ -236,7 +236,7 @@ def start_via_explorer(target: str) -> bool:
 def startfile(target: str, cwd: str | None = None, args: list[str] | None = None) -> bool:
     """Lance un exécutable ou une adresse (droits du processus courant).
 
-    `args` : arguments de ligne de commande (0.3), uniquement pour un exécutable.
+    `args` : arguments de ligne de commande, uniquement pour un exécutable.
     """
     try:
         if IS_WINDOWS:
@@ -253,7 +253,7 @@ def startfile(target: str, cwd: str | None = None, args: list[str] | None = None
 
 
 # --------------------------------------------------------------------------
-# Corbeille de Windows (0.4 : « Supprimer définitivement », 4.7)
+# Corbeille de Windows (« Supprimer définitivement »)
 # --------------------------------------------------------------------------
 
 FO_DELETE = 3
@@ -333,7 +333,7 @@ def send_to_recycle_bin(path: str | os.PathLike[str]) -> bool:
 
 
 # --------------------------------------------------------------------------
-# Droits pour les liens symboliques (0.6, stockage sur plusieurs disques, 4.20)
+# Droits pour les liens symboliques (stockage sur plusieurs disques)
 # --------------------------------------------------------------------------
 
 LAYERS_KEY = r"Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"
@@ -390,7 +390,7 @@ def elevation_type() -> int:
 def is_standard_user() -> bool:
     """Compte Windows standard : obtenir les droits demande le mot de passe d'un
     AUTRE compte. FS Passion tournerait alors sous ce compte (autres Mes documents
-    et %APPDATA%) : le Mode développeur est alors le seul bon choix (4.20)."""
+    et %APPDATA%) : le Mode développeur est alors le seul bon choix."""
     if not IS_WINDOWS or is_admin():
         return False
     return elevation_type() == 1
@@ -470,7 +470,7 @@ def elevated_command(dev_launcher: Path | None = None) -> tuple[str, str, str]:
     Une application relancée en administrateur ne reçoit PAS l'environnement de
     celle qui la lance (Windows la démarre à neuf), et son dossier de travail
     peut devenir C:\\Windows\\System32. En développement, on relance donc
-    lancer_dev.bat, qui prépare tout lui-même (0.6.1). L'application fabriquée
+    lancer_dev.bat, qui prépare tout lui-même. L'application fabriquée
     (FS Passion.exe) n'a besoin de rien."""
     if dev_launcher is not None:
         comspec = os.environ.get("COMSPEC") or "cmd.exe"

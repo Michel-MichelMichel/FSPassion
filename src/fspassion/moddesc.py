@@ -1,12 +1,12 @@
-"""Lecture des mods : archives .zip et dossiers non compressés (4.4).
+"""Lecture des mods : archives .zip et dossiers non compressés.
 
-Invariant I9 : FS Passion n'ouvre jamais un .zip en écriture. Ce module ne fait
+Règle : FS Passion n'ouvre jamais un .zip en écriture. Ce module ne fait
 que lire la table des matières de l'archive et le fichier modDesc.xml.
 
 La lecture du XML est tolérante : marque BOM, encodages anciens, petites
 erreurs (« & » non échappé, caractères de contrôle). Si le XML reste
 illisible, les informations essentielles sont extraites par expressions
-régulières, et le mod est signalé (anomalie A3).
+régulières, et le mod est signalé (anomalie).
 """
 
 from __future__ import annotations
@@ -46,7 +46,7 @@ class ModDescInfo:
     is_map: bool = False
     map_titles: dict[str, str] = field(default_factory=dict)
     dependencies: list[str] = field(default_factory=list)
-    # 0.7.3 : anciennes versions (FS15, FS17…), balise <SearchMods> : mods requis
+    # Anciennes versions (FS15, FS17…), balise <SearchMods> : mods requis
     # (<mod zipName=… downloadLink=…>, aussi ajoutés à « dependencies ») et mods
     # facultatifs (<optionalMod …>), avec le lien de téléchargement de l'auteur.
     search_mods: list[dict[str, Any]] = field(default_factory=list)
@@ -414,7 +414,7 @@ def extract_info(
                 seen.add(name.lower())
                 info.dependencies.append(name)
 
-    # 0.7.3 : <SearchMods> des anciennes versions (requis et facultatifs).
+    # <SearchMods> des anciennes versions (requis et facultatifs).
     seen_search: set[str] = set()
     for block in _children(root, "searchmods"):
         for c in block:
@@ -445,7 +445,7 @@ def _swap_ext(path: str) -> str | None:
 
 
 def find_icon(declared: str | None, names: list[str]) -> str | None:
-    """Ordre de recherche (4.12) : chemin déclaré → autre extension → nom de
+    """Ordre de recherche : chemin déclaré → autre extension → nom de
     fichier dans toute l'archive (deux extensions) → aucune (icône par défaut).
 
     `names` : chemins des fichiers du mod, séparateurs « / ».
@@ -484,7 +484,7 @@ def find_icon(declared: str | None, names: list[str]) -> str | None:
 # --------------------------------------------------------------------------
 
 def read_zip(path: Path) -> ModReadResult:
-    """Lit un mod compressé, sans jamais l'ouvrir en écriture (I9)."""
+    """Lit un mod compressé, sans jamais l'ouvrir en écriture."""
     try:
         with zipfile.ZipFile(path, "r") as zf:
             names = [i.filename for i in zf.infolist() if not i.is_dir()]

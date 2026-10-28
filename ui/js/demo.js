@@ -1,4 +1,4 @@
-// Mode démonstration (14.2) : essayer FS Passion sans le jeu, avec de faux mods.
+// Mode démonstration : essayer FS Passion sans le jeu, avec de faux mods.
 
 import { api } from './api.js';
 import { openDialog } from './dialog.js';

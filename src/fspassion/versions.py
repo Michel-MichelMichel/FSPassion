@@ -1,4 +1,4 @@
-"""Versions du jeu (cahier des charges 2.1 et 2.2).
+"""Versions du jeu.
 
 La table est une donnée (data/game_versions.json), pas du code. Ce module la
 charge et sait reconnaître la version du jeu à laquelle un mod est destiné.
@@ -35,7 +35,7 @@ class GameVersion:
     launcher_exe: str
     game_exes: tuple[str, ...]
     available: bool
-    # 0.8.4 : exécutables cherchés à la racine du dossier du jeu, par ordre de
+    # Exécutables cherchés à la racine du dossier du jeu, par ordre de
     # préférence (FS2013 : la version 64 bits d'abord). Vide = le lanceur seul.
     detect_exes: tuple[str, ...] = ()
     extra: dict[str, Any] = field(default_factory=dict, compare=False, hash=False)
@@ -120,7 +120,7 @@ def require(vid: str) -> GameVersion:
 
 
 # --------------------------------------------------------------------------
-# Reconnaître la version d'un mod (2.2)
+# Reconnaître la version d'un mod
 # --------------------------------------------------------------------------
 
 def _prefix_regex() -> re.Pattern[str]:
@@ -185,7 +185,7 @@ class ModVersionResult:
 
 
 def detect_mod_version(filename: str, desc_raw: str | None) -> ModVersionResult:
-    """Ordre de décision du cahier des charges (2.2)."""
+    """Détermine la version d'un mod : nom de fichier, puis modDesc.xml."""
     by_prefix = version_from_prefix(filename)
     parsed = parse_desc_version(desc_raw)
     desc_num: int | None

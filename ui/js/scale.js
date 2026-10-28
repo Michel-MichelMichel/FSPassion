@@ -1,7 +1,7 @@
-// Mise à l'échelle (5.1) : en dessous d'une taille minimale, la mise en page
+// Mise à l'échelle : en dessous d'une taille minimale, la mise en page
 // ne se réorganise plus ; toute l'interface est réduite d'un même facteur.
 //
-// 0.7.2 : largeur minimale abaissée de 1600 à 1140 px. Entre les deux, la
+// Largeur minimale abaissée de 1600 à 1140 px. Entre les deux, la
 // mise en page s'adapte sans rien réduire :
 // - la liste 1 garde au moins 2 colonnes de tuiles de 300 px
 //   (36 + 680 + 16 + 380 + 24 = 1136 px, ascenseur compris) ;

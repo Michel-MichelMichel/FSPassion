@@ -1,4 +1,4 @@
-// Renommer un mod (4.21) et Supprimer définitivement (4.7) — version 0.4.
+// Renommer un mod et Supprimer définitivement.
 // Ce sont les deux seules actions de FS Passion qui touchent aux fichiers des
 // mods eux-mêmes, et seulement après confirmation.
 
@@ -34,7 +34,7 @@ function whereText(parties, common) {
 }
 
 // ---------------------------------------------------------------------------
-// Renommer (4.21) : un seul avertissement, puis renommage répercuté partout
+// Renommer : un seul avertissement, puis renommage répercuté partout
 // ---------------------------------------------------------------------------
 
 export async function openRename(modId) {
@@ -56,7 +56,7 @@ export async function openRename(modId) {
     class: 'field-input rename-input', type: 'text', spellcheck: 'false', autocomplete: 'off', autofocus: true,
     maxlength: String(info.max + 20), 'aria-label': t('rename.label'),
   });
-  // Nom actuel conservé, sauf s'il est refusé par le jeu (A5) : la suggestion.
+  // Nom actuel conservé, sauf s'il est refusé par le jeu : la suggestion.
   input.value = invalidNow ? info.suggestion : info.rest;
   const err = h('div', { class: 'name-error', 'aria-live': 'polite' });
   const final = h('div', { class: 'rename-final' });
@@ -116,8 +116,8 @@ export async function openRename(modId) {
       clearSelection();
       if (res.state) setParties(res.state);
       await refreshLibrary();
-      // 0.5 : pas de message « renommé » (la liste le montre déjà).
-      // Deuxième temps (correction 0.4) : les listes ne suivent que sur accord.
+      // Pas de message « renommé » (la liste le montre déjà).
+      // Deuxième temps : les listes ne suivent que sur accord.
       await askUpdateLists(res);
     } catch (error) {
       ok.disabled = false;
@@ -159,7 +159,7 @@ async function askUpdateLists(res) {
 }
 
 // ---------------------------------------------------------------------------
-// Supprimer définitivement (4.7) : liste des mods et des parties, double
+// Supprimer définitivement : liste des mods et des parties, double
 // validation, Corbeille de Windows quand c'est possible
 // ---------------------------------------------------------------------------
 

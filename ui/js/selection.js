@@ -1,4 +1,4 @@
-// Sélection des mods (4.6) : dans les trois listes, une liste à la fois.
+// Sélection des mods : dans les trois listes, une liste à la fois.
 // Clic, Ctrl+clic, Maj+clic (plage), lasso, Ctrl+A, Échap, clavier.
 //
 // Les éléments sont désignés par l'identifiant du mod en minuscules (clé) ;

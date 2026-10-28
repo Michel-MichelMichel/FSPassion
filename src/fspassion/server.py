@@ -80,7 +80,7 @@ class Server:
         self._thread: threading.Thread | None = None
         self.quit_callback: Callable[[], None] | None = None
         self.focus_callback: Callable[[], None] | None = None
-        # Croix de la fenêtre (0.2.1) : cacher dans la zone de notification, ou
+        # Croix de la fenêtre : cacher dans la zone de notification, ou
         # quitter. Sans réglage : quitter.
         self.close_callback: Callable[[], None] | None = None
 
@@ -115,7 +115,7 @@ class Server:
         log.info("Serveur local : %s", self.base_url)
 
     def stop(self) -> None:
-        # 0.6.7 : shutdown() arrête la boucle mais garde le port ouvert jusqu'à la
+        # Shutdown() arrête la boucle mais garde le port ouvert jusqu'à la
         # fin du processus. La relance en administrateur démarrait alors avant que
         # le port soit libre (« Port 8765 indisponible ») : on le ferme vraiment.
         self.httpd.shutdown()
@@ -221,7 +221,7 @@ class Server:
                 str(body.get("action", "")), body.get("value"),
             )
 
-        # -- Parties et classement (4.1, 4.5, 4.6) --------------------------------
+        # -- Parties et classement --------------------------------
 
         def vid_of(core: Core, body: dict[str, Any]) -> str:
             return str(body.get("version") or core.active_version())
@@ -302,7 +302,7 @@ class Server:
                 return core.demo_state()
             raise AppError("error.bad_request")
 
-        # -- 0.4 : réconciliation, téléchargements, supprimer, renommer -----------
+        # -- Réconciliation, téléchargements, supprimer, renommer -----------
 
         @r("POST", "/api/reconcile")
         def _reconcile(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
@@ -342,7 +342,7 @@ class Server:
 
         @r("POST", "/api/mods/rename-lists")
         def _ren_lists(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
-            # 0.4 (correction) : deuxième temps du renommage, sur confirmation.
+            # Deuxième temps du renommage, sur confirmation.
             return core.mod_lists_rename(vid_of(core, body), body.get("old"), body.get("new"))
 
         @r("POST", "/api/deps")
@@ -363,7 +363,7 @@ class Server:
 
         @r("POST", "/api/mod-link")
         def _mod_link(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
-            # 0.7.3 : lien de téléchargement d'un mod requis ou facultatif (<SearchMods>).
+            # Lien de téléchargement d'un mod requis ou facultatif (<SearchMods>).
             return {"ok": core.open_mod_link(vid_of(core, body), body.get("mod"), body.get("url"))}
 
         @r("POST", "/api/reveal")
@@ -415,7 +415,7 @@ class Server:
 
         @r("POST", "/api/themes/save")
         def _themes(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
-            # Atelier de thèmes : outil de développement uniquement (5.5).
+            # Atelier de thèmes : outil de développement uniquement.
             if not core.dev or config.is_frozen():
                 raise AppError("error.forbidden", status=403)
             themes = body.get("themes")
@@ -426,7 +426,7 @@ class Server:
             fsutil.atomic_write_json(config.ui_dir() / "themes.json", data)
             return {"ok": True}
 
-        # -- 0.7.0 : sauvegarde de la configuration (4.17) --------------------
+        # -- Sauvegarde de la configuration --------------------
 
         @r("POST", "/api/backup/export")
         def _export(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
@@ -440,7 +440,7 @@ class Server:
         def _import(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
             return core.import_apply(body.get("token"), body.get("keep_paths"))
 
-        # -- 0.7.0 : ne plus utiliser FS Passion (4.18) ------------------------
+        # -- Ne plus utiliser FS Passion ------------------------
 
         @r("GET", "/api/stop/preview")
         def _stop_preview(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
@@ -456,13 +456,13 @@ class Server:
             threading.Timer(0.2, self._quit).start()
             return {"ok": True}
 
-        # -- 0.7.0 : mesures de performance (diagnostic) -----------------------
+        # -- Mesures de performance (diagnostic) -----------------------
 
         @r("POST", "/api/perf")
         def _perf(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
             return core.record_ui_perf(body)
 
-        # -- 0.7.0 : catalogue des DLC distant (4.11) --------------------------
+        # -- Catalogue des DLC distant --------------------------
 
         @r("POST", "/api/dlc/refresh")
         def _dlc_refresh(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
@@ -616,7 +616,7 @@ class _RequestHandler(BaseHTTPRequestHandler):
             return
         handler = self.app.routes.get((method, path))
         if handler is None:
-            # Corps éventuel non lu : la connexion ne doit pas resservir (0.8.8).
+            # Corps éventuel non lu : la connexion ne doit pas resservir.
             self.close_connection = True
             self._error(404, "error.not_found")
             return

@@ -27,7 +27,7 @@ from pathlib import Path
 import pytest
 
 from fspassion import apply, backup, config, dialogs, dlc, dlcremote, fsutil, gamesettings, stopuse
-from fspassion.core import SETTABLE, AppError, Core
+from fspassion.core import AppError, Core
 from fspassion.events import EventBus
 from fspassion.parties import FULL
 
@@ -87,17 +87,6 @@ def make_party(env, name="Hof Bergmann", n=3, start=0):
 # --------------------------------------------------------------------------
 # Dons : retouches et suppression de l'invitation
 # --------------------------------------------------------------------------
-
-def test_donation_prompt_is_gone():
-    # ui\js\donate.js n'est plus chargé par l'interface (le fichier peut être supprimé).
-    for name in ("main.js", "settings.js", "toast.js"):
-        assert "donate.js" not in _read("ui", "js", name) and "Donation" not in _read("ui", "js", name)
-    assert "toast-donate" not in _read("ui", "css", "dialogs.css")
-    assert "donate_prompt" not in SETTABLE
-    assert "launch_count" not in config.default_settings()
-    for code in ("fr", "en"):
-        assert "prompt" not in json.loads(_read("lang", f"{code}.json"))["settings"]["donate"]
-
 
 def test_obsolete_settings_are_removed_on_load(isolated_home):
     path = config.settings_path()

@@ -1,8 +1,8 @@
-// Messages courts (5.4) : en bas à droite, au-dessus du pied de page.
+// Messages courts : en bas à droite, au-dessus du pied de page.
 // Ils disparaissent après 6 secondes (10 pour un avertissement), et restent
 // tant que la souris est dessus ; les erreurs restent jusqu'à leur fermeture.
 //
-// 0.2.1 — chaque message est aussi gardé dans l'historique des notifications
+// Chaque message est aussi gardé dans l'historique des notifications
 // (bouton cloche de l'en-tête) : un message disparu trop vite peut être relu.
 
 import { h, icon } from './dom.js';

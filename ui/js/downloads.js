@@ -79,7 +79,7 @@ function storageLabel(path, i) {
 
 function buildDialog(res, rows) {
   const versions = res.versions || [];
-  // Colonne « Stockage » (0.6, 4.20) : seulement si une version en a plusieurs.
+  // Colonne « Stockage » : seulement si une version en a plusieurs.
   const withStorage = versions.some((v) => (v.storages || []).length > 1);
   const table = h('div', { class: `dl-table${withStorage ? ' has-storage' : ''}`, role: 'table' });
   const count = h('span', { class: 'dl-count' });
@@ -115,7 +115,7 @@ function buildDialog(res, rows) {
       r.checked = box.checked;
       draw();
     });
-    // Version du jeu : détectée, modifiable (G3).
+    // Version du jeu : détectée, modifiable.
     const sel = h('select', { class: 'field-select', 'aria-label': t('downloads.col_version') });
     const ids = versions.map((v) => v.id);
     if (!ids.includes(r.vid)) sel.append(h('option', { value: r.vid, text: r.vid }));

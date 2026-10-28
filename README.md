@@ -1,13 +1,5 @@
 # FS Passion
 
-<!--
-  Image or presentation video. GitHub cannot play a YouTube video inside a
-  README: the usual way is a clickable thumbnail. Replace VIDEO_ID twice with
-  the identifier of the video (the part after "watch?v=") and remove these
-  comment marks:
-
-[![FS Passion — presentation video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
--->
 <img width="1004" alt="FS Passion" src="assets/FS_Passion_logo/Final_grand.png" />
 
 **English** · [Français](readme/README.fr.md) · [Deutsch](readme/README.de.md) · [Español](readme/README.es.md) · [Español (Latinoamérica)](readme/README.es-419.md) · [Italiano](readme/README.it.md) · [Português (Brasil)](readme/README.pt-BR.md) · [Português (Portugal)](readme/README.pt-PT.md) · [Nederlands](readme/README.nl.md) · [Polski](readme/README.pl.md) · [Čeština](readme/README.cs.md) · [Dansk](readme/README.da.md) · [Suomi](readme/README.fi.md) · [Magyar](readme/README.hu.md) · [Norsk bokmål](readme/README.nb.md) · [Română](readme/README.ro.md) · [Русский](readme/README.ru.md) · [Svenska](readme/README.sv.md) · [Türkçe](readme/README.tr.md) · [Українська](readme/README.uk.md) · [Tiếng Việt](readme/README.vi.md) · [Bahasa Indonesia](readme/README.id.md) · [日本語](readme/README.ja.md) · [한국어](readme/README.ko.md) · [简体中文](readme/README.zh-Hans.md) · [繁體中文](readme/README.zh-Hant.md)

@@ -9,7 +9,7 @@ Emplacements des fichiers :
 - mode portable : si « portable.txt » est à côté de l'exécutable, tout va
   dans <dossier de l'exécutable>\\data\\.
 
-Aucun chemin n'est écrit en dur (I6) : tout vient de l'environnement Windows.
+Aucun chemin n'est écrit en dur : tout vient de l'environnement Windows.
 """
 
 from __future__ import annotations
@@ -151,7 +151,7 @@ def load_app_info() -> dict[str, Any]:
     return info
 
 
-# Adresses web que l'interface peut ouvrir (0.6.5) : seulement celles
+# Adresses web que l'interface peut ouvrir : seulement celles
 # d'app_info.json, désignées par une clé, en https et sur le domaine prévu.
 WEB_LINK_HOSTS: dict[str, tuple[str, ...]] = {
     "github": ("github.com",),
@@ -189,10 +189,10 @@ def default_version_cfg() -> dict[str, Any]:
         "mods_dir": "",
         "extra_mods_dirs": [],
         "launch_method": "auto",
-        # Arguments de lancement (0.3), cochés par version.
+        # Arguments de lancement, cochés par version.
         "launch_args": {"skip_start_videos": False, "cheats": False},
         # Dernières valeurs proposées par la détection, pour savoir si un
-        # champ a été personnalisé (règle de préremplissage 4.13).
+        # champ a été personnalisé (règle de préremplissage).
         "auto": {"game_exe": "", "user_dir": "", "mods_dir": ""},
     }
 
@@ -211,10 +211,10 @@ def default_settings() -> dict[str, Any]:
         "internet_access": True,
         "show_notice_at_start": True,
         "welcome_done": False,
-        # Tour guidé (0.9.0) : ampoule mise en évidence une seule fois.
+        # Tour guidé : ampoule mise en évidence une seule fois.
         "tour_hint_shown": False,
         "minimize_on_launch": True,
-        # Zone de notification (0.2.1)
+        # Zone de notification
         "close_to_tray": True,
         "focus_after_game": True,
         "tray_hint_shown": False,
@@ -225,14 +225,14 @@ def default_settings() -> dict[str, Any]:
         "window": {"x": None, "y": None, "width": None, "height": None, "maximized": False},
         "versions": {},
         "anomalies": {"hidden_types": [], "hidden_folders": {}, "seen": {}},
-        # Contrôle de l'override (3.5, 0.3) : dossier inconnu laissé tel quel
+        # Contrôle de l'override : dossier inconnu laissé tel quel
         # (« Ne rien faire »), par version.
         "override_ignored": {},
-        # Téléchargements (4.8, 0.4) : fichiers à ne plus proposer (nom, taille,
+        # Téléchargements : fichiers à ne plus proposer (nom, taille,
         # date) et intégrations reportées à la fermeture du jeu.
         "downloads_ignored": [],
         "downloads_postponed": [],
-        # Mode démonstration (14.2, 0.3) : chemins des versions dans le dossier
+        # Mode démonstration : chemins des versions dans le dossier
         # de démonstration ; les vrais chemins (« versions ») restent intacts.
         "demo": {"active": False, "versions": {}, "saved_active_version": None, "offered": False},
     }
@@ -256,7 +256,7 @@ class Settings:
         self.path = path or settings_path()
         self._lock = threading.RLock()
         self._data: dict[str, Any] = default_settings()
-        # « Ne plus utiliser FS Passion » (0.7.0) : une fois settings.json
+        # « Ne plus utiliser FS Passion » : une fois settings.json
         # supprimé à la demande de l'utilisateur, il n'est plus jamais réécrit.
         self.frozen = False
         # Fichier illisible resté en place (mise de côté impossible) : aucune
@@ -278,7 +278,7 @@ class Settings:
                     raise ValueError("format inattendu")
             except (OSError, ValueError) as exc:
                 # Fichier corrompu : on le met de côté et on repart des valeurs
-                # par défaut (jamais de plantage silencieux, cf. chapitre 6).
+                # par défaut (jamais de plantage silencieux, ).
                 stamp = time.strftime("%Y%m%d-%H%M%S")
                 broken = self.path.with_name(f"settings.json.illisible-{stamp}")
                 try:
@@ -351,7 +351,7 @@ class Settings:
 
     def modify_version(self, vid: str, fn: Any, save: bool = True) -> Any:
         """Lit, modifie et écrit la configuration d'une version d'un seul bloc
-        (0.7.1). `fn(cfg)` reçoit la configuration actuelle et renvoie
+        `fn(cfg)` reçoit la configuration actuelle et renvoie
         (nouvelle_cfg, résultat). Évite qu'une écriture faite pendant le calcul
         (détection au démarrage, case cochée) soit écrasée par une copie ancienne."""
         with self._lock:

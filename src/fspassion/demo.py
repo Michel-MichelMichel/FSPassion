@@ -1,4 +1,4 @@
-"""Pack de démonstration (14.2) : essayer FS Passion sans posséder le jeu.
+"""Pack de démonstration : essayer FS Passion sans posséder le jeu.
 
 Une seule archive, FSPassion-demo.zip (fabriquée par tools/make_demo_pack.py),
 contient de faux mods pour plusieurs versions du jeu. Elle est :
@@ -20,7 +20,6 @@ from __future__ import annotations
 import hashlib
 import logging
 import os
-import shutil
 import time
 import urllib.request
 import zipfile
@@ -122,6 +121,7 @@ def _extract(pack: Path, dest: Path) -> None:
         if len(members) > MAX_FILES or sum(m.file_size for m in members) > MAX_BYTES:
             raise DemoError("demo.bad_pack")
         root = dest.resolve()
+        written = 0  # octets réellement copiés (les tailles des en-têtes ZIP peuvent mentir)
         for m in members:
             name = m.filename.replace("\\", "/")
             if name.startswith("/") or ":" in name or any(part == ".." for part in name.split("/")):
@@ -134,7 +134,14 @@ def _extract(pack: Path, dest: Path) -> None:
                 continue
             target.parent.mkdir(parents=True, exist_ok=True)
             with zf.open(m) as src, open(target, "wb") as out:
-                shutil.copyfileobj(src, out)
+                while True:
+                    chunk = src.read(1024 * 256)
+                    if not chunk:
+                        break
+                    written += len(chunk)
+                    if written > MAX_BYTES:
+                        raise DemoError("demo.bad_pack")
+                    out.write(chunk)
 
 
 def install(app_info: dict[str, Any], internet: bool) -> dict[str, Any]:
@@ -217,7 +224,7 @@ def version_cfgs(data: dict[str, Any]) -> dict[str, dict[str, Any]]:
 
 def remove_tree(root: Path) -> None:
     """Efface un dossier de démonstration. Les liens (jonctions, liens
-    symboliques) sont retirés comme des liens, sans suivre leur cible (I10)."""
+    symboliques) sont retirés comme des liens, sans suivre leur cible."""
     base = config.local_dir().resolve()
     if not fsutil.is_within(root, base) or root.resolve() == base:
         raise DemoError("error.forbidden", status=403)

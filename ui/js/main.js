@@ -82,10 +82,10 @@ function maybeOpenAnomalies() {
 
 // Fenêtres du démarrage, l'une après l'autre (chacune seulement quand aucune
 // autre n'est ouverte) : anomalies nouvelles, override inconnu, démonstration,
-// mods absents des dossiers de mods (0.4), nouveaux téléchargements (0.4).
+// mods absents des dossiers de mods, nouveaux téléchargements.
 let bootDone = false; // bienvenue et notice déjà proposées
 
-// 0.9.0 : en dernier, l'ampoule du tour guidé est mise en évidence une fois
+// En dernier, l'ampoule du tour guidé est mise en évidence une fois
 // (premier lancement, après la bienvenue et la notice). Pendant le tour,
 // aucune de ces fenêtres ne s'ouvre ; elles reprennent à sa fermeture.
 function nextStartupStep() {
@@ -105,8 +105,8 @@ function scheduleLibraryRefresh() {
   libTimer = setTimeout(() => refreshLibrary().catch(() => {}), 120);
 }
 
-// Glisser-déposer (4.6) : ce que chaque liste accepte, et ce que fait le dépôt.
-// `copy` : Ctrl maintenu (0.4, correction). Entre les listes 2 et 3, la copie
+// Glisser-déposer : ce que chaque liste accepte, et ce que fait le dépôt.
+// `copy` : Ctrl maintenu. Entre les listes 2 et 3, la copie
 // ajoute le mod à l'autre liste sans le retirer de la sienne ; vers la liste 1,
 // il n'y a rien à copier.
 function dropAccepts(src, dst, copy = false) {
@@ -126,7 +126,7 @@ function dropMods(src, dst, ids, copy = false) {
   else if (src === 'l3' && dst === 'l1') removeMods('common', ids);
 }
 
-// Raccourcis de la sélection (4.6) : Échap, Ctrl+A, Suppr.
+// Raccourcis de la sélection : Échap, Ctrl+A, Suppr.
 function selectionKeys(e) {
   if (isDialogOpen() || isDragging()) return;
   const inField = e.target.closest && e.target.closest('input, textarea, select');
@@ -177,7 +177,7 @@ async function start() {
     onNotice: () => openNotice(),
     onAnomalies: () => openAnomalies(),
     onAtelier: () => toggleAtelier(app),
-    // 0.9.0 : « Visite guidée » (Paramètres → Aide) ferme les paramètres d'abord.
+    // « Visite guidée » (Paramètres → Aide) ferme les paramètres d'abord.
     onTour: () => {
       closeSettings();
       setTimeout(() => startTour(), 300);
@@ -189,7 +189,7 @@ async function start() {
   renderAll();
   app.classList.remove('is-loading');
   started = true;
-  // Mesures pour le diagnostic (0.7.0) : affichage prêt, fluidité du défilement.
+  // Mesures pour le diagnostic : affichage prêt, fluidité du défilement.
   initPerf();
 
   subscribe('state', () => {
@@ -227,7 +227,7 @@ async function start() {
     pruneSelection();
     if (parties && parties.notice) toast(parties.notice.key, parties.notice.params || {}, parties.notice.level || 'warn');
     // Override vers un dossier inconnu : « Adopter », « Réappliquer » ou
-    // « Ne rien faire » (3.5), quand aucune autre fenêtre n'est ouverte.
+    // « Ne rien faire », quand aucune autre fenêtre n'est ouverte.
     if (!isDialogOpen() && !isTourOpen()) maybeCheckOverride();
   });
   // Pendant « Appliquer », le bouton est inactif.
@@ -241,7 +241,7 @@ async function start() {
 
   initReconcile();
   connectEvents();
-  // 0.9.1 : réveil après la dormance (fenêtre cachée ou réduite pendant le
+  // Réveil après la dormance (fenêtre cachée ou réduite pendant le
   // jeu) : les événements de la veille ont pu se perdre, tout est relu.
   document.addEventListener('fsp-wake', () => {
     connectEvents();
@@ -287,7 +287,7 @@ async function start() {
     if (!ev.up) downTimer = setTimeout(showClosed, 4000);
   });
 
-  // Reprise du focus : nouveau scan rapide (liste, tailles, dates), 4.4.
+  // Reprise du focus : nouveau scan rapide (liste, tailles, dates).
   let lastFocusScan = 0;
   window.addEventListener('focus', () => {
     const now = Date.now();
@@ -309,14 +309,14 @@ async function start() {
 
   await Promise.all([refreshLibrary().catch(toastError), refreshParties().catch(toastError)]);
 
-  // Désinstallation (4.18, 0.7.0) : lancé par le désinstalleur Windows avec
+  // Désinstallation : lancé par le désinstalleur Windows avec
   // --uninstall, FS Passion ouvre directement « Ne plus utiliser FS Passion ».
   if (store.app.app.uninstall_mode) {
     openStopUsing({ uninstall: true });
     return;
   }
   // Premier lancement : bienvenue (langue), puis notice. Ensuite : notice à
-  // chaque démarrage tant que la case reste cochée (4.15).
+  // chaque démarrage tant que la case reste cochée.
   if (!store.app.settings.welcome_done) {
     openWelcome(() => openNotice());
   } else if (store.app.settings.show_notice_at_start !== false) {

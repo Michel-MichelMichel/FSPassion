@@ -51,7 +51,7 @@ def test_header_goes_on_two_lines_when_narrow():
     js = _read("ui", "js", "header.js")
     css = _read("ui", "css", "layout.css")
     assert "export function fitHeader()" in js
-    # 0.7.9 : avec hystérésis (test_v079).
+    # 0.7.9 : avec hystérésis (test_interface_retouches).
     assert "classList.toggle('is-compact', compact)" in js
     assert "setContentMinWidth(naturalWidth(cs))" in js
     assert "window.addEventListener('resize', fitHeader)" in js

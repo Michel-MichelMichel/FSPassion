@@ -2,7 +2,7 @@
 
 import threading
 
-from tests.test_v04 import env  # noqa: F401  (fixture)
+from tests.test_mods_operations import env  # noqa: F401  (fixture)
 
 from fspassion import detect
 

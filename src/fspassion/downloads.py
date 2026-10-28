@@ -144,7 +144,7 @@ def scan_folder(folder: Path, ignored: set[str] | None = None, now: float | None
 
 
 def assess(item: dict[str, Any], vp: VersionPaths | None) -> dict[str, Any]:
-    """État d'un téléchargement pour une version du jeu (4.8) :
+    """État d'un téléchargement pour une version du jeu :
     new · update (de → vers) · older · present · conflict · unconfigured."""
     if vp is None or vp.mods_dir is None or not vp.mods_dir.is_dir():
         return {"state": "unconfigured", "checked": False}
@@ -202,7 +202,7 @@ def _aside(fsp_dir: Path, path: Path, stamp: str) -> Path:
     while os.path.lexists(dst):
         dst = base / f"{path.stem} ({n}){path.suffix}"
         n += 1
-    fsutil.relocate(path, dst)  # copie vérifiée si le mod est sur un autre disque (0.6)
+    fsutil.relocate(path, dst)  # copie vérifiée si le mod est sur un autre disque
     log.warning("Ancienne version mise de côté : %s → %s", path, dst)
     return dst
 

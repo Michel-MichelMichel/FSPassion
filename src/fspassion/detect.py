@@ -1,4 +1,4 @@
-"""Détection des installations du jeu (4.14).
+"""Détection des installations du jeu.
 
 Il n'existe pas de registre unique des installations : chaque plateforme tient
 le sien. FS Passion interroge chaque source, puis reconnaît la version par le
@@ -105,7 +105,7 @@ def version_of_exe(path: str | Path) -> GameVersion | None:
 
 
 def game_root_of_exe(path: str | Path) -> Path:
-    """Dossier du jeu : dossier de l'exécutable, sans x64\\ ni x86\\ (2.3)."""
+    """Dossier du jeu : dossier de l'exécutable, sans x64\\ ni x86\\."""
     p = Path(path).parent
     if p.name.lower() in ("x64", "x86"):
         p = p.parent
@@ -113,7 +113,7 @@ def game_root_of_exe(path: str | Path) -> Path:
 
 
 def launcher_path(folder: Path, v: GameVersion) -> Path:
-    """Exécutable à proposer : le premier de root_exes présent (0.8.4)."""
+    """Exécutable à proposer : le premier de root_exes présent."""
     names = _list_lower(folder)
     for x in v.root_exes:
         if x.lower() in names:
@@ -181,7 +181,7 @@ def steam_libraries(root: Path | None = None) -> list[Path]:
         data = parse_vdf(vdf.read_text(encoding="utf-8", errors="replace"))
     except OSError:
         return libs
-    folders = data.get("libraryfolders") or data.get("LibraryFolders".lower()) or {}
+    folders = data.get("libraryfolders") or {}
     for key, value in folders.items():
         path = None
         if isinstance(value, dict):
@@ -427,7 +427,7 @@ def default_user_dir(v: GameVersion, documents: Path | None = None) -> Path | No
 
 
 def suggest_mods_dir(v: GameVersion, user_dir: Path | None) -> Path | None:
-    """Suggestion de mods_dir (4.14)."""
+    """Suggestion de mods_dir."""
     if user_dir is None:
         return None
     default = user_dir / "mods"
@@ -489,7 +489,7 @@ def detect_all() -> dict[str, dict[str, Any]]:
 
 
 # --------------------------------------------------------------------------
-# Règles de préremplissage (4.13)
+# Règles de préremplissage
 # --------------------------------------------------------------------------
 
 PREFILL_FIELDS = ("game_exe", "user_dir", "mods_dir")
@@ -536,7 +536,7 @@ def prefill(cfg: dict[str, Any], det: dict[str, Any], vid: str) -> tuple[dict[st
 
 
 # --------------------------------------------------------------------------
-# Plateforme d'un jeu installé (pour le lancement, 4.3)
+# Plateforme d'un jeu installé (pour le lancement)
 # --------------------------------------------------------------------------
 
 _CROCKFORD = "0123456789abcdefghjkmnpqrstvwxyz"

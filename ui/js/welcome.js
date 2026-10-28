@@ -1,4 +1,4 @@
-// Bienvenue (premier lancement) et notice (4.15).
+// Bienvenue (premier lancement) et notice.
 
 import { api } from './api.js';
 import { openDialog } from './dialog.js';
@@ -15,10 +15,10 @@ export function openWelcome(onDone) {
     clear(body);
     body.append(
       h('div', { class: 'welcome-hero' },
-        // 0.8.x : logo en haut à gauche, sélecteur de langue en haut à droite
+        // Logo en haut à gauche, sélecteur de langue en haut à droite
         // (le même que dans Paramètres > Affichage), texte en bas.
         h('div', { class: 'welcome-top' },
-          // 0.7.0 : le logo FS Passion, comme dans l'en-tête et « À propos ».
+          // Le logo FS Passion, comme dans l'en-tête et « À propos ».
           h('div', { class: 'welcome-logo', role: 'img', 'aria-label': 'FS Passion' }, h('span', { class: 'app-logo app-logo-art', 'aria-hidden': 'true' })),
           languageSelect(async (code) => {
             await changeLanguage(code);
@@ -71,7 +71,7 @@ export function openNotice() {
   noticeDlg = openDialog(h('div', { style: { display: 'contents' } }, content, foot), {
     title: t('notice.title'),
     cls: 'dlg-notice',
-    // 0.8.4 : un clic sur le fond ne ferme plus la notice (bouton « J'ai compris »).
+    // Un clic sur le fond ne ferme plus la notice (bouton « J'ai compris »).
     backdropClose: false,
     dragWindow: true,
     onClose: () => { noticeDlg = null; },

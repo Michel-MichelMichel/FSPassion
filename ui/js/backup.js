@@ -1,4 +1,4 @@
-// Exporter et importer la configuration (4.17) — version 0.7.0.
+// Exporter et importer la configuration.
 // Exporter : dialogue « Enregistrer sous » de Windows, puis un fichier JSON.
 // Importer : dialogue « Ouvrir », aperçu du fichier, option « Conserver vos
 // chemins actuels » (cochée), puis confirmation. L'import n'applique rien.
@@ -65,7 +65,7 @@ function versionRow(v) {
     info && info.logo ? gameLogo(info.logo, 'imp-logo') : null,
     h('div', { class: 'imp-ver-text' },
       h('div', { class: 'imp-ver-name', text: v.name }),
-      // 0.7.0 : deux lignes seulement (nom, puis détail sur une ligne, tronqué).
+      // Deux lignes seulement (nom, puis détail sur une ligne, tronqué).
       h('div', { class: 'imp-ver-count' },
         `${t('backup.import.parties', { count: v.parties })} · ${t('backup.import.common', { count: v.common })}`,
         v.names && v.names.length ? h('span', { class: 'imp-ver-names', text: ` · ${v.names.join(', ')}` }) : null)));

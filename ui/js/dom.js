@@ -29,7 +29,7 @@ export function clear(el) {
 }
 
 // Icône Lucide colorée par le thème (masque CSS sur currentColor).
-// Copie réussie (0.6) : pas de notification, l'icône du bouton devient une coche
+// Copie réussie : pas de notification, l'icône du bouton devient une coche
 // un court instant.
 export function flashCopied(btn) {
   if (!btn) return;

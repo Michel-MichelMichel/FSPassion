@@ -1,4 +1,4 @@
-// Paramètres (4.13) : fenêtre unique de taille fixe, au-dessus de la fenêtre
+// Paramètres : fenêtre unique de taille fixe, au-dessus de la fenêtre
 // principale. Une colonne de navigation à gauche, une seule page affichée à la
 // fois : Jeu et chemins, Affichage, Application, Aide et à propos. Pas
 // d'accordéon ni d'animation de dépliage : on change de page d'un coup.
@@ -22,8 +22,8 @@ import { openStopUsing } from './stopuse.js';
 import { toast, toastError } from './toast.js';
 
 let dlg = null;
-// Sous-sections des Paramètres pour le défilement à la molette (0.6.3).
-// 0.7.9 : thèmes, un cran = une rangée de pastilles (avec 20 thèmes, le bloc
+// Sous-sections des Paramètres pour le défilement à la molette.
+// Thèmes, un cran = une rangée de pastilles (avec 20 thèmes, le bloc
 // entier faisait un saut énorme). Les pastilles d'une même rangée ont le même
 // haut : un seul arrêt par rangée.
 const SNAP_TARGETS = [
@@ -53,7 +53,7 @@ const SECTIONS = [
   { id: 'help', ico: 'info', build: buildHelp },
 ];
 
-// Anciens noms de sections (0.1.x) : un appel avec l'un d'eux ouvre la page
+// Anciens noms de sections (.x) : un appel avec l'un d'eux ouvre la page
 // qui contient désormais ce réglage.
 const ALIASES = {
   paths: 'game', anomalies: 'game',
@@ -78,7 +78,7 @@ export function openSettings(section) {
     nav.append(btn);
   }
   pane = h('div', { class: 'settings-pane' });
-  // Molette (0.6.3) : un cran = une sous-section (un chemin, un réglage, un
+  // Molette : un cran = une sous-section (un chemin, un réglage, un
   // bloc), et non plus une section entière. Les points trop proches (< 90 px)
   // sont fusionnés, pour qu'un cran fasse toujours avancer.
   snapWheel(pane, () => {
@@ -95,7 +95,7 @@ export function openSettings(section) {
   });
   frameSvg = svgEl('svg', { class: 'set-frame', 'aria-hidden': 'true', focusable: 'false' });
   framePath = svgEl('path', {});
-  // 0.7.8 : lueur qui court le long du contour (thèmes bicolores, themes.css).
+  // Lueur qui court le long du contour (thèmes bicolores, themes.css).
   frameGlow = [
     svgEl('path', { class: 'set-frame-glow set-frame-halo', pathLength: '1000' }),
     svgEl('path', { class: 'set-frame-glow', pathLength: '1000' }),
@@ -269,7 +269,7 @@ async function browse(kind, field, vid, initial) {
   }
 }
 
-// Bloc d'une page : un titre, puis son contenu. 0.7.4 : `headCtl`, un réglage
+// Bloc d'une page : un titre, puis son contenu. `headCtl`, un réglage
 // posé à droite sur la ligne du titre.
 function group(ico, titleKey, content, cls = '', headCtl = null) {
   if (headCtl) headCtl.classList.add('set-head-ctl');
@@ -278,7 +278,7 @@ function group(ico, titleKey, content, cls = '', headCtl = null) {
     ...[].concat(content).filter(Boolean));
 }
 
-// Contenu replié par défaut derrière un texte (0.4, correction) : le bouton
+// Contenu replié par défaut derrière un texte : le bouton
 // affiche « Afficher… », puis « Masquer… » quand le contenu est ouvert.
 function foldable(showKey, hideKey, content) {
   const body = h('div', { class: 'fold-body' }, content);
@@ -321,7 +321,7 @@ function buildGame() {
       pathField(v, 'user_dir', 'folder'),
       modsDirs(v),
       derived(v),
-      // 0.7.1 : deux boutons, pour que l'on sache toujours ce qui sera modifié.
+      // Deux boutons, pour que l'on sache toujours ce qui sera modifié.
       detectButtons(v),
       launchMethod(v),
     ));
@@ -331,7 +331,7 @@ function buildGame() {
   return out;
 }
 
-// Essayer FS Passion sans le jeu (14.2), ou quitter le mode démonstration.
+// Essayer FS Passion sans le jeu, ou quitter le mode démonstration.
 function buildDemo() {
   if (isDemo()) {
     return [
@@ -352,7 +352,7 @@ function buildDemo() {
   ];
 }
 
-// Carte d'un chemin (4.13, 0.1.1) : au survol, un cadre lumineux l'entoure,
+// Carte d'un chemin : au survol, un cadre lumineux l'entoure,
 // le titre et le champ glissent légèrement vers le haut, et l'état « Trouvé »
 // apparaît (il est masqué le reste du temps ; les erreurs restent visibles).
 // Le cadre s'éclaire davantage près de la souris.
@@ -397,8 +397,8 @@ function pathField(v, field, kind, opts = {}) {
     opts.help ? h('div', { class: 'set-help', text: opts.help }) : null);
 }
 
-// Dossiers de mods (4.13, 4.20) : chemin n° 1 (principal), puis jusqu'à deux
-// dossiers de stockage supplémentaires (0.6), en général sur d'autres disques.
+// Dossiers de mods : chemin n° 1 (principal), puis jusqu'à deux
+// dossiers de stockage supplémentaires, en général sur d'autres disques.
 function modsDirs(v) {
   const wrap = h('div', { class: 'path-field' });
   wrap.append(h('div', { class: 'set-group-title', text: t('settings.paths.mods_dirs') }));
@@ -464,7 +464,7 @@ async function setStorages(v, dirs) {
     await refreshState();
     if (v.id === activeVersion()) await refreshLibrary();
     // Un dossier sur un autre disque, sans droits pour les liens symboliques :
-    // FS Passion explique et propose les solutions (4.20).
+    // FS Passion explique et propose les solutions.
     const r = res.rights || {};
     if (res.storage && res.storage.needs_symlinks && r.symlinks === false && r.windows) openRights(r);
   } catch (err) {
@@ -517,14 +517,14 @@ async function rightsAction(action) {
   }
 }
 
-// Fenêtre « Droits pour les autres disques » (4.20) : administrateur (case
+// Fenêtre « Droits pour les autres disques » : administrateur (case
 // cochée par FS Passion, avec ses conséquences) ou Mode développeur. Un compte
 // Windows standard n'a que le Mode développeur (sinon FS Passion tournerait
 // sous un autre compte, avec d'autres dossiers).
 function openRights(r) {
   const standard = !!r.standard_user;
   // En développement (lancer_dev.bat), pas de réglage permanent : une relance
-  // en administrateur, pour cette fois (0.6.1).
+  // en administrateur, pour cette fois.
   const once = !store.app.frozen;
   const consequences = h('ul', { class: 'rights-list' },
     h('li', { text: t('rights.uac') }),
@@ -590,7 +590,7 @@ function launchMethod(v) {
     });
     seg.append(b);
   }
-  // 0.3 : bloc « Mode de lancement du jeu » sur un fond zébré, puis les arguments.
+  // Bloc « Mode de lancement du jeu » sur un fond zébré, puis les arguments.
   const mode = h('div', { class: 'path-field launch-mode' },
     h('div', { class: 'set-group-title', text: t('settings.paths.launch_method') }),
     h('div', { class: 'set-row' }, seg),
@@ -599,8 +599,8 @@ function launchMethod(v) {
   return h('div', { class: 'launch-wrap' }, mode, launchArgs(v));
 }
 
-// Arguments de lancement (0.3), cochés par version du jeu.
-// 0.4 : ils ne sont ajoutés par FS Passion que quand il lance l'exécutable.
+// Arguments de lancement, cochés par version du jeu.
+// Ils ne sont ajoutés par FS Passion que quand il lance l'exécutable.
 // Steam (qui demanderait de confirmer à chaque lancement) et Epic Games les
 // prennent dans leurs propres options de lancement : texte à copier, et chemin
 // du menu. Microsoft Store / Xbox : aucun moyen de les transmettre.
@@ -612,7 +612,7 @@ function launchArgs(v) {
     switchCtl(labelKey, !!args[key], (on) => saveLaunchArgs(v, { [key]: on })),
     h('span', { class: 'set-help', text: t(infoKey) }),
     extra);
-  // 0.4 (correction) : replié par défaut, la section est longue.
+  // Replié par défaut, la section est longue.
   return foldable('settings.paths.args_show', 'settings.paths.args_hide', h('div', { class: 'path-field launch-args' },
     h('div', { class: 'set-group-title', text: t('settings.paths.args_title') }),
     h('div', { class: 'set-help', text: t(`settings.paths.args_help_${mode}`, { game: v.name }) }),
@@ -621,7 +621,7 @@ function launchArgs(v) {
     platformArgs(v, li, mode)));
 }
 
-// État de la console dans game.xml, et bouton pour l'activer (0.4).
+// État de la console dans game.xml, et bouton pour l'activer.
 function consoleLine(v, li) {
   const line = h('div', { class: 'console-line' });
   if (li.controls === true) {
@@ -671,7 +671,7 @@ function platformArgs(v, li, mode) {
 }
 
 async function saveLaunchArgs(v, change) {
-  // 0.7.1 : valeurs actuelles, pas celles de l'affichage, pour ne pas annuler
+  // Valeurs actuelles, pas celles de l'affichage, pour ne pas annuler
   // une case cochée entre-temps (détection, autre case).
   const now = store.app?.versions?.find((x) => x.id === v.id)?.cfg?.launch_args;
   const cur = now || v.cfg.launch_args || {};
@@ -697,7 +697,7 @@ async function setPath(vid, field, value) {
 }
 
 // Détection : « cette version » ne touche qu'à la version choisie ; « toutes les
-// versions » touche à toutes (0.7.1).
+// versions » touche à toutes.
 function detectButtons(v) {
   const one = detectButton(v, 'settings.paths.detect_one', v.id);
   const all = detectButton(v, 'settings.paths.detect_all', null);
@@ -772,11 +772,11 @@ export async function changeLanguage(code) {
   }
 }
 
-// 0.7.1 : un seul bouton-liste (icône Langue, nom de la langue en cours). Un clic
+// Un seul bouton-liste (icône Langue, nom de la langue en cours). Un clic
 // déplie la liste verticale des langues. Ajouter une langue ne change rien ici.
-// 0.7.4 : sur la ligne du titre « Langue » ; la liste s'ouvre par-dessus le
+// Sur la ligne du titre « Langue » ; la liste s'ouvre par-dessus le
 // reste, sans rien décaler, et se ferme par Échap, un clic ailleurs ou un choix.
-// 0.8.x : l'icône Langue est placée devant le bouton-liste, plus à l'intérieur.
+// L'icône Langue est placée devant le bouton-liste, plus à l'intérieur.
 // Exporté : la fenêtre de bienvenue utilise le même sélecteur.
 export function languageSelect(onPick) {
   const current = store.app.languages.find((l) => l.code === currentLang()) || { name: currentLang() };
@@ -844,7 +844,7 @@ function themeLabel(th) {
 
 function buildTheme() {
   const s = store.app.settings;
-  // 0.6.3 : thèmes sombres, puis thèmes clairs. 0.7.8 : les thèmes bicolores
+  // Thèmes sombres, puis thèmes clairs. Les thèmes bicolores
   // d'abord, puis les thèmes inspirés des thèmes populaires, sombres puis
   // clairs, dans le même ordre (chaque thème sombre au-dessus de son jumeau).
   const swatch = (th) => {
@@ -944,7 +944,7 @@ function buildDownloads() {
   ];
 }
 
-// Fenêtre et zone de notification (0.2.1, demande 14.1).
+// Fenêtre et zone de notification.
 function buildWindow() {
   const s = store.app.settings;
   const trayOk = !!(store.app.app && store.app.app.tray);
@@ -956,7 +956,7 @@ function buildWindow() {
   ];
 }
 
-// Connexion Internet et catalogue des DLC distant (4.11, 0.7.0).
+// Connexion Internet et catalogue des DLC distant.
 let catalogChecking = false;
 
 function catalogText(cat) {
@@ -1011,7 +1011,7 @@ function buildInternet() {
   ];
 }
 
-// Sauvegarde de la configuration (4.17, 0.7.0).
+// Sauvegarde de la configuration.
 function buildBackup() {
   const demo = isDemo();
   const exp = h('button', { class: 'btn', type: 'button' }, icon('file-up'), t('settings.backup.export'));
@@ -1031,11 +1031,11 @@ function buildBackup() {
   ];
 }
 
-// Ne plus utiliser FS Passion (4.18, 0.7.0).
+// Ne plus utiliser FS Passion.
 function buildStop() {
   return [
     h('div', { class: 'alert-box', text: t('settings.stop.text') }),
-    // 0.8.4 : un petit espace entre l'avertissement et le bouton.
+    // Un petit espace entre l'avertissement et le bouton.
     h('div', { class: 'set-row stop-row' },
       h('button', { class: 'btn btn-danger', type: 'button', onclick: () => openStopUsing() }, icon('log-out'), t('settings.stop.button'))),
   ];
@@ -1058,7 +1058,7 @@ function buildNotice() {
   return [
     h('div', { class: 'set-row' },
       h('button', { class: 'btn', type: 'button', onclick: () => actions.onNotice?.() }, icon('book-open'), t('settings.notice.open')),
-      // 0.9.0 : tour guidé de l'interface (aussi avec l'ampoule de l'en-tête).
+      // Tour guidé de l'interface (aussi avec l'ampoule de l'en-tête).
       h('button', { class: 'btn', type: 'button', onclick: () => actions.onTour?.() }, icon('lightbulb'), t('settings.notice.tour'))),
     h('label', { class: 'check' },
       (() => {
@@ -1135,7 +1135,7 @@ function buildAbout() {
 }
 
 // Technique de la fenêtre (développement, dans la fenêtre de l'application).
-// 0.7.4 : déplacée de « Aide et à propos » vers « Application » ; les 3 boutons
+// Déplacée de « Aide et à propos » vers « Application » ; les 3 boutons
 // sont sur la ligne du titre, à leur taille.
 function windowModeGroup() {
   const app = store.app.app;
@@ -1156,7 +1156,7 @@ function windowModeGroup() {
     '', seg);
 }
 
-// Dons : logos monochromes aux couleurs du thème (5.6), dessinés par masque.
+// Dons : logos monochromes aux couleurs du thème, dessinés par masque.
 function buildDonate({ opening = false } = {}) {
   const info = store.app.app.info || {};
   const don = info.donations || {};
@@ -1196,7 +1196,7 @@ function buildDonate({ opening = false } = {}) {
   ];
 }
 
-// 0.9.0 : fermée par « Visite guidée », avant le tour.
+// Fermée par « Visite guidée », avant le tour.
 export function closeSettings() {
   if (dlg && !dlg.closed) dlg.close();
 }

@@ -1,4 +1,4 @@
-"""Zone de notification de Windows (0.2.1, demande 14.1).
+"""Zone de notification de Windows.
 
 - Une icône FS Passion près de l'horloge. Clic : la fenêtre revient. Clic
   droit : menu « Afficher FS Passion » / « Quitter FS Passion ».
@@ -8,7 +8,7 @@
 - Le menu suit le thème sombre de Windows 11 (coins arrondis, ombres) : c'est
   le menu natif de Windows, avec le mode sombre demandé au système.
 
-Bibliothèque : pystray (LGPL-3.0, compatible GPLv3). Si elle est absente ou si
+Bibliothèque : pystray (LGPL-, compatible GPLv3). Si elle est absente ou si
 l'icône ne peut pas être créée, FS Passion fonctionne comme avant : la croix
 quitte l'application.
 """

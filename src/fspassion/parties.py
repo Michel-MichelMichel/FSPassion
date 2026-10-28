@@ -1,15 +1,15 @@
-"""Les parties (4.1) et le fichier parties.json (3.3).
+"""Les parties et le fichier parties.json.
 
 Une partie est une collection nommée de mods : sa map, ses mods propres, et le
 choix d'inclure ou non les mods communs. Un fichier parties.json par version du
 jeu, dans FSPassion\\<version>\\, à côté du dossier de mods principal.
 
 Ce module ne gère que parties.json. Les dossiers de parties, les liens et
-l'override sont l'affaire d'apply.py (0.3) ; « applied_signature » mémorise,
+l'override sont l'affaire d'apply.py ; « applied_signature » mémorise,
 pour chaque partie, l'empreinte de ses mods actifs à sa dernière application
 (« Appliquer » est mis en évidence quand elle a changé).
 
-Robustesse (3.3, I8) :
+Robustesse :
 - écriture atomique (fichier temporaire, puis remplacement) ;
 - rotation de 5 sauvegardes (parties.json.bak1 … bak5) à chaque changement de
   contenu (un simple changement de partie sélectionnée ne fait pas tourner les
@@ -55,7 +55,7 @@ _ID_RE = re.compile(r"^[0-9a-f]{4,8}$")
 
 
 class PartyError(Exception):
-    """Erreur prévue, avec une clé de langue (I7)."""
+    """Erreur prévue, avec une clé de langue."""
 
     def __init__(self, key: str, status: int = 400, **params: Any) -> None:
         super().__init__(key)
@@ -85,7 +85,7 @@ def slugify(name: str) -> str:
 
 
 def folder_name(name: str, pid: str) -> str:
-    """Nom du dossier sur le disque : version ASCII du nom + identifiant court (Q8)."""
+    """Nom du dossier sur le disque : version ASCII du nom + identifiant court."""
     return f"{slugify(name)}-{pid}"
 
 
@@ -299,7 +299,7 @@ class PartiesStore:
     def _check_storage(self) -> None:
         stored = self.data.get("mods_dir") or ""
         if stored and self._mods_dir and not fsutil.same_path(stored, self._mods_dir):
-            # Dossier de mods déplacé à la main (3.3) : signalé dans le journal seulement.
+            # Dossier de mods déplacé à la main : signalé dans le journal seulement.
             log.warning("parties.json %s : dossier de mods mémorisé %s, configuré %s",
                         self.vid, stored, self._mods_dir)
 
@@ -342,7 +342,7 @@ class PartiesStore:
                 raise PartyError("parties.write_failed", status=500, path=str(self.path)) from exc
 
     def _commit(self, before: dict[str, Any]) -> None:
-        """Enregistre ; en cas d'échec, l'état d'avant est rétabli (I8)."""
+        """Enregistre ; en cas d'échec, l'état d'avant est rétabli."""
         try:
             self.save()
         except PartyError:
@@ -445,7 +445,7 @@ class PartiesStore:
 
     def delete(self, pid: str) -> dict[str, Any]:
         """Supprime une partie. Si c'était la partie appliquée, la partie appliquée
-        précédente (historique) prend sa place, sinon la Partie Pleine (B2, Q9)."""
+        précédente (historique) prend sa place, sinon la Partie Pleine."""
         with self._lock:
             party = self._require(pid)
             before = copy.deepcopy(self.data)
@@ -512,7 +512,7 @@ class PartiesStore:
             return clean, folder_name(clean, pid) if clean != party["name"] else party["folder"]
 
     def init_selection(self, pid: str | None) -> None:
-        """Premier lancement (4.1) : la partie sélectionnée reflète l'état réel du jeu."""
+        """Premier lancement : la partie sélectionnée reflète l'état réel du jeu."""
         with self._lock:
             if pid and self.known(pid):
                 self.data["selected"] = pid
@@ -547,7 +547,7 @@ class PartiesStore:
         action : add | remove | move. target : party | common. Pour « move »,
         source est la liste d'origine (party | common), d'où les mods sont
         retirés. Un mod peut être à la fois dans la partie et dans les mods
-        communs (Q2) : il n'est jamais dupliqué dans le dossier de la partie.
+        communs : il n'est jamais dupliqué dans le dossier de la partie.
         """
         wanted = _dedupe(ids)
         if len(wanted) > MAX_IDS:
@@ -586,7 +586,7 @@ class PartiesStore:
             return {"added": added, "removed": removed}
 
     def replace_mod(self, old: str, new: str, is_map: Callable[[str], bool] | None = None) -> int:
-        """« Remplacer par… » (R14) : un mod renommé par son auteur reprend sa
+        """« Remplacer par… » : un mod renommé par son auteur reprend sa
         place dans toutes les listes. Renvoie le nombre de listes modifiées."""
         old_l, new = old.lower(), new.strip()
         if not new or old_l == new.lower():
@@ -614,7 +614,7 @@ class PartiesStore:
             return touched
 
     def replace_case(self, old: str, new: str) -> int:
-        """Renommage qui ne change que la casse (0.4) : l'identifiant est réécrit
+        """Renommage qui ne change que la casse : l'identifiant est réécrit
         partout, sans changer de mod. Renvoie le nombre de listes modifiées."""
         old_l = old.lower()
         if new.lower() != old_l:
@@ -641,7 +641,7 @@ class PartiesStore:
 
     def remove_everywhere(self, ids: Iterable[str]) -> int:
         """Retire des mods de toutes les listes (mods communs et toutes les
-        parties) : mod absent qu'on abandonne, suppression définitive (0.4).
+        parties) : mod absent qu'on abandonne, suppression définitive.
         Renvoie le nombre de listes modifiées."""
         low = _lower_set(_dedupe(ids))
         if not low:
@@ -665,7 +665,7 @@ class PartiesStore:
             return touched
 
     def _refresh_maps(self, is_map: Callable[[str], bool]) -> None:
-        """Le champ « map » sert à l'icône du menu des parties (3.3). Il suit le
+        """Le champ « map » sert à l'icône du menu des parties. Il suit le
         contenu de la partie : la map retirée est remplacée par une autre map de
         la partie, ou par rien."""
         for p in self.data["parties"]:
@@ -690,7 +690,7 @@ class PartiesStore:
 
 
 # --------------------------------------------------------------------------
-# Dépendances (4.5)
+# Dépendances
 # --------------------------------------------------------------------------
 
 def resolve_dependencies(
@@ -701,19 +701,19 @@ def resolve_dependencies(
     """Dépendances de `roots`, dépendances des dépendances comprises.
 
     mods : identifiant en minuscules → mod de la bibliothèque (avec sa liste
-    « dependencies »). Les comparaisons ignorent la casse (R15) ; une boucle de
+    « dependencies »). Les comparaisons ignorent la casse ; une boucle de
     dépendances ne pose pas de problème.
 
     Renvoie :
     - present : dépendances présentes dans la bibliothèque (hors racines) ;
     - missing : dépendances absentes, par leur nom (à télécharger) ;
     - dlc : dépendances de type DLC (« pdlc_… »), informatives, avec « owned » ;
-    - required_by (0.2.1) : pour chaque dépendance (en minuscules), la racine qui
+    - required_by : pour chaque dépendance (en minuscules), la racine qui
       l'a fait entrer, pour expliquer « le mod X est une dépendance de la map Y » ;
-    - optional (0.7.3) : mods facultatifs (<SearchMods><optionalMod>) des racines
+    - optional : mods facultatifs (<SearchMods><optionalMod>) des racines
       et de leurs dépendances, hors mods déjà requis : {name, id, present,
       required_by} ; « id » est l'identifiant du mod présent, sinon None ;
-    - links (0.7.3) : pour un mod absent, requis ou facultatif (en minuscules),
+    - links : pour un mod absent, requis ou facultatif (en minuscules),
       le lien de téléchargement donné par l'auteur ({url, mod} : « mod » est le
       mod dont le modDesc.xml donne ce lien).
     """
@@ -762,7 +762,7 @@ def resolve_dependencies(
     missing.sort(key=str.lower)
     dlc.sort(key=lambda d: d["id"].lower())
 
-    # 0.7.3 : mods facultatifs et liens de téléchargement (<SearchMods>).
+    # Mods facultatifs et liens de téléchargement (<SearchMods>).
     visited = [r.lower() for r in root_list] + [p.lower() for p in present]
     optional: list[dict[str, Any]] = []
     opt_seen: set[str] = set()

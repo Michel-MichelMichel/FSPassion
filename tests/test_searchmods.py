@@ -7,7 +7,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
-from tests.test_v04 import env  # noqa: F401  (fixture)
+from tests.test_mods_operations import env  # noqa: F401  (fixture)
 
 from fspassion import library, moddesc, winapi
 from fspassion.core import AppError

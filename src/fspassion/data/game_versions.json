@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "updated": "2026-10-13",
-  "_comment": "Table des versions du jeu (cahier des charges 2.1). C'est une donnée, pas du code : prendre en charge FS28 consistera à compléter ce fichier. desc_version.max = null : plage ouverte (dernière version déclarée).",
+  "_comment": "Table des versions du jeu. C'est une donnée, pas du code : prendre en charge FS28 consistera à compléter ce fichier. desc_version.max = null : plage ouverte (dernière version déclarée).",
   "versions": [
     {
       "id": "FS2011",

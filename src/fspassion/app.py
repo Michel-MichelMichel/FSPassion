@@ -10,9 +10,9 @@ Options :
     --window-mode   technique de la fenêtre : native | script | thin
     --debug         outils de développement dans la fenêtre
     --uninstall     ouvre directement « Ne plus utiliser FS Passion » (lancé par
-                    le désinstalleur Windows, 4.18)
+                    le désinstalleur Windows)
     --uninstall-quiet  désinstallation silencieuse : rétablit seulement la ligne
-                    d'override du jeu, sans fenêtre (0.8)
+                    d'override du jeu, sans fenêtre
 """
 
 from __future__ import annotations
@@ -36,7 +36,7 @@ from fspassion.window_ops import native, rect_visible
 log = logging.getLogger("fspassion")
 
 MUTEX_NAME = "Local\\FSPassion.Instance"
-# Taille minimale de la fenêtre (px logiques). 0.7.2 : largeur 1280 → 960 px.
+# Taille minimale de la fenêtre (px logiques).
 # L'interface ne réduit son échelle qu'en dessous de 1140 px de large (ui/js/scale.js).
 MIN_WINDOW = (960, 720)
 _mutex_handle: Any = None
@@ -56,7 +56,7 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
 
 
 # --------------------------------------------------------------------------
-# Instance unique (5.1) : relancer FS Passion ramène la fenêtre existante.
+# Instance unique : relancer FS Passion ramène la fenêtre existante.
 # --------------------------------------------------------------------------
 
 def acquire_single_instance() -> bool:
@@ -182,7 +182,7 @@ def run_window(core: Core, server: Server, args: argparse.Namespace) -> bool:
         except Exception:  # noqa: BLE001
             log.exception("Mémorisation de la fenêtre impossible")
 
-    # Zone de notification (0.2.1) : la croix cache la fenêtre, « Quitter »
+    # Zone de notification : la croix cache la fenêtre, « Quitter »
     # ferme l'application.
     def quit_app() -> None:
         quitting.set()
@@ -195,14 +195,14 @@ def run_window(core: Core, server: Server, args: argparse.Namespace) -> bool:
 
     def to_tray() -> bool:
         """Cache la fenêtre si l'icône existe et si le réglage le demande."""
-        # Désinstallation (--uninstall, 0.8) : la croix ferme vraiment, le
+        # Désinstallation (--uninstall) : la croix ferme vraiment, le
         # désinstalleur attend la fin de FS Passion.
         if quitting.is_set() or core.uninstall_mode or not tray.active or not core.settings.get("close_to_tray"):
             return False
         save_window()
         if not native.hide():
             return False
-        native.sleep_later()  # 0.9.1 : dormance de l'interface cachée
+        native.sleep_later()  # Dormance de l'interface cachée
         if not core.settings.get("tray_hint_shown"):
             core.settings.set("tray_hint_shown", True)
             tray.notify(core.tray_texts().get("hint") or "FS Passion")
@@ -246,7 +246,7 @@ def run_window(core: Core, server: Server, args: argparse.Namespace) -> bool:
 # Programme principal
 # --------------------------------------------------------------------------
 
-PORT_WAIT_S = 15.0  # 0.6.7 : attente du port libéré par l'instance précédente
+PORT_WAIT_S = 15.0  # Attente du port libéré par l'instance précédente
 
 
 def open_server(core: Core, port: int, wait_s: float = PORT_WAIT_S) -> Server:
@@ -268,7 +268,7 @@ def main(argv: list[str] | None = None) -> None:
     args = parse_args(argv)
     logs.setup(dev=args.dev)
     log.info("FS Passion %s — démarrage%s", __version__, " (développement)" if args.dev else "")
-    # 0.8.2 : droits et mode au démarrage, dans le journal (avertissement de
+    # Droits et mode au démarrage, dans le journal (avertissement de
     # Windows ou de PowerToys sur un programme lancé en administrateur).
     try:
         log.info("Mode %s ; administrateur : %s ; réglage « Exécuter en tant qu'administrateur » : %s ; %s",
@@ -285,7 +285,7 @@ def main(argv: list[str] | None = None) -> None:
 
     core = Core(dev=args.dev)
     if args.uninstall_quiet:
-        # Désinstallation silencieuse (0.8) : pas de fenêtre, rien n'est
+        # Désinstallation silencieuse : pas de fenêtre, rien n'est
         # supprimé ; le jeu ne chargera plus un dossier de parties.
         core.uninstall_mode = True
         try:
@@ -351,7 +351,7 @@ def main(argv: list[str] | None = None) -> None:
             pass
         time.sleep(0.1)
         if core.restart_elevated:
-            # « Toujours lancer FS Passion en administrateur » (0.6, 4.20) : la
+            # « Toujours lancer FS Passion en administrateur » : la
             # nouvelle instance démarre une fois celle-ci entièrement fermée.
             winapi.release_single_instance(_mutex_handle)
             log.info("Relance de FS Passion en administrateur")
@@ -360,7 +360,7 @@ def main(argv: list[str] | None = None) -> None:
                 log.warning("Relance en administrateur refusée ou annulée")
         logging.shutdown()
         if core.exit_cleanup:
-            # « Ne plus utiliser FS Passion » (0.7.0) : journaux et données de la
+            # « Ne plus utiliser FS Passion » : journaux et données de la
             # fenêtre, supprimés une fois libérés.
             stopuse.finish_at_exit(core.exit_cleanup)
         elif core.stopped:

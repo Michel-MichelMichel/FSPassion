@@ -52,7 +52,7 @@ export const api = {
 
 // size : 'medium' (300 px, tuiles de la liste 1), true (96 px, listes 2 et 3), false (taille d'origine).
 // Versions qui ont une variante moyenne (300 px) de leurs icônes : voir
-// MEDIUM_VERSIONS dans src/fspassion/icons.py (0.7.9). Pour les autres, les
+// MEDIUM_VERSIONS dans src/fspassion/icons.py. Pour les autres, les
 // icônes d'origine font 256 px au plus : la grande variante sert aux tuiles.
 const MEDIUM_VERSIONS = new Set(['FS25', 'FS28']);
 

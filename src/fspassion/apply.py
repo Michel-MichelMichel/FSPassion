@@ -1,15 +1,15 @@
-"""« Appliquer » une partie (4.2) : dossiers de parties, liens et override.
+"""« Appliquer » une partie : dossiers de parties, liens et override.
 
 Un dossier de partie (FSPassion\\<version>\\Parties\\<dossier>\\) ne contient
 que des liens vers les mods des dossiers de stockage :
 - un hardlink pour un mod .zip du disque principal ;
-- un lien symbolique pour un mod .zip d'un autre disque (0.6, 4.20) ;
+- un lien symbolique pour un mod .zip d'un autre disque ;
 - une jonction pour un mod non compressé (dossier).
 
-Avec plusieurs dossiers de stockage (0.6), la Partie Pleine a elle aussi son
+Avec plusieurs dossiers de stockage, la Partie Pleine a elle aussi son
 dossier de liens, « Parties\\_pleine\\ » : le jeu ne lit qu'un dossier.
 
-Étapes d'« Appliquer » (I8 : rien n'est laissé à moitié fait) :
+Étapes d'« Appliquer » (rien n'est laissé à moitié fait) :
 1. remise en ordre du dossier actuel de la partie : un fichier physique déposé
    par le jeu (mise à jour du ModHub, téléchargement en multijoueur) est
    rapatrié vers le dossier de mods, jamais supprimé ;
@@ -17,7 +17,7 @@ dossier de liens, « Parties\\_pleine\\ » : le jeu ne lit qu'un dossier.
    activé), sans doublon ; les mods absents sont relevés ;
 3. construction à part dans « .tmp-<id> » ;
 4. bascule : l'ancien dossier devient « .old-<id> », le nouveau prend sa place,
-   puis l'ancien est vidé lien par lien (I10) et supprimé ;
+   puis l'ancien est vidé lien par lien et supprimé ;
 5. inventaire des liens (liens.json) ;
 6. écriture de l'override (gameSettings.xml, avec sauvegarde) ;
 7. partie appliquée et historique.
@@ -25,7 +25,7 @@ dossier de liens, « Parties\\_pleine\\ » : le jeu ne lit qu'un dossier.
 Chaque étape est notée dans journal_operations.json : au démarrage suivant,
 une opération interrompue (coupure de courant…) est terminée ou annulée.
 
-Fichiers mis de côté (jamais supprimés, I4), dans FSPassion\\<version>\\ :
+Fichiers mis de côté (jamais supprimés), dans FSPassion\\<version>\\ :
 - « Old versions\\<date>\\ » : l'ancienne version d'un mod remplacé par
   une mise à jour déposée par le jeu, ou un ancien lien devenu la seule copie
   d'une version périmée ;
@@ -59,10 +59,10 @@ log = logging.getLogger(__name__)
 PARTIES = "Parties"
 OLD_VERSIONS = "Old versions"
 RECOVERED = "Recovered"
-# Noms d'avant la 0.6.2 : les dossiers existants sont renommés (vocabulaire
+# Anciens noms : les dossiers existants sont renommés (vocabulaire
 # anglais pour les dossiers sur le disque).
 LEGACY_FOLDERS = {"Anciennes versions": OLD_VERSIONS, "Recuperes": RECOVERED}
-# Versions plus anciennes déposées par le jeu, en attente de la décision de l'utilisateur (4.9).
+# Versions plus anciennes déposées par le jeu, en attente de la décision de l'utilisateur.
 OLDER = "a_confirmer.json"
 _migrated: set[str] = set()
 
@@ -88,11 +88,11 @@ def version_text(v: tuple[int, ...] | None) -> str | None:
 JOURNAL = "journal_operations.json"
 INVENTORY = "liens.json"
 EMPTY_FOLDER = "_vide"
-FULL_FOLDER = "_pleine"   # Partie Pleine avec plusieurs dossiers de stockage (0.6)
+FULL_FOLDER = "_pleine"   # Partie Pleine avec plusieurs dossiers de stockage
 
 
 class ApplyError(Exception):
-    """Erreur prévue, avec une clé de langue (I7)."""
+    """Erreur prévue, avec une clé de langue."""
 
     def __init__(self, key: str, status: int = 400, **params: Any) -> None:
         super().__init__(key)
@@ -122,12 +122,12 @@ class Tidy:
     added: list[str] = field(default_factory=list)       # mods inconnus rapatriés
     set_aside: list[str] = field(default_factory=list)   # fichiers mis de côté
     old_versions: list[str] = field(default_factory=list)
-    # 0.4 : liens à refaire vers le mod actuel (lien orphelin retiré, mise à jour
-    # rapatriée) et copies d'un mod supprimé à la main du dossier de mods (A8).
+    # Liens à refaire vers le mod actuel (lien orphelin retiré, mise à jour
+    # rapatriée) et copies d'un mod supprimé à la main du dossier de mods.
     relink: list[str] = field(default_factory=list)
     copies: list[str] = field(default_factory=list)
     reshaped: list[str] = field(default_factory=list)   # mod décompressé ou recompressé
-    older: list[str] = field(default_factory=list)      # version plus ancienne : à confirmer (0.6.2)
+    older: list[str] = field(default_factory=list)      # version plus ancienne : à confirmer
 
     def merge(self, other: Tidy) -> None:
         self.updated += other.updated
@@ -191,14 +191,14 @@ class VersionFolders:
         self.journal_path = self.fsp / JOURNAL
         self.inventory = Inventory(self.fsp / INVENTORY)
         self._stamp = _stamp()
-        # Plusieurs dossiers de stockage (0.6) : au moins un supplémentaire existe.
+        # Plusieurs dossiers de stockage : au moins un supplémentaire existe.
         self.multi = bool(storage.active_extras(vp))
         self._symlinks = symlinks
         self._other_disk: dict[int, bool] = {}
         migrate_aside_folders(self.fsp)
 
     # ------------------------------------------------------------------
-    # Versions plus anciennes déposées par le jeu (4.9, 0.6.2)
+    # Versions plus anciennes déposées par le jeu
     # ------------------------------------------------------------------
 
     def remember_older(self, name: str, aside: Path, new: tuple[int, ...] | None,
@@ -224,7 +224,7 @@ class VersionFolders:
         fsutil.atomic_write_json(self.fsp / OLDER, items)
 
     # ------------------------------------------------------------------
-    # Dossiers de stockage (0.6)
+    # Dossiers de stockage
     # ------------------------------------------------------------------
 
     @property
@@ -235,7 +235,7 @@ class VersionFolders:
 
     def locate(self, name: str) -> Path:
         """Chemin actuel d'un mod (nom de fichier ou de dossier) : dans le premier
-        dossier de stockage qui le contient, le principal d'abord (doublon : A9).
+        dossier de stockage qui le contient, le principal d'abord (doublon).
         S'il n'est nulle part, son chemin dans le dossier principal."""
         for folder in self.storages:
             cand = folder / name
@@ -262,7 +262,7 @@ class VersionFolders:
         return self._other_disk[index]
 
     def _link(self, src: Path, dst: Path, index: int | None = None) -> dict[str, Any]:
-        """Crée le lien qui convient (3.6, 4.20) et renvoie sa description pour
+        """Crée le lien qui convient et renvoie sa description pour
         l'inventaire. Lève LinkError (« apply.symlink_denied » sans les droits)."""
         if index is None:
             index = self.storage_index(src)
@@ -307,7 +307,7 @@ class VersionFolders:
         return signature(self.active_ids(pid))
 
     # ------------------------------------------------------------------
-    # Mise de côté (jamais de suppression, I4)
+    # Mise de côté (jamais de suppression)
     # ------------------------------------------------------------------
 
     def _aside(self, src: Path, kind: str) -> Path:
@@ -318,7 +318,7 @@ class VersionFolders:
         while dst.exists() or os.path.lexists(dst):
             dst = base / f"{src.stem} ({n}){src.suffix}"
             n += 1
-        # Un mod d'un autre disque (0.6) est copié, vérifié, puis retiré : les
+        # Un mod d'un autre disque est copié, vérifié, puis retiré : les
         # stockages supplémentaires ne reçoivent jamais de fichier de FS Passion.
         fsutil.relocate(src, dst)
         log.warning("Mis de côté (%s) : %s → %s", kind, src, dst)
@@ -326,7 +326,7 @@ class VersionFolders:
 
     def _replace(self, item: Path, target: Path) -> None:
         """Une mise à jour déposée par le jeu remplace le mod `target`, dans SON
-        dossier de stockage (4.20) : le nouveau fichier d'abord à côté (copie
+        dossier de stockage : le nouveau fichier d'abord à côté (copie
         vérifiée s'il vient d'un autre disque), puis l'ancien est mis de côté et
         le nouveau prend sa place. Jamais de stockage sans ce mod en cas d'échec."""
         tmp = target.with_name(f".fsp-in-{target.name}.part")
@@ -353,7 +353,7 @@ class VersionFolders:
             raise exc
 
     # ------------------------------------------------------------------
-    # Remise en ordre d'un dossier de partie (4.9, partie traitée seulement)
+    # Remise en ordre d'un dossier de partie (partie traitée seulement)
     # ------------------------------------------------------------------
 
     def tidy(self, folder: Path) -> Tidy:
@@ -368,12 +368,12 @@ class VersionFolders:
           ancien : il est alors mis de côté dans « Recuperes » ;
         - mod inconnu : déplacé dans le dossier de mods (et ajouté à la partie
           par l'appelant, liste « added ») ;
-        - copie d'un mod supprimé à la main du dossier de mods (A8, 0.4) :
+        - copie d'un mod supprimé à la main du dossier de mods :
           laissée en place, l'utilisateur choisit (« Restaurer dans Mods » ou
           « Supprimer définitivement »).
 
         « relink » liste les liens à refaire vers le mod actuel (réconciliation
-        hors « Appliquer », 0.4).
+        hors « Appliquer »).
         """
         out = Tidy()
         if not folder.is_dir() or links.is_link(folder):
@@ -412,7 +412,7 @@ class VersionFolders:
                         continue
                     if sid is None and not os.path.lexists(current):
                         # Mod supprimé à la main du dossier de mods, encore présent
-                        # par ce lien (A8) : rien n'est touché.
+                        # par ce lien : rien n'est touché.
                         out.copies.append(name)
                         continue
                     # Lien orphelin : le mod du dossier de mods a été remplacé.
@@ -434,7 +434,7 @@ class VersionFolders:
                 if new_v is not None and old_v is not None and new_v < old_v:
                     # Numéro de version plus ancien que celui de l'utilisateur
                     # (souvent : un mod modifié, et le ModHub propose son original).
-                    # Mis de côté, et FS Passion demande quoi faire (4.9).
+                    # Mis de côté, et FS Passion demande quoi faire.
                     dst = self._aside(item, RECOVERED)
                     self.remember_older(name, dst, new_v, old_v, current)
                     out.set_aside.append(name)
@@ -447,7 +447,7 @@ class VersionFolders:
                     self._aside(item, RECOVERED)
                     out.set_aside.append(name)
                     continue
-                # Rapatrié dans le dossier de stockage d'où venait le mod (4.20).
+                # Rapatrié dans le dossier de stockage d'où venait le mod.
                 self._replace(item, current)
                 out.updated.append(name)
                 out.relink.append(name)
@@ -460,8 +460,8 @@ class VersionFolders:
         return out
 
     def _tidy_link(self, folder: Path, item: Path, out: Tidy) -> None:
-        """Jonction (mod non compressé) ou lien symbolique (mod d'un autre disque,
-        0.6) d'un dossier de partie. Un tel lien vise un CHEMIN :
+        """Jonction (mod non compressé) ou lien symbolique (mod d'un autre disque)
+        d'un dossier de partie. Un tel lien vise un CHEMIN :
         - il vise le mod actuel : valide, rien à faire ;
         - le mod est ailleurs sous le même nom (déplacé, autre stockage, archive
           réécrite sous une autre forme) : le lien est refait ;
@@ -469,7 +469,7 @@ class VersionFolders:
           le lien est remplacé par un lien vers sa nouvelle forme. Sans cela, le jeu chargeait encore l'ancienne
           forme du mod et le ModHub ne pouvait pas le mettre à jour ;
         - sinon (mod disparu) : rien, « Appliquer » s'en chargera.
-        Un lien se retire toujours comme un lien (I10)."""
+        Un lien se retire toujours comme un lien."""
         name = item.name
         target = links.link_target(item)
         current = self.locate(name)
@@ -496,7 +496,7 @@ class VersionFolders:
             out.reshaped.append(name)
 
     def empty(self, folder: Path) -> Tidy:
-        """Vide un dossier de partie lien par lien (I10), puis le supprime.
+        """Vide un dossier de partie lien par lien, puis le supprime.
         Tout fichier physique est d'abord rapatrié (tidy)."""
         res = Tidy()
         if not os.path.lexists(folder):
@@ -557,7 +557,7 @@ class VersionFolders:
     def _build(self, tmp: Path, ids: list[str]) -> tuple[dict[str, dict[str, Any]], list[str], list[str]]:
         """Construit le dossier de liens. Renvoie (inventaire, mods absents, mods
         bloqués). Bloqué : mod d'un autre disque, sans droits pour les liens
-        symboliques (4.20) ; il est listé mais n'entre pas dans la partie."""
+        symboliques ; il est listé mais n'entre pas dans la partie."""
         idx = self.index()
         entries: dict[str, dict[str, Any]] = {}
         missing: list[str] = []
@@ -598,7 +598,7 @@ class VersionFolders:
         return out
 
     # ------------------------------------------------------------------
-    # Journal des opérations (I8)
+    # Journal des opérations
     # ------------------------------------------------------------------
 
     def _journal(self, **data: Any) -> None:
@@ -714,7 +714,7 @@ class VersionFolders:
             raise ApplyError(exc.key, status=500, **exc.params) from exc
 
     # ------------------------------------------------------------------
-    # Reprise après une coupure (I8)
+    # Reprise après une coupure
     # ------------------------------------------------------------------
 
     def recover(self) -> str | None:
@@ -771,7 +771,7 @@ class VersionFolders:
         return "cancelled"
 
     # ------------------------------------------------------------------
-    # Renommer et supprimer un dossier de partie (4.1)
+    # Renommer et supprimer un dossier de partie
     # ------------------------------------------------------------------
 
     def rename(self, old_folder: str, new_folder: str, applied: bool) -> None:
@@ -779,7 +779,7 @@ class VersionFolders:
         partie appliquée."""
         src = party_dir(self.parties_dir, old_folder)
         dst = party_dir(self.parties_dir, new_folder)
-        if old_folder.lower() == new_folder.lower() and old_folder == new_folder:
+        if old_folder == new_folder:
             return
         if not os.path.lexists(src):
             return  # partie jamais appliquée : pas de dossier
@@ -821,7 +821,7 @@ class VersionFolders:
 
     def is_stale(self, pid: str) -> bool:
         """La partie appliquée a-t-elle changé depuis sa dernière application ?
-        Partie Pleine avec plusieurs stockages (0.6) : un mod ajouté ou retiré
+        Partie Pleine avec plusieurs stockages : un mod ajouté ou retiré
         d'un stockage la rend « à réappliquer », comme une partie ordinaire."""
         if pid == EMPTY:
             return False

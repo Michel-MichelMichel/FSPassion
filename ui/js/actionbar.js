@@ -1,4 +1,4 @@
-// Bandeau d'actions (4.6) : il glisse depuis le bas dès qu'un mod est
+// Bandeau d'actions : il glisse depuis le bas dès qu'un mod est
 // sélectionné, avec le nombre de mods sélectionnés et les actions de classement.
 // Un bouton sans effet sur la sélection est désactivé.
 
@@ -21,7 +21,7 @@ export function initActionBar(el, appEl) {
   window.addEventListener('resize', fitBar);
 }
 
-// 0.7.2 : fenêtre étroite. Quand les 4 boutons de classement ne tiennent plus
+// Fenêtre étroite. Quand les 4 boutons de classement ne tiennent plus
 // sur une ligne, ils passent en 2 colonnes (2 + 2) ; les listes gardent alors
 // un peu plus de place en bas pour le bandeau, plus haut.
 function fitBar() {
@@ -64,8 +64,8 @@ export function render() {
   const list = selectionList();
   const can = possibleActions(ids);
   clear(bar);
-  // Renommer et Supprimer (0.4) : icône seule, le nom est dans l'infobulle
-  // (0.2.1 : avec les textes agrandis, le bandeau garde sa place).
+  // Renommer et Supprimer : icône seule, le nom est dans l'infobulle
+  // (avec les textes agrandis, le bandeau garde sa place).
   const v = versionInfo();
   const running = isRunning();
   const runningTip = running ? t('apply.running', { game: v ? v.name : '' }) : '';

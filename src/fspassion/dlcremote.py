@@ -1,4 +1,4 @@
-"""Catalogue des DLC distant (4.11, 7.6), version 0.7.0.
+"""Catalogue des DLC distant.
 
 Le catalogue (dlc_catalog.json) et les icônes des DLC sont publiés dans un
 dépôt GitHub public séparé, « FSPassion-data », que l'auteur met à jour
@@ -10,15 +10,15 @@ Règles :
 - le catalogue est téléchargé au plus une fois par jour, et gardé dans
   %LOCALAPPDATA%\\FSPassion\\dlc\\ ;
 - les icônes manquantes sont téléchargées une par une : celles des DLC
-  détectés sur ce PC d'abord, puis (0.8.2) celles des DLC du catalogue que
-  l'on ne possède pas, affichés estompés (0.7.5) : sans elles, leurs tuiles
+  détectés sur ce PC d'abord, puis celles des DLC du catalogue que
+  l'on ne possède pas, affichés estompés : sans elles, leurs tuiles
   restaient vides ;
 - une icône qui porte une empreinte (« sha256 ») dans le catalogue est
   refusée si le fichier reçu ne lui correspond pas ;
 - adresses en https, sur raw.githubusercontent.com seulement, sans
   redirection vers un autre site ; tailles limitées ; une image doit être un
-  vrai PNG, JPEG, WebP ou AVIF (0.8.2 : 20 icônes du dépôt sont des AVIF
-  nommés « .jpg », elles étaient refusées) ;
+  vrai PNG, JPEG, WebP ou AVIF (certaines icônes du dépôt sont des AVIF
+  nommées « .jpg ») ;
 - aucune donnée personnelle n'est envoyée : une simple lecture de fichiers
   publics, sans identifiant ni cookie ;
 - hors ligne : l'instantané embarqué (assets\\fallback\\dlc_catalog.json)
@@ -141,7 +141,7 @@ def _clean_entry(raw: Any) -> dict[str, Any] | None:
     kws = raw.get("keywords")
     if isinstance(kws, list):
         out["keywords"] = [str(k).lower()[:40] for k in kws if isinstance(k, str) and k.strip()][:8]
-    # 0.7.5 : une entrée sans fichier ni mot-clé (DLC non possédé) est gardée ; elle
+    # Une entrée sans fichier ni mot-clé (DLC non possédé) est gardée ; elle
     # s'affiche comme absente et ne reconnaît aucun fichier.
     for key in ("type", "status"):
         if isinstance(raw.get(key), str):
@@ -181,7 +181,7 @@ def validate_catalog(raw: Any) -> dict[str, Any]:
             continue
         entries = [e for e in (_clean_entry(x) for x in vcat.get("dlc") or []) if e is not None]
         out_versions[vid] = {"icons_folder": folder, "dlc": entries}
-        # 0.8.5 : l'ordre imposé (FS2011) était perdu au nettoyage du catalogue
+        # L'ordre imposé (FS2011) était perdu au nettoyage du catalogue
         # téléchargé, qui l'emporte sur le catalogue embarqué à date égale.
         if vcat.get("fixed_order") is True:
             out_versions[vid]["fixed_order"] = True
@@ -271,7 +271,7 @@ def _icon_names(entry: dict[str, Any], stem: str = "") -> list[str]:
 def wanted_icons(catalog: dict[str, Any], detected: dict[str, list[str]]) -> list[dict[str, Any]]:
     """Icônes à télécharger, dont l'icône n'est encore nulle part sur ce PC (ou
     ne correspond pas à son empreinte) : d'abord celles des DLC détectés,
-    reconnus par le catalogue ; puis (0.8.2) celles de tous les autres DLC du
+    reconnus par le catalogue ; puis celles de tous les autres DLC du
     catalogue, que l'on ne possède pas (tuiles estompées)."""
     out: list[dict[str, Any]] = []
     seen: set[tuple[str, str]] = set()

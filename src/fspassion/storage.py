@@ -5,7 +5,7 @@ les dossiers de parties. Jusqu'à deux dossiers supplémentaires (chemins n° 2 
 n° 3), en général sur d'autres disques, ne contiennent que des mods : FS Passion
 n'y écrit jamais rien d'autre.
 
-Dans un dossier de partie, le lien vers un mod dépend de son stockage (3.6) :
+Dans un dossier de partie, le lien vers un mod dépend de son stockage :
 - mod non compressé (dossier) : jonction, quel que soit le disque ;
 - mod .zip du disque principal (ou d'un stockage supplémentaire sur le même
   disque) : hardlink, aucun droit nécessaire ;
@@ -87,7 +87,7 @@ def needs_symlinks(vp: VersionPaths) -> bool:
 
 
 def rights(needed: bool, refresh: bool = False) -> dict[str, Any]:
-    """État des droits pour les liens symboliques (4.13, 4.20). L'essai réel
+    """État des droits pour les liens symboliques. L'essai réel
     n'est fait que s'il est utile (`needed`) ou demandé (`refresh`)."""
     ok: bool | None = symlinks_allowed(refresh) if (needed or refresh) else _symlinks
     return {

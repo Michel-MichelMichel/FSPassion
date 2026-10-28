@@ -40,7 +40,7 @@ def test_version_menu_is_centered_under_its_icon():
 
 
 def test_light_version_readable():
-    # Le trajet du logo GitHub est revu en 0.6.7 (test_v067).
+    # Le trajet du logo GitHub est revu en 0.6.7 (test_lancement_serveur).
     css = _read("ui", "css", "layout.css")
     assert ':root[data-mode="light"] .footer-version' in css
 
@@ -114,4 +114,4 @@ def test_theme_reset_is_wired_to_the_interface():
     assert "/api/themes/reset" not in _read("ui", "js", "settings.js")
 
 
-# 0.7.0 : invitation au don supprimée (voir test_v070.py).
+# 0.7.0 : invitation au don supprimée.

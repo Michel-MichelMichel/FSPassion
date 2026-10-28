@@ -18,7 +18,7 @@ function post(path, body) {
 }
 
 // Après une action : nouvel état des parties ; la bibliothèque est relue si des
-// mods manquants (A7) apparaissent ou disparaissent.
+// mods manquants apparaissent ou disparaissent.
 function applyState(state) {
   const before = missingCount();
   setParties(state);
@@ -207,7 +207,7 @@ export async function deleteParty() {
   try {
     const res = await post('/api/parties/delete', { id: p.id });
     applyState(res.state);
-    // 0.6 : seule la suppression de la partie appliquée est signalée (le jeu
+    // Seule la suppression de la partie appliquée est signalée (le jeu
     // charge alors une autre partie) ; le menu montre déjà le reste.
     if (res.was_applied) toast('parties.deleted_applied', { name: p.name, other: partyLabel(res.fallback) }, 'info');
   } catch (err) {
@@ -236,8 +236,8 @@ function listOf(target) {
 }
 
 
-// Dépendances absentes de la liste visée : « Ajouter aussi ses 2 dépendances ? » (4.5).
-// 0.2.1 : la fenêtre dit quel mod choisi les réclame (« La map Etruria a besoin
+// Dépendances absentes de la liste visée : « Ajouter aussi ses 2 dépendances ? ».
+// La fenêtre dit quel mod choisi les réclame (« La map Etruria a besoin
 // de ces mods »), regroupées par mod choisi.
 function rootLabel(id) {
   const m = modIndex().get(String(id).toLowerCase());
@@ -268,7 +268,7 @@ async function askDependencies(target, ids) {
   const inTarget = new Set(listOf(target).map((m) => m.toLowerCase()));
   const chosen = new Set(ids.map((m) => m.toLowerCase()));
   const extra = deps.present.filter((d) => !inTarget.has(d.toLowerCase()) && !chosen.has(d.toLowerCase()));
-  // 0.7.3 : mods facultatifs présents, pas encore dans la liste (<SearchMods>).
+  // Mods facultatifs présents, pas encore dans la liste (<SearchMods>).
   const optional = (deps.optional || []).filter((o) => o.present && o.id && !inTarget.has(o.id.toLowerCase())
     && !chosen.has(o.id.toLowerCase()));
   if (deps.missing.length) {
@@ -340,7 +340,7 @@ export async function addMods(target, ids, { source = null } = {}) {
   const { extra, cancelled } = present.length ? await askDependencies(target, present) : { extra: [], cancelled: false };
   if (cancelled) return;
   const party = userParty();
-  // 0.6 : ajouter, déplacer ou retirer des mods n'affiche plus de message :
+  // Ajouter, déplacer ou retirer des mods n'affiche plus de message :
   // les listes le montrent aussitôt.
   try {
     if (source) {
@@ -366,13 +366,13 @@ export async function removeMods(target, ids) {
   try {
     const res = await post('/api/parties/mods', { action: 'remove', target, party: party && party.id, ids });
     applyState(res.state);
-    // 0.6 : pas de message, la liste le montre.
+    // Pas de message, la liste le montre.
   } catch (err) {
     toastError(err);
   }
 }
 
-// Ce que peut faire une sélection (bandeau d'actions, 4.6).
+// Ce que peut faire une sélection (bandeau d'actions).
 export function possibleActions(ids) {
   const m = membership();
   const index = modIndex();
@@ -388,7 +388,7 @@ export function possibleActions(ids) {
 }
 
 // ---------------------------------------------------------------------------
-// « ＋ Partie » : une map et ses dépendances deviennent une partie (4.5)
+// « ＋ Partie » : une map et ses dépendances deviennent une partie
 // ---------------------------------------------------------------------------
 
 function depRow(name, ok, state, kind = 'mod', link = null) {
@@ -399,13 +399,13 @@ function depRow(name, ok, state, kind = 'mod', link = null) {
     h('span', { class: 'dep-state', text: state }));
 }
 
-// 0.7.3 : lien de téléchargement d'un mod absent (<SearchMods>), s'il y en a un.
+// Lien de téléchargement d'un mod absent (<SearchMods>), s'il y en a un.
 function depLink(deps, name) {
   const l = deps.links && deps.links[String(name).toLowerCase()];
   return l && l.url ? linkButton(l.mod, l.url) : null;
 }
 
-// 0.7.3 : mods facultatifs (<SearchMods><optionalMod>) : une case par mod
+// Mods facultatifs (<SearchMods><optionalMod>) : une case par mod
 // présent (décochée), les absents pour information avec leur lien.
 function optionalBox(deps) {
   const list = deps.optional || [];
@@ -435,7 +435,7 @@ export async function plusParty(mod) {
     toastError(err);
     return;
   }
-  // Titre de la map dans la langue de l'utilisateur (4.5) : celui de la balise
+  // Titre de la map dans la langue de l'utilisateur : celui de la balise
   // <maps>, sinon celui du mod, sinon l'anglais ou la première langue.
   const title = langTitle(mod.map_titles) || langTitle(mod.titles) || pickTitle(mod.map_titles)
     || pickTitle(mod.titles) || mod.short || mod.id;
@@ -509,7 +509,7 @@ export async function plusParty(mod) {
 }
 
 // ---------------------------------------------------------------------------
-// « Remplacer par… » : un mod manquant, renommé par son auteur (R14)
+// « Remplacer par… » : un mod manquant, renommé par son auteur
 // ---------------------------------------------------------------------------
 
 function fold(s) {
@@ -556,13 +556,3 @@ export function replaceMissing(oldId) {
     }
   }
 }
-
-// Noms à afficher pour un mod (détail du mod, 4.4) : parties qui le contiennent.
-export function partiesText(id) {
-  const low = String(id).toLowerCase();
-  const m = membership();
-  const names = (m.partiesOf.get(low) || []).slice().sort((a, b) => a.localeCompare(b));
-  if (m.common.has(low)) names.push(t('list3.title'));
-  return names.length ? names.join(', ') : t('mod.parties_none');
-}
-

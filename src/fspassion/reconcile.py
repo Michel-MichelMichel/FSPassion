@@ -1,9 +1,9 @@
-"""Réconciliation (4.9, 0.4) : remise en ordre des dossiers de parties.
+"""Réconciliation : remise en ordre des dossiers de parties.
 
 Après une mise à jour faite par le jeu, une archive modifiée dans le dossier de
 mods ou une intégration, les dossiers de parties ne correspondent plus au
 dossier de mods. La réconciliation les remet en ordre, en silence, en
-s'appuyant sur l'inventaire des liens (liens.json, 3.6) :
+s'appuyant sur l'inventaire des liens (liens.json) :
 
 1. dossier pending_downloads (jeu fermé) : les .zip qui sont des mods sont
    traités comme des mises à jour (ou comme des mods nouveaux). Le fichier
@@ -23,9 +23,9 @@ s'appuyant sur l'inventaire des liens (liens.json, 3.6) :
 Le contenu d'un dossier de partie (la liste de ses mods) ne change qu'avec
 « Appliquer » : la réconciliation ne fait que réparer les liens existants.
 
-Rien n'est jamais supprimé (I4) : les fichiers remplacés vont dans
+Rien n'est jamais supprimé : les fichiers remplacés vont dans
 « Old versions », les autres dans « Recovered ». Rien ne bouge pendant
-que le jeu tourne (I5) : c'est à l'appelant de vérifier.
+que le jeu tourne : c'est à l'appelant de vérifier.
 """
 
 from __future__ import annotations
@@ -59,7 +59,7 @@ MAX_PASSES = 4
 
 @dataclass
 class Report:
-    """Bilan d'une réconciliation, pour le message discret (4.9, étape 7)."""
+    """Bilan d'une réconciliation, pour le message discret (étape 7)."""
     updated: list[str] = field(default_factory=list)       # mises à jour récupérées
     added: dict[str, list[str]] = field(default_factory=dict)   # partie → mods inconnus ajoutés
     unclassified: list[str] = field(default_factory=list)  # nouveaux mods non classés
@@ -125,7 +125,7 @@ class Reconciler:
 
     def party_folders(self) -> list[tuple[str, Path]]:
         """(identifiant de partie, dossier) des parties qui ont un dossier, plus
-        la Partie Vide et, avec plusieurs stockages (0.6), la Partie Pleine. Les dossiers inconnus et les restes « .tmp-/.old- » ne
+        la Partie Vide et, avec plusieurs stockages, la Partie Pleine. Les dossiers inconnus et les restes « .tmp-/.old- » ne
         sont pas touchés (ils le seront par « Appliquer » ou la reprise)."""
         out: list[tuple[str, Path]] = []
         base = self.f.parties_dir
@@ -143,7 +143,7 @@ class Reconciler:
         return out
 
     # ------------------------------------------------------------------
-    # pending_downloads (4.9, étape 6)
+    # pending_downloads (étape 6)
     # ------------------------------------------------------------------
 
     def pending(self, pending_dir: Path | None, applied: str | None, report: Report) -> None:
@@ -161,7 +161,7 @@ class Reconciler:
                 continue
             if links.kind_of(item) != "file" or not _stable(item, now) or not _is_mod_zip(item):
                 continue
-            # Une mise à jour rejoint le stockage d'où vient le mod (4.20) ; un
+            # Une mise à jour rejoint le stockage d'où vient le mod ; un
             # mod nouveau, le stockage principal.
             storage = self.f.locate(name)
             try:
@@ -214,7 +214,7 @@ class Reconciler:
         return dst
 
     # ------------------------------------------------------------------
-    # Dossiers de parties (4.9, étapes 1 à 5)
+    # Dossiers de parties (étapes 1 à 5)
     # ------------------------------------------------------------------
 
     def folders(self, report: Report) -> None:
@@ -263,7 +263,7 @@ class Reconciler:
 
 def stray_copies(folders: VersionFolders) -> dict[str, list[str]]:
     """Copies, dans des dossiers de parties, de mods supprimés à la main du
-    dossier de mods (A8) : nom du fichier → dossiers de parties. Lecture seule."""
+    dossier de mods : nom du fichier → dossiers de parties. Lecture seule."""
     out: dict[str, list[str]] = {}
     base = folders.parties_dir
     if not base.is_dir():

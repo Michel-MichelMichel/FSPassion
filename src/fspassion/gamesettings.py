@@ -1,10 +1,10 @@
-"""Le fichier gameSettings.xml du jeu (3.5).
+"""Le fichier gameSettings.xml du jeu.
 
 Lecture de la ligne modsDirectoryOverride ; création unique de la sauvegarde
 « gameSettings.xml.original.bak » (référence de l'état d'avant FS Passion,
-jamais écrasée) ; depuis la 0.3, écriture de cette seule ligne (« Appliquer »).
+jamais écrasée) ; écriture de cette seule ligne (« Appliquer »).
 
-Écriture (3.5) : remplacement chirurgical de la ligne, jamais une réécriture
+Écriture : remplacement chirurgical de la ligne, jamais une réécriture
 du XML complet. Étapes : relecture → sauvegarde « gameSettings.xml.bak » →
 remplacement → écriture dans un fichier temporaire puis bascule → relecture de
 contrôle → restauration automatique si le contrôle échoue. Le chemin est écrit
@@ -12,7 +12,7 @@ avec des barres obliques, comme le fait le jeu (« D:/FS25_Mods/… »), et les
 caractères spéciaux sont échappés. Encodage, marque BOM, guillemets et
 fins de ligne du fichier d'origine sont conservés.
 
-La ligne existe sous plusieurs formes (test T5) :
+La ligne existe sous plusieurs formes (test) :
     <modsDirectoryOverride active="false" directory="C:/Temp" />
     <modsDirectoryOverride active="false" directory="C:/Temp"/>
     <modsDirectoryOverride active='false' directory='C:/Temp' />      (FS19)
@@ -129,11 +129,11 @@ def override_dir_to_path(directory: str | None) -> str | None:
 
 
 # --------------------------------------------------------------------------
-# Écriture de la ligne (0.3)
+# Écriture de la ligne
 # --------------------------------------------------------------------------
 
 class WriteError(Exception):
-    """Écriture impossible, avec une clé de langue (I7)."""
+    """Écriture impossible, avec une clé de langue."""
 
     def __init__(self, key: str, **params: object) -> None:
         super().__init__(key)
@@ -191,7 +191,7 @@ def replace_override(text: str, directory: str, active: bool = True) -> str:
 
 
 def write_override(path: Path, directory: str, active: bool = True) -> Override:
-    """Écrit l'override vers `directory` (3.5). Lève WriteError en cas d'échec ;
+    """Écrit l'override vers `directory`. Lève WriteError en cas d'échec ;
     le fichier d'origine est alors rétabli."""
     try:
         data = path.read_bytes()
@@ -237,7 +237,7 @@ def write_override(path: Path, directory: str, active: bool = True) -> Override:
 
 
 # --------------------------------------------------------------------------
-# game.xml : console de développement (arguments de lancement, 0.3)
+# game.xml : console de développement (arguments de lancement)
 # --------------------------------------------------------------------------
 
 GAME_XML = "game.xml"
@@ -252,7 +252,7 @@ _CONTROLS_RE = re.compile(
 
 def development_controls(path: Path) -> bool | None:
     """Valeur de <development><controls> dans game.xml : True, False, ou None si
-    le fichier ou la ligne est introuvable (0.4, affichée dans les paramètres)."""
+    le fichier ou la ligne est introuvable (affichée dans les paramètres)."""
     try:
         data = path.read_bytes()
     except OSError:

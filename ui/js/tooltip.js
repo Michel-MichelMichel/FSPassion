@@ -1,4 +1,4 @@
-// Infobulles traduites des boutons à icône (5.2). Accessibles au clavier :
+// Infobulles traduites des boutons à icône. Accessibles au clavier :
 // elles apparaissent aussi quand l'élément reçoit le focus.
 
 import { t } from './i18n.js';

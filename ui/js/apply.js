@@ -43,7 +43,7 @@ export function reportApply(res) {
   if (res.missing && res.missing.length) {
     toast('apply.missing', { count: res.missing.length, list: res.missing.slice(0, 6).join(', ') }, 'warn');
   }
-  // 0.6 : mods d'un autre disque, sans droits pour les liens symboliques (4.20).
+  // Mods d'un autre disque, sans droits pour les liens symboliques.
   if (res.blocked && res.blocked.length) {
     toast('apply.blocked', { count: res.blocked.length, list: res.blocked.slice(0, 6).join(', ') }, 'warn');
   }
@@ -82,7 +82,7 @@ export async function applySelected(pid = null) {
 }
 
 // « Lancer le jeu » : si la partie sélectionnée n'est pas appliquée (ou pas à
-// jour), on propose de l'appliquer d'abord (Q10).
+// jour), on propose de l'appliquer d'abord.
 export async function launchGame() {
   const sel = selectedParty();
   let applyFirst = false;
@@ -101,7 +101,7 @@ export async function launchGame() {
       const parties = await api.get(`/api/parties?version=${encodeURIComponent(activeVersion())}`);
       setParties(parties);
     }
-    // 0.5 : le lancement réussi n'affiche plus de message ; seul un échec est signalé.
+    // Le lancement réussi n'affiche plus de message ; seul un échec est signalé.
     if (!res.ok) toast(res.key, res.params || {}, 'error');
   } catch (err) {
     toastError(err);
@@ -127,7 +127,7 @@ function askApplyBeforeLaunch(name) {
 }
 
 // ---------------------------------------------------------------------------
-// Contrôle de l'override (3.5) : le jeu charge un dossier que FS Passion ne
+// Contrôle de l'override : le jeu charge un dossier que FS Passion ne
 // connaît pas. Une seule fois par dossier et par session.
 // ---------------------------------------------------------------------------
 

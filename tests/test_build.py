@@ -77,7 +77,7 @@ def test_github_workflow():
         assert live.read_text(encoding="utf-8").replace("\r\n", "\n") == wf.replace("\r\n", "\n")
     assert "runs-on: windows-2022" in wf and "python tools/build.py" in wf
     assert "tags: [\"v*.*.*\"]" in wf and "gh release create" in wf and "--draft" in wf
-    assert "actions/upload-artifact@v5" in wf
+    assert "actions/upload-artifact@v6" in wf
     assert re.search(r"permissions:\s*\n\s*contents: read", wf)
 
 

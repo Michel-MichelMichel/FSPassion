@@ -47,7 +47,7 @@ FS Passion は信頼できる、オープンソースで無料のプロジェク
 
 ## インターネット接続
 
-FS Passion が接続するのは GitHub だけで、DLC カタログ（名前とアイコン、公開リポジトリ `FSPassion-data`）を 1 日に最大 1 回読み込みます。個人データは送信されません。「Internet connection」設定（Settings → Application）でオフにできます。
+FS Passion が接続するのは GitHub だけで、DLC カタログ（名前とアイコン、公開リポジトリ `FSPassion-data`）を 1 日に最大 1 回読み込みます。個人データは送信されません。「Internet connection」設定（Settings → Application）でオフにできます。また、起動するたびに（その後は 1 日 1 回）GitHub で FS Passion の新しいバージョンを確認します。「FS Passion updates」設定（Settings → Application）でオフにできます。
 
 ## ライセンス
 

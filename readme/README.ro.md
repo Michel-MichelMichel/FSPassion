@@ -47,7 +47,7 @@ FS Passion este și va rămâne un proiect de încredere, open source și gratui
 
 ## Conexiunea la internet
 
-FS Passion se conectează doar la GitHub, pentru a citi catalogul DLC (nume și pictograme, depozitul public `FSPassion-data`), cel mult o dată pe zi. Nu se trimit date personale. Setarea „Internet connection” (Settings → Application) o dezactivează.
+FS Passion se conectează doar la GitHub, pentru a citi catalogul DLC (nume și pictograme, depozitul public `FSPassion-data`), cel mult o dată pe zi. Nu se trimit date personale. Setarea „Internet connection” (Settings → Application) o dezactivează. De asemenea, la fiecare pornire (apoi o dată pe zi) caută pe GitHub o versiune nouă de FS Passion: setarea „FS Passion updates” (Settings → Application) o dezactivează.
 
 ## Licență
 

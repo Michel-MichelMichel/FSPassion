@@ -1152,3 +1152,21 @@ select.field-input option { background: var(--surface-2); color: var(--text-1); 
 
 /* Ne plus utiliser FS Passion — espace sous l'avertissement. */
 .alert-box + .set-row.stop-row { margin-top: 10px; }
+
+/* Mises à jour de FS Passion (Paramètres → Application). */
+.update-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--accent-line);
+  border-radius: 8px;
+  background: var(--fill-2);
+}
+.update-card-head { display: flex; align-items: flex-start; gap: 14px; }
+.update-card-ico { width: 28px; height: 28px; flex: none; color: var(--accent); margin-top: 2px; }
+.update-card-title { font-family: var(--font-display); font-size: var(--t-l); color: var(--text-1); margin-bottom: 2px; }
+.update-actions { gap: 10px; }
+.update-card .set-help.is-error { color: var(--critical); }
+.update-progress { display: block; height: 4px; border-radius: 4px; background: var(--fill-3); overflow: hidden; }
+.update-progress-fill { display: block; height: 100%; width: 0; border-radius: 4px; background: var(--accent); transition: width 240ms var(--ease-out); }

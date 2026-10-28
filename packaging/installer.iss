@@ -108,6 +108,9 @@ Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExe}"; Tasks: desktopico
 Filename: "{tmp}\MicrosoftEdgeWebview2Setup.exe"; Parameters: "/silent /install"; StatusMsg: "{cm:WebView2Install}"; Flags: waituntilterminated; Check: NeedsWebView2
 #endif
 Filename: "{app}\{#AppExe}"; Description: "{cm:LaunchApp}"; Flags: nowait postinstall skipifsilent runasoriginaluser
+; Mise à jour lancée depuis FS Passion (installation silencieuse, /RELAUNCH=1) :
+; FS Passion est relancé à la fin, avec les droits de l'utilisateur.
+Filename: "{app}\{#AppExe}"; Flags: nowait runasoriginaluser; Check: RelaunchAfterUpdate
 
 [UninstallRun]
 ; La fenêtre « Ne plus utiliser FS Passion » (override rétabli, dossiers de parties
@@ -147,4 +150,10 @@ procedure CurStepChanged(CurStep: TSetupStep);
 begin
   if (CurStep = ssPostInstall) and NeedsWebView2() and not WizardSilent() then
     MsgBox(CustomMessage('WebView2Failed'), mbInformation, MB_OK);
+end;
+
+// Mise à jour depuis FS Passion : setup.exe /SILENT … /RELAUNCH=1.
+function RelaunchAfterUpdate(): Boolean;
+begin
+  Result := ExpandConstant('{param:RELAUNCH|0}') = '1';
 end;

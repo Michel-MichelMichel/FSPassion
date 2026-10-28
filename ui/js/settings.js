@@ -20,6 +20,7 @@ import {
 } from './theme.js';
 import { openStopUsing } from './stopuse.js';
 import { toast, toastError } from './toast.js';
+import { buildUpdates } from './updates.js';
 
 let dlg = null;
 // Sous-sections des Paramètres pour le défilement à la molette.
@@ -60,12 +61,14 @@ const ALIASES = {
   general: 'app', downloads: 'app', window: 'app', backup: 'app', stop: 'app',
   language: 'look', theme: 'look',
   donate: 'help', about: 'help', notice: 'help', logs: 'help',
+  updates: 'app',
 };
 
 export function openSettings(section) {
   if (section) openId = ALIASES[section] || section;
   if (dlg && !dlg.closed) {
     showPage(openId);
+    if (section === 'updates') revealUpdates();
     return;
   }
   navEls = new Map();
@@ -122,11 +125,25 @@ export function openSettings(section) {
       frameGlow = null;
     },
   });
-  unsub = subscribe('state', () => refreshOpen());
+  const unsubState = subscribe('state', () => refreshOpen());
+  const unsubUpdate = subscribe('update', () => refreshOpen());
+  unsub = () => {
+    unsubState();
+    unsubUpdate();
+  };
   document.addEventListener('fsp-theme', refreshOpen);
   frameObs = new ResizeObserver(() => drawFrame());
   frameObs.observe(layoutEl);
   showPage(openId);
+  if (section === 'updates') revealUpdates();
+}
+
+// Encart « Mises à jour de FS Passion » amené en haut de la page.
+function revealUpdates() {
+  requestAnimationFrame(() => {
+    const el = pane && pane.querySelector('.set-updates');
+    if (el) pane.scrollTop = Math.max(0, el.offsetTop - 14);
+  });
 }
 
 function showPage(id) {
@@ -912,6 +929,7 @@ function buildTheme() {
 
 function buildApp() {
   return [
+    group('circle-arrow-up', 'settings.updates.title', buildUpdates(saveSettings), 'set-updates'),
     group('download', 'settings.downloads.title', buildDownloads()),
     group('app-window', 'settings.window.title', buildWindow()),
     windowModeGroup(),

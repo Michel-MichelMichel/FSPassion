@@ -47,7 +47,7 @@ FS Passion est et restera un projet de confiance, open source et gratuit. Pour r
 
 ## Connexion Internet
 
-FS Passion ne se connecte qu'à GitHub, pour lire le catalogue des DLC (noms et icônes, dépôt public `FSPassion-data`), au plus une fois par jour. Aucune donnée personnelle n'est envoyée. Le réglage « Connexion Internet » (Paramètres → Application) le désactive.
+FS Passion ne se connecte qu'à GitHub, pour lire le catalogue des DLC (noms et icônes, dépôt public `FSPassion-data`), au plus une fois par jour. Aucune donnée personnelle n'est envoyée. Le réglage « Connexion Internet » (Paramètres → Application) le désactive. Il recherche aussi sur GitHub une nouvelle version de FS Passion à chaque lancement (puis une fois par jour) : le réglage « Mises à jour de FS Passion » (Paramètres → Application) le désactive.
 
 ## Pour les développeurs
 

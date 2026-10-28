@@ -432,6 +432,47 @@
       "error_too_new": "Zveřejněný katalog vyžaduje novější verzi FS Passion.",
       "error_too_big": "Zveřejněný katalog je příliš velký: ignoruje se."
     },
+    "updates": {
+      "title": "Aktualizace FS Passion",
+      "allow": "Hledat aktualizace FS Passion na GitHubu",
+      "help": "Při každém spuštění (a pak jednou denně, pokud zůstane otevřený) si FS Passion na GitHubu přečte číslo poslední vydané verze. Neodesílají se žádné osobní údaje.",
+      "off": "Hledání aktualizací je vypnuté.",
+      "checking": "Hledání…",
+      "last_check": "Poslední hledání: {date}.",
+      "up_to_date": "FS Passion je aktuální (verze {version}).",
+      "never": "Nainstalovaná verze: {version}.",
+      "available": "Je k dispozici nová verze: {version}",
+      "published": "Vydáno {date}",
+      "current": "Nainstalovaná verze: {version}",
+      "install": "Nainstalovat aktualizaci",
+      "download_portable": "Stáhnout přenosnou verzi",
+      "downloading": "Stahování… {percent} %",
+      "closing": "Instalace…",
+      "closing_help": "FS Passion se zavře, nainstaluje novou verzi a znovu se otevře.",
+      "see_release": "Zobrazit novinky",
+      "check": "Hledat nyní",
+      "how_installed": "Instalační program se stáhne z GitHubu a ověří (kontrolní součet SHA-256). FS Passion se během instalace zavře a pak se znovu otevře. Vaše nastavení, sestavy a mody zůstanou zachovány.",
+      "how_portable": "Soubor .zip se stáhne a ověří ve vaší složce stažených souborů. Zavřete FS Passion a poté nahraďte soubory v jeho složce soubory z archivu .zip; složku „data“ (vaše nastavení) ponechte.",
+      "how_source": "Stáhněte novou verzi z její stránky na GitHubu.",
+      "note": "Je k dispozici nová verze FS Passion: {version}",
+      "pill": "Nová verze {version}",
+      "pill_tip": "Je k dispozici aktualizace FS Passion: Nastavení → Aplikace",
+      "portable_ready": "Přenosná verze stažena a ověřena: {file}",
+      "error_not_found": "Na GitHubu zatím není vydána žádná verze.",
+      "error_unreachable": "Hledání se nezdařilo (bez připojení?).",
+      "error_rate_limited": "GitHub právě omezuje hledání: další pokus později.",
+      "error_invalid": "Vydání na GitHubu nelze přečíst.",
+      "error_no_source": "Chybí adresa repozitáře na GitHubu.",
+      "error_checksum": "Stažený soubor neodpovídá svému kontrolnímu součtu: byl smazán, nic se neinstaluje.",
+      "error_no_checksum": "Vydání pro tento soubor neuvádí kontrolní součet SHA-256: z bezpečnostních důvodů se nic neinstaluje.",
+      "error_missing_file": "Toto vydání neobsahuje očekávaný soubor: stáhněte ho z jeho stránky na GitHubu.",
+      "error_disabled": "Hledání aktualizací je vypnuté.",
+      "error_busy": "Stahování už probíhá.",
+      "error_none": "Žádná aktualizace k instalaci.",
+      "error_unsupported": "Automatická instalace zde není možná: stáhněte aktualizaci z její stránky na GitHubu.",
+      "error_launch": "Instalační program se nepodařilo spustit: stáhněte aktualizaci z její stránky na GitHubu.",
+      "error_game_running": "Nejprve zavřete Farming Simulator: FS Passion dává vaše sestavy do pořádku po zavření hry."
+    },
     "logs": {
       "title": "Protokoly a diagnostika",
       "open_logs": "Otevřít složku protokolů",
@@ -650,6 +691,9 @@
       },
       {
         "p": "Nemusíte nic dělat: aktualizace stažené hrou se převezmou po jejím zavření nebo při příštím spuštění FS Passion. Stará verze se odloží do „Old versions“. Pokud hra stáhne starší číslo verze než vaše (často mod, který jste upravili), FS Passion se zeptá, kterou ponechat."
+      },
+      {
+        "p": "Samotný FS Passion: když vyjde nová verze, objeví se tečka na ozubeném kolečku Nastavení a „Nová verze“ vedle čísla verze dole. Nastavení → Aplikace → „Nainstalovat aktualizaci“."
       },
       {
         "h": "Uchování sestav"

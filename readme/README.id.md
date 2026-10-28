@@ -47,7 +47,7 @@ FS Passion adalah dan akan tetap menjadi proyek yang tepercaya, sumber terbuka, 
 
 ## Koneksi internet
 
-FS Passion hanya terhubung ke GitHub untuk membaca katalog DLC (nama dan ikon, repositori publik `FSPassion-data`), paling banyak sekali sehari. Tidak ada data pribadi yang dikirim. Pengaturan “Internet connection” (Settings → Application) mematikannya.
+FS Passion hanya terhubung ke GitHub untuk membaca katalog DLC (nama dan ikon, repositori publik `FSPassion-data`), paling banyak sekali sehari. Tidak ada data pribadi yang dikirim. Pengaturan “Internet connection” (Settings → Application) mematikannya. Selain itu, setiap kali dijalankan (lalu sekali sehari), FS Passion memeriksa versi baru di GitHub: pengaturan “FS Passion updates” (Settings → Application) mematikannya.
 
 ## Lisensi
 

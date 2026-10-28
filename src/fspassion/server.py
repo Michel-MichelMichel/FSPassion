@@ -470,6 +470,29 @@ class Server:
             res["state"] = core.dlc_catalog_state()
             return res
 
+        # -- Mises à jour de FS Passion -------------------------
+
+        @r("GET", "/api/update")
+        def _update_state(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
+            return core.update_state()
+
+        @r("POST", "/api/update/check")
+        def _update_check(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
+            return core.update_check()
+
+        @r("POST", "/api/update/install")
+        def _update_install(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
+            res = core.update_install()
+            if res.get("action") == "quit":
+                # L'installeur attend la fin de FS Passion : l'interface a le
+                # temps d'afficher « Installation… » avant la fermeture.
+                threading.Timer(1.5, self._quit).start()
+            return res
+
+        @r("POST", "/api/update/page")
+        def _update_page(core: Core, body: dict[str, Any], q: dict[str, list[str]], ctx: RequestContext) -> Any:
+            return {"ok": core.update_page()}
+
     def _quit(self) -> None:
         if self.quit_callback:
             self.quit_callback()

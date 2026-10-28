@@ -6,13 +6,16 @@ import { clear, h, icon } from './dom.js';
 import { t } from './i18n.js';
 import { isRunning, store, versionInfo } from './state.js';
 import { toastError } from './toast.js';
+import { footerUpdatePill } from './updates.js';
 
 let footer = null;
 let onQuit = () => {};
+let onUpdates = () => {};
 
 export function initFooter(el, opts) {
   footer = el;
   onQuit = opts.onQuit;
+  onUpdates = opts.onUpdates || onUpdates;
 }
 
 export function renderFooter() {
@@ -49,6 +52,7 @@ export function renderFooter() {
   footer.append(
     ghBtn,
     h('span', { class: 'footer-version', text: `v${store.app.app.version}` }),
+    ...[footerUpdatePill(() => onUpdates())].filter(Boolean),
     h('div', { class: 'footer-spacer' }),
     launch,
     h('button', { class: 'btn btn-ghost btn-l', type: 'button', onclick: () => onQuit() }, icon('log-out'), h('span', { text: t('footer.quit') })),

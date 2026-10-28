@@ -47,7 +47,7 @@ FS Passion je a zůstane důvěryhodným, otevřeným a bezplatným projektem. J
 
 ## Připojení k internetu
 
-FS Passion se připojuje pouze ke GitHubu, aby načetl katalog DLC (názvy a ikony, veřejný repozitář `FSPassion-data`), nejvýše jednou denně. Neodesílají se žádné osobní údaje. Nastavení „Připojení k internetu“ (Nastavení → Aplikace) to vypne.
+FS Passion se připojuje pouze ke GitHubu, aby načetl katalog DLC (názvy a ikony, veřejný repozitář `FSPassion-data`), nejvýše jednou denně. Neodesílají se žádné osobní údaje. Nastavení „Připojení k internetu“ (Nastavení → Aplikace) to vypne. Při každém spuštění (pak jednou denně) také hledá na GitHubu novou verzi FS Passion: nastavení „Aktualizace FS Passion“ (Nastavení → Aplikace) to vypne.
 
 ## Licence
 

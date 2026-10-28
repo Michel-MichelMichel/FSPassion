@@ -408,6 +408,47 @@
       "error_too_new": "O catálogo publicado precisa de uma versão mais recente do FS Passion.",
       "error_too_big": "O catálogo publicado é grande demais: ele é ignorado."
     },
+    "updates": {
+      "title": "Atualizações do FS Passion",
+      "allow": "Procurar atualizações do FS Passion no GitHub",
+      "help": "A cada inicialização (e depois uma vez por dia, se continuar aberto), o FS Passion lê no GitHub o número da última versão publicada. Nenhum dado pessoal é enviado.",
+      "off": "Busca de atualizações desativada.",
+      "checking": "Procurando…",
+      "last_check": "Última busca: {date}.",
+      "up_to_date": "O FS Passion está atualizado (versão {version}).",
+      "never": "Versão instalada: {version}.",
+      "available": "Nova versão disponível: {version}",
+      "published": "Publicada em {date}",
+      "current": "Versão instalada: {version}",
+      "install": "Instalar a atualização",
+      "download_portable": "Baixar a versão portátil",
+      "downloading": "Baixando… {percent}%",
+      "closing": "Instalando…",
+      "closing_help": "O FS Passion fecha, instala a nova versão e abre de novo.",
+      "see_release": "Ver as novidades",
+      "check": "Procurar agora",
+      "how_installed": "O instalador é baixado do GitHub e verificado (soma SHA-256). O FS Passion fecha durante a instalação e depois abre de novo. Suas configurações, partidas e mods são mantidos.",
+      "how_portable": "O arquivo .zip é baixado e verificado na sua pasta de downloads. Feche o FS Passion e substitua os arquivos da pasta dele pelos do .zip, mantendo a pasta “data” (suas configurações).",
+      "how_source": "Baixe a nova versão na página dela no GitHub.",
+      "note": "Nova versão do FS Passion disponível: {version}",
+      "pill": "Nova versão {version}",
+      "pill_tip": "Atualização do FS Passion disponível: Configurações → Aplicativo",
+      "portable_ready": "Versão portátil baixada e verificada: {file}",
+      "error_not_found": "Ainda não há nenhuma versão publicada no GitHub.",
+      "error_unreachable": "Não foi possível procurar (sem conexão?).",
+      "error_rate_limited": "O GitHub está limitando as buscas no momento: nova tentativa mais tarde.",
+      "error_invalid": "A publicação no GitHub não pode ser lida.",
+      "error_no_source": "O endereço do repositório no GitHub está faltando.",
+      "error_checksum": "O arquivo baixado não corresponde à sua soma: ele foi excluído, nada foi instalado.",
+      "error_no_checksum": "A publicação não informa nenhuma soma SHA-256 para este arquivo: por segurança, nada foi instalado.",
+      "error_missing_file": "Esta publicação não contém o arquivo esperado: baixe-a na página dela no GitHub.",
+      "error_disabled": "A busca de atualizações está desativada.",
+      "error_busy": "Já há um download em andamento.",
+      "error_none": "Nenhuma atualização para instalar.",
+      "error_unsupported": "A instalação automática não é possível aqui: baixe a atualização na página dela no GitHub.",
+      "error_launch": "Não foi possível iniciar o instalador: baixe a atualização na página dela no GitHub.",
+      "error_game_running": "Feche primeiro o Farming Simulator: o FS Passion organiza suas partidas quando o jogo fecha."
+    },
     "logs": {
       "title": "Registros e diagnóstico",
       "open_logs": "Abrir a pasta de registros",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Nada a fazer: as atualizações baixadas pelo jogo são recuperadas quando ele fecha, ou na próxima inicialização do FS Passion. A versão antiga é guardada em “Old versions”. Se o jogo baixar um número de versão mais antigo que o seu (muitas vezes um mod que você modificou), o FS Passion pergunta qual você quer manter."
+      },
+      {
+        "p": "O próprio FS Passion: quando sai uma nova versão, aparece um ponto na engrenagem das Configurações e “Nova versão” ao lado do número da versão, embaixo. Configurações → Aplicativo → “Instalar a atualização”."
       },
       {
         "h": "Manter suas partidas"

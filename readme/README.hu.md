@@ -47,7 +47,7 @@ Az FS Passion megbízható, nyílt forráskódú és ingyenes projekt, és az is
 
 ## Internetkapcsolat
 
-Az FS Passion csak a GitHubhoz csatlakozik, hogy beolvassa a DLC-katalógust (nevek és ikonok, nyilvános `FSPassion-data` tároló), legfeljebb naponta egyszer. Személyes adatot nem küld. Az „Internet connection” beállítás (Settings → Application) kikapcsolja.
+Az FS Passion csak a GitHubhoz csatlakozik, hogy beolvassa a DLC-katalógust (nevek és ikonok, nyilvános `FSPassion-data` tároló), legfeljebb naponta egyszer. Személyes adatot nem küld. Az „Internet connection” beállítás (Settings → Application) kikapcsolja. Emellett minden indításkor (utána naponta egyszer) megnézi a GitHubon, van-e új FS Passion-verzió: az „FS Passion updates” beállítás (Settings → Application) kikapcsolja.
 
 ## Licenc
 

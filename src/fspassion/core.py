@@ -44,6 +44,7 @@ from fspassion import (
     reconcile,
     stopuse,
     storage,
+    updates,
     versions,
     winapi,
 )
@@ -71,6 +72,9 @@ SETTABLE: dict[str, type | tuple[type, ...]] = {
     "downloads_dir": str,
     "scan_downloads_at_start": bool,
     "internet_access": bool,
+    # Recherche des mises à jour de FS Passion sur GitHub (indépendante du
+    # catalogue des DLC).
+    "update_check": bool,
     "show_notice_at_start": bool,
     "welcome_done": bool,
     # Tour guidé : l'ampoule a été mise en évidence au premier lancement.
@@ -134,6 +138,13 @@ class Core:
         self.ui_perf: dict[str, Any] = {}
         self.exit_cleanup: list[Path] = []
         self.run_uninstaller: Path | None = None
+        # Mises à jour de FS Passion (Releases GitHub).
+        self.updater = updates.Updater(
+            self.app_info,
+            enabled=lambda: bool(self.settings.get("update_check")) and not self.stopped,
+            publish=self.bus.publish,
+            downloads_dir=lambda: updates.default_downloads_dir(self.settings.get("downloads_dir")),
+        )
 
     # ------------------------------------------------------------------
     # Démarrage
@@ -166,6 +177,10 @@ class Core:
 
         self.monitor.start()
         self._ensure_backups()
+        updates.clean_old_downloads()
+        if not self.uninstall_mode and updates.AUTO_CHECK:
+            # Recherche au lancement, quelques secondes après l'affichage.
+            self.updater.check_later(updates.STARTUP_DELAY_S)
 
         if not s.get("first_detection_done"):
             # Tout premier lancement : la détection s'exécute en silence.
@@ -192,6 +207,7 @@ class Core:
                     self.bus.publish("backup", version=v.id)
 
     def shutdown(self) -> None:
+        self.updater.stop()
         self.monitor.stop()
 
     # ------------------------------------------------------------------
@@ -299,6 +315,7 @@ class Core:
             "anomalies_cfg": s.get("anomalies"),
             "demo": self.demo_state(),
             "dlc_catalog": self.dlc_catalog_state(),
+            "update": self.updater.state(),
         }
 
     # ------------------------------------------------------------------
@@ -333,11 +350,14 @@ class Core:
         if "window_mode" in clean and clean["window_mode"] not in ("native", "script", "thin"):
             raise AppError("error.bad_request")
         was_online = bool(self.settings.get("internet_access"))
+        was_checking = bool(self.settings.get("update_check"))
         self.settings.update(clean)
         if "language" in clean and self.tray is not None:
             self.tray.refresh()
         if clean.get("internet_access") and not was_online:
             self.refresh_remote_data()
+        if clean.get("update_check") and not was_checking and updates.AUTO_CHECK:
+            self.updater.check_later(0.5)
         return {k: self.settings.get(k) for k in SETTABLE}
 
     def tray_texts(self) -> dict[str, str]:
@@ -1787,6 +1807,52 @@ class Core:
         threading.Thread(target=work, name="dlc-remote", daemon=True).start()
 
     # ------------------------------------------------------------------
+    # Mises à jour de FS Passion
+    # ------------------------------------------------------------------
+
+    def update_state(self) -> dict[str, Any]:
+        return self.updater.state()
+
+    def update_check(self) -> dict[str, Any]:
+        """« Rechercher maintenant » (Paramètres → Application)."""
+        if not self.settings.get("update_check"):
+            raise AppError("settings.updates.error_disabled", status=409)
+        return self.updater.check()
+
+    def update_install(self) -> dict[str, Any]:
+        """Télécharge la nouvelle version et la vérifie, puis :
+        - version installée : prépare l'installeur, lancé dès la fermeture
+          de FS Passion (action « quit » : l'interface ferme l'application) ;
+        - version portable : le .zip est rangé dans les téléchargements et
+          montré dans l'Explorateur (action « revealed »)."""
+        if self.monitor.running:
+            # La remise en ordre des parties se fait à la fermeture du jeu :
+            # FS Passion doit rester ouvert jusque-là.
+            raise AppError("settings.updates.error_game_running", status=409)
+        try:
+            path = self.updater.download()
+        except updates.UpdateError as exc:
+            raise AppError(f"settings.updates.error_{exc.key}", status=409) from exc
+        kind = updates.install_kind()
+        if kind == "installed":
+            try:
+                updates.launch_installer_after_exit(path, os.getpid())
+            except (OSError, updates.UpdateError) as exc:
+                log.warning("Lancement de l'installeur impossible : %s", exc)
+                raise AppError("settings.updates.error_launch", status=500) from exc
+            log.info("Installation de %s au prochain arrêt de FS Passion", path.name)
+            return {"action": "quit", "state": self.updater.state()}
+        winapi.reveal(path)
+        return {"action": "revealed", "file": path.name, "state": self.updater.state()}
+
+    def update_page(self) -> bool:
+        """Page de la publication sur GitHub (nouveautés, téléchargement)."""
+        url = self.updater.release_page()
+        if not url or config.web_link({"github_url": url}, "github") is None:
+            raise AppError("error.bad_request")
+        return winapi.open_url(url)
+
+    # ------------------------------------------------------------------
     # Exporter et importer la configuration
     # ------------------------------------------------------------------
 
@@ -2286,6 +2352,7 @@ class Core:
             states.append(st)
         rights = self.rights_state()
         cat = self.dlc_catalog_state()
+        upd = self.updater.state()
         s = self.settings.snapshot()
 
         def yn(value: Any) -> str:
@@ -2299,6 +2366,9 @@ class Core:
             "Symlinks allowed": yn(rights.get("symlinks")),
             "Run as admin flag": yn(rights.get("run_as_admin")),
             "Internet access": yn(s.get("internet_access")),
+            "Update check": yn(s.get("update_check"))
+                            + (f" ({upd['kind']}; latest: {upd['latest']['version'] if upd['latest'] else '-'}"
+                               + (f"; last error: {upd['error']}" if upd.get("error") else "") + ")"),
             "DLC catalog": f"{cat.get('updated') or '-'} ({'downloaded' if cat.get('remote') else 'embedded'})"
                            + (f", last error: {cat['error']}" if cat.get("error") else ""),
         }

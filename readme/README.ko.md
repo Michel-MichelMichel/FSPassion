@@ -47,7 +47,7 @@ FS Passion은 신뢰할 수 있는 무료 오픈 소스 프로젝트이며 앞�
 
 ## 인터넷 연결
 
-FS Passion은 DLC 카탈로그(이름과 아이콘, 공개 저장소 `FSPassion-data`)를 읽기 위해 GitHub에만 하루 최대 한 번 연결합니다. 개인 데이터는 전송되지 않습니다. “Internet connection” 설정(Settings → Application)으로 끌 수 있습니다.
+FS Passion은 DLC 카탈로그(이름과 아이콘, 공개 저장소 `FSPassion-data`)를 읽기 위해 GitHub에만 하루 최대 한 번 연결합니다. 개인 데이터는 전송되지 않습니다. “Internet connection” 설정(Settings → Application)으로 끌 수 있습니다. 또한 실행할 때마다(이후 하루 한 번) GitHub에서 FS Passion의 새 버전을 확인합니다. “FS Passion updates” 설정(Settings → Application)으로 끌 수 있습니다.
 
 ## 라이선스
 

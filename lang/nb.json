@@ -408,6 +408,47 @@
       "error_too_new": "Den publiserte katalogen krever en nyere versjon av FS Passion.",
       "error_too_big": "Den publiserte katalogen er for stor: den ignoreres."
     },
+    "updates": {
+      "title": "Oppdateringer av FS Passion",
+      "allow": "Søk etter oppdateringer av FS Passion på GitHub",
+      "help": "Ved hver oppstart (og deretter én gang om dagen hvis det forblir åpent) leser FS Passion nummeret på den nyeste publiserte versjonen på GitHub. Ingen personopplysninger sendes.",
+      "off": "Søk etter oppdateringer er slått av.",
+      "checking": "Søker …",
+      "last_check": "Siste søk: {date}.",
+      "up_to_date": "FS Passion er oppdatert (versjon {version}).",
+      "never": "Installert versjon: {version}.",
+      "available": "Ny versjon tilgjengelig: {version}",
+      "published": "Publisert {date}",
+      "current": "Installert versjon: {version}",
+      "install": "Installer oppdateringen",
+      "download_portable": "Last ned den bærbare versjonen",
+      "downloading": "Laster ned … {percent} %",
+      "closing": "Installerer …",
+      "closing_help": "FS Passion lukkes, installerer den nye versjonen og åpnes igjen.",
+      "see_release": "Se nyhetene",
+      "check": "Søk nå",
+      "how_installed": "Installasjonsprogrammet lastes ned fra GitHub og kontrolleres (SHA-256-kontrollsum). FS Passion lukkes under installasjonen og åpnes deretter igjen. Innstillingene, oppsettene og modsene dine beholdes.",
+      "how_portable": ".zip-filen lastes ned og kontrolleres i nedlastingsmappen din. Lukk FS Passion, og erstatt deretter filene i mappen med filene fra .zip-filen; behold mappen «data» (innstillingene dine).",
+      "how_source": "Last ned den nye versjonen fra GitHub-siden dens.",
+      "note": "Ny versjon av FS Passion tilgjengelig: {version}",
+      "pill": "Ny versjon {version}",
+      "pill_tip": "Oppdatering av FS Passion tilgjengelig: Innstillinger → Program",
+      "portable_ready": "Bærbar versjon lastet ned og kontrollert: {file}",
+      "error_not_found": "Ingen versjon er publisert på GitHub ennå.",
+      "error_unreachable": "Søket mislyktes (ingen tilkobling?).",
+      "error_rate_limited": "GitHub begrenser søkene for øyeblikket: nytt forsøk senere.",
+      "error_invalid": "Publiseringen på GitHub kan ikke leses.",
+      "error_no_source": "Adressen til GitHub-repositoriet mangler.",
+      "error_checksum": "Den nedlastede filen samsvarer ikke med kontrollsummen sin: den er slettet, ingenting installeres.",
+      "error_no_checksum": "Publiseringen oppgir ingen SHA-256-kontrollsum for denne filen: av sikkerhetshensyn installeres ingenting.",
+      "error_missing_file": "Denne publiseringen inneholder ikke den forventede filen: last den ned fra GitHub-siden dens.",
+      "error_disabled": "Søk etter oppdateringer er slått av.",
+      "error_busy": "En nedlasting pågår allerede.",
+      "error_none": "Ingen oppdatering å installere.",
+      "error_unsupported": "Automatisk installasjon er ikke mulig her: last ned oppdateringen fra GitHub-siden dens.",
+      "error_launch": "Installasjonsprogrammet kunne ikke startes: last ned oppdateringen fra GitHub-siden dens.",
+      "error_game_running": "Lukk Farming Simulator først: FS Passion rydder i oppsettene dine når spillet lukkes."
+    },
     "logs": {
       "title": "Logger og diagnose",
       "open_logs": "Åpne loggmappen",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Du trenger ikke gjøre noe: oppdateringer som spillet laster ned, hentes inn når det lukkes, eller neste gang FS Passion starter. Den gamle versjonen legges til side i «Old versions». Hvis spillet laster ned et eldre versjonsnummer enn ditt (ofte en mod du har endret selv), spør FS Passion hvilken du vil beholde."
+      },
+      {
+        "p": "Selve FS Passion: når en ny versjon kommer, vises en prikk på tannhjulet for Innstillinger og «Ny versjon» ved siden av versjonsnummeret nederst. Innstillinger → Program → «Installer oppdateringen»."
       },
       {
         "h": "Ta vare på oppsettene"

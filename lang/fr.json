@@ -408,6 +408,47 @@
       "error_too_new": "Le catalogue publié demande une version plus récente de FS Passion.",
       "error_too_big": "Le catalogue publié est trop volumineux : il est ignoré."
     },
+    "updates": {
+      "title": "Mises à jour de FS Passion",
+      "allow": "Rechercher les mises à jour de FS Passion sur GitHub",
+      "help": "À chaque lancement (puis une fois par jour s'il reste ouvert), FS Passion lit sur GitHub le numéro de la dernière version publiée. Aucune donnée personnelle n'est envoyée.",
+      "off": "Recherche des mises à jour désactivée.",
+      "checking": "Recherche en cours…",
+      "last_check": "Dernière recherche : {date}.",
+      "up_to_date": "FS Passion est à jour (version {version}).",
+      "never": "Version installée : {version}.",
+      "available": "Nouvelle version disponible : {version}",
+      "published": "Publiée le {date}",
+      "current": "Version installée : {version}",
+      "install": "Installer la mise à jour",
+      "download_portable": "Télécharger la version portable",
+      "downloading": "Téléchargement… {percent} %",
+      "closing": "Installation…",
+      "closing_help": "FS Passion se ferme, installe la nouvelle version, puis se rouvre.",
+      "see_release": "Voir les nouveautés",
+      "check": "Rechercher maintenant",
+      "how_installed": "L'installeur est téléchargé depuis GitHub et vérifié (empreinte SHA-256). FS Passion se ferme pendant l'installation, puis se rouvre. Vos réglages, vos parties et vos mods sont conservés.",
+      "how_portable": "Le fichier .zip est téléchargé et vérifié dans votre dossier de téléchargements. Fermez FS Passion, puis remplacez les fichiers de son dossier par ceux du .zip, en gardant le dossier « data » (vos réglages).",
+      "how_source": "Téléchargez la nouvelle version depuis sa page GitHub.",
+      "note": "Nouvelle version de FS Passion disponible : {version}",
+      "pill": "Nouvelle version {version}",
+      "pill_tip": "Mise à jour de FS Passion disponible : Paramètres → Application",
+      "portable_ready": "Version portable téléchargée et vérifiée : {file}",
+      "error_not_found": "Aucune version n'est encore publiée sur GitHub.",
+      "error_unreachable": "Recherche impossible (pas de connexion ?).",
+      "error_rate_limited": "GitHub limite les recherches pour le moment : nouvel essai plus tard.",
+      "error_invalid": "La publication sur GitHub est illisible.",
+      "error_no_source": "L'adresse du dépôt GitHub est absente.",
+      "error_checksum": "Le fichier téléchargé ne correspond pas à son empreinte : il a été supprimé, rien n'est installé.",
+      "error_no_checksum": "La publication ne donne pas d'empreinte SHA-256 pour ce fichier : par sécurité, rien n'est installé.",
+      "error_missing_file": "Cette publication ne contient pas le fichier attendu : téléchargez-la depuis sa page GitHub.",
+      "error_disabled": "La recherche des mises à jour est désactivée.",
+      "error_busy": "Un téléchargement est déjà en cours.",
+      "error_none": "Aucune mise à jour à installer.",
+      "error_unsupported": "Installation automatique impossible ici : téléchargez la mise à jour depuis sa page GitHub.",
+      "error_launch": "L'installeur n'a pas pu être lancé : téléchargez la mise à jour depuis sa page GitHub.",
+      "error_game_running": "Fermez d'abord Farming Simulator : FS Passion remet vos parties en ordre à la fermeture du jeu."
+    },
     "logs": {
       "title": "Journaux et diagnostic",
       "open_logs": "Ouvrir le dossier des journaux",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Rien à faire : les mises à jour téléchargées par le jeu sont récupérées à sa fermeture, ou au prochain démarrage de FS Passion. L'ancienne version est mise de côté dans « Old versions ». Si le jeu télécharge un numéro de version plus ancien que le vôtre (souvent un mod que vous avez modifié), FS Passion vous demande laquelle garder."
+      },
+      {
+        "p": "FS Passion lui-même : quand une nouvelle version est publiée, une pastille apparaît sur la roue des Paramètres et « Nouvelle version » à côté du numéro de version, en bas. Paramètres → Application → « Installer la mise à jour »."
       },
       {
         "h": "Sauvegarder ses parties"

@@ -33,6 +33,7 @@ import { initTooltips } from './tooltip.js';
 import { openStopUsing } from './stopuse.js';
 import { openNotice, openWelcome } from './welcome.js';
 import { initTour, isTourOpen, maybeShowTourHint, startTour } from './tour.js';
+import { initUpdates, syncUpdates } from './updates.js';
 
 const app = document.getElementById('app');
 let started = false;
@@ -172,7 +173,8 @@ async function start() {
   initSideLists(document.getElementById('side'), document.getElementById('preview'));
   initActionBar(document.getElementById('actionbar'), app);
   initDnd(app, { accepts: dropAccepts, drop: dropMods, over: setDragOver });
-  initFooter(document.getElementById('footer'), { onQuit: quit });
+  initFooter(document.getElementById('footer'), { onQuit: quit, onUpdates: () => openSettings('updates') });
+  initUpdates({ onChange: () => renderFooter() });
   initSettings({
     onNotice: () => openNotice(),
     onAnomalies: () => openAnomalies(),
@@ -187,12 +189,14 @@ async function start() {
   mountWindowControls(app, document.getElementById('topbar'));
   lastVersion = activeVersion();
   renderAll();
+  syncUpdates();
   app.classList.remove('is-loading');
   started = true;
   // Mesures pour le diagnostic : affichage prêt, fluidité du défilement.
   initPerf();
 
   subscribe('state', () => {
+    syncUpdates();
     renderHeader();
     renderSideLists();
     renderFooter();

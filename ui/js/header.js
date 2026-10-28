@@ -22,6 +22,7 @@ import {
 import { applyTheme, chosenTheme, oppositeTheme, themeMode } from './theme.js';
 import { toastError } from './toast.js';
 import { tourButton } from './tour.js';
+import { markSettingsButton } from './updates.js';
 
 let topbar = null;
 let openSettings = () => {};
@@ -139,13 +140,21 @@ export function renderHeader() {
       buildThemeToggle(),
       buildBell(),
       tourButton(),
-      h('button', {
-        class: 'icon-btn settings-btn no-drag', type: 'button', 'data-i18n-tip': 'header.settings',
-        'aria-label': t('header.settings'), onclick: () => openSettings(),
-      }, icon('settings'))),
+      settingsButton()),
   );
   renderStatus();
   fitHeader();
+}
+
+// Roue des Paramètres ; pastille quand une mise à jour de FS Passion est
+// disponible (updates.js).
+function settingsButton() {
+  const btn = h('button', {
+    class: 'icon-btn settings-btn no-drag', type: 'button', 'data-i18n-tip': 'header.settings',
+    'aria-label': t('header.settings'), onclick: () => openSettings(),
+  }, icon('settings'), h('span', { class: 'update-dot', 'aria-hidden': 'true' }));
+  markSettingsButton(btn);
+  return btn;
 }
 
 // ---------------------------------------------------------------------------

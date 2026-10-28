@@ -2,6 +2,28 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.6 — 28 octobre 2026 — mises à jour automatiques de FS Passion
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui change
+
+1. **Paramètres → Application → Mises à jour de FS Passion**, premier encart de la page :
+   - un interrupteur, **activé par défaut**, autorise FS Passion à rechercher ses mises à jour sur GitHub. Il est indépendant de « Connexion Internet » (catalogue des DLC) ;
+   - état de la recherche (à jour, dernière recherche, erreur) et bouton « Rechercher maintenant ».
+2. **Recherche automatique** au lancement, puis une fois par jour tant que FS Passion reste ouvert (zone de notification). Seule la dernière publication définitive de la page Releases compte : ni brouillon, ni préversion. Aucune donnée personnelle n'est envoyée.
+3. **Mise à jour disponible**, signalée sans message qui surgit :
+   - une pastille sur la roue des Paramètres ;
+   - « Nouvelle version x.y.z » à côté du numéro de version, en bas de la fenêtre (un clic ouvre l'encart) ;
+   - une entrée dans l'historique des notifications (cloche).
+4. **Installation en un clic** (« Installer la mise à jour ») :
+   - l'installeur est téléchargé depuis la page Releases et vérifié avec son empreinte SHA-256 (`SHA256SUMS.txt`, publié avec lui) ; sans empreinte, ou si elle ne correspond pas, rien n'est installé ;
+   - FS Passion se ferme, l'installeur s'exécute en silencieux avec sa barre de progression, puis relance FS Passion. Réglages, parties et mods sont conservés ;
+   - refusée tant que Farming Simulator tourne : la remise en ordre des parties se fait à la fermeture du jeu.
+5. **Version portable** : le `.zip` vérifié est téléchargé dans le dossier des téléchargements et montré dans l'Explorateur ; on remplace ensuite les fichiers du dossier de FS Passion en gardant le dossier `data`.
+6. Installeur : nouveau paramètre `/RELAUNCH=1` (relance de FS Passion après une installation silencieuse).
+7. Le réglage est repris par l'export de la configuration et figure dans le diagnostic. Textes dans les 14 langues, notice et README mis à jour.
+
 ## 0.9.5 — 28 octobre 2026 — sélecteur de langue, bienvenue agrandie, README (langues à venir)
 
 **Aucun fichier du jeu ni des mods n'est touché.**

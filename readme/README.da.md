@@ -47,7 +47,7 @@ FS Passion er og forbliver et pålideligt, open source og gratis projekt. En enk
 
 ## Internetforbindelse
 
-FS Passion forbinder kun til GitHub for at læse DLC-kataloget (navne og ikoner, offentligt repository `FSPassion-data`), højst én gang om dagen. Ingen personlige data sendes. Indstillingen “Internetforbindelse” (Indstillinger → Program) slår det fra.
+FS Passion forbinder kun til GitHub for at læse DLC-kataloget (navne og ikoner, offentligt repository `FSPassion-data`), højst én gang om dagen. Ingen personlige data sendes. Indstillingen “Internetforbindelse” (Indstillinger → Program) slår det fra. Ved hver start (derefter én gang om dagen) søger det også på GitHub efter en ny version af FS Passion: indstillingen “Opdateringer af FS Passion” (Indstillinger → Program) slår det fra.
 
 ## Licens
 

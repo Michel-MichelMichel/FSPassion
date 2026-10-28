@@ -47,7 +47,7 @@ FS Passion è e resterà un progetto affidabile, open source e gratuito. Per rin
 
 ## Connessione a Internet
 
-FS Passion si collega solo a GitHub, per leggere il catalogo dei DLC (nomi e icone, repository pubblico `FSPassion-data`), al massimo una volta al giorno. Nessun dato personale viene inviato. L'impostazione «Connessione a Internet» (Impostazioni → Applicazione) la disattiva.
+FS Passion si collega solo a GitHub, per leggere il catalogo dei DLC (nomi e icone, repository pubblico `FSPassion-data`), al massimo una volta al giorno. Nessun dato personale viene inviato. L'impostazione «Connessione a Internet» (Impostazioni → Applicazione) la disattiva. Cerca inoltre su GitHub una nuova versione di FS Passion a ogni avvio (poi una volta al giorno): l'impostazione «Aggiornamenti di FS Passion» (Impostazioni → Applicazione) la disattiva.
 
 ## Licenza
 

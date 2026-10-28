@@ -47,7 +47,7 @@ FS Passion is en blijft een betrouwbaar, opensource en gratis project. Een eenma
 
 ## Internetverbinding
 
-FS Passion maakt alleen verbinding met GitHub, om de DLC-catalogus te lezen (namen en pictogrammen, openbare repository `FSPassion-data`), hooguit één keer per dag. Er worden geen persoonlijke gegevens verzonden. De instelling “Internetverbinding” (Instellingen → Toepassing) schakelt dit uit.
+FS Passion maakt alleen verbinding met GitHub, om de DLC-catalogus te lezen (namen en pictogrammen, openbare repository `FSPassion-data`), hooguit één keer per dag. Er worden geen persoonlijke gegevens verzonden. De instelling “Internetverbinding” (Instellingen → Toepassing) schakelt dit uit. Daarnaast zoekt het bij elke start (daarna één keer per dag) op GitHub naar een nieuwe versie van FS Passion: de instelling “Updates van FS Passion” (Instellingen → Toepassing) schakelt dit uit.
 
 ## Licentie
 

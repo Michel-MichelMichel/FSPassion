@@ -19,6 +19,10 @@ def isolated_home(tmp_path, monkeypatch):
     """Chaque test a ses propres réglages : rien n'est écrit chez l'utilisateur."""
     home = tmp_path / "fsp-home"
     monkeypatch.setenv("FSPASSION_HOME", str(home))
+    # Aucune recherche de mise à jour sur Internet pendant les tests.
+    from fspassion import updates
+
+    monkeypatch.setattr(updates, "AUTO_CHECK", False)
     return home
 
 

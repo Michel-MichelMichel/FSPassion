@@ -47,7 +47,7 @@ FS Passion on ja pysyy luotettavana, avoimen lähdekoodin ja maksuttomana projek
 
 ## Internet-yhteys
 
-FS Passion muodostaa yhteyden vain GitHubiin lukeakseen DLC-luettelon (nimet ja kuvakkeet, julkinen `FSPassion-data`-repositorio), enintään kerran päivässä. Henkilötietoja ei lähetetä. Asetus ”Internet-yhteys” (Asetukset → Sovellus) poistaa sen käytöstä.
+FS Passion muodostaa yhteyden vain GitHubiin lukeakseen DLC-luettelon (nimet ja kuvakkeet, julkinen `FSPassion-data`-repositorio), enintään kerran päivässä. Henkilötietoja ei lähetetä. Asetus ”Internet-yhteys” (Asetukset → Sovellus) poistaa sen käytöstä. Lisäksi se etsii GitHubista FS Passionin uutta versiota joka käynnistyksellä (sen jälkeen kerran päivässä): asetus ”FS Passionin päivitykset” (Asetukset → Sovellus) poistaa sen käytöstä.
 
 ## Lisenssi
 

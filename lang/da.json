@@ -408,6 +408,47 @@
       "error_too_new": "Det offentliggjorte katalog kræver en nyere version af FS Passion.",
       "error_too_big": "Det offentliggjorte katalog er for stort: det ignoreres."
     },
+    "updates": {
+      "title": "Opdateringer af FS Passion",
+      "allow": "Søg efter opdateringer af FS Passion på GitHub",
+      "help": "Ved hver start (og derefter én gang om dagen, hvis det forbliver åbent) læser FS Passion nummeret på den seneste udgivne version på GitHub. Der sendes ingen personlige data.",
+      "off": "Søgning efter opdateringer er slået fra.",
+      "checking": "Søger…",
+      "last_check": "Seneste søgning: {date}.",
+      "up_to_date": "FS Passion er opdateret (version {version}).",
+      "never": "Installeret version: {version}.",
+      "available": "Ny version tilgængelig: {version}",
+      "published": "Udgivet den {date}",
+      "current": "Installeret version: {version}",
+      "install": "Installér opdateringen",
+      "download_portable": "Hent den bærbare version",
+      "downloading": "Henter… {percent} %",
+      "closing": "Installerer…",
+      "closing_help": "FS Passion lukker, installerer den nye version og åbner igen.",
+      "see_release": "Se nyhederne",
+      "check": "Søg nu",
+      "how_installed": "Installationsprogrammet hentes fra GitHub og kontrolleres (SHA-256-kontrolsum). FS Passion lukker under installationen og åbner derefter igen. Dine indstillinger, opsætninger og mods bevares.",
+      "how_portable": ".zip-filen hentes og kontrolleres i din mappe med overførsler. Luk FS Passion, og erstat derefter filerne i dets mappe med dem fra .zip-filen; behold mappen »data« (dine indstillinger).",
+      "how_source": "Hent den nye version fra dens side på GitHub.",
+      "note": "Ny version af FS Passion tilgængelig: {version}",
+      "pill": "Ny version {version}",
+      "pill_tip": "Opdatering af FS Passion tilgængelig: Indstillinger → Program",
+      "portable_ready": "Bærbar version hentet og kontrolleret: {file}",
+      "error_not_found": "Der er endnu ikke udgivet nogen version på GitHub.",
+      "error_unreachable": "Søgningen mislykkedes (ingen forbindelse?).",
+      "error_rate_limited": "GitHub begrænser søgningerne lige nu: nyt forsøg senere.",
+      "error_invalid": "Udgivelsen på GitHub kan ikke læses.",
+      "error_no_source": "Adressen på GitHub-repositoriet mangler.",
+      "error_checksum": "Den hentede fil passer ikke med sin kontrolsum: den er slettet, og intet installeres.",
+      "error_no_checksum": "Udgivelsen angiver ingen SHA-256-kontrolsum for denne fil: af sikkerhedshensyn installeres intet.",
+      "error_missing_file": "Denne udgivelse indeholder ikke den forventede fil: hent den fra dens side på GitHub.",
+      "error_disabled": "Søgning efter opdateringer er slået fra.",
+      "error_busy": "En overførsel er allerede i gang.",
+      "error_none": "Ingen opdatering at installere.",
+      "error_unsupported": "Automatisk installation er ikke mulig her: hent opdateringen fra dens side på GitHub.",
+      "error_launch": "Installationsprogrammet kunne ikke startes: hent opdateringen fra dens side på GitHub.",
+      "error_game_running": "Luk først Farming Simulator: FS Passion rydder op i dine opsætninger, når spillet lukkes."
+    },
     "logs": {
       "title": "Logfiler og diagnosticering",
       "open_logs": "Åbn mappen med logfiler",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Du skal ikke gøre noget: opdateringer, som spillet henter, overtages, når det lukkes, eller næste gang FS Passion starter. Den gamle version lægges til side i »Old versions«. Hvis spillet henter et ældre versionsnummer end dit (ofte et mod, du selv har ændret), spørger FS Passion, hvilken du vil beholde."
+      },
+      {
+        "p": "Selve FS Passion: når en ny version udkommer, vises en prik på tandhjulet for Indstillinger og »Ny version« ved siden af versionsnummeret nederst. Indstillinger → Program → »Installér opdateringen«."
       },
       {
         "h": "Behold dine opsætninger"

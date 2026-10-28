@@ -408,6 +408,47 @@
       "error_too_new": "Der veröffentlichte Katalog benötigt eine neuere Version von FS Passion.",
       "error_too_big": "Der veröffentlichte Katalog ist zu groß: Er wird ignoriert."
     },
+    "updates": {
+      "title": "FS Passion-Updates",
+      "allow": "Auf GitHub nach Updates für FS Passion suchen",
+      "help": "Bei jedem Start (und danach einmal täglich, solange es geöffnet bleibt) liest FS Passion auf GitHub die Nummer der neuesten veröffentlichten Version. Es werden keine persönlichen Daten gesendet.",
+      "off": "Suche nach Updates ausgeschaltet.",
+      "checking": "Suche läuft…",
+      "last_check": "Letzte Suche: {date}.",
+      "up_to_date": "FS Passion ist aktuell (Version {version}).",
+      "never": "Installierte Version: {version}.",
+      "available": "Neue Version verfügbar: {version}",
+      "published": "Veröffentlicht am {date}",
+      "current": "Installierte Version: {version}",
+      "install": "Update installieren",
+      "download_portable": "Portable Version herunterladen",
+      "downloading": "Download… {percent} %",
+      "closing": "Installation…",
+      "closing_help": "FS Passion schließt sich, installiert die neue Version und öffnet sich wieder.",
+      "see_release": "Neuerungen ansehen",
+      "check": "Jetzt suchen",
+      "how_installed": "Das Installationsprogramm wird von GitHub heruntergeladen und geprüft (SHA-256-Prüfsumme). FS Passion schließt sich während der Installation und öffnet sich danach wieder. Deine Einstellungen, Setups und Mods bleiben erhalten.",
+      "how_portable": "Die .zip-Datei wird heruntergeladen und in deinem Download-Ordner geprüft. Schließe FS Passion und ersetze dann die Dateien in seinem Ordner durch die aus der .zip-Datei; behalte den Ordner „data“ (deine Einstellungen).",
+      "how_source": "Lade die neue Version von ihrer GitHub-Seite herunter.",
+      "note": "Neue Version von FS Passion verfügbar: {version}",
+      "pill": "Neue Version {version}",
+      "pill_tip": "Update für FS Passion verfügbar: Einstellungen → Anwendung",
+      "portable_ready": "Portable Version heruntergeladen und geprüft: {file}",
+      "error_not_found": "Auf GitHub ist noch keine Version veröffentlicht.",
+      "error_unreachable": "Suche nicht möglich (keine Verbindung?).",
+      "error_rate_limited": "GitHub begrenzt die Suchen gerade: neuer Versuch später.",
+      "error_invalid": "Die Veröffentlichung auf GitHub ist nicht lesbar.",
+      "error_no_source": "Die Adresse des GitHub-Repositorys fehlt.",
+      "error_checksum": "Die heruntergeladene Datei passt nicht zu ihrer Prüfsumme: Sie wurde gelöscht, nichts wird installiert.",
+      "error_no_checksum": "Die Veröffentlichung nennt keine SHA-256-Prüfsumme für diese Datei: Aus Sicherheitsgründen wird nichts installiert.",
+      "error_missing_file": "Diese Veröffentlichung enthält die erwartete Datei nicht: Lade sie von ihrer GitHub-Seite herunter.",
+      "error_disabled": "Die Suche nach Updates ist ausgeschaltet.",
+      "error_busy": "Ein Download läuft bereits.",
+      "error_none": "Kein Update zu installieren.",
+      "error_unsupported": "Automatische Installation hier nicht möglich: Lade das Update von seiner GitHub-Seite herunter.",
+      "error_launch": "Das Installationsprogramm konnte nicht gestartet werden: Lade das Update von seiner GitHub-Seite herunter.",
+      "error_game_running": "Schließe zuerst Farming Simulator: FS Passion bringt deine Setups beim Schließen des Spiels in Ordnung."
+    },
     "logs": {
       "title": "Protokolle und Diagnose",
       "open_logs": "Protokollordner öffnen",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Nichts zu tun: Vom Spiel heruntergeladene Updates werden beim Schließen des Spiels oder beim nächsten Start von FS Passion übernommen. Die alte Version wird in „Old versions“ beiseitegelegt. Lädt das Spiel eine ältere Versionsnummer als deine herunter (oft ein Mod, den du verändert hast), fragt FS Passion, welche du behalten willst."
+      },
+      {
+        "p": "FS Passion selbst: Wenn eine neue Version erscheint, zeigt ein Punkt auf dem Zahnrad der Einstellungen und „Neue Version“ neben der Versionsnummer unten darauf hin. Einstellungen → Anwendung → „Update installieren“."
       },
       {
         "h": "Deine Setups behalten"

@@ -47,7 +47,7 @@ FS Passion 是并将始终是一个值得信赖、开源且免费的项目。向
 
 ## 网络连接
 
-FS Passion 只连接 GitHub，用于读取 DLC 目录（名称和图标，公开仓库 `FSPassion-data`），每天最多一次。不会发送任何个人数据。“Internet connection”设置（Settings → Application）可将其关闭。
+FS Passion 只连接 GitHub，用于读取 DLC 目录（名称和图标，公开仓库 `FSPassion-data`），每天最多一次。不会发送任何个人数据。“Internet connection”设置（Settings → Application）可将其关闭。此外，每次启动时（之后每天一次）会在 GitHub 上检查 FS Passion 是否有新版本。“FS Passion updates”设置（Settings → Application）可将其关闭。
 
 ## 许可证
 

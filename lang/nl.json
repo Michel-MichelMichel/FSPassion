@@ -408,6 +408,47 @@
       "error_too_new": "De gepubliceerde catalogus vereist een nieuwere versie van FS Passion.",
       "error_too_big": "De gepubliceerde catalogus is te groot: hij wordt genegeerd."
     },
+    "updates": {
+      "title": "Updates van FS Passion",
+      "allow": "Op GitHub naar updates van FS Passion zoeken",
+      "help": "Bij elke start (en daarna één keer per dag als het open blijft) leest FS Passion op GitHub het nummer van de nieuwste gepubliceerde versie. Er worden geen persoonlijke gegevens verstuurd.",
+      "off": "Zoeken naar updates uitgeschakeld.",
+      "checking": "Bezig met zoeken…",
+      "last_check": "Laatst gezocht: {date}.",
+      "up_to_date": "FS Passion is bijgewerkt (versie {version}).",
+      "never": "Geïnstalleerde versie: {version}.",
+      "available": "Nieuwe versie beschikbaar: {version}",
+      "published": "Gepubliceerd op {date}",
+      "current": "Geïnstalleerde versie: {version}",
+      "install": "Update installeren",
+      "download_portable": "Draagbare versie downloaden",
+      "downloading": "Downloaden… {percent}%",
+      "closing": "Installeren…",
+      "closing_help": "FS Passion sluit, installeert de nieuwe versie en opent daarna weer.",
+      "see_release": "Bekijk wat er nieuw is",
+      "check": "Nu zoeken",
+      "how_installed": "Het installatieprogramma wordt van GitHub gedownload en gecontroleerd (SHA-256-controlesom). FS Passion sluit tijdens de installatie en opent daarna weer. Je instellingen, setups en mods blijven behouden.",
+      "how_portable": "Het .zip-bestand wordt gedownload en gecontroleerd in je downloadmap. Sluit FS Passion en vervang daarna de bestanden in de map ervan door die uit het .zip-bestand; houd de map ‘data’ (je instellingen).",
+      "how_source": "Download de nieuwe versie via de GitHub-pagina ervan.",
+      "note": "Nieuwe versie van FS Passion beschikbaar: {version}",
+      "pill": "Nieuwe versie {version}",
+      "pill_tip": "Update van FS Passion beschikbaar: Instellingen → Toepassing",
+      "portable_ready": "Draagbare versie gedownload en gecontroleerd: {file}",
+      "error_not_found": "Er is nog geen versie op GitHub gepubliceerd.",
+      "error_unreachable": "Zoeken mislukt (geen verbinding?).",
+      "error_rate_limited": "GitHub beperkt het zoeken op dit moment: later opnieuw proberen.",
+      "error_invalid": "De publicatie op GitHub is onleesbaar.",
+      "error_no_source": "Het adres van de GitHub-repository ontbreekt.",
+      "error_checksum": "Het gedownloade bestand komt niet overeen met de controlesom: het is verwijderd, er wordt niets geïnstalleerd.",
+      "error_no_checksum": "De publicatie geeft geen SHA-256-controlesom voor dit bestand: voor de veiligheid wordt niets geïnstalleerd.",
+      "error_missing_file": "Deze publicatie bevat het verwachte bestand niet: download het via de GitHub-pagina.",
+      "error_disabled": "Zoeken naar updates is uitgeschakeld.",
+      "error_busy": "Er loopt al een download.",
+      "error_none": "Geen update om te installeren.",
+      "error_unsupported": "Automatisch installeren is hier niet mogelijk: download de update via de GitHub-pagina.",
+      "error_launch": "Het installatieprogramma kon niet worden gestart: download de update via de GitHub-pagina.",
+      "error_game_running": "Sluit eerst Farming Simulator: FS Passion zet je setups op orde als het spel sluit."
+    },
     "logs": {
       "title": "Logboeken en diagnose",
       "open_logs": "Map met logboeken openen",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Niets te doen: updates die het spel downloadt, worden overgenomen als het spel sluit, of bij de volgende start van FS Passion. De oude versie wordt opzijgezet in “Old versions”. Downloadt het spel een ouder versienummer dan het jouwe (vaak een mod die je zelf hebt aangepast), dan vraagt FS Passion welke je wilt houden."
+      },
+      {
+        "p": "FS Passion zelf: als er een nieuwe versie verschijnt, staat er een stip op het tandwiel van Instellingen en ‘Nieuwe versie’ naast het versienummer, onderaan. Instellingen → Toepassing → ‘Update installeren’."
       },
       {
         "h": "Je setups bewaren"

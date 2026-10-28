@@ -432,6 +432,47 @@
       "error_too_new": "Opublikowany katalog wymaga nowszej wersji FS Passion.",
       "error_too_big": "Opublikowany katalog jest za duży: zostaje pominięty."
     },
+    "updates": {
+      "title": "Aktualizacje FS Passion",
+      "allow": "Szukaj aktualizacji FS Passion na GitHubie",
+      "help": "Przy każdym uruchomieniu (a potem raz dziennie, jeśli pozostaje otwarty) FS Passion odczytuje na GitHubie numer najnowszej opublikowanej wersji. Żadne dane osobowe nie są wysyłane.",
+      "off": "Wyszukiwanie aktualizacji wyłączone.",
+      "checking": "Wyszukiwanie…",
+      "last_check": "Ostatnie wyszukiwanie: {date}.",
+      "up_to_date": "FS Passion jest aktualny (wersja {version}).",
+      "never": "Zainstalowana wersja: {version}.",
+      "available": "Dostępna nowa wersja: {version}",
+      "published": "Opublikowana {date}",
+      "current": "Zainstalowana wersja: {version}",
+      "install": "Zainstaluj aktualizację",
+      "download_portable": "Pobierz wersję przenośną",
+      "downloading": "Pobieranie… {percent}%",
+      "closing": "Instalowanie…",
+      "closing_help": "FS Passion zamyka się, instaluje nową wersję, a potem otwiera się ponownie.",
+      "see_release": "Zobacz nowości",
+      "check": "Szukaj teraz",
+      "how_installed": "Instalator jest pobierany z GitHuba i sprawdzany (suma SHA-256). FS Passion zamyka się na czas instalacji, a potem otwiera się ponownie. Twoje ustawienia, zestawy i mody zostają zachowane.",
+      "how_portable": "Plik .zip jest pobierany i sprawdzany w twoim folderze pobranych plików. Zamknij FS Passion, a potem zastąp pliki w jego folderze plikami z archiwum .zip, zachowując folder „data” (twoje ustawienia).",
+      "how_source": "Pobierz nową wersję z jej strony na GitHubie.",
+      "note": "Dostępna nowa wersja FS Passion: {version}",
+      "pill": "Nowa wersja {version}",
+      "pill_tip": "Dostępna aktualizacja FS Passion: Ustawienia → Aplikacja",
+      "portable_ready": "Wersja przenośna pobrana i sprawdzona: {file}",
+      "error_not_found": "Na GitHubie nie opublikowano jeszcze żadnej wersji.",
+      "error_unreachable": "Wyszukiwanie nie powiodło się (brak połączenia?).",
+      "error_rate_limited": "GitHub chwilowo ogranicza wyszukiwania: ponowna próba później.",
+      "error_invalid": "Publikacji na GitHubie nie da się odczytać.",
+      "error_no_source": "Brak adresu repozytorium GitHub.",
+      "error_checksum": "Pobrany plik nie zgadza się ze swoją sumą: został usunięty, nic nie zostało zainstalowane.",
+      "error_no_checksum": "Publikacja nie podaje sumy SHA-256 dla tego pliku: ze względów bezpieczeństwa nic nie zostało zainstalowane.",
+      "error_missing_file": "Ta publikacja nie zawiera oczekiwanego pliku: pobierz ją z jej strony na GitHubie.",
+      "error_disabled": "Wyszukiwanie aktualizacji jest wyłączone.",
+      "error_busy": "Pobieranie już trwa.",
+      "error_none": "Brak aktualizacji do zainstalowania.",
+      "error_unsupported": "Automatyczna instalacja nie jest tu możliwa: pobierz aktualizację z jej strony na GitHubie.",
+      "error_launch": "Nie udało się uruchomić instalatora: pobierz aktualizację z jej strony na GitHubie.",
+      "error_game_running": "Najpierw zamknij Farming Simulator: FS Passion porządkuje twoje zestawy po zamknięciu gry."
+    },
     "logs": {
       "title": "Dzienniki i diagnostyka",
       "open_logs": "Otwórz folder dzienników",
@@ -650,6 +691,9 @@
       },
       {
         "p": "Nic nie trzeba robić: aktualizacje pobrane przez grę są przejmowane po jej zamknięciu lub przy następnym uruchomieniu FS Passion. Stara wersja jest odkładana do „Old versions”. Jeśli gra pobierze starszy numer wersji niż twój (często mod, który zmodyfikowałeś), FS Passion zapyta, którą zachować."
+      },
+      {
+        "p": "Sam FS Passion: gdy ukaże się nowa wersja, na kole zębatym Ustawień pojawia się kropka, a obok numeru wersji na dole napis „Nowa wersja”. Ustawienia → Aplikacja → „Zainstaluj aktualizację”."
       },
       {
         "h": "Zachowanie zestawów"

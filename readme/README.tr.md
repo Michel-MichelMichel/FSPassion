@@ -47,7 +47,7 @@ FS Passion güvenilir, açık kaynaklı ve ücretsiz bir projedir ve öyle kalac
 
 ## İnternet bağlantısı
 
-FS Passion yalnızca DLC kataloğunu (adlar ve simgeler, herkese açık `FSPassion-data` deposu) okumak için GitHub'a bağlanır, günde en fazla bir kez. Hiçbir kişisel veri gönderilmez. “Internet connection” ayarı (Settings → Application) bunu kapatır.
+FS Passion yalnızca DLC kataloğunu (adlar ve simgeler, herkese açık `FSPassion-data` deposu) okumak için GitHub'a bağlanır, günde en fazla bir kez. Hiçbir kişisel veri gönderilmez. “Internet connection” ayarı (Settings → Application) bunu kapatır. Ayrıca her açılışta (sonra günde bir kez) GitHub'da FS Passion'ın yeni bir sürümünü arar: “FS Passion updates” ayarı (Settings → Application) bunu kapatır.
 
 ## Lisans
 

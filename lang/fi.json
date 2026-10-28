@@ -408,6 +408,47 @@
       "error_too_new": "Julkaistu luettelo vaatii FS Passionin uudemman version.",
       "error_too_big": "Julkaistu luettelo on liian suuri: se ohitetaan."
     },
+    "updates": {
+      "title": "FS Passionin päivitykset",
+      "allow": "Etsi FS Passionin päivityksiä GitHubista",
+      "help": "Joka käynnistyksellä (ja sen jälkeen kerran päivässä, jos se pysyy auki) FS Passion lukee GitHubista viimeisimmän julkaistun version numeron. Henkilötietoja ei lähetetä.",
+      "off": "Päivitysten etsintä on pois päältä.",
+      "checking": "Etsitään…",
+      "last_check": "Viimeisin etsintä: {date}.",
+      "up_to_date": "FS Passion on ajan tasalla (versio {version}).",
+      "never": "Asennettu versio: {version}.",
+      "available": "Uusi versio saatavilla: {version}",
+      "published": "Julkaistu {date}",
+      "current": "Asennettu versio: {version}",
+      "install": "Asenna päivitys",
+      "download_portable": "Lataa kannettava versio",
+      "downloading": "Ladataan… {percent} %",
+      "closing": "Asennetaan…",
+      "closing_help": "FS Passion sulkeutuu, asentaa uuden version ja avautuu uudelleen.",
+      "see_release": "Katso uutuudet",
+      "check": "Etsi nyt",
+      "how_installed": "Asennusohjelma ladataan GitHubista ja tarkistetaan (SHA-256-tarkistussumma). FS Passion sulkeutuu asennuksen ajaksi ja avautuu sitten uudelleen. Asetuksesi, kokoonpanosi ja modisi säilyvät.",
+      "how_portable": ".zip-tiedosto ladataan ja tarkistetaan latauskansioosi. Sulje FS Passion ja korvaa sen kansion tiedostot .zip-tiedoston tiedostoilla; säilytä kansio ”data” (asetuksesi).",
+      "how_source": "Lataa uusi versio sen GitHub-sivulta.",
+      "note": "FS Passionin uusi versio saatavilla: {version}",
+      "pill": "Uusi versio {version}",
+      "pill_tip": "FS Passionin päivitys saatavilla: Asetukset → Sovellus",
+      "portable_ready": "Kannettava versio ladattu ja tarkistettu: {file}",
+      "error_not_found": "GitHubissa ei ole vielä julkaistu yhtään versiota.",
+      "error_unreachable": "Etsintä epäonnistui (ei yhteyttä?).",
+      "error_rate_limited": "GitHub rajoittaa etsintöjä juuri nyt: uusi yritys myöhemmin.",
+      "error_invalid": "GitHubin julkaisua ei voi lukea.",
+      "error_no_source": "GitHub-tietovaraston osoite puuttuu.",
+      "error_checksum": "Ladattu tiedosto ei vastaa tarkistussummaansa: se poistettiin, mitään ei asenneta.",
+      "error_no_checksum": "Julkaisu ei anna tälle tiedostolle SHA-256-tarkistussummaa: turvallisuussyistä mitään ei asenneta.",
+      "error_missing_file": "Tämä julkaisu ei sisällä odotettua tiedostoa: lataa se sen GitHub-sivulta.",
+      "error_disabled": "Päivitysten etsintä on pois päältä.",
+      "error_busy": "Lataus on jo käynnissä.",
+      "error_none": "Ei asennettavaa päivitystä.",
+      "error_unsupported": "Automaattinen asennus ei ole tässä mahdollinen: lataa päivitys sen GitHub-sivulta.",
+      "error_launch": "Asennusohjelmaa ei voitu käynnistää: lataa päivitys sen GitHub-sivulta.",
+      "error_game_running": "Sulje ensin Farming Simulator: FS Passion järjestää kokoonpanosi, kun peli suljetaan."
+    },
     "logs": {
       "title": "Lokit ja diagnostiikka",
       "open_logs": "Avaa lokikansio",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Sinun ei tarvitse tehdä mitään: pelin lataamat päivitykset otetaan talteen, kun peli suljetaan, tai seuraavalla FS Passionin käynnistyskerralla. Vanha versio siirretään sivuun kansioon ”Old versions”. Jos peli lataa omaasi vanhemman versionumeron (usein itse muokkaamasi modi), FS Passion kysyy, kumman haluat säilyttää."
+      },
+      {
+        "p": "Itse FS Passion: kun uusi versio julkaistaan, Asetusten rattaaseen ilmestyy piste ja alareunaan versionumeron viereen ”Uusi versio”. Asetukset → Sovellus → ”Asenna päivitys”."
       },
       {
         "h": "Kokoonpanojen säilyttäminen"

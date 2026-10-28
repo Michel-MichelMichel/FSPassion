@@ -42,7 +42,7 @@ NOT_EXPORTED = (
 # Réglages « neutres » : repris même quand les chemins actuels sont conservés.
 NEUTRAL = (
     "language", "theme", "theme_loop", "light_effects", "reduce_motion", "active_version",
-    "scan_downloads_at_start", "internet_access", "show_notice_at_start", "minimize_on_launch",
+    "scan_downloads_at_start", "internet_access", "update_check", "show_notice_at_start", "minimize_on_launch",
     "close_to_tray", "focus_after_game", "anomalies",
 )
 # Réglages liés aux dossiers de ce PC : repris seulement sans « Conserver vos chemins ».

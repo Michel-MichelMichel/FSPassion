@@ -613,3 +613,37 @@ html.is-maximized .frame-edges { display: none; }
     rgba(255, 200, 160, 0) 100%);
 }
 .metal-light.on.lit { opacity: 1; }
+
+/* Mise à jour de FS Passion disponible : pastille sur la roue des
+   Paramètres, et « Nouvelle version » à côté du numéro de version. */
+.settings-btn { position: relative; }
+.update-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px var(--bg);
+  display: none;
+  pointer-events: none;
+}
+.settings-btn.has-update .update-dot { display: block; }
+.update-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  padding: 3px 10px 3px 7px;
+  border: 1px solid var(--accent-line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-size: var(--t-xs);
+  cursor: pointer;
+  transition: background var(--d) var(--ease), border-color var(--d) var(--ease);
+}
+.update-pill .ico { width: 15px; height: 15px; }
+.update-pill:hover, .update-pill:focus-visible { background: var(--fill-2); border-color: var(--accent); }

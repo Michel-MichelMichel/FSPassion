@@ -408,6 +408,47 @@
       "error_too_new": "The published catalog needs a newer version of FS Passion.",
       "error_too_big": "The published catalog is too large: it is ignored."
     },
+    "updates": {
+      "title": "FS Passion updates",
+      "allow": "Check for FS Passion updates on GitHub",
+      "help": "Each time it starts (then once a day while it stays open), FS Passion reads the number of the latest published version on GitHub. No personal data is sent.",
+      "off": "Update check turned off.",
+      "checking": "Checking…",
+      "last_check": "Last check: {date}.",
+      "up_to_date": "FS Passion is up to date (version {version}).",
+      "never": "Installed version: {version}.",
+      "available": "New version available: {version}",
+      "published": "Released on {date}",
+      "current": "Installed version: {version}",
+      "install": "Install the update",
+      "download_portable": "Download the portable version",
+      "downloading": "Downloading… {percent}%",
+      "closing": "Installing…",
+      "closing_help": "FS Passion closes, installs the new version, then reopens.",
+      "see_release": "See what's new",
+      "check": "Check now",
+      "how_installed": "The installer is downloaded from GitHub and verified (SHA-256 checksum). FS Passion closes during the installation, then reopens. Your settings, setups and mods are kept.",
+      "how_portable": "The .zip file is downloaded and verified in your downloads folder. Close FS Passion, then replace the files in its folder with those from the .zip, keeping the “data” folder (your settings).",
+      "how_source": "Download the new version from its GitHub page.",
+      "note": "New FS Passion version available: {version}",
+      "pill": "New version {version}",
+      "pill_tip": "FS Passion update available: Settings → Application",
+      "portable_ready": "Portable version downloaded and verified: {file}",
+      "error_not_found": "No version has been published on GitHub yet.",
+      "error_unreachable": "Check failed (no connection?).",
+      "error_rate_limited": "GitHub is limiting checks for now: will try again later.",
+      "error_invalid": "The release on GitHub can't be read.",
+      "error_no_source": "The GitHub repository address is missing.",
+      "error_checksum": "The downloaded file doesn't match its checksum: it was deleted, nothing is installed.",
+      "error_no_checksum": "The release gives no SHA-256 checksum for this file: for safety, nothing is installed.",
+      "error_missing_file": "This release doesn't contain the expected file: download it from its GitHub page.",
+      "error_disabled": "The update check is turned off.",
+      "error_busy": "A download is already in progress.",
+      "error_none": "No update to install.",
+      "error_unsupported": "Automatic installation isn't possible here: download the update from its GitHub page.",
+      "error_launch": "The installer couldn't be started: download the update from its GitHub page.",
+      "error_game_running": "Close Farming Simulator first: FS Passion tidies up your setups when the game closes."
+    },
     "logs": {
       "title": "Logs and diagnostics",
       "open_logs": "Open the logs folder",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Nothing to do: updates downloaded by the game are recovered when it closes, or the next time FS Passion starts. The old version is set aside in “Old versions”. If the game downloads an older version number than yours (often a mod you modified), FS Passion asks you which one to keep."
+      },
+      {
+        "p": "FS Passion itself: when a new version is released, a dot appears on the Settings gear and “New version” next to the version number, at the bottom. Settings → Application → “Install the update”."
       },
       {
         "h": "Keeping your setups"

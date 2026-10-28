@@ -408,6 +408,47 @@
       "error_too_new": "Den publicerade katalogen kräver en nyare version av FS Passion.",
       "error_too_big": "Den publicerade katalogen är för stor: den ignoreras."
     },
+    "updates": {
+      "title": "Uppdateringar av FS Passion",
+      "allow": "Sök efter uppdateringar av FS Passion på GitHub",
+      "help": "Vid varje start (och sedan en gång om dagen om det förblir öppet) läser FS Passion numret på den senaste publicerade versionen på GitHub. Inga personuppgifter skickas.",
+      "off": "Sökning efter uppdateringar är avstängd.",
+      "checking": "Söker …",
+      "last_check": "Senaste sökning: {date}.",
+      "up_to_date": "FS Passion är uppdaterat (version {version}).",
+      "never": "Installerad version: {version}.",
+      "available": "Ny version tillgänglig: {version}",
+      "published": "Publicerad {date}",
+      "current": "Installerad version: {version}",
+      "install": "Installera uppdateringen",
+      "download_portable": "Hämta den portabla versionen",
+      "downloading": "Hämtar … {percent} %",
+      "closing": "Installerar …",
+      "closing_help": "FS Passion stängs, installerar den nya versionen och öppnas igen.",
+      "see_release": "Se nyheterna",
+      "check": "Sök nu",
+      "how_installed": "Installationsprogrammet hämtas från GitHub och kontrolleras (SHA-256-kontrollsumma). FS Passion stängs under installationen och öppnas sedan igen. Dina inställningar, uppsättningar och moddar behålls.",
+      "how_portable": ".zip-filen hämtas och kontrolleras i din mapp för hämtade filer. Stäng FS Passion och ersätt sedan filerna i dess mapp med filerna från .zip-filen; behåll mappen ”data” (dina inställningar).",
+      "how_source": "Hämta den nya versionen från dess sida på GitHub.",
+      "note": "Ny version av FS Passion tillgänglig: {version}",
+      "pill": "Ny version {version}",
+      "pill_tip": "Uppdatering av FS Passion tillgänglig: Inställningar → Program",
+      "portable_ready": "Portabel version hämtad och kontrollerad: {file}",
+      "error_not_found": "Ingen version har publicerats på GitHub ännu.",
+      "error_unreachable": "Sökningen misslyckades (ingen anslutning?).",
+      "error_rate_limited": "GitHub begränsar sökningarna just nu: nytt försök senare.",
+      "error_invalid": "Publiceringen på GitHub kan inte läsas.",
+      "error_no_source": "Adressen till GitHub-förrådet saknas.",
+      "error_checksum": "Den hämtade filen stämmer inte med sin kontrollsumma: den har tagits bort och inget installeras.",
+      "error_no_checksum": "Publiceringen anger ingen SHA-256-kontrollsumma för den här filen: av säkerhetsskäl installeras inget.",
+      "error_missing_file": "Den här publiceringen innehåller inte den förväntade filen: hämta den från dess sida på GitHub.",
+      "error_disabled": "Sökning efter uppdateringar är avstängd.",
+      "error_busy": "En hämtning pågår redan.",
+      "error_none": "Ingen uppdatering att installera.",
+      "error_unsupported": "Automatisk installation är inte möjlig här: hämta uppdateringen från dess sida på GitHub.",
+      "error_launch": "Installationsprogrammet kunde inte startas: hämta uppdateringen från dess sida på GitHub.",
+      "error_game_running": "Stäng Farming Simulator först: FS Passion ställer i ordning dina uppsättningar när spelet stängs."
+    },
     "logs": {
       "title": "Loggar och diagnostik",
       "open_logs": "Öppna loggmappen",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Du behöver inte göra något: uppdateringar som spelet hämtar tas om hand när det stängs, eller nästa gång FS Passion startar. Den gamla versionen läggs åt sidan i ”Old versions”. Om spelet hämtar ett äldre versionsnummer än ditt (ofta en modd som du själv har ändrat) frågar FS Passion vilken du vill behålla."
+      },
+      {
+        "p": "FS Passion självt: när en ny version kommer visas en prick på kugghjulet för Inställningar och ”Ny version” bredvid versionsnumret längst ned. Inställningar → Program → ”Installera uppdateringen”."
       },
       {
         "h": "Behåll dina uppsättningar"

@@ -209,6 +209,7 @@ def default_settings() -> dict[str, Any]:
         "downloads_dir": "",
         "scan_downloads_at_start": True,
         "internet_access": True,
+        "update_check": True,
         "show_notice_at_start": True,
         "welcome_done": False,
         # Tour guidé : ampoule mise en évidence une seule fois.

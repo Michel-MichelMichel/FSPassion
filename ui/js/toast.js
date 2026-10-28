@@ -75,6 +75,12 @@ export function toastError(err) {
 
 // -- Historique (cloche) ---------------------------------------------------
 
+// Entrée de la cloche seulement, sans message à l'écran (mise à jour
+// disponible : un repère discret, pas une notification qui surgit).
+export function noteOnly(text, level = 'info') {
+  remember(text, level);
+}
+
 export function notifications() {
   return history.slice().reverse();
 }

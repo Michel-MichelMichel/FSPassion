@@ -408,6 +408,47 @@
       "error_too_new": "Il catalogo pubblicato richiede una versione più recente di FS Passion.",
       "error_too_big": "Il catalogo pubblicato è troppo grande: viene ignorato."
     },
+    "updates": {
+      "title": "Aggiornamenti di FS Passion",
+      "allow": "Cerca aggiornamenti di FS Passion su GitHub",
+      "help": "A ogni avvio (e poi una volta al giorno se resta aperto), FS Passion legge su GitHub il numero dell'ultima versione pubblicata. Nessun dato personale viene inviato.",
+      "off": "Ricerca degli aggiornamenti disattivata.",
+      "checking": "Ricerca in corso…",
+      "last_check": "Ultima ricerca: {date}.",
+      "up_to_date": "FS Passion è aggiornato (versione {version}).",
+      "never": "Versione installata: {version}.",
+      "available": "Nuova versione disponibile: {version}",
+      "published": "Pubblicata il {date}",
+      "current": "Versione installata: {version}",
+      "install": "Installa l'aggiornamento",
+      "download_portable": "Scarica la versione portatile",
+      "downloading": "Download… {percent}%",
+      "closing": "Installazione…",
+      "closing_help": "FS Passion si chiude, installa la nuova versione e poi si riapre.",
+      "see_release": "Vedi le novità",
+      "check": "Cerca ora",
+      "how_installed": "Il programma di installazione viene scaricato da GitHub e verificato (impronta SHA-256). FS Passion si chiude durante l'installazione, poi si riapre. Le tue impostazioni, partite e mod vengono conservate.",
+      "how_portable": "Il file .zip viene scaricato e verificato nella tua cartella dei download. Chiudi FS Passion, poi sostituisci i file della sua cartella con quelli dello .zip, conservando la cartella «data» (le tue impostazioni).",
+      "how_source": "Scarica la nuova versione dalla sua pagina GitHub.",
+      "note": "Nuova versione di FS Passion disponibile: {version}",
+      "pill": "Nuova versione {version}",
+      "pill_tip": "Aggiornamento di FS Passion disponibile: Impostazioni → Applicazione",
+      "portable_ready": "Versione portatile scaricata e verificata: {file}",
+      "error_not_found": "Su GitHub non è ancora pubblicata alcuna versione.",
+      "error_unreachable": "Ricerca non riuscita (nessuna connessione?).",
+      "error_rate_limited": "GitHub limita le ricerche per ora: nuovo tentativo più tardi.",
+      "error_invalid": "La pubblicazione su GitHub non è leggibile.",
+      "error_no_source": "Manca l'indirizzo del repository GitHub.",
+      "error_checksum": "Il file scaricato non corrisponde alla sua impronta: è stato eliminato, non viene installato nulla.",
+      "error_no_checksum": "La pubblicazione non fornisce un'impronta SHA-256 per questo file: per sicurezza non viene installato nulla.",
+      "error_missing_file": "Questa pubblicazione non contiene il file previsto: scaricala dalla sua pagina GitHub.",
+      "error_disabled": "La ricerca degli aggiornamenti è disattivata.",
+      "error_busy": "Un download è già in corso.",
+      "error_none": "Nessun aggiornamento da installare.",
+      "error_unsupported": "Qui l'installazione automatica non è possibile: scarica l'aggiornamento dalla sua pagina GitHub.",
+      "error_launch": "Impossibile avviare il programma di installazione: scarica l'aggiornamento dalla sua pagina GitHub.",
+      "error_game_running": "Chiudi prima Farming Simulator: FS Passion rimette in ordine le tue partite alla chiusura del gioco."
+    },
     "logs": {
       "title": "Log e diagnostica",
       "open_logs": "Apri la cartella dei log",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Niente da fare: gli aggiornamenti scaricati dal gioco vengono recuperati quando si chiude, oppure al prossimo avvio di FS Passion. La vecchia versione viene messa da parte in «Old versions». Se il gioco scarica un numero di versione più vecchio del tuo (spesso una mod che hai modificato), FS Passion ti chiede quale tenere."
+      },
+      {
+        "p": "FS Passion stesso: quando esce una nuova versione, compare un punto sull'ingranaggio delle Impostazioni e «Nuova versione» accanto al numero di versione, in basso. Impostazioni → Applicazione → «Installa l'aggiornamento»."
       },
       {
         "h": "Conservare le tue partite"

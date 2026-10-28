@@ -408,6 +408,47 @@
       "error_too_new": "O catálogo publicado precisa de uma versão mais recente do FS Passion.",
       "error_too_big": "O catálogo publicado é demasiado grande: é ignorado."
     },
+    "updates": {
+      "title": "Atualizações do FS Passion",
+      "allow": "Procurar atualizações do FS Passion no GitHub",
+      "help": "Em cada arranque (e depois uma vez por dia, se continuar aberto), o FS Passion lê no GitHub o número da última versão publicada. Não é enviado nenhum dado pessoal.",
+      "off": "Procura de atualizações desativada.",
+      "checking": "A procurar…",
+      "last_check": "Última procura: {date}.",
+      "up_to_date": "O FS Passion está atualizado (versão {version}).",
+      "never": "Versão instalada: {version}.",
+      "available": "Nova versão disponível: {version}",
+      "published": "Publicada a {date}",
+      "current": "Versão instalada: {version}",
+      "install": "Instalar a atualização",
+      "download_portable": "Transferir a versão portátil",
+      "downloading": "A transferir… {percent}%",
+      "closing": "A instalar…",
+      "closing_help": "O FS Passion fecha, instala a nova versão e volta a abrir.",
+      "see_release": "Ver as novidades",
+      "check": "Procurar agora",
+      "how_installed": "O instalador é transferido do GitHub e verificado (soma SHA-256). O FS Passion fecha durante a instalação e depois volta a abrir. As suas definições, partidas e mods são mantidos.",
+      "how_portable": "O ficheiro .zip é transferido e verificado na sua pasta de transferências. Feche o FS Passion e substitua os ficheiros da pasta dele pelos do .zip, mantendo a pasta «data» (as suas definições).",
+      "how_source": "Transfira a nova versão a partir da respetiva página do GitHub.",
+      "note": "Nova versão do FS Passion disponível: {version}",
+      "pill": "Nova versão {version}",
+      "pill_tip": "Atualização do FS Passion disponível: Definições → Aplicação",
+      "portable_ready": "Versão portátil transferida e verificada: {file}",
+      "error_not_found": "Ainda não foi publicada nenhuma versão no GitHub.",
+      "error_unreachable": "Não foi possível procurar (sem ligação?).",
+      "error_rate_limited": "O GitHub está a limitar as procuras de momento: nova tentativa mais tarde.",
+      "error_invalid": "A publicação no GitHub não pode ser lida.",
+      "error_no_source": "Falta o endereço do repositório do GitHub.",
+      "error_checksum": "O ficheiro transferido não corresponde à sua soma: foi eliminado e nada foi instalado.",
+      "error_no_checksum": "A publicação não indica nenhuma soma SHA-256 para este ficheiro: por segurança, nada foi instalado.",
+      "error_missing_file": "Esta publicação não contém o ficheiro esperado: transfira-a a partir da respetiva página do GitHub.",
+      "error_disabled": "A procura de atualizações está desativada.",
+      "error_busy": "Já está uma transferência em curso.",
+      "error_none": "Nenhuma atualização para instalar.",
+      "error_unsupported": "A instalação automática não é possível aqui: transfira a atualização a partir da respetiva página do GitHub.",
+      "error_launch": "Não foi possível iniciar o instalador: transfira a atualização a partir da respetiva página do GitHub.",
+      "error_game_running": "Feche primeiro o Farming Simulator: o FS Passion põe as suas partidas em ordem quando o jogo fecha."
+    },
     "logs": {
       "title": "Registos e diagnóstico",
       "open_logs": "Abrir a pasta de registos",
@@ -606,6 +647,9 @@
       },
       {
         "p": "Não há nada a fazer: as atualizações transferidas pelo jogo são recuperadas quando ele fecha, ou no próximo arranque do FS Passion. A versão antiga é posta de parte em «Old versions». Se o jogo transferir um número de versão mais antigo do que o seu (muitas vezes, um mod que alterou), o FS Passion pergunta qual quer manter."
+      },
+      {
+        "p": "O próprio FS Passion: quando sai uma nova versão, aparece um ponto na roda dentada das Definições e «Nova versão» junto ao número da versão, em baixo. Definições → Aplicação → «Instalar a atualização»."
       },
       {
         "h": "Guardar as suas partidas"

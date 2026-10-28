@@ -47,7 +47,7 @@ FS Passion là và sẽ luôn là một dự án đáng tin cậy, mã nguồn m
 
 ## Kết nối Internet
 
-FS Passion chỉ kết nối với GitHub để đọc danh mục DLC (tên và biểu tượng, kho công khai `FSPassion-data`), tối đa một lần mỗi ngày. Không có dữ liệu cá nhân nào được gửi đi. Cài đặt “Internet connection” (Settings → Application) sẽ tắt tính năng này.
+FS Passion chỉ kết nối với GitHub để đọc danh mục DLC (tên và biểu tượng, kho công khai `FSPassion-data`), tối đa một lần mỗi ngày. Không có dữ liệu cá nhân nào được gửi đi. Cài đặt “Internet connection” (Settings → Application) sẽ tắt tính năng này. Ngoài ra, mỗi lần khởi động (sau đó mỗi ngày một lần), ứng dụng kiểm tra trên GitHub xem có phiên bản FS Passion mới không: cài đặt “FS Passion updates” (Settings → Application) sẽ tắt tính năng này.
 
 ## Giấy phép
 

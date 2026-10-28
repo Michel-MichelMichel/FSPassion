@@ -1,0 +1,1382 @@
+{
+  "_meta": {
+    "code": "fi",
+    "name": "Suomi",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion on suljettu",
+    "closed_help": "Voit sulkea tämän välilehden. Jatka käynnistämällä FS Passion uudelleen."
+  },
+  "common": {
+    "close": "Sulje",
+    "cancel": "Peruuta",
+    "ok": "OK",
+    "copy": "Kopioi",
+    "copied": "Kopioitu leikepöydälle",
+    "soon": "Tulossa versiossa {version}",
+    "soon_action": "{action}: tulossa versiossa {version}"
+  },
+  "window": {
+    "minimize": "Pienennä",
+    "maximize": "Suurenna",
+    "restore": "Palauta",
+    "close": "Sulje FS Passion"
+  },
+  "header": {
+    "settings": "Asetukset",
+    "version": "Pelin versio: {name}",
+    "current_party": "Nykyinen kokoonpano",
+    "create": "Luo kokoonpano",
+    "duplicate": "Monista kokoonpano",
+    "rename": "Nimeä kokoonpano uudelleen",
+    "delete": "Poista kokoonpano",
+    "common_mods": "Yhteiset modit",
+    "common_mods_tip": "Ota yhteiset modit mukaan tähän kokoonpanoon",
+    "apply": "Ota käyttöön",
+    "apply_tip": "Anna pelin ladata tämä kokoonpano",
+    "apply_done_tip": "Tämä kokoonpano on käytössä ja ajan tasalla: peli lataa juuri sen",
+    "theme_light": "Vaalea käyttöliittymä",
+    "theme_dark": "Tumma käyttöliittymä"
+  },
+  "versions": {
+    "coming": "Tulossa",
+    "ready": "Määritetty",
+    "installed": "Asennettu",
+    "not_installed": "Ei asennettu",
+    "absent_help": "Asennettu muualle? Asetukset → Peli ja polut"
+  },
+  "party": {
+    "full": "Täysi kokoonpano",
+    "empty": "Tyhjä kokoonpano",
+    "other": "Oma kansio",
+    "unsupported": "Ei kokoonpanoja",
+    "unknown": "Tuntematon",
+    "none_yet": "Ei vielä kokoonpanoja. Luo sellainen painikkeella ＋ tai kartan painikkeella ”＋ Kokoonpano”.",
+    "full_count": {
+      "one": "Kaikki modit ({count})",
+      "other": "Kaikki modit ({count})"
+    },
+    "empty_sub": "Ei modeja, peruspelin kokeilemiseen",
+    "applied_tag": "käytössä",
+    "mods_count": {
+      "zero": "Ei modeja",
+      "one": "{count} modi",
+      "other": "{count} modia"
+    },
+    "full_tip": "Ihanteellinen modien päivittämiseen pelissä"
+  },
+  "status": {
+    "running": "{game} on käynnissä",
+    "other_folder": "Peli lataa modinsa toisesta kansiosta:",
+    "applied": "Käytössä oleva kokoonpano: {name}",
+    "other_folder_path": "Peli lataa toisen kansion: {path}",
+    "stale": "Kokoonpanoa on muutettu sen jälkeen, kun se viimeksi otettiin käyttöön"
+  },
+  "path": {
+    "empty": "",
+    "found": "Löytyi",
+    "not_found": "Tätä kansiota ei ole",
+    "not_game_exe": "Tämä tiedosto ei ole pelin {game} ohjelmatiedosto",
+    "no_gamesettings": "gameSettings.xml-tiedostoa ei löytynyt: käynnistä peli kerran ja palaa sitten",
+    "not_ntfs": "Tämä asema ei ole NTFS: kokoonpanot eivät ole mahdollisia",
+    "onedrive": "Tämä kansio on OneDrivessa: ei suositella",
+    "storage_overlap": "Tämä kansio sisältää päämodikansion (tai sen FSPassion-kansion) tai on sen sisällä: valitse toinen kansio",
+    "storage_duplicate": "Toinen tallennuskansio käyttää jo tätä kansiota tai sisältää sen",
+    "storage_same_disk": "Löytyi · sama asema kuin pääkansiolla: erityisoikeuksia ei tarvita",
+    "storage_other_disk": "Löytyi · eri asema: symboliset linkit"
+  },
+  "list1": {
+    "title": "Kaikki modit",
+    "search": "Hae modia tai tekijää",
+    "search_clear": "Tyhjennä haku",
+    "cat_unclassified": "Lajittelemattomat",
+    "cat_dlc": "DLC",
+    "cat_maps": "Kartat",
+    "cat_others": "Muut modit",
+    "cat_by_author": "Tekijän nimen mukaan",
+    "dlc_note": "Peli lataa nämä jokaisessa kokoonpanossa",
+    "selected": "valittu",
+    "active": "aktiivisia",
+    "all": "yhteensä",
+    "scanning": "Luetaan modeja: {done}/{total}",
+    "icons_pending": {
+      "one": "Valmistellaan kuvakkeita: {count} jäljellä",
+      "other": "Valmistellaan kuvakkeita: {count} jäljellä"
+    },
+    "anomalies": {
+      "one": "{count} ongelma: näytä tiedot",
+      "other": "{count} ongelmaa: näytä tiedot"
+    },
+    "find_new": "Etsi uusia modeja latauksista",
+    "open_settings": "Avaa asetukset",
+    "not_configured": "Peliä {game} ei ole vielä määritetty",
+    "not_configured_help": "Määritä sen modikansio asetuksissa tai anna FS Passionin tunnistaa asennus.",
+    "reading": "Luetaan modeja…",
+    "no_match": "Mikään modi ei vastaa hakua ”{query}”",
+    "empty": "Tämä modikansio on tyhjä",
+    "empty_help": "Modit (.zip) ja puretut modit (kansiot, joissa on modDesc.xml) näkyvät tässä.",
+    "unclassified_note": "Peli ei näe niitä ennen kuin ne on lajiteltu",
+    "plus_party": "Kokoonpano",
+    "plus_party_tip": "Luo kokoonpano tällä kartalla ja sen riippuvuuksilla (Enter)",
+    "mark_party": "Nykyisessä kokoonpanossa",
+    "mark_common": "Yhteisissä modeissa",
+    "info_tip": "Kiinnitä modin tiedot (I-näppäin)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Modikansiota ei löytynyt",
+      "unexpected": "Modien lukeminen epäonnistui: {error}"
+    }
+  },
+  "mod": {
+    "map": "Kartta",
+    "unpacked": "Purettu modi",
+    "multiplayer": "Moninpeli",
+    "version": "Versio",
+    "author": "Tekijä",
+    "game_version": "Peli",
+    "gv_unknown": "Tuntematon pelin versio",
+    "size": "Koko",
+    "kind": "Muoto",
+    "kind_dir": "Kansio (purettu)",
+    "kind_zip": ".zip-arkisto",
+    "parties": "Luetteloissa",
+    "parties_none": "Ei missään",
+    "storage": "Tallennuspaikka",
+    "dependencies": {
+      "one": "{count} riippuvuus",
+      "other": "{count} riippuvuutta"
+    },
+    "more": {
+      "one": "ja {count} muu",
+      "other": "ja {count} muuta"
+    },
+    "no_dependencies": "Ei ilmoitettuja riippuvuuksia",
+    "unpacked_tip": "Purettu modi: ModHub ei päivitä sitä, eikä sitä voi käyttää moninpelissä. FS Passion ei koskaan kirjoita siihen.",
+    "gv_conflict": "Nimen etuliite ja descVersion viittaavat kahteen eri versioon: etuliitettä käytetään.",
+    "unpin": "Sulje (Esc)",
+    "optional": {
+      "one": "{count} valinnainen modi",
+      "other": "{count} valinnaista modia"
+    },
+    "searchmods_note": "Vanhempi pelin versio (SearchMods-tunniste): tallennus latautuu, vaikka tarvittava modi puuttuisi; peli ilmoittaa siitä jälkikäteen.",
+    "links_hint": "Napsauta ”i”, niin voit kiinnittää nämä tiedot ja avata linkit.",
+    "links_old": "Modin tekijän antamia linkkejä, usein vanhoja: sivua ei ehkä enää ole.",
+    "link_open": "Avaa selaimessa",
+    "link_failed": "Linkkiä ei voitu avata."
+  },
+  "dep": {
+    "present": "löytyy",
+    "absent": "puuttuu",
+    "dlc_owned": "DLC omistettu",
+    "dlc_missing": "DLC:tä ei omisteta"
+  },
+  "dlc": {
+    "free": "Ilmainen DLC",
+    "paid": "DLC",
+    "info": "Peli lataa asennetut DLC:t aina, jokaisessa kokoonpanossa."
+  },
+  "units": {
+    "B": "{value} t",
+    "KB": "{value} kt",
+    "MB": "{value} Mt",
+    "GB": "{value} Gt"
+  },
+  "lists": {
+    "no_parties": "{game} ei tue kokoonpanoja",
+    "missing": "Ei modikansioissa",
+    "missing_tip": "{name} ei ole enää modikansioissasi. Jos tekijä on nimennyt sen uudelleen, käytä toimintoa ”Korvaa…”.",
+    "replace": "Korvaa…"
+  },
+  "list2": {
+    "title": "Kokoonpanon modit",
+    "full": {
+      "one": "Täysi kokoonpano: kaikki modit ({count})",
+      "other": "Täysi kokoonpano: kaikki modit ({count})"
+    },
+    "full_help": "Peli lataa koko modikansion, kuten ennen FS Passionia.",
+    "empty_party": "Tyhjä kokoonpano: ei modeja",
+    "empty_help": "Peruspelin kokeilemiseen ilman yhtään modia.",
+    "no_mods": "Tässä kokoonpanossa ei ole modeja",
+    "no_mods_help": "Vedä modeja luettelosta ”Kaikki modit” tai valitse ne ja käytä toimintopalkkia."
+  },
+  "list3": {
+    "title": "Yhteiset modit",
+    "empty": "Ei vielä yhteisiä modeja",
+    "empty_help": "Yhteiset modit ovat jokaisessa kokoonpanossa: traktorit, työkoneet, skriptit…",
+    "not_included": "Ei mukana tässä kokoonpanossa"
+  },
+  "footer": {
+    "github_tip": "Projektin GitHub-sivu",
+    "github_soon": "Projektin GitHub-osoite lisätään pian",
+    "running": "Peli käynnissä",
+    "launch": "Käynnistä peli",
+    "launch_unconfigured": "Määritä pelin {game} ohjelmatiedosto asetuksissa",
+    "launch_tip": "Käynnistä peli käytössä olevalla kokoonpanolla",
+    "quit": "Lopeta"
+  },
+  "launch": {
+    "started": "Käynnistetään: {game}…",
+    "failed": "Peliä {game} ei voitu käynnistää. Tarkista ohjelmatiedosto ja käynnistystapa asetuksissa.",
+    "no_exe": "Pelin {game} ohjelmatiedostoa ei löytynyt: määritä se asetuksissa.",
+    "already_running": "{game} on jo käynnissä.",
+    "apply_title": "Otetaanko ”{name}” käyttöön?",
+    "apply_text": "Kokoonpano ”{name}” ei ole käytössä, tai sitä on muutettu sen jälkeen. Otetaanko kokoonpano {name} käyttöön ja käynnistetään {game}?",
+    "apply_and_launch": "Ota käyttöön ja käynnistä",
+    "without_apply": "Käynnistä ottamatta käyttöön"
+  },
+  "backup": {
+    "created": "gameSettings.xml-tiedoston alkuperäinen varmuuskopio luotu: {game}",
+    "exported": "Määritykset viety: {file}",
+    "demo_active": "Poistu ensin esittelytilasta: se käyttää eri kansioita kuin sinun.",
+    "unreadable": "Tätä tiedostoa ei voi lukea: {path}",
+    "too_big": "Tämä tiedosto on liian suuri ollakseen FS Passionin vientitiedosto: {path}",
+    "not_export": "Tämä tiedosto ei ole FS Passionin vientitiedosto: {path}",
+    "too_new": "Tämä tiedosto on peräisin FS Passionin uudemmasta versiosta ({version}). Päivitä FS Passion tuodaksesi sen.",
+    "write_failed": "Tiedostoa ei voitu tallentaa: {path}",
+    "expired": "Tuonti on vanhentunut: valitse tiedosto uudelleen.",
+    "running": "Sulje {game} ennen tuontia: sen kokoonpanot muuttuvat.",
+    "import": {
+      "title": "Tuo määritykset",
+      "from": "Vienti {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} kokoonpano",
+        "other": "{count} kokoonpanoa"
+      },
+      "common": {
+        "one": "{count} yhteinen modi",
+        "other": "{count} yhteistä modia"
+      },
+      "no_parties": "Tämä tiedosto ei sisällä kokoonpanoja: vain asetukset tuodaan.",
+      "keep": "Säilytä nykyiset polut (suositus)",
+      "keep_help": "Tämän tietokoneen peli-, modi- ja latauskansiot eivät muutu. Vain kokoonpanot, yhteiset modit ja neutraalit asetukset (kieli, teema, valinnat) tuodaan.",
+      "replace_help": "Tiedoston polut korvaavat tämän tietokoneen polut: valitse tämä vain, jos tiedosto on peräisin tästä tietokoneesta samoilla asemilla.",
+      "paths_differ": "Tämän tiedoston modikansiot eivät ole tämän tietokoneen kansioita.",
+      "warning": "Yllä olevien versioiden nykyiset kokoonpanot korvataan. Nykyinen tila varmuuskopioidaan ensin automaattisesti. Mitään ei oteta käyttöön: kokoonpanojen kansiot rakennetaan uudelleen seuraavalla ”Ota käyttöön” -kerralla.",
+      "ok": "Tuo"
+    },
+    "result": {
+      "title": "Määritykset tuotu",
+      "done": "Tuonti on valmis.",
+      "parties": {
+        "one": "{count} kokoonpano tuotu",
+        "other": "{count} kokoonpanoa tuotu"
+      },
+      "skipped": "ei tuotu (pelin versiota ei ole määritetty tällä tietokoneella)",
+      "fallback": "Peli latasi kokoonpanon, jota ei enää ole: nyt se lataa täyden kokoonpanon.",
+      "apply": "Tältä tietokoneelta puuttuvat modit näkyvät kokoonpanoissa puuttuvina. Napsauta ”Ota käyttöön”, jotta peli lataa tuodun kokoonpanon.",
+      "backup": "Tuontia edeltävä tila tallennettu: %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Asetukset",
+    "game": {
+      "title": "Peli ja polut"
+    },
+    "look": {
+      "title": "Ulkoasu"
+    },
+    "app": {
+      "title": "Sovellus"
+    },
+    "help": {
+      "title": "Ohje ja tietoja"
+    },
+    "paths": {
+      "versions": "Pelin versiot",
+      "game_exe": "Pelin ohjelmatiedosto",
+      "user_dir": "Pelin kansio Tiedostoissa",
+      "mods_dir": "Päämodikansio",
+      "mods_dirs": "Modikansiot",
+      "browse": "Selaa…",
+      "fixed_fs2011": "FS2011:n modikansiota ei voi siirtää.",
+      "add_storage": "Lisää modikansio toiselle asemalle",
+      "derived": "Johdetut polut",
+      "not_applicable": "Ei koske tätä versiota",
+      "d_game_dir": "Pelin kansio",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (pelin kansio)",
+      "d_dlc_user": "DLC (Tiedostot)",
+      "detect": "Tunnista asennus",
+      "detect_all": "Tunnista kaikki versiot",
+      "detect_all_help": "Etsii kaikkien versioiden asennukset ja täyttää niiden tyhjät kentät.",
+      "detect_one": "Tunnista tämä versio",
+      "detect_one_help": "Muuttaa vain yllä valittua versiota. Muut versiot pysyvät ennallaan.",
+      "detect_help": "Itse mukauttamiasi kenttiä ei koskaan muuteta.",
+      "detect_found": "Löydetyt asennukset: {list}",
+      "detect_none": "Asennusta ei löytynyt. Määritä polut painikkeella ”Selaa…”.",
+      "launch_method": "Pelin käynnistystapa",
+      "launch_auto": "Automaattinen",
+      "launch_platform": "Alusta",
+      "launch_exe": "Ohjelmatiedosto",
+      "launch_help": "Automaattinen valitsee oikean tavan (Steam, Epic Games, Microsoft Store, Xbox tai ohjelmatiedosto). Kaksi muuta ovat varavaihtoehtoja.",
+      "minimize_on_launch": "Pienennä FS Passion, kun peli käynnistyy",
+      "args_title": "Käynnistysparametrit",
+      "args_show": "Näytä käynnistysparametrit",
+      "args_hide": "Piilota käynnistysparametrit",
+      "args_skip": "Ohita introvideo",
+      "args_skip_info": "Ohittaa introvideon ja aloitusruudut.",
+      "args_cheats": "Kehittäjäkonsoli",
+      "args_cheats_info": "Ottaa pelin kehittäjäkonsolin käyttöön. Asettaa myös <controls>-arvon game.xml-tiedostoon, gameSettings.xml-tiedoston viereen.",
+      "args_game_xml_absent": "game.xml-tiedostoa ei löytynyt: konsoli otetaan käyttöön vasta, kun peli on käynnistetty kerran.",
+      "args_game_xml_error": "game.xml-tiedostoa ei voitu muuttaa: kehittäjäkonsoli pysyy pois käytöstä.",
+      "args_help_command": "FS Passion lisää ne komentoon, jolla {game} käynnistetään.",
+      "args_help_steam": "{game} käynnistetään Steamin kautta. Steam hylkää toisen ohjelman antamat parametrit (se pyytäisi vahvistusta joka käynnistyksellä), joten FS Passion käynnistää pelin ilman niitä. Syötä ne kerran Steamiin, katso alta.",
+      "args_help_epic": "{game} käynnistetään Epic Gamesin kautta, joka ei hyväksy toisen ohjelman parametreja: syötä ne kerran Epic Games Launcheriin, katso alta.",
+      "args_help_unsupported": "{game} on asennettu Microsoft Storesta tai Xboxista.",
+      "args_store": "Microsoft Store ja Xbox-sovellus eivät salli käynnistysparametreja: vain kehittäjäkonsolin (game.xml) voi ottaa käyttöön. Jos haluat käyttää parametreja, valitse käynnistystavaksi ”Ohjelmatiedosto”, jos asennuksesi sallii sen.",
+      "args_steam_where": "Mihin ne syötetään Steamissa",
+      "args_steam_steps": "Steam-kirjasto: napsauta hiiren kakkospainikkeella {game} → Ominaisuudet…\nYleiset-välilehti → kenttä ”Käynnistysasetukset”\nLiitä alla oleva teksti ja sulje ikkuna",
+      "args_epic_where": "Mihin ne syötetään Epic Games Launcherissa",
+      "args_epic_steps": "Kirjasto: ”…” kohteen {game} alla → Hallitse\nValitse ”Komentorivin lisäargumentit”\nLiitä alla oleva teksti (vanhemmat launcherit: profiilikuva → Asetukset → {game})",
+      "args_none": "Yhtään parametria ei ole valittu",
+      "args_copy_label": "Kopioitavat parametrit",
+      "args_copy_help": "Tarvitaan uudelleen vain, kun valitset parametrin tai poistat sen valinnan.",
+      "console_on": "Konsoli käytössä game.xml-tiedostossa",
+      "console_off": "Konsoli pois käytöstä game.xml-tiedostossa",
+      "console_enable": "Ota käyttöön game.xml-tiedostossa",
+      "console_done": "Kehittäjäkonsoli otettu käyttöön game.xml-tiedostossa: {game}",
+      "add_storage_help": "Enintään kaksi lisäkansiota. Niiden modit näkyvät luettelossa ja pääsevät kokoonpanoihin kuten muutkin; FS Passion ei kirjoita niihin mitään muuta.",
+      "extra_dir": "Lisämodikansio",
+      "extra_help": "Tämän kansion poistaminen ei koske sen modeihin: ne vain lakkaavat näkymästä luettelossa.",
+      "remove_storage": "Poista tämä kansio luettelosta (sen modeihin ei kosketa)"
+    },
+    "downloads": {
+      "title": "Lataukset",
+      "folder": "Latauskansio",
+      "help": "Kansio, johon selaimesi tallentaa ladatut modit.",
+      "scan_at_start": "Etsi uusia modeja käynnistyksen yhteydessä",
+      "scan_now": "Etsi nyt"
+    },
+    "language": {
+      "title": "Kieli",
+      "personal": "oma",
+      "open_folder": "Avaa omien kielten kansio",
+      "personal_help": "Siellä voit kääntää FS Passionin omalle kielellesi: mukana on malli ja ohjeet.",
+      "rejected": "Ohitetut kielitiedostot (virheellisiä tai liian suuria): {list}"
+    },
+    "theme": {
+      "title": "Teema",
+      "help": "Vie hiiri värimallin päälle esikatsellaksesi teemaa ja napsauta valitaksesi sen. Kaksiväriset teemat käyttävät vain kahta väriä; muut käyttävät suosittujen teemojen virallisia värejä, kukin tummana ja vaaleana versiona. Yläpalkin aurinko/kuu-painike vaihtaa niiden välillä.",
+      "contrast": "Kontrasti {ratio}:1",
+      "loop": "Teemasilmukka: vaihda teemaa joka minuutti",
+      "light_effects": "Valotehosteet (kiilto, hehkuvat reunat, neon)",
+      "reduce_motion": "Vähennä animaatioita",
+      "follows_windows": "Noudattaa Windowsin ”Animaatiotehosteet”-asetusta.",
+      "follow_windows": "Noudata Windowsin asetusta",
+      "atelier": "Avaa teemapaja",
+      "mode_dark": "Tumma",
+      "mode_light": "Vaalea",
+      "group_duo": "Kaksiväriset"
+    },
+    "backup": {
+      "title": "Määritysten varmuuskopio",
+      "help": "Vie kokoonpanosi, yhteiset modit ja asetukset tiedostoon, jotta saat ne takaisin uudelleenasennuksen jälkeen tai toisella tietokoneella. Modeja ei kopioida: vain niiden nimet.",
+      "export": "Vie",
+      "import": "Tuo"
+    },
+    "notice": {
+      "title": "Opas",
+      "open": "Avaa opas",
+      "at_start": "Näytä käynnistettäessä",
+      "tour": "Käyttöliittymän esittelykierros"
+    },
+    "anomalies": {
+      "title": "Ongelmat",
+      "show": "Näytä ongelmat",
+      "reset": {
+        "zero": "Ei piilotettuja ongelmia",
+        "one": "Näytä piilotettu ongelma uudelleen",
+        "other": "Näytä {count} piilotettua ongelmaa uudelleen"
+      },
+      "reset_done": "Piilotetut ongelmat näytetään taas"
+    },
+    "internet": {
+      "title": "Internet-yhteys",
+      "allow": "Salli FS Passionin ladata DLC-luettelo GitHubista",
+      "help": "DLC-luettelo (nimet ja kuvakkeet) luetaan GitHubista enintään kerran päivässä. Vain tällä tietokoneella olevien DLC:iden kuvakkeet ladataan. Henkilötietoja ei lähetetä.",
+      "catalog_off": "DLC-luettelo: FS Passionin mukana tullut (yhteys pois käytöstä).",
+      "catalog_remote": "DLC-luettelo {date}, ladattu GitHubista.",
+      "catalog_embedded": "DLC-luettelo {date}, FS Passionin mukana.",
+      "check": "Tarkista nyt",
+      "checking": "Tarkistetaan…",
+      "error_not_found": "Luetteloa ei ole vielä julkaistu GitHubissa.",
+      "error_unreachable": "Viimeisin tarkistus epäonnistui (ei yhteyttä?).",
+      "error_invalid": "Julkaistua luetteloa ei voi lukea: FS Passionin omaa luetteloa käytetään.",
+      "error_too_new": "Julkaistu luettelo vaatii FS Passionin uudemman version.",
+      "error_too_big": "Julkaistu luettelo on liian suuri: se ohitetaan."
+    },
+    "logs": {
+      "title": "Lokit ja diagnostiikka",
+      "open_logs": "Avaa lokikansio",
+      "copy_diag": "Kopioi diagnostiikka",
+      "diag_copied": "Diagnostiikka kopioitu: liitä se raporttiisi"
+    },
+    "donate": {
+      "title": "Tue projektia",
+      "text": "FS Passion on ja pysyy luotettavana, avoimen lähdekoodin ja ilmaisena projektina. Jos haluat kiittää tekijää, kertalahjoitus vie muutaman sekunnin eikä vaadi tiliä. Kiitos!",
+      "no_link": "Linkki tulossa"
+    },
+    "about": {
+      "title": "Tietoja",
+      "version": "Versio",
+      "author": "Tekijä",
+      "license": "Lisenssi",
+      "github_soon": "osoite tulossa",
+      "official": "Ainoa virallinen latauslinkki on projektin GitHub-sivu.",
+      "unofficial": "FS Passion on itsenäinen projekti, joka ei liity GIANTS Softwareen. Farming Simulator on GIANTS Softwaren tavaramerkki.",
+      "privacy": "FS Passion ei lähetä mitään tietoja. Se lataa vain, jos sallit, julkisen DLC-luettelon GitHubista.",
+      "window_mode": "Ikkunatekniikka (kehitys)",
+      "window_native": "Natiivi",
+      "window_script": "Laskettu",
+      "window_thin": "Ohut kehys",
+      "window_restart": "Tulee voimaan, kun FS Passion seuraavan kerran käynnistetään",
+      "window_help": "Nykyinen tekniikka: {current}. Muuta sitä vain, jos koon muuttaminen reunoista ei toimi."
+    },
+    "stop": {
+      "title": "Lopeta FS Passionin käyttö",
+      "show": "Näytä tiedot",
+      "hide": "Piilota tiedot",
+      "text": "Palauttaa pelin alkuperäisen asetuksen ja poistaa kokoonpanojen kansiot. Modeihisi ei koskaan kosketa.",
+      "button": "Lopeta FS Passionin käyttö"
+    },
+    "window": {
+      "title": "Ikkuna",
+      "close_to_tray": "Sulje ilmaisinalueelle",
+      "close_to_tray_help": "Ikkunan sulkemispainike piilottaa FS Passionin Windowsin kellon viereen. Napsauta sen kuvaketta tuodaksesi sen takaisin; ”Lopeta” (oikealla alhaalla tai kuvakkeen valikossa) sulkee sen todella.",
+      "tray_off": "Ilmaisinalue on käytettävissä vain FS Passionin ikkunassa Windowsissa.",
+      "focus_after_game": "Tule esiin, kun peli suljetaan",
+      "focus_after_game_help": "Kun Farming Simulator suljetaan, FS Passion tulee taas näkyviin, vaikka se olisi ollut piilossa ilmaisinalueella."
+    },
+    "demo": {
+      "title": "Kokeile ilman peliä",
+      "help": "Valemodeja, joilla voit kokeilla kaikkia FS Passionin toimintoja testikansiossa: oikeat polkusi siirretään sivuun ja palautetaan, kun lopetat.",
+      "start": "Kokeile FS Passionia ilman peliä",
+      "active_help": "Esittelytila on käytössä: nämä polut kuuluvat testikansioon. Oikeat polkusi palaavat, kun poistut siitä."
+    }
+  },
+  "themes": {
+    "lime": "Lime",
+    "jade": "Jade",
+    "cuivre": "Kupari",
+    "blue": "Valkoinen"
+  },
+  "anomalies": {
+    "title": "Löydetyt ongelmat",
+    "none": "Ei ongelmia. Kaikki on kunnossa.",
+    "intro": "Peli ei voi käyttää näitä modikansiosi kohteita sellaisenaan. Ei mitään vakavaa, eikä FS Passion koske niihin.",
+    "new": "uusi",
+    "hide_type": "Älä enää näytä tämän tyyppistä ongelmaa",
+    "hide_folder": "Älä enää näytä tätä kansiota",
+    "rename": "Nimeä uudelleen…",
+    "others": {
+      "one": "Muut ohitetut tiedostot ({count})",
+      "other": "Muut ohitetut tiedostot ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar- tai .7z-arkisto",
+        "other": ".rar- tai .7z-arkistot ({count})"
+      },
+      "explain": "Peli lukee vain .zip-tiedostoja. Pura arkisto ja pakkaa modi tarvittaessa uudelleen .zip-muotoon."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip ilman modDesc.xml-tiedostoa",
+        "other": ".zip-tiedostot ilman modDesc.xml-tiedostoa ({count})"
+      },
+      "explain": "Usein usean modin paketti, joka pitää purkaa.",
+      "nested": "modDesc.xml löytyi alikansiosta ({path}): modi on pakattu väärin."
+    },
+    "A3": {
+      "title": {
+        "one": "Lukukelvoton arkisto",
+        "other": "Lukukelvottomat arkistot ({count})"
+      },
+      "explain": "Vioittunut arkisto tai virheellinen modDesc.xml. Lataa modi uudelleen.",
+      "zip": "Arkistoa ei voi avata.",
+      "xml": "modDesc.xml-tiedosto on virheellinen."
+    },
+    "A4": {
+      "title": {
+        "one": "Kansio ilman modDesc.xml-tiedostoa",
+        "other": "Kansiot ilman modDesc.xml-tiedostoa ({count})"
+      },
+      "explain": "Ilman juuressa olevaa modDesc.xml-tiedostoa peli ei voi käyttää tätä kansiota. FS Passion ei koskaan koske siihen."
+    },
+    "A5": {
+      "title": {
+        "one": "Pelin hylkäämä nimi",
+        "other": "Pelin hylkäämät nimet ({count})"
+      },
+      "explain": "Peli hyväksyy vain kirjaimet ilman tarkkeita, numerot ja merkin ”_”.",
+      "suggestion": "Ehdotettu nimi: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Modi toiselle pelin versiolle",
+        "other": "Modit toiselle pelin versiolle ({count})"
+      },
+      "explain": "Tämä pelin versio ei lataa tätä modia.",
+      "detected": "Modi peliin {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Puuttuva modi",
+        "other": "Puuttuvat modit ({count})"
+      },
+      "explain": "Kokoonpano viittaa tähän modiin, mutta sitä ei enää ole modikansioissa.",
+      "in": "Missä: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Poistettu modi edelleen linkitetty",
+        "other": "Poistetut modit edelleen linkitetty ({count})"
+      },
+      "explain": "Tämä modi on poistettu modikansiosta, mutta jotkin kokoonpanot sisältävät sen yhä.",
+      "copy": "Kopio on yhä olemassa: {list}",
+      "delete_title": "Poistetaanko jäljellä oleva kopio?",
+      "delete_text": "Modin ”{name}” viimeinen kopio, joka on yhä kokoonpanojen kansioissa, siirretään roskakoriin ja modi poistetaan kaikista luetteloista."
+    },
+    "A9": {
+      "title": {
+        "one": "Kaksoiskappaleena oleva modi",
+        "other": "Kaksoiskappaleina olevat modit ({count})"
+      },
+      "explain": "Sama modi on kahdesti: kahdessa tallennuskansiossa tai .zip-tiedostona ja kansiona rinnakkain. Peli lataa vain yhden. FS Passion käyttää pääkansiossa olevaa ja mieluummin arkistoa kuin kansiota.",
+      "zip_and_dir": "”{name}” on sekä .zip-tiedostona että purettuna kansiona: peli lataa vain yhden, eikä ModHub voi päivittää sitä. Säilytä vain yksi muoto (poista toinen toiminnolla ”Poista pysyvästi” tai siirrä se pois modikansiosta).",
+      "files": "Tiedostot: {list}"
+    },
+    "game": "{game}",
+    "folder": "Modikansio: {path}",
+    "show_in_folder": "Näytä Resurssienhallinnassa",
+    "open_folder": "Avaa modikansio Resurssienhallinnassa (modia ei enää ole siellä)"
+  },
+  "welcome": {
+    "subtitle": "Modisi tallennettuna vain kerran. Niin monta kokoonpanoa kuin haluat.",
+    "language": "Valitse kieli"
+  },
+  "notice": {
+    "title": "Miten FS Passion toimii",
+    "at_start": "Näytä tämä ikkuna, kun sovellus käynnistyy",
+    "understood": "Selvä",
+    "blocks": [
+      {
+        "key": "Ennen kaikkea: suosittelemme varmuuskopioimaan kaikki modisi toiselle asemalle. Se on välttämätöntä, kuten ennen mitä tahansa tärkeiden tiedostojen käsittelyä."
+      },
+      {
+        "h": "Periaate"
+      },
+      {
+        "p": "FS Passionin avulla luot helposti ja nopeasti niin monta Farming Simulator -kokoonpanoa kuin haluat, ja modisi pysyvät yhtenä kappaleena alkuperäisessä kansiossaan."
+      },
+      {
+        "p": "Vaihda kokoonpanosta toiseen 1 napsautuksella!"
+      },
+      {
+        "h": "Asennus"
+      },
+      {
+        "p": "Modikansiosi voi olla millä tahansa asemalla: FS Passion mukautuu. Mitään ei tarvitse luoda, siirtää tai nimetä uudelleen käsin. Asema täynnä? Lisää enintään kaksi modikansiota muille asemille (Asetukset → Peli ja polut): niiden modit pääsevät kokoonpanoihin kuten muutkin."
+      },
+      {
+        "h": "Ensimmäinen käyttökerta"
+      },
+      {
+        "ul": [
+          "Luo kokoonpanosi karttojen taikapainikkeella ”＋ Kokoonpano”: kartasta ja sen riippuvuuksista tulee kokoonpano yhdellä napsautuksella.",
+          "Lajittele sen jälkeen muut modit yhteisiin modeihin, jotka ovat mukana jokaisessa kokoonpanossa.",
+          "Napsauta ”Ota käyttöön”: peli lataa valitun kokoonpanon seuraavalla käynnistyskerralla."
+        ]
+      },
+      {
+        "h": "Modien lisääminen, uudelleennimeäminen ja poistaminen"
+      },
+      {
+        "ul": [
+          "Uudet modit: lataa ne tavalliseen tapaan ja napsauta sitten luettelon yläosassa ”Etsi uusia modeja latauksista”. FS Passion siirtää ne oikean pelin version modikansioon.",
+          "Poista modit mieluummin FS Passionissa (toimintopalkin ”Poista pysyvästi”) kuin Resurssienhallinnassa: silloin ne poistetaan samalla luetteloista ja kokoonpanoista ja siirretään roskakoriin.",
+          "Modin nimeäminen uudelleen (F2-näppäin) irrottaa sen ModHubista: se ei enää saa päivityksiä."
+        ]
+      },
+      {
+        "h": "Päivitykset"
+      },
+      {
+        "p": "Sinun ei tarvitse tehdä mitään: pelin lataamat päivitykset otetaan talteen, kun peli suljetaan, tai seuraavalla FS Passionin käynnistyskerralla. Vanha versio siirretään sivuun kansioon ”Old versions”. Jos peli lataa omaasi vanhemman versionumeron (usein itse muokkaamasi modi), FS Passion kysyy, kumman haluat säilyttää."
+      },
+      {
+        "h": "Kokoonpanojen säilyttäminen"
+      },
+      {
+        "p": "Asetukset → Sovellus → ”Vie” tallentaa kokoonpanosi, yhteiset modit ja asetukset tiedostoon. ”Tuo” palauttaa ne uudelleenasennuksen jälkeen tai toisella tietokoneella."
+      },
+      {
+        "h": "Käytön lopettaminen"
+      },
+      {
+        "p": "”Lopeta FS Passionin käyttö” (Asetukset → Sovellus) palauttaa pelin alkuperäisen asetuksen ja poistaa kokoonpanojen kansiot. Modeihisi ei koskaan kosketa."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Teemapaja",
+    "id": "Tunniste",
+    "name": "Nimi",
+    "dark": "Ikkunan tausta",
+    "light": "Pääväri",
+    "mica": "Mica-hehku",
+    "grain": "Rakeisuus",
+    "effect": "Tehoste",
+    "effect_none": "Ei mitään",
+    "effect_metal": "Metallikiilto",
+    "intensity": "Voimakkuus",
+    "save": "Tallenna",
+    "copy": "Kopioi määritelmä",
+    "new": "Uusi",
+    "copied": "Määritelmä kopioitu",
+    "saved": "Teema tallennettu tiedostoon ui/themes.json",
+    "contrast_low": "Kontrasti {ratio}:1, alle 4,5:1. Pieni teksti käyttää väriä {color}.",
+    "contrast_ok": "Kontrasti {ratio}:1",
+    "mode": "Tila",
+    "mode_dark": "Tumma",
+    "mode_light": "Vaalea",
+    "text": "Teksti",
+    "multi": "Useita korostusvärejä (yksi aluetta kohden)",
+    "accent_n": "Korostus {n}",
+    "pair": "Kaksoisteema (aurinko/kuu)",
+    "pair_none": "Ei mitään",
+    "gradient": "Kaksivärinen liukuväri (otsikot, painikkeet Ota käyttöön ja Käynnistä)",
+    "gradient_from": "Liukuväri: alku",
+    "gradient_to": "Liukuväri: loppu",
+    "style": "Tyyli",
+    "style_duo": "Kaksivärinen",
+    "style_palette": "Virallinen paletti",
+    "style_classic": "Lasketut verhot",
+    "surface_1": "Ikkunan tausta",
+    "surface_2": "Luettelot ja ikkunat",
+    "surface_3": "Osiot",
+    "surface_4": "Alaosiot",
+    "text_n": "Teksti {n}",
+    "neon": "Neon",
+    "neon_help": "Otsikoiden, kuvakkeiden ja reunojen hehku kunkin alueen värissä (0: ei tehostetta). ”Valotehosteet”-asetus kytkee sen pois."
+  },
+  "error": {
+    "bad_request": "Virheellinen pyyntö.",
+    "forbidden": "Pääsy estetty.",
+    "not_found": "Kohdetta ei löytynyt.",
+    "unexpected": "Odottamaton virhe. Kopioi diagnostiikka (Asetukset → Ohje ja tietoja) ja liitä se raporttiisi.",
+    "offline": "FS Passionin ydin ei vastaa.",
+    "internal": "Toiminto hylättiin turvallisuussyistä. Kopioi diagnostiikka (Asetukset → Ohje ja tietoja) ja liitä se raporttiisi."
+  },
+  "detect": {
+    "busy": "Tunnistus on jo käynnissä."
+  },
+  "parties": {
+    "not_configured": "Määritä pelin {game} modikansio asetuksissa, jotta voit luoda kokoonpanoja.",
+    "name_label": "Kokoonpanon nimi",
+    "name_empty": "Nimi ei voi olla tyhjä.",
+    "name_too_long": "Enintään {max} merkkiä.",
+    "name_taken": "Kokoonpano nimeltä ”{name}” on jo olemassa.",
+    "special_locked": "Täyttä kokoonpanoa ja tyhjää kokoonpanoa ei voi muuttaa, nimetä uudelleen, monistaa eikä poistaa.",
+    "not_found": "Tätä kokoonpanoa ei enää ole.",
+    "write_failed": "Kokoonpanoja ei voitu tallentaa kohteeseen {path}. Tarkista, että tälle asemalle voi kirjoittaa.",
+    "recovered": "Pelin {game} kokoonpanotiedostoa ei voitu lukea: sen uusin varmuuskopio ({backup}) ladattiin. Vioittunut tiedosto siirrettiin sivuun.",
+    "lost": "Pelin {game} kokoonpanotiedostoa ei voitu lukea, eikä yhtään varmuuskopiota voitu ladata. Vioittunut tiedosto siirrettiin sivuun, mitään ei poistettu.",
+    "running_rename": "Sulje {game} ennen kuin nimeät tämän kokoonpanon uudelleen: sen kansio ei voi muuttua pelin ollessa käynnissä.",
+    "running_delete": "Sulje {game} ennen kuin poistat tämän kokoonpanon: sen kansio ei voi muuttua pelin ollessa käynnissä.",
+    "map_not_found": "Karttaa ei löytynyt: {name}",
+    "mod_not_found": "Modia ei löytynyt: {name}",
+    "create_title": "Uusi kokoonpano",
+    "create_help": "Tyhjä kokoonpano, joka sisältää yhteiset modit. Lisää siihen sitten modeja luettelosta ”Kaikki modit”.",
+    "create_ok": "Luo",
+    "created": "Kokoonpano ”{name}” luotu",
+    "duplicate_title": "Monista kokoonpano",
+    "duplicate_help": "Kopio säilyttää kokoonpanon ”{name}” modit ja sen ”Yhteiset modit” -asetuksen.",
+    "copy_name": "{name} (kopio)",
+    "duplicate_ok": "Monista",
+    "duplicated": "Kokoonpano ”{name}” luotu",
+    "rename_title": "Nimeä kokoonpano uudelleen",
+    "rename_ok": "Nimeä uudelleen",
+    "renamed": "”{old}” nimettiin uudelleen: ”{name}”",
+    "delete_title": "Poista kokoonpano",
+    "delete_text": {
+      "zero": "Poistetaanko kokoonpano ”{name}”? Siinä ei ole modeja.",
+      "one": "Poistetaanko kokoonpano ”{name}”? Sen modi jää modikansioosi: vain kokoonpano ja sen linkkikansio katoavat.",
+      "other": "Poistetaanko kokoonpano ”{name}”? Sen {count} modia jäävät modikansioosi: vain kokoonpano ja sen linkkikansio katoavat."
+    },
+    "delete_ok": "Poista",
+    "deleted": "Kokoonpano ”{name}” poistettu",
+    "deleted_applied": "Kokoonpano {name} poistettiin. Peli käyttää nyt kokoonpanoa {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "modi valittu",
+      "other": "modia valittu"
+    },
+    "add_party": "Lisää kokoonpanon modeihin",
+    "add_common": "Lisää yhteisiin modeihin",
+    "remove_party": "Poista kokoonpanon modeista",
+    "remove_common": "Poista yhteisistä modeista",
+    "rename": "Nimeä uudelleen…",
+    "rename_help": "Yksi modi, valittuna luettelossa ”Kaikki modit”.",
+    "delete": "Poista pysyvästi…",
+    "close": "Sulje palkki ja tyhjennä valinta (Esc)",
+    "added_party": {
+      "one": "{count} modi lisätty kokoonpanoon ”{name}”",
+      "other": "{count} modia lisätty kokoonpanoon ”{name}”"
+    },
+    "added_common": {
+      "one": "{count} modi lisätty yhteisiin modeihin",
+      "other": "{count} modia lisätty yhteisiin modeihin"
+    },
+    "moved_party": {
+      "one": "{count} modi siirretty kokoonpanoon ”{name}”",
+      "other": "{count} modia siirretty kokoonpanoon ”{name}”"
+    },
+    "moved_common": {
+      "one": "{count} modi siirretty yhteisiin modeihin",
+      "other": "{count} modia siirretty yhteisiin modeihin"
+    },
+    "removed_party": {
+      "one": "{count} modi poistettu kokoonpanosta ”{name}”",
+      "other": "{count} modia poistettu kokoonpanosta ”{name}”"
+    },
+    "removed_common": {
+      "one": "{count} modi poistettu yhteisistä modeista",
+      "other": "{count} modia poistettu yhteisistä modeista"
+    },
+    "nothing_party": "Nämä modit ovat jo kokoonpanossa ”{name}”",
+    "nothing_common": "Nämä modit ovat jo yhteisissä modeissa"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Lisätäänkö myös sen riippuvuus?",
+      "other": "Lisätäänkö myös sen {count} riippuvuutta?"
+    },
+    "ask_yes": {
+      "one": "Lisää myös riippuvuus",
+      "other": "Lisää myös {count} riippuvuutta"
+    },
+    "ask_no": "Vain valitut modit",
+    "missing_warn": {
+      "one": "Modeistasi puuttuu riippuvuus: {list}",
+      "other": "Modeistasi puuttuu {count} riippuvuutta: {list}"
+    },
+    "needed_by_map": "Kartta ”{name}” tarvitsee:",
+    "needed_by_mod": "Modi ”{name}” tarvitsee:",
+    "needed": "Riippuvuudet:",
+    "where_common": "yhteisissä modeissa",
+    "where_party": "kokoonpanossa ”{name}”",
+    "ask_intro": {
+      "one": "Tämä modi on valitsemasi modin riippuvuus, mutta se ei ole {where}.",
+      "other": "Nämä {count} modia ovat valitsemiesi modien riippuvuuksia, mutta ne eivät ole {where}."
+    },
+    "missing_for": "{list} (vaatii: ”{name}”)",
+    "optional_title": {
+      "one": "Lisätäänkö myös valinnainen modi?",
+      "other": "Lisätäänkö myös valinnaisia modeja?"
+    },
+    "optional_intro": {
+      "one": "Yksi valinnainen modi, joka sinulla jo on:",
+      "other": "{count} valinnaista modia, jotka sinulla jo on:"
+    },
+    "optional_for": "valinnainen: ”{name}”",
+    "optional_note": "Valinnaisia: peli ei tarvitse niitä. Vain valitsemasi ovat jatkossa {where}.",
+    "optional_continue": "Jatka"
+  },
+  "plus": {
+    "title": "Uusi kokoonpano kartasta",
+    "deps_title": {
+      "one": "{count} riippuvuus",
+      "other": "{count} riippuvuutta"
+    },
+    "dlc_title": "Tarvittavat DLC:t",
+    "dlc_note": "Tiedoksi: peli lataa asennetut DLC:t aina. Niitä ei lisätä kokoonpanoon.",
+    "missing_note": "Puuttuvia riippuvuuksia ei lisätä: lataa ne ja lisää ne sitten kokoonpanoon.",
+    "no_deps": "Ei ilmoitettuja riippuvuuksia: kokoonpano sisältää vain kartan.",
+    "summary": {
+      "zero": "Kokoonpano sisältää pelkän kartan sekä yhteiset modit.",
+      "one": "Kokoonpano sisältää kartan ja sen riippuvuuden sekä yhteiset modit.",
+      "other": "Kokoonpano sisältää kartan ja sen {count} riippuvuutta sekä yhteiset modit."
+    },
+    "create": "Luo kokoonpano",
+    "created": {
+      "one": "Kokoonpano ”{name}” luotu: {count} modi",
+      "other": "Kokoonpano ”{name}” luotu: {count} modia"
+    },
+    "created_missing": {
+      "one": "Ladattava riippuvuus: {list}",
+      "other": "{count} ladattavaa riippuvuutta: {list}"
+    },
+    "optional_title": {
+      "one": "{count} valinnainen modi",
+      "other": "{count} valinnaista modia"
+    },
+    "optional_note": "Valinnaisia: peli ei tarvitse niitä. Valitse ne, jotka lisätään kokoonpanoon.",
+    "optional_none_present": "Yksikään näistä valinnaisista modeista ei ole modeissasi. Peli ei tarvitse niitä."
+  },
+  "replace": {
+    "title": "Korvaa…",
+    "help": "{name} ei ole enää modikansioissasi. Jos tekijä on nimennyt sen uudelleen, valitse sen uusi versio: se ottaa sen paikan kaikissa luetteloissa.",
+    "done": {
+      "one": "{old} korvattu modilla {name} ({count} luettelo)",
+      "other": "{old} korvattu modilla {name} ({count} luetteloa)"
+    }
+  },
+  "notifications": {
+    "title": "Ilmoitukset",
+    "unread": {
+      "one": "Ilmoitukset: 1 uusi viesti",
+      "other": "Ilmoitukset: {count} uutta viestiä"
+    },
+    "clear": "Tyhjennä kaikki",
+    "none": "Ei vielä ilmoituksia. Oikeassa alakulmassa näytetyt viestit säilytetään täällä, kunnes FS Passion suljetaan."
+  },
+  "tray": {
+    "show": "Näytä FS Passion",
+    "quit": "Lopeta FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion on yhä käynnissä täällä. Napsauta kuvaketta tuodaksesi sen takaisin; ”Lopeta” sulkee sen todella."
+  },
+  "apply": {
+    "unsupported": "Tämä pelin versio ei voi vaihtaa modikansiotaan.",
+    "not_ready": "Määritä ensin pelin modikansio ja Tiedostot-kansio asetuksissa.",
+    "running": "Sulje {game} ennen kuin otat kokoonpanon käyttöön.",
+    "no_gamesettings": "Pelin {game} gameSettings.xml-tiedostoa ei löytynyt: käynnistä peli kerran tai tarkista Tiedostot-kansio asetuksissa.",
+    "busy": "Toinen kokoonpanotoiminto on käynnissä. Yritä hetken kuluttua uudelleen.",
+    "library_busy": "Modeja luetaan vielä. Yritä hetken kuluttua uudelleen.",
+    "done": {
+      "zero": "Kokoonpano {name} otettu käyttöön: ei modeja.",
+      "one": "Kokoonpano {name} otettu käyttöön: {count} modi.",
+      "other": "Kokoonpano {name} otettu käyttöön: {count} modia."
+    },
+    "missing": {
+      "one": "Modikansiostasi puuttuu 1 kokoonpanon modi: {list}",
+      "other": "Modikansiostasi puuttuu {count} kokoonpanon modia: {list}"
+    },
+    "updated": {
+      "one": "1 pelin jättämä päivitys siirrettiin modikansioosi.",
+      "other": "{count} pelin jättämää päivitystä siirrettiin modikansioosi."
+    },
+    "added": {
+      "one": "1 pelin jättämä modi lisättiin modikansioosi ja kokoonpanoon {name}.",
+      "other": "{count} pelin jättämää modia lisättiin modikansioosi ja kokoonpanoon {name}."
+    },
+    "set_aside": {
+      "one": "1 tiedosto siirrettiin sivuun, mitään ei poistettu (kansio ”Recovered” tai ”Old versions” kokoonpanojesi vieressä).",
+      "other": "{count} tiedostoa siirrettiin sivuun, mitään ei poistettu (kansiot ”Recovered” ja ”Old versions” kokoonpanojesi vieressä)."
+    },
+    "empty_party": "Kokoonpano {name} ei sisällä modeja: peli käynnistyy ilman modeja.",
+    "not_same_disk": "Kohdetta {name} ei voi linkittää: kokoonpanokansion on oltava samalla asemalla kuin modikansio.",
+    "no_hardlinks": "Tämä asema ei tue kiinteitä linkkejä: modikansion on oltava NTFS-asemalla. Mitään ei muutettu.",
+    "too_many_links": "Kohdetta {name} ei voi linkittää: tämä tiedosto on saavuttanut Windowsin linkkirajan.",
+    "access_denied": "Pääsy estettiin linkitettäessä kohdetta {name}. Mitään ei muutettu.",
+    "link_failed": "Linkkiä kohteelle {name} ei voitu luoda ({detail}). Mitään ei muutettu.",
+    "junction_failed": "Puretun modin {name} liitoskohtaa ei voitu luoda ({detail}). Mitään ei muutettu.",
+    "folder_busy": "Toinen ohjelma käyttää kansiota {path} (Resurssienhallinta?). Sulje se ja yritä uudelleen. Mitään ei muutettu.",
+    "folder_exists": "Kansio {path} on jo olemassa: valitse toinen nimi.",
+    "failed": "Kokoonpanoa ei voitu ottaa käyttöön ({detail}). Mitään ei muutettu.",
+    "recovered_finished": "Pelin {game} kokoonpanotoiminto oli keskeytynyt (sähkökatko?). Se on viety loppuun.",
+    "recovered_cancelled": "Pelin {game} kokoonpanotoiminto oli keskeytynyt (sähkökatko?). Se on peruttu: mikään ei muuttunut.",
+    "symlink_denied": "Windows hylkää symbolisen linkin kohteeseen {name}: tarvitaan Windowsin kehittäjätila tai järjestelmänvalvojan oikeudet.",
+    "blocked": {
+      "one": "1 toisella asemalla oleva modi ei päässyt kokoonpanoon (ei oikeuksia symbolisiin linkkeihin): {list}. Katso Asetukset → Peli ja polut.",
+      "other": "{count} toisella asemalla olevaa modia ei päässyt kokoonpanoon (ei oikeuksia symbolisiin linkkeihin): {list}. Katso Asetukset → Peli ja polut."
+    }
+  },
+  "override": {
+    "title": "Peli lataa tuntemattoman kansion",
+    "text": "{game} lataa modinsa kansiosta, jota FS Passion ei tunne (muutettu käsin tai toisella työkalulla):",
+    "help": "Ota tämä kansio modikansioksesi, ota kokoonpanosi uudelleen käyttöön tai jätä peli ennalleen.",
+    "adopt": "Ota modikansioksi",
+    "reapply": "Ota {name} uudelleen käyttöön",
+    "ignore": "Älä tee mitään",
+    "adopted": "Uusi modikansio: {path}",
+    "read_failed": "gameSettings.xml-tiedostoa ei voi lukea ({path}). Mitään ei muutettu.",
+    "backup_failed": "gameSettings.xml-tiedoston varmuuskopiota ei voitu kirjoittaa ({path}). Mitään ei muutettu.",
+    "write_failed": "gameSettings.xml-tiedostoa ei voitu kirjoittaa ({path}). Onko peli auki?",
+    "check_failed": "gameSettings.xml-tiedoston tarkistus epäonnistui: alkuperäinen tiedosto palautettiin.",
+    "no_root": "gameSettings.xml ei näytä pelin asetustiedostolta. Mitään ei muutettu."
+  },
+  "demo": {
+    "title": "Esittelytila",
+    "pill": "Esittely",
+    "quit": "Lopeta",
+    "banner": "Esittelytila: nämä modit ovat valemodeja. Oikeisiin kansioihisi ja peliin ei kosketa.",
+    "badge": "Valemodi (esittely)",
+    "installing": "Valmistellaan esittelymodeja…",
+    "started": "Esittelytila: kokeile kaikkea, mikään ei koske peliin.",
+    "stopped": "Esittelytila suljettu: kaikki poistettiin.",
+    "stop_title": "Poistu esittelytilasta",
+    "stop_text": "Valemodit, testikokoonpanot ja koko esittelykansio poistetaan. Oikeat asetuksesi palaavat ennalleen.",
+    "stop_ok": "Poistu ja poista kaikki",
+    "offer_title": "Kokeillaanko FS Passionia ilman peliä?",
+    "offer_text": "Tältä tietokoneelta ei löytynyt Farming Simulatoria. Voit kokeilla FS Passionia valemodeilla: luo kokoonpanoja, lajittele, ota käyttöön… kaikki toimii testikansiossa, ei koskaan pelissä.",
+    "offer_local": "Esittelypaketti on jo tällä tietokoneella (noin 2 Mt).",
+    "offer_download": "Esittelypaketti (noin 2 Mt) ladataan projektin GitHub-sivulta ja tarkistetaan sitten.",
+    "offer_yes": "Kokeile",
+    "offer_no": "Myöhemmin",
+    "unavailable": "Esittelypaketti ei ole vielä saatavilla.",
+    "bad_pack": "Esittelypaketti on vioittunut tai ei vastaa alkuperäistä: se hylättiin.",
+    "download_failed": "Esittelypakettia ei voitu ladata ({detail}).",
+    "install_failed": "Esittelypakettia ei voitu asentaa ({detail}).",
+    "remove_failed": "Esittelykansiota ei voitu poistaa kokonaan: {path}",
+    "no_detect": "Pelin tunnistus on pois käytöstä esittelytilassa."
+  },
+  "delete": {
+    "title": {
+      "one": "Poistetaanko tämä modi pysyvästi?",
+      "other": "Poistetaanko nämä {count} modia pysyvästi?"
+    },
+    "intro": {
+      "one": "Tämä modi poistetaan kaikista luetteloista ja kaikista kokoonpanojen kansioista ja sitten modikansiostasi:",
+      "other": "Nämä {count} modia poistetaan kaikista luetteloista ja kaikista kokoonpanojen kansioista ja sitten modikansiostasi:"
+    },
+    "irreversible": "Tätä ei voi kumota.",
+    "recycle": "Tiedostot siirretään Windowsin roskakoriin: voit vielä palauttaa ne sieltä.",
+    "no_recycle": "Tällä asemalla ei ole roskakoria: poisto on pysyvä.",
+    "understand": {
+      "one": "Ymmärrän, että tämä tiedosto poistetaan",
+      "other": "Ymmärrän, että nämä tiedostot poistetaan"
+    },
+    "ok": "Poista pysyvästi",
+    "done_recycled": {
+      "one": "1 modi siirretty roskakoriin",
+      "other": "{count} modia siirretty roskakoriin"
+    },
+    "done_deleted": {
+      "one": "1 modi poistettu pysyvästi",
+      "other": "{count} modia poistettu pysyvästi"
+    },
+    "failed": {
+      "one": "1 modia ei voitu poistaa: {list}. Se poistettiin luetteloista; sulje ohjelma, joka käyttää sitä, ja yritä uudelleen.",
+      "other": "{count} modia ei voitu poistaa: {list}. Ne poistettiin luetteloista; sulje ohjelma, joka käyttää niitä, ja yritä uudelleen."
+    },
+    "nothing": "Ei poistettavia modeja.",
+    "running": "Sulje {game} ennen kuin poistat modeja."
+  },
+  "rename": {
+    "title": "Nimeä modi uudelleen",
+    "label": "Uusi nimi",
+    "prefix_tip": "Version etuliite säilytetään",
+    "final": "Tiedostonimi: {file}",
+    "rule": "Vain kirjaimet ilman tarkkeita, numerot ja ”_”: peli hylkää muut merkit.",
+    "where": "Missä: {list}. Luettelot muuttuvat vain suostumuksellasi: FS Passion kysyy silloin, seuraavatko ne uutta nimeä.",
+    "warning_modhub": "Jos modi on peräisin ModHubista, se ei enää saa päivityksiä: juuri se on uudelleennimeämisen tarkoitus.",
+    "warning_save": "Pelissä tätä modia käyttävät tallennukset etsivät sitä vanhalla nimellä.",
+    "warning_save_map": "Tämä on kartta: pelissä sille tehdyt tallennukset etsivät sitä vanhalla nimellä eivätkä enää lataudu.",
+    "warning_deps": {
+      "one": "1 modi ilmoittaa sen riippuvuudekseen ({list}): se etsii sitä vanhalla nimellä.",
+      "other": "{count} modia ilmoittaa sen riippuvuudekseen ({list}): ne etsivät sitä vanhalla nimellä."
+    },
+    "ok": "Nimeä uudelleen",
+    "done": {
+      "zero": "{old} → {name}",
+      "one": "{old} → {name}, 1 kokoonpanossa",
+      "other": "{old} → {name}, {count} kokoonpanossa"
+    },
+    "renamed": "{old} → {name}",
+    "lists_title": "Päivitetäänkö luettelot?",
+    "lists_ask": "”{old}” on yhä seuraavissa: {list}. Seuraavatko ne uutta nimeä ”{name}”?",
+    "lists_yes": "Päivitä luettelot",
+    "lists_no": "Älä tee mitään",
+    "lists_done": "Luettelot päivitetty ({count}).",
+    "empty": "Kirjoita nimi.",
+    "too_long": "Nimi on liian pitkä: enintään {max} merkkiä.",
+    "invalid": "Vain kirjaimet ilman tarkkeita, numerot ja ”_”, ei välilyöntejä.",
+    "same": "Se on jo sen nimi.",
+    "taken": "”{name}” on jo olemassa modikansioissasi.",
+    "not_found": "Modia {name} ei löydy modikansioistasi.",
+    "failed": "Kohdetta {name} ei voitu nimetä uudelleen: se voi olla auki toisessa ohjelmassa.",
+    "running": "Sulje {game} ennen kuin nimeät modin uudelleen.",
+    "no_list": "ei luetteloa"
+  },
+  "downloads": {
+    "title": "Uusia modeja löytyi",
+    "intro": "Kansiossa {folder}. Liitä siirtää jokaisen valitun tiedoston sen pelin version modikansioon.",
+    "count": {
+      "one": "1 modi löytyi",
+      "other": "{count} modia löytyi"
+    },
+    "col_mod": "Modi",
+    "col_version": "Pelin versio",
+    "col_state": "Tila",
+    "col_dest": "Kohde",
+    "state": {
+      "new": "Uusi",
+      "update": "Päivitys ({from} → {to})",
+      "older": "Vanhempi kuin asennettu versio ({to} < {from})",
+      "present": "On jo olemassa",
+      "conflict": "Puretulla modilla on jo tämä nimi",
+      "unconfigured": "Versiota ei ole määritetty: määritä se asetuksissa"
+    },
+    "older_confirm": "Valittu: korvaa asennetun version (joka siirretään sivuun).",
+    "postpone": "{game} on käynnissä: liitetään, kun peli suljetaan",
+    "not_configured": "{game} (ei määritetty)",
+    "suffix": "Liitetään nimellä {name} (selaimen lisäämä pääte poistettu)",
+    "dest_none": "Ei mitään (lajittelematon)",
+    "dest_unclassified": "Lajittelemattomat",
+    "dest_party": "Kokoonpano ”{name}”",
+    "ignore": "Ohita nämä tiedostot",
+    "ignored": {
+      "one": "1 tiedosto ohitettu: sitä ei enää ehdoteta",
+      "other": "{count} tiedostoa ohitettu: niitä ei enää ehdoteta"
+    },
+    "later": "Myöhemmin",
+    "integrate": {
+      "zero": "Liitä",
+      "one": "Liitä 1 modi",
+      "other": "Liitä {count} modia"
+    },
+    "none": "Kansiossa {folder} ei ole uusia modeja.",
+    "done": {
+      "one": "1 modi liitetty: {list}",
+      "other": "{count} modia liitetty: {list}"
+    },
+    "in_version": {
+      "one": "1 → {game}",
+      "other": "{count} → {game}"
+    },
+    "skipped": {
+      "one": "1 tiedosto jätettiin paikalleen (on jo olemassa tai vanhempi)",
+      "other": "{count} tiedostoa jätettiin paikalleen (on jo olemassa tai vanhempia)"
+    },
+    "postponed": {
+      "one": "1 modi liitetään, kun {game} suljetaan",
+      "other": "{count} modia liitetään, kun {game} suljetaan"
+    },
+    "postponed_done": {
+      "one": "1 lataus liitetty, kun {game} suljettiin",
+      "other": "{count} latausta liitetty, kun {game} suljettiin"
+    },
+    "failed": "Tiedostoa {file} ei voitu liittää. Tiedosto jäi latauksiisi.",
+    "gone": "{file} ei ole enää latauskansiossa.",
+    "unconfigured": "{file}: valittua pelin versiota ei ole määritetty.",
+    "no_folder": "Latauskansiota ei löytynyt: määritä se kohdassa Asetukset → Sovellus → Lataukset.",
+    "demo": "Latauksia ei liitetä esittelyn aikana.",
+    "done_in": {
+      "one": "1 modi liitetty → {game}",
+      "other": "{count} modia liitetty → {game}"
+    },
+    "col_storage": "Tallennuspaikka"
+  },
+  "move": {
+    "exists": "{file}: samanniminen tiedosto on jo olemassa.",
+    "no_space": "{file}: modikansion asemalla ei ole tarpeeksi vapaata tilaa.",
+    "check_failed": "{file}: tarkistettu kopio ei vastaa alkuperäistä. Mitään ei korvattu.",
+    "failed": "Tiedostoa {file} ei voitu siirtää: se voi olla auki toisessa ohjelmassa."
+  },
+  "missing": {
+    "title": "Modikansiostasi puuttuvat modit",
+    "intro": {
+      "one": "Tämä modi puuttuu modikansiostasi, vaikka se on kokoonpanoissa. Mitä haluat tehdä?",
+      "other": "Nämä {count} modia puuttuvat modikansiostasi, vaikka ne ovat kokoonpanoissa. Mitä haluat tehdä?"
+    },
+    "in": "Missä: {list}",
+    "copy": "Poistettu modikansiosta, mutta sen linkkien kautta on yhä kopio: {list}",
+    "no_copy": "Ei kopiota: lataa se uudelleen tai korvaa se modilla, jonka tekijä on nimennyt uudelleen",
+    "restore": "Palauta Mods-kansioon",
+    "restore_tip": "Kokoonpanossa yhä oleva kopio palaa modikansiosi modiksi (mitään ei kopioida).",
+    "remove": "Poista luetteloista",
+    "remove_all": "Poista kaikki luetteloista",
+    "later": "Myöhemmin",
+    "notice": "Poista modi mieluummin FS Passionissa (toimintopalkin painike ”Poista pysyvästi”): silloin se poistetaan samalla luetteloista ja kokoonpanoista.",
+    "removed": {
+      "one": "1 modi poistettu kaikista luetteloista",
+      "other": "{count} modia poistettu kaikista luetteloista"
+    },
+    "restored": {
+      "one": "1 modi palautettu modikansioosi",
+      "other": "{count} modia palautettu modikansioosi"
+    },
+    "deleted": {
+      "one": "1 modi poistettu levyltä ja luetteloista",
+      "other": "{count} modia poistettu levyltä ja luetteloista"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 päivitys otettu talteen: {list}",
+      "other": "{count} päivitystä otettu talteen: {list}"
+    },
+    "added": {
+      "one": "1 pelin lataama modi lisätty kokoonpanoon ”{name}”",
+      "other": "{count} pelin lataamaa modia lisätty kokoonpanoon ”{name}”"
+    },
+    "unclassified": {
+      "one": "1 pelin lataama modi lisättiin modikansioosi (lajittelematon)",
+      "other": "{count} pelin lataamaa modia lisättiin modikansioosi (lajittelemattomia)"
+    },
+    "errors": {
+      "one": "1 kansiota ei voitu saada järjestykseen: {list}. Katso loki.",
+      "other": "{count} kansiota ei voitu saada järjestykseen: {list}. Katso loki."
+    },
+    "reshaped": {
+      "one": "1 modi purettu tai pakattu uudelleen: kokoonpano seuraa sen uutta muotoa ({list})",
+      "other": "{count} modia purettu tai pakattu uudelleen: kokoonpanot seuraavat niiden uutta muotoa ({list})"
+    }
+  },
+  "rights": {
+    "title": "Oikeudet muilla asemilla oleville modeille",
+    "intro": "Jotta toisella asemalla oleva modi pääsee kokoonpanoon, FS Passion luo symbolisen linkin. Windows sallii sen vain kehittäjätilassa tai järjestelmänvalvojan oikeuksin, eikä kumpikaan ole käytössä.",
+    "standard": "Windows-tilisi on vakiotili: järjestelmänvalvojan oikeudet ajaisivat FS Passionia toisella tilillä, eri kansioilla ja asetuksilla. Kehittäjätila on oikea valinta.",
+    "admin_title": "Suorita FS Passion aina järjestelmänvalvojana",
+    "admin_text": "FS Passion valitsee puolestasi asetuksen ”Suorita tämä ohjelma järjestelmänvalvojana” (Ominaisuudet → Yhteensopivuus) vain sinun tilillesi ja käynnistyy sitten uudelleen. Seuraukset:",
+    "uac": "Windows pyytää vahvistusta aina, kun FS Passion käynnistyy.",
+    "game_normal": "Peli ja sen alusta käynnistetään edelleen tavallisin oikeuksin Windowsin Resurssienhallinnan kautta. Käynnistysparametrit kulkevat silloin tavalliseen tapaan alustan (Steam, Epic Games) kautta.",
+    "no_drop": "Windows estää tiedostojen vetämisen Resurssienhallinnasta FS Passioniin. Ei vaikutusta nyt: FS Passion ei käytä tätä elettä.",
+    "dev_title": "Tai: ota Windowsin kehittäjätila käyttöön",
+    "dev_text": "Windowsin asetukset → Järjestelmä → Kehittäjille → ”Kehittäjätila”. Ei muita seurauksia FS Passionille. Palaa sitten tänne ja napsauta ”Tarkista uudelleen”.",
+    "without": "Ilman näitä oikeuksia lisäkansiot pysyvät tallennettuina: niiden modit näkyvät luettelossa, mutta eivät pääse mihinkään kokoonpanoon.",
+    "later": "Myöhemmin",
+    "dev_mode": "Avaa kehittäjätila",
+    "admin": "Suorita aina järjestelmänvalvojana",
+    "missing": "Windows hylkää symboliset linkit: muilla asemilla olevat modit näkyvät luettelossa, mutta eivät pääse mihinkään kokoonpanoon.",
+    "get": "Hanki oikeudet…",
+    "check": "Tarkista uudelleen",
+    "ok": "Symboliset linkit sallittu (FS Passion toimii järjestelmänvalvojana): muilla asemilla olevat modit pääsevät kokoonpanoihin.",
+    "ok_dev": "Symboliset linkit sallittu (Windowsin kehittäjätila): muilla asemilla olevat modit pääsevät kokoonpanoihin.",
+    "unknown": "Symbolisten linkkien oikeuksia ei ole vielä tarkistettu.",
+    "admin_on": "FS Passion on asetettu toimimaan aina järjestelmänvalvojana.",
+    "admin_off": "Lopeta suorittaminen järjestelmänvalvojana",
+    "restarting": "FS Passion käynnistyy uudelleen järjestelmänvalvojana. Vahvista Windowsin kysymys.",
+    "now_ok": "Symboliset linkit sallittu: ota kokoonpanosi uudelleen käyttöön, jotta muilla asemilla olevat modit pääsevät niihin.",
+    "still_missing": "Windows hylkää yhä symboliset linkit.",
+    "flag_failed": "Asetusta ”Suorita järjestelmänvalvojana” ei voitu muuttaa.",
+    "ok_plain": "Symboliset linkit sallittu: muilla asemilla olevat modit pääsevät kokoonpanoihin.",
+    "admin_once_title": "Käynnistä FS Passion uudelleen järjestelmänvalvojana",
+    "admin_once_text": "FS Passion käynnistyy järjestelmänvalvojana vain tämän kerran; toistettava joka käynnistyksellä. Kehittäjätila välttää tämän. Seuraukset:",
+    "admin_once": "Käynnistä uudelleen järjestelmänvalvojana"
+  },
+  "older": {
+    "title": "Pelin lataama vanhempi versio",
+    "intro": {
+      "one": "Peli latasi modin, jonka versionumero on vanhempi kuin sinun. Se siirrettiin sivuun, mitään ei korvattu. Mitä haluat tehdä?",
+      "other": "Peli latasi {count} modia, joiden versionumero on vanhempi kuin sinun. Ne siirrettiin sivuun, mitään ei korvattu. Mitä haluat tehdä?"
+    },
+    "versions": "Sinun versiosi: {mine} · pelin lataama versio: {game}",
+    "keep": "Säilytä oma versioni ({version})",
+    "use": "Käytä pelin versiota ({version})",
+    "use_tip": "Pelin versio korvaa sinun versiosi modikansiossa; sinun versiosi siirretään kansioon ”Old versions”. Kaikki kokoonpanot seuraavat.",
+    "help": "Usein kyse on itse muokkaamastasi modista: ModHub ei vertaa versionumeroita vaan tarjoaa alkuperäisensä. Kummassakin tapauksessa mitään ei poisteta: tiedosto, jota et säilytä, jää kansioon ”Recovered” tai ”Old versions” kokoonpanojesi viereen.",
+    "later": "Myöhemmin",
+    "gone": "Tätä tiedostoa ei ole enää kansiossa ”Recovered”: mitään ei muutettu.",
+    "failed": "Modin {name} pelin versiota ei voitu asettaa paikalleen ({detail}). Sinun versiosi ei muuttunut."
+  },
+  "stop": {
+    "running": "Sulje ensin {game}: sen asetus on palautettava pelin ollessa suljettuna.",
+    "folders_failed": "Kokoonpanojen kansioita ei voitu poistaa.",
+    "closed": "FS Passion on suljettu. Pelillä on taas alkuperäinen asetuksensa.",
+    "export_first": "Vie määrityksesi ennen kuin jatkat: saat kokoonpanosi takaisin, jos palaat FS Passioniin.",
+    "intro": "FS Passion palauttaa pelin alkuperäisen asetuksen ja poistaa sitten kokoonpanojen kansiot (ne sisältävät vain linkkejä):",
+    "no_version": "Yhtään pelin versiota ei ole määritetty: ei mitään palautettavaa.",
+    "mods_safe": "Modikansioihisi ei koskaan kosketa, eikä myöskään kansioihin ”Old versions” ja ”Recovered”, joissa on sivuun siirrettyjä modeja.",
+    "admin_flag": "FS Passionin asettama ”Suorita tämä ohjelma järjestelmänvalvojana” -asetus poistetaan.",
+    "understand": "Ymmärrän: peli ei enää lataa FS Passionin kokoonpanoja.",
+    "plan": {
+      "restore": "Peli lataa taas alkuperäisen kansionsa: {dir}",
+      "deactivate": "Oma modikansio poistetaan käytöstä: peli palaa tavalliseen ”mods”-kansioonsa.",
+      "missing": "gameSettings.xml-tiedostoa ei löytynyt: ei mitään palautettavaa.",
+      "none": "Pelin asetus on jo alkuperäinen.",
+      "folders": {
+        "one": "{count} kokoonpanokansio poistettu",
+        "other": "{count} kokoonpanokansiota poistettu"
+      },
+      "kept": {
+        "one": "”{name}” säilytetään ({count} tiedosto).",
+        "other": "”{name}” säilytetään ({count} tiedostoa)."
+      }
+    },
+    "options": {
+      "title": "Poista myös:",
+      "parties": "kokoonpanot ja yhteiset modit (parties.json)",
+      "caches": "välimuistit (muunnetut kuvakkeet, DLC-luettelo)",
+      "settings": "FS Passionin asetukset",
+      "logs": "lokit",
+      "langs": "omat kielet"
+    },
+    "done": {
+      "title": "FS Passion ei ole enää käytössä",
+      "text": "Valmis. Pelillä on taas alkuperäinen asetuksensa.",
+      "partial": "Valmis, paitsi vähintään yhden version osalta: katso alta. Lokissa on tiedot.",
+      "version": {
+        "zero": "alkuperäinen asetus palautettu",
+        "one": "alkuperäinen asetus palautettu, {count} kokoonpanokansio poistettu",
+        "other": "alkuperäinen asetus palautettu, {count} kokoonpanokansiota poistettu"
+      },
+      "set_aside": {
+        "one": "{count} kokoonpanojen kansioista löytynyt tiedosto siirrettiin kansioon ”Recovered”.",
+        "other": "{count} kokoonpanojen kansioista löytynyttä tiedostoa siirrettiin kansioon ”Recovered”."
+      },
+      "close": "Sulje FS Passion",
+      "uninstaller": "Aloita sitten FS Passionin asennuksen poisto",
+      "error": {
+        "override": "pelin asetusta EI palautettu (gameSettings.xml-tiedostoa ei voitu muuttaa); kokoonpanojen kansiot säilytetään",
+        "folders": "alkuperäinen asetus palautettu, mutta kokoonpanojen kansioita ei voitu poistaa"
+      }
+    },
+    "stopped": "FS Passion ei ole enää käytössä: sulje se."
+  },
+  "tour": {
+    "button": "Esittelykierros",
+    "title": "Esittelykierros",
+    "count": "{n} / {total}",
+    "prev": "Edellinen",
+    "next": "Seuraava",
+    "replay": "Uudelleen",
+    "finish": "Valmis",
+    "quit": "Poistu kierrokselta",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Vaihto",
+    "hint": {
+      "caption": "Haluatko esittelykierroksen?",
+      "body": "Napsauta lamppua: minuutissa FS Passion näyttää sinulle käyttöliittymänsä tärkeimmät asiat. Lamppu pysyy paikallaan, joten voit katsoa kierroksen uudelleen milloin haluat.",
+      "start": "Aloita kierros",
+      "later": "Myöhemmin"
+    },
+    "versions": {
+      "caption": "Pelisi versio",
+      "body": "Vie hiiri tämän logon päälle: Farming Simulatorin versiot tulevat näkyviin. Napsauta sitä, jota haluat hallita.\nAsentamattomat versiot ovat harmaina. Jokaisella versiolla on omat modinsa ja omat kokoonpanonsa.",
+      "picked": "Valittu: sen modit ja kokoonpanot näytetään"
+    },
+    "parties": {
+      "caption": "Kokoonpanosi: FS Passionin sydän",
+      "body": "Yksi napsautus vaihtaa kokoonpanosta toiseen: sen kartta ja kaikki riippuvuudet seuraavat.\nTäysi kokoonpano: kaikki modisi, niiden päivittämiseen pelissä.\nTyhjä kokoonpano: ei modeja, alkuperäisen pelin kokeilemiseen.",
+      "full_tip": "Kaikki modit: modipäivitysten tekemiseen pelissä",
+      "empty_tip": "Ei modeja: alkuperäisen pelin kokeilemiseen"
+    },
+    "tools": {
+      "caption": "Luo, monista, nimeä uudelleen, poista",
+      "body": "Toiminnot valitulle kokoonpanolle.\nVinkki: luettelon ”Kaikki modit” kartassa painike ”＋ Kokoonpano” luo kokoonpanon kartasta ja kaikista sen riippuvuuksista yhdellä napsautuksella."
+    },
+    "common": {
+      "caption": "Yhteiset modit",
+      "body": "Ajoneuvot, työkoneet ja pelattavuusskriptit, jotka haluat kaikkiin kokoonpanoihisi.\nNe ovat oletuksena käytössä; poista ne tarvittaessa käytöstä yksittäisestä kokoonpanosta.",
+      "on": "Yhteiset modit mukana tässä kokoonpanossa",
+      "off": "Pois käytöstä vain tästä kokoonpanosta"
+    },
+    "apply": {
+      "caption": "Ota käyttöön",
+      "body": "Ottaa valitun kokoonpanon käyttöön: peli lataa sen seuraavalla käynnistyskerralla.\nPainike palaa niin kauan, kuin valittu kokoonpano ei ole käytössä.",
+      "done": "Käytössä: peli lataa sen seuraavalla käynnistyskerralla"
+    },
+    "buttons": {
+      "caption": "Teema, ilmoitukset, asetukset",
+      "body": "Vaalea tai tumma käyttöliittymä, viestihistoria, asetukset… Ja lamppu, jolla voit katsoa tämän kierroksen uudelleen milloin haluat.",
+      "theme": "Vaalea tai tumma käyttöliittymä"
+    },
+    "list1": {
+      "caption": "Kaikki modit",
+      "body": "Koko modikansiosi luokittain: DLC, kartat, muut modit…\nModi pysyy aina täällä, teitpä muissa luetteloissa mitä tahansa. ”Lajittelemattomat” modit eivät ole missään luettelossa: peli ei näe niitä.\n[Ctrl] + [F]: hae modia tai tekijää.",
+      "search_tip": "Haku: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Juuri ladatut modit",
+      "body": "Tämä painike etsii Lataukset-kansiostasi juuri lataamasi modit.\nFS Passion tunnistaa kunkin pelin version ja siirtää sen suostumuksellasi oikeaan modikansioon.\nSe tekee tämän myös käynnistyksen yhteydessä: katso Asetukset → Sovellus → Lataukset.",
+      "found": "Jokainen menee pelinsä version modikansioon"
+    },
+    "list2": {
+      "caption": "Kokoonpanon modit",
+      "body": "Valitun kokoonpanon modit: sen kartta, riippuvuudet ja omat modit.\nPeli lataa ne yhteisten modien lisäksi."
+    },
+    "list3": {
+      "caption": "Yhteiset modit",
+      "body": "Modit, jotka ovat kaikissa kokoonpanoissasi: traktorit, työkoneet, skriptit…\nLajittele ne tänne kerran: jokainen kokoonpano saa ne."
+    },
+    "select": {
+      "caption": "Monivalinta",
+      "body": "[Ctrl] + napsautus: lisää modi valintaan tai poista se valinnasta.\n[Vaihto] + napsautus: valitse koko alue.\n[Ctrl] + [A]: valitse kaikki luettelosta; [Esc]: tyhjennä valinta.\nHeti kun modi on valittu, alareunaan tulee toimintopalkki."
+    },
+    "move": {
+      "caption": "Vedä ja pudota",
+      "body": "Luetteloon ”Kokoonpanon modit” tai ”Yhteiset modit”: kyse on kopiosta, modi jää luetteloon ”Kaikki modit”.\nNäiden kahden luettelon välillä: kyse on siirrosta. Pidä [Ctrl] pohjassa pudottaessasi, niin modi kopioidaan.\nLuetteloon ”Kaikki modit” tai [Delete]-näppäimellä: modi poistetaan luettelosta. Sen tiedostoa ei koskaan poisteta.",
+      "copy": "Kopioi",
+      "move": "Siirrä · [Ctrl]: kopioi",
+      "remove": "Poista luettelosta · [Delete]"
+    },
+    "keys": {
+      "caption": "Pikanäppäimet",
+      "body": "Nopeampaa työskentelyä varten:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Hae modia tai tekijää"
+        },
+        {
+          "k": "[Ctrl] + napsautus",
+          "d": "Lisää modi valintaan tai poista se valinnasta"
+        },
+        {
+          "k": "[Vaihto] + napsautus",
+          "d": "Valitse alue modeja"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Valitse kaikki luettelosta"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Tyhjennä valinta tai peru vetäminen"
+        },
+        {
+          "k": "[Ctrl] pudotettaessa",
+          "d": "Kopioi siirtämisen sijaan (luetteloiden 2 ja 3 välillä)"
+        },
+        {
+          "k": "[Delete]",
+          "d": "Poista luettelosta 2 tai 3 (tiedosto säilyy)"
+        },
+        {
+          "k": "[Enter] kartan kohdalla",
+          "d": "Luo kokoonpano kartasta ja sen riippuvuuksista"
+        },
+        {
+          "k": "[F2]",
+          "d": "Nimeä modi uudelleen"
+        },
+        {
+          "k": "[I]",
+          "d": "Kiinnitä modin kortti"
+        },
+        {
+          "k": "[Välilyönti]  [↑] [↓] [←] [→]",
+          "d": "Valitse ja liiku näppäimistöllä"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Sulje lopettamatta",
+      "body": "Rasti sulkee ikkunan, mutta FS Passion jatkaa toimintaansa taustalla, ilmaisinalueella kellon vieressä.\nTakaisin saat sen tehtäväpalkin nuolesta ”^” ja sitten FS-kuvakkeesta. Todella sen sulkee ”Lopeta” oikeassa alakulmassa tai kuvakkeen hiiren kakkospainikkeen valikko.\nVoit muuttaa tätä kohdassa Asetukset → Sovellus → Ikkuna.",
+      "tip_close": "Sulje: FS Passion siirtyy ilmaisinalueelle",
+      "tip_more": "Näytä piilotetut kuvakkeet",
+      "tip_icon": "Napsautus: FS Passion palaa · Kakkospainike: Lopeta"
+    },
+    "end": {
+      "caption": "Nyt on sinun vuorosi!",
+      "body": "Katso tämä kierros uudelleen milloin haluat lampusta tai kohdasta Asetukset → Ohje ja tietoja."
+    },
+    "demo": {
+      "parties": [
+        "Vihreä laakso — Karjatalous",
+        "Kukkulat — Viljely",
+        "Etelän riisipellot"
+      ],
+      "party_sub": {
+        "one": "Kartta + {count} modi",
+        "other": "Kartta + {count} modia"
+      },
+      "mods": [
+        "Kuusisylinterinen traktori",
+        "Leikkuupuimuri",
+        "6 m kylvökone",
+        "Maatalousperävaunu",
+        "Työkonepaketti",
+        "Sääskripti"
+      ]
+    }
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "schema": 2,
+  "_comment": "Thèmes de FS Passion. style : duo (bicolore : la couleur sombre partout, la couleur dominante dans les textes et les icônes, contours fins et lueurs animées) ou palette (thème inspiré d'un thème populaire, couleurs officielles). dark = fond de la fenêtre (première surface d'un thème palette) ; light = couleur dominante (accent principal) ; mode : dark | light ; surfaces : 2 à 4 couleurs officielles, de l'extérieur vers l'intérieur (fenêtre, listes et fenêtres internes, sections, sous-sections) ; text : couleur des textes ; texts : 1 à 4 couleurs de texte officielles (principal, secondaire, discret, très discret) ; accents : 4 couleurs d'accent (orange, vert, bleu, violet : une par zone) ; gradient : 2 couleurs (titres, Appliquer, Lancer le jeu) ; pair : thème jumeau de l'autre mode (bouton soleil/lune) ; neon : 0 à 100, effet néon ; mica : lueurs du fond (thèmes sans surfaces), 0 à 100 ; grain : 0 à 100 ; effect : none | metal ; effect_intensity : 0 à 100. Sources des palettes : catppuccin.com/palette, nordtheme.com, github.com/altercation/solarized, Monokai Pro (filtres Pro et Light), github.com/morhetz/gruvbox, github.com/facelessuser/sublime-dracula-scheme (Dracula Neue Pro : Van Helsing, Alucard), github.com/tokyo-night/tokyo-night-vscode-theme, github.com/robb0wen/synthwave-vscode. Modifiable avec l'atelier de thèmes (mode développement).",
+  "themes": [
+    {
+      "id": "lime",
+      "name": "Lime",
+      "style": "duo",
+      "dark": "#1C1C1A",
+      "light": "#9ED86F",
+      "grain": 9,
+      "mica": 23,
+      "effect": "metal",
+      "effect_intensity": 100,
+      "neon": 0
+    },
+    {
+      "id": "blue",
+      "name": "Blanc",
+      "style": "duo",
+      "dark": "#272B3E",
+      "light": "#FFFFFF",
+      "grain": 14,
+      "mica": 60,
+      "effect": "none",
+      "effect_intensity": 0,
+      "neon": 0
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "style": "duo",
+      "dark": "#181825",
+      "light": "#F9E2AF",
+      "grain": 20,
+      "mica": 77,
+      "effect": "metal",
+      "effect_intensity": 17,
+      "neon": 0
+    },
+    {
+      "id": "cuivre",
+      "name": "Cuivre",
+      "style": "duo",
+      "dark": "#1B1B1B",
+      "light": "#FEB086",
+      "grain": 14,
+      "mica": 60,
+      "effect": "metal",
+      "effect_intensity": 70,
+      "neon": 0
+    },
+    {
+      "id": "catppuccin-mocha",
+      "name": "Catppuccin Mocha",
+      "style": "palette",
+      "dark": "#11111B",
+      "surfaces": [
+        "#11111B",
+        "#181825",
+        "#1E1E2E",
+        "#313244"
+      ],
+      "light": "#CBA6F7",
+      "text": "#CDD6F4",
+      "texts": [
+        "#CDD6F4",
+        "#BAC2DE",
+        "#A6ADC8",
+        "#7F849C"
+      ],
+      "accents": [
+        "#FAB387",
+        "#A6E3A1",
+        "#89B4FA",
+        "#CBA6F7"
+      ],
+      "gradient": [
+        "#F2CDCD",
+        "#CBA6F7"
+      ],
+      "pair": "catppuccin-latte",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "catppuccin-latte",
+      "name": "Catppuccin Latte",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#9CA0B0",
+      "surfaces": [
+        "#9CA0B0",
+        "#ACB0BE",
+        "#BCC0CC",
+        "#CCD0DA"
+      ],
+      "light": "#8839EF",
+      "text": "#4C4F69",
+      "texts": [
+        "#4C4F69",
+        "#5C5F77",
+        "#6C6F85",
+        "#7C7F93"
+      ],
+      "accents": [
+        "#FE640B",
+        "#40A02B",
+        "#1E66F5",
+        "#8839EF"
+      ],
+      "gradient": [
+        "#DD7878",
+        "#8839EF"
+      ],
+      "pair": "catppuccin-mocha",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "style": "palette",
+      "dark": "#2E3440",
+      "surfaces": [
+        "#2E3440",
+        "#3B4252",
+        "#434C5E",
+        "#4C566A"
+      ],
+      "light": "#88C0D0",
+      "text": "#ECEFF4",
+      "texts": [
+        "#ECEFF4",
+        "#E5E9F0",
+        "#D8DEE9"
+      ],
+      "accents": [
+        "#D08770",
+        "#A3BE8C",
+        "#81A1C1",
+        "#B48EAD"
+      ],
+      "gradient": [
+        "#88C0D0",
+        "#B48EAD"
+      ],
+      "pair": "nord-snow",
+      "neon": 0,
+      "grain": 10,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "nord-snow",
+      "name": "Nord Snow",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#D8DEE9",
+      "surfaces": [
+        "#D8DEE9",
+        "#E5E9F0",
+        "#ECEFF4"
+      ],
+      "light": "#5E81AC",
+      "text": "#2E3440",
+      "texts": [
+        "#2E3440",
+        "#3B4252",
+        "#434C5E",
+        "#4C566A"
+      ],
+      "accents": [
+        "#D08770",
+        "#A3BE8C",
+        "#5E81AC",
+        "#B48EAD"
+      ],
+      "gradient": [
+        "#5E81AC",
+        "#B48EAD"
+      ],
+      "pair": "nord",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "solarized-dark",
+      "name": "Solarized Dark",
+      "style": "palette",
+      "dark": "#002B36",
+      "surfaces": [
+        "#002B36",
+        "#073642",
+        "#002B36",
+        "#073642"
+      ],
+      "light": "#268BD2",
+      "text": "#93A1A1",
+      "texts": [
+        "#93A1A1",
+        "#839496",
+        "#657B83",
+        "#586E75"
+      ],
+      "accents": [
+        "#CB4B16",
+        "#859900",
+        "#268BD2",
+        "#6C71C4"
+      ],
+      "gradient": [
+        "#268BD2",
+        "#D33682"
+      ],
+      "pair": "solarized-light",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "solarized-light",
+      "name": "Solarized Light",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#EEE8D5",
+      "surfaces": [
+        "#EEE8D5",
+        "#FDF6E3",
+        "#EEE8D5",
+        "#FDF6E3"
+      ],
+      "light": "#268BD2",
+      "text": "#586E75",
+      "texts": [
+        "#586E75",
+        "#657B83",
+        "#839496",
+        "#93A1A1"
+      ],
+      "accents": [
+        "#CB4B16",
+        "#859900",
+        "#268BD2",
+        "#6C71C4"
+      ],
+      "gradient": [
+        "#268BD2",
+        "#D33682"
+      ],
+      "pair": "solarized-dark",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "monokai-pro",
+      "name": "Monokai Pro",
+      "style": "palette",
+      "dark": "#19181A",
+      "surfaces": [
+        "#19181A",
+        "#221F22",
+        "#2D2A2E",
+        "#403E41"
+      ],
+      "light": "#FFD866",
+      "text": "#FCFCFA",
+      "texts": [
+        "#FCFCFA",
+        "#C1C0C0",
+        "#939293",
+        "#727072"
+      ],
+      "accents": [
+        "#FC9867",
+        "#A9DC76",
+        "#78DCE8",
+        "#AB9DF2"
+      ],
+      "gradient": [
+        "#FF6188",
+        "#FFD866"
+      ],
+      "pair": "monokai-pro-light",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "monokai-pro-light",
+      "name": "Monokai Pro Light",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#D3CDCC",
+      "surfaces": [
+        "#D3CDCC",
+        "#EDE7E5",
+        "#FAF4F2"
+      ],
+      "light": "#CC7A0A",
+      "text": "#29242A",
+      "texts": [
+        "#29242A",
+        "#706B6E",
+        "#918C8E",
+        "#A59FA0"
+      ],
+      "accents": [
+        "#E16032",
+        "#269D69",
+        "#1C8CA8",
+        "#7058BE"
+      ],
+      "gradient": [
+        "#E14775",
+        "#CC7A0A"
+      ],
+      "pair": "monokai-pro",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "gruvbox-dark",
+      "name": "Gruvbox Dark",
+      "style": "palette",
+      "dark": "#1D2021",
+      "surfaces": [
+        "#1D2021",
+        "#282828",
+        "#32302F",
+        "#3C3836"
+      ],
+      "light": "#FABD2F",
+      "text": "#EBDBB2",
+      "texts": [
+        "#EBDBB2",
+        "#D5C4A1",
+        "#BDAE93",
+        "#A89984"
+      ],
+      "accents": [
+        "#FE8019",
+        "#B8BB26",
+        "#83A598",
+        "#D3869B"
+      ],
+      "gradient": [
+        "#FB4934",
+        "#FABD2F"
+      ],
+      "pair": "gruvbox-light",
+      "neon": 0,
+      "grain": 8,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "gruvbox-light",
+      "name": "Gruvbox Light",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#EBDBB2",
+      "surfaces": [
+        "#EBDBB2",
+        "#F2E5BC",
+        "#FBF1C7",
+        "#F9F5D7"
+      ],
+      "light": "#B57614",
+      "text": "#3C3836",
+      "texts": [
+        "#3C3836",
+        "#504945",
+        "#665C54",
+        "#7C6F64"
+      ],
+      "accents": [
+        "#AF3A03",
+        "#79740E",
+        "#076678",
+        "#8F3F71"
+      ],
+      "gradient": [
+        "#9D0006",
+        "#B57614"
+      ],
+      "pair": "gruvbox-dark",
+      "neon": 0,
+      "grain": 8,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "dracula-van-helsing",
+      "name": "Dracula Van Helsing",
+      "style": "palette",
+      "dark": "#0B0D0F",
+      "surfaces": [
+        "#0B0D0F",
+        "#14171A",
+        "#1C2126",
+        "#272E35"
+      ],
+      "light": "#80BFFF",
+      "text": "#F8F8F2",
+      "texts": [
+        "#F8F8F2",
+        "#D6D6CD",
+        "#9FB2C6",
+        "#708CA9"
+      ],
+      "accents": [
+        "#FFCA80",
+        "#8AFF80",
+        "#80BFFF",
+        "#9580FF"
+      ],
+      "gradient": [
+        "#FF80BF",
+        "#9580FF"
+      ],
+      "pair": "dracula-alucard",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "dracula-alucard",
+      "name": "Dracula Alucard",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#CFCFDE",
+      "surfaces": [
+        "#CFCFDE",
+        "#DCDEEF",
+        "#F5F5F5"
+      ],
+      "light": "#644AC9",
+      "text": "#1F1F1F",
+      "texts": [
+        "#1F1F1F",
+        "#3A3A3A",
+        "#635D97"
+      ],
+      "accents": [
+        "#A34D14",
+        "#14720A",
+        "#3654C2",
+        "#644AC9"
+      ],
+      "gradient": [
+        "#A3134D",
+        "#644AC9"
+      ],
+      "pair": "dracula-van-helsing",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "tokyo-night",
+      "name": "Tokyo Night",
+      "style": "palette",
+      "dark": "#16161E",
+      "surfaces": [
+        "#16161E",
+        "#1A1B26",
+        "#202330",
+        "#24283B"
+      ],
+      "light": "#7AA2F7",
+      "text": "#C0CAF5",
+      "texts": [
+        "#C0CAF5",
+        "#A9B1D6",
+        "#9AA5CE",
+        "#565F89"
+      ],
+      "accents": [
+        "#FF9E64",
+        "#9ECE6A",
+        "#7AA2F7",
+        "#BB9AF7"
+      ],
+      "gradient": [
+        "#7AA2F7",
+        "#BB9AF7"
+      ],
+      "pair": "tokyo-night-light",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "tokyo-night-light",
+      "name": "Tokyo Night Light",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#D6D8DF",
+      "surfaces": [
+        "#D6D8DF",
+        "#E1E2E8",
+        "#E6E7ED"
+      ],
+      "light": "#2959AA",
+      "text": "#343B58",
+      "texts": [
+        "#343B58",
+        "#40434F",
+        "#6C6E75",
+        "#707280"
+      ],
+      "accents": [
+        "#965027",
+        "#385F0D",
+        "#2959AA",
+        "#5A3E8E"
+      ],
+      "gradient": [
+        "#2959AA",
+        "#5A3E8E"
+      ],
+      "pair": "tokyo-night",
+      "neon": 0,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "synthwave-84",
+      "name": "Synthwave '84",
+      "style": "palette",
+      "dark": "#171520",
+      "surfaces": [
+        "#171520",
+        "#241B2F",
+        "#262335",
+        "#2A2139"
+      ],
+      "light": "#FF7EDB",
+      "text": "#FFFFFF",
+      "texts": [
+        "#FFFFFF",
+        "#D3D1D5",
+        "#B6B1B1",
+        "#848BBD"
+      ],
+      "accents": [
+        "#F97E72",
+        "#72F1B8",
+        "#36F9F6",
+        "#FF7EDB"
+      ],
+      "gradient": [
+        "#FC28A8",
+        "#03EDF9"
+      ],
+      "pair": "synthwave-84-light",
+      "neon": 70,
+      "grain": 8,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    },
+    {
+      "id": "synthwave-84-light",
+      "name": "Synthwave '84 Light",
+      "style": "palette",
+      "mode": "light",
+      "dark": "#DCD2EC",
+      "surfaces": [
+        "#DCD2EC",
+        "#E9E2F5",
+        "#F4F0FA",
+        "#FBF9FE"
+      ],
+      "light": "#C0278F",
+      "text": "#241B2F",
+      "texts": [
+        "#241B2F",
+        "#34294F",
+        "#5A4E73",
+        "#6F6589"
+      ],
+      "accents": [
+        "#C2410C",
+        "#13805A",
+        "#00838A",
+        "#C0278F"
+      ],
+      "gradient": [
+        "#FC28A8",
+        "#03EDF9"
+      ],
+      "pair": "synthwave-84",
+      "neon": 35,
+      "grain": 6,
+      "mica": 0,
+      "effect": "none",
+      "effect_intensity": 0
+    }
+  ]
+}

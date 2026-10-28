@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fspassion"
+dynamic = ["version"]
+description = "FS Passion — gestionnaire de mods pour Farming Simulator"
+authors = [{ name = "MichelMichel" }]
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.12"
+dependencies = [
+    "pywebview==6.2.1",
+    "Pillow==12.3.0",
+    "psutil==7.2.2",
+    "pystray==0.19.5",
+]
+
+# Numéro de version : une seule source, src/fspassion/__init__.py.
+[tool.setuptools.dynamic]
+version = { attr = "fspassion.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP"]
+ignore = ["E501", "B008"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["fspassion"]
+known-local-folder = ["fakemods"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = "src"
+ignore_missing_imports = true
+warn_unused_ignores = false
+check_untyped_defs = true
+platform = "win32"

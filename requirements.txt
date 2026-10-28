@@ -1,0 +1,6 @@
+# Dependances de FS Passion (licences libres, compatibles GPLv3)
+pywebview==6.2.1
+Pillow==12.3.0
+psutil==7.2.2
+# Icone de la zone de notification (LGPL-3.0, compatible GPLv3), version 0.19.5
+pystray==0.19.5

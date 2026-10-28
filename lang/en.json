@@ -1,0 +1,1382 @@
+{
+  "_meta": {
+    "code": "en",
+    "name": "English",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion is closed",
+    "closed_help": "You can close this tab. Start FS Passion again to continue."
+  },
+  "common": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "copy": "Copy",
+    "copied": "Copied to the clipboard",
+    "soon": "Coming in version {version}",
+    "soon_action": "{action}: coming in version {version}"
+  },
+  "window": {
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close FS Passion"
+  },
+  "header": {
+    "settings": "Settings",
+    "version": "Game version: {name}",
+    "current_party": "Current setup",
+    "create": "Create a setup",
+    "duplicate": "Duplicate the setup",
+    "rename": "Rename the setup",
+    "delete": "Delete the setup",
+    "common_mods": "Common mods",
+    "common_mods_tip": "Include the common mods in this setup",
+    "apply": "Apply",
+    "apply_tip": "Make the game load this setup",
+    "apply_done_tip": "This setup is applied and up to date: it is the one the game loads",
+    "theme_light": "Light interface",
+    "theme_dark": "Dark interface"
+  },
+  "versions": {
+    "coming": "Coming",
+    "ready": "Configured",
+    "installed": "Installed",
+    "not_installed": "Not installed",
+    "absent_help": "Installed elsewhere? Settings → Game and paths"
+  },
+  "party": {
+    "full": "Full setup",
+    "empty": "Empty setup",
+    "other": "Custom folder",
+    "unsupported": "No setups",
+    "unknown": "Unknown",
+    "none_yet": "No setups yet. Create one with ＋, or with “＋ Setup” on a map.",
+    "full_count": {
+      "one": "All mods ({count})",
+      "other": "All mods ({count})"
+    },
+    "empty_sub": "No mods, to test the base game",
+    "applied_tag": "applied",
+    "mods_count": {
+      "zero": "No mods",
+      "one": "{count} mod",
+      "other": "{count} mods"
+    },
+    "full_tip": "Ideal for updating mods in the game"
+  },
+  "status": {
+    "running": "{game} is running",
+    "other_folder": "The game loads its mods from another folder:",
+    "applied": "Applied setup: {name}",
+    "other_folder_path": "The game loads another folder: {path}",
+    "stale": "Setup changed since it was last applied"
+  },
+  "path": {
+    "empty": "",
+    "found": "Found",
+    "not_found": "This folder does not exist",
+    "not_game_exe": "This file is not a {game} executable",
+    "no_gamesettings": "gameSettings.xml not found: start the game once, then come back",
+    "not_ntfs": "This drive is not NTFS: games are not possible",
+    "onedrive": "This folder is in OneDrive: not recommended",
+    "storage_overlap": "This folder contains the main mods folder (or its FSPassion folder), or is inside it: choose another folder",
+    "storage_duplicate": "This folder is already used by the other storage folder, or contains it",
+    "storage_same_disk": "Found · same drive as the main folder: no special rights needed",
+    "storage_other_disk": "Found · other drive: symbolic links"
+  },
+  "list1": {
+    "title": "All mods",
+    "search": "Search for a mod or an author",
+    "search_clear": "Clear the search",
+    "cat_unclassified": "Unsorted",
+    "cat_dlc": "DLC",
+    "cat_maps": "Maps",
+    "cat_others": "Other mods",
+    "cat_by_author": "By author name",
+    "dlc_note": "Loaded by the game in every setup",
+    "selected": "selected",
+    "active": "active",
+    "all": "in total",
+    "scanning": "Reading mods: {done} of {total}",
+    "icons_pending": {
+      "one": "Preparing icons: {count} left",
+      "other": "Preparing icons: {count} left"
+    },
+    "anomalies": {
+      "one": "{count} issue: show details",
+      "other": "{count} issues: show details"
+    },
+    "find_new": "Look for new mods in downloads",
+    "open_settings": "Open settings",
+    "not_configured": "{game} is not configured yet",
+    "not_configured_help": "Set its mods folder in the settings, or let FS Passion detect the installation.",
+    "reading": "Reading mods…",
+    "no_match": "No mod matches “{query}”",
+    "empty": "This mods folder is empty",
+    "empty_help": "Mods (.zip) and unpacked mods (folders with a modDesc.xml) will appear here.",
+    "unclassified_note": "The game will not see them until they are sorted",
+    "plus_party": "Setup",
+    "plus_party_tip": "Create a setup with this map and its dependencies (Enter)",
+    "mark_party": "In the current setup",
+    "mark_common": "In the common mods",
+    "info_tip": "Pin the mod's details (I key)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Mods folder not found",
+      "unexpected": "Reading the mods failed: {error}"
+    }
+  },
+  "mod": {
+    "map": "Map",
+    "unpacked": "Unpacked mod",
+    "multiplayer": "Multiplayer",
+    "version": "Version",
+    "author": "Author",
+    "game_version": "Game",
+    "gv_unknown": "Unknown game version",
+    "size": "Size",
+    "kind": "Format",
+    "kind_dir": "Folder (unpacked)",
+    "kind_zip": ".zip archive",
+    "parties": "Found in lists",
+    "parties_none": "None",
+    "storage": "Storage",
+    "dependencies": {
+      "one": "{count} dependency",
+      "other": "{count} dependencies"
+    },
+    "more": {
+      "one": "and {count} more",
+      "other": "and {count} more"
+    },
+    "no_dependencies": "No dependencies declared",
+    "unpacked_tip": "Unpacked mod: it is not updated by the ModHub and cannot be used in multiplayer. FS Passion never writes into it.",
+    "gv_conflict": "The name prefix and the descVersion point to two different versions: the prefix is used.",
+    "unpin": "Close (Esc)",
+    "optional": {
+      "one": "{count} optional mod",
+      "other": "{count} optional mods"
+    },
+    "searchmods_note": "Older game version (SearchMods tag): the savegame loads even if a required mod is missing; the game reports it afterwards.",
+    "links_hint": "Click “i” to pin these details and open the links.",
+    "links_old": "Links given by the mod's author, often old: the page may no longer exist.",
+    "link_open": "Open in the browser",
+    "link_failed": "The link could not be opened."
+  },
+  "dep": {
+    "present": "present",
+    "absent": "missing",
+    "dlc_owned": "DLC owned",
+    "dlc_missing": "DLC not owned"
+  },
+  "dlc": {
+    "free": "Free DLC",
+    "paid": "DLC",
+    "info": "The game always loads installed DLC, in every setup."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} does not support setups",
+    "missing": "Not in the mods folders",
+    "missing_tip": "{name} is no longer in your mods folders. If its author renamed it, use “Replace with…”.",
+    "replace": "Replace with…"
+  },
+  "list2": {
+    "title": "Setup mods",
+    "full": {
+      "one": "Full setup: all mods ({count})",
+      "other": "Full setup: all mods ({count})"
+    },
+    "full_help": "The game loads the whole mods folder, as before FS Passion.",
+    "empty_party": "Empty setup: no mods",
+    "empty_help": "To test the base game, without any mod.",
+    "no_mods": "No mods in this setup",
+    "no_mods_help": "Drag mods from “All mods”, or select them and use the action bar."
+  },
+  "list3": {
+    "title": "Common mods",
+    "empty": "No common mods yet",
+    "empty_help": "Common mods are present in every setup: tractors, tools, scripts…",
+    "not_included": "Not included in this setup"
+  },
+  "footer": {
+    "github_tip": "The project's GitHub page",
+    "github_soon": "The project's GitHub address will be added soon",
+    "running": "Game running",
+    "launch": "Launch the game",
+    "launch_unconfigured": "Set the {game} executable in the settings",
+    "launch_tip": "Start the game with the applied setup",
+    "quit": "Quit"
+  },
+  "launch": {
+    "started": "Launching {game}…",
+    "failed": "{game} could not be launched. Check the executable and the launch method in the settings.",
+    "no_exe": "{game} executable not found: set it in the settings.",
+    "already_running": "{game} is already running.",
+    "apply_title": "Apply “{name}”?",
+    "apply_text": "The setup “{name}” is not applied, or has changed since. Apply the setup {name}, then start {game}?",
+    "apply_and_launch": "Apply and start",
+    "without_apply": "Start without applying"
+  },
+  "backup": {
+    "created": "Original backup of gameSettings.xml created for {game}",
+    "exported": "Configuration exported: {file}",
+    "demo_active": "Leave demo mode first: it uses other folders than yours.",
+    "unreadable": "This file cannot be read: {path}",
+    "too_big": "This file is too large to be an FS Passion export: {path}",
+    "not_export": "This file is not an FS Passion export: {path}",
+    "too_new": "This file comes from a newer version of FS Passion ({version}). Update FS Passion to import it.",
+    "write_failed": "The file could not be saved: {path}",
+    "expired": "The import has expired: choose the file again.",
+    "running": "Close {game} before importing: its setups are about to change.",
+    "import": {
+      "title": "Import a configuration",
+      "from": "Export of {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} setup",
+        "other": "{count} setups"
+      },
+      "common": {
+        "one": "{count} common mod",
+        "other": "{count} common mods"
+      },
+      "no_parties": "This file contains no setup: only the settings will be imported.",
+      "keep": "Keep your current paths (recommended)",
+      "keep_help": "The game, mods and downloads folders of this PC do not change. Only setups, common mods and neutral settings (language, theme, options) are imported.",
+      "replace_help": "The file's paths replace those of this PC: choose this only if the file comes from this PC, with the same drives.",
+      "paths_differ": "The mods folders in this file are not those of this PC.",
+      "warning": "The current setups of the versions above will be replaced. The current state is backed up automatically first. Nothing is applied: setup folders are rebuilt at the next “Apply”.",
+      "ok": "Import"
+    },
+    "result": {
+      "title": "Configuration imported",
+      "done": "The import is complete.",
+      "parties": {
+        "one": "{count} setup imported",
+        "other": "{count} setups imported"
+      },
+      "skipped": "not imported (game version not configured on this PC)",
+      "fallback": "The game was loading a setup that no longer exists: it now loads the Full setup.",
+      "apply": "Mods missing from this PC appear as missing mods in the setups. Click “Apply” for the game to load an imported setup.",
+      "backup": "State before the import saved in %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "game": {
+      "title": "Game and paths"
+    },
+    "look": {
+      "title": "Display"
+    },
+    "app": {
+      "title": "Application"
+    },
+    "help": {
+      "title": "Help and about"
+    },
+    "paths": {
+      "versions": "Game versions",
+      "game_exe": "Game executable",
+      "user_dir": "Game folder in Documents",
+      "mods_dir": "Main mods folder",
+      "mods_dirs": "Mods folders",
+      "browse": "Browse…",
+      "fixed_fs2011": "The FS2011 mods folder cannot be moved.",
+      "add_storage": "Add a mods folder on another drive",
+      "derived": "Derived paths",
+      "not_applicable": "Not applicable to this version",
+      "d_game_dir": "Game folder",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (game folder)",
+      "d_dlc_user": "DLC (Documents)",
+      "detect": "Detect installation",
+      "detect_all": "Detect all versions",
+      "detect_all_help": "Looks for the installations of every version, and fills their empty fields.",
+      "detect_one": "Detect this version",
+      "detect_one_help": "Changes only the version selected above. The other versions stay as they are.",
+      "detect_help": "Fields you have customized are never changed.",
+      "detect_found": "Installations found: {list}",
+      "detect_none": "No installation found. Set the paths with “Browse…”.",
+      "launch_method": "Game launch mode",
+      "launch_auto": "Automatic",
+      "launch_platform": "Platform",
+      "launch_exe": "Executable",
+      "launch_help": "Automatic picks the right method (Steam, Epic Games, Microsoft Store, Xbox or executable). The other two are fallbacks.",
+      "minimize_on_launch": "Minimize FS Passion when the game starts",
+      "args_title": "Launch arguments",
+      "args_show": "Show launch arguments",
+      "args_hide": "Hide launch arguments",
+      "args_skip": "Skip the intro video",
+      "args_skip_info": "Skips the intro video and splash screens.",
+      "args_cheats": "Development console",
+      "args_cheats_info": "Enables the in-game development console. Also sets <controls> in game.xml, next to gameSettings.xml.",
+      "args_game_xml_absent": "game.xml not found: the console will only be enabled after the game has been launched once.",
+      "args_game_xml_error": "game.xml could not be changed: the development console stays disabled.",
+      "args_help_command": "FS Passion adds them to the {game} launch command.",
+      "args_help_steam": "{game} is started by Steam. Steam refuses arguments passed by another program (it would ask for confirmation at every launch), so FS Passion starts the game without them. Enter them once in Steam, below.",
+      "args_help_epic": "{game} is started by Epic Games, which does not accept arguments from another program: enter them once in the Epic Games Launcher, below.",
+      "args_help_unsupported": "{game} is installed from the Microsoft Store or Xbox.",
+      "args_store": "The Microsoft Store and the Xbox app do not allow launch arguments: only the development console (game.xml) can be enabled. For arguments, choose “Executable” as the launch mode, if your installation allows it.",
+      "args_steam_where": "Where to enter them in Steam",
+      "args_steam_steps": "Steam library: right-click {game} → Properties…\nGeneral tab → “Launch options” field\nPaste the text below, then close the window",
+      "args_epic_where": "Where to enter them in the Epic Games Launcher",
+      "args_epic_steps": "Library: “…” under {game} → Manage\nTick “Additional Command Line Arguments”\nPaste the text below (older launchers: profile picture → Settings → {game})",
+      "args_none": "No argument ticked",
+      "args_copy_label": "Arguments to copy",
+      "args_copy_help": "Only needed again when you tick or untick an argument.",
+      "console_on": "Console enabled in game.xml",
+      "console_off": "Console disabled in game.xml",
+      "console_enable": "Enable in game.xml",
+      "console_done": "Development console enabled in game.xml for {game}",
+      "add_storage_help": "Up to two more folders. Their mods are listed and join setups like the others; FS Passion never writes anything else there.",
+      "extra_dir": "Additional mods folder",
+      "extra_help": "Removing this folder does not touch its mods: they are simply no longer listed.",
+      "remove_storage": "Remove this folder from the list (its mods are not touched)"
+    },
+    "downloads": {
+      "title": "Downloads",
+      "folder": "Downloads folder",
+      "help": "The folder where your browser saves downloaded mods.",
+      "scan_at_start": "Look for new mods at startup",
+      "scan_now": "Search now"
+    },
+    "language": {
+      "title": "Language",
+      "personal": "personal",
+      "open_folder": "Open the personal languages folder",
+      "personal_help": "You can translate FS Passion into your language there: a template and instructions are included.",
+      "rejected": "Language files ignored (invalid or too large): {list}"
+    },
+    "theme": {
+      "title": "Theme",
+      "help": "Hover a swatch to preview the theme, click to choose it. Two-color themes have only two colors; the others use the official colors of popular themes, each in a dark and a light version. The sun/moon button in the header switches between them.",
+      "contrast": "Contrast {ratio}:1",
+      "loop": "Loop theme: change theme every minute",
+      "light_effects": "Light effects (sheen, glowing outlines, neon)",
+      "reduce_motion": "Reduce animations",
+      "follows_windows": "Follows the Windows “Animation effects” setting.",
+      "follow_windows": "Follow the Windows setting",
+      "atelier": "Open the theme workshop",
+      "mode_dark": "Dark",
+      "mode_light": "Light",
+      "group_duo": "Two-color"
+    },
+    "backup": {
+      "title": "Configuration backup",
+      "help": "Export your setups, common mods and settings to a file, to get them back after a reinstall or on another PC. No mod is copied: only their names.",
+      "export": "Export",
+      "import": "Import"
+    },
+    "notice": {
+      "title": "Guide",
+      "open": "Open the guide",
+      "at_start": "Show at startup",
+      "tour": "Guided tour of the interface"
+    },
+    "anomalies": {
+      "title": "Issues",
+      "show": "Show issues",
+      "reset": {
+        "zero": "No hidden issues",
+        "one": "Show the hidden issue again",
+        "other": "Show the {count} hidden issues again"
+      },
+      "reset_done": "Hidden issues are shown again"
+    },
+    "internet": {
+      "title": "Internet connection",
+      "allow": "Allow FS Passion to download the DLC catalog from GitHub",
+      "help": "The DLC catalog (names and icons) is read from GitHub at most once a day. Only the icons of DLC present on this PC are downloaded. No personal data is sent.",
+      "catalog_off": "DLC catalog: the one shipped with FS Passion (connection turned off).",
+      "catalog_remote": "DLC catalog of {date}, downloaded from GitHub.",
+      "catalog_embedded": "DLC catalog of {date}, shipped with FS Passion.",
+      "check": "Check now",
+      "checking": "Checking…",
+      "error_not_found": "The catalog is not published on GitHub yet.",
+      "error_unreachable": "Last check failed (no connection?).",
+      "error_invalid": "The published catalog cannot be read: the one in FS Passion is used.",
+      "error_too_new": "The published catalog needs a newer version of FS Passion.",
+      "error_too_big": "The published catalog is too large: it is ignored."
+    },
+    "logs": {
+      "title": "Logs and diagnostics",
+      "open_logs": "Open the logs folder",
+      "copy_diag": "Copy diagnostics",
+      "diag_copied": "Diagnostics copied: paste them into your report"
+    },
+    "donate": {
+      "title": "Support the project",
+      "text": "FS Passion is and will remain a trustworthy, open-source and free project. If you would like to thank its author, a one-off donation takes a few seconds, with no account to create. Thank you!",
+      "no_link": "Link coming"
+    },
+    "about": {
+      "title": "About",
+      "version": "Version",
+      "author": "Author",
+      "license": "License",
+      "github_soon": "address coming",
+      "official": "The only official download link is the project's GitHub page.",
+      "unofficial": "FS Passion is an independent project, not affiliated with GIANTS Software. Farming Simulator is a trademark of GIANTS Software.",
+      "privacy": "FS Passion sends no data. It only downloads, if you allow it, the public DLC list from GitHub.",
+      "window_mode": "Window technique (development)",
+      "window_native": "Native",
+      "window_script": "Computed",
+      "window_thin": "Thin frame",
+      "window_restart": "Takes effect the next time FS Passion starts",
+      "window_help": "Current technique: {current}. Change it only if resizing from the edges does not work."
+    },
+    "stop": {
+      "title": "Stop using FS Passion",
+      "show": "Show details",
+      "hide": "Hide details",
+      "text": "Gives the game its original setting back and removes the setup folders. Your mods are never touched.",
+      "button": "Stop using FS Passion"
+    },
+    "window": {
+      "title": "Window",
+      "close_to_tray": "Close to the notification area",
+      "close_to_tray_help": "The window’s close button hides FS Passion next to the Windows clock. Click its icon to bring it back; “Quit” (bottom right, or in the icon’s menu) really closes it.",
+      "tray_off": "The notification area is only available in the FS Passion window, on Windows.",
+      "focus_after_game": "Come back to the front when the game closes",
+      "focus_after_game_help": "When Farming Simulator closes, FS Passion reappears, even if it was hidden in the notification area."
+    },
+    "demo": {
+      "title": "Try without the game",
+      "help": "Fake mods to try every feature of FS Passion, in a test folder: your real paths are set aside, then restored when you quit.",
+      "start": "Try FS Passion without the game",
+      "active_help": "Demo mode is on: these paths are those of the test folder. Your real paths come back when you quit it."
+    }
+  },
+  "themes": {
+    "lime": "Lime",
+    "jade": "Jade",
+    "cuivre": "Copper",
+    "blue": "White"
+  },
+  "anomalies": {
+    "title": "Issues found",
+    "none": "No issues. Everything is in order.",
+    "intro": "These items in your mods folder cannot be used as they are by the game. Nothing serious, and FS Passion leaves them alone.",
+    "new": "new",
+    "hide_type": "Stop showing this type of issue",
+    "hide_folder": "Stop showing this folder",
+    "rename": "Rename…",
+    "others": {
+      "one": "Other ignored files ({count})",
+      "other": "Other ignored files ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar or .7z archive",
+        "other": ".rar or .7z archives ({count})"
+      },
+      "explain": "The game only reads .zip files. Extract the archive, then zip the mod again if needed."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip without modDesc.xml",
+        "other": ".zip files without modDesc.xml ({count})"
+      },
+      "explain": "Often a pack of several mods to extract.",
+      "nested": "modDesc.xml found in a subfolder ({path}): the mod was zipped incorrectly."
+    },
+    "A3": {
+      "title": {
+        "one": "Unreadable archive",
+        "other": "Unreadable archives ({count})"
+      },
+      "explain": "Damaged archive or invalid modDesc.xml. Download the mod again.",
+      "zip": "The archive cannot be opened.",
+      "xml": "The modDesc.xml file is invalid."
+    },
+    "A4": {
+      "title": {
+        "one": "Folder without modDesc.xml",
+        "other": "Folders without modDesc.xml ({count})"
+      },
+      "explain": "Without a modDesc.xml at its root, the game cannot use this folder. FS Passion never touches it."
+    },
+    "A5": {
+      "title": {
+        "one": "Name rejected by the game",
+        "other": "Names rejected by the game ({count})"
+      },
+      "explain": "The game only accepts unaccented letters, digits and “_”.",
+      "suggestion": "Suggested name: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod for another game version",
+        "other": "Mods for another game version ({count})"
+      },
+      "explain": "This mod will not be loaded by this version of the game.",
+      "detected": "Mod for {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Missing mod",
+        "other": "Missing mods ({count})"
+      },
+      "explain": "A setup references this mod, but it is no longer in the mods folders.",
+      "in": "In: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Deleted mod still linked",
+        "other": "Deleted mods still linked ({count})"
+      },
+      "explain": "This mod was deleted from the mods folder, but some setups still contain it.",
+      "copy": "A copy still exists in: {list}",
+      "delete_title": "Delete the remaining copy?",
+      "delete_text": "The last copy of “{name}”, still present in setup folders, will be sent to the Recycle Bin, and the mod removed from every list."
+    },
+    "A9": {
+      "title": {
+        "one": "Duplicate mod",
+        "other": "Duplicate mods ({count})"
+      },
+      "explain": "The same mod is there twice: in two storage folders, or as a .zip and a folder side by side. The game only loads one. FS Passion uses the one in the main folder, and the archive rather than the folder.",
+      "zip_and_dir": "“{name}” exists both as a .zip and as an unpacked folder: the game only loads one, and the ModHub cannot update it. Keep a single form (delete the other with “Delete permanently”, or move it out of the mods folder).",
+      "files": "Files: {list}"
+    },
+    "game": "{game}",
+    "folder": "Mods folder: {path}",
+    "show_in_folder": "Show in File Explorer",
+    "open_folder": "Open the mods folder in File Explorer (the mod is no longer there)"
+  },
+  "welcome": {
+    "subtitle": "Your mods, stored once. As many setups as you like.",
+    "language": "Choose your language"
+  },
+  "notice": {
+    "title": "How FS Passion works",
+    "at_start": "Show this window when the application starts",
+    "understood": "Got it",
+    "blocks": [
+      {
+        "key": "First of all: we recommend making a backup copy of all your mods on another drive. It is essential, as before any operation on important files."
+      },
+      {
+        "h": "The idea"
+      },
+      {
+        "p": "FS Passion lets you create, quickly and easily, as many Farming Simulator setups as you like, while keeping a single copy of your mods in their original folder."
+      },
+      {
+        "p": "Switch from one setup to another in 1 click!"
+      },
+      {
+        "h": "Installation"
+      },
+      {
+        "p": "Your mods folder can be on any drive: FS Passion adapts. There is nothing to create, move or rename by hand. Drive full? Add up to two mods folders on other drives (Settings → Game and paths): their mods join setups like the others."
+      },
+      {
+        "h": "First use"
+      },
+      {
+        "ul": [
+          "Create your setups with the magic “＋ Setup” button found on maps: the map and its dependencies become the setup in one click.",
+          "Then sort the other mods into the common mods, present in every setup.",
+          "Click “Apply”: the game will load the chosen setup the next time it starts."
+        ]
+      },
+      {
+        "h": "Adding, renaming, deleting mods"
+      },
+      {
+        "ul": [
+          "New mods: download them as usual, then click “Search for new mods” at the top of the list. FS Passion puts them in the mods folder of the right game version.",
+          "To delete mods, do it in FS Passion (“Delete permanently” in the action bar) rather than in File Explorer: they are then removed from the lists and setups at the same time, and go to the Recycle Bin.",
+          "Renaming a mod (F2 key) detaches it from the ModHub: it will no longer receive updates."
+        ]
+      },
+      {
+        "h": "Updates"
+      },
+      {
+        "p": "Nothing to do: updates downloaded by the game are recovered when it closes, or the next time FS Passion starts. The old version is set aside in “Old versions”. If the game downloads an older version number than yours (often a mod you modified), FS Passion asks you which one to keep."
+      },
+      {
+        "h": "Keeping your setups"
+      },
+      {
+        "p": "Settings → Application → “Export” saves your setups, common mods and settings to a file. “Import” brings them back, after a reinstall or on another PC."
+      },
+      {
+        "h": "To stop"
+      },
+      {
+        "p": "“Stop using FS Passion” (Settings → Application) gives the game its original setting back and removes the setup folders. Your mods are never touched."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Theme workshop",
+    "id": "Identifier",
+    "name": "Name",
+    "dark": "Window background",
+    "light": "Dominant color",
+    "mica": "Mica glow",
+    "grain": "Grain",
+    "effect": "Effect",
+    "effect_none": "None",
+    "effect_metal": "Metallic sheen",
+    "intensity": "Intensity",
+    "save": "Save",
+    "copy": "Copy definition",
+    "new": "New",
+    "copied": "Definition copied",
+    "saved": "Theme saved to ui/themes.json",
+    "contrast_low": "Contrast {ratio}:1, below 4.5:1. Small text will use {color}.",
+    "contrast_ok": "Contrast {ratio}:1",
+    "mode": "Mode",
+    "mode_dark": "Dark",
+    "mode_light": "Light",
+    "text": "Text",
+    "multi": "Several accent colors (one per area)",
+    "accent_n": "Accent {n}",
+    "pair": "Twin theme (sun/moon)",
+    "pair_none": "None",
+    "gradient": "Two-color gradient (titles, Apply and Launch buttons)",
+    "gradient_from": "Gradient: start",
+    "gradient_to": "Gradient: end",
+    "style": "Style",
+    "style_duo": "Two-color",
+    "style_palette": "Official palette",
+    "style_classic": "Computed veils",
+    "surface_1": "Window background",
+    "surface_2": "Lists and windows",
+    "surface_3": "Sections",
+    "surface_4": "Sub-sections",
+    "text_n": "Text {n}",
+    "neon": "Neon",
+    "neon_help": "Glow of titles, icons and outlines, in the color of each area (0: no effect). Turned off by “Light effects”."
+  },
+  "error": {
+    "bad_request": "Invalid request.",
+    "forbidden": "Access denied.",
+    "not_found": "Item not found.",
+    "unexpected": "Unexpected error. Copy the diagnostics (Settings → Help and about) and attach them to your report.",
+    "offline": "The FS Passion core is not responding.",
+    "internal": "Operation refused for safety. Copy the diagnostic (Settings → Help and about) and attach it to your report."
+  },
+  "detect": {
+    "busy": "A detection is already running."
+  },
+  "parties": {
+    "not_configured": "Set the mods folder of {game} in the settings to create setups.",
+    "name_label": "Setup name",
+    "name_empty": "The name cannot be empty.",
+    "name_too_long": "{max} characters at most.",
+    "name_taken": "A setup is already called “{name}”.",
+    "special_locked": "The Full setup and the Empty setup cannot be changed, renamed, duplicated or deleted.",
+    "not_found": "This setup no longer exists.",
+    "write_failed": "The setups could not be saved in {path}. Check that this drive can be written to.",
+    "recovered": "The setups file of {game} could not be read: its most recent backup ({backup}) was loaded. The damaged file was set aside.",
+    "lost": "The setups file of {game} could not be read and no backup could be loaded. The damaged file was set aside, nothing was deleted.",
+    "running_rename": "Close {game} before renaming this setup: its folder cannot change while the game runs.",
+    "running_delete": "Close {game} before deleting this setup: its folder cannot change while the game runs.",
+    "map_not_found": "Map not found: {name}",
+    "mod_not_found": "Mod not found: {name}",
+    "create_title": "New setup",
+    "create_help": "An empty setup that includes the common mods. Then add mods to it from “All mods”.",
+    "create_ok": "Create",
+    "created": "Setup “{name}” created",
+    "duplicate_title": "Duplicate the setup",
+    "duplicate_help": "The copy keeps the mods of “{name}” and its “Common mods” setting.",
+    "copy_name": "{name} (copy)",
+    "duplicate_ok": "Duplicate",
+    "duplicated": "Setup “{name}” created",
+    "rename_title": "Rename the setup",
+    "rename_ok": "Rename",
+    "renamed": "“{old}” renamed to “{name}”",
+    "delete_title": "Delete the setup",
+    "delete_text": {
+      "zero": "Delete the setup “{name}”? It contains no mods.",
+      "one": "Delete the setup “{name}”? Its mod stays in your mods folder: only the setup and its folder of links disappear.",
+      "other": "Delete the setup “{name}”? Its {count} mods stay in your mods folder: only the setup and its folder of links disappear."
+    },
+    "delete_ok": "Delete",
+    "deleted": "Setup “{name}” deleted",
+    "deleted_applied": "The setup {name} was deleted. The game now uses the setup {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod selected",
+      "other": "mods selected"
+    },
+    "add_party": "Add to Setup mods",
+    "add_common": "Add to Common mods",
+    "remove_party": "Remove from Setup mods",
+    "remove_common": "Remove from Common mods",
+    "rename": "Rename…",
+    "rename_help": "A single mod, selected in “All mods”.",
+    "delete": "Delete permanently…",
+    "close": "Close the bar and clear the selection (Esc)",
+    "added_party": {
+      "one": "{count} mod added to the setup “{name}”",
+      "other": "{count} mods added to the setup “{name}”"
+    },
+    "added_common": {
+      "one": "{count} mod added to the common mods",
+      "other": "{count} mods added to the common mods"
+    },
+    "moved_party": {
+      "one": "{count} mod moved to the setup “{name}”",
+      "other": "{count} mods moved to the setup “{name}”"
+    },
+    "moved_common": {
+      "one": "{count} mod moved to the common mods",
+      "other": "{count} mods moved to the common mods"
+    },
+    "removed_party": {
+      "one": "{count} mod removed from the setup “{name}”",
+      "other": "{count} mods removed from the setup “{name}”"
+    },
+    "removed_common": {
+      "one": "{count} mod removed from the common mods",
+      "other": "{count} mods removed from the common mods"
+    },
+    "nothing_party": "These mods are already in the setup “{name}”",
+    "nothing_common": "These mods are already in the common mods"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Also add its dependency?",
+      "other": "Also add its {count} dependencies?"
+    },
+    "ask_yes": {
+      "one": "Also add the dependency",
+      "other": "Also add the {count} dependencies"
+    },
+    "ask_no": "Only the chosen mods",
+    "missing_warn": {
+      "one": "Dependency missing from your mods: {list}",
+      "other": "{count} dependencies missing from your mods: {list}"
+    },
+    "needed_by_map": "The map “{name}” needs:",
+    "needed_by_mod": "The mod “{name}” needs:",
+    "needed": "Dependencies:",
+    "where_common": "the common mods",
+    "where_party": "the setup “{name}”",
+    "ask_intro": {
+      "one": "This mod is a dependency of a mod you chose, but it is not in {where}.",
+      "other": "These {count} mods are dependencies of the mods you chose, but they are not in {where}."
+    },
+    "missing_for": "{list} (required by “{name}”)",
+    "optional_title": {
+      "one": "Also add an optional mod?",
+      "other": "Also add optional mods?"
+    },
+    "optional_intro": {
+      "one": "One optional mod, already in your mods:",
+      "other": "{count} optional mods, already in your mods:"
+    },
+    "optional_for": "optional for “{name}”",
+    "optional_note": "Optional: the game does not need them. Only the ones you tick are added to {where}.",
+    "optional_continue": "Continue"
+  },
+  "plus": {
+    "title": "New setup from a map",
+    "deps_title": {
+      "one": "{count} dependency",
+      "other": "{count} dependencies"
+    },
+    "dlc_title": "Required DLC",
+    "dlc_note": "For information: the game always loads the installed DLC. They are not added to the setup.",
+    "missing_note": "Missing dependencies are not added: download them, then add them to the setup.",
+    "no_deps": "No dependencies declared: the setup will only contain the map.",
+    "summary": {
+      "zero": "The setup will contain the map alone, plus the common mods.",
+      "one": "The setup will contain the map and its dependency, plus the common mods.",
+      "other": "The setup will contain the map and its {count} dependencies, plus the common mods."
+    },
+    "create": "Create the setup",
+    "created": {
+      "one": "Setup “{name}” created: {count} mod",
+      "other": "Setup “{name}” created: {count} mods"
+    },
+    "created_missing": {
+      "one": "Dependency to download: {list}",
+      "other": "{count} dependencies to download: {list}"
+    },
+    "optional_title": {
+      "one": "{count} optional mod",
+      "other": "{count} optional mods"
+    },
+    "optional_note": "Optional: the game does not need them. Tick the ones to add to the setup.",
+    "optional_none_present": "None of these optional mods are in your mods. The game does not need them."
+  },
+  "replace": {
+    "title": "Replace with…",
+    "help": "{name} is no longer in your mods folders. If its author renamed it, choose its new version: it will take its place in every list.",
+    "done": {
+      "one": "{old} replaced with {name} in {count} list",
+      "other": "{old} replaced with {name} in {count} lists"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "unread": {
+      "one": "Notifications: 1 new message",
+      "other": "Notifications: {count} new messages"
+    },
+    "clear": "Clear all",
+    "none": "No notifications yet. Messages shown at the bottom right are kept here until FS Passion is closed."
+  },
+  "tray": {
+    "show": "Show FS Passion",
+    "quit": "Quit FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion keeps running here. Click the icon to bring it back; “Quit” really closes it."
+  },
+  "apply": {
+    "unsupported": "This version of the game cannot change its mods folder.",
+    "not_ready": "First set the mods folder and the My Documents folder of the game in the settings.",
+    "running": "Close {game} before applying a setup.",
+    "no_gamesettings": "gameSettings.xml of {game} was not found: start the game once, or check the My Documents folder in the settings.",
+    "busy": "Another setup operation is in progress. Try again in a moment.",
+    "library_busy": "Mods are still being read. Try again in a moment.",
+    "done": {
+      "zero": "Setup {name} applied: no mods.",
+      "one": "Setup {name} applied: {count} mod.",
+      "other": "Setup {name} applied: {count} mods."
+    },
+    "missing": {
+      "one": "1 mod of the setup is missing from your mods folder: {list}",
+      "other": "{count} mods of the setup are missing from your mods folder: {list}"
+    },
+    "updated": {
+      "one": "1 update left by the game was moved into your mods folder.",
+      "other": "{count} updates left by the game were moved into your mods folder."
+    },
+    "added": {
+      "one": "1 mod left by the game joined your mods folder and the setup {name}.",
+      "other": "{count} mods left by the game joined your mods folder and the setup {name}."
+    },
+    "set_aside": {
+      "one": "1 file was set aside, nothing was deleted (“Recovered” or “Old versions” folder, next to your setups).",
+      "other": "{count} files were set aside, nothing was deleted (“Recovered” and “Old versions” folders, next to your setups)."
+    },
+    "empty_party": "The setup {name} contains no mods: the game will start without mods.",
+    "not_same_disk": "Cannot link {name}: the setups folder must be on the same drive as the mods folder.",
+    "no_hardlinks": "This drive does not support hard links: the mods folder must be on an NTFS drive. Nothing was changed.",
+    "too_many_links": "Cannot link {name}: this file reached the Windows limit of links.",
+    "access_denied": "Access denied while linking {name}. Nothing was changed.",
+    "link_failed": "The link of {name} could not be created ({detail}). Nothing was changed.",
+    "junction_failed": "The junction of the unpacked mod {name} could not be created ({detail}). Nothing was changed.",
+    "folder_busy": "The folder {path} is used by another program (File Explorer?). Close it and try again. Nothing was changed.",
+    "folder_exists": "A folder {path} already exists: choose another name.",
+    "failed": "The setup could not be applied ({detail}). Nothing was changed.",
+    "recovered_finished": "A setup operation of {game} had been interrupted (power cut?). It was completed.",
+    "recovered_cancelled": "A setup operation of {game} had been interrupted (power cut?). It was cancelled: nothing changed.",
+    "symlink_denied": "Windows refuses the symbolic link to {name}: Windows Developer Mode or administrator rights are required.",
+    "blocked": {
+      "one": "1 mod from another drive could not join the setup (no rights for symbolic links): {list}. See Settings → Game and paths.",
+      "other": "{count} mods from another drive could not join the setup (no rights for symbolic links): {list}. See Settings → Game and paths."
+    }
+  },
+  "override": {
+    "title": "The game loads an unknown folder",
+    "text": "{game} loads its mods from a folder FS Passion does not know (changed by hand, or by another tool):",
+    "help": "Adopt this folder as your mods folder, apply your setup again, or leave the game as it is.",
+    "adopt": "Adopt as mods folder",
+    "reapply": "Apply {name} again",
+    "ignore": "Do nothing",
+    "adopted": "New mods folder: {path}",
+    "read_failed": "gameSettings.xml cannot be read ({path}). Nothing was changed.",
+    "backup_failed": "The backup of gameSettings.xml could not be written ({path}). Nothing was changed.",
+    "write_failed": "gameSettings.xml could not be written ({path}). Is the game open?",
+    "check_failed": "The check of gameSettings.xml failed: the original file was restored.",
+    "no_root": "gameSettings.xml does not look like a game settings file. Nothing was changed."
+  },
+  "demo": {
+    "title": "Demo mode",
+    "pill": "Demo",
+    "quit": "Quit",
+    "banner": "Demo mode: these mods are fake. Your real folders and the game are not touched.",
+    "badge": "Fake mod (demo)",
+    "installing": "Preparing the demo mods…",
+    "started": "Demo mode: try everything, nothing touches the game.",
+    "stopped": "Demo mode closed: everything was erased.",
+    "stop_title": "Quit demo mode",
+    "stop_text": "The fake mods, the test setups and the whole demo folder will be erased. Your real settings come back as they were.",
+    "stop_ok": "Quit and erase everything",
+    "offer_title": "Try FS Passion without the game?",
+    "offer_text": "No Farming Simulator was found on this PC. You can try FS Passion with fake mods: create setups, sort, apply… everything works, in a test folder, never in a game.",
+    "offer_local": "The demo pack is already on this PC (about 2 MB).",
+    "offer_download": "The demo pack (about 2 MB) will be downloaded from the project's GitHub page, then checked.",
+    "offer_yes": "Try it",
+    "offer_no": "Later",
+    "unavailable": "The demo pack is not available yet.",
+    "bad_pack": "The demo pack is damaged or does not match the original: it was refused.",
+    "download_failed": "The demo pack could not be downloaded ({detail}).",
+    "install_failed": "The demo pack could not be installed ({detail}).",
+    "remove_failed": "The demo folder could not be fully erased: {path}",
+    "no_detect": "Game detection is off in demo mode."
+  },
+  "delete": {
+    "title": {
+      "one": "Delete this mod permanently?",
+      "other": "Delete these {count} mods permanently?"
+    },
+    "intro": {
+      "one": "This mod will be removed from every list and every setup folder, then deleted from your mods folder:",
+      "other": "These {count} mods will be removed from every list and every setup folder, then deleted from your mods folder:"
+    },
+    "irreversible": "This cannot be undone.",
+    "recycle": "The files will go to the Windows Recycle Bin: you can still restore them from there.",
+    "no_recycle": "This drive has no Recycle Bin: the deletion will be permanent.",
+    "understand": {
+      "one": "I understand that this file will be deleted",
+      "other": "I understand that these files will be deleted"
+    },
+    "ok": "Delete permanently",
+    "done_recycled": {
+      "one": "1 mod sent to the Recycle Bin",
+      "other": "{count} mods sent to the Recycle Bin"
+    },
+    "done_deleted": {
+      "one": "1 mod permanently deleted",
+      "other": "{count} mods permanently deleted"
+    },
+    "failed": {
+      "one": "1 mod could not be deleted: {list}. It was removed from the lists; close the program that uses it, then try again.",
+      "other": "{count} mods could not be deleted: {list}. They were removed from the lists; close the program that uses them, then try again."
+    },
+    "nothing": "No mod to delete.",
+    "running": "Close {game} before deleting mods."
+  },
+  "rename": {
+    "title": "Rename the mod",
+    "label": "New name",
+    "prefix_tip": "Version prefix kept",
+    "final": "File name: {file}",
+    "rule": "Unaccented letters, digits and “_” only: the game refuses other characters.",
+    "where": "In: {list}. The lists only change with your agreement: FS Passion will then ask whether they follow the new name.",
+    "warning_modhub": "If it comes from the ModHub, this mod will no longer receive updates: that is the point of renaming it.",
+    "warning_save": "In the game, savegames that use this mod will look for it under its old name.",
+    "warning_save_map": "This is a map: in the game, savegames made on it will look for it under its old name and will no longer load.",
+    "warning_deps": {
+      "one": "1 mod declares it as a dependency ({list}): it will look for it under its old name.",
+      "other": "{count} mods declare it as a dependency ({list}): they will look for it under its old name."
+    },
+    "ok": "Rename",
+    "done": {
+      "zero": "{old} renamed to {name}",
+      "one": "{old} renamed to {name}, in 1 setup",
+      "other": "{old} renamed to {name}, in {count} setups"
+    },
+    "renamed": "{old} renamed to {name}",
+    "lists_title": "Update the lists?",
+    "lists_ask": "“{old}” is still in: {list}. Should they follow the new name “{name}”?",
+    "lists_yes": "Update the lists",
+    "lists_no": "Do nothing",
+    "lists_done": "Lists updated ({count}).",
+    "empty": "Enter a name.",
+    "too_long": "Name too long: {max} characters at most.",
+    "invalid": "Unaccented letters, digits and “_” only, no spaces.",
+    "same": "That is already its name.",
+    "taken": "“{name}” already exists in your mods folders.",
+    "not_found": "Mod {name} cannot be found in your mods folders.",
+    "failed": "{name} could not be renamed: it may be open in another program.",
+    "running": "Close {game} before renaming a mod.",
+    "no_list": "no list"
+  },
+  "downloads": {
+    "title": "New mods found",
+    "intro": "In {folder}. Integrate moves each ticked file into the mods folder of its game version.",
+    "count": {
+      "one": "1 mod found",
+      "other": "{count} mods found"
+    },
+    "col_mod": "Mod",
+    "col_version": "Game version",
+    "col_state": "Status",
+    "col_dest": "Destination",
+    "state": {
+      "new": "New",
+      "update": "Update ({from} → {to})",
+      "older": "Older than the installed version ({to} < {from})",
+      "present": "Already present",
+      "conflict": "An unpacked mod already has this name",
+      "unconfigured": "Version not configured: set it up in the settings"
+    },
+    "older_confirm": "Ticked: it will replace the installed version (set aside).",
+    "postpone": "{game} is running: integrated when it closes",
+    "not_configured": "{game} (not configured)",
+    "suffix": "Will be integrated as {name} (browser suffix removed)",
+    "dest_none": "None (unsorted)",
+    "dest_unclassified": "Unsorted",
+    "dest_party": "Setup “{name}”",
+    "ignore": "Ignore these files",
+    "ignored": {
+      "one": "1 file ignored: it will no longer be offered",
+      "other": "{count} files ignored: they will no longer be offered"
+    },
+    "later": "Later",
+    "integrate": {
+      "zero": "Integrate",
+      "one": "Integrate 1 mod",
+      "other": "Integrate {count} mods"
+    },
+    "none": "No new mod in {folder}.",
+    "done": {
+      "one": "1 mod integrated: {list}",
+      "other": "{count} mods integrated: {list}"
+    },
+    "in_version": {
+      "one": "1 in {game}",
+      "other": "{count} in {game}"
+    },
+    "skipped": {
+      "one": "1 file left in place (already present or older)",
+      "other": "{count} files left in place (already present or older)"
+    },
+    "postponed": {
+      "one": "1 mod will be integrated when {game} closes",
+      "other": "{count} mods will be integrated when {game} closes"
+    },
+    "postponed_done": {
+      "one": "1 download integrated after {game} closed",
+      "other": "{count} downloads integrated after {game} closed"
+    },
+    "failed": "{file} could not be integrated. The file stayed in your downloads.",
+    "gone": "{file} is no longer in the downloads folder.",
+    "unconfigured": "{file}: the chosen game version is not configured.",
+    "no_folder": "Downloads folder not found: set it in Settings → Application → Downloads.",
+    "demo": "Downloads are not integrated during the demo.",
+    "done_in": {
+      "one": "1 mod integrated into {game}",
+      "other": "{count} mods integrated into {game}"
+    },
+    "col_storage": "Storage"
+  },
+  "move": {
+    "exists": "{file}: a file with the same name already exists.",
+    "no_space": "{file}: not enough free space on the mods folder drive.",
+    "check_failed": "{file}: the verified copy does not match the original. Nothing was replaced.",
+    "failed": "{file} could not be moved: it may be open in another program."
+  },
+  "missing": {
+    "title": "Mods missing from your mods folder",
+    "intro": {
+      "one": "This mod is missing from your mods folder although it is in setups. What do you want to do?",
+      "other": "These {count} mods are missing from your mods folder although they are in setups. What do you want to do?"
+    },
+    "in": "In: {list}",
+    "copy": "Deleted from the mods folder, but a copy still exists through its links in: {list}",
+    "no_copy": "No copy: download it again, or replace it with a mod renamed by its author",
+    "restore": "Restore to Mods",
+    "restore_tip": "The copy still present in the setup becomes your mods folder's mod again (nothing is copied).",
+    "remove": "Remove from lists",
+    "remove_all": "Remove all from lists",
+    "later": "Later",
+    "notice": "To delete a mod, do it in FS Passion (“Delete permanently” button in the action bar): it is then removed from the lists and setups at the same time.",
+    "removed": {
+      "one": "1 mod removed from every list",
+      "other": "{count} mods removed from every list"
+    },
+    "restored": {
+      "one": "1 mod restored to your mods folder",
+      "other": "{count} mods restored to your mods folder"
+    },
+    "deleted": {
+      "one": "1 mod deleted and removed from the lists",
+      "other": "{count} mods deleted and removed from the lists"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 update recovered: {list}",
+      "other": "{count} updates recovered: {list}"
+    },
+    "added": {
+      "one": "1 mod downloaded by the game added to setup “{name}”",
+      "other": "{count} mods downloaded by the game added to setup “{name}”"
+    },
+    "unclassified": {
+      "one": "1 mod downloaded by the game joined your mods folder (unsorted)",
+      "other": "{count} mods downloaded by the game joined your mods folder (unsorted)"
+    },
+    "errors": {
+      "one": "1 folder could not be put back in order: {list}. See the log.",
+      "other": "{count} folders could not be put back in order: {list}. See the log."
+    },
+    "reshaped": {
+      "one": "1 mod unpacked or repacked: the setup follows its new form ({list})",
+      "other": "{count} mods unpacked or repacked: the setups follow their new form ({list})"
+    }
+  },
+  "rights": {
+    "title": "Rights for mods on other drives",
+    "intro": "For a mod stored on another drive to join a setup, FS Passion creates a symbolic link. Windows only allows it with Developer Mode or administrator rights, and neither is active.",
+    "standard": "Your Windows account is a standard account: getting administrator rights would run FS Passion under another account, with other folders and settings. Developer Mode is the right choice.",
+    "admin_title": "Always run FS Passion as administrator",
+    "admin_text": "FS Passion ticks “Run this program as an administrator” for you (Properties → Compatibility), for your account only, then restarts. Consequences:",
+    "uac": "Windows asks for confirmation every time FS Passion starts.",
+    "game_normal": "The game and its platform are still started with normal rights, through Windows Explorer. Launch arguments then go through the platform (Steam, Epic Games), as usual.",
+    "no_drop": "Windows blocks dragging files from Explorer onto FS Passion. No effect today: FS Passion does not use that gesture.",
+    "dev_title": "Or: turn on Windows Developer Mode",
+    "dev_text": "Windows Settings → System → For developers → “Developer Mode”. No other consequence for FS Passion. Then come back here and click “Check again”.",
+    "without": "Without these rights, the additional folders stay saved: their mods are listed, but do not join any setup.",
+    "later": "Later",
+    "dev_mode": "Open Developer Mode",
+    "admin": "Always run as administrator",
+    "missing": "Windows refuses symbolic links: mods on other drives are listed, but do not join any setup.",
+    "get": "Get the rights…",
+    "check": "Check again",
+    "ok": "Symbolic links allowed (FS Passion runs as administrator): mods on other drives join setups.",
+    "ok_dev": "Symbolic links allowed (Windows Developer Mode): mods on other drives join setups.",
+    "unknown": "Rights for symbolic links have not been checked yet.",
+    "admin_on": "FS Passion is set to always run as administrator.",
+    "admin_off": "Stop running as administrator",
+    "restarting": "FS Passion is restarting as administrator. Confirm the Windows prompt.",
+    "now_ok": "Symbolic links allowed: apply your setups again so mods on other drives can join them.",
+    "still_missing": "Windows still refuses symbolic links.",
+    "flag_failed": "The “Run as administrator” setting could not be changed.",
+    "ok_plain": "Symbolic links allowed: mods on other drives join setups.",
+    "admin_once_title": "Restart FS Passion as administrator",
+    "admin_once_text": "FS Passion restarts as administrator this time only; to be redone at each launch. Developer Mode avoids this. Consequences:",
+    "admin_once": "Restart as administrator"
+  },
+  "older": {
+    "title": "Older version downloaded by the game",
+    "intro": {
+      "one": "The game downloaded a mod whose version number is older than yours. It was set aside, nothing was replaced. What do you want to do?",
+      "other": "The game downloaded {count} mods whose version number is older than yours. They were set aside, nothing was replaced. What do you want to do?"
+    },
+    "versions": "Your version: {mine} · version downloaded by the game: {game}",
+    "keep": "Keep my version ({version})",
+    "use": "Use the game's version ({version})",
+    "use_tip": "The game's version takes the place of yours, in its mods folder; yours is set aside in “Old versions”. All setups follow.",
+    "help": "This is often a mod you modified: the ModHub does not compare version numbers, it offers its original. Either way nothing is deleted: the file you do not keep stays in the “Recovered” or “Old versions” folder, next to your setups.",
+    "later": "Later",
+    "gone": "This file is no longer in the “Recovered” folder: nothing was changed.",
+    "failed": "The game's version of {name} could not be put in place ({detail}). Your version did not change."
+  },
+  "stop": {
+    "running": "Close {game} first: its setting must be restored while the game is closed.",
+    "folders_failed": "The setup folders could not be deleted.",
+    "closed": "FS Passion is closed. The game has its original setting back.",
+    "export_first": "Before going on, export your configuration: you will get your setups back if you return to FS Passion.",
+    "intro": "FS Passion will give the game its original setting back, then remove the setup folders (they only contain links):",
+    "no_version": "No game version is configured: there is nothing to restore.",
+    "mods_safe": "Your mods folders are never touched, nor “Old versions” and “Recovered”, which contain mods set aside.",
+    "admin_flag": "The “Run this program as an administrator” setting set by FS Passion will be removed.",
+    "understand": "I understand: the game will no longer load FS Passion setups.",
+    "plan": {
+      "restore": "The game loads its original folder again: {dir}",
+      "deactivate": "The custom mods folder is turned off: the game goes back to its usual “mods” folder.",
+      "missing": "gameSettings.xml not found: nothing to restore.",
+      "none": "Game setting already original.",
+      "folders": {
+        "one": "{count} setup folder removed",
+        "other": "{count} setup folders removed"
+      },
+      "kept": {
+        "one": "“{name}” is kept ({count} file).",
+        "other": "“{name}” is kept ({count} files)."
+      }
+    },
+    "options": {
+      "title": "Also delete:",
+      "parties": "setups and common mods (parties.json)",
+      "caches": "caches (converted icons, DLC catalog)",
+      "settings": "FS Passion settings",
+      "logs": "logs",
+      "langs": "personal languages"
+    },
+    "done": {
+      "title": "FS Passion is no longer used",
+      "text": "Done. The game has its original setting back.",
+      "partial": "Done, except for at least one version: see below. The log has the details.",
+      "version": {
+        "zero": "original setting restored",
+        "one": "original setting restored, {count} setup folder removed",
+        "other": "original setting restored, {count} setup folders removed"
+      },
+      "set_aside": {
+        "one": "{count} file found in the setup folders was set aside in “Recovered”.",
+        "other": "{count} files found in the setup folders were set aside in “Recovered”."
+      },
+      "close": "Close FS Passion",
+      "uninstaller": "Then start uninstalling FS Passion",
+      "error": {
+        "override": "game setting NOT restored (gameSettings.xml could not be changed); setup folders are kept",
+        "folders": "original setting restored, but the setup folders could not be deleted"
+      }
+    },
+    "stopped": "FS Passion is no longer used: close it."
+  },
+  "tour": {
+    "button": "Guided tour",
+    "title": "Guided tour",
+    "count": "{n} / {total}",
+    "prev": "Previous",
+    "next": "Next",
+    "replay": "Replay",
+    "finish": "Finish",
+    "quit": "Leave the tour",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Fancy a guided tour?",
+      "body": "Click the light bulb: in one minute, FS Passion shows you the essentials of its interface. It stays there so you can replay the tour whenever you like.",
+      "start": "Start the tour",
+      "later": "Later"
+    },
+    "versions": {
+      "caption": "Your game version",
+      "body": "Hover over this logo: the Farming Simulator versions appear. Click the one you want to manage.\nVersions that are not installed are greyed out. Each version has its own mods and its own setups.",
+      "picked": "Selected: its mods and setups are shown"
+    },
+    "parties": {
+      "caption": "Your setups: the heart of FS Passion",
+      "body": "One click switches from one setup to another: its map and all its dependencies follow.\nFull setup: all your mods, to update them in the game.\nEmpty setup: no mods, to test the original game.",
+      "full_tip": "All mods: to run mod updates in the game",
+      "empty_tip": "No mods: to test the original game"
+    },
+    "tools": {
+      "caption": "Create, duplicate, rename, delete",
+      "body": "Actions on the selected setup.\nTip: on a map in “All mods”, the “＋ Setup” button creates the setup with the map and all its dependencies, in one click."
+    },
+    "common": {
+      "caption": "Common mods",
+      "body": "The vehicles, tools and gameplay scripts you want in all your setups.\nThey are on by default; if needed, turn them off for a single setup.",
+      "on": "Common mods included in this setup",
+      "off": "Turned off for this setup only"
+    },
+    "apply": {
+      "caption": "Apply",
+      "body": "Applies the selected setup: it is the one the game will load the next time it starts.\nThe button lights up as long as the selected setup is not applied.",
+      "done": "Applied: the game will load it next time it starts"
+    },
+    "buttons": {
+      "caption": "Theme, notifications, settings",
+      "body": "Light or dark interface, message history, settings… And the light bulb, to replay this tour whenever you like.",
+      "theme": "Light or dark interface"
+    },
+    "list1": {
+      "caption": "All mods",
+      "body": "Your whole mods folder, sorted by category: DLC, maps, other mods…\nA mod always stays here, whatever you do in the other lists. “Unsorted” mods are in no list: the game does not see them.\n[Ctrl] + [F]: search for a mod or an author.",
+      "search_tip": "Search: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Newly downloaded mods",
+      "body": "This button looks for the mods you just downloaded in your Downloads folder.\nFS Passion detects the game version of each one and, with your agreement, puts it in the right mods folder.\nIt also does this at startup: see Settings → Application → Downloads.",
+      "found": "Each one goes to the mods folder of its game version"
+    },
+    "list2": {
+      "caption": "Setup mods",
+      "body": "The mods of the selected setup: its map, its dependencies, its own mods.\nThe game loads them on top of the common mods."
+    },
+    "list3": {
+      "caption": "Common mods",
+      "body": "The mods present in all your setups: tractors, tools, scripts…\nSort them here once: every setup gets them."
+    },
+    "select": {
+      "caption": "Multiple selection",
+      "body": "[Ctrl] + click: add or remove a mod from the selection.\n[Shift] + click: select a whole range.\n[Ctrl] + [A]: select everything in the list; [Esc]: clear the selection.\nAs soon as a mod is selected, an action bar appears at the bottom."
+    },
+    "move": {
+      "caption": "Drag and drop",
+      "body": "To “Setup mods” or “Common mods”: it is a copy, the mod stays in “All mods”.\nBetween these two lists: it is a move. Hold [Ctrl] while dropping to copy.\nTo “All mods”, or the [Del] key: the mod is removed from the list. Its file is never deleted.",
+      "copy": "Copy",
+      "move": "Move · [Ctrl]: copy",
+      "remove": "Remove from the list · [Del]"
+    },
+    "keys": {
+      "caption": "Keyboard shortcuts",
+      "body": "To go faster:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Search for a mod or an author"
+        },
+        {
+          "k": "[Ctrl] + click",
+          "d": "Add or remove a mod from the selection"
+        },
+        {
+          "k": "[Shift] + click",
+          "d": "Select a range of mods"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Select everything in the list"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Clear the selection, or cancel a drag"
+        },
+        {
+          "k": "[Ctrl] while dropping",
+          "d": "Copy instead of moving (between lists 2 and 3)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Remove from list 2 or 3 (the file stays)"
+        },
+        {
+          "k": "[Enter] on a map",
+          "d": "Create a setup with the map and its dependencies"
+        },
+        {
+          "k": "[F2]",
+          "d": "Rename a mod"
+        },
+        {
+          "k": "[I]",
+          "d": "Pin a mod's card"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "Select and move around with the keyboard"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Close without quitting",
+      "body": "The cross closes the window, but FS Passion keeps running in the background, in the notification area next to the clock.\nTo bring it back: the “^” arrow on the taskbar, then the FS icon. To really close it: “Quit”, bottom right, or right-click the icon.\nYou can change this in Settings → Application → Window.",
+      "tip_close": "Close: FS Passion moves to the notification area",
+      "tip_more": "Show hidden icons",
+      "tip_icon": "Click: FS Passion comes back · Right-click: Quit"
+    },
+    "end": {
+      "caption": "Over to you!",
+      "body": "Replay this tour whenever you like with the light bulb, or in Settings → Help and about."
+    },
+    "demo": {
+      "parties": [
+        "Green Valley — Livestock",
+        "The Hills — Crops",
+        "Southern Rice Fields"
+      ],
+      "party_sub": {
+        "one": "Map + {count} mod",
+        "other": "Map + {count} mods"
+      },
+      "mods": [
+        "Six-cylinder tractor",
+        "Combine harvester",
+        "6 m seeder",
+        "Farm trailer",
+        "Tool pack",
+        "Weather script"
+      ]
+    }
+  }
+}

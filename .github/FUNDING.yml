@@ -1,0 +1,4 @@
+# Bouton « Sponsor » de la page GitHub du projet.
+# Buy Me a Coffee par son identifiant ; Stripe par son lien de don (« custom »).
+buy_me_a_coffee: michel.michelmichel
+custom: ["https://donate.stripe.com/3cI00k2szgLvcx80Xdgfu00"]

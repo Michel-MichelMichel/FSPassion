@@ -1,0 +1,51 @@
+FS Passion — langues personnelles / personal languages
+=======================================================
+
+FRANÇAIS
+
+Ce dossier permet de traduire FS Passion dans votre langue, ou de corriger
+une traduction fournie. Il se trouve dans %APPDATA%\FSPassion\lang\ (version
+installée) ou dans data\lang\, à côté de FSPassion.exe (version portable).
+
+1. Copiez le fichier _modele_en.json (modèle anglais, tenu à jour par
+   FS Passion) et renommez la copie, par exemple eu.json.
+2. Ouvrez-la avec un éditeur de texte (Bloc-notes), enregistrez en UTF-8.
+3. Dans "_meta", indiquez votre langue :
+     "code": "eu"          code de la langue
+     "name": "Euskara"     nom affiché dans le menu des langues
+     "author": "votre nom"
+4. Traduisez les textes, sans toucher aux clés (à gauche des « : »)
+   ni aux variables entre accolades comme {count} ou {game}.
+5. Relancez FS Passion et choisissez votre langue dans les paramètres.
+
+- Une clé absente est remplacée par l'anglais : vous pouvez traduire petit à petit.
+- Un fichier qui porte le code d'une langue fournie (par exemple "fr")
+  remplace cette langue : pratique pour corriger une traduction.
+- Taille maximale : 300 Ko. Un fichier invalide est ignoré, avec un message.
+- Un fichier de langue ne contient que du texte : il ne peut rien exécuter.
+
+Partagez votre traduction dans l'onglet Issues de la page GitHub du projet :
+elle pourra être fournie à tous dans une prochaine version.
+
+ENGLISH
+
+This folder lets you translate FS Passion into your language, or fix a
+provided translation. It is located in %APPDATA%\FSPassion\lang\ (installed
+version) or in data\lang\, next to FSPassion.exe (portable version).
+
+1. Copy _modele_en.json (the English template, kept up to date by
+   FS Passion) and rename the copy, e.g. eu.json.
+2. Open it with a text editor (Notepad), save as UTF-8.
+3. In "_meta", describe your language: "code", "name" (shown in the
+   language menu), "author".
+4. Translate the texts. Do not change the keys (left of the ":") or the
+   variables in braces such as {count} or {game}.
+5. Restart FS Passion and pick your language in the settings.
+
+Missing keys fall back to English. A file using the code of a provided
+language (e.g. "fr") replaces it. Maximum size: 300 KB. Invalid files are
+ignored, with a message. Language files only contain text and cannot run
+anything.
+
+Share your translation in the Issues tab of the project's GitHub page: it may
+be provided to everyone in a future version.

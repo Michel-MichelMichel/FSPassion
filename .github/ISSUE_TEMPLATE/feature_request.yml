@@ -1,0 +1,11 @@
+name: Proposer une idée / Suggest an idea
+description: Une amélioration ou une nouvelle fonction. / An improvement or a new feature.
+labels: ["idée"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Votre idée / Your idea
+      description: Quel besoin, et comment l'imaginez-vous dans FS Passion ? / What need, and how would it look in FS Passion?
+    validations:
+      required: true

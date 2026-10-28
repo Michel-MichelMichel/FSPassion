@@ -1,0 +1,1544 @@
+{
+  "_meta": {
+    "code": "cs",
+    "name": "Čeština",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion je zavřený",
+    "closed_help": "Tuto kartu můžete zavřít. Pro pokračování znovu spusťte FS Passion."
+  },
+  "common": {
+    "close": "Zavřít",
+    "cancel": "Zrušit",
+    "ok": "OK",
+    "copy": "Kopírovat",
+    "copied": "Zkopírováno do schránky",
+    "soon": "Přijde ve verzi {version}",
+    "soon_action": "{action}: přijde ve verzi {version}"
+  },
+  "window": {
+    "minimize": "Minimalizovat",
+    "maximize": "Maximalizovat",
+    "restore": "Obnovit",
+    "close": "Zavřít FS Passion"
+  },
+  "header": {
+    "settings": "Nastavení",
+    "version": "Verze hry: {name}",
+    "current_party": "Aktuální sestava",
+    "create": "Vytvořit sestavu",
+    "duplicate": "Duplikovat sestavu",
+    "rename": "Přejmenovat sestavu",
+    "delete": "Smazat sestavu",
+    "common_mods": "Společné mody",
+    "common_mods_tip": "Zahrnout společné mody do této sestavy",
+    "apply": "Použít",
+    "apply_tip": "Nechat hru načíst tuto sestavu",
+    "apply_done_tip": "Tato sestava je použitá a aktuální: hra načítá právě ji",
+    "theme_light": "Světlé rozhraní",
+    "theme_dark": "Tmavé rozhraní"
+  },
+  "versions": {
+    "coming": "Brzy",
+    "ready": "Nastavená",
+    "installed": "Nainstalovaná",
+    "not_installed": "Nenainstalovaná",
+    "absent_help": "Nainstalovaná jinde? Nastavení → Hra a cesty"
+  },
+  "party": {
+    "full": "Plná sestava",
+    "empty": "Prázdná sestava",
+    "other": "Vlastní složka",
+    "unsupported": "Bez sestav",
+    "unknown": "Neznámá",
+    "none_yet": "Zatím žádné sestavy. Vytvořte jednu tlačítkem ＋ nebo tlačítkem „＋ Sestava“ u mapy.",
+    "full_count": {
+      "one": "Všechny mody ({count})",
+      "few": "Všechny mody ({count})",
+      "many": "Všechny mody ({count})",
+      "other": "Všechny mody ({count})"
+    },
+    "empty_sub": "Bez modů, pro vyzkoušení základní hry",
+    "applied_tag": "použitá",
+    "mods_count": {
+      "zero": "Žádné mody",
+      "one": "{count} mod",
+      "few": "{count} mody",
+      "many": "{count} modu",
+      "other": "{count} modů"
+    },
+    "full_tip": "Ideální pro aktualizaci modů ve hře"
+  },
+  "status": {
+    "running": "{game} běží",
+    "other_folder": "Hra načítá mody z jiné složky:",
+    "applied": "Použitá sestava: {name}",
+    "other_folder_path": "Hra načítá jinou složku: {path}",
+    "stale": "Sestava se od posledního použití změnila"
+  },
+  "path": {
+    "empty": "",
+    "found": "Nalezeno",
+    "not_found": "Tato složka neexistuje",
+    "not_game_exe": "Tento soubor není spustitelný soubor hry {game}",
+    "no_gamesettings": "Soubor gameSettings.xml nebyl nalezen: spusťte hru jednou a vraťte se",
+    "not_ntfs": "Tato jednotka není NTFS: sestavy nejsou možné",
+    "onedrive": "Tato složka je na OneDrivu: nedoporučuje se",
+    "storage_overlap": "Tato složka obsahuje hlavní složku modů (nebo její složku FSPassion), nebo je v ní: zvolte jinou složku",
+    "storage_duplicate": "Tuto složku už používá druhá úložná složka, nebo ji obsahuje",
+    "storage_same_disk": "Nalezeno · stejná jednotka jako hlavní složka: nejsou potřeba zvláštní oprávnění",
+    "storage_other_disk": "Nalezeno · jiná jednotka: symbolické odkazy"
+  },
+  "list1": {
+    "title": "Všechny mody",
+    "search": "Hledat mod nebo autora",
+    "search_clear": "Vymazat hledání",
+    "cat_unclassified": "Nezařazené",
+    "cat_dlc": "DLC",
+    "cat_maps": "Mapy",
+    "cat_others": "Ostatní mody",
+    "cat_by_author": "Podle jména autora",
+    "dlc_note": "Hra je načítá v každé sestavě",
+    "selected": "vybráno",
+    "active": "aktivních",
+    "all": "celkem",
+    "scanning": "Načítání modů: {done} z {total}",
+    "icons_pending": {
+      "one": "Příprava ikon: zbývá {count}",
+      "few": "Příprava ikon: zbývají {count}",
+      "many": "Příprava ikon: zbývá {count}",
+      "other": "Příprava ikon: zbývá {count}"
+    },
+    "anomalies": {
+      "one": "{count} problém: zobrazit podrobnosti",
+      "few": "{count} problémy: zobrazit podrobnosti",
+      "many": "{count} problému: zobrazit podrobnosti",
+      "other": "{count} problémů: zobrazit podrobnosti"
+    },
+    "find_new": "Hledat nové mody ve stažených souborech",
+    "open_settings": "Otevřít nastavení",
+    "not_configured": "{game} ještě není nastavená",
+    "not_configured_help": "Zadejte její složku modů v nastavení, nebo nechte FS Passion najít instalaci.",
+    "reading": "Načítání modů…",
+    "no_match": "Výrazu „{query}“ neodpovídá žádný mod",
+    "empty": "Tato složka modů je prázdná",
+    "empty_help": "Zde se zobrazí mody (.zip) a rozbalené mody (složky se souborem modDesc.xml).",
+    "unclassified_note": "Hra je neuvidí, dokud nebudou zařazené",
+    "plus_party": "Sestava",
+    "plus_party_tip": "Vytvořit sestavu s touto mapou a jejími závislostmi (Enter)",
+    "mark_party": "V aktuální sestavě",
+    "mark_common": "Ve společných modech",
+    "info_tip": "Připnout podrobnosti modu (klávesa I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Složka modů nebyla nalezena",
+      "unexpected": "Načtení modů selhalo: {error}"
+    }
+  },
+  "mod": {
+    "map": "Mapa",
+    "unpacked": "Rozbalený mod",
+    "multiplayer": "Hra více hráčů",
+    "version": "Verze",
+    "author": "Autor",
+    "game_version": "Hra",
+    "gv_unknown": "Neznámá verze hry",
+    "size": "Velikost",
+    "kind": "Formát",
+    "kind_dir": "Složka (rozbalený)",
+    "kind_zip": "Archiv .zip",
+    "parties": "V seznamech",
+    "parties_none": "Žádné",
+    "storage": "Úložiště",
+    "dependencies": {
+      "one": "{count} závislost",
+      "few": "{count} závislosti",
+      "many": "{count} závislosti",
+      "other": "{count} závislostí"
+    },
+    "more": {
+      "one": "a {count} další",
+      "few": "a {count} další",
+      "many": "a {count} dalších",
+      "other": "a {count} dalších"
+    },
+    "no_dependencies": "Žádné uvedené závislosti",
+    "unpacked_tip": "Rozbalený mod: ModHub ho neaktualizuje a nelze ho použít ve hře více hráčů. FS Passion do něj nikdy nezapisuje.",
+    "gv_conflict": "Předpona názvu a descVersion ukazují na dvě různé verze: použije se předpona.",
+    "unpin": "Zavřít (Esc)",
+    "optional": {
+      "one": "{count} volitelný mod",
+      "few": "{count} volitelné mody",
+      "many": "{count} volitelného modu",
+      "other": "{count} volitelných modů"
+    },
+    "searchmods_note": "Starší verze hry (značka SearchMods): uložená hra se načte, i když chybí potřebný mod; hra to oznámí až potom.",
+    "links_hint": "Klikněte na „i“, abyste tyto podrobnosti připnuli a mohli otevřít odkazy.",
+    "links_old": "Odkazy uvedené autorem modu, často staré: stránka už nemusí existovat.",
+    "link_open": "Otevřít v prohlížeči",
+    "link_failed": "Odkaz se nepodařilo otevřít."
+  },
+  "dep": {
+    "present": "k dispozici",
+    "absent": "chybí",
+    "dlc_owned": "DLC vlastníte",
+    "dlc_missing": "DLC nevlastníte"
+  },
+  "dlc": {
+    "free": "Bezplatné DLC",
+    "paid": "DLC",
+    "info": "Hra vždy načítá nainstalovaná DLC, v každé sestavě."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} kB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} nepodporuje sestavy",
+    "missing": "Není ve složkách modů",
+    "missing_tip": "{name} už není ve vašich složkách modů. Pokud ho autor přejmenoval, použijte „Nahradit…“.",
+    "replace": "Nahradit…"
+  },
+  "list2": {
+    "title": "Mody sestavy",
+    "full": {
+      "one": "Plná sestava: všechny mody ({count})",
+      "few": "Plná sestava: všechny mody ({count})",
+      "many": "Plná sestava: všechny mody ({count})",
+      "other": "Plná sestava: všechny mody ({count})"
+    },
+    "full_help": "Hra načítá celou složku modů, jako před FS Passion.",
+    "empty_party": "Prázdná sestava: bez modů",
+    "empty_help": "Pro vyzkoušení základní hry, bez jakéhokoli modu.",
+    "no_mods": "V této sestavě nejsou žádné mody",
+    "no_mods_help": "Přetáhněte mody ze seznamu „Všechny mody“, nebo je vyberte a použijte panel akcí."
+  },
+  "list3": {
+    "title": "Společné mody",
+    "empty": "Zatím žádné společné mody",
+    "empty_help": "Společné mody jsou v každé sestavě: traktory, stroje, skripty…",
+    "not_included": "Nejsou zahrnuté v této sestavě"
+  },
+  "footer": {
+    "github_tip": "Stránka projektu na GitHubu",
+    "github_soon": "Adresa projektu na GitHubu bude brzy doplněna",
+    "running": "Hra běží",
+    "launch": "Spustit hru",
+    "launch_unconfigured": "Zadejte spustitelný soubor hry {game} v nastavení",
+    "launch_tip": "Spustit hru s použitou sestavou",
+    "quit": "Ukončit"
+  },
+  "launch": {
+    "started": "Spouštění hry {game}…",
+    "failed": "Hru {game} se nepodařilo spustit. Zkontrolujte spustitelný soubor a způsob spuštění v nastavení.",
+    "no_exe": "Spustitelný soubor hry {game} nebyl nalezen: zadejte ho v nastavení.",
+    "already_running": "{game} už běží.",
+    "apply_title": "Použít „{name}“?",
+    "apply_text": "Sestava „{name}“ není použitá, nebo se od té doby změnila. Použít sestavu {name} a poté spustit {game}?",
+    "apply_and_launch": "Použít a spustit",
+    "without_apply": "Spustit bez použití"
+  },
+  "backup": {
+    "created": "Původní záloha gameSettings.xml vytvořena pro {game}",
+    "exported": "Konfigurace exportována: {file}",
+    "demo_active": "Nejprve ukončete ukázkový režim: používá jiné složky než vaše.",
+    "unreadable": "Tento soubor nelze přečíst: {path}",
+    "too_big": "Tento soubor je příliš velký na to, aby byl exportem FS Passion: {path}",
+    "not_export": "Tento soubor není exportem FS Passion: {path}",
+    "too_new": "Tento soubor pochází z novější verze FS Passion ({version}). Pro import aktualizujte FS Passion.",
+    "write_failed": "Soubor se nepodařilo uložit: {path}",
+    "expired": "Platnost importu vypršela: vyberte soubor znovu.",
+    "running": "Před importem zavřete {game}: její sestavy se změní.",
+    "import": {
+      "title": "Importovat konfiguraci",
+      "from": "Export z {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} sestava",
+        "few": "{count} sestavy",
+        "many": "{count} sestavy",
+        "other": "{count} sestav"
+      },
+      "common": {
+        "one": "{count} společný mod",
+        "few": "{count} společné mody",
+        "many": "{count} společného modu",
+        "other": "{count} společných modů"
+      },
+      "no_parties": "Tento soubor neobsahuje žádnou sestavu: importuje se pouze nastavení.",
+      "keep": "Ponechat současné cesty (doporučeno)",
+      "keep_help": "Složky hry, modů a stažených souborů na tomto počítači se nemění. Importují se jen sestavy, společné mody a neutrální nastavení (jazyk, motiv, volby).",
+      "replace_help": "Cesty ze souboru nahradí cesty tohoto počítače: zvolte to jen tehdy, pokud soubor pochází z tohoto počítače se stejnými jednotkami.",
+      "paths_differ": "Složky modů v tomto souboru nejsou složkami tohoto počítače.",
+      "warning": "Současné sestavy výše uvedených verzí budou nahrazeny. Současný stav se předtím automaticky zálohuje. Nic se nepoužije: složky sestav se znovu vytvoří při dalším „Použít“.",
+      "ok": "Importovat"
+    },
+    "result": {
+      "title": "Konfigurace importována",
+      "done": "Import je dokončen.",
+      "parties": {
+        "one": "Importována {count} sestava",
+        "few": "Importovány {count} sestavy",
+        "many": "Importováno {count} sestavy",
+        "other": "Importováno {count} sestav"
+      },
+      "skipped": "neimportováno (verze hry není na tomto počítači nastavená)",
+      "fallback": "Hra načítala sestavu, která už neexistuje: nyní načítá Plnou sestavu.",
+      "apply": "Mody, které na tomto počítači chybí, se v sestavách zobrazí jako chybějící. Klikněte na „Použít“, aby hra načetla importovanou sestavu.",
+      "backup": "Stav před importem uložen do %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Nastavení",
+    "game": {
+      "title": "Hra a cesty"
+    },
+    "look": {
+      "title": "Vzhled"
+    },
+    "app": {
+      "title": "Aplikace"
+    },
+    "help": {
+      "title": "Nápověda"
+    },
+    "paths": {
+      "versions": "Verze hry",
+      "game_exe": "Spustitelný soubor hry",
+      "user_dir": "Složka hry v Dokumentech",
+      "mods_dir": "Hlavní složka modů",
+      "mods_dirs": "Složky modů",
+      "browse": "Procházet…",
+      "fixed_fs2011": "Složku modů FS2011 nelze přesunout.",
+      "add_storage": "Přidat složku modů na jiné jednotce",
+      "derived": "Odvozené cesty",
+      "not_applicable": "Pro tuto verzi neplatí",
+      "d_game_dir": "Složka hry",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (složka hry)",
+      "d_dlc_user": "DLC (Dokumenty)",
+      "detect": "Najít instalaci",
+      "detect_all": "Najít všechny verze",
+      "detect_all_help": "Vyhledá instalace všech verzí a vyplní jejich prázdná pole.",
+      "detect_one": "Najít tuto verzi",
+      "detect_one_help": "Změní jen verzi vybranou výše. Ostatní verze zůstanou beze změny.",
+      "detect_help": "Pole, která jste upravili, se nikdy nemění.",
+      "detect_found": "Nalezené instalace: {list}",
+      "detect_none": "Nebyla nalezena žádná instalace. Zadejte cesty tlačítkem „Procházet…“.",
+      "launch_method": "Způsob spuštění hry",
+      "launch_auto": "Automaticky",
+      "launch_platform": "Platforma",
+      "launch_exe": "Spustitelný soubor",
+      "launch_help": "Automaticky zvolí správnou metodu (Steam, Epic Games, Microsoft Store, Xbox nebo spustitelný soubor). Další dvě jsou nouzová řešení.",
+      "minimize_on_launch": "Minimalizovat FS Passion při spuštění hry",
+      "args_title": "Spouštěcí parametry",
+      "args_show": "Zobrazit spouštěcí parametry",
+      "args_hide": "Skrýt spouštěcí parametry",
+      "args_skip": "Přeskočit úvodní video",
+      "args_skip_info": "Přeskočí úvodní video a úvodní obrazovky.",
+      "args_cheats": "Vývojářská konzole",
+      "args_cheats_info": "Zapne vývojářskou konzoli ve hře. Nastaví také <controls> v game.xml, vedle gameSettings.xml.",
+      "args_game_xml_absent": "Soubor game.xml nebyl nalezen: konzole se zapne až po prvním spuštění hry.",
+      "args_game_xml_error": "Soubor game.xml se nepodařilo upravit: vývojářská konzole zůstává vypnutá.",
+      "args_help_command": "FS Passion je přidá do příkazu, kterým se spouští {game}.",
+      "args_help_steam": "{game} spouští Steam. Steam odmítá parametry předané jiným programem (při každém spuštění by žádal o potvrzení), proto FS Passion spouští hru bez nich. Zadejte je jednou ve Steamu, viz níže.",
+      "args_help_epic": "{game} spouští Epic Games, který nepřijímá parametry od jiného programu: zadejte je jednou v Epic Games Launcheru, viz níže.",
+      "args_help_unsupported": "{game} je nainstalovaná z Microsoft Storu nebo Xboxu.",
+      "args_store": "Microsoft Store a aplikace Xbox nepovolují spouštěcí parametry: lze zapnout jen vývojářskou konzoli (game.xml). Pro parametry zvolte jako způsob spuštění „Spustitelný soubor“, pokud to vaše instalace umožňuje.",
+      "args_steam_where": "Kam je zadat ve Steamu",
+      "args_steam_steps": "Knihovna Steamu: pravým tlačítkem na {game} → Vlastnosti…\nKarta Obecné → pole „Spouštěcí parametry“\nVložte text níže a zavřete okno",
+      "args_epic_where": "Kam je zadat v Epic Games Launcheru",
+      "args_epic_steps": "Knihovna: „…“ pod {game} → Spravovat\nZaškrtněte „Další argumenty příkazového řádku“\nVložte text níže (starší launchery: profilový obrázek → Nastavení → {game})",
+      "args_none": "Žádný parametr není zaškrtnutý",
+      "args_copy_label": "Parametry ke zkopírování",
+      "args_copy_help": "Znovu je to potřeba jen po zaškrtnutí nebo odškrtnutí parametru.",
+      "console_on": "Konzole zapnutá v game.xml",
+      "console_off": "Konzole vypnutá v game.xml",
+      "console_enable": "Zapnout v game.xml",
+      "console_done": "Vývojářská konzole zapnuta v game.xml pro {game}",
+      "add_storage_help": "Až dvě další složky. Jejich mody se zobrazují a vstupují do sestav jako ostatní; FS Passion tam nic jiného nezapisuje.",
+      "extra_dir": "Další složka modů",
+      "extra_help": "Odebrání této složky se jejích modů nedotkne: jen se přestanou zobrazovat.",
+      "remove_storage": "Odebrat tuto složku ze seznamu (jejích modů se to nedotkne)"
+    },
+    "downloads": {
+      "title": "Stažené soubory",
+      "folder": "Složka stažených souborů",
+      "help": "Složka, do které prohlížeč ukládá stažené mody.",
+      "scan_at_start": "Při spuštění hledat nové mody",
+      "scan_now": "Hledat nyní"
+    },
+    "language": {
+      "title": "Jazyk",
+      "personal": "vlastní",
+      "open_folder": "Otevřít složku vlastních jazyků",
+      "personal_help": "Tam můžete FS Passion přeložit do svého jazyka: šablona a návod jsou přiloženy.",
+      "rejected": "Ignorované jazykové soubory (neplatné nebo příliš velké): {list}"
+    },
+    "theme": {
+      "title": "Motiv",
+      "help": "Najetím na vzorek si motiv prohlédnete, kliknutím ho vyberete. Dvoubarevné motivy mají jen dvě barvy; ostatní používají oficiální barvy oblíbených motivů, každý v tmavé a světlé verzi. Tlačítko slunce/měsíc v záhlaví mezi nimi přepíná.",
+      "contrast": "Kontrast {ratio}:1",
+      "loop": "Motivy ve smyčce: měnit motiv každou minutu",
+      "light_effects": "Světelné efekty (lesk, zářící obrysy, neon)",
+      "reduce_motion": "Omezit animace",
+      "follows_windows": "Řídí se nastavením „Efekty animace“ ve Windows.",
+      "follow_windows": "Řídit se nastavením Windows",
+      "atelier": "Otevřít dílnu motivů",
+      "mode_dark": "Tmavý",
+      "mode_light": "Světlý",
+      "group_duo": "Dvoubarevné"
+    },
+    "backup": {
+      "title": "Záloha konfigurace",
+      "help": "Exportujte své sestavy, společné mody a nastavení do souboru, abyste je získali zpět po přeinstalaci nebo na jiném počítači. Nekopíruje se žádný mod: jen jejich názvy.",
+      "export": "Exportovat",
+      "import": "Importovat"
+    },
+    "notice": {
+      "title": "Průvodce",
+      "open": "Otevřít průvodce",
+      "at_start": "Zobrazit při spuštění",
+      "tour": "Prohlídka rozhraní"
+    },
+    "anomalies": {
+      "title": "Problémy",
+      "show": "Zobrazit problémy",
+      "reset": {
+        "zero": "Žádné skryté problémy",
+        "one": "Znovu zobrazit skrytý problém",
+        "few": "Znovu zobrazit {count} skryté problémy",
+        "many": "Znovu zobrazit {count} skrytého problému",
+        "other": "Znovu zobrazit {count} skrytých problémů"
+      },
+      "reset_done": "Skryté problémy se znovu zobrazují"
+    },
+    "internet": {
+      "title": "Připojení k internetu",
+      "allow": "Povolit FS Passion stahovat katalog DLC z GitHubu",
+      "help": "Katalog DLC (názvy a ikony) se z GitHubu čte nejvýše jednou denně. Stahují se jen ikony DLC, která jsou na tomto počítači. Žádná osobní data se neodesílají.",
+      "catalog_off": "Katalog DLC: ten dodaný s FS Passion (připojení vypnuto).",
+      "catalog_remote": "Katalog DLC z {date}, stažený z GitHubu.",
+      "catalog_embedded": "Katalog DLC z {date}, dodaný s FS Passion.",
+      "check": "Zkontrolovat nyní",
+      "checking": "Kontrola…",
+      "error_not_found": "Katalog zatím není na GitHubu zveřejněn.",
+      "error_unreachable": "Poslední kontrola selhala (bez připojení?).",
+      "error_invalid": "Zveřejněný katalog nelze přečíst: použije se katalog z FS Passion.",
+      "error_too_new": "Zveřejněný katalog vyžaduje novější verzi FS Passion.",
+      "error_too_big": "Zveřejněný katalog je příliš velký: ignoruje se."
+    },
+    "logs": {
+      "title": "Protokoly a diagnostika",
+      "open_logs": "Otevřít složku protokolů",
+      "copy_diag": "Kopírovat diagnostiku",
+      "diag_copied": "Diagnostika zkopírována: vložte ji do svého hlášení"
+    },
+    "donate": {
+      "title": "Podpořit projekt",
+      "text": "FS Passion je a zůstane důvěryhodným, otevřeným a bezplatným projektem. Pokud chcete autorovi poděkovat, jednorázový dar zabere pár sekund a nevyžaduje žádný účet. Děkujeme!",
+      "no_link": "Odkaz brzy"
+    },
+    "about": {
+      "title": "O aplikaci",
+      "version": "Verze",
+      "author": "Autor",
+      "license": "Licence",
+      "github_soon": "adresa brzy",
+      "official": "Jediný oficiální odkaz ke stažení je stránka projektu na GitHubu.",
+      "unofficial": "FS Passion je nezávislý projekt, nijak nespojený se společností GIANTS Software. Farming Simulator je ochranná známka společnosti GIANTS Software.",
+      "privacy": "FS Passion neodesílá žádná data. Pouze stahuje, pokud to povolíte, veřejný seznam DLC z GitHubu.",
+      "window_mode": "Technika okna (vývoj)",
+      "window_native": "Nativní",
+      "window_script": "Počítaná",
+      "window_thin": "Tenký rámeček",
+      "window_restart": "Projeví se při příštím spuštění FS Passion",
+      "window_help": "Současná technika: {current}. Měňte ji jen tehdy, když nefunguje změna velikosti tažením za okraje."
+    },
+    "stop": {
+      "title": "Přestat používat FS Passion",
+      "show": "Zobrazit podrobnosti",
+      "hide": "Skrýt podrobnosti",
+      "text": "Vrátí hře původní nastavení a odstraní složky sestav. Vašich modů se nikdy nedotkne.",
+      "button": "Přestat používat FS Passion"
+    },
+    "window": {
+      "title": "Okno",
+      "close_to_tray": "Zavírat do oznamovací oblasti",
+      "close_to_tray_help": "Tlačítko zavření okna skryje FS Passion vedle hodin Windows. Kliknutím na jeho ikonu ho vrátíte; „Ukončit“ (vpravo dole nebo v nabídce ikony) ho opravdu zavře.",
+      "tray_off": "Oznamovací oblast je dostupná jen v okně FS Passion ve Windows.",
+      "focus_after_game": "Po zavření hry se vrátit do popředí",
+      "focus_after_game_help": "Když se Farming Simulator zavře, FS Passion se znovu objeví, i když byl skrytý v oznamovací oblasti."
+    },
+    "demo": {
+      "title": "Vyzkoušet bez hry",
+      "help": "Smyšlené mody pro vyzkoušení všech funkcí FS Passion v testovací složce: vaše skutečné cesty se odloží stranou a při ukončení obnoví.",
+      "start": "Vyzkoušet FS Passion bez hry",
+      "active_help": "Ukázkový režim je zapnutý: tyto cesty patří testovací složce. Vaše skutečné cesty se vrátí, až ho ukončíte."
+    }
+  },
+  "themes": {
+    "lime": "Limetka",
+    "jade": "Nefrit",
+    "cuivre": "Měď",
+    "blue": "Bílá"
+  },
+  "anomalies": {
+    "title": "Nalezené problémy",
+    "none": "Žádné problémy. Vše je v pořádku.",
+    "intro": "Tyto položky ve vaší složce modů hra nemůže použít tak, jak jsou. Nic vážného a FS Passion je nechává být.",
+    "new": "nové",
+    "hide_type": "Tento druh problému už nezobrazovat",
+    "hide_folder": "Tuto složku už nezobrazovat",
+    "rename": "Přejmenovat…",
+    "others": {
+      "one": "Další ignorované soubory ({count})",
+      "few": "Další ignorované soubory ({count})",
+      "many": "Další ignorované soubory ({count})",
+      "other": "Další ignorované soubory ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": "Archiv .rar nebo .7z",
+        "few": "Archivy .rar nebo .7z ({count})",
+        "many": "Archivy .rar nebo .7z ({count})",
+        "other": "Archivy .rar nebo .7z ({count})"
+      },
+      "explain": "Hra čte jen soubory .zip. Rozbalte archiv a v případě potřeby mod znovu zabalte do .zip."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip bez modDesc.xml",
+        "few": "Soubory .zip bez modDesc.xml ({count})",
+        "many": "Soubory .zip bez modDesc.xml ({count})",
+        "other": "Soubory .zip bez modDesc.xml ({count})"
+      },
+      "explain": "Často jde o balíček několika modů, který je třeba rozbalit.",
+      "nested": "modDesc.xml nalezen v podsložce ({path}): mod byl zabalen špatně."
+    },
+    "A3": {
+      "title": {
+        "one": "Nečitelný archiv",
+        "few": "Nečitelné archivy ({count})",
+        "many": "Nečitelné archivy ({count})",
+        "other": "Nečitelné archivy ({count})"
+      },
+      "explain": "Poškozený archiv nebo neplatný modDesc.xml. Stáhněte mod znovu.",
+      "zip": "Archiv nelze otevřít.",
+      "xml": "Soubor modDesc.xml je neplatný."
+    },
+    "A4": {
+      "title": {
+        "one": "Složka bez modDesc.xml",
+        "few": "Složky bez modDesc.xml ({count})",
+        "many": "Složky bez modDesc.xml ({count})",
+        "other": "Složky bez modDesc.xml ({count})"
+      },
+      "explain": "Bez souboru modDesc.xml v kořeni nemůže hra tuto složku použít. FS Passion se jí nikdy nedotkne."
+    },
+    "A5": {
+      "title": {
+        "one": "Název odmítnutý hrou",
+        "few": "Názvy odmítnuté hrou ({count})",
+        "many": "Názvy odmítnuté hrou ({count})",
+        "other": "Názvy odmítnuté hrou ({count})"
+      },
+      "explain": "Hra přijímá jen písmena bez diakritiky, číslice a „_“.",
+      "suggestion": "Navrhovaný název: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod pro jinou verzi hry",
+        "few": "Mody pro jinou verzi hry ({count})",
+        "many": "Mody pro jinou verzi hry ({count})",
+        "other": "Mody pro jinou verzi hry ({count})"
+      },
+      "explain": "Tato verze hry tento mod nenačte.",
+      "detected": "Mod pro {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Chybějící mod",
+        "few": "Chybějící mody ({count})",
+        "many": "Chybějící mody ({count})",
+        "other": "Chybějící mody ({count})"
+      },
+      "explain": "Sestava odkazuje na tento mod, ale ve složkách modů už není.",
+      "in": "V: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Smazaný mod je stále propojený",
+        "few": "Smazané mody jsou stále propojené ({count})",
+        "many": "Smazané mody jsou stále propojené ({count})",
+        "other": "Smazané mody jsou stále propojené ({count})"
+      },
+      "explain": "Tento mod byl smazán ze složky modů, ale některé sestavy ho stále obsahují.",
+      "copy": "Kopie stále existuje v: {list}",
+      "delete_title": "Smazat zbývající kopii?",
+      "delete_text": "Poslední kopie „{name}“, která je ještě ve složkách sestav, bude přesunuta do Koše a mod bude odebrán ze všech seznamů."
+    },
+    "A9": {
+      "title": {
+        "one": "Zdvojený mod",
+        "few": "Zdvojené mody ({count})",
+        "many": "Zdvojené mody ({count})",
+        "other": "Zdvojené mody ({count})"
+      },
+      "explain": "Stejný mod je tu dvakrát: ve dvou úložných složkách, nebo jako .zip a jako složka vedle sebe. Hra načte jen jeden. FS Passion použije ten z hlavní složky, a raději archiv než složku.",
+      "zip_and_dir": "„{name}“ existuje jako .zip i jako rozbalená složka: hra načte jen jeden a ModHub ho nemůže aktualizovat. Ponechte jen jednu podobu (druhou smažte tlačítkem „Trvale smazat“, nebo ji přesuňte mimo složku modů).",
+      "files": "Soubory: {list}"
+    },
+    "game": "{game}",
+    "folder": "Složka modů: {path}",
+    "show_in_folder": "Zobrazit v Průzkumníku souborů",
+    "open_folder": "Otevřít složku modů v Průzkumníku souborů (mod už tam není)"
+  },
+  "welcome": {
+    "subtitle": "Vaše mody uložené jen jednou. Tolik sestav, kolik chcete.",
+    "language": "Vyberte svůj jazyk"
+  },
+  "notice": {
+    "title": "Jak FS Passion funguje",
+    "at_start": "Zobrazit toto okno při spuštění aplikace",
+    "understood": "Rozumím",
+    "blocks": [
+      {
+        "key": "Především: doporučujeme vytvořit zálohu všech vašich modů na jiné jednotce. Je to nezbytné, jako před každou operací s důležitými soubory."
+      },
+      {
+        "h": "Princip"
+      },
+      {
+        "p": "FS Passion vám umožní snadno a rychle vytvořit libovolný počet sestav pro Farming Simulator, přičemž vaše mody zůstanou v jediné kopii ve své původní složce."
+      },
+      {
+        "p": "Přepínejte mezi sestavami 1 kliknutím!"
+      },
+      {
+        "h": "Instalace"
+      },
+      {
+        "p": "Vaše složka modů může být na jakékoli jednotce: FS Passion se přizpůsobí. Nic není třeba ručně vytvářet, přesouvat ani přejmenovávat. Plná jednotka? Přidejte až dvě složky modů na jiných jednotkách (Nastavení → Hra a cesty): jejich mody vstupují do sestav jako ostatní."
+      },
+      {
+        "h": "První použití"
+      },
+      {
+        "ul": [
+          "Vytvořte své sestavy kouzelným tlačítkem „＋ Sestava“ u map: mapa a její závislosti vytvoří sestavu jedním kliknutím.",
+          "Poté zařaďte ostatní mody do společných modů, které jsou v každé sestavě.",
+          "Klikněte na „Použít“: hra načte zvolenou sestavu při příštím spuštění."
+        ]
+      },
+      {
+        "h": "Přidávání, přejmenování a mazání modů"
+      },
+      {
+        "ul": [
+          "Nové mody: stáhněte je jako obvykle a pak klikněte nahoře v seznamu na „Hledat nové mody ve stažených souborech“. FS Passion je uloží do složky modů správné verze hry.",
+          "Mody mažte raději v FS Passion („Trvale smazat“ v panelu akcí) než v Průzkumníku souborů: zároveň se tak odeberou ze seznamů i sestav a přesunou se do Koše.",
+          "Přejmenování modu (klávesa F2) ho odpojí od ModHubu: už nebude dostávat aktualizace."
+        ]
+      },
+      {
+        "h": "Aktualizace"
+      },
+      {
+        "p": "Nemusíte nic dělat: aktualizace stažené hrou se převezmou po jejím zavření nebo při příštím spuštění FS Passion. Stará verze se odloží do „Old versions“. Pokud hra stáhne starší číslo verze než vaše (často mod, který jste upravili), FS Passion se zeptá, kterou ponechat."
+      },
+      {
+        "h": "Uchování sestav"
+      },
+      {
+        "p": "Nastavení → Aplikace → „Exportovat“ uloží vaše sestavy, společné mody a nastavení do souboru. „Importovat“ je obnoví po přeinstalaci nebo na jiném počítači."
+      },
+      {
+        "h": "Ukončení používání"
+      },
+      {
+        "p": "„Přestat používat FS Passion“ (Nastavení → Aplikace) vrátí hře původní nastavení a odstraní složky sestav. Vašich modů se nikdy nedotkne."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Dílna motivů",
+    "id": "Identifikátor",
+    "name": "Název",
+    "dark": "Pozadí okna",
+    "light": "Hlavní barva",
+    "mica": "Záře Mica",
+    "grain": "Zrnitost",
+    "effect": "Efekt",
+    "effect_none": "Žádný",
+    "effect_metal": "Kovový lesk",
+    "intensity": "Intenzita",
+    "save": "Uložit",
+    "copy": "Kopírovat definici",
+    "new": "Nový",
+    "copied": "Definice zkopírována",
+    "saved": "Motiv uložen do ui/themes.json",
+    "contrast_low": "Kontrast {ratio}:1, pod 4,5:1. Malý text použije {color}.",
+    "contrast_ok": "Kontrast {ratio}:1",
+    "mode": "Režim",
+    "mode_dark": "Tmavý",
+    "mode_light": "Světlý",
+    "text": "Text",
+    "multi": "Více barev zvýraznění (jedna na oblast)",
+    "accent_n": "Zvýraznění {n}",
+    "pair": "Párový motiv (slunce/měsíc)",
+    "pair_none": "Žádný",
+    "gradient": "Dvoubarevný přechod (nadpisy, tlačítka Použít a Spustit)",
+    "gradient_from": "Přechod: začátek",
+    "gradient_to": "Přechod: konec",
+    "style": "Styl",
+    "style_duo": "Dvoubarevný",
+    "style_palette": "Oficiální paleta",
+    "style_classic": "Počítané závoje",
+    "surface_1": "Pozadí okna",
+    "surface_2": "Seznamy a okna",
+    "surface_3": "Oddíly",
+    "surface_4": "Pododdíly",
+    "text_n": "Text {n}",
+    "neon": "Neon",
+    "neon_help": "Záře nadpisů, ikon a obrysů v barvě každé oblasti (0: bez efektu). Vypíná ji volba „Světelné efekty“."
+  },
+  "error": {
+    "bad_request": "Neplatný požadavek.",
+    "forbidden": "Přístup odepřen.",
+    "not_found": "Položka nebyla nalezena.",
+    "unexpected": "Neočekávaná chyba. Zkopírujte diagnostiku (Nastavení → Nápověda) a přiložte ji ke svému hlášení.",
+    "offline": "Jádro FS Passion neodpovídá.",
+    "internal": "Operace byla z bezpečnostních důvodů odmítnuta. Zkopírujte diagnostiku (Nastavení → Nápověda) a přiložte ji ke svému hlášení."
+  },
+  "detect": {
+    "busy": "Hledání už probíhá."
+  },
+  "parties": {
+    "not_configured": "Pro vytváření sestav zadejte v nastavení složku modů hry {game}.",
+    "name_label": "Název sestavy",
+    "name_empty": "Název nesmí být prázdný.",
+    "name_too_long": "Nejvýše {max} znaků.",
+    "name_taken": "Sestava s názvem „{name}“ už existuje.",
+    "special_locked": "Plnou sestavu a Prázdnou sestavu nelze měnit, přejmenovat, duplikovat ani smazat.",
+    "not_found": "Tato sestava už neexistuje.",
+    "write_failed": "Sestavy se nepodařilo uložit do {path}. Zkontrolujte, zda lze na tuto jednotku zapisovat.",
+    "recovered": "Soubor sestav hry {game} nelze přečíst: byla načtena jeho nejnovější záloha ({backup}). Poškozený soubor byl odložen stranou.",
+    "lost": "Soubor sestav hry {game} nelze přečíst a nepodařilo se načíst žádnou zálohu. Poškozený soubor byl odložen stranou, nic nebylo smazáno.",
+    "running_rename": "Před přejmenováním této sestavy zavřete {game}: její složka se nemůže měnit, když hra běží.",
+    "running_delete": "Před smazáním této sestavy zavřete {game}: její složka se nemůže měnit, když hra běží.",
+    "map_not_found": "Mapa nebyla nalezena: {name}",
+    "mod_not_found": "Mod nebyl nalezen: {name}",
+    "create_title": "Nová sestava",
+    "create_help": "Prázdná sestava, která obsahuje společné mody. Poté do ní přidejte mody ze seznamu „Všechny mody“.",
+    "create_ok": "Vytvořit",
+    "created": "Sestava „{name}“ vytvořena",
+    "duplicate_title": "Duplikovat sestavu",
+    "duplicate_help": "Kopie zachová mody sestavy „{name}“ a její nastavení „Společné mody“.",
+    "copy_name": "{name} (kopie)",
+    "duplicate_ok": "Duplikovat",
+    "duplicated": "Sestava „{name}“ vytvořena",
+    "rename_title": "Přejmenovat sestavu",
+    "rename_ok": "Přejmenovat",
+    "renamed": "„{old}“ přejmenována na „{name}“",
+    "delete_title": "Smazat sestavu",
+    "delete_text": {
+      "zero": "Smazat sestavu „{name}“? Neobsahuje žádné mody.",
+      "one": "Smazat sestavu „{name}“? Její mod zůstane ve vaší složce modů: zmizí jen sestava a její složka odkazů.",
+      "few": "Smazat sestavu „{name}“? Její {count} mody zůstanou ve vaší složce modů: zmizí jen sestava a její složka odkazů.",
+      "many": "Smazat sestavu „{name}“? Jejích {count} modu zůstane ve vaší složce modů: zmizí jen sestava a její složka odkazů.",
+      "other": "Smazat sestavu „{name}“? Jejích {count} modů zůstane ve vaší složce modů: zmizí jen sestava a její složka odkazů."
+    },
+    "delete_ok": "Smazat",
+    "deleted": "Sestava „{name}“ smazána",
+    "deleted_applied": "Sestava {name} byla smazána. Hra nyní používá sestavu {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "vybraný mod",
+      "few": "vybrané mody",
+      "many": "vybraného modu",
+      "other": "vybraných modů"
+    },
+    "add_party": "Přidat do Modů sestavy",
+    "add_common": "Přidat do Společných modů",
+    "remove_party": "Odebrat z Modů sestavy",
+    "remove_common": "Odebrat ze Společných modů",
+    "rename": "Přejmenovat…",
+    "rename_help": "Jediný mod vybraný v seznamu „Všechny mody“.",
+    "delete": "Trvale smazat…",
+    "close": "Zavřít panel a zrušit výběr (Esc)",
+    "added_party": {
+      "one": "{count} mod přidán do sestavy „{name}“",
+      "few": "{count} mody přidány do sestavy „{name}“",
+      "many": "{count} modu přidáno do sestavy „{name}“",
+      "other": "{count} modů přidáno do sestavy „{name}“"
+    },
+    "added_common": {
+      "one": "{count} mod přidán do společných modů",
+      "few": "{count} mody přidány do společných modů",
+      "many": "{count} modu přidáno do společných modů",
+      "other": "{count} modů přidáno do společných modů"
+    },
+    "moved_party": {
+      "one": "{count} mod přesunut do sestavy „{name}“",
+      "few": "{count} mody přesunuty do sestavy „{name}“",
+      "many": "{count} modu přesunuto do sestavy „{name}“",
+      "other": "{count} modů přesunuto do sestavy „{name}“"
+    },
+    "moved_common": {
+      "one": "{count} mod přesunut do společných modů",
+      "few": "{count} mody přesunuty do společných modů",
+      "many": "{count} modu přesunuto do společných modů",
+      "other": "{count} modů přesunuto do společných modů"
+    },
+    "removed_party": {
+      "one": "{count} mod odebrán ze sestavy „{name}“",
+      "few": "{count} mody odebrány ze sestavy „{name}“",
+      "many": "{count} modu odebráno ze sestavy „{name}“",
+      "other": "{count} modů odebráno ze sestavy „{name}“"
+    },
+    "removed_common": {
+      "one": "{count} mod odebrán ze společných modů",
+      "few": "{count} mody odebrány ze společných modů",
+      "many": "{count} modu odebráno ze společných modů",
+      "other": "{count} modů odebráno ze společných modů"
+    },
+    "nothing_party": "Tyto mody už jsou v sestavě „{name}“",
+    "nothing_common": "Tyto mody už jsou ve společných modech"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Přidat i jeho závislost?",
+      "few": "Přidat i jeho {count} závislosti?",
+      "many": "Přidat i jeho {count} závislosti?",
+      "other": "Přidat i jeho {count} závislostí?"
+    },
+    "ask_yes": {
+      "one": "Přidat i závislost",
+      "few": "Přidat i {count} závislosti",
+      "many": "Přidat i {count} závislosti",
+      "other": "Přidat i {count} závislostí"
+    },
+    "ask_no": "Jen vybrané mody",
+    "missing_warn": {
+      "one": "Ve vašich modech chybí závislost: {list}",
+      "few": "Ve vašich modech chybí {count} závislosti: {list}",
+      "many": "Ve vašich modech chybí {count} závislosti: {list}",
+      "other": "Ve vašich modech chybí {count} závislostí: {list}"
+    },
+    "needed_by_map": "Mapa „{name}“ potřebuje:",
+    "needed_by_mod": "Mod „{name}“ potřebuje:",
+    "needed": "Závislosti:",
+    "where_common": "společných modech",
+    "where_party": "sestavě „{name}“",
+    "ask_intro": {
+      "one": "Tento mod je závislostí modu, který jste vybrali, ale není v {where}.",
+      "few": "Tyto {count} mody jsou závislostmi modů, které jste vybrali, ale nejsou v {where}.",
+      "many": "Těchto {count} modu jsou závislosti modů, které jste vybrali, ale nejsou v {where}.",
+      "other": "Těchto {count} modů jsou závislosti modů, které jste vybrali, ale nejsou v {where}."
+    },
+    "missing_for": "{list} (vyžaduje „{name}“)",
+    "optional_title": {
+      "one": "Přidat i volitelný mod?",
+      "few": "Přidat i volitelné mody?",
+      "many": "Přidat i volitelné mody?",
+      "other": "Přidat i volitelné mody?"
+    },
+    "optional_intro": {
+      "one": "Jeden volitelný mod, který už máte:",
+      "few": "{count} volitelné mody, které už máte:",
+      "many": "{count} volitelného modu, které už máte:",
+      "other": "{count} volitelných modů, které už máte:"
+    },
+    "optional_for": "volitelný pro „{name}“",
+    "optional_note": "Volitelné: hra je nepotřebuje. Do {where} se přidají jen ty, které zaškrtnete.",
+    "optional_continue": "Pokračovat"
+  },
+  "plus": {
+    "title": "Nová sestava z mapy",
+    "deps_title": {
+      "one": "{count} závislost",
+      "few": "{count} závislosti",
+      "many": "{count} závislosti",
+      "other": "{count} závislostí"
+    },
+    "dlc_title": "Potřebná DLC",
+    "dlc_note": "Pro informaci: hra vždy načítá nainstalovaná DLC. Do sestavy se nepřidávají.",
+    "missing_note": "Chybějící závislosti se nepřidávají: stáhněte je a pak je přidejte do sestavy.",
+    "no_deps": "Žádné uvedené závislosti: sestava bude obsahovat jen mapu.",
+    "summary": {
+      "zero": "Sestava bude obsahovat jen mapu a k tomu společné mody.",
+      "one": "Sestava bude obsahovat mapu a její závislost a k tomu společné mody.",
+      "few": "Sestava bude obsahovat mapu a její {count} závislosti a k tomu společné mody.",
+      "many": "Sestava bude obsahovat mapu a jejích {count} závislosti a k tomu společné mody.",
+      "other": "Sestava bude obsahovat mapu a jejích {count} závislostí a k tomu společné mody."
+    },
+    "create": "Vytvořit sestavu",
+    "created": {
+      "one": "Sestava „{name}“ vytvořena: {count} mod",
+      "few": "Sestava „{name}“ vytvořena: {count} mody",
+      "many": "Sestava „{name}“ vytvořena: {count} modu",
+      "other": "Sestava „{name}“ vytvořena: {count} modů"
+    },
+    "created_missing": {
+      "one": "Závislost ke stažení: {list}",
+      "few": "{count} závislosti ke stažení: {list}",
+      "many": "{count} závislosti ke stažení: {list}",
+      "other": "{count} závislostí ke stažení: {list}"
+    },
+    "optional_title": {
+      "one": "{count} volitelný mod",
+      "few": "{count} volitelné mody",
+      "many": "{count} volitelného modu",
+      "other": "{count} volitelných modů"
+    },
+    "optional_note": "Volitelné: hra je nepotřebuje. Zaškrtněte ty, které chcete do sestavy přidat.",
+    "optional_none_present": "Žádný z těchto volitelných modů mezi vašimi mody není. Hra je nepotřebuje."
+  },
+  "replace": {
+    "title": "Nahradit…",
+    "help": "{name} už není ve vašich složkách modů. Pokud ho autor přejmenoval, vyberte jeho novou verzi: zaujme jeho místo ve všech seznamech.",
+    "done": {
+      "one": "{old} nahrazen modem {name} v {count} seznamu",
+      "few": "{old} nahrazen modem {name} ve {count} seznamech",
+      "many": "{old} nahrazen modem {name} v {count} seznamu",
+      "other": "{old} nahrazen modem {name} v {count} seznamech"
+    }
+  },
+  "notifications": {
+    "title": "Oznámení",
+    "unread": {
+      "one": "Oznámení: 1 nová zpráva",
+      "few": "Oznámení: {count} nové zprávy",
+      "many": "Oznámení: {count} nové zprávy",
+      "other": "Oznámení: {count} nových zpráv"
+    },
+    "clear": "Vymazat vše",
+    "none": "Zatím žádná oznámení. Zprávy zobrazené vpravo dole se zde uchovávají, dokud se FS Passion nezavře."
+  },
+  "tray": {
+    "show": "Zobrazit FS Passion",
+    "quit": "Ukončit FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion zde běží dál. Kliknutím na ikonu ho vrátíte; „Ukončit“ ho opravdu zavře."
+  },
+  "apply": {
+    "unsupported": "Tato verze hry nemůže změnit svou složku modů.",
+    "not_ready": "Nejprve v nastavení zadejte složku modů a složku Dokumenty hry.",
+    "running": "Před použitím sestavy zavřete {game}.",
+    "no_gamesettings": "Soubor gameSettings.xml hry {game} nebyl nalezen: spusťte hru jednou, nebo zkontrolujte složku Dokumenty v nastavení.",
+    "busy": "Probíhá jiná operace se sestavami. Zkuste to za chvíli znovu.",
+    "library_busy": "Mody se ještě načítají. Zkuste to za chvíli znovu.",
+    "done": {
+      "zero": "Sestava {name} použita: bez modů.",
+      "one": "Sestava {name} použita: {count} mod.",
+      "few": "Sestava {name} použita: {count} mody.",
+      "many": "Sestava {name} použita: {count} modu.",
+      "other": "Sestava {name} použita: {count} modů."
+    },
+    "missing": {
+      "one": "Ve vaší složce modů chybí 1 mod sestavy: {list}",
+      "few": "Ve vaší složce modů chybí {count} mody sestavy: {list}",
+      "many": "Ve vaší složce modů chybí {count} modu sestavy: {list}",
+      "other": "Ve vaší složce modů chybí {count} modů sestavy: {list}"
+    },
+    "updated": {
+      "one": "1 aktualizace ponechaná hrou byla přesunuta do vaší složky modů.",
+      "few": "{count} aktualizace ponechané hrou byly přesunuty do vaší složky modů.",
+      "many": "{count} aktualizace ponechané hrou bylo přesunuto do vaší složky modů.",
+      "other": "{count} aktualizací ponechaných hrou bylo přesunuto do vaší složky modů."
+    },
+    "added": {
+      "one": "1 mod ponechaný hrou přibyl do vaší složky modů a do sestavy {name}.",
+      "few": "{count} mody ponechané hrou přibyly do vaší složky modů a do sestavy {name}.",
+      "many": "{count} modu ponechaného hrou přibylo do vaší složky modů a do sestavy {name}.",
+      "other": "{count} modů ponechaných hrou přibylo do vaší složky modů a do sestavy {name}."
+    },
+    "set_aside": {
+      "one": "1 soubor byl odložen stranou, nic nebylo smazáno (složka „Recovered“ nebo „Old versions“, vedle vašich sestav).",
+      "few": "{count} soubory byly odloženy stranou, nic nebylo smazáno (složky „Recovered“ a „Old versions“, vedle vašich sestav).",
+      "many": "{count} souboru bylo odloženo stranou, nic nebylo smazáno (složky „Recovered“ a „Old versions“, vedle vašich sestav).",
+      "other": "{count} souborů bylo odloženo stranou, nic nebylo smazáno (složky „Recovered“ a „Old versions“, vedle vašich sestav)."
+    },
+    "empty_party": "Sestava {name} neobsahuje žádné mody: hra se spustí bez modů.",
+    "not_same_disk": "{name} nelze propojit: složka sestav musí být na stejné jednotce jako složka modů.",
+    "no_hardlinks": "Tato jednotka nepodporuje pevné odkazy: složka modů musí být na jednotce NTFS. Nic nebylo změněno.",
+    "too_many_links": "{name} nelze propojit: tento soubor dosáhl limitu odkazů ve Windows.",
+    "access_denied": "Při propojování {name} byl odepřen přístup. Nic nebylo změněno.",
+    "link_failed": "Odkaz pro {name} se nepodařilo vytvořit ({detail}). Nic nebylo změněno.",
+    "junction_failed": "Spojení adresářů pro rozbalený mod {name} se nepodařilo vytvořit ({detail}). Nic nebylo změněno.",
+    "folder_busy": "Složku {path} používá jiný program (Průzkumník souborů?). Zavřete ho a zkuste to znovu. Nic nebylo změněno.",
+    "folder_exists": "Složka {path} už existuje: zvolte jiný název.",
+    "failed": "Sestavu se nepodařilo použít ({detail}). Nic nebylo změněno.",
+    "recovered_finished": "Operace se sestavami hry {game} byla přerušena (výpadek proudu?). Byla dokončena.",
+    "recovered_cancelled": "Operace se sestavami hry {game} byla přerušena (výpadek proudu?). Byla zrušena: nic se nezměnilo.",
+    "symlink_denied": "Windows odmítá symbolický odkaz na {name}: je potřeba Režim pro vývojáře ve Windows nebo oprávnění správce.",
+    "blocked": {
+      "one": "1 mod z jiné jednotky nemohl vstoupit do sestavy (bez oprávnění pro symbolické odkazy): {list}. Viz Nastavení → Hra a cesty.",
+      "few": "{count} mody z jiné jednotky nemohly vstoupit do sestavy (bez oprávnění pro symbolické odkazy): {list}. Viz Nastavení → Hra a cesty.",
+      "many": "{count} modu z jiné jednotky nemohlo vstoupit do sestavy (bez oprávnění pro symbolické odkazy): {list}. Viz Nastavení → Hra a cesty.",
+      "other": "{count} modů z jiné jednotky nemohlo vstoupit do sestavy (bez oprávnění pro symbolické odkazy): {list}. Viz Nastavení → Hra a cesty."
+    }
+  },
+  "override": {
+    "title": "Hra načítá neznámou složku",
+    "text": "{game} načítá mody ze složky, kterou FS Passion nezná (změněno ručně nebo jiným nástrojem):",
+    "help": "Převezměte tuto složku jako svou složku modů, znovu použijte svou sestavu, nebo nechte hru, jak je.",
+    "adopt": "Převzít jako složku modů",
+    "reapply": "Znovu použít {name}",
+    "ignore": "Nic nedělat",
+    "adopted": "Nová složka modů: {path}",
+    "read_failed": "Soubor gameSettings.xml nelze přečíst ({path}). Nic nebylo změněno.",
+    "backup_failed": "Zálohu gameSettings.xml se nepodařilo zapsat ({path}). Nic nebylo změněno.",
+    "write_failed": "Soubor gameSettings.xml se nepodařilo zapsat ({path}). Je hra spuštěná?",
+    "check_failed": "Kontrola gameSettings.xml selhala: původní soubor byl obnoven.",
+    "no_root": "Soubor gameSettings.xml nevypadá jako soubor nastavení hry. Nic nebylo změněno."
+  },
+  "demo": {
+    "title": "Ukázkový režim",
+    "pill": "Ukázka",
+    "quit": "Ukončit",
+    "banner": "Ukázkový režim: tyto mody jsou smyšlené. Vašich skutečných složek ani hry se nic nedotkne.",
+    "badge": "Smyšlený mod (ukázka)",
+    "installing": "Příprava ukázkových modů…",
+    "started": "Ukázkový režim: vyzkoušejte si vše, hry se nic nedotkne.",
+    "stopped": "Ukázkový režim ukončen: vše bylo vymazáno.",
+    "stop_title": "Ukončit ukázkový režim",
+    "stop_text": "Smyšlené mody, testovací sestavy a celá ukázková složka budou vymazány. Vaše skutečná nastavení se vrátí, jak byla.",
+    "stop_ok": "Ukončit a vše vymazat",
+    "offer_title": "Vyzkoušet FS Passion bez hry?",
+    "offer_text": "Na tomto počítači nebyl nalezen žádný Farming Simulator. FS Passion si můžete vyzkoušet se smyšlenými mody: vytvářet sestavy, třídit, používat… vše funguje, v testovací složce, nikdy ve hře.",
+    "offer_local": "Ukázkový balíček už je na tomto počítači (asi 2 MB).",
+    "offer_download": "Ukázkový balíček (asi 2 MB) se stáhne ze stránky projektu na GitHubu a poté zkontroluje.",
+    "offer_yes": "Vyzkoušet",
+    "offer_no": "Později",
+    "unavailable": "Ukázkový balíček zatím není k dispozici.",
+    "bad_pack": "Ukázkový balíček je poškozený nebo neodpovídá originálu: byl odmítnut.",
+    "download_failed": "Ukázkový balíček se nepodařilo stáhnout ({detail}).",
+    "install_failed": "Ukázkový balíček se nepodařilo nainstalovat ({detail}).",
+    "remove_failed": "Ukázkovou složku se nepodařilo úplně vymazat: {path}",
+    "no_detect": "Vyhledávání hry je v ukázkovém režimu vypnuté."
+  },
+  "delete": {
+    "title": {
+      "one": "Trvale smazat tento mod?",
+      "few": "Trvale smazat tyto {count} mody?",
+      "many": "Trvale smazat těchto {count} modu?",
+      "other": "Trvale smazat těchto {count} modů?"
+    },
+    "intro": {
+      "one": "Tento mod bude odebrán ze všech seznamů a všech složek sestav a poté smazán z vaší složky modů:",
+      "few": "Tyto {count} mody budou odebrány ze všech seznamů a všech složek sestav a poté smazány z vaší složky modů:",
+      "many": "Těchto {count} modu bude odebráno ze všech seznamů a všech složek sestav a poté smazáno z vaší složky modů:",
+      "other": "Těchto {count} modů bude odebráno ze všech seznamů a všech složek sestav a poté smazáno z vaší složky modů:"
+    },
+    "irreversible": "Tuto akci nelze vrátit zpět.",
+    "recycle": "Soubory se přesunou do Koše ve Windows: odtud je ještě můžete obnovit.",
+    "no_recycle": "Tato jednotka nemá Koš: smazání bude trvalé.",
+    "understand": {
+      "one": "Rozumím, že tento soubor bude smazán",
+      "few": "Rozumím, že tyto soubory budou smazány",
+      "many": "Rozumím, že tyto soubory budou smazány",
+      "other": "Rozumím, že tyto soubory budou smazány"
+    },
+    "ok": "Trvale smazat",
+    "done_recycled": {
+      "one": "1 mod přesunut do Koše",
+      "few": "{count} mody přesunuty do Koše",
+      "many": "{count} modu přesunuto do Koše",
+      "other": "{count} modů přesunuto do Koše"
+    },
+    "done_deleted": {
+      "one": "1 mod trvale smazán",
+      "few": "{count} mody trvale smazány",
+      "many": "{count} modu trvale smazáno",
+      "other": "{count} modů trvale smazáno"
+    },
+    "failed": {
+      "one": "1 mod se nepodařilo smazat: {list}. Byl odebrán ze seznamů; zavřete program, který ho používá, a zkuste to znovu.",
+      "few": "{count} mody se nepodařilo smazat: {list}. Byly odebrány ze seznamů; zavřete program, který je používá, a zkuste to znovu.",
+      "many": "{count} modu se nepodařilo smazat: {list}. Byly odebrány ze seznamů; zavřete program, který je používá, a zkuste to znovu.",
+      "other": "{count} modů se nepodařilo smazat: {list}. Byly odebrány ze seznamů; zavřete program, který je používá, a zkuste to znovu."
+    },
+    "nothing": "Žádný mod ke smazání.",
+    "running": "Před mazáním modů zavřete {game}."
+  },
+  "rename": {
+    "title": "Přejmenovat mod",
+    "label": "Nový název",
+    "prefix_tip": "Předpona verze zůstává zachována",
+    "final": "Název souboru: {file}",
+    "rule": "Jen písmena bez diakritiky, číslice a „_“: hra jiné znaky odmítá.",
+    "where": "V: {list}. Seznamy se mění jen s vaším souhlasem: FS Passion se pak zeptá, zda mají převzít nový název.",
+    "warning_modhub": "Pokud pochází z ModHubu, nebude tento mod už dostávat aktualizace: právě to je smyslem přejmenování.",
+    "warning_save": "Uložené hry, které tento mod používají, ho budou ve hře hledat pod starým názvem.",
+    "warning_save_map": "Toto je mapa: uložené hry vytvořené na ní ji budou ve hře hledat pod starým názvem a přestanou se načítat.",
+    "warning_deps": {
+      "one": "1 mod ho uvádí jako závislost ({list}): bude ho hledat pod starým názvem.",
+      "few": "{count} mody ho uvádějí jako závislost ({list}): budou ho hledat pod starým názvem.",
+      "many": "{count} modu ho uvádí jako závislost ({list}): budou ho hledat pod starým názvem.",
+      "other": "{count} modů ho uvádí jako závislost ({list}): budou ho hledat pod starým názvem."
+    },
+    "ok": "Přejmenovat",
+    "done": {
+      "zero": "{old} přejmenován na {name}",
+      "one": "{old} přejmenován na {name}, v 1 sestavě",
+      "few": "{old} přejmenován na {name}, ve {count} sestavách",
+      "many": "{old} přejmenován na {name}, v {count} sestavy",
+      "other": "{old} přejmenován na {name}, v {count} sestavách"
+    },
+    "renamed": "{old} přejmenován na {name}",
+    "lists_title": "Aktualizovat seznamy?",
+    "lists_ask": "„{old}“ je stále v: {list}. Mají převzít nový název „{name}“?",
+    "lists_yes": "Aktualizovat seznamy",
+    "lists_no": "Nic nedělat",
+    "lists_done": "Seznamy aktualizovány ({count}).",
+    "empty": "Zadejte název.",
+    "too_long": "Název je příliš dlouhý: nejvýše {max} znaků.",
+    "invalid": "Jen písmena bez diakritiky, číslice a „_“, bez mezer.",
+    "same": "To už je jeho název.",
+    "taken": "„{name}“ už ve vašich složkách modů existuje.",
+    "not_found": "Mod {name} nebyl ve vašich složkách modů nalezen.",
+    "failed": "{name} se nepodařilo přejmenovat: možná je otevřený v jiném programu.",
+    "running": "Před přejmenováním modu zavřete {game}.",
+    "no_list": "žádný seznam"
+  },
+  "downloads": {
+    "title": "Nalezeny nové mody",
+    "intro": "Ve složce {folder}. Začlenit přesune každý zaškrtnutý soubor do složky modů jeho verze hry.",
+    "count": {
+      "one": "Nalezen 1 mod",
+      "few": "Nalezeny {count} mody",
+      "many": "Nalezeno {count} modu",
+      "other": "Nalezeno {count} modů"
+    },
+    "col_mod": "Mod",
+    "col_version": "Verze hry",
+    "col_state": "Stav",
+    "col_dest": "Cíl",
+    "state": {
+      "new": "Nový",
+      "update": "Aktualizace ({from} → {to})",
+      "older": "Starší než nainstalovaná verze ({to} < {from})",
+      "present": "Už je k dispozici",
+      "conflict": "Rozbalený mod už má tento název",
+      "unconfigured": "Verze není nastavená: nastavte ji v nastavení"
+    },
+    "older_confirm": "Zaškrtnuto: nahradí nainstalovanou verzi (ta se odloží stranou).",
+    "postpone": "{game} běží: začlení se po jejím zavření",
+    "not_configured": "{game} (nenastavená)",
+    "suffix": "Začlení se jako {name} (přípona prohlížeče odstraněna)",
+    "dest_none": "Žádný (nezařazený)",
+    "dest_unclassified": "Nezařazené",
+    "dest_party": "Sestava „{name}“",
+    "ignore": "Ignorovat tyto soubory",
+    "ignored": {
+      "one": "1 soubor ignorován: už nebude nabízen",
+      "few": "{count} soubory ignorovány: už nebudou nabízeny",
+      "many": "{count} souboru ignorováno: už nebudou nabízeny",
+      "other": "{count} souborů ignorováno: už nebudou nabízeny"
+    },
+    "later": "Později",
+    "integrate": {
+      "zero": "Začlenit",
+      "one": "Začlenit 1 mod",
+      "few": "Začlenit {count} mody",
+      "many": "Začlenit {count} modu",
+      "other": "Začlenit {count} modů"
+    },
+    "none": "Ve složce {folder} není žádný nový mod.",
+    "done": {
+      "one": "Začleněn 1 mod: {list}",
+      "few": "Začleněny {count} mody: {list}",
+      "many": "Začleněno {count} modu: {list}",
+      "other": "Začleněno {count} modů: {list}"
+    },
+    "in_version": {
+      "one": "1 do {game}",
+      "few": "{count} do {game}",
+      "many": "{count} do {game}",
+      "other": "{count} do {game}"
+    },
+    "skipped": {
+      "one": "1 soubor ponechán na místě (už je k dispozici nebo je starší)",
+      "few": "{count} soubory ponechány na místě (už jsou k dispozici nebo jsou starší)",
+      "many": "{count} souboru ponecháno na místě (už jsou k dispozici nebo jsou starší)",
+      "other": "{count} souborů ponecháno na místě (už jsou k dispozici nebo jsou starší)"
+    },
+    "postponed": {
+      "one": "1 mod se začlení po zavření hry {game}",
+      "few": "{count} mody se začlení po zavření hry {game}",
+      "many": "{count} modu se začlení po zavření hry {game}",
+      "other": "{count} modů se začlení po zavření hry {game}"
+    },
+    "postponed_done": {
+      "one": "1 stažený soubor začleněn po zavření hry {game}",
+      "few": "{count} stažené soubory začleněny po zavření hry {game}",
+      "many": "{count} staženého souboru začleněno po zavření hry {game}",
+      "other": "{count} stažených souborů začleněno po zavření hry {game}"
+    },
+    "failed": "{file} se nepodařilo začlenit. Soubor zůstal ve stažených souborech.",
+    "gone": "{file} už není ve složce stažených souborů.",
+    "unconfigured": "{file}: zvolená verze hry není nastavená.",
+    "no_folder": "Složka stažených souborů nebyla nalezena: zadejte ji v Nastavení → Aplikace → Stažené soubory.",
+    "demo": "Během ukázky se stažené soubory nezačleňují.",
+    "done_in": {
+      "one": "1 mod začleněn do {game}",
+      "few": "{count} mody začleněny do {game}",
+      "many": "{count} modu začleněno do {game}",
+      "other": "{count} modů začleněno do {game}"
+    },
+    "col_storage": "Úložiště"
+  },
+  "move": {
+    "exists": "{file}: soubor se stejným názvem už existuje.",
+    "no_space": "{file}: na jednotce se složkou modů není dost volného místa.",
+    "check_failed": "{file}: ověřená kopie neodpovídá originálu. Nic nebylo nahrazeno.",
+    "failed": "{file} se nepodařilo přesunout: možná je otevřený v jiném programu."
+  },
+  "missing": {
+    "title": "Mody chybějící ve vaší složce modů",
+    "intro": {
+      "one": "Tento mod chybí ve vaší složce modů, i když je v sestavách. Co chcete udělat?",
+      "few": "Tyto {count} mody chybí ve vaší složce modů, i když jsou v sestavách. Co chcete udělat?",
+      "many": "Těchto {count} modu chybí ve vaší složce modů, i když jsou v sestavách. Co chcete udělat?",
+      "other": "Těchto {count} modů chybí ve vaší složce modů, i když jsou v sestavách. Co chcete udělat?"
+    },
+    "in": "V: {list}",
+    "copy": "Smazán ze složky modů, ale díky odkazům stále existuje kopie v: {list}",
+    "no_copy": "Žádná kopie: stáhněte ho znovu, nebo ho nahraďte modem, který autor přejmenoval",
+    "restore": "Obnovit do Mods",
+    "restore_tip": "Kopie, která je stále v sestavě, se znovu stane modem vaší složky modů (nic se nekopíruje).",
+    "remove": "Odebrat ze seznamů",
+    "remove_all": "Odebrat vše ze seznamů",
+    "later": "Později",
+    "notice": "Mod mažte raději v FS Passion (tlačítko „Trvale smazat“ v panelu akcí): zároveň se tak odebere ze seznamů i sestav.",
+    "removed": {
+      "one": "1 mod odebrán ze všech seznamů",
+      "few": "{count} mody odebrány ze všech seznamů",
+      "many": "{count} modu odebráno ze všech seznamů",
+      "other": "{count} modů odebráno ze všech seznamů"
+    },
+    "restored": {
+      "one": "1 mod obnoven do vaší složky modů",
+      "few": "{count} mody obnoveny do vaší složky modů",
+      "many": "{count} modu obnoveno do vaší složky modů",
+      "other": "{count} modů obnoveno do vaší složky modů"
+    },
+    "deleted": {
+      "one": "1 mod smazán a odebrán ze seznamů",
+      "few": "{count} mody smazány a odebrány ze seznamů",
+      "many": "{count} modu smazáno a odebráno ze seznamů",
+      "other": "{count} modů smazáno a odebráno ze seznamů"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "Převzata 1 aktualizace: {list}",
+      "few": "Převzaty {count} aktualizace: {list}",
+      "many": "Převzato {count} aktualizace: {list}",
+      "other": "Převzato {count} aktualizací: {list}"
+    },
+    "added": {
+      "one": "1 mod stažený hrou přidán do sestavy „{name}“",
+      "few": "{count} mody stažené hrou přidány do sestavy „{name}“",
+      "many": "{count} modu staženého hrou přidáno do sestavy „{name}“",
+      "other": "{count} modů stažených hrou přidáno do sestavy „{name}“"
+    },
+    "unclassified": {
+      "one": "1 mod stažený hrou přibyl do vaší složky modů (nezařazený)",
+      "few": "{count} mody stažené hrou přibyly do vaší složky modů (nezařazené)",
+      "many": "{count} modu staženého hrou přibylo do vaší složky modů (nezařazené)",
+      "other": "{count} modů stažených hrou přibylo do vaší složky modů (nezařazené)"
+    },
+    "errors": {
+      "one": "1 složku se nepodařilo dát do pořádku: {list}. Viz protokol.",
+      "few": "{count} složky se nepodařilo dát do pořádku: {list}. Viz protokol.",
+      "many": "{count} složky se nepodařilo dát do pořádku: {list}. Viz protokol.",
+      "other": "{count} složek se nepodařilo dát do pořádku: {list}. Viz protokol."
+    },
+    "reshaped": {
+      "one": "1 mod rozbalen nebo znovu zabalen: sestava sleduje jeho novou podobu ({list})",
+      "few": "{count} mody rozbaleny nebo znovu zabaleny: sestavy sledují jejich novou podobu ({list})",
+      "many": "{count} modu rozbaleno nebo znovu zabaleno: sestavy sledují jejich novou podobu ({list})",
+      "other": "{count} modů rozbaleno nebo znovu zabaleno: sestavy sledují jejich novou podobu ({list})"
+    }
+  },
+  "rights": {
+    "title": "Oprávnění pro mody na jiných jednotkách",
+    "intro": "Aby mod uložený na jiné jednotce mohl vstoupit do sestavy, vytvoří FS Passion symbolický odkaz. Windows to dovolí jen v Režimu pro vývojáře nebo s oprávněními správce a ani jedno není aktivní.",
+    "standard": "Váš účet Windows je standardní účet: získání oprávnění správce by spustilo FS Passion pod jiným účtem, s jinými složkami a nastavením. Správnou volbou je Režim pro vývojáře.",
+    "admin_title": "Vždy spouštět FS Passion jako správce",
+    "admin_text": "FS Passion za vás zaškrtne „Spustit tento program jako správce“ (Vlastnosti → Kompatibilita), jen pro váš účet, a poté se restartuje. Důsledky:",
+    "uac": "Windows bude při každém spuštění FS Passion žádat o potvrzení.",
+    "game_normal": "Hra a její platforma se dál spouštějí s běžnými oprávněními, přes Průzkumník Windows. Spouštěcí parametry pak jako obvykle procházejí přes platformu (Steam, Epic Games).",
+    "no_drop": "Windows blokuje přetahování souborů z Průzkumníku do FS Passion. Dnes bez dopadu: FS Passion toto gesto nepoužívá.",
+    "dev_title": "Nebo: zapněte Režim pro vývojáře ve Windows",
+    "dev_text": "Nastavení Windows → Systém → Pro vývojáře → „Režim pro vývojáře“. Pro FS Passion to nemá žádný jiný důsledek. Pak se sem vraťte a klikněte na „Zkontrolovat znovu“.",
+    "without": "Bez těchto oprávnění zůstanou další složky uložené: jejich mody se zobrazují, ale nevstupují do žádné sestavy.",
+    "later": "Později",
+    "dev_mode": "Otevřít Režim pro vývojáře",
+    "admin": "Vždy spouštět jako správce",
+    "missing": "Windows odmítá symbolické odkazy: mody na jiných jednotkách se zobrazují, ale nevstupují do žádné sestavy.",
+    "get": "Získat oprávnění…",
+    "check": "Zkontrolovat znovu",
+    "ok": "Symbolické odkazy povoleny (FS Passion běží jako správce): mody na jiných jednotkách vstupují do sestav.",
+    "ok_dev": "Symbolické odkazy povoleny (Režim pro vývojáře ve Windows): mody na jiných jednotkách vstupují do sestav.",
+    "unknown": "Oprávnění pro symbolické odkazy zatím nebyla zkontrolována.",
+    "admin_on": "FS Passion je nastaven tak, aby vždy běžel jako správce.",
+    "admin_off": "Přestat spouštět jako správce",
+    "restarting": "FS Passion se restartuje jako správce. Potvrďte dotaz Windows.",
+    "now_ok": "Symbolické odkazy povoleny: znovu použijte své sestavy, aby do nich mohly vstoupit mody na jiných jednotkách.",
+    "still_missing": "Windows stále odmítá symbolické odkazy.",
+    "flag_failed": "Nastavení „Spustit jako správce“ se nepodařilo změnit.",
+    "ok_plain": "Symbolické odkazy povoleny: mody na jiných jednotkách vstupují do sestav.",
+    "admin_once_title": "Restartovat FS Passion jako správce",
+    "admin_once_text": "FS Passion se restartuje jako správce jen tentokrát; je třeba to opakovat při každém spuštění. Režim pro vývojáře tomu předejde. Důsledky:",
+    "admin_once": "Restartovat jako správce"
+  },
+  "older": {
+    "title": "Starší verze stažená hrou",
+    "intro": {
+      "one": "Hra stáhla mod se starším číslem verze, než má ten váš. Byl odložen stranou, nic nebylo nahrazeno. Co chcete udělat?",
+      "few": "Hra stáhla {count} mody se starším číslem verze, než mají ty vaše. Byly odloženy stranou, nic nebylo nahrazeno. Co chcete udělat?",
+      "many": "Hra stáhla {count} modu se starším číslem verze, než mají ty vaše. Byly odloženy stranou, nic nebylo nahrazeno. Co chcete udělat?",
+      "other": "Hra stáhla {count} modů se starším číslem verze, než mají ty vaše. Byly odloženy stranou, nic nebylo nahrazeno. Co chcete udělat?"
+    },
+    "versions": "Vaše verze: {mine} · verze stažená hrou: {game}",
+    "keep": "Ponechat mou verzi ({version})",
+    "use": "Použít verzi hry ({version})",
+    "use_tip": "Verze hry nahradí tu vaši v její složce modů; vaše se odloží do „Old versions“. Všechny sestavy se přizpůsobí.",
+    "help": "Často jde o mod, který jste upravili: ModHub neporovnává čísla verzí, nabízí svůj originál. V každém případě se nic nemaže: soubor, který neponecháte, zůstane ve složce „Recovered“ nebo „Old versions“, vedle vašich sestav.",
+    "later": "Později",
+    "gone": "Tento soubor už není ve složce „Recovered“: nic nebylo změněno.",
+    "failed": "Verzi hry modu {name} se nepodařilo umístit ({detail}). Vaše verze se nezměnila."
+  },
+  "stop": {
+    "running": "Nejprve zavřete {game}: její nastavení se musí obnovit při zavřené hře.",
+    "folders_failed": "Složky sestav se nepodařilo smazat.",
+    "closed": "FS Passion je zavřený. Hra má zpět své původní nastavení.",
+    "export_first": "Než budete pokračovat, exportujte svou konfiguraci: pokud se k FS Passion vrátíte, získáte své sestavy zpět.",
+    "intro": "FS Passion vrátí hře původní nastavení a poté odstraní složky sestav (obsahují jen odkazy):",
+    "no_version": "Žádná verze hry není nastavená: není co obnovovat.",
+    "mods_safe": "Vašich složek modů se nic nedotkne, stejně jako „Old versions“ a „Recovered“, které obsahují odložené mody.",
+    "admin_flag": "Nastavení „Spustit tento program jako správce“, které zapnul FS Passion, bude odebráno.",
+    "understand": "Rozumím: hra už nebude načítat sestavy FS Passion.",
+    "plan": {
+      "restore": "Hra znovu načítá svou původní složku: {dir}",
+      "deactivate": "Vlastní složka modů se vypne: hra se vrátí ke své obvyklé složce „mods“.",
+      "missing": "Soubor gameSettings.xml nebyl nalezen: není co obnovovat.",
+      "none": "Nastavení hry je už původní.",
+      "folders": {
+        "one": "Odebrána {count} složka sestavy",
+        "few": "Odebrány {count} složky sestav",
+        "many": "Odebráno {count} složky sestav",
+        "other": "Odebráno {count} složek sestav"
+      },
+      "kept": {
+        "one": "„{name}“ zůstává zachována ({count} soubor).",
+        "few": "„{name}“ zůstává zachována ({count} soubory).",
+        "many": "„{name}“ zůstává zachována ({count} souboru).",
+        "other": "„{name}“ zůstává zachována ({count} souborů)."
+      }
+    },
+    "options": {
+      "title": "Smazat také:",
+      "parties": "sestavy a společné mody (parties.json)",
+      "caches": "mezipaměti (převedené ikony, katalog DLC)",
+      "settings": "nastavení FS Passion",
+      "logs": "protokoly",
+      "langs": "vlastní jazyky"
+    },
+    "done": {
+      "title": "FS Passion se už nepoužívá",
+      "text": "Hotovo. Hra má zpět své původní nastavení.",
+      "partial": "Hotovo, kromě nejméně jedné verze: viz níže. Podrobnosti jsou v protokolu.",
+      "version": {
+        "zero": "původní nastavení obnoveno",
+        "one": "původní nastavení obnoveno, odebrána {count} složka sestavy",
+        "few": "původní nastavení obnoveno, odebrány {count} složky sestav",
+        "many": "původní nastavení obnoveno, odebráno {count} složky sestav",
+        "other": "původní nastavení obnoveno, odebráno {count} složek sestav"
+      },
+      "set_aside": {
+        "one": "{count} soubor nalezený ve složkách sestav byl odložen do „Recovered“.",
+        "few": "{count} soubory nalezené ve složkách sestav byly odloženy do „Recovered“.",
+        "many": "{count} souboru nalezeného ve složkách sestav bylo odloženo do „Recovered“.",
+        "other": "{count} souborů nalezených ve složkách sestav bylo odloženo do „Recovered“."
+      },
+      "close": "Zavřít FS Passion",
+      "uninstaller": "Poté spustit odinstalaci FS Passion",
+      "error": {
+        "override": "nastavení hry NEBYLO obnoveno (soubor gameSettings.xml nelze změnit); složky sestav zůstávají zachovány",
+        "folders": "původní nastavení obnoveno, ale složky sestav se nepodařilo smazat"
+      }
+    },
+    "stopped": "FS Passion se už nepoužívá: zavřete ho."
+  },
+  "tour": {
+    "button": "Prohlídka",
+    "title": "Prohlídka",
+    "count": "{n} / {total}",
+    "prev": "Zpět",
+    "next": "Další",
+    "replay": "Znovu",
+    "finish": "Dokončit",
+    "quit": "Ukončit prohlídku",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Chcete prohlídku s průvodcem?",
+      "body": "Klikněte na žárovku: za minutu vám FS Passion ukáže to nejdůležitější ze svého rozhraní. Zůstane na místě, takže si prohlídku můžete kdykoli zopakovat.",
+      "start": "Spustit prohlídku",
+      "later": "Později"
+    },
+    "versions": {
+      "caption": "Vaše verze hry",
+      "body": "Najeďte myší na toto logo: objeví se verze Farming Simulatoru. Klikněte na tu, kterou chcete spravovat.\nNenainstalované verze jsou zašedlé. Každá verze má své vlastní mody a své vlastní sestavy.",
+      "picked": "Vybráno: zobrazují se její mody a sestavy"
+    },
+    "parties": {
+      "caption": "Vaše sestavy: srdce FS Passion",
+      "body": "Jedno kliknutí přepne z jedné sestavy na druhou: její mapa a všechny závislosti ji následují.\nPlná sestava: všechny vaše mody, abyste je mohli aktualizovat ve hře.\nPrázdná sestava: bez modů, pro vyzkoušení původní hry.",
+      "full_tip": "Všechny mody: pro aktualizace modů ve hře",
+      "empty_tip": "Bez modů: pro vyzkoušení původní hry"
+    },
+    "tools": {
+      "caption": "Vytvořit, duplikovat, přejmenovat, smazat",
+      "body": "Akce pro vybranou sestavu.\nTip: u mapy v seznamu „Všechny mody“ vytvoří tlačítko „＋ Sestava“ sestavu s mapou a všemi jejími závislostmi jedním kliknutím."
+    },
+    "common": {
+      "caption": "Společné mody",
+      "body": "Vozidla, stroje a herní skripty, které chcete mít ve všech sestavách.\nVe výchozím stavu jsou zapnuté; v případě potřeby je vypněte pro jedinou sestavu.",
+      "on": "Společné mody zahrnuté v této sestavě",
+      "off": "Vypnuté jen pro tuto sestavu"
+    },
+    "apply": {
+      "caption": "Použít",
+      "body": "Použije vybranou sestavu: tu hra načte při příštím spuštění.\nTlačítko svítí, dokud vybraná sestava není použitá.",
+      "done": "Použito: hra ji načte při příštím spuštění"
+    },
+    "buttons": {
+      "caption": "Motiv, oznámení, nastavení",
+      "body": "Světlé nebo tmavé rozhraní, historie zpráv, nastavení… A žárovka, abyste si tuto prohlídku mohli kdykoli zopakovat.",
+      "theme": "Světlé nebo tmavé rozhraní"
+    },
+    "list1": {
+      "caption": "Všechny mody",
+      "body": "Celá vaše složka modů, roztříděná podle kategorií: DLC, mapy, ostatní mody…\nMod tu zůstane vždy, ať v ostatních seznamech děláte cokoli. „Nezařazené“ mody nejsou v žádném seznamu: hra je nevidí.\n[Ctrl] + [F]: hledat mod nebo autora.",
+      "search_tip": "Hledat: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Nově stažené mody",
+      "body": "Toto tlačítko hledá ve složce Stažené soubory mody, které jste právě stáhli.\nFS Passion u každého zjistí verzi hry a s vaším souhlasem ho umístí do správné složky modů.\nDělá to i při spuštění: viz Nastavení → Aplikace → Stažené soubory.",
+      "found": "Každý jde do složky modů své verze hry"
+    },
+    "list2": {
+      "caption": "Mody sestavy",
+      "body": "Mody vybrané sestavy: její mapa, závislosti, vlastní mody.\nHra je načítá navíc ke společným modům."
+    },
+    "list3": {
+      "caption": "Společné mody",
+      "body": "Mody, které jsou ve všech vašich sestavách: traktory, stroje, skripty…\nZařaďte je sem jednou: dostane je každá sestava."
+    },
+    "select": {
+      "caption": "Vícenásobný výběr",
+      "body": "[Ctrl] + kliknutí: přidat mod do výběru nebo ho z něj odebrat.\n[Shift] + kliknutí: vybrat celý rozsah.\n[Ctrl] + [A]: vybrat vše v seznamu; [Esc]: zrušit výběr.\nJakmile je vybraný mod, dole se objeví panel akcí."
+    },
+    "move": {
+      "caption": "Přetažení",
+      "body": "Do „Mody sestavy“ nebo „Společné mody“: jde o kopii, mod zůstane v „Všechny mody“.\nMezi těmito dvěma seznamy: jde o přesun. Pro kopírování držte při puštění [Ctrl].\nDo „Všechny mody“ nebo klávesou [Delete]: mod se odebere ze seznamu. Jeho soubor se nikdy nesmaže.",
+      "copy": "Kopírovat",
+      "move": "Přesunout · [Ctrl]: kopírovat",
+      "remove": "Odebrat ze seznamu · [Delete]"
+    },
+    "keys": {
+      "caption": "Klávesové zkratky",
+      "body": "Pro rychlejší práci:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Hledat mod nebo autora"
+        },
+        {
+          "k": "[Ctrl] + kliknutí",
+          "d": "Přidat mod do výběru nebo ho z něj odebrat"
+        },
+        {
+          "k": "[Shift] + kliknutí",
+          "d": "Vybrat rozsah modů"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Vybrat vše v seznamu"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Zrušit výběr nebo přetažení"
+        },
+        {
+          "k": "[Ctrl] při puštění",
+          "d": "Kopírovat místo přesunu (mezi seznamy 2 a 3)"
+        },
+        {
+          "k": "[Delete]",
+          "d": "Odebrat ze seznamu 2 nebo 3 (soubor zůstane)"
+        },
+        {
+          "k": "[Enter] na mapě",
+          "d": "Vytvořit sestavu s mapou a jejími závislostmi"
+        },
+        {
+          "k": "[F2]",
+          "d": "Přejmenovat mod"
+        },
+        {
+          "k": "[I]",
+          "d": "Připnout kartu modu"
+        },
+        {
+          "k": "[Mezerník]  [↑] [↓] [←] [→]",
+          "d": "Vybírat a pohybovat se klávesnicí"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Zavřít bez ukončení",
+      "body": "Křížek zavře okno, ale FS Passion dál běží na pozadí, v oznamovací oblasti vedle hodin.\nNávrat: šipka „^“ na hlavním panelu a pak ikona FS. Opravdové zavření: „Ukončit“ vpravo dole nebo pravým tlačítkem na ikoně.\nZměnit to můžete v Nastavení → Aplikace → Okno.",
+      "tip_close": "Zavřít: FS Passion se přesune do oznamovací oblasti",
+      "tip_more": "Zobrazit skryté ikony",
+      "tip_icon": "Kliknutí: FS Passion se vrátí · Pravé tlačítko: Ukončit"
+    },
+    "end": {
+      "caption": "Teď je řada na vás!",
+      "body": "Tuto prohlídku si kdykoli zopakujte pomocí žárovky nebo v Nastavení → Nápověda."
+    },
+    "demo": {
+      "parties": [
+        "Zelené údolí — Chov",
+        "Kopce — Pěstování",
+        "Rýžová pole na jihu"
+      ],
+      "party_sub": {
+        "one": "Mapa + {count} mod",
+        "few": "Mapa + {count} mody",
+        "many": "Mapa + {count} modu",
+        "other": "Mapa + {count} modů"
+      },
+      "mods": [
+        "Šestiválcový traktor",
+        "Kombajn",
+        "Secí stroj 6 m",
+        "Zemědělský přívěs",
+        "Balíček strojů",
+        "Skript počasí"
+      ]
+    }
+  }
+}

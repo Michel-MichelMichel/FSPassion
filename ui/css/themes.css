@@ -1,0 +1,417 @@
+/* FS Passion — thèmes définitifs.
+
+   Trois façons d'habiller l'interface, choisies par le champ « style » du
+   thème (theme.js) :
+
+   1. « palette » (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox,
+      Dracula, Tokyo Night, Synthwave '84) : les fonds ne sont plus des voiles
+      calculés à partir d'une seule couleur, mais les couleurs OFFICIELLES du
+      thème, de l'extérieur vers l'intérieur :
+        --surf-window   fenêtre, en-tête, pied de page ;
+        --surf-list     listes 1, 2, 3, fenêtres internes, menus ;
+        --surf-section  page des Paramètres, cartes des fenêtres internes ;
+        --surf-sub      sous-sections (bandes alternées des Paramètres…).
+      Exemple Catppuccin Mocha : Crust, Mantle, Base, Surface 0.
+
+   2. « duo » (Lime, Blanc, Jade, Cuivre) : deux couleurs seulement. La
+      couleur sombre partout (plus aucun fond plus clair), la couleur
+      dominante dans tous les textes et les icônes. Les listes, sections et
+      sous-sections sont dessinées par un trait fin de la couleur dominante ;
+      une lueur court le long des contours principaux (glow.js), et les
+      boutons s'allument au survol.
+
+   3. sans style propre (thème de l'atelier, ou thème sans définition) : voiles calculés.
+
+   L'effet néon (champ « neon », 0 à 100) s'ajoute à n'importe quel thème :
+   lueur des titres, des icônes et des contours, comme Synthwave '84.
+
+   « Effets de lumière » (Paramètres) coupe les lueurs et le néon (classe
+   fx-off) ; « Réduire les animations » arrête les lueurs qui bougent
+   (fx-still) ; elles s'arrêtent aussi quand la fenêtre n'est pas au premier
+   plan (is-idle). */
+
+/* ======================================================================
+   1. Thèmes « palette » : surfaces officielles
+   ====================================================================== */
+
+:root[data-surfaces] {
+  --layer: var(--surf-list);
+  --surface-0: var(--surf-window);
+  --surface-1: var(--surf-list);
+  --surface-2: var(--surf-sub);
+  --acrylic: color-mix(in srgb, var(--surf-list) 94%, transparent);
+}
+
+/* Couleurs à plat : plus de lueurs « Mica » sur le fond (elles changeaient la
+   couleur officielle de la fenêtre). Le grain reste. */
+:root[data-surfaces] #app { background-image: var(--grain); }
+
+/* Paramètres : la fenêtre est au niveau des listes, la page au niveau des
+   sections, une bande sur deux au niveau des sous-sections. */
+:root[data-surfaces] .dlg-settings { --set-surface: var(--surf-section); }
+:root[data-surfaces] .settings-pane > .set-group:nth-of-type(even) { background: var(--surf-sub); }
+
+/* Cartes à l'intérieur des fenêtres : sections (fenêtres simples) ou
+   sous-sections (dans la page des Paramètres, déjà au niveau des sections). */
+:root[data-surfaces] :is(.ver-box, .args-box, .launch-mode, .alert-box, .anom-group, .anom-game, .deps-ask, .pp-deps,
+  .del-list, .imp-vers, .imp-result, .stop-vers, .stop-export, .rights-box, .lang-list.lang-list-vertical,
+  .notice-body .is-key, .override-path, .rename-prefix, .rename-ext) {
+  background: var(--surf-section);
+}
+:root[data-surfaces] .dlg-settings :is(.ver-box, .args-box, .launch-mode, .alert-box, .rights-box,
+  .lang-list.lang-list-vertical, .stop-export) {
+  background: var(--surf-sub);
+}
+
+/* Champs de texte des palettes claires : un ton entre le fond de la
+   fenêtre et la sous-section, jamais blanc (recherche de la liste 1, chemins
+   et champs des Paramètres). */
+:root[data-mode="light"][data-surfaces] {
+  --fill-input: color-mix(in srgb, var(--surf-window) 35%, var(--surf-sub));
+  --fill-input-focus: color-mix(in srgb, var(--surf-sub) 80%, #FFFFFF);
+}
+
+/* ======================================================================
+   2. Thèmes « duo » : deux couleurs, contours fins, lueurs
+   ====================================================================== */
+
+@property --duo-spin { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+
+:root[data-style="duo"] {
+  /* Lignes : la couleur dominante, plus ou moins appuyée selon le niveau. */
+  --duo-line: color-mix(in srgb, var(--fg) 72%, transparent);   /* listes, fenêtres, Paramètres */
+  --duo-line-2: color-mix(in srgb, var(--fg) 42%, transparent); /* sections, contrôles */
+  --duo-line-3: color-mix(in srgb, var(--fg) 24%, transparent); /* séparateurs */
+  --duo-glow: color-mix(in srgb, var(--fg) 55%, transparent);
+
+  /* Textes : la couleur dominante partout (hiérarchie par l'opacité). */
+  --text-1: var(--fg);
+  --text-2: color-mix(in srgb, var(--fg) 84%, transparent);
+  --text-3: color-mix(in srgb, var(--fg) 66%, transparent);
+  --text-4: color-mix(in srgb, var(--fg) 48%, transparent);
+
+  /* Plus aucun fond plus clair : la couleur sombre partout. */
+  --fill-1: transparent;
+  --fill-2: transparent;
+  --fill-3: transparent;
+  --fill-4: transparent;
+  --fill-press: color-mix(in srgb, var(--fg) 10%, transparent);
+  --fill-input: transparent;
+  --fill-input-focus: transparent;
+  --fill-dark: transparent;
+  --layer: transparent;
+  --surface-0: var(--bg);
+  --surface-1: var(--bg);
+  --surface-2: var(--bg);
+  --acrylic: var(--bg);
+  --blur: none;
+
+  --stroke: var(--duo-line-2);
+  --stroke-top: var(--duo-line-2);
+  --stroke-card: var(--duo-line-2);
+  --stroke-surface: var(--duo-line);
+  --stroke-divider: var(--duo-line-3);
+  --stroke-strong: var(--duo-line);
+  --stroke-outer: transparent;
+  --elev: inset 0 0 0 1px var(--duo-line-2);
+  --elev-accent: none;
+
+  --on-accent: var(--bg);
+  --accent-hover: var(--fg);
+  --accent-press: color-mix(in srgb, var(--fg) 82%, var(--bg));
+  --scrim: rgba(0, 0, 0, .55);
+  --focus: var(--fg);
+}
+
+/* Fond : la couleur sombre à plat (sans les lueurs « Mica »), avec le grain. */
+:root[data-style="duo"] #app { background-image: var(--grain); }
+:root[data-style="duo"] * { scrollbar-color: var(--duo-line-2) transparent; }
+:root[data-style="duo"] ::-webkit-scrollbar-thumb { background-color: var(--duo-line-2); }
+:root[data-style="duo"] ::-webkit-scrollbar-thumb:hover { background-color: var(--fg); }
+
+/* --- contours des listes, des fenêtres et des Paramètres --------------- */
+
+:root[data-style="duo"] :is(.pane-all, .side-pane) { box-shadow: inset 0 0 0 1px var(--duo-line); }
+:root[data-style="duo"] :is(.pane-all, .side-pane).drop-ok { background: transparent; box-shadow: inset 0 0 0 2px var(--fg), 0 0 18px -6px var(--duo-glow); }
+:root[data-style="duo"] .dlg { box-shadow: 0 0 0 1px var(--duo-line), var(--shadow-xl); }
+:root[data-style="duo"] :is(.menu, .hovercard, .row-preview, .actionbar, .toast, .scroll-hint, .drag-ghost, .atelier, .tooltip) {
+  box-shadow: inset 0 0 0 1px var(--duo-line), 0 18px 40px rgba(0, 0, 0, .5);
+}
+:root[data-style="duo"] .tooltip { box-shadow: inset 0 0 0 1px var(--duo-line-2), 0 8px 18px rgba(0, 0, 0, .45); }
+:root[data-style="duo"] .dlg-settings { --set-surface: transparent; --set-line: var(--duo-line); }
+:root[data-style="duo"] .settings-pane > .set-group:nth-of-type(even) { background: transparent; }
+:root[data-style="duo"] .dlg-foot,
+:root[data-style="duo"] .dlg-body > .dlg-actions:last-child { background: var(--bg); box-shadow: inset 0 1px 0 var(--duo-line-3); }
+
+/* Sections et sous-sections : un trait fin à la place d'un fond plus clair. */
+:root[data-style="duo"] :is(.ver-box, .args-box, .launch-mode, .anom-group, .anom-game, .deps-ask, .pp-deps, .del-list,
+  .imp-vers, .imp-result, .stop-vers, .rights-box, .lang-list.lang-list-vertical, .override-path, .rename-prefix,
+  .rename-ext, .hc-warn, .at-contrast) {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--duo-line-2);
+}
+:root[data-style="duo"] .launch-mode { border-radius: var(--r-l); }
+
+/* --- lueur qui court le long des contours (glow.js) ----------------------
+   Un SVG posé sur le contour : le trait fixe est dessiné par la boîte ; le
+   SVG dessine seulement un petit segment lumineux qui en fait le tour, à
+   vitesse constante (pathLength = 1000). Chaque contour a son propre départ. */
+.glow-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 3;
+  display: none;
+}
+:root[data-style="duo"]:not(.fx-off) .glow-ring { display: block; }
+.glow-ring rect {
+  x: .5px;
+  y: .5px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  rx: 10px;
+  fill: none;
+  stroke: var(--fg);
+  stroke-linecap: round;
+}
+.glow-ring .glow-spark {
+  --spark: 120px;
+  stroke-width: 1.6px;
+  stroke-dasharray: var(--spark) calc(var(--glow-len, 1000px) - var(--spark));
+  animation: glow-run var(--glow-d, 14s) linear infinite;
+  animation-delay: var(--glow-delay, 0s);
+}
+/* Halo : le même segment, plus épais et transparent (lueur sans flou). */
+.glow-ring .glow-halo {
+  --spark: 120px;
+  stroke-width: 4px;
+  opacity: .36;
+  stroke-dasharray: var(--spark) calc(var(--glow-len, 1000px) - var(--spark));
+  animation: glow-run var(--glow-d, 14s) linear infinite;
+  animation-delay: var(--glow-delay, 0s);
+}
+.glow-ring .glow-halo-wide { --spark: 104px; stroke-width: 9px; opacity: .13; }
+/* Traîne : plus longue, plus pâle, elle finit au segment lumineux. */
+.glow-ring .glow-tail {
+  --spark: 340px;
+  --shift: 220px;
+  stroke-width: 1px;
+  stroke-dasharray: var(--spark) calc(var(--glow-len, 1000px) - var(--spark));
+  opacity: .4;
+  animation: glow-tail var(--glow-d, 14s) linear infinite;
+  animation-delay: var(--glow-delay, 0s);
+}
+@keyframes glow-tail {
+  from { stroke-dashoffset: var(--shift); }
+  to { stroke-dashoffset: calc(var(--shift) - var(--glow-len, 1000px)); }
+}
+@keyframes glow-run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: calc(var(--glow-len, 1000px) * -1); } }
+html.fx-still .glow-ring, html.is-idle .glow-ring rect { animation-play-state: paused; }
+html.fx-still .glow-ring { display: none !important; }
+
+/* Contour des Paramètres (tracé SVG de settings.js) : même lueur. */
+.set-frame .set-frame-glow { display: none; }
+:root[data-style="duo"]:not(.fx-off):not(.fx-still) .set-frame .set-frame-glow {
+  display: inline;
+  fill: none;
+  stroke: var(--fg);
+  stroke-width: 1.6px;
+  stroke-linecap: round;
+  stroke-dasharray: 40 960;
+  animation: frame-run 22s linear infinite;
+  transition: d var(--d-slow) var(--ease-spring);
+}
+@keyframes frame-run { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1000; } }
+html.is-idle .set-frame .set-frame-glow { animation-play-state: paused; }
+:root[data-style="duo"] .set-frame .set-frame-glow.set-frame-halo { stroke-width: 5px; opacity: .22; }
+
+/* --- contrôles : contour fin, allumé au survol ----------------------------- */
+
+:root[data-style="duo"] :is(.btn, .party-select, .anomaly-indicator) { box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+:root[data-style="duo"] .btn-ghost, :root[data-style="duo"] .ab-btn { box-shadow: none; }
+:root[data-style="duo"] :is(.btn:not(.btn-primary):not(.btn-danger), .party-select, .anomaly-indicator, .icon-btn, .win-btn:not(.win-close), .demo-quit,
+  .menu-item, .row-tile, .nav-item:not(.is-active), .swatch, .ver-chip, .version-item, .anom-item, .replace-item, .miss-item,
+  .dl-row:not(.dl-headrow), .lang-item, .fold-toggle, .hc-link, .tile-info):hover {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--fg), 0 0 12px -3px var(--duo-glow);
+  color: var(--fg);
+}
+:root[data-style="duo"] :is(.btn, .party-select, .anomaly-indicator) { position: relative; }
+
+/* Lueur qui tourne autour du bouton survolé (un seul à la fois : sans coût). */
+:root[data-style="duo"]:not(.fx-still) :is(.btn:not(.btn-primary), .party-select, .anomaly-indicator):not([aria-disabled="true"]):not(:disabled):hover::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(from var(--duo-spin), transparent 0 64%, var(--fg) 84%, transparent 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  filter: drop-shadow(0 0 3px var(--fg));
+  pointer-events: none;
+  animation: duo-spin 1.6s linear infinite;
+}
+@keyframes duo-spin { to { --duo-spin: 360deg; } }
+
+/* Bouton principal : rempli de la couleur dominante, texte sombre ; au survol,
+   une lueur ; « Appliquer » respire tant qu'une modification attend d'être appliquée. */
+:root[data-style="duo"] .btn-primary:not([aria-disabled="true"]):not(:disabled):hover { box-shadow: 0 0 0 1px var(--fg), 0 0 18px -2px var(--duo-glow); }
+:root[data-style="duo"] .btn-primary[aria-disabled="true"],
+:root[data-style="duo"] .btn-primary:disabled { background: transparent; color: var(--text-3); box-shadow: inset 0 0 0 1px var(--duo-line-3); }
+:root[data-style="duo"] .apply-btn.is-needed { box-shadow: 0 0 0 1px var(--fg), 0 0 0 4px var(--duo-line-3); }
+:root[data-style="duo"]:not(.fx-still) .apply-btn.is-needed { animation: duo-breathe 2.6s var(--ease) infinite; }
+@keyframes duo-breathe {
+  0%, 100% { box-shadow: 0 0 0 1px var(--fg), 0 0 0 4px var(--duo-line-3), 0 0 6px -2px var(--duo-glow); }
+  50% { box-shadow: 0 0 0 1px var(--fg), 0 0 0 4px var(--duo-line-2), 0 0 22px 0 var(--duo-glow); }
+}
+html.is-idle .apply-btn.is-needed { animation-play-state: paused; }
+
+/* Action irréversible : elle reste rouge (sécurité), contour fin. */
+:root[data-style="duo"] .btn-danger:not([aria-disabled="true"]):hover { background: transparent; color: var(--critical); box-shadow: inset 0 0 0 1px var(--critical), 0 0 12px -3px var(--critical); }
+:root[data-style="duo"] .btn-danger:not([aria-disabled="true"]):hover .ico { color: var(--critical); }
+:root[data-style="duo"] .win-close:hover { background: transparent; color: #FF6B5E; box-shadow: inset 0 0 0 1px #FF6B5E; }
+
+/* États choisis : contour plein (au lieu d'un fond plus clair). */
+:root[data-style="duo"] :is(.menu-item[aria-current="true"], .row-tile.is-selected, .version-item[aria-current="true"],
+  .ver-chip[aria-pressed="true"], .segmented button[aria-pressed="true"], .notif-item.is-unread) {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--fg);
+}
+:root[data-style="duo"] .row-tile.is-selected:hover { box-shadow: inset 0 0 0 1px var(--fg), 0 0 12px -3px var(--duo-glow); }
+:root[data-style="duo"] .lang-item[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+:root[data-style="duo"] .segmented { box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+
+/* Champs : trait fin, souligné de la couleur dominante au focus. */
+:root[data-style="duo"] .field-input,
+:root[data-style="duo"] .field-select { background-color: transparent; box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+:root[data-style="duo"] .field-input:hover,
+:root[data-style="duo"] .field-select:hover { background-color: transparent; box-shadow: inset 0 0 0 1px var(--duo-line); }
+:root[data-style="duo"] .field-input:focus,
+:root[data-style="duo"] .field-input:focus-visible,
+:root[data-style="duo"] .field-select:focus-visible { box-shadow: inset 0 0 0 1px var(--fg), 0 0 12px -4px var(--duo-glow); }
+:root[data-style="duo"] .field-input::placeholder { color: var(--text-4); }
+:root[data-style="duo"] .field-select option,
+:root[data-style="duo"] select.field-input option { background: var(--bg); color: var(--fg); }
+
+/* --- tuiles de la liste 1 et des listes 2 et 3 ------------------------------- */
+
+:root[data-style="duo"] .tile-art { background: transparent; box-shadow: none; }
+:root[data-style="duo"] .tile-art > .tile-edge { box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+:root[data-style="duo"] .tile:hover .tile-art > .tile-edge,
+:root[data-style="duo"] .tile:focus-visible .tile-art > .tile-edge { box-shadow: inset 0 0 0 1px var(--fg); }
+:root[data-style="duo"] .tile:hover .tile-art,
+:root[data-style="duo"] .tile:focus-visible .tile-art { box-shadow: 0 0 22px -6px var(--duo-glow); }
+:root[data-style="duo"] .tile.is-selected .tile-art { box-shadow: 0 0 16px -4px var(--duo-glow); }
+:root[data-style="duo"] :is(.badge, .tile-marks, .tile-info) {
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  box-shadow: inset 0 0 0 1px var(--duo-line-2);
+}
+:root[data-style="duo"] .tile-info:hover { background: var(--bg); }
+:root[data-style="duo"] .tile.is-pinned .tile-info { background: var(--fg); color: var(--bg); }
+:root[data-style="duo"] .tile.is-selected::before { box-shadow: 0 0 10px -2px var(--duo-glow); }
+:root[data-style="duo"] .row-art,
+:root[data-style="duo"] .rl-art,
+:root[data-style="duo"] .party-ico,
+:root[data-style="duo"] .pp-art { background: transparent; box-shadow: inset 0 0 0 1px var(--duo-line-3); }
+:root[data-style="duo"] .row-tile.is-selected .row-art { box-shadow: 0 0 0 1px var(--fg); }
+:root[data-style="duo"] .lasso { background: transparent; box-shadow: inset 0 0 0 1px var(--fg), 0 0 14px -4px var(--duo-glow); }
+:root[data-style="duo"] .drag-ghost .dg-art { background: var(--bg); box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+:root[data-style="duo"] .drag-ghost .dg-stack { background: var(--bg); box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+:root[data-style="duo"] .hc-tag { box-shadow: inset 0 0 0 1px var(--duo-line-2); }
+:root[data-style="duo"] .bell-badge { box-shadow: 0 0 0 2px var(--bg); }
+
+/* --- divers ------------------------------------------------------------------ */
+
+:root[data-style="duo"] .swatch[aria-pressed="true"] .swatch-dot { box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--fg); }
+:root[data-style="duo"] .path-card:hover,
+:root[data-style="duo"] .path-card:focus-within { background: transparent; }
+
+/* ======================================================================
+   3. Effet néon (champ « neon ») : lueur de la couleur de chaque zone
+   ======================================================================
+   Comme Synthwave '84 (CSS injecté dans VS Code : « text-shadow » de la
+   couleur du texte) : ici, l'ombre lumineuse prend la couleur d'accent de la
+   zone, dosée par --neon (0 à 1). Les titres en dégradé et les icônes
+   (dessinées par un masque) utilisent un filtre « drop-shadow ». */
+
+:root[data-neon]:not(.fx-off) :is(.lib-title, .side-title, .settings-page-title, .dlg-title, .cat-head > span:first-child,
+  .set-group-head, .notif-title, .scroll-hint .hint-name, .pp-map, .hc-title, .tile.is-selected .tile-name) {
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, calc(.5 * var(--neon))),
+    0 0 7px color-mix(in srgb, var(--accent) calc(var(--neon) * 85%), transparent),
+    0 0 18px color-mix(in srgb, var(--accent) calc(var(--neon) * 55%), transparent);
+}
+/* Textes en dégradé, mode sombre : comme Synthwave '84, le texte devient
+   presque blanc et la lueur porte les deux couleurs du dégradé (un dégradé
+   de tons moyens sous une lueur de même ton paraissait flou). */
+:root[data-neon][data-grad]:not([data-mode="light"]):not(.fx-off) .mgrad {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: color-mix(in srgb, var(--text-1) 86%, var(--grad-a));
+  text-shadow:
+    0 0 2px rgba(0, 0, 0, .55),
+    0 0 6px color-mix(in srgb, var(--grad-a) calc(var(--neon) * 95%), transparent),
+    0 0 16px color-mix(in srgb, var(--grad-a) calc(var(--neon) * 60%), transparent),
+    0 0 30px color-mix(in srgb, var(--grad-b) calc(var(--neon) * 45%), transparent);
+}
+/* Mode clair : le texte garde son dégradé sombre, avec un halo léger. */
+:root[data-neon][data-grad][data-mode="light"]:not(.fx-off) .mgrad {
+  text-shadow: none;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--grad-a) calc(var(--neon) * 55%), transparent));
+}
+:root[data-neon][data-mode="light"]:not(.fx-off) :is(.lib-title, .side-title, .settings-page-title, .dlg-title, .cat-head > span:first-child,
+  .set-group-head, .notif-title, .scroll-hint .hint-name, .pp-map, .hc-title, .tile.is-selected .tile-name):not(.mgrad) {
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) calc(var(--neon) * 45%), transparent);
+}
+:root[data-neon]:not(.fx-off) :is(.topbar .ico, .footer .ico, .nav-item .ico, .set-group-head .ico, .side-head .ico,
+  .lib-head .ico, .actionbar .ico, .game-logo, .app-logo, .gh-btn .gh-logo, .fs-logo) {
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) calc(var(--neon) * 90%), transparent));
+}
+:root[data-neon]:not(.fx-off) .fs-logo { filter: drop-shadow(0 0 5px color-mix(in srgb, var(--fg) calc(var(--neon) * 70%), transparent)); }
+:root[data-neon]:not(.fx-off) :is(.btn-primary:not([aria-disabled="true"]):not(:disabled), .tile-plus) {
+  box-shadow: 0 0 calc(22px * var(--neon)) color-mix(in srgb, var(--accent) calc(var(--neon) * 70%), transparent);
+}
+:root[data-neon]:not(.fx-off) :is(.switch input:checked + .switch-track, .check input:checked, .mark,
+  .nav-item.is-active::before, .row-tile.is-selected::before, .menu-item[aria-current="true"]::before, .notif-item.is-unread::before,
+  .segmented button[aria-pressed="true"]::after, .version-item[aria-current="true"]::after, .ver-chip[aria-pressed="true"]::after) {
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) calc(var(--neon) * 90%), transparent);
+}
+:root[data-neon]:not(.fx-off) .tile.is-selected .tile-art {
+  box-shadow: 0 0 calc(26px * var(--neon)) color-mix(in srgb, var(--accent) calc(var(--neon) * 75%), transparent);
+}
+:root[data-neon]:not(.fx-off) :is(.pane-all, .side-pane):not(.drop-ok) {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) calc(var(--neon) * 60%), var(--stroke-card)),
+    0 0 calc(28px * var(--neon)) -10px color-mix(in srgb, var(--accent) calc(var(--neon) * 80%), transparent);
+}
+:root[data-neon]:not(.fx-off) .set-frame path:not(.set-frame-glow) {
+  stroke: color-mix(in srgb, var(--fg) calc(var(--neon) * 60%), var(--set-line));
+  filter: drop-shadow(0 0 calc(8px * var(--neon)) color-mix(in srgb, var(--fg) calc(var(--neon) * 60%), transparent));
+}
+/* Néon sur un thème bicolore : le contour garde la couleur dominante. */
+:root[data-neon][data-style="duo"]:not(.fx-off) :is(.pane-all, .side-pane):not(.drop-ok) {
+  box-shadow: inset 0 0 0 1px var(--duo-line), 0 0 calc(30px * var(--neon)) -10px var(--duo-glow);
+}
+
+/* ======================================================================
+   4. Pastilles des thèmes et atelier
+   ====================================================================== */
+
+/* Thème bicolore : fond et couleur dominante, séparés par un trait fin. */
+.swatch-dot.is-duo {
+  background:
+    linear-gradient(135deg, transparent calc(50% - .75px), var(--sw-light) calc(50% - .75px) calc(50% + .75px), transparent calc(50% + .75px)),
+    linear-gradient(135deg, var(--sw-dark) 0 50%, var(--sw-dark) 50% 100%);
+  box-shadow: inset 0 0 0 2px var(--sw-light), 0 0 0 1px var(--stroke-surface);
+}
+/* Thème néon : la pastille brille. */
+.swatch-dot.is-neon { box-shadow: 0 0 0 1px var(--stroke-surface), 0 0 14px -2px var(--sw-light); }
+.at-help { margin-top: -8px; font-size: var(--t-xs); color: var(--text-3); line-height: 1.4; }
+.swatch[aria-pressed="true"] .swatch-dot.is-duo { box-shadow: inset 0 0 0 2px var(--sw-light), 0 0 0 3px var(--surface-1), 0 0 0 5px var(--accent); }
+.swatch[aria-pressed="true"] .swatch-dot.is-neon { box-shadow: 0 0 0 3px var(--surface-1), 0 0 0 5px var(--accent), 0 0 16px 2px var(--sw-light); }

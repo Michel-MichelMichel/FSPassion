@@ -1,0 +1,1544 @@
+{
+  "_meta": {
+    "code": "pl",
+    "name": "Polski",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion jest zamknięty",
+    "closed_help": "Możesz zamknąć tę kartę. Uruchom ponownie FS Passion, aby kontynuować."
+  },
+  "common": {
+    "close": "Zamknij",
+    "cancel": "Anuluj",
+    "ok": "OK",
+    "copy": "Kopiuj",
+    "copied": "Skopiowano do schowka",
+    "soon": "Pojawi się w wersji {version}",
+    "soon_action": "{action}: pojawi się w wersji {version}"
+  },
+  "window": {
+    "minimize": "Minimalizuj",
+    "maximize": "Maksymalizuj",
+    "restore": "Przywróć",
+    "close": "Zamknij FS Passion"
+  },
+  "header": {
+    "settings": "Ustawienia",
+    "version": "Wersja gry: {name}",
+    "current_party": "Bieżący zestaw",
+    "create": "Utwórz zestaw",
+    "duplicate": "Duplikuj zestaw",
+    "rename": "Zmień nazwę zestawu",
+    "delete": "Usuń zestaw",
+    "common_mods": "Wspólne mody",
+    "common_mods_tip": "Dołącz wspólne mody do tego zestawu",
+    "apply": "Zastosuj",
+    "apply_tip": "Niech gra wczytuje ten zestaw",
+    "apply_done_tip": "Ten zestaw jest zastosowany i aktualny: to on jest wczytywany przez grę",
+    "theme_light": "Jasny interfejs",
+    "theme_dark": "Ciemny interfejs"
+  },
+  "versions": {
+    "coming": "Wkrótce",
+    "ready": "Skonfigurowana",
+    "installed": "Zainstalowana",
+    "not_installed": "Niezainstalowana",
+    "absent_help": "Zainstalowana gdzie indziej? Ustawienia → Gra i ścieżki"
+  },
+  "party": {
+    "full": "Pełny zestaw",
+    "empty": "Pusty zestaw",
+    "other": "Własny folder",
+    "unsupported": "Brak zestawów",
+    "unknown": "Nieznany",
+    "none_yet": "Brak zestawów. Utwórz pierwszy przyciskiem ＋ albo przyciskiem „＋ Zestaw” przy mapie.",
+    "full_count": {
+      "one": "Wszystkie mody ({count})",
+      "few": "Wszystkie mody ({count})",
+      "many": "Wszystkie mody ({count})",
+      "other": "Wszystkie mody ({count})"
+    },
+    "empty_sub": "Bez modów, aby przetestować podstawową grę",
+    "applied_tag": "zastosowany",
+    "mods_count": {
+      "zero": "Brak modów",
+      "one": "{count} mod",
+      "few": "{count} mody",
+      "many": "{count} modów",
+      "other": "{count} modów"
+    },
+    "full_tip": "Idealny do aktualizacji modów w grze"
+  },
+  "status": {
+    "running": "{game} jest uruchomiona",
+    "other_folder": "Gra wczytuje mody z innego folderu:",
+    "applied": "Zastosowany zestaw: {name}",
+    "other_folder_path": "Gra wczytuje inny folder: {path}",
+    "stale": "Zestaw zmieniony od ostatniego zastosowania"
+  },
+  "path": {
+    "empty": "",
+    "found": "Znaleziono",
+    "not_found": "Ten folder nie istnieje",
+    "not_game_exe": "Ten plik nie jest plikiem wykonywalnym {game}",
+    "no_gamesettings": "Nie znaleziono gameSettings.xml: uruchom grę raz, a potem wróć",
+    "not_ntfs": "Ten dysk nie jest w formacie NTFS: zestawy są niemożliwe",
+    "onedrive": "Ten folder jest w OneDrive: niezalecane",
+    "storage_overlap": "Ten folder zawiera główny folder modów (lub jego folder FSPassion) albo znajduje się w nim: wybierz inny folder",
+    "storage_duplicate": "Ten folder jest już używany przez drugi folder przechowywania lub go zawiera",
+    "storage_same_disk": "Znaleziono · ten sam dysk co folder główny: nie są potrzebne specjalne uprawnienia",
+    "storage_other_disk": "Znaleziono · inny dysk: dowiązania symboliczne"
+  },
+  "list1": {
+    "title": "Wszystkie mody",
+    "search": "Szukaj moda lub autora",
+    "search_clear": "Wyczyść wyszukiwanie",
+    "cat_unclassified": "Nieprzydzielone",
+    "cat_dlc": "DLC",
+    "cat_maps": "Mapy",
+    "cat_others": "Inne mody",
+    "cat_by_author": "Według autora",
+    "dlc_note": "Wczytywane przez grę w każdym zestawie",
+    "selected": "zaznaczone",
+    "active": "aktywne",
+    "all": "łącznie",
+    "scanning": "Odczytywanie modów: {done} z {total}",
+    "icons_pending": {
+      "one": "Przygotowywanie ikon: została {count}",
+      "few": "Przygotowywanie ikon: zostały {count}",
+      "many": "Przygotowywanie ikon: zostało {count}",
+      "other": "Przygotowywanie ikon: zostało {count}"
+    },
+    "anomalies": {
+      "one": "{count} problem: pokaż szczegóły",
+      "few": "{count} problemy: pokaż szczegóły",
+      "many": "{count} problemów: pokaż szczegóły",
+      "other": "{count} problemów: pokaż szczegóły"
+    },
+    "find_new": "Szukaj nowych modów w pobranych plikach",
+    "open_settings": "Otwórz ustawienia",
+    "not_configured": "{game} nie jest jeszcze skonfigurowana",
+    "not_configured_help": "Wskaż jej folder modów w ustawieniach albo pozwól FS Passion wykryć instalację.",
+    "reading": "Odczytywanie modów…",
+    "no_match": "Żaden mod nie pasuje do „{query}”",
+    "empty": "Ten folder modów jest pusty",
+    "empty_help": "Pojawią się tu mody (.zip) i rozpakowane mody (foldery z plikiem modDesc.xml).",
+    "unclassified_note": "Gra ich nie zobaczy, dopóki nie zostaną przydzielone",
+    "plus_party": "Zestaw",
+    "plus_party_tip": "Utwórz zestaw z tą mapą i jej zależnościami (Enter)",
+    "mark_party": "W bieżącym zestawie",
+    "mark_common": "We wspólnych modach",
+    "info_tip": "Przypnij szczegóły moda (klawisz I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Nie znaleziono folderu modów",
+      "unexpected": "Odczyt modów nie powiódł się: {error}"
+    }
+  },
+  "mod": {
+    "map": "Mapa",
+    "unpacked": "Rozpakowany mod",
+    "multiplayer": "Tryb wieloosobowy",
+    "version": "Wersja",
+    "author": "Autor",
+    "game_version": "Gra",
+    "gv_unknown": "Nieznana wersja gry",
+    "size": "Rozmiar",
+    "kind": "Format",
+    "kind_dir": "Folder (rozpakowany)",
+    "kind_zip": "Archiwum .zip",
+    "parties": "Na listach",
+    "parties_none": "Brak",
+    "storage": "Przechowywanie",
+    "dependencies": {
+      "one": "{count} zależność",
+      "few": "{count} zależności",
+      "many": "{count} zależności",
+      "other": "{count} zależności"
+    },
+    "more": {
+      "one": "i {count} więcej",
+      "few": "i {count} więcej",
+      "many": "i {count} więcej",
+      "other": "i {count} więcej"
+    },
+    "no_dependencies": "Brak zadeklarowanych zależności",
+    "unpacked_tip": "Rozpakowany mod: nie jest aktualizowany przez ModHub i nie działa w trybie wieloosobowym. FS Passion nigdy niczego w nim nie zapisuje.",
+    "gv_conflict": "Prefiks nazwy i descVersion wskazują na dwie różne wersje: używany jest prefiks.",
+    "unpin": "Zamknij (Esc)",
+    "optional": {
+      "one": "{count} opcjonalny mod",
+      "few": "{count} opcjonalne mody",
+      "many": "{count} opcjonalnych modów",
+      "other": "{count} opcjonalnych modów"
+    },
+    "searchmods_note": "Starsza wersja gry (znacznik SearchMods): zapis gry wczytuje się nawet wtedy, gdy brakuje wymaganego moda; gra zgłasza to później.",
+    "links_hint": "Kliknij „i”, aby przypiąć te szczegóły i otworzyć linki.",
+    "links_old": "Linki podane przez autora moda, często stare: strona może już nie istnieć.",
+    "link_open": "Otwórz w przeglądarce",
+    "link_failed": "Nie udało się otworzyć linku."
+  },
+  "dep": {
+    "present": "jest",
+    "absent": "brak",
+    "dlc_owned": "DLC posiadane",
+    "dlc_missing": "DLC nieposiadane"
+  },
+  "dlc": {
+    "free": "Darmowe DLC",
+    "paid": "DLC",
+    "info": "Gra zawsze wczytuje zainstalowane DLC, w każdym zestawie."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} nie obsługuje zestawów",
+    "missing": "Nie ma go w folderach modów",
+    "missing_tip": "{name} nie ma już w twoich folderach modów. Jeśli autor zmienił jego nazwę, użyj „Zastąp przez…”.",
+    "replace": "Zastąp przez…"
+  },
+  "list2": {
+    "title": "Mody zestawu",
+    "full": {
+      "one": "Pełny zestaw: wszystkie mody ({count})",
+      "few": "Pełny zestaw: wszystkie mody ({count})",
+      "many": "Pełny zestaw: wszystkie mody ({count})",
+      "other": "Pełny zestaw: wszystkie mody ({count})"
+    },
+    "full_help": "Gra wczytuje cały folder modów, tak jak przed FS Passion.",
+    "empty_party": "Pusty zestaw: bez modów",
+    "empty_help": "Aby przetestować podstawową grę, bez żadnego moda.",
+    "no_mods": "Brak modów w tym zestawie",
+    "no_mods_help": "Przeciągnij mody z „Wszystkie mody” albo zaznacz je i użyj paska akcji."
+  },
+  "list3": {
+    "title": "Wspólne mody",
+    "empty": "Brak wspólnych modów",
+    "empty_help": "Wspólne mody są w każdym zestawie: ciągniki, maszyny, skrypty…",
+    "not_included": "Nie są dołączone do tego zestawu"
+  },
+  "footer": {
+    "github_tip": "Strona projektu na GitHubie",
+    "github_soon": "Adres projektu na GitHubie zostanie wkrótce dodany",
+    "running": "Gra uruchomiona",
+    "launch": "Uruchom grę",
+    "launch_unconfigured": "Wskaż plik wykonywalny {game} w ustawieniach",
+    "launch_tip": "Uruchom grę z zastosowanym zestawem",
+    "quit": "Zakończ"
+  },
+  "launch": {
+    "started": "Uruchamianie {game}…",
+    "failed": "Nie udało się uruchomić {game}. Sprawdź plik wykonywalny i sposób uruchamiania w ustawieniach.",
+    "no_exe": "Nie znaleziono pliku wykonywalnego {game}: wskaż go w ustawieniach.",
+    "already_running": "{game} jest już uruchomiona.",
+    "apply_title": "Zastosować „{name}”?",
+    "apply_text": "Zestaw „{name}” nie jest zastosowany albo zmienił się od tego czasu. Zastosować zestaw {name}, a potem uruchomić {game}?",
+    "apply_and_launch": "Zastosuj i uruchom",
+    "without_apply": "Uruchom bez stosowania"
+  },
+  "backup": {
+    "created": "Utworzono oryginalną kopię zapasową gameSettings.xml dla {game}",
+    "exported": "Wyeksportowano konfigurację: {file}",
+    "demo_active": "Najpierw wyjdź z trybu demo: używa on innych folderów niż twoje.",
+    "unreadable": "Nie można odczytać tego pliku: {path}",
+    "too_big": "Ten plik jest za duży, aby był eksportem FS Passion: {path}",
+    "not_export": "Ten plik nie jest eksportem FS Passion: {path}",
+    "too_new": "Ten plik pochodzi z nowszej wersji FS Passion ({version}). Zaktualizuj FS Passion, aby go zaimportować.",
+    "write_failed": "Nie udało się zapisać pliku: {path}",
+    "expired": "Import wygasł: wybierz plik ponownie.",
+    "running": "Zamknij {game} przed importem: jej zestawy zaraz się zmienią.",
+    "import": {
+      "title": "Importuj konfigurację",
+      "from": "Eksport z {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} zestaw",
+        "few": "{count} zestawy",
+        "many": "{count} zestawów",
+        "other": "{count} zestawów"
+      },
+      "common": {
+        "one": "{count} wspólny mod",
+        "few": "{count} wspólne mody",
+        "many": "{count} wspólnych modów",
+        "other": "{count} wspólnych modów"
+      },
+      "no_parties": "Ten plik nie zawiera żadnego zestawu: zaimportowane zostaną tylko ustawienia.",
+      "keep": "Zachowaj obecne ścieżki (zalecane)",
+      "keep_help": "Foldery gry, modów i pobranych plików na tym komputerze się nie zmieniają. Importowane są tylko zestawy, wspólne mody i neutralne ustawienia (język, motyw, opcje).",
+      "replace_help": "Ścieżki z pliku zastępują ścieżki tego komputera: wybierz to tylko wtedy, gdy plik pochodzi z tego komputera, z tymi samymi dyskami.",
+      "paths_differ": "Foldery modów w tym pliku nie są folderami tego komputera.",
+      "warning": "Obecne zestawy powyższych wersji zostaną zastąpione. Obecny stan jest najpierw automatycznie zapisywany. Nic nie jest stosowane: foldery zestawów zostaną odbudowane przy następnym „Zastosuj”.",
+      "ok": "Importuj"
+    },
+    "result": {
+      "title": "Zaimportowano konfigurację",
+      "done": "Import zakończony.",
+      "parties": {
+        "one": "Zaimportowano {count} zestaw",
+        "few": "Zaimportowano {count} zestawy",
+        "many": "Zaimportowano {count} zestawów",
+        "other": "Zaimportowano {count} zestawów"
+      },
+      "skipped": "nie zaimportowano (wersja gry nieskonfigurowana na tym komputerze)",
+      "fallback": "Gra wczytywała zestaw, który już nie istnieje: teraz wczytuje Pełny zestaw.",
+      "apply": "Mody, których brakuje na tym komputerze, pojawiają się w zestawach jako brakujące mody. Kliknij „Zastosuj”, aby gra wczytała zaimportowany zestaw.",
+      "backup": "Stan sprzed importu zapisano w %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "game": {
+      "title": "Gra i ścieżki"
+    },
+    "look": {
+      "title": "Wygląd"
+    },
+    "app": {
+      "title": "Aplikacja"
+    },
+    "help": {
+      "title": "Pomoc"
+    },
+    "paths": {
+      "versions": "Wersje gry",
+      "game_exe": "Plik wykonywalny gry",
+      "user_dir": "Folder gry w Dokumentach",
+      "mods_dir": "Główny folder modów",
+      "mods_dirs": "Foldery modów",
+      "browse": "Przeglądaj…",
+      "fixed_fs2011": "Folderu modów FS2011 nie można przenieść.",
+      "add_storage": "Dodaj folder modów na innym dysku",
+      "derived": "Ścieżki pochodne",
+      "not_applicable": "Nie dotyczy tej wersji",
+      "d_game_dir": "Folder gry",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (folder gry)",
+      "d_dlc_user": "DLC (Dokumenty)",
+      "detect": "Wykryj instalację",
+      "detect_all": "Wykryj wszystkie wersje",
+      "detect_all_help": "Szuka instalacji wszystkich wersji i wypełnia ich puste pola.",
+      "detect_one": "Wykryj tę wersję",
+      "detect_one_help": "Zmienia tylko wersję wybraną powyżej. Pozostałe wersje się nie zmieniają.",
+      "detect_help": "Pola, które dostosowałeś, nigdy nie są zmieniane.",
+      "detect_found": "Znalezione instalacje: {list}",
+      "detect_none": "Nie znaleziono żadnej instalacji. Wskaż ścieżki przyciskiem „Przeglądaj…”.",
+      "launch_method": "Sposób uruchamiania gry",
+      "launch_auto": "Automatyczny",
+      "launch_platform": "Platforma",
+      "launch_exe": "Plik wykonywalny",
+      "launch_help": "Automatyczny wybiera właściwą metodę (Steam, Epic Games, Microsoft Store, Xbox lub plik wykonywalny). Pozostałe dwa to rozwiązania awaryjne.",
+      "minimize_on_launch": "Minimalizuj FS Passion po uruchomieniu gry",
+      "args_title": "Parametry uruchamiania",
+      "args_show": "Pokaż parametry uruchamiania",
+      "args_hide": "Ukryj parametry uruchamiania",
+      "args_skip": "Pomiń filmowe intro",
+      "args_skip_info": "Pomija filmowe intro i ekrany powitalne.",
+      "args_cheats": "Konsola deweloperska",
+      "args_cheats_info": "Włącza konsolę deweloperską w grze. Ustawia też <controls> w game.xml, obok gameSettings.xml.",
+      "args_game_xml_absent": "Nie znaleziono game.xml: konsola zostanie włączona dopiero po jednokrotnym uruchomieniu gry.",
+      "args_game_xml_error": "Nie udało się zmienić game.xml: konsola deweloperska pozostaje wyłączona.",
+      "args_help_command": "FS Passion dodaje je do polecenia uruchamiającego {game}.",
+      "args_help_steam": "{game} jest uruchamiana przez Steam. Steam odrzuca parametry przekazane przez inny program (prosiłby o potwierdzenie przy każdym uruchomieniu), więc FS Passion uruchamia grę bez nich. Wpisz je jednorazowo w Steamie, poniżej.",
+      "args_help_epic": "{game} jest uruchamiana przez Epic Games, który nie przyjmuje parametrów od innego programu: wpisz je jednorazowo w Epic Games Launcher, poniżej.",
+      "args_help_unsupported": "{game} jest zainstalowana z Microsoft Store lub Xbox.",
+      "args_store": "Microsoft Store i aplikacja Xbox nie pozwalają na parametry uruchamiania: można włączyć tylko konsolę deweloperską (game.xml). Aby użyć parametrów, wybierz „Plik wykonywalny” jako sposób uruchamiania, jeśli twoja instalacja na to pozwala.",
+      "args_steam_where": "Gdzie je wpisać w Steamie",
+      "args_steam_steps": "Biblioteka Steam: prawy przycisk na {game} → Właściwości…\nKarta Ogólne → pole „Opcje uruchamiania”\nWklej poniższy tekst i zamknij okno",
+      "args_epic_where": "Gdzie je wpisać w Epic Games Launcher",
+      "args_epic_steps": "Biblioteka: „…” pod {game} → Zarządzaj\nZaznacz „Dodatkowe argumenty wiersza poleceń”\nWklej poniższy tekst (starsze launchery: zdjęcie profilowe → Ustawienia → {game})",
+      "args_none": "Nie zaznaczono żadnego parametru",
+      "args_copy_label": "Parametry do skopiowania",
+      "args_copy_help": "Trzeba to powtórzyć tylko po zaznaczeniu lub odznaczeniu parametru.",
+      "console_on": "Konsola włączona w game.xml",
+      "console_off": "Konsola wyłączona w game.xml",
+      "console_enable": "Włącz w game.xml",
+      "console_done": "Konsola deweloperska włączona w game.xml dla {game}",
+      "add_storage_help": "Maksymalnie dwa dodatkowe foldery. Ich mody są wyświetlane i trafiają do zestawów tak jak pozostałe; FS Passion niczego więcej tam nie zapisuje.",
+      "extra_dir": "Dodatkowy folder modów",
+      "extra_help": "Usunięcie tego folderu nie narusza jego modów: po prostu przestają być wyświetlane.",
+      "remove_storage": "Usuń ten folder z listy (jego mody pozostają nienaruszone)"
+    },
+    "downloads": {
+      "title": "Pobrane pliki",
+      "folder": "Folder pobranych plików",
+      "help": "Folder, w którym przeglądarka zapisuje pobrane mody.",
+      "scan_at_start": "Szukaj nowych modów przy uruchomieniu",
+      "scan_now": "Szukaj teraz"
+    },
+    "language": {
+      "title": "Język",
+      "personal": "własny",
+      "open_folder": "Otwórz folder własnych języków",
+      "personal_help": "Możesz tam przetłumaczyć FS Passion na swój język: dołączono szablon i instrukcję.",
+      "rejected": "Pominięte pliki językowe (nieprawidłowe lub za duże): {list}"
+    },
+    "theme": {
+      "title": "Motyw",
+      "help": "Najedź na próbkę, aby zobaczyć podgląd motywu, kliknij, aby go wybrać. Motywy dwukolorowe mają tylko dwa kolory; pozostałe używają oficjalnych kolorów popularnych motywów, każdy w wersji ciemnej i jasnej. Przycisk słońce/księżyc w nagłówku przełącza między nimi.",
+      "contrast": "Kontrast {ratio}:1",
+      "loop": "Motyw w pętli: zmieniaj motyw co minutę",
+      "light_effects": "Efekty świetlne (połysk, świecące obrysy, neon)",
+      "reduce_motion": "Ogranicz animacje",
+      "follows_windows": "Zgodnie z ustawieniem „Efekty animacji” systemu Windows.",
+      "follow_windows": "Zgodnie z ustawieniem Windows",
+      "atelier": "Otwórz warsztat motywów",
+      "mode_dark": "Ciemny",
+      "mode_light": "Jasny",
+      "group_duo": "Dwukolorowe"
+    },
+    "backup": {
+      "title": "Kopia zapasowa konfiguracji",
+      "help": "Wyeksportuj swoje zestawy, wspólne mody i ustawienia do pliku, aby odzyskać je po ponownej instalacji lub na innym komputerze. Żaden mod nie jest kopiowany: tylko ich nazwy.",
+      "export": "Eksportuj",
+      "import": "Importuj"
+    },
+    "notice": {
+      "title": "Przewodnik",
+      "open": "Otwórz przewodnik",
+      "at_start": "Pokazuj przy uruchomieniu",
+      "tour": "Wycieczka po interfejsie"
+    },
+    "anomalies": {
+      "title": "Problemy",
+      "show": "Pokaż problemy",
+      "reset": {
+        "zero": "Brak ukrytych problemów",
+        "one": "Pokaż ponownie ukryty problem",
+        "few": "Pokaż ponownie {count} ukryte problemy",
+        "many": "Pokaż ponownie {count} ukrytych problemów",
+        "other": "Pokaż ponownie {count} ukrytych problemów"
+      },
+      "reset_done": "Ukryte problemy są znowu widoczne"
+    },
+    "internet": {
+      "title": "Połączenie z internetem",
+      "allow": "Pozwól FS Passion pobierać katalog DLC z GitHuba",
+      "help": "Katalog DLC (nazwy i ikony) jest odczytywany z GitHuba najwyżej raz dziennie. Pobierane są tylko ikony DLC obecnych na tym komputerze. Żadne dane osobowe nie są wysyłane.",
+      "catalog_off": "Katalog DLC: dołączony do FS Passion (połączenie wyłączone).",
+      "catalog_remote": "Katalog DLC z {date}, pobrany z GitHuba.",
+      "catalog_embedded": "Katalog DLC z {date}, dołączony do FS Passion.",
+      "check": "Sprawdź teraz",
+      "checking": "Sprawdzanie…",
+      "error_not_found": "Katalog nie jest jeszcze opublikowany na GitHubie.",
+      "error_unreachable": "Ostatnie sprawdzenie nie powiodło się (brak połączenia?).",
+      "error_invalid": "Nie można odczytać opublikowanego katalogu: używany jest katalog z FS Passion.",
+      "error_too_new": "Opublikowany katalog wymaga nowszej wersji FS Passion.",
+      "error_too_big": "Opublikowany katalog jest za duży: zostaje pominięty."
+    },
+    "logs": {
+      "title": "Dzienniki i diagnostyka",
+      "open_logs": "Otwórz folder dzienników",
+      "copy_diag": "Kopiuj diagnostykę",
+      "diag_copied": "Skopiowano diagnostykę: wklej ją do zgłoszenia"
+    },
+    "donate": {
+      "title": "Wesprzyj projekt",
+      "text": "FS Passion jest i pozostanie projektem godnym zaufania, otwartoźródłowym i darmowym. Jeśli chcesz podziękować autorowi, jednorazowa darowizna zajmuje kilka sekund i nie wymaga zakładania konta. Dziękuję!",
+      "no_link": "Link wkrótce"
+    },
+    "about": {
+      "title": "Informacje",
+      "version": "Wersja",
+      "author": "Autor",
+      "license": "Licencja",
+      "github_soon": "adres wkrótce",
+      "official": "Jedynym oficjalnym źródłem pobierania jest strona projektu na GitHubie.",
+      "unofficial": "FS Passion to niezależny projekt, niepowiązany z GIANTS Software. Farming Simulator jest znakiem towarowym GIANTS Software.",
+      "privacy": "FS Passion nie wysyła żadnych danych. Pobiera jedynie, jeśli na to pozwolisz, publiczną listę DLC z GitHuba.",
+      "window_mode": "Technika okna (rozwój)",
+      "window_native": "Natywna",
+      "window_script": "Obliczana",
+      "window_thin": "Cienka ramka",
+      "window_restart": "Zadziała przy następnym uruchomieniu FS Passion",
+      "window_help": "Obecna technika: {current}. Zmień ją tylko wtedy, gdy zmiana rozmiaru za pomocą krawędzi nie działa."
+    },
+    "stop": {
+      "title": "Przestań używać FS Passion",
+      "show": "Pokaż szczegóły",
+      "hide": "Ukryj szczegóły",
+      "text": "Przywraca oryginalne ustawienie gry i usuwa foldery zestawów. Twoje mody nigdy nie są naruszane.",
+      "button": "Przestań używać FS Passion"
+    },
+    "window": {
+      "title": "Okno",
+      "close_to_tray": "Zamykaj do obszaru powiadomień",
+      "close_to_tray_help": "Przycisk zamykania okna ukrywa FS Passion obok zegara Windows. Kliknij jego ikonę, aby je przywrócić; „Zakończ” (w prawym dolnym rogu lub w menu ikony) naprawdę je zamyka.",
+      "tray_off": "Obszar powiadomień jest dostępny tylko w oknie FS Passion, w systemie Windows.",
+      "focus_after_game": "Wracaj na pierwszy plan po zamknięciu gry",
+      "focus_after_game_help": "Po zamknięciu Farming Simulator FS Passion pojawia się ponownie, nawet jeśli było ukryte w obszarze powiadomień."
+    },
+    "demo": {
+      "title": "Wypróbuj bez gry",
+      "help": "Fałszywe mody, aby wypróbować wszystkie funkcje FS Passion w folderze testowym: twoje prawdziwe ścieżki są odkładane na bok i przywracane po wyjściu.",
+      "start": "Wypróbuj FS Passion bez gry",
+      "active_help": "Tryb demo jest włączony: te ścieżki należą do folderu testowego. Twoje prawdziwe ścieżki wrócą, gdy z niego wyjdziesz."
+    }
+  },
+  "themes": {
+    "lime": "Limonka",
+    "jade": "Jadeit",
+    "cuivre": "Miedź",
+    "blue": "Biel"
+  },
+  "anomalies": {
+    "title": "Wykryte problemy",
+    "none": "Brak problemów. Wszystko w porządku.",
+    "intro": "Gra nie może użyć tych elementów twojego folderu modów w obecnej postaci. Nic poważnego, a FS Passion ich nie rusza.",
+    "new": "nowe",
+    "hide_type": "Nie pokazuj więcej tego rodzaju problemu",
+    "hide_folder": "Nie pokazuj więcej tego folderu",
+    "rename": "Zmień nazwę…",
+    "others": {
+      "one": "Inne pominięte pliki ({count})",
+      "few": "Inne pominięte pliki ({count})",
+      "many": "Inne pominięte pliki ({count})",
+      "other": "Inne pominięte pliki ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": "Archiwum .rar lub .7z",
+        "few": "Archiwa .rar lub .7z ({count})",
+        "many": "Archiwa .rar lub .7z ({count})",
+        "other": "Archiwa .rar lub .7z ({count})"
+      },
+      "explain": "Gra odczytuje tylko pliki .zip. Rozpakuj archiwum, a w razie potrzeby spakuj mod ponownie do .zip."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip bez modDesc.xml",
+        "few": "Pliki .zip bez modDesc.xml ({count})",
+        "many": "Pliki .zip bez modDesc.xml ({count})",
+        "other": "Pliki .zip bez modDesc.xml ({count})"
+      },
+      "explain": "Często jest to paczka kilku modów do rozpakowania.",
+      "nested": "Znaleziono modDesc.xml w podfolderze ({path}): mod został źle spakowany."
+    },
+    "A3": {
+      "title": {
+        "one": "Nieczytelne archiwum",
+        "few": "Nieczytelne archiwa ({count})",
+        "many": "Nieczytelne archiwa ({count})",
+        "other": "Nieczytelne archiwa ({count})"
+      },
+      "explain": "Uszkodzone archiwum lub nieprawidłowy modDesc.xml. Pobierz mod ponownie.",
+      "zip": "Nie można otworzyć archiwum.",
+      "xml": "Plik modDesc.xml jest nieprawidłowy."
+    },
+    "A4": {
+      "title": {
+        "one": "Folder bez modDesc.xml",
+        "few": "Foldery bez modDesc.xml ({count})",
+        "many": "Foldery bez modDesc.xml ({count})",
+        "other": "Foldery bez modDesc.xml ({count})"
+      },
+      "explain": "Bez pliku modDesc.xml w katalogu głównym gra nie może użyć tego folderu. FS Passion nigdy go nie rusza."
+    },
+    "A5": {
+      "title": {
+        "one": "Nazwa odrzucona przez grę",
+        "few": "Nazwy odrzucone przez grę ({count})",
+        "many": "Nazwy odrzucone przez grę ({count})",
+        "other": "Nazwy odrzucone przez grę ({count})"
+      },
+      "explain": "Gra akceptuje tylko litery bez polskich znaków, cyfry i „_”.",
+      "suggestion": "Proponowana nazwa: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod do innej wersji gry",
+        "few": "Mody do innej wersji gry ({count})",
+        "many": "Mody do innej wersji gry ({count})",
+        "other": "Mody do innej wersji gry ({count})"
+      },
+      "explain": "Ta wersja gry nie wczyta tego moda.",
+      "detected": "Mod do {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Brakujący mod",
+        "few": "Brakujące mody ({count})",
+        "many": "Brakujące mody ({count})",
+        "other": "Brakujące mody ({count})"
+      },
+      "explain": "Zestaw odwołuje się do tego moda, ale nie ma go już w folderach modów.",
+      "in": "W: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Usunięty mod nadal powiązany",
+        "few": "Usunięte mody nadal powiązane ({count})",
+        "many": "Usunięte mody nadal powiązane ({count})",
+        "other": "Usunięte mody nadal powiązane ({count})"
+      },
+      "explain": "Ten mod został usunięty z folderu modów, ale niektóre zestawy nadal go zawierają.",
+      "copy": "Kopia nadal istnieje w: {list}",
+      "delete_title": "Usunąć pozostałą kopię?",
+      "delete_text": "Ostatnia kopia „{name}”, wciąż obecna w folderach zestawów, zostanie przeniesiona do Kosza, a mod usunięty ze wszystkich list."
+    },
+    "A9": {
+      "title": {
+        "one": "Zdublowany mod",
+        "few": "Zdublowane mody ({count})",
+        "many": "Zdublowane mody ({count})",
+        "other": "Zdublowane mody ({count})"
+      },
+      "explain": "Ten sam mod jest dwa razy: w dwóch folderach przechowywania albo jako .zip i jako folder obok siebie. Gra wczytuje tylko jeden. FS Passion używa tego z folderu głównego, a archiwum zamiast folderu.",
+      "zip_and_dir": "„{name}” istnieje zarówno jako .zip, jak i jako rozpakowany folder: gra wczytuje tylko jeden, a ModHub nie może go zaktualizować. Zachowaj jedną postać (usuń drugą przyciskiem „Usuń trwale” albo przenieś ją poza folder modów).",
+      "files": "Pliki: {list}"
+    },
+    "game": "{game}",
+    "folder": "Folder modów: {path}",
+    "show_in_folder": "Pokaż w Eksploratorze plików",
+    "open_folder": "Otwórz folder modów w Eksploratorze plików (moda już tam nie ma)"
+  },
+  "welcome": {
+    "subtitle": "Twoje mody zapisane tylko raz. Tyle zestawów, ile chcesz.",
+    "language": "Wybierz swój język"
+  },
+  "notice": {
+    "title": "Jak działa FS Passion",
+    "at_start": "Pokazuj to okno przy uruchomieniu aplikacji",
+    "understood": "Rozumiem",
+    "blocks": [
+      {
+        "key": "Przede wszystkim: zalecamy zrobienie kopii zapasowej wszystkich modów na innym dysku. To niezbędne, jak przed każdą operacją na ważnych plikach."
+      },
+      {
+        "h": "Idea"
+      },
+      {
+        "p": "FS Passion pozwala szybko i prosto tworzyć dowolną liczbę zestawów do Farming Simulator, przy zachowaniu tylko jednej kopii twoich modów w ich pierwotnym folderze."
+      },
+      {
+        "p": "Przełączaj się między zestawami 1 kliknięciem!"
+      },
+      {
+        "h": "Instalacja"
+      },
+      {
+        "p": "Twój folder modów może być na dowolnym dysku: FS Passion się dostosuje. Niczego nie trzeba tworzyć, przenosić ani zmieniać nazwy ręcznie. Dysk pełny? Dodaj maksymalnie dwa foldery modów na innych dyskach (Ustawienia → Gra i ścieżki): ich mody trafiają do zestawów tak jak pozostałe."
+      },
+      {
+        "h": "Pierwsze kroki"
+      },
+      {
+        "ul": [
+          "Utwórz swoje zestawy magicznym przyciskiem „＋ Zestaw” przy mapach: mapa i jej zależności tworzą zestaw jednym kliknięciem.",
+          "Następnie przydziel pozostałe mody do wspólnych modów, obecnych w każdym zestawie.",
+          "Kliknij „Zastosuj”: gra wczyta wybrany zestaw przy następnym uruchomieniu."
+        ]
+      },
+      {
+        "h": "Dodawanie, zmiana nazwy, usuwanie modów"
+      },
+      {
+        "ul": [
+          "Nowe mody: pobierz je jak zwykle, a potem kliknij „Szukaj nowych modów w pobranych plikach” na górze listy. FS Passion umieści je w folderze modów właściwej wersji gry.",
+          "Mody usuwaj w FS Passion („Usuń trwale” na pasku akcji), a nie w Eksploratorze plików: zostaną wtedy jednocześnie usunięte z list i zestawów i trafią do Kosza.",
+          "Zmiana nazwy moda (klawisz F2) odłącza go od ModHuba: nie będzie już otrzymywał aktualizacji."
+        ]
+      },
+      {
+        "h": "Aktualizacje"
+      },
+      {
+        "p": "Nic nie trzeba robić: aktualizacje pobrane przez grę są przejmowane po jej zamknięciu lub przy następnym uruchomieniu FS Passion. Stara wersja jest odkładana do „Old versions”. Jeśli gra pobierze starszy numer wersji niż twój (często mod, który zmodyfikowałeś), FS Passion zapyta, którą zachować."
+      },
+      {
+        "h": "Zachowanie zestawów"
+      },
+      {
+        "p": "Ustawienia → Aplikacja → „Eksportuj” zapisuje twoje zestawy, wspólne mody i ustawienia do pliku. „Importuj” je przywraca, po ponownej instalacji lub na innym komputerze."
+      },
+      {
+        "h": "Aby zakończyć"
+      },
+      {
+        "p": "„Przestań używać FS Passion” (Ustawienia → Aplikacja) przywraca oryginalne ustawienie gry i usuwa foldery zestawów. Twoje mody nigdy nie są naruszane."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Warsztat motywów",
+    "id": "Identyfikator",
+    "name": "Nazwa",
+    "dark": "Tło okna",
+    "light": "Kolor dominujący",
+    "mica": "Poświata Mica",
+    "grain": "Ziarno",
+    "effect": "Efekt",
+    "effect_none": "Brak",
+    "effect_metal": "Metaliczny połysk",
+    "intensity": "Intensywność",
+    "save": "Zapisz",
+    "copy": "Kopiuj definicję",
+    "new": "Nowy",
+    "copied": "Skopiowano definicję",
+    "saved": "Zapisano motyw w ui/themes.json",
+    "contrast_low": "Kontrast {ratio}:1, poniżej 4,5:1. Mały tekst użyje {color}.",
+    "contrast_ok": "Kontrast {ratio}:1",
+    "mode": "Tryb",
+    "mode_dark": "Ciemny",
+    "mode_light": "Jasny",
+    "text": "Tekst",
+    "multi": "Kilka kolorów akcentu (jeden na strefę)",
+    "accent_n": "Akcent {n}",
+    "pair": "Motyw bliźniaczy (słońce/księżyc)",
+    "pair_none": "Brak",
+    "gradient": "Gradient dwukolorowy (tytuły, przyciski Zastosuj i Uruchom)",
+    "gradient_from": "Gradient: początek",
+    "gradient_to": "Gradient: koniec",
+    "style": "Styl",
+    "style_duo": "Dwukolorowy",
+    "style_palette": "Oficjalna paleta",
+    "style_classic": "Obliczane warstwy",
+    "surface_1": "Tło okna",
+    "surface_2": "Listy i okna",
+    "surface_3": "Sekcje",
+    "surface_4": "Podsekcje",
+    "text_n": "Tekst {n}",
+    "neon": "Neon",
+    "neon_help": "Poświata tytułów, ikon i obrysów w kolorze każdej strefy (0: brak efektu). Wyłączana przez „Efekty świetlne”."
+  },
+  "error": {
+    "bad_request": "Nieprawidłowe żądanie.",
+    "forbidden": "Odmowa dostępu.",
+    "not_found": "Nie znaleziono elementu.",
+    "unexpected": "Nieoczekiwany błąd. Skopiuj diagnostykę (Ustawienia → Pomoc) i dołącz ją do zgłoszenia.",
+    "offline": "Rdzeń FS Passion nie odpowiada.",
+    "internal": "Operacja odrzucona ze względów bezpieczeństwa. Skopiuj diagnostykę (Ustawienia → Pomoc) i dołącz ją do zgłoszenia."
+  },
+  "detect": {
+    "busy": "Wykrywanie już trwa."
+  },
+  "parties": {
+    "not_configured": "Wskaż folder modów {game} w ustawieniach, aby tworzyć zestawy.",
+    "name_label": "Nazwa zestawu",
+    "name_empty": "Nazwa nie może być pusta.",
+    "name_too_long": "Maksymalnie {max} znaków.",
+    "name_taken": "Zestaw o nazwie „{name}” już istnieje.",
+    "special_locked": "Pełnego zestawu i Pustego zestawu nie można zmieniać, zmieniać ich nazwy, duplikować ani usuwać.",
+    "not_found": "Ten zestaw już nie istnieje.",
+    "write_failed": "Nie udało się zapisać zestawów w {path}. Sprawdź, czy na tym dysku można zapisywać.",
+    "recovered": "Nie udało się odczytać pliku zestawów {game}: wczytano jego najnowszą kopię zapasową ({backup}). Uszkodzony plik odłożono na bok.",
+    "lost": "Nie udało się odczytać pliku zestawów {game} ani wczytać żadnej kopii zapasowej. Uszkodzony plik odłożono na bok, nic nie zostało usunięte.",
+    "running_rename": "Zamknij {game} przed zmianą nazwy tego zestawu: jego folder nie może się zmienić, gdy gra jest uruchomiona.",
+    "running_delete": "Zamknij {game} przed usunięciem tego zestawu: jego folder nie może się zmienić, gdy gra jest uruchomiona.",
+    "map_not_found": "Nie znaleziono mapy: {name}",
+    "mod_not_found": "Nie znaleziono moda: {name}",
+    "create_title": "Nowy zestaw",
+    "create_help": "Pusty zestaw zawierający wspólne mody. Następnie dodaj do niego mody z „Wszystkie mody”.",
+    "create_ok": "Utwórz",
+    "created": "Utworzono zestaw „{name}”",
+    "duplicate_title": "Duplikuj zestaw",
+    "duplicate_help": "Kopia zachowuje mody zestawu „{name}” i jego ustawienie „Wspólne mody”.",
+    "copy_name": "{name} (kopia)",
+    "duplicate_ok": "Duplikuj",
+    "duplicated": "Utworzono zestaw „{name}”",
+    "rename_title": "Zmień nazwę zestawu",
+    "rename_ok": "Zmień nazwę",
+    "renamed": "Zmieniono nazwę „{old}” na „{name}”",
+    "delete_title": "Usuń zestaw",
+    "delete_text": {
+      "zero": "Usunąć zestaw „{name}”? Nie zawiera żadnych modów.",
+      "one": "Usunąć zestaw „{name}”? Jego mod zostaje w twoim folderze modów: znikają tylko zestaw i jego folder dowiązań.",
+      "few": "Usunąć zestaw „{name}”? Jego {count} mody zostają w twoim folderze modów: znikają tylko zestaw i jego folder dowiązań.",
+      "many": "Usunąć zestaw „{name}”? Jego {count} modów zostaje w twoim folderze modów: znikają tylko zestaw i jego folder dowiązań.",
+      "other": "Usunąć zestaw „{name}”? Jego {count} modów zostaje w twoim folderze modów: znikają tylko zestaw i jego folder dowiązań."
+    },
+    "delete_ok": "Usuń",
+    "deleted": "Usunięto zestaw „{name}”",
+    "deleted_applied": "Zestaw {name} został usunięty. Gra używa teraz zestawu {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "zaznaczony mod",
+      "few": "zaznaczone mody",
+      "many": "zaznaczonych modów",
+      "other": "zaznaczonych modów"
+    },
+    "add_party": "Dodaj do Modów zestawu",
+    "add_common": "Dodaj do Wspólnych modów",
+    "remove_party": "Usuń z Modów zestawu",
+    "remove_common": "Usuń ze Wspólnych modów",
+    "rename": "Zmień nazwę…",
+    "rename_help": "Jeden mod, zaznaczony w „Wszystkie mody”.",
+    "delete": "Usuń trwale…",
+    "close": "Zamknij pasek i wyczyść zaznaczenie (Esc)",
+    "added_party": {
+      "one": "Dodano {count} mod do zestawu „{name}”",
+      "few": "Dodano {count} mody do zestawu „{name}”",
+      "many": "Dodano {count} modów do zestawu „{name}”",
+      "other": "Dodano {count} modów do zestawu „{name}”"
+    },
+    "added_common": {
+      "one": "Dodano {count} mod do wspólnych modów",
+      "few": "Dodano {count} mody do wspólnych modów",
+      "many": "Dodano {count} modów do wspólnych modów",
+      "other": "Dodano {count} modów do wspólnych modów"
+    },
+    "moved_party": {
+      "one": "Przeniesiono {count} mod do zestawu „{name}”",
+      "few": "Przeniesiono {count} mody do zestawu „{name}”",
+      "many": "Przeniesiono {count} modów do zestawu „{name}”",
+      "other": "Przeniesiono {count} modów do zestawu „{name}”"
+    },
+    "moved_common": {
+      "one": "Przeniesiono {count} mod do wspólnych modów",
+      "few": "Przeniesiono {count} mody do wspólnych modów",
+      "many": "Przeniesiono {count} modów do wspólnych modów",
+      "other": "Przeniesiono {count} modów do wspólnych modów"
+    },
+    "removed_party": {
+      "one": "Usunięto {count} mod z zestawu „{name}”",
+      "few": "Usunięto {count} mody z zestawu „{name}”",
+      "many": "Usunięto {count} modów z zestawu „{name}”",
+      "other": "Usunięto {count} modów z zestawu „{name}”"
+    },
+    "removed_common": {
+      "one": "Usunięto {count} mod ze wspólnych modów",
+      "few": "Usunięto {count} mody ze wspólnych modów",
+      "many": "Usunięto {count} modów ze wspólnych modów",
+      "other": "Usunięto {count} modów ze wspólnych modów"
+    },
+    "nothing_party": "Te mody są już w zestawie „{name}”",
+    "nothing_common": "Te mody są już we wspólnych modach"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Dodać także jego zależność?",
+      "few": "Dodać także jego {count} zależności?",
+      "many": "Dodać także jego {count} zależności?",
+      "other": "Dodać także jego {count} zależności?"
+    },
+    "ask_yes": {
+      "one": "Dodaj także zależność",
+      "few": "Dodaj także {count} zależności",
+      "many": "Dodaj także {count} zależności",
+      "other": "Dodaj także {count} zależności"
+    },
+    "ask_no": "Tylko wybrane mody",
+    "missing_warn": {
+      "one": "Brakuje zależności w twoich modach: {list}",
+      "few": "Brakuje {count} zależności w twoich modach: {list}",
+      "many": "Brakuje {count} zależności w twoich modach: {list}",
+      "other": "Brakuje {count} zależności w twoich modach: {list}"
+    },
+    "needed_by_map": "Mapa „{name}” wymaga:",
+    "needed_by_mod": "Mod „{name}” wymaga:",
+    "needed": "Zależności:",
+    "where_common": "gronie wspólnych modów",
+    "where_party": "zestawie „{name}”",
+    "ask_intro": {
+      "one": "Ten mod jest zależnością wybranego przez ciebie moda, ale nie ma go w {where}.",
+      "few": "Te {count} mody są zależnościami wybranych przez ciebie modów, ale nie ma ich w {where}.",
+      "many": "Tych {count} modów to zależności wybranych przez ciebie modów, ale nie ma ich w {where}.",
+      "other": "Tych {count} modów to zależności wybranych przez ciebie modów, ale nie ma ich w {where}."
+    },
+    "missing_for": "{list} (wymagany przez „{name}”)",
+    "optional_title": {
+      "one": "Dodać także opcjonalny mod?",
+      "few": "Dodać także opcjonalne mody?",
+      "many": "Dodać także opcjonalne mody?",
+      "other": "Dodać także opcjonalne mody?"
+    },
+    "optional_intro": {
+      "one": "Jeden opcjonalny mod, już obecny w twoich modach:",
+      "few": "{count} opcjonalne mody, już obecne w twoich modach:",
+      "many": "{count} opcjonalnych modów, już obecnych w twoich modach:",
+      "other": "{count} opcjonalnych modów, już obecnych w twoich modach:"
+    },
+    "optional_for": "opcjonalny dla „{name}”",
+    "optional_note": "Opcjonalne: gra ich nie potrzebuje. Tylko zaznaczone zostaną dodane w {where}.",
+    "optional_continue": "Dalej"
+  },
+  "plus": {
+    "title": "Nowy zestaw z mapy",
+    "deps_title": {
+      "one": "{count} zależność",
+      "few": "{count} zależności",
+      "many": "{count} zależności",
+      "other": "{count} zależności"
+    },
+    "dlc_title": "Wymagane DLC",
+    "dlc_note": "Dla informacji: gra zawsze wczytuje zainstalowane DLC. Nie są dodawane do zestawu.",
+    "missing_note": "Brakujące zależności nie są dodawane: pobierz je, a potem dodaj do zestawu.",
+    "no_deps": "Brak zadeklarowanych zależności: zestaw będzie zawierał tylko mapę.",
+    "summary": {
+      "zero": "Zestaw będzie zawierał samą mapę oraz wspólne mody.",
+      "one": "Zestaw będzie zawierał mapę i jej zależność oraz wspólne mody.",
+      "few": "Zestaw będzie zawierał mapę i jej {count} zależności oraz wspólne mody.",
+      "many": "Zestaw będzie zawierał mapę i jej {count} zależności oraz wspólne mody.",
+      "other": "Zestaw będzie zawierał mapę i jej {count} zależności oraz wspólne mody."
+    },
+    "create": "Utwórz zestaw",
+    "created": {
+      "one": "Utworzono zestaw „{name}”: {count} mod",
+      "few": "Utworzono zestaw „{name}”: {count} mody",
+      "many": "Utworzono zestaw „{name}”: {count} modów",
+      "other": "Utworzono zestaw „{name}”: {count} modów"
+    },
+    "created_missing": {
+      "one": "Zależność do pobrania: {list}",
+      "few": "{count} zależności do pobrania: {list}",
+      "many": "{count} zależności do pobrania: {list}",
+      "other": "{count} zależności do pobrania: {list}"
+    },
+    "optional_title": {
+      "one": "{count} opcjonalny mod",
+      "few": "{count} opcjonalne mody",
+      "many": "{count} opcjonalnych modów",
+      "other": "{count} opcjonalnych modów"
+    },
+    "optional_note": "Opcjonalne: gra ich nie potrzebuje. Zaznacz te, które chcesz dodać do zestawu.",
+    "optional_none_present": "Żadnego z tych opcjonalnych modów nie ma w twoich modach. Gra ich nie potrzebuje."
+  },
+  "replace": {
+    "title": "Zastąp przez…",
+    "help": "{name} nie ma już w twoich folderach modów. Jeśli autor zmienił jego nazwę, wybierz jego nową wersję: zajmie jego miejsce na wszystkich listach.",
+    "done": {
+      "one": "Zastąpiono {old} przez {name} na {count} liście",
+      "few": "Zastąpiono {old} przez {name} na {count} listach",
+      "many": "Zastąpiono {old} przez {name} na {count} listach",
+      "other": "Zastąpiono {old} przez {name} na {count} listach"
+    }
+  },
+  "notifications": {
+    "title": "Powiadomienia",
+    "unread": {
+      "one": "Powiadomienia: 1 nowa wiadomość",
+      "few": "Powiadomienia: {count} nowe wiadomości",
+      "many": "Powiadomienia: {count} nowych wiadomości",
+      "other": "Powiadomienia: {count} nowych wiadomości"
+    },
+    "clear": "Wyczyść wszystko",
+    "none": "Brak powiadomień. Wiadomości wyświetlane w prawym dolnym rogu są tu przechowywane do zamknięcia FS Passion."
+  },
+  "tray": {
+    "show": "Pokaż FS Passion",
+    "quit": "Zakończ FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion nadal działa tutaj. Kliknij ikonę, aby je przywrócić; „Zakończ” naprawdę je zamyka."
+  },
+  "apply": {
+    "unsupported": "Ta wersja gry nie może zmienić swojego folderu modów.",
+    "not_ready": "Najpierw wskaż w ustawieniach folder modów i folder Dokumenty gry.",
+    "running": "Zamknij {game} przed zastosowaniem zestawu.",
+    "no_gamesettings": "Nie znaleziono gameSettings.xml dla {game}: uruchom grę raz albo sprawdź folder Dokumenty w ustawieniach.",
+    "busy": "Trwa inna operacja na zestawach. Spróbuj ponownie za chwilę.",
+    "library_busy": "Mody są jeszcze odczytywane. Spróbuj ponownie za chwilę.",
+    "done": {
+      "zero": "Zastosowano zestaw {name}: bez modów.",
+      "one": "Zastosowano zestaw {name}: {count} mod.",
+      "few": "Zastosowano zestaw {name}: {count} mody.",
+      "many": "Zastosowano zestaw {name}: {count} modów.",
+      "other": "Zastosowano zestaw {name}: {count} modów."
+    },
+    "missing": {
+      "one": "Brakuje 1 moda zestawu w twoim folderze modów: {list}",
+      "few": "Brakuje {count} modów zestawu w twoim folderze modów: {list}",
+      "many": "Brakuje {count} modów zestawu w twoim folderze modów: {list}",
+      "other": "Brakuje {count} modów zestawu w twoim folderze modów: {list}"
+    },
+    "updated": {
+      "one": "1 aktualizacja pozostawiona przez grę została przeniesiona do twojego folderu modów.",
+      "few": "{count} aktualizacje pozostawione przez grę zostały przeniesione do twojego folderu modów.",
+      "many": "{count} aktualizacji pozostawionych przez grę zostało przeniesionych do twojego folderu modów.",
+      "other": "{count} aktualizacji pozostawionych przez grę zostało przeniesionych do twojego folderu modów."
+    },
+    "added": {
+      "one": "1 mod pozostawiony przez grę trafił do twojego folderu modów i do zestawu {name}.",
+      "few": "{count} mody pozostawione przez grę trafiły do twojego folderu modów i do zestawu {name}.",
+      "many": "{count} modów pozostawionych przez grę trafiło do twojego folderu modów i do zestawu {name}.",
+      "other": "{count} modów pozostawionych przez grę trafiło do twojego folderu modów i do zestawu {name}."
+    },
+    "set_aside": {
+      "one": "1 plik został odłożony na bok, nic nie usunięto (folder „Recovered” lub „Old versions”, obok twoich zestawów).",
+      "few": "{count} pliki zostały odłożone na bok, nic nie usunięto (foldery „Recovered” i „Old versions”, obok twoich zestawów).",
+      "many": "{count} plików zostało odłożonych na bok, nic nie usunięto (foldery „Recovered” i „Old versions”, obok twoich zestawów).",
+      "other": "{count} plików zostało odłożonych na bok, nic nie usunięto (foldery „Recovered” i „Old versions”, obok twoich zestawów)."
+    },
+    "empty_party": "Zestaw {name} nie zawiera żadnych modów: gra uruchomi się bez modów.",
+    "not_same_disk": "Nie można powiązać {name}: folder zestawów musi być na tym samym dysku co folder modów.",
+    "no_hardlinks": "Ten dysk nie obsługuje dowiązań twardych: folder modów musi być na dysku NTFS. Niczego nie zmieniono.",
+    "too_many_links": "Nie można powiązać {name}: ten plik osiągnął limit dowiązań systemu Windows.",
+    "access_denied": "Odmowa dostępu podczas tworzenia dowiązania {name}. Niczego nie zmieniono.",
+    "link_failed": "Nie udało się utworzyć dowiązania {name} ({detail}). Niczego nie zmieniono.",
+    "junction_failed": "Nie udało się utworzyć połączenia katalogów dla rozpakowanego moda {name} ({detail}). Niczego nie zmieniono.",
+    "folder_busy": "Folder {path} jest używany przez inny program (Eksplorator plików?). Zamknij go i spróbuj ponownie. Niczego nie zmieniono.",
+    "folder_exists": "Folder {path} już istnieje: wybierz inną nazwę.",
+    "failed": "Nie udało się zastosować zestawu ({detail}). Niczego nie zmieniono.",
+    "recovered_finished": "Operacja na zestawach {game} została przerwana (zanik zasilania?). Została dokończona.",
+    "recovered_cancelled": "Operacja na zestawach {game} została przerwana (zanik zasilania?). Została anulowana: nic się nie zmieniło.",
+    "symlink_denied": "Windows odmawia utworzenia dowiązania symbolicznego do {name}: wymagany jest tryb dewelopera Windows lub uprawnienia administratora.",
+    "blocked": {
+      "one": "1 mod z innego dysku nie mógł trafić do zestawu (brak uprawnień do dowiązań symbolicznych): {list}. Zobacz Ustawienia → Gra i ścieżki.",
+      "few": "{count} mody z innego dysku nie mogły trafić do zestawu (brak uprawnień do dowiązań symbolicznych): {list}. Zobacz Ustawienia → Gra i ścieżki.",
+      "many": "{count} modów z innego dysku nie mogło trafić do zestawu (brak uprawnień do dowiązań symbolicznych): {list}. Zobacz Ustawienia → Gra i ścieżki.",
+      "other": "{count} modów z innego dysku nie mogło trafić do zestawu (brak uprawnień do dowiązań symbolicznych): {list}. Zobacz Ustawienia → Gra i ścieżki."
+    }
+  },
+  "override": {
+    "title": "Gra wczytuje nieznany folder",
+    "text": "{game} wczytuje mody z folderu, którego FS Passion nie zna (zmienionego ręcznie lub przez inne narzędzie):",
+    "help": "Przyjmij ten folder jako swój folder modów, zastosuj ponownie swój zestaw albo zostaw grę bez zmian.",
+    "adopt": "Przyjmij jako folder modów",
+    "reapply": "Zastosuj ponownie {name}",
+    "ignore": "Nic nie rób",
+    "adopted": "Nowy folder modów: {path}",
+    "read_failed": "Nie można odczytać gameSettings.xml ({path}). Niczego nie zmieniono.",
+    "backup_failed": "Nie udało się zapisać kopii zapasowej gameSettings.xml ({path}). Niczego nie zmieniono.",
+    "write_failed": "Nie udało się zapisać gameSettings.xml ({path}). Czy gra jest otwarta?",
+    "check_failed": "Weryfikacja gameSettings.xml nie powiodła się: przywrócono oryginalny plik.",
+    "no_root": "gameSettings.xml nie wygląda na plik ustawień gry. Niczego nie zmieniono."
+  },
+  "demo": {
+    "title": "Tryb demo",
+    "pill": "Demo",
+    "quit": "Wyjdź",
+    "banner": "Tryb demo: te mody są fałszywe. Twoje prawdziwe foldery i gra pozostają nienaruszone.",
+    "badge": "Fałszywy mod (demo)",
+    "installing": "Przygotowywanie modów demo…",
+    "started": "Tryb demo: wypróbuj wszystko, nic nie dotyka gry.",
+    "stopped": "Tryb demo zamknięty: wszystko zostało usunięte.",
+    "stop_title": "Wyjdź z trybu demo",
+    "stop_text": "Fałszywe mody, testowe zestawy i cały folder demo zostaną usunięte. Twoje prawdziwe ustawienia wrócą w niezmienionej postaci.",
+    "stop_ok": "Wyjdź i usuń wszystko",
+    "offer_title": "Wypróbować FS Passion bez gry?",
+    "offer_text": "Na tym komputerze nie znaleziono Farming Simulator. Możesz wypróbować FS Passion z fałszywymi modami: tworzenie zestawów, przydzielanie, stosowanie… wszystko działa, w folderze testowym, nigdy w grze.",
+    "offer_local": "Pakiet demo jest już na tym komputerze (około 2 MB).",
+    "offer_download": "Pakiet demo (około 2 MB) zostanie pobrany ze strony projektu na GitHubie, a następnie sprawdzony.",
+    "offer_yes": "Wypróbuj",
+    "offer_no": "Później",
+    "unavailable": "Pakiet demo nie jest jeszcze dostępny.",
+    "bad_pack": "Pakiet demo jest uszkodzony lub nie zgadza się z oryginałem: został odrzucony.",
+    "download_failed": "Nie udało się pobrać pakietu demo ({detail}).",
+    "install_failed": "Nie udało się zainstalować pakietu demo ({detail}).",
+    "remove_failed": "Nie udało się całkowicie usunąć folderu demo: {path}",
+    "no_detect": "Wykrywanie gry jest wyłączone w trybie demo."
+  },
+  "delete": {
+    "title": {
+      "one": "Trwale usunąć ten mod?",
+      "few": "Trwale usunąć te {count} mody?",
+      "many": "Trwale usunąć tych {count} modów?",
+      "other": "Trwale usunąć tych {count} modów?"
+    },
+    "intro": {
+      "one": "Ten mod zostanie usunięty ze wszystkich list i wszystkich folderów zestawów, a następnie z twojego folderu modów:",
+      "few": "Te {count} mody zostaną usunięte ze wszystkich list i wszystkich folderów zestawów, a następnie z twojego folderu modów:",
+      "many": "Tych {count} modów zostanie usuniętych ze wszystkich list i wszystkich folderów zestawów, a następnie z twojego folderu modów:",
+      "other": "Tych {count} modów zostanie usuniętych ze wszystkich list i wszystkich folderów zestawów, a następnie z twojego folderu modów:"
+    },
+    "irreversible": "Tej operacji nie można cofnąć.",
+    "recycle": "Pliki trafią do Kosza systemu Windows: nadal będzie można je stamtąd przywrócić.",
+    "no_recycle": "Ten dysk nie ma Kosza: usunięcie będzie trwałe.",
+    "understand": {
+      "one": "Rozumiem, że ten plik zostanie usunięty",
+      "few": "Rozumiem, że te pliki zostaną usunięte",
+      "many": "Rozumiem, że te pliki zostaną usunięte",
+      "other": "Rozumiem, że te pliki zostaną usunięte"
+    },
+    "ok": "Usuń trwale",
+    "done_recycled": {
+      "one": "Przeniesiono 1 mod do Kosza",
+      "few": "Przeniesiono {count} mody do Kosza",
+      "many": "Przeniesiono {count} modów do Kosza",
+      "other": "Przeniesiono {count} modów do Kosza"
+    },
+    "done_deleted": {
+      "one": "Trwale usunięto 1 mod",
+      "few": "Trwale usunięto {count} mody",
+      "many": "Trwale usunięto {count} modów",
+      "other": "Trwale usunięto {count} modów"
+    },
+    "failed": {
+      "one": "Nie udało się usunąć 1 moda: {list}. Został usunięty z list; zamknij program, który go używa, i spróbuj ponownie.",
+      "few": "Nie udało się usunąć {count} modów: {list}. Zostały usunięte z list; zamknij program, który ich używa, i spróbuj ponownie.",
+      "many": "Nie udało się usunąć {count} modów: {list}. Zostały usunięte z list; zamknij program, który ich używa, i spróbuj ponownie.",
+      "other": "Nie udało się usunąć {count} modów: {list}. Zostały usunięte z list; zamknij program, który ich używa, i spróbuj ponownie."
+    },
+    "nothing": "Brak modów do usunięcia.",
+    "running": "Zamknij {game} przed usuwaniem modów."
+  },
+  "rename": {
+    "title": "Zmień nazwę moda",
+    "label": "Nowa nazwa",
+    "prefix_tip": "Prefiks wersji zostaje zachowany",
+    "final": "Nazwa pliku: {file}",
+    "rule": "Tylko litery bez polskich znaków, cyfry i „_”: gra odrzuca inne znaki.",
+    "where": "W: {list}. Listy zmieniają się tylko za twoją zgodą: FS Passion zapyta wtedy, czy mają przejąć nową nazwę.",
+    "warning_modhub": "Jeśli pochodzi z ModHuba, ten mod nie będzie już otrzymywał aktualizacji: właśnie o to chodzi przy zmianie nazwy.",
+    "warning_save": "W grze zapisy używające tego moda będą go szukać pod starą nazwą.",
+    "warning_save_map": "To jest mapa: w grze zapisy utworzone na niej będą jej szukać pod starą nazwą i przestaną się wczytywać.",
+    "warning_deps": {
+      "one": "1 mod deklaruje go jako zależność ({list}): będzie go szukał pod starą nazwą.",
+      "few": "{count} mody deklarują go jako zależność ({list}): będą go szukać pod starą nazwą.",
+      "many": "{count} modów deklaruje go jako zależność ({list}): będą go szukać pod starą nazwą.",
+      "other": "{count} modów deklaruje go jako zależność ({list}): będą go szukać pod starą nazwą."
+    },
+    "ok": "Zmień nazwę",
+    "done": {
+      "zero": "Zmieniono nazwę {old} na {name}",
+      "one": "Zmieniono nazwę {old} na {name}, w 1 zestawie",
+      "few": "Zmieniono nazwę {old} na {name}, w {count} zestawach",
+      "many": "Zmieniono nazwę {old} na {name}, w {count} zestawach",
+      "other": "Zmieniono nazwę {old} na {name}, w {count} zestawach"
+    },
+    "renamed": "Zmieniono nazwę {old} na {name}",
+    "lists_title": "Zaktualizować listy?",
+    "lists_ask": "„{old}” jest nadal w: {list}. Czy mają przejąć nową nazwę „{name}”?",
+    "lists_yes": "Zaktualizuj listy",
+    "lists_no": "Nic nie rób",
+    "lists_done": "Zaktualizowano listy ({count}).",
+    "empty": "Wpisz nazwę.",
+    "too_long": "Nazwa jest za długa: maksymalnie {max} znaków.",
+    "invalid": "Tylko litery bez polskich znaków, cyfry i „_”, bez spacji.",
+    "same": "To już jest jego nazwa.",
+    "taken": "„{name}” już istnieje w twoich folderach modów.",
+    "not_found": "Nie znaleziono moda {name} w twoich folderach modów.",
+    "failed": "Nie udało się zmienić nazwy {name}: może być otwarty w innym programie.",
+    "running": "Zamknij {game} przed zmianą nazwy moda.",
+    "no_list": "brak listy"
+  },
+  "downloads": {
+    "title": "Znaleziono nowe mody",
+    "intro": "W {folder}. Włącz przenosi każdy zaznaczony plik do folderu modów jego wersji gry.",
+    "count": {
+      "one": "Znaleziono 1 mod",
+      "few": "Znaleziono {count} mody",
+      "many": "Znaleziono {count} modów",
+      "other": "Znaleziono {count} modów"
+    },
+    "col_mod": "Mod",
+    "col_version": "Wersja gry",
+    "col_state": "Stan",
+    "col_dest": "Miejsce docelowe",
+    "state": {
+      "new": "Nowy",
+      "update": "Aktualizacja ({from} → {to})",
+      "older": "Starszy niż zainstalowana wersja ({to} < {from})",
+      "present": "Już obecny",
+      "conflict": "Rozpakowany mod ma już tę nazwę",
+      "unconfigured": "Wersja nieskonfigurowana: skonfiguruj ją w ustawieniach"
+    },
+    "older_confirm": "Zaznaczony: zastąpi zainstalowaną wersję (odłożoną na bok).",
+    "postpone": "{game} jest uruchomiona: zostanie włączony po jej zamknięciu",
+    "not_configured": "{game} (nieskonfigurowana)",
+    "suffix": "Zostanie włączony jako {name} (usunięto przyrostek przeglądarki)",
+    "dest_none": "Brak (nieprzydzielony)",
+    "dest_unclassified": "Nieprzydzielone",
+    "dest_party": "Zestaw „{name}”",
+    "ignore": "Pomiń te pliki",
+    "ignored": {
+      "one": "Pominięto 1 plik: nie będzie już proponowany",
+      "few": "Pominięto {count} pliki: nie będą już proponowane",
+      "many": "Pominięto {count} plików: nie będą już proponowane",
+      "other": "Pominięto {count} plików: nie będą już proponowane"
+    },
+    "later": "Później",
+    "integrate": {
+      "zero": "Włącz",
+      "one": "Włącz 1 mod",
+      "few": "Włącz {count} mody",
+      "many": "Włącz {count} modów",
+      "other": "Włącz {count} modów"
+    },
+    "none": "Brak nowych modów w {folder}.",
+    "done": {
+      "one": "Włączono 1 mod: {list}",
+      "few": "Włączono {count} mody: {list}",
+      "many": "Włączono {count} modów: {list}",
+      "other": "Włączono {count} modów: {list}"
+    },
+    "in_version": {
+      "one": "1 w {game}",
+      "few": "{count} w {game}",
+      "many": "{count} w {game}",
+      "other": "{count} w {game}"
+    },
+    "skipped": {
+      "one": "1 plik pozostawiono na miejscu (już obecny lub starszy)",
+      "few": "{count} pliki pozostawiono na miejscu (już obecne lub starsze)",
+      "many": "{count} plików pozostawiono na miejscu (już obecne lub starsze)",
+      "other": "{count} plików pozostawiono na miejscu (już obecne lub starsze)"
+    },
+    "postponed": {
+      "one": "1 mod zostanie włączony po zamknięciu {game}",
+      "few": "{count} mody zostaną włączone po zamknięciu {game}",
+      "many": "{count} modów zostanie włączonych po zamknięciu {game}",
+      "other": "{count} modów zostanie włączonych po zamknięciu {game}"
+    },
+    "postponed_done": {
+      "one": "1 pobrany plik włączono po zamknięciu {game}",
+      "few": "{count} pobrane pliki włączono po zamknięciu {game}",
+      "many": "{count} pobranych plików włączono po zamknięciu {game}",
+      "other": "{count} pobranych plików włączono po zamknięciu {game}"
+    },
+    "failed": "Nie udało się włączyć {file}. Plik pozostał w pobranych plikach.",
+    "gone": "{file} nie ma już w folderze pobranych plików.",
+    "unconfigured": "{file}: wybrana wersja gry nie jest skonfigurowana.",
+    "no_folder": "Nie znaleziono folderu pobranych plików: wskaż go w Ustawienia → Aplikacja → Pobrane pliki.",
+    "demo": "W trybie demo pobrane pliki nie są włączane.",
+    "done_in": {
+      "one": "Włączono 1 mod do {game}",
+      "few": "Włączono {count} mody do {game}",
+      "many": "Włączono {count} modów do {game}",
+      "other": "Włączono {count} modów do {game}"
+    },
+    "col_storage": "Przechowywanie"
+  },
+  "move": {
+    "exists": "{file}: plik o tej samej nazwie już istnieje.",
+    "no_space": "{file}: za mało wolnego miejsca na dysku folderu modów.",
+    "check_failed": "{file}: zweryfikowana kopia nie zgadza się z oryginałem. Niczego nie zastąpiono.",
+    "failed": "Nie udało się przenieść {file}: może być otwarty w innym programie."
+  },
+  "missing": {
+    "title": "Mody brakujące w twoim folderze modów",
+    "intro": {
+      "one": "Tego moda brakuje w twoim folderze modów, choć jest w zestawach. Co chcesz zrobić?",
+      "few": "Tych {count} modów brakuje w twoim folderze modów, choć są w zestawach. Co chcesz zrobić?",
+      "many": "Tych {count} modów brakuje w twoim folderze modów, choć są w zestawach. Co chcesz zrobić?",
+      "other": "Tych {count} modów brakuje w twoim folderze modów, choć są w zestawach. Co chcesz zrobić?"
+    },
+    "in": "W: {list}",
+    "copy": "Usunięty z folderu modów, ale kopia nadal istnieje dzięki dowiązaniom w: {list}",
+    "no_copy": "Brak kopii: pobierz go ponownie albo zastąp modem, którego nazwę zmienił autor",
+    "restore": "Przywróć do Mods",
+    "restore_tip": "Kopia nadal obecna w zestawie znowu staje się modem twojego folderu modów (nic nie jest kopiowane).",
+    "remove": "Usuń z list",
+    "remove_all": "Usuń wszystkie z list",
+    "later": "Później",
+    "notice": "Aby usunąć mod, zrób to w FS Passion (przycisk „Usuń trwale” na pasku akcji): zostanie wtedy jednocześnie usunięty z list i zestawów.",
+    "removed": {
+      "one": "Usunięto 1 mod ze wszystkich list",
+      "few": "Usunięto {count} mody ze wszystkich list",
+      "many": "Usunięto {count} modów ze wszystkich list",
+      "other": "Usunięto {count} modów ze wszystkich list"
+    },
+    "restored": {
+      "one": "Przywrócono 1 mod do twojego folderu modów",
+      "few": "Przywrócono {count} mody do twojego folderu modów",
+      "many": "Przywrócono {count} modów do twojego folderu modów",
+      "other": "Przywrócono {count} modów do twojego folderu modów"
+    },
+    "deleted": {
+      "one": "Usunięto 1 mod z dysku i z list",
+      "few": "Usunięto {count} mody z dysku i z list",
+      "many": "Usunięto {count} modów z dysku i z list",
+      "other": "Usunięto {count} modów z dysku i z list"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "Przejęto 1 aktualizację: {list}",
+      "few": "Przejęto {count} aktualizacje: {list}",
+      "many": "Przejęto {count} aktualizacji: {list}",
+      "other": "Przejęto {count} aktualizacji: {list}"
+    },
+    "added": {
+      "one": "1 mod pobrany przez grę dodano do zestawu „{name}”",
+      "few": "{count} mody pobrane przez grę dodano do zestawu „{name}”",
+      "many": "{count} modów pobranych przez grę dodano do zestawu „{name}”",
+      "other": "{count} modów pobranych przez grę dodano do zestawu „{name}”"
+    },
+    "unclassified": {
+      "one": "1 mod pobrany przez grę trafił do twojego folderu modów (nieprzydzielony)",
+      "few": "{count} mody pobrane przez grę trafiły do twojego folderu modów (nieprzydzielone)",
+      "many": "{count} modów pobranych przez grę trafiło do twojego folderu modów (nieprzydzielone)",
+      "other": "{count} modów pobranych przez grę trafiło do twojego folderu modów (nieprzydzielone)"
+    },
+    "errors": {
+      "one": "Nie udało się uporządkować 1 folderu: {list}. Zobacz dziennik.",
+      "few": "Nie udało się uporządkować {count} folderów: {list}. Zobacz dziennik.",
+      "many": "Nie udało się uporządkować {count} folderów: {list}. Zobacz dziennik.",
+      "other": "Nie udało się uporządkować {count} folderów: {list}. Zobacz dziennik."
+    },
+    "reshaped": {
+      "one": "1 mod rozpakowany lub ponownie spakowany: zestaw podąża za jego nową postacią ({list})",
+      "few": "{count} mody rozpakowane lub ponownie spakowane: zestawy podążają za ich nową postacią ({list})",
+      "many": "{count} modów rozpakowanych lub ponownie spakowanych: zestawy podążają za ich nową postacią ({list})",
+      "other": "{count} modów rozpakowanych lub ponownie spakowanych: zestawy podążają za ich nową postacią ({list})"
+    }
+  },
+  "rights": {
+    "title": "Uprawnienia dla modów na innych dyskach",
+    "intro": "Aby mod przechowywany na innym dysku trafił do zestawu, FS Passion tworzy dowiązanie symboliczne. Windows pozwala na to tylko w trybie dewelopera lub z uprawnieniami administratora, a żadne z nich nie jest aktywne.",
+    "standard": "Twoje konto Windows jest kontem standardowym: uzyskanie uprawnień administratora uruchomiłoby FS Passion na innym koncie, z innymi folderami i ustawieniami. Tryb dewelopera to właściwy wybór.",
+    "admin_title": "Zawsze uruchamiaj FS Passion jako administrator",
+    "admin_text": "FS Passion zaznaczy za ciebie „Uruchom ten program jako administrator” (Właściwości → Zgodność), tylko dla twojego konta, a potem uruchomi się ponownie. Konsekwencje:",
+    "uac": "Windows prosi o potwierdzenie przy każdym uruchomieniu FS Passion.",
+    "game_normal": "Gra i jej platforma są nadal uruchamiane ze zwykłymi uprawnieniami, przez Eksplorator Windows. Parametry uruchamiania przechodzą wtedy jak zwykle przez platformę (Steam, Epic Games).",
+    "no_drop": "Windows blokuje przeciąganie plików z Eksploratora do FS Passion. Obecnie bez znaczenia: FS Passion nie korzysta z tego gestu.",
+    "dev_title": "Albo: włącz tryb dewelopera Windows",
+    "dev_text": "Ustawienia Windows → System → Dla deweloperów → „Tryb dewelopera”. Żadnych innych konsekwencji dla FS Passion. Potem wróć tutaj i kliknij „Sprawdź ponownie”.",
+    "without": "Bez tych uprawnień dodatkowe foldery pozostają zapisane: ich mody są wyświetlane, ale nie trafiają do żadnego zestawu.",
+    "later": "Później",
+    "dev_mode": "Otwórz tryb dewelopera",
+    "admin": "Zawsze uruchamiaj jako administrator",
+    "missing": "Windows odrzuca dowiązania symboliczne: mody na innych dyskach są wyświetlane, ale nie trafiają do żadnego zestawu.",
+    "get": "Uzyskaj uprawnienia…",
+    "check": "Sprawdź ponownie",
+    "ok": "Dowiązania symboliczne dozwolone (FS Passion działa jako administrator): mody na innych dyskach trafiają do zestawów.",
+    "ok_dev": "Dowiązania symboliczne dozwolone (tryb dewelopera Windows): mody na innych dyskach trafiają do zestawów.",
+    "unknown": "Uprawnienia do dowiązań symbolicznych nie zostały jeszcze sprawdzone.",
+    "admin_on": "FS Passion jest ustawiony tak, aby zawsze działał jako administrator.",
+    "admin_off": "Przestań uruchamiać jako administrator",
+    "restarting": "FS Passion uruchamia się ponownie jako administrator. Potwierdź monit systemu Windows.",
+    "now_ok": "Dowiązania symboliczne dozwolone: zastosuj ponownie swoje zestawy, aby mody na innych dyskach mogły do nich trafić.",
+    "still_missing": "Windows nadal odrzuca dowiązania symboliczne.",
+    "flag_failed": "Nie udało się zmienić ustawienia „Uruchom jako administrator”.",
+    "ok_plain": "Dowiązania symboliczne dozwolone: mody na innych dyskach trafiają do zestawów.",
+    "admin_once_title": "Uruchom ponownie FS Passion jako administrator",
+    "admin_once_text": "FS Passion uruchomi się ponownie jako administrator tylko tym razem; trzeba to powtarzać przy każdym uruchomieniu. Tryb dewelopera pozwala tego uniknąć. Konsekwencje:",
+    "admin_once": "Uruchom ponownie jako administrator"
+  },
+  "older": {
+    "title": "Starsza wersja pobrana przez grę",
+    "intro": {
+      "one": "Gra pobrała mod o numerze wersji starszym niż twój. Został odłożony na bok, niczego nie zastąpiono. Co chcesz zrobić?",
+      "few": "Gra pobrała {count} mody o numerze wersji starszym niż twój. Zostały odłożone na bok, niczego nie zastąpiono. Co chcesz zrobić?",
+      "many": "Gra pobrała {count} modów o numerze wersji starszym niż twój. Zostały odłożone na bok, niczego nie zastąpiono. Co chcesz zrobić?",
+      "other": "Gra pobrała {count} modów o numerze wersji starszym niż twój. Zostały odłożone na bok, niczego nie zastąpiono. Co chcesz zrobić?"
+    },
+    "versions": "Twoja wersja: {mine} · wersja pobrana przez grę: {game}",
+    "keep": "Zachowaj moją wersję ({version})",
+    "use": "Użyj wersji z gry ({version})",
+    "use_tip": "Wersja z gry zajmuje miejsce twojej w jej folderze modów; twoja zostaje odłożona do „Old versions”. Wszystkie zestawy się dostosowują.",
+    "help": "Często jest to mod, który zmodyfikowałeś: ModHub nie porównuje numerów wersji, proponuje swój oryginał. W obu przypadkach nic nie jest usuwane: plik, którego nie zachowasz, zostaje w folderze „Recovered” lub „Old versions”, obok twoich zestawów.",
+    "later": "Później",
+    "gone": "Tego pliku nie ma już w folderze „Recovered”: niczego nie zmieniono.",
+    "failed": "Nie udało się umieścić wersji z gry dla {name} ({detail}). Twoja wersja się nie zmieniła."
+  },
+  "stop": {
+    "running": "Najpierw zamknij {game}: jej ustawienie musi zostać przywrócone przy zamkniętej grze.",
+    "folders_failed": "Nie udało się usunąć folderów zestawów.",
+    "closed": "FS Passion jest zamknięty. Gra ma z powrotem swoje oryginalne ustawienie.",
+    "export_first": "Zanim przejdziesz dalej, wyeksportuj konfigurację: odzyskasz swoje zestawy, jeśli wrócisz do FS Passion.",
+    "intro": "FS Passion przywróci oryginalne ustawienie gry, a następnie usunie foldery zestawów (zawierają tylko dowiązania):",
+    "no_version": "Żadna wersja gry nie jest skonfigurowana: nie ma czego przywracać.",
+    "mods_safe": "Twoje foldery modów nigdy nie są naruszane, podobnie jak „Old versions” i „Recovered”, które zawierają odłożone mody.",
+    "admin_flag": "Ustawienie „Uruchom ten program jako administrator” włączone przez FS Passion zostanie usunięte.",
+    "understand": "Rozumiem: gra nie będzie już wczytywać zestawów FS Passion.",
+    "plan": {
+      "restore": "Gra znowu wczytuje swój oryginalny folder: {dir}",
+      "deactivate": "Własny folder modów zostaje wyłączony: gra wraca do swojego zwykłego folderu „mods”.",
+      "missing": "Nie znaleziono gameSettings.xml: nie ma czego przywracać.",
+      "none": "Ustawienie gry jest już oryginalne.",
+      "folders": {
+        "one": "Usunięto {count} folder zestawu",
+        "few": "Usunięto {count} foldery zestawów",
+        "many": "Usunięto {count} folderów zestawów",
+        "other": "Usunięto {count} folderów zestawów"
+      },
+      "kept": {
+        "one": "„{name}” zostaje zachowany ({count} plik).",
+        "few": "„{name}” zostaje zachowany ({count} pliki).",
+        "many": "„{name}” zostaje zachowany ({count} plików).",
+        "other": "„{name}” zostaje zachowany ({count} plików)."
+      }
+    },
+    "options": {
+      "title": "Usuń także:",
+      "parties": "zestawy i wspólne mody (parties.json)",
+      "caches": "pamięć podręczną (przekonwertowane ikony, katalog DLC)",
+      "settings": "ustawienia FS Passion",
+      "logs": "dzienniki",
+      "langs": "własne języki"
+    },
+    "done": {
+      "title": "FS Passion nie jest już używany",
+      "text": "Gotowe. Gra ma z powrotem swoje oryginalne ustawienie.",
+      "partial": "Gotowe, z wyjątkiem co najmniej jednej wersji: zobacz poniżej. Szczegóły są w dzienniku.",
+      "version": {
+        "zero": "przywrócono oryginalne ustawienie",
+        "one": "przywrócono oryginalne ustawienie, usunięto {count} folder zestawu",
+        "few": "przywrócono oryginalne ustawienie, usunięto {count} foldery zestawów",
+        "many": "przywrócono oryginalne ustawienie, usunięto {count} folderów zestawów",
+        "other": "przywrócono oryginalne ustawienie, usunięto {count} folderów zestawów"
+      },
+      "set_aside": {
+        "one": "{count} plik znaleziony w folderach zestawów odłożono do „Recovered”.",
+        "few": "{count} pliki znalezione w folderach zestawów odłożono do „Recovered”.",
+        "many": "{count} plików znalezionych w folderach zestawów odłożono do „Recovered”.",
+        "other": "{count} plików znalezionych w folderach zestawów odłożono do „Recovered”."
+      },
+      "close": "Zamknij FS Passion",
+      "uninstaller": "Następnie rozpocznij odinstalowywanie FS Passion",
+      "error": {
+        "override": "ustawienie gry NIE zostało przywrócone (nie udało się zmienić gameSettings.xml); foldery zestawów zostają zachowane",
+        "folders": "przywrócono oryginalne ustawienie, ale nie udało się usunąć folderów zestawów"
+      }
+    },
+    "stopped": "FS Passion nie jest już używany: zamknij go."
+  },
+  "tour": {
+    "button": "Wycieczka z przewodnikiem",
+    "title": "Wycieczka z przewodnikiem",
+    "count": "{n} / {total}",
+    "prev": "Wstecz",
+    "next": "Dalej",
+    "replay": "Powtórz",
+    "finish": "Zakończ",
+    "quit": "Opuść wycieczkę",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Masz ochotę na wycieczkę z przewodnikiem?",
+      "body": "Kliknij żarówkę: w minutę FS Passion pokaże ci najważniejsze elementy interfejsu. Żarówka zostaje na miejscu, więc możesz powtórzyć wycieczkę, kiedy zechcesz.",
+      "start": "Rozpocznij wycieczkę",
+      "later": "Później"
+    },
+    "versions": {
+      "caption": "Twoja wersja gry",
+      "body": "Najedź na to logo: pojawią się wersje Farming Simulator. Kliknij tę, którą chcesz zarządzać.\nNiezainstalowane wersje są wyszarzone. Każda wersja ma własne mody i własne zestawy.",
+      "picked": "Wybrana: pokazywane są jej mody i zestawy"
+    },
+    "parties": {
+      "caption": "Twoje zestawy: serce FS Passion",
+      "body": "Jedno kliknięcie przełącza z jednego zestawu na drugi: jego mapa i wszystkie jej zależności podążają za nim.\nPełny zestaw: wszystkie twoje mody, aby je aktualizować w grze.\nPusty zestaw: bez modów, aby przetestować oryginalną grę.",
+      "full_tip": "Wszystkie mody: aby wykonać aktualizacje modów w grze",
+      "empty_tip": "Bez modów: aby przetestować oryginalną grę"
+    },
+    "tools": {
+      "caption": "Tworzenie, duplikowanie, zmiana nazwy, usuwanie",
+      "body": "Akcje dla wybranego zestawu.\nWskazówka: przy mapie w „Wszystkie mody” przycisk „＋ Zestaw” tworzy zestaw z mapą i wszystkimi jej zależnościami, jednym kliknięciem."
+    },
+    "common": {
+      "caption": "Wspólne mody",
+      "body": "Pojazdy, maszyny i skrypty rozgrywki, które chcesz mieć we wszystkich swoich zestawach.\nSą domyślnie włączone; w razie potrzeby wyłącz je dla pojedynczego zestawu.",
+      "on": "Wspólne mody dołączone do tego zestawu",
+      "off": "Wyłączone tylko dla tego zestawu"
+    },
+    "apply": {
+      "caption": "Zastosuj",
+      "body": "Stosuje wybrany zestaw: to on zostanie wczytany przez grę przy następnym uruchomieniu.\nPrzycisk świeci się, dopóki wybrany zestaw nie jest zastosowany.",
+      "done": "Zastosowany: gra wczyta go przy następnym uruchomieniu"
+    },
+    "buttons": {
+      "caption": "Motyw, powiadomienia, ustawienia",
+      "body": "Jasny lub ciemny interfejs, historia wiadomości, ustawienia… I żarówka, aby powtórzyć tę wycieczkę, kiedy zechcesz.",
+      "theme": "Jasny lub ciemny interfejs"
+    },
+    "list1": {
+      "caption": "Wszystkie mody",
+      "body": "Cały twój folder modów, posortowany według kategorii: DLC, mapy, inne mody…\nMod zawsze tu zostaje, bez względu na to, co robisz na innych listach. Mody „Nieprzydzielone” nie są na żadnej liście: gra ich nie widzi.\n[Ctrl] + [F]: szukaj moda lub autora.",
+      "search_tip": "Szukaj: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Nowo pobrane mody",
+      "body": "Ten przycisk szuka w folderze Pobrane modów, które właśnie pobrałeś.\nFS Passion wykrywa wersję gry każdego z nich i za twoją zgodą umieszcza go we właściwym folderze modów.\nRobi to także przy uruchomieniu: zobacz Ustawienia → Aplikacja → Pobrane pliki.",
+      "found": "Każdy trafia do folderu modów swojej wersji gry"
+    },
+    "list2": {
+      "caption": "Mody zestawu",
+      "body": "Mody wybranego zestawu: jego mapa, jej zależności, jego własne mody.\nGra wczytuje je oprócz wspólnych modów."
+    },
+    "list3": {
+      "caption": "Wspólne mody",
+      "body": "Mody obecne we wszystkich twoich zestawach: ciągniki, maszyny, skrypty…\nPrzydziel je tu raz: każdy zestaw je otrzyma."
+    },
+    "select": {
+      "caption": "Zaznaczanie wielu",
+      "body": "[Ctrl] + kliknięcie: dodaj lub usuń mod z zaznaczenia.\n[Shift] + kliknięcie: zaznacz cały zakres.\n[Ctrl] + [A]: zaznacz wszystko na liście; [Esc]: wyczyść zaznaczenie.\nGdy tylko mod zostanie zaznaczony, na dole pojawia się pasek akcji."
+    },
+    "move": {
+      "caption": "Przeciągnij i upuść",
+      "body": "Do „Mody zestawu” lub „Wspólne mody”: to kopia, mod zostaje w „Wszystkie mody”.\nMiędzy tymi dwiema listami: to przeniesienie. Przytrzymaj [Ctrl] podczas upuszczania, aby skopiować.\nDo „Wszystkie mody” lub klawisz [Del]: mod zostaje usunięty z listy. Jego plik nigdy nie jest usuwany.",
+      "copy": "Kopiuj",
+      "move": "Przenieś · [Ctrl]: kopiuj",
+      "remove": "Usuń z listy · [Del]"
+    },
+    "keys": {
+      "caption": "Skróty klawiaturowe",
+      "body": "Aby działać szybciej:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Szukaj moda lub autora"
+        },
+        {
+          "k": "[Ctrl] + kliknięcie",
+          "d": "Dodaj lub usuń mod z zaznaczenia"
+        },
+        {
+          "k": "[Shift] + kliknięcie",
+          "d": "Zaznacz zakres modów"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Zaznacz wszystko na liście"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Wyczyść zaznaczenie lub anuluj przeciąganie"
+        },
+        {
+          "k": "[Ctrl] podczas upuszczania",
+          "d": "Kopiuj zamiast przenosić (między listami 2 i 3)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Usuń z listy 2 lub 3 (plik zostaje)"
+        },
+        {
+          "k": "[Enter] na mapie",
+          "d": "Utwórz zestaw z mapą i jej zależnościami"
+        },
+        {
+          "k": "[F2]",
+          "d": "Zmień nazwę moda"
+        },
+        {
+          "k": "[I]",
+          "d": "Przypnij kartę moda"
+        },
+        {
+          "k": "[Spacja]  [↑] [↓] [←] [→]",
+          "d": "Zaznaczaj i poruszaj się klawiaturą"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Zamknij bez wychodzenia",
+      "body": "Krzyżyk zamyka okno, ale FS Passion nadal działa w tle, w obszarze powiadomień obok zegara.\nAby je przywrócić: strzałka „^” na pasku zadań, a potem ikona FS. Aby naprawdę je zamknąć: „Zakończ” w prawym dolnym rogu albo prawy przycisk na ikonie.\nMożesz to zmienić w Ustawienia → Aplikacja → Okno.",
+      "tip_close": "Zamknij: FS Passion przechodzi do obszaru powiadomień",
+      "tip_more": "Pokaż ukryte ikony",
+      "tip_icon": "Kliknięcie: FS Passion wraca · Prawy przycisk: Zakończ"
+    },
+    "end": {
+      "caption": "Teraz twoja kolej!",
+      "body": "Powtórz tę wycieczkę, kiedy zechcesz, za pomocą żarówki albo w Ustawienia → Pomoc."
+    },
+    "demo": {
+      "parties": [
+        "Zielona Dolina — Hodowla",
+        "Wzgórza — Uprawy",
+        "Pola ryżowe Południa"
+      ],
+      "party_sub": {
+        "one": "Mapa + {count} mod",
+        "few": "Mapa + {count} mody",
+        "many": "Mapa + {count} modów",
+        "other": "Mapa + {count} modów"
+      },
+      "mods": [
+        "Sześciocylindrowy ciągnik",
+        "Kombajn",
+        "Siewnik 6 m",
+        "Przyczepa rolnicza",
+        "Pakiet maszyn",
+        "Skrypt pogodowy"
+      ]
+    }
+  }
+}

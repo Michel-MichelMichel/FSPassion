@@ -1,0 +1,22 @@
+{
+  "_comment": "Informations de l'application. Les adresses à null sont encore à fournir : les boutons correspondants restent inactifs. Seules ces adresses peuvent être ouvertes par l'interface (core.open_link), chacune en https sur le domaine prévu (config.WEB_LINK_HOSTS).",
+  "name": "FS Passion",
+  "author": "MichelMichel",
+  "license": "GPLv3",
+  "github_url": "https://github.com/Michel-MichelMichel/FSPassion",
+  "donations": {
+    "buymeacoffee": "https://buymeacoffee.com/michel.michelmichel",
+    "stripe": "https://donate.stripe.com/3cI00k2szgLvcx80Xdgfu00"
+  },
+  "dev_port": 8765,
+  "demo_pack": {
+    "_comment": "Pack de démonstration (14.2), publié dans les Releases GitHub : adresse https et empreinte SHA-256 à renseigner à la publication. En développement, FSPassion-data\\demo\\FSPassion-demo.zip (et son .sha256) est utilisé.",
+    "url": null,
+    "sha256": null,
+    "size": null
+  },
+  "remote_data": {
+    "_comment": "Dépôt public de données (7.6) : catalogue des DLC (dlc/dlc_catalog.json) et icônes (dlc/icons_dlc_fsXX/). Lu au plus une fois par jour, seulement si l'accès Internet est autorisé. Adresse en https sur raw.githubusercontent.com uniquement (dlcremote.base_url). null = désactivé.",
+    "base_url": "https://raw.githubusercontent.com/Michel-MichelMichel/FSPassion-data/main/"
+  }
+}

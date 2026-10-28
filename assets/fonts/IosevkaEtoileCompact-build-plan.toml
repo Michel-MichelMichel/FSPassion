@@ -1,0 +1,46 @@
+# Plan privé : Iosevka Etoile Compact, sous-ensemble pour FS Passion (26 langues)
+
+[buildPlans.IosevkaEtoileCompact]
+family = "Iosevka Etoile Compact"
+spacing = "quasi-proportional"
+serifs = "slab"
+noCvSs = true
+noLigation = true
+exportGlyphNames = false
+webfontFormats = ['woff2']
+
+# Graisse : 400 uniquement
+[buildPlans.IosevkaEtoileCompact.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+# Largeur de base : 500 / 1000 em
+[buildPlans.IosevkaEtoileCompact.widths.Compact]
+shape = 500
+menu = 5
+css = "normal"
+
+# Inclinaison : droite uniquement
+[buildPlans.IosevkaEtoileCompact.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+# Glyphes conservés : ASCII, Latin-1, Latin étendu A/B (CS, PL, HU, RO, TR, FI, SV, DA, NB, VI...),
+# Latin étendu additionnel (vietnamien), diacritiques combinants, cyrillique (RU, UK),
+# ponctuation générale, symboles monétaires, ™ et flèches de base
+[buildPlans.IosevkaEtoileCompact.subset.include]
+ranges = [
+  [32, 126],     # U+0020-007E  ASCII
+  [160, 255],    # U+00A0-00FF  Latin-1
+  [256, 591],    # U+0100-024F  Latin étendu A et B
+  [768, 879],    # U+0300-036F  Diacritiques combinants
+  [1024, 1279],  # U+0400-04FF  Cyrillique
+  [7680, 7935],  # U+1E00-1EFF  Latin étendu additionnel (vietnamien)
+  [8192, 8303],  # U+2000-206F  Ponctuation générale
+  [8352, 8399],  # U+20A0-20CF  Symboles monétaires
+  [8482, 8482],  # U+2122       ™
+  [8592, 8595],  # U+2190-2193  Flèches ← ↑ → ↓
+]

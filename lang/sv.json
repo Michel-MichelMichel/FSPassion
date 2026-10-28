@@ -1,0 +1,1382 @@
+{
+  "_meta": {
+    "code": "sv",
+    "name": "Svenska",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion är stängt",
+    "closed_help": "Du kan stänga den här fliken. Starta FS Passion igen för att fortsätta."
+  },
+  "common": {
+    "close": "Stäng",
+    "cancel": "Avbryt",
+    "ok": "OK",
+    "copy": "Kopiera",
+    "copied": "Kopierat till urklipp",
+    "soon": "Kommer i version {version}",
+    "soon_action": "{action}: kommer i version {version}"
+  },
+  "window": {
+    "minimize": "Minimera",
+    "maximize": "Maximera",
+    "restore": "Återställ",
+    "close": "Stäng FS Passion"
+  },
+  "header": {
+    "settings": "Inställningar",
+    "version": "Spelversion: {name}",
+    "current_party": "Aktuell uppsättning",
+    "create": "Skapa en uppsättning",
+    "duplicate": "Duplicera uppsättningen",
+    "rename": "Byt namn på uppsättningen",
+    "delete": "Ta bort uppsättningen",
+    "common_mods": "Gemensamma moddar",
+    "common_mods_tip": "Ta med de gemensamma moddarna i den här uppsättningen",
+    "apply": "Tillämpa",
+    "apply_tip": "Låt spelet läsa in den här uppsättningen",
+    "apply_done_tip": "Den här uppsättningen är tillämpad och aktuell: det är den spelet läser in",
+    "theme_light": "Ljust gränssnitt",
+    "theme_dark": "Mörkt gränssnitt"
+  },
+  "versions": {
+    "coming": "Snart",
+    "ready": "Konfigurerad",
+    "installed": "Installerad",
+    "not_installed": "Inte installerad",
+    "absent_help": "Installerad någon annanstans? Inställningar → Spel och sökvägar"
+  },
+  "party": {
+    "full": "Full uppsättning",
+    "empty": "Tom uppsättning",
+    "other": "Egen mapp",
+    "unsupported": "Inga uppsättningar",
+    "unknown": "Okänd",
+    "none_yet": "Inga uppsättningar än. Skapa en med ＋, eller med ”＋ Uppsättning” på en karta.",
+    "full_count": {
+      "one": "Alla moddar ({count})",
+      "other": "Alla moddar ({count})"
+    },
+    "empty_sub": "Inga moddar, för att testa grundspelet",
+    "applied_tag": "tillämpad",
+    "mods_count": {
+      "zero": "Inga moddar",
+      "one": "{count} modd",
+      "other": "{count} moddar"
+    },
+    "full_tip": "Perfekt för att uppdatera moddar i spelet"
+  },
+  "status": {
+    "running": "{game} körs",
+    "other_folder": "Spelet läser in sina moddar från en annan mapp:",
+    "applied": "Tillämpad uppsättning: {name}",
+    "other_folder_path": "Spelet läser in en annan mapp: {path}",
+    "stale": "Uppsättningen har ändrats sedan den senast tillämpades"
+  },
+  "path": {
+    "empty": "",
+    "found": "Hittad",
+    "not_found": "Den här mappen finns inte",
+    "not_game_exe": "Den här filen är inte en programfil för {game}",
+    "no_gamesettings": "gameSettings.xml hittades inte: starta spelet en gång och kom sedan tillbaka",
+    "not_ntfs": "Den här enheten är inte NTFS: uppsättningar är inte möjliga",
+    "onedrive": "Den här mappen ligger i OneDrive: rekommenderas inte",
+    "storage_overlap": "Den här mappen innehåller huvudmappen för moddar (eller dess FSPassion-mapp), eller ligger i den: välj en annan mapp",
+    "storage_duplicate": "Den här mappen används redan av den andra lagringsmappen, eller innehåller den",
+    "storage_same_disk": "Hittad · samma enhet som huvudmappen: inga särskilda behörigheter behövs",
+    "storage_other_disk": "Hittad · annan enhet: symboliska länkar"
+  },
+  "list1": {
+    "title": "Alla moddar",
+    "search": "Sök efter en modd eller en skapare",
+    "search_clear": "Rensa sökningen",
+    "cat_unclassified": "Osorterade",
+    "cat_dlc": "DLC",
+    "cat_maps": "Kartor",
+    "cat_others": "Andra moddar",
+    "cat_by_author": "Efter skaparens namn",
+    "dlc_note": "Läses in av spelet i alla uppsättningar",
+    "selected": "markerade",
+    "active": "aktiva",
+    "all": "totalt",
+    "scanning": "Läser moddar: {done} av {total}",
+    "icons_pending": {
+      "one": "Förbereder ikoner: {count} kvar",
+      "other": "Förbereder ikoner: {count} kvar"
+    },
+    "anomalies": {
+      "one": "{count} problem: visa detaljer",
+      "other": "{count} problem: visa detaljer"
+    },
+    "find_new": "Sök efter nya moddar i hämtade filer",
+    "open_settings": "Öppna inställningarna",
+    "not_configured": "{game} är inte konfigurerat än",
+    "not_configured_help": "Ange dess moddmapp i inställningarna, eller låt FS Passion hitta installationen.",
+    "reading": "Läser moddar…",
+    "no_match": "Ingen modd matchar ”{query}”",
+    "empty": "Den här moddmappen är tom",
+    "empty_help": "Moddar (.zip) och uppackade moddar (mappar med en modDesc.xml) visas här.",
+    "unclassified_note": "Spelet ser dem inte förrän de är sorterade",
+    "plus_party": "Uppsättning",
+    "plus_party_tip": "Skapa en uppsättning med den här kartan och dess beroenden (Enter)",
+    "mark_party": "I den aktuella uppsättningen",
+    "mark_common": "Bland de gemensamma moddarna",
+    "info_tip": "Fäst moddens detaljer (tangenten I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Moddmappen hittades inte",
+      "unexpected": "Det gick inte att läsa moddarna: {error}"
+    }
+  },
+  "mod": {
+    "map": "Karta",
+    "unpacked": "Uppackad modd",
+    "multiplayer": "Flerspelarläge",
+    "version": "Version",
+    "author": "Skapare",
+    "game_version": "Spel",
+    "gv_unknown": "Okänd spelversion",
+    "size": "Storlek",
+    "kind": "Format",
+    "kind_dir": "Mapp (uppackad)",
+    "kind_zip": ".zip-arkiv",
+    "parties": "Finns i listor",
+    "parties_none": "Inga",
+    "storage": "Lagring",
+    "dependencies": {
+      "one": "{count} beroende",
+      "other": "{count} beroenden"
+    },
+    "more": {
+      "one": "och {count} till",
+      "other": "och {count} till"
+    },
+    "no_dependencies": "Inga angivna beroenden",
+    "unpacked_tip": "Uppackad modd: den uppdateras inte av ModHub och kan inte användas i flerspelarläge. FS Passion skriver aldrig i den.",
+    "gv_conflict": "Namnprefixet och descVersion pekar på två olika versioner: prefixet används.",
+    "unpin": "Stäng (Esc)",
+    "optional": {
+      "one": "{count} valfri modd",
+      "other": "{count} valfria moddar"
+    },
+    "searchmods_note": "Äldre spelversion (taggen SearchMods): sparfilen läses in även om en nödvändig modd saknas; spelet meddelar det efteråt.",
+    "links_hint": "Klicka på ”i” för att fästa de här detaljerna och öppna länkarna.",
+    "links_old": "Länkar angivna av moddens skapare, ofta gamla: sidan finns kanske inte längre.",
+    "link_open": "Öppna i webbläsaren",
+    "link_failed": "Det gick inte att öppna länken."
+  },
+  "dep": {
+    "present": "finns",
+    "absent": "saknas",
+    "dlc_owned": "DLC ägs",
+    "dlc_missing": "DLC ägs inte"
+  },
+  "dlc": {
+    "free": "Gratis DLC",
+    "paid": "DLC",
+    "info": "Spelet läser alltid in installerade DLC:er, i alla uppsättningar."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} kB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} stöder inte uppsättningar",
+    "missing": "Finns inte i moddmapparna",
+    "missing_tip": "{name} finns inte längre i dina moddmappar. Om skaparen har bytt namn på den, använd ”Ersätt med…”.",
+    "replace": "Ersätt med…"
+  },
+  "list2": {
+    "title": "Uppsättningens moddar",
+    "full": {
+      "one": "Full uppsättning: alla moddar ({count})",
+      "other": "Full uppsättning: alla moddar ({count})"
+    },
+    "full_help": "Spelet läser in hela moddmappen, som före FS Passion.",
+    "empty_party": "Tom uppsättning: inga moddar",
+    "empty_help": "För att testa grundspelet, utan några moddar.",
+    "no_mods": "Inga moddar i den här uppsättningen",
+    "no_mods_help": "Dra moddar från ”Alla moddar”, eller markera dem och använd åtgärdsfältet."
+  },
+  "list3": {
+    "title": "Gemensamma moddar",
+    "empty": "Inga gemensamma moddar än",
+    "empty_help": "Gemensamma moddar finns i alla uppsättningar: traktorer, redskap, skript…",
+    "not_included": "Ingår inte i den här uppsättningen"
+  },
+  "footer": {
+    "github_tip": "Projektets GitHub-sida",
+    "github_soon": "Projektets GitHub-adress läggs till snart",
+    "running": "Spelet körs",
+    "launch": "Starta spelet",
+    "launch_unconfigured": "Ange programfilen för {game} i inställningarna",
+    "launch_tip": "Starta spelet med den tillämpade uppsättningen",
+    "quit": "Avsluta"
+  },
+  "launch": {
+    "started": "Startar {game}…",
+    "failed": "Det gick inte att starta {game}. Kontrollera programfilen och startsättet i inställningarna.",
+    "no_exe": "Programfilen för {game} hittades inte: ange den i inställningarna.",
+    "already_running": "{game} körs redan.",
+    "apply_title": "Tillämpa ”{name}”?",
+    "apply_text": "Uppsättningen ”{name}” är inte tillämpad, eller har ändrats sedan dess. Vill du tillämpa uppsättningen {name} och sedan starta {game}?",
+    "apply_and_launch": "Tillämpa och starta",
+    "without_apply": "Starta utan att tillämpa"
+  },
+  "backup": {
+    "created": "Ursprunglig säkerhetskopia av gameSettings.xml skapad för {game}",
+    "exported": "Konfigurationen exporterad: {file}",
+    "demo_active": "Lämna demoläget först: det använder andra mappar än dina.",
+    "unreadable": "Den här filen kan inte läsas: {path}",
+    "too_big": "Den här filen är för stor för att vara en export från FS Passion: {path}",
+    "not_export": "Den här filen är inte en export från FS Passion: {path}",
+    "too_new": "Den här filen kommer från en nyare version av FS Passion ({version}). Uppdatera FS Passion för att importera den.",
+    "write_failed": "Det gick inte att spara filen: {path}",
+    "expired": "Importen har gått ut: välj filen igen.",
+    "running": "Stäng {game} innan du importerar: spelets uppsättningar kommer att ändras.",
+    "import": {
+      "title": "Importera en konfiguration",
+      "from": "Export från {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} uppsättning",
+        "other": "{count} uppsättningar"
+      },
+      "common": {
+        "one": "{count} gemensam modd",
+        "other": "{count} gemensamma moddar"
+      },
+      "no_parties": "Den här filen innehåller ingen uppsättning: bara inställningarna importeras.",
+      "keep": "Behåll dina nuvarande sökvägar (rekommenderas)",
+      "keep_help": "Spel-, modd- och hämtningsmapparna på den här datorn ändras inte. Bara uppsättningar, gemensamma moddar och neutrala inställningar (språk, tema, alternativ) importeras.",
+      "replace_help": "Filens sökvägar ersätter den här datorns: välj detta bara om filen kommer från den här datorn, med samma enheter.",
+      "paths_differ": "Moddmapparna i den här filen är inte den här datorns.",
+      "warning": "De nuvarande uppsättningarna för versionerna ovan ersätts. Det nuvarande läget säkerhetskopieras automatiskt först. Inget tillämpas: uppsättningarnas mappar byggs upp igen vid nästa ”Tillämpa”.",
+      "ok": "Importera"
+    },
+    "result": {
+      "title": "Konfigurationen importerad",
+      "done": "Importen är klar.",
+      "parties": {
+        "one": "{count} uppsättning importerad",
+        "other": "{count} uppsättningar importerade"
+      },
+      "skipped": "inte importerad (spelversionen är inte konfigurerad på den här datorn)",
+      "fallback": "Spelet läste in en uppsättning som inte längre finns: nu läser det in den fulla uppsättningen.",
+      "apply": "Moddar som saknas på den här datorn visas som saknade moddar i uppsättningarna. Klicka på ”Tillämpa” så att spelet läser in en importerad uppsättning.",
+      "backup": "Läget före importen sparat i %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Inställningar",
+    "game": {
+      "title": "Spel och sökvägar"
+    },
+    "look": {
+      "title": "Utseende"
+    },
+    "app": {
+      "title": "Program"
+    },
+    "help": {
+      "title": "Hjälp och om"
+    },
+    "paths": {
+      "versions": "Spelversioner",
+      "game_exe": "Spelets programfil",
+      "user_dir": "Spelmappen i Dokument",
+      "mods_dir": "Huvudmapp för moddar",
+      "mods_dirs": "Moddmappar",
+      "browse": "Bläddra…",
+      "fixed_fs2011": "Moddmappen för FS2011 kan inte flyttas.",
+      "add_storage": "Lägg till en moddmapp på en annan enhet",
+      "derived": "Härledda sökvägar",
+      "not_applicable": "Gäller inte den här versionen",
+      "d_game_dir": "Spelmapp",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (spelmapp)",
+      "d_dlc_user": "DLC (Dokument)",
+      "detect": "Hitta installationen",
+      "detect_all": "Hitta alla versioner",
+      "detect_all_help": "Letar efter installationerna av alla versioner och fyller i deras tomma fält.",
+      "detect_one": "Hitta den här versionen",
+      "detect_one_help": "Ändrar bara versionen som är vald ovan. De andra versionerna lämnas som de är.",
+      "detect_help": "Fält som du har anpassat ändras aldrig.",
+      "detect_found": "Hittade installationer: {list}",
+      "detect_none": "Ingen installation hittades. Ange sökvägarna med ”Bläddra…”.",
+      "launch_method": "Spelets startsätt",
+      "launch_auto": "Automatiskt",
+      "launch_platform": "Plattform",
+      "launch_exe": "Programfil",
+      "launch_help": "Automatiskt väljer rätt metod (Steam, Epic Games, Microsoft Store, Xbox eller programfil). De två andra är reservlösningar.",
+      "minimize_on_launch": "Minimera FS Passion när spelet startar",
+      "args_title": "Startparametrar",
+      "args_show": "Visa startparametrar",
+      "args_hide": "Dölj startparametrar",
+      "args_skip": "Hoppa över introvideon",
+      "args_skip_info": "Hoppar över introvideon och startskärmarna.",
+      "args_cheats": "Utvecklarkonsol",
+      "args_cheats_info": "Aktiverar spelets utvecklarkonsol. Ställer också in <controls> i game.xml, bredvid gameSettings.xml.",
+      "args_game_xml_absent": "game.xml hittades inte: konsolen aktiveras först efter att spelet har startats en gång.",
+      "args_game_xml_error": "Det gick inte att ändra game.xml: utvecklarkonsolen förblir avaktiverad.",
+      "args_help_command": "FS Passion lägger till dem i startkommandot för {game}.",
+      "args_help_steam": "{game} startas av Steam. Steam avvisar parametrar från ett annat program (det skulle be om bekräftelse vid varje start), så FS Passion startar spelet utan dem. Skriv in dem en gång i Steam, se nedan.",
+      "args_help_epic": "{game} startas av Epic Games, som inte tar emot parametrar från ett annat program: skriv in dem en gång i Epic Games Launcher, se nedan.",
+      "args_help_unsupported": "{game} är installerat från Microsoft Store eller Xbox.",
+      "args_store": "Microsoft Store och Xbox-appen tillåter inte startparametrar: bara utvecklarkonsolen (game.xml) kan aktiveras. För parametrar väljer du ”Programfil” som startsätt, om din installation tillåter det.",
+      "args_steam_where": "Var du skriver in dem i Steam",
+      "args_steam_steps": "Steam-biblioteket: högerklicka på {game} → Egenskaper…\nFliken Allmänt → fältet ”Startalternativ”\nKlistra in texten nedan och stäng fönstret",
+      "args_epic_where": "Var du skriver in dem i Epic Games Launcher",
+      "args_epic_steps": "Bibliotek: ”…” under {game} → Hantera\nMarkera ”Ytterligare kommandoradsargument”\nKlistra in texten nedan (äldre launchers: profilbild → Inställningar → {game})",
+      "args_none": "Ingen parameter markerad",
+      "args_copy_label": "Parametrar att kopiera",
+      "args_copy_help": "Behövs bara igen när du markerar eller avmarkerar en parameter.",
+      "console_on": "Konsolen aktiverad i game.xml",
+      "console_off": "Konsolen avaktiverad i game.xml",
+      "console_enable": "Aktivera i game.xml",
+      "console_done": "Utvecklarkonsolen aktiverad i game.xml för {game}",
+      "add_storage_help": "Upp till två extra mappar. Deras moddar visas och kommer med i uppsättningar som de andra; FS Passion skriver inget annat där.",
+      "extra_dir": "Extra moddmapp",
+      "extra_help": "Att ta bort den här mappen påverkar inte dess moddar: de visas bara inte längre.",
+      "remove_storage": "Ta bort den här mappen från listan (dess moddar påverkas inte)"
+    },
+    "downloads": {
+      "title": "Hämtade filer",
+      "folder": "Mappen Hämtade filer",
+      "help": "Mappen där din webbläsare sparar hämtade moddar.",
+      "scan_at_start": "Sök efter nya moddar vid start",
+      "scan_now": "Sök nu"
+    },
+    "language": {
+      "title": "Språk",
+      "personal": "eget",
+      "open_folder": "Öppna mappen för egna språk",
+      "personal_help": "Där kan du översätta FS Passion till ditt språk: en mall och en instruktion medföljer.",
+      "rejected": "Språkfiler som ignorerats (ogiltiga eller för stora): {list}"
+    },
+    "theme": {
+      "title": "Tema",
+      "help": "Håll pekaren över ett färgprov för att förhandsgranska temat, klicka för att välja det. Tvåfärgade teman har bara två färger; de andra använder de officiella färgerna från populära teman, var och en i en mörk och en ljus version. Knappen sol/måne i sidhuvudet växlar mellan dem.",
+      "contrast": "Kontrast {ratio}:1",
+      "loop": "Tema i slinga: byt tema varje minut",
+      "light_effects": "Ljuseffekter (glans, lysande konturer, neon)",
+      "reduce_motion": "Minska animationer",
+      "follows_windows": "Följer Windows-inställningen ”Animeringseffekter”.",
+      "follow_windows": "Följ Windows-inställningen",
+      "atelier": "Öppna temaverkstaden",
+      "mode_dark": "Mörkt",
+      "mode_light": "Ljust",
+      "group_duo": "Tvåfärgade"
+    },
+    "backup": {
+      "title": "Säkerhetskopia av konfigurationen",
+      "help": "Exportera dina uppsättningar, gemensamma moddar och inställningar till en fil, så att du får tillbaka dem efter en ominstallation eller på en annan dator. Inga moddar kopieras: bara deras namn.",
+      "export": "Exportera",
+      "import": "Importera"
+    },
+    "notice": {
+      "title": "Guide",
+      "open": "Öppna guiden",
+      "at_start": "Visa vid start",
+      "tour": "Rundtur i gränssnittet"
+    },
+    "anomalies": {
+      "title": "Problem",
+      "show": "Visa problem",
+      "reset": {
+        "zero": "Inga dolda problem",
+        "one": "Visa det dolda problemet igen",
+        "other": "Visa de {count} dolda problemen igen"
+      },
+      "reset_done": "Dolda problem visas igen"
+    },
+    "internet": {
+      "title": "Internetanslutning",
+      "allow": "Låt FS Passion hämta DLC-katalogen från GitHub",
+      "help": "DLC-katalogen (namn och ikoner) läses från GitHub högst en gång om dagen. Bara ikonerna för DLC:er som finns på den här datorn hämtas. Inga personuppgifter skickas.",
+      "catalog_off": "DLC-katalog: den som följer med FS Passion (anslutningen avstängd).",
+      "catalog_remote": "DLC-katalog från {date}, hämtad från GitHub.",
+      "catalog_embedded": "DLC-katalog från {date}, levererad med FS Passion.",
+      "check": "Kontrollera nu",
+      "checking": "Kontrollerar…",
+      "error_not_found": "Katalogen är inte publicerad på GitHub än.",
+      "error_unreachable": "Senaste kontrollen misslyckades (ingen anslutning?).",
+      "error_invalid": "Den publicerade katalogen kan inte läsas: katalogen i FS Passion används.",
+      "error_too_new": "Den publicerade katalogen kräver en nyare version av FS Passion.",
+      "error_too_big": "Den publicerade katalogen är för stor: den ignoreras."
+    },
+    "logs": {
+      "title": "Loggar och diagnostik",
+      "open_logs": "Öppna loggmappen",
+      "copy_diag": "Kopiera diagnostik",
+      "diag_copied": "Diagnostiken kopierad: klistra in den i din rapport"
+    },
+    "donate": {
+      "title": "Stöd projektet",
+      "text": "FS Passion är och förblir ett pålitligt, öppen källkod- och gratis projekt. Om du vill tacka skaparen tar en engångsgåva några sekunder, utan att du behöver skapa ett konto. Tack!",
+      "no_link": "Länk kommer"
+    },
+    "about": {
+      "title": "Om",
+      "version": "Version",
+      "author": "Skapare",
+      "license": "Licens",
+      "github_soon": "adress kommer",
+      "official": "Den enda officiella nedladdningslänken är projektets GitHub-sida.",
+      "unofficial": "FS Passion är ett oberoende projekt utan koppling till GIANTS Software. Farming Simulator är ett varumärke som tillhör GIANTS Software.",
+      "privacy": "FS Passion skickar inga data. Det hämtar bara, om du tillåter det, den offentliga DLC-listan från GitHub.",
+      "window_mode": "Fönsterteknik (utveckling)",
+      "window_native": "Inbyggd",
+      "window_script": "Beräknad",
+      "window_thin": "Tunn ram",
+      "window_restart": "Gäller nästa gång FS Passion startar",
+      "window_help": "Nuvarande teknik: {current}. Ändra den bara om det inte går att ändra storlek från kanterna."
+    },
+    "stop": {
+      "title": "Sluta använda FS Passion",
+      "show": "Visa detaljer",
+      "hide": "Dölj detaljer",
+      "text": "Ger spelet tillbaka dess ursprungliga inställning och tar bort uppsättningarnas mappar. Dina moddar rörs aldrig.",
+      "button": "Sluta använda FS Passion"
+    },
+    "window": {
+      "title": "Fönster",
+      "close_to_tray": "Stäng till meddelandefältet",
+      "close_to_tray_help": "Fönstrets stängningsknapp döljer FS Passion bredvid Windows-klockan. Klicka på ikonen för att ta fram det igen; ”Avsluta” (nere till höger eller i ikonens meny) stänger det på riktigt.",
+      "tray_off": "Meddelandefältet är bara tillgängligt i FS Passions fönster, i Windows.",
+      "focus_after_game": "Kom tillbaka till förgrunden när spelet stängs",
+      "focus_after_game_help": "När Farming Simulator stängs visas FS Passion igen, även om det var dolt i meddelandefältet."
+    },
+    "demo": {
+      "title": "Prova utan spelet",
+      "help": "Låtsasmoddar för att prova alla funktioner i FS Passion i en testmapp: dina riktiga sökvägar läggs åt sidan och återställs när du avslutar.",
+      "start": "Prova FS Passion utan spelet",
+      "active_help": "Demoläget är på: de här sökvägarna hör till testmappen. Dina riktiga sökvägar kommer tillbaka när du lämnar det."
+    }
+  },
+  "themes": {
+    "lime": "Lime",
+    "jade": "Jade",
+    "cuivre": "Koppar",
+    "blue": "Vit"
+  },
+  "anomalies": {
+    "title": "Hittade problem",
+    "none": "Inga problem. Allt är i ordning.",
+    "intro": "De här objekten i din moddmapp kan spelet inte använda som de är. Inget allvarligt, och FS Passion låter dem vara.",
+    "new": "ny",
+    "hide_type": "Visa inte längre den här typen av problem",
+    "hide_folder": "Visa inte längre den här mappen",
+    "rename": "Byt namn…",
+    "others": {
+      "one": "Andra ignorerade filer ({count})",
+      "other": "Andra ignorerade filer ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar- eller .7z-arkiv",
+        "other": ".rar- eller .7z-arkiv ({count})"
+      },
+      "explain": "Spelet läser bara .zip-filer. Packa upp arkivet och packa vid behov modden som .zip igen."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip utan modDesc.xml",
+        "other": ".zip-filer utan modDesc.xml ({count})"
+      },
+      "explain": "Ofta ett paket med flera moddar som ska packas upp.",
+      "nested": "modDesc.xml hittades i en undermapp ({path}): modden har packats fel."
+    },
+    "A3": {
+      "title": {
+        "one": "Oläsligt arkiv",
+        "other": "Oläsliga arkiv ({count})"
+      },
+      "explain": "Skadat arkiv eller ogiltig modDesc.xml. Hämta modden igen.",
+      "zip": "Arkivet kan inte öppnas.",
+      "xml": "Filen modDesc.xml är ogiltig."
+    },
+    "A4": {
+      "title": {
+        "one": "Mapp utan modDesc.xml",
+        "other": "Mappar utan modDesc.xml ({count})"
+      },
+      "explain": "Utan en modDesc.xml i roten kan spelet inte använda den här mappen. FS Passion rör den aldrig."
+    },
+    "A5": {
+      "title": {
+        "one": "Namn som spelet avvisar",
+        "other": "Namn som spelet avvisar ({count})"
+      },
+      "explain": "Spelet godtar bara bokstäver utan accenter, siffror och ”_”.",
+      "suggestion": "Föreslaget namn: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Modd för en annan spelversion",
+        "other": "Moddar för en annan spelversion ({count})"
+      },
+      "explain": "Den här modden läses inte in av den här versionen av spelet.",
+      "detected": "Modd för {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Saknad modd",
+        "other": "Saknade moddar ({count})"
+      },
+      "explain": "En uppsättning hänvisar till den här modden, men den finns inte längre i moddmapparna.",
+      "in": "I: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Borttagen modd fortfarande länkad",
+        "other": "Borttagna moddar fortfarande länkade ({count})"
+      },
+      "explain": "Den här modden har tagits bort från moddmappen, men vissa uppsättningar innehåller den fortfarande.",
+      "copy": "En kopia finns fortfarande i: {list}",
+      "delete_title": "Ta bort den kvarvarande kopian?",
+      "delete_text": "Den sista kopian av ”{name}”, som fortfarande finns i uppsättningarnas mappar, flyttas till papperskorgen och modden tas bort från alla listor."
+    },
+    "A9": {
+      "title": {
+        "one": "Dubblerad modd",
+        "other": "Dubblerade moddar ({count})"
+      },
+      "explain": "Samma modd finns två gånger: i två lagringsmappar, eller som .zip och som mapp bredvid varandra. Spelet läser bara in en. FS Passion använder den i huvudmappen, och hellre arkivet än mappen.",
+      "zip_and_dir": "”{name}” finns både som .zip och som uppackad mapp: spelet läser bara in en, och ModHub kan inte uppdatera den. Behåll bara en form (ta bort den andra med ”Ta bort permanent”, eller flytta den ut ur moddmappen).",
+      "files": "Filer: {list}"
+    },
+    "game": "{game}",
+    "folder": "Moddmapp: {path}",
+    "show_in_folder": "Visa i Utforskaren",
+    "open_folder": "Öppna moddmappen i Utforskaren (modden finns inte längre där)"
+  },
+  "welcome": {
+    "subtitle": "Dina moddar, sparade en enda gång. Så många uppsättningar du vill.",
+    "language": "Välj ditt språk"
+  },
+  "notice": {
+    "title": "Så fungerar FS Passion",
+    "at_start": "Visa det här fönstret när programmet startar",
+    "understood": "Uppfattat",
+    "blocks": [
+      {
+        "key": "Först och främst: vi rekommenderar att du gör en säkerhetskopia av alla dina moddar på en annan enhet. Det är nödvändigt, som före varje åtgärd med viktiga filer."
+      },
+      {
+        "h": "Principen"
+      },
+      {
+        "p": "Med FS Passion skapar du enkelt och snabbt så många Farming Simulator-uppsättningar du vill, medan dina moddar ligger kvar i ett enda exemplar i sin ursprungliga mapp."
+      },
+      {
+        "p": "Byt från en uppsättning till en annan med 1 klick!"
+      },
+      {
+        "h": "Installation"
+      },
+      {
+        "p": "Din moddmapp kan ligga på vilken enhet som helst: FS Passion anpassar sig. Du behöver inte skapa, flytta eller byta namn på något för hand. Full enhet? Lägg till upp till två moddmappar på andra enheter (Inställningar → Spel och sökvägar): deras moddar kommer med i uppsättningar som de andra."
+      },
+      {
+        "h": "Första användningen"
+      },
+      {
+        "ul": [
+          "Skapa dina uppsättningar med den magiska knappen ”＋ Uppsättning” på kartorna: kartan och dess beroenden blir uppsättningen med ett klick.",
+          "Sortera sedan de andra moddarna bland de gemensamma moddarna, som finns i alla uppsättningar.",
+          "Klicka på ”Tillämpa”: spelet läser in den valda uppsättningen nästa gång det startar."
+        ]
+      },
+      {
+        "h": "Lägga till, byta namn på och ta bort moddar"
+      },
+      {
+        "ul": [
+          "Nya moddar: hämta dem som vanligt och klicka sedan på ”Sök efter nya moddar i hämtade filer” högst upp i listan. FS Passion lägger dem i moddmappen för rätt spelversion.",
+          "Ta hellre bort moddar i FS Passion (”Ta bort permanent” i åtgärdsfältet) än i Utforskaren: då tas de bort från listor och uppsättningar samtidigt och hamnar i papperskorgen.",
+          "Att byta namn på en modd (tangenten F2) kopplar loss den från ModHub: den får inga fler uppdateringar."
+        ]
+      },
+      {
+        "h": "Uppdateringar"
+      },
+      {
+        "p": "Du behöver inte göra något: uppdateringar som spelet hämtar tas om hand när det stängs, eller nästa gång FS Passion startar. Den gamla versionen läggs åt sidan i ”Old versions”. Om spelet hämtar ett äldre versionsnummer än ditt (ofta en modd som du själv har ändrat) frågar FS Passion vilken du vill behålla."
+      },
+      {
+        "h": "Behåll dina uppsättningar"
+      },
+      {
+        "p": "Inställningar → Program → ”Exportera” sparar dina uppsättningar, gemensamma moddar och inställningar i en fil. ”Importera” hämtar tillbaka dem efter en ominstallation eller på en annan dator."
+      },
+      {
+        "h": "För att sluta"
+      },
+      {
+        "p": "”Sluta använda FS Passion” (Inställningar → Program) ger spelet tillbaka dess ursprungliga inställning och tar bort uppsättningarnas mappar. Dina moddar rörs aldrig."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Temaverkstad",
+    "id": "Id",
+    "name": "Namn",
+    "dark": "Fönsterbakgrund",
+    "light": "Huvudfärg",
+    "mica": "Mica-sken",
+    "grain": "Korn",
+    "effect": "Effekt",
+    "effect_none": "Ingen",
+    "effect_metal": "Metallglans",
+    "intensity": "Intensitet",
+    "save": "Spara",
+    "copy": "Kopiera definitionen",
+    "new": "Ny",
+    "copied": "Definitionen kopierad",
+    "saved": "Temat sparat i ui/themes.json",
+    "contrast_low": "Kontrast {ratio}:1, under 4,5:1. Liten text använder {color}.",
+    "contrast_ok": "Kontrast {ratio}:1",
+    "mode": "Läge",
+    "mode_dark": "Mörkt",
+    "mode_light": "Ljust",
+    "text": "Text",
+    "multi": "Flera accentfärger (en per område)",
+    "accent_n": "Accent {n}",
+    "pair": "Tvillingtema (sol/måne)",
+    "pair_none": "Inget",
+    "gradient": "Tvåfärgad toning (rubriker, knapparna Tillämpa och Starta)",
+    "gradient_from": "Toning: början",
+    "gradient_to": "Toning: slut",
+    "style": "Stil",
+    "style_duo": "Tvåfärgad",
+    "style_palette": "Officiell palett",
+    "style_classic": "Beräknade slöjor",
+    "surface_1": "Fönsterbakgrund",
+    "surface_2": "Listor och fönster",
+    "surface_3": "Avsnitt",
+    "surface_4": "Underavsnitt",
+    "text_n": "Text {n}",
+    "neon": "Neon",
+    "neon_help": "Sken från rubriker, ikoner och konturer i varje områdes färg (0: ingen effekt). Stängs av med ”Ljuseffekter”."
+  },
+  "error": {
+    "bad_request": "Ogiltig begäran.",
+    "forbidden": "Åtkomst nekad.",
+    "not_found": "Objektet hittades inte.",
+    "unexpected": "Oväntat fel. Kopiera diagnostiken (Inställningar → Hjälp och om) och bifoga den till din rapport.",
+    "offline": "Kärnan i FS Passion svarar inte.",
+    "internal": "Åtgärden avvisades av säkerhetsskäl. Kopiera diagnostiken (Inställningar → Hjälp och om) och bifoga den till din rapport."
+  },
+  "detect": {
+    "busy": "En sökning pågår redan."
+  },
+  "parties": {
+    "not_configured": "Ange moddmappen för {game} i inställningarna för att skapa uppsättningar.",
+    "name_label": "Uppsättningens namn",
+    "name_empty": "Namnet får inte vara tomt.",
+    "name_too_long": "Högst {max} tecken.",
+    "name_taken": "Det finns redan en uppsättning som heter ”{name}”.",
+    "special_locked": "Den fulla uppsättningen och den tomma uppsättningen kan inte ändras, byta namn, dupliceras eller tas bort.",
+    "not_found": "Den här uppsättningen finns inte längre.",
+    "write_failed": "Det gick inte att spara uppsättningarna i {path}. Kontrollera att det går att skriva till den här enheten.",
+    "recovered": "Uppsättningsfilen för {game} kunde inte läsas: dess senaste säkerhetskopia ({backup}) har lästs in. Den skadade filen har lagts åt sidan.",
+    "lost": "Uppsättningsfilen för {game} kunde inte läsas och ingen säkerhetskopia kunde läsas in. Den skadade filen har lagts åt sidan, inget har tagits bort.",
+    "running_rename": "Stäng {game} innan du byter namn på den här uppsättningen: dess mapp kan inte ändras medan spelet körs.",
+    "running_delete": "Stäng {game} innan du tar bort den här uppsättningen: dess mapp kan inte ändras medan spelet körs.",
+    "map_not_found": "Kartan hittades inte: {name}",
+    "mod_not_found": "Modden hittades inte: {name}",
+    "create_title": "Ny uppsättning",
+    "create_help": "En tom uppsättning som innehåller de gemensamma moddarna. Lägg sedan till moddar från ”Alla moddar”.",
+    "create_ok": "Skapa",
+    "created": "Uppsättningen ”{name}” har skapats",
+    "duplicate_title": "Duplicera uppsättningen",
+    "duplicate_help": "Kopian behåller moddarna i ”{name}” och dess inställning ”Gemensamma moddar”.",
+    "copy_name": "{name} (kopia)",
+    "duplicate_ok": "Duplicera",
+    "duplicated": "Uppsättningen ”{name}” har skapats",
+    "rename_title": "Byt namn på uppsättningen",
+    "rename_ok": "Byt namn",
+    "renamed": "”{old}” har bytt namn till ”{name}”",
+    "delete_title": "Ta bort uppsättningen",
+    "delete_text": {
+      "zero": "Ta bort uppsättningen ”{name}”? Den innehåller inga moddar.",
+      "one": "Ta bort uppsättningen ”{name}”? Dess modd ligger kvar i din moddmapp: bara uppsättningen och dess mapp med länkar försvinner.",
+      "other": "Ta bort uppsättningen ”{name}”? Dess {count} moddar ligger kvar i din moddmapp: bara uppsättningen och dess mapp med länkar försvinner."
+    },
+    "delete_ok": "Ta bort",
+    "deleted": "Uppsättningen ”{name}” har tagits bort",
+    "deleted_applied": "Uppsättningen {name} har tagits bort. Spelet använder nu uppsättningen {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "modd markerad",
+      "other": "moddar markerade"
+    },
+    "add_party": "Lägg till i Uppsättningens moddar",
+    "add_common": "Lägg till i Gemensamma moddar",
+    "remove_party": "Ta bort från Uppsättningens moddar",
+    "remove_common": "Ta bort från Gemensamma moddar",
+    "rename": "Byt namn…",
+    "rename_help": "En enda modd, markerad i ”Alla moddar”.",
+    "delete": "Ta bort permanent…",
+    "close": "Stäng fältet och rensa markeringen (Esc)",
+    "added_party": {
+      "one": "{count} modd har lagts till i uppsättningen ”{name}”",
+      "other": "{count} moddar har lagts till i uppsättningen ”{name}”"
+    },
+    "added_common": {
+      "one": "{count} modd har lagts till bland de gemensamma moddarna",
+      "other": "{count} moddar har lagts till bland de gemensamma moddarna"
+    },
+    "moved_party": {
+      "one": "{count} modd har flyttats till uppsättningen ”{name}”",
+      "other": "{count} moddar har flyttats till uppsättningen ”{name}”"
+    },
+    "moved_common": {
+      "one": "{count} modd har flyttats till de gemensamma moddarna",
+      "other": "{count} moddar har flyttats till de gemensamma moddarna"
+    },
+    "removed_party": {
+      "one": "{count} modd har tagits bort från uppsättningen ”{name}”",
+      "other": "{count} moddar har tagits bort från uppsättningen ”{name}”"
+    },
+    "removed_common": {
+      "one": "{count} modd har tagits bort från de gemensamma moddarna",
+      "other": "{count} moddar har tagits bort från de gemensamma moddarna"
+    },
+    "nothing_party": "De här moddarna finns redan i uppsättningen ”{name}”",
+    "nothing_common": "De här moddarna finns redan bland de gemensamma moddarna"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Lägga till dess beroende också?",
+      "other": "Lägga till dess {count} beroenden också?"
+    },
+    "ask_yes": {
+      "one": "Lägg till beroendet också",
+      "other": "Lägg till de {count} beroendena också"
+    },
+    "ask_no": "Bara de valda moddarna",
+    "missing_warn": {
+      "one": "Ett beroende saknas bland dina moddar: {list}",
+      "other": "{count} beroenden saknas bland dina moddar: {list}"
+    },
+    "needed_by_map": "Kartan ”{name}” behöver:",
+    "needed_by_mod": "Modden ”{name}” behöver:",
+    "needed": "Beroenden:",
+    "where_common": "de gemensamma moddarna",
+    "where_party": "uppsättningen ”{name}”",
+    "ask_intro": {
+      "one": "Den här modden är ett beroende för en modd du har valt, men den finns inte i {where}.",
+      "other": "De här {count} moddarna är beroenden för moddarna du har valt, men de finns inte i {where}."
+    },
+    "missing_for": "{list} (krävs av ”{name}”)",
+    "optional_title": {
+      "one": "Lägga till en valfri modd också?",
+      "other": "Lägga till valfria moddar också?"
+    },
+    "optional_intro": {
+      "one": "En valfri modd som du redan har:",
+      "other": "{count} valfria moddar som du redan har:"
+    },
+    "optional_for": "valfri för ”{name}”",
+    "optional_note": "Valfria: spelet behöver dem inte. Bara de du markerar läggs till i {where}.",
+    "optional_continue": "Fortsätt"
+  },
+  "plus": {
+    "title": "Ny uppsättning utifrån en karta",
+    "deps_title": {
+      "one": "{count} beroende",
+      "other": "{count} beroenden"
+    },
+    "dlc_title": "Nödvändiga DLC:er",
+    "dlc_note": "För kännedom: spelet läser alltid in installerade DLC:er. De läggs inte till i uppsättningen.",
+    "missing_note": "Saknade beroenden läggs inte till: hämta dem och lägg sedan till dem i uppsättningen.",
+    "no_deps": "Inga angivna beroenden: uppsättningen kommer bara att innehålla kartan.",
+    "summary": {
+      "zero": "Uppsättningen kommer att innehålla bara kartan, plus de gemensamma moddarna.",
+      "one": "Uppsättningen kommer att innehålla kartan och dess beroende, plus de gemensamma moddarna.",
+      "other": "Uppsättningen kommer att innehålla kartan och dess {count} beroenden, plus de gemensamma moddarna."
+    },
+    "create": "Skapa uppsättningen",
+    "created": {
+      "one": "Uppsättningen ”{name}” har skapats: {count} modd",
+      "other": "Uppsättningen ”{name}” har skapats: {count} moddar"
+    },
+    "created_missing": {
+      "one": "Beroende att hämta: {list}",
+      "other": "{count} beroenden att hämta: {list}"
+    },
+    "optional_title": {
+      "one": "{count} valfri modd",
+      "other": "{count} valfria moddar"
+    },
+    "optional_note": "Valfria: spelet behöver dem inte. Markera de som ska läggas till i uppsättningen.",
+    "optional_none_present": "Ingen av de här valfria moddarna finns bland dina moddar. Spelet behöver dem inte."
+  },
+  "replace": {
+    "title": "Ersätt med…",
+    "help": "{name} finns inte längre i dina moddmappar. Om skaparen har bytt namn på den, välj dess nya version: den tar dess plats i alla listor.",
+    "done": {
+      "one": "{old} ersatt med {name} i {count} lista",
+      "other": "{old} ersatt med {name} i {count} listor"
+    }
+  },
+  "notifications": {
+    "title": "Aviseringar",
+    "unread": {
+      "one": "Aviseringar: 1 nytt meddelande",
+      "other": "Aviseringar: {count} nya meddelanden"
+    },
+    "clear": "Rensa alla",
+    "none": "Inga aviseringar än. Meddelanden som visas nere till höger sparas här tills FS Passion stängs."
+  },
+  "tray": {
+    "show": "Visa FS Passion",
+    "quit": "Avsluta FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion fortsätter att köras här. Klicka på ikonen för att ta fram det igen; ”Avsluta” stänger det på riktigt."
+  },
+  "apply": {
+    "unsupported": "Den här versionen av spelet kan inte byta sin moddmapp.",
+    "not_ready": "Ange först spelets moddmapp och mappen Dokument i inställningarna.",
+    "running": "Stäng {game} innan du tillämpar en uppsättning.",
+    "no_gamesettings": "gameSettings.xml för {game} hittades inte: starta spelet en gång, eller kontrollera mappen Dokument i inställningarna.",
+    "busy": "En annan åtgärd på uppsättningar pågår. Försök igen om en stund.",
+    "library_busy": "Moddarna läses fortfarande. Försök igen om en stund.",
+    "done": {
+      "zero": "Uppsättningen {name} tillämpad: inga moddar.",
+      "one": "Uppsättningen {name} tillämpad: {count} modd.",
+      "other": "Uppsättningen {name} tillämpad: {count} moddar."
+    },
+    "missing": {
+      "one": "1 modd från uppsättningen saknas i din moddmapp: {list}",
+      "other": "{count} moddar från uppsättningen saknas i din moddmapp: {list}"
+    },
+    "updated": {
+      "one": "1 uppdatering som spelet lämnat kvar har flyttats till din moddmapp.",
+      "other": "{count} uppdateringar som spelet lämnat kvar har flyttats till din moddmapp."
+    },
+    "added": {
+      "one": "1 modd som spelet lämnat kvar har lagts i din moddmapp och i uppsättningen {name}.",
+      "other": "{count} moddar som spelet lämnat kvar har lagts i din moddmapp och i uppsättningen {name}."
+    },
+    "set_aside": {
+      "one": "1 fil har lagts åt sidan, inget har tagits bort (mappen ”Recovered” eller ”Old versions”, bredvid dina uppsättningar).",
+      "other": "{count} filer har lagts åt sidan, inget har tagits bort (mapparna ”Recovered” och ”Old versions”, bredvid dina uppsättningar)."
+    },
+    "empty_party": "Uppsättningen {name} innehåller inga moddar: spelet startar utan moddar.",
+    "not_same_disk": "Det går inte att länka {name}: uppsättningarnas mapp måste ligga på samma enhet som moddmappen.",
+    "no_hardlinks": "Den här enheten stöder inte hårda länkar: moddmappen måste ligga på en NTFS-enhet. Inget har ändrats.",
+    "too_many_links": "Det går inte att länka {name}: den här filen har nått Windows gräns för länkar.",
+    "access_denied": "Åtkomst nekad när {name} skulle länkas. Inget har ändrats.",
+    "link_failed": "Länken för {name} kunde inte skapas ({detail}). Inget har ändrats.",
+    "junction_failed": "Kopplingspunkten för den uppackade modden {name} kunde inte skapas ({detail}). Inget har ändrats.",
+    "folder_busy": "Mappen {path} används av ett annat program (Utforskaren?). Stäng det och försök igen. Inget har ändrats.",
+    "folder_exists": "Det finns redan en mapp {path}: välj ett annat namn.",
+    "failed": "Uppsättningen kunde inte tillämpas ({detail}). Inget har ändrats.",
+    "recovered_finished": "En åtgärd på uppsättningarna för {game} hade avbrutits (strömavbrott?). Den har slutförts.",
+    "recovered_cancelled": "En åtgärd på uppsättningarna för {game} hade avbrutits (strömavbrott?). Den har avbrutits: inget har ändrats.",
+    "symlink_denied": "Windows nekar den symboliska länken till {name}: Utvecklarläge i Windows eller administratörsbehörighet krävs.",
+    "blocked": {
+      "one": "1 modd från en annan enhet kunde inte komma med i uppsättningen (ingen behörighet för symboliska länkar): {list}. Se Inställningar → Spel och sökvägar.",
+      "other": "{count} moddar från en annan enhet kunde inte komma med i uppsättningen (ingen behörighet för symboliska länkar): {list}. Se Inställningar → Spel och sökvägar."
+    }
+  },
+  "override": {
+    "title": "Spelet läser in en okänd mapp",
+    "text": "{game} läser in sina moddar från en mapp som FS Passion inte känner till (ändrad för hand eller av ett annat verktyg):",
+    "help": "Använd den här mappen som din moddmapp, tillämpa din uppsättning igen eller låt spelet vara som det är.",
+    "adopt": "Använd som moddmapp",
+    "reapply": "Tillämpa {name} igen",
+    "ignore": "Gör ingenting",
+    "adopted": "Ny moddmapp: {path}",
+    "read_failed": "gameSettings.xml kan inte läsas ({path}). Inget har ändrats.",
+    "backup_failed": "Säkerhetskopian av gameSettings.xml kunde inte skrivas ({path}). Inget har ändrats.",
+    "write_failed": "gameSettings.xml kunde inte skrivas ({path}). Är spelet öppet?",
+    "check_failed": "Kontrollen av gameSettings.xml misslyckades: originalfilen har återställts.",
+    "no_root": "gameSettings.xml ser inte ut som en inställningsfil för spelet. Inget har ändrats."
+  },
+  "demo": {
+    "title": "Demoläge",
+    "pill": "Demo",
+    "quit": "Avsluta",
+    "banner": "Demoläge: de här moddarna är på låtsas. Dina riktiga mappar och spelet rörs inte.",
+    "badge": "Låtsasmodd (demo)",
+    "installing": "Förbereder demomoddarna…",
+    "started": "Demoläge: prova allt, inget rör spelet.",
+    "stopped": "Demoläget har stängts: allt har raderats.",
+    "stop_title": "Lämna demoläget",
+    "stop_text": "Låtsasmoddarna, testuppsättningarna och hela demomappen raderas. Dina riktiga inställningar kommer tillbaka som de var.",
+    "stop_ok": "Avsluta och radera allt",
+    "offer_title": "Prova FS Passion utan spelet?",
+    "offer_text": "Inget Farming Simulator hittades på den här datorn. Du kan prova FS Passion med låtsasmoddar: skapa uppsättningar, sortera, tillämpa… allt fungerar, i en testmapp, aldrig i ett spel.",
+    "offer_local": "Demopaketet finns redan på den här datorn (cirka 2 MB).",
+    "offer_download": "Demopaketet (cirka 2 MB) hämtas från projektets GitHub-sida och kontrolleras sedan.",
+    "offer_yes": "Prova",
+    "offer_no": "Senare",
+    "unavailable": "Demopaketet är inte tillgängligt än.",
+    "bad_pack": "Demopaketet är skadat eller stämmer inte med originalet: det har avvisats.",
+    "download_failed": "Demopaketet kunde inte hämtas ({detail}).",
+    "install_failed": "Demopaketet kunde inte installeras ({detail}).",
+    "remove_failed": "Demomappen kunde inte raderas helt: {path}",
+    "no_detect": "Sökningen efter spelet är avstängd i demoläget."
+  },
+  "delete": {
+    "title": {
+      "one": "Ta bort den här modden permanent?",
+      "other": "Ta bort de här {count} moddarna permanent?"
+    },
+    "intro": {
+      "one": "Den här modden tas bort från alla listor och alla uppsättningars mappar, och raderas sedan från din moddmapp:",
+      "other": "De här {count} moddarna tas bort från alla listor och alla uppsättningars mappar, och raderas sedan från din moddmapp:"
+    },
+    "irreversible": "Det går inte att ångra.",
+    "recycle": "Filerna hamnar i Windows papperskorg: där kan du fortfarande återställa dem.",
+    "no_recycle": "Den här enheten har ingen papperskorg: borttagningen blir permanent.",
+    "understand": {
+      "one": "Jag förstår att den här filen kommer att tas bort",
+      "other": "Jag förstår att de här filerna kommer att tas bort"
+    },
+    "ok": "Ta bort permanent",
+    "done_recycled": {
+      "one": "1 modd har flyttats till papperskorgen",
+      "other": "{count} moddar har flyttats till papperskorgen"
+    },
+    "done_deleted": {
+      "one": "1 modd har tagits bort permanent",
+      "other": "{count} moddar har tagits bort permanent"
+    },
+    "failed": {
+      "one": "1 modd kunde inte tas bort: {list}. Den har tagits bort från listorna; stäng programmet som använder den och försök igen.",
+      "other": "{count} moddar kunde inte tas bort: {list}. De har tagits bort från listorna; stäng programmet som använder dem och försök igen."
+    },
+    "nothing": "Inga moddar att ta bort.",
+    "running": "Stäng {game} innan du tar bort moddar."
+  },
+  "rename": {
+    "title": "Byt namn på modden",
+    "label": "Nytt namn",
+    "prefix_tip": "Versionsprefixet behålls",
+    "final": "Filnamn: {file}",
+    "rule": "Bara bokstäver utan accenter, siffror och ”_”: spelet avvisar andra tecken.",
+    "where": "I: {list}. Listorna ändras bara med ditt godkännande: FS Passion frågar då om de ska följa det nya namnet.",
+    "warning_modhub": "Om den kommer från ModHub får den här modden inga fler uppdateringar: det är just meningen med att byta namn på den.",
+    "warning_save": "I spelet letar sparfiler som använder den här modden efter den under dess gamla namn.",
+    "warning_save_map": "Det här är en karta: i spelet letar sparfiler som skapats på den efter den under dess gamla namn och kan inte längre läsas in.",
+    "warning_deps": {
+      "one": "1 modd anger den som beroende ({list}): den letar efter den under dess gamla namn.",
+      "other": "{count} moddar anger den som beroende ({list}): de letar efter den under dess gamla namn."
+    },
+    "ok": "Byt namn",
+    "done": {
+      "zero": "{old} har bytt namn till {name}",
+      "one": "{old} har bytt namn till {name}, i 1 uppsättning",
+      "other": "{old} har bytt namn till {name}, i {count} uppsättningar"
+    },
+    "renamed": "{old} har bytt namn till {name}",
+    "lists_title": "Uppdatera listorna?",
+    "lists_ask": "”{old}” finns fortfarande i: {list}. Ska de följa det nya namnet ”{name}”?",
+    "lists_yes": "Uppdatera listorna",
+    "lists_no": "Gör ingenting",
+    "lists_done": "Listorna har uppdaterats ({count}).",
+    "empty": "Ange ett namn.",
+    "too_long": "Namnet är för långt: högst {max} tecken.",
+    "invalid": "Bara bokstäver utan accenter, siffror och ”_”, inga mellanslag.",
+    "same": "Det är redan dess namn.",
+    "taken": "”{name}” finns redan i dina moddmappar.",
+    "not_found": "Modden {name} hittas inte i dina moddmappar.",
+    "failed": "Det gick inte att byta namn på {name}: den kanske är öppen i ett annat program.",
+    "running": "Stäng {game} innan du byter namn på en modd.",
+    "no_list": "ingen lista"
+  },
+  "downloads": {
+    "title": "Nya moddar hittade",
+    "intro": "I {folder}. Integrera flyttar varje markerad fil till moddmappen för dess spelversion.",
+    "count": {
+      "one": "1 modd hittad",
+      "other": "{count} moddar hittade"
+    },
+    "col_mod": "Modd",
+    "col_version": "Spelversion",
+    "col_state": "Status",
+    "col_dest": "Mål",
+    "state": {
+      "new": "Ny",
+      "update": "Uppdatering ({from} → {to})",
+      "older": "Äldre än den installerade versionen ({to} < {from})",
+      "present": "Finns redan",
+      "conflict": "En uppackad modd har redan det här namnet",
+      "unconfigured": "Versionen är inte konfigurerad: konfigurera den i inställningarna"
+    },
+    "older_confirm": "Markerad: den ersätter den installerade versionen (som läggs åt sidan).",
+    "postpone": "{game} körs: integreras när spelet stängs",
+    "not_configured": "{game} (inte konfigurerat)",
+    "suffix": "Integreras som {name} (webbläsarens tillägg borttaget)",
+    "dest_none": "Inget (osorterad)",
+    "dest_unclassified": "Osorterade",
+    "dest_party": "Uppsättningen ”{name}”",
+    "ignore": "Ignorera de här filerna",
+    "ignored": {
+      "one": "1 fil ignorerad: den föreslås inte längre",
+      "other": "{count} filer ignorerade: de föreslås inte längre"
+    },
+    "later": "Senare",
+    "integrate": {
+      "zero": "Integrera",
+      "one": "Integrera 1 modd",
+      "other": "Integrera {count} moddar"
+    },
+    "none": "Inga nya moddar i {folder}.",
+    "done": {
+      "one": "1 modd integrerad: {list}",
+      "other": "{count} moddar integrerade: {list}"
+    },
+    "in_version": {
+      "one": "1 i {game}",
+      "other": "{count} i {game}"
+    },
+    "skipped": {
+      "one": "1 fil lämnad på plats (finns redan eller är äldre)",
+      "other": "{count} filer lämnade på plats (finns redan eller är äldre)"
+    },
+    "postponed": {
+      "one": "1 modd integreras när {game} stängs",
+      "other": "{count} moddar integreras när {game} stängs"
+    },
+    "postponed_done": {
+      "one": "1 hämtning integrerad efter att {game} stängdes",
+      "other": "{count} hämtningar integrerade efter att {game} stängdes"
+    },
+    "failed": "{file} kunde inte integreras. Filen ligger kvar bland dina hämtade filer.",
+    "gone": "{file} finns inte längre i mappen Hämtade filer.",
+    "unconfigured": "{file}: den valda spelversionen är inte konfigurerad.",
+    "no_folder": "Mappen Hämtade filer hittades inte: ange den i Inställningar → Program → Hämtade filer.",
+    "demo": "Hämtade filer integreras inte under demon.",
+    "done_in": {
+      "one": "1 modd integrerad i {game}",
+      "other": "{count} moddar integrerade i {game}"
+    },
+    "col_storage": "Lagring"
+  },
+  "move": {
+    "exists": "{file}: det finns redan en fil med samma namn.",
+    "no_space": "{file}: inte tillräckligt med ledigt utrymme på moddmappens enhet.",
+    "check_failed": "{file}: den kontrollerade kopian stämmer inte med originalet. Inget har ersatts.",
+    "failed": "{file} kunde inte flyttas: den kanske är öppen i ett annat program."
+  },
+  "missing": {
+    "title": "Moddar som saknas i din moddmapp",
+    "intro": {
+      "one": "Den här modden saknas i din moddmapp, fast den finns i uppsättningar. Vad vill du göra?",
+      "other": "De här {count} moddarna saknas i din moddmapp, fast de finns i uppsättningar. Vad vill du göra?"
+    },
+    "in": "I: {list}",
+    "copy": "Borttagen från moddmappen, men en kopia finns fortfarande via dess länkar i: {list}",
+    "no_copy": "Ingen kopia: hämta den igen, eller ersätt den med en modd som skaparen har bytt namn på",
+    "restore": "Återställ till Mods",
+    "restore_tip": "Kopian som fortfarande finns i uppsättningen blir modden i din moddmapp igen (inget kopieras).",
+    "remove": "Ta bort från listorna",
+    "remove_all": "Ta bort alla från listorna",
+    "later": "Senare",
+    "notice": "Ta hellre bort en modd i FS Passion (knappen ”Ta bort permanent” i åtgärdsfältet): då tas den bort från listor och uppsättningar samtidigt.",
+    "removed": {
+      "one": "1 modd har tagits bort från alla listor",
+      "other": "{count} moddar har tagits bort från alla listor"
+    },
+    "restored": {
+      "one": "1 modd har återställts till din moddmapp",
+      "other": "{count} moddar har återställts till din moddmapp"
+    },
+    "deleted": {
+      "one": "1 modd har raderats och tagits bort från listorna",
+      "other": "{count} moddar har raderats och tagits bort från listorna"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 uppdatering omhändertagen: {list}",
+      "other": "{count} uppdateringar omhändertagna: {list}"
+    },
+    "added": {
+      "one": "1 modd som spelet hämtat har lagts till i uppsättningen ”{name}”",
+      "other": "{count} moddar som spelet hämtat har lagts till i uppsättningen ”{name}”"
+    },
+    "unclassified": {
+      "one": "1 modd som spelet hämtat har lagts i din moddmapp (osorterad)",
+      "other": "{count} moddar som spelet hämtat har lagts i din moddmapp (osorterade)"
+    },
+    "errors": {
+      "one": "1 mapp kunde inte ställas i ordning: {list}. Se loggen.",
+      "other": "{count} mappar kunde inte ställas i ordning: {list}. Se loggen."
+    },
+    "reshaped": {
+      "one": "1 modd uppackad eller packad igen: uppsättningen följer dess nya form ({list})",
+      "other": "{count} moddar uppackade eller packade igen: uppsättningarna följer deras nya form ({list})"
+    }
+  },
+  "rights": {
+    "title": "Behörighet för moddar på andra enheter",
+    "intro": "För att en modd som ligger på en annan enhet ska komma med i en uppsättning skapar FS Passion en symbolisk länk. Windows tillåter det bara med Utvecklarläge eller administratörsbehörighet, och inget av dem är aktivt.",
+    "standard": "Ditt Windows-konto är ett standardkonto: med administratörsbehörighet skulle FS Passion köras under ett annat konto, med andra mappar och inställningar. Utvecklarläge är rätt val.",
+    "admin_title": "Kör alltid FS Passion som administratör",
+    "admin_text": "FS Passion markerar ”Kör det här programmet som administratör” åt dig (Egenskaper → Kompatibilitet), bara för ditt konto, och startar sedan om. Följder:",
+    "uac": "Windows ber om bekräftelse varje gång FS Passion startar.",
+    "game_normal": "Spelet och dess plattform startas fortfarande med vanlig behörighet, via Utforskaren i Windows. Startparametrar går då som vanligt via plattformen (Steam, Epic Games).",
+    "no_drop": "Windows blockerar att filer dras från Utforskaren till FS Passion. Ingen betydelse i dag: FS Passion använder inte den rörelsen.",
+    "dev_title": "Eller: slå på Utvecklarläge i Windows",
+    "dev_text": "Inställningar i Windows → System → För utvecklare → ”Utvecklarläge”. Inga andra följder för FS Passion. Kom sedan tillbaka hit och klicka på ”Kontrollera igen”.",
+    "without": "Utan den här behörigheten förblir de extra mapparna sparade: deras moddar visas, men kommer inte med i någon uppsättning.",
+    "later": "Senare",
+    "dev_mode": "Öppna Utvecklarläge",
+    "admin": "Kör alltid som administratör",
+    "missing": "Windows nekar symboliska länkar: moddar på andra enheter visas, men kommer inte med i någon uppsättning.",
+    "get": "Skaffa behörighet…",
+    "check": "Kontrollera igen",
+    "ok": "Symboliska länkar tillåts (FS Passion körs som administratör): moddar på andra enheter kommer med i uppsättningar.",
+    "ok_dev": "Symboliska länkar tillåts (Utvecklarläge i Windows): moddar på andra enheter kommer med i uppsättningar.",
+    "unknown": "Behörigheten för symboliska länkar har inte kontrollerats än.",
+    "admin_on": "FS Passion är inställt på att alltid köras som administratör.",
+    "admin_off": "Sluta köra som administratör",
+    "restarting": "FS Passion startar om som administratör. Bekräfta frågan från Windows.",
+    "now_ok": "Symboliska länkar tillåts: tillämpa dina uppsättningar igen så att moddar på andra enheter kan komma med.",
+    "still_missing": "Windows nekar fortfarande symboliska länkar.",
+    "flag_failed": "Inställningen ”Kör som administratör” kunde inte ändras.",
+    "ok_plain": "Symboliska länkar tillåts: moddar på andra enheter kommer med i uppsättningar.",
+    "admin_once_title": "Starta om FS Passion som administratör",
+    "admin_once_text": "FS Passion startar om som administratör bara den här gången; det måste göras om vid varje start. Utvecklarläge undviker det. Följder:",
+    "admin_once": "Starta om som administratör"
+  },
+  "older": {
+    "title": "Äldre version hämtad av spelet",
+    "intro": {
+      "one": "Spelet har hämtat en modd vars versionsnummer är äldre än ditt. Den har lagts åt sidan, inget har ersatts. Vad vill du göra?",
+      "other": "Spelet har hämtat {count} moddar vars versionsnummer är äldre än dina. De har lagts åt sidan, inget har ersatts. Vad vill du göra?"
+    },
+    "versions": "Din version: {mine} · version hämtad av spelet: {game}",
+    "keep": "Behåll min version ({version})",
+    "use": "Använd spelets version ({version})",
+    "use_tip": "Spelets version tar din versions plats i moddmappen; din läggs åt sidan i ”Old versions”. Alla uppsättningar följer med.",
+    "help": "Ofta är det en modd som du själv har ändrat: ModHub jämför inte versionsnummer, utan erbjuder sitt original. I båda fallen tas inget bort: filen som du inte behåller ligger kvar i mappen ”Recovered” eller ”Old versions”, bredvid dina uppsättningar.",
+    "later": "Senare",
+    "gone": "Den här filen finns inte längre i mappen ”Recovered”: inget har ändrats.",
+    "failed": "Spelets version av {name} kunde inte sättas på plats ({detail}). Din version har inte ändrats."
+  },
+  "stop": {
+    "running": "Stäng {game} först: dess inställning måste återställas medan spelet är stängt.",
+    "folders_failed": "Uppsättningarnas mappar kunde inte tas bort.",
+    "closed": "FS Passion är stängt. Spelet har fått tillbaka sin ursprungliga inställning.",
+    "export_first": "Exportera din konfiguration innan du fortsätter: då får du tillbaka dina uppsättningar om du återvänder till FS Passion.",
+    "intro": "FS Passion ger spelet tillbaka dess ursprungliga inställning och tar sedan bort uppsättningarnas mappar (de innehåller bara länkar):",
+    "no_version": "Ingen spelversion är konfigurerad: det finns inget att återställa.",
+    "mods_safe": "Dina moddmappar rörs aldrig, inte heller ”Old versions” och ”Recovered”, som innehåller moddar som lagts åt sidan.",
+    "admin_flag": "Inställningen ”Kör det här programmet som administratör” som FS Passion har satt tas bort.",
+    "understand": "Jag förstår: spelet kommer inte längre att läsa in uppsättningar från FS Passion.",
+    "plan": {
+      "restore": "Spelet läser in sin ursprungliga mapp igen: {dir}",
+      "deactivate": "Den egna moddmappen stängs av: spelet går tillbaka till sin vanliga mapp ”mods”.",
+      "missing": "gameSettings.xml hittades inte: inget att återställa.",
+      "none": "Spelets inställning är redan den ursprungliga.",
+      "folders": {
+        "one": "{count} uppsättningsmapp borttagen",
+        "other": "{count} uppsättningsmappar borttagna"
+      },
+      "kept": {
+        "one": "”{name}” behålls ({count} fil).",
+        "other": "”{name}” behålls ({count} filer)."
+      }
+    },
+    "options": {
+      "title": "Ta också bort:",
+      "parties": "uppsättningar och gemensamma moddar (parties.json)",
+      "caches": "cacheminnen (konverterade ikoner, DLC-katalog)",
+      "settings": "inställningar för FS Passion",
+      "logs": "loggar",
+      "langs": "egna språk"
+    },
+    "done": {
+      "title": "FS Passion används inte längre",
+      "text": "Klart. Spelet har fått tillbaka sin ursprungliga inställning.",
+      "partial": "Klart, utom för minst en version: se nedan. Loggen har detaljerna.",
+      "version": {
+        "zero": "ursprunglig inställning återställd",
+        "one": "ursprunglig inställning återställd, {count} uppsättningsmapp borttagen",
+        "other": "ursprunglig inställning återställd, {count} uppsättningsmappar borttagna"
+      },
+      "set_aside": {
+        "one": "{count} fil som hittades i uppsättningarnas mappar har lagts åt sidan i ”Recovered”.",
+        "other": "{count} filer som hittades i uppsättningarnas mappar har lagts åt sidan i ”Recovered”."
+      },
+      "close": "Stäng FS Passion",
+      "uninstaller": "Starta sedan avinstallationen av FS Passion",
+      "error": {
+        "override": "spelets inställning har INTE återställts (gameSettings.xml kunde inte ändras); uppsättningarnas mappar behålls",
+        "folders": "ursprunglig inställning återställd, men uppsättningarnas mappar kunde inte tas bort"
+      }
+    },
+    "stopped": "FS Passion används inte längre: stäng det."
+  },
+  "tour": {
+    "button": "Rundtur",
+    "title": "Rundtur",
+    "count": "{n} / {total}",
+    "prev": "Föregående",
+    "next": "Nästa",
+    "replay": "Igen",
+    "finish": "Klar",
+    "quit": "Lämna rundturen",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Skift",
+    "hint": {
+      "caption": "Sugen på en rundtur?",
+      "body": "Klicka på glödlampan: på en minut visar FS Passion dig det viktigaste i gränssnittet. Den finns kvar, så att du kan göra rundturen igen när du vill.",
+      "start": "Starta rundturen",
+      "later": "Senare"
+    },
+    "versions": {
+      "caption": "Din spelversion",
+      "body": "Håll pekaren över den här logotypen: versionerna av Farming Simulator visas. Klicka på den du vill hantera.\nVersioner som inte är installerade är nedtonade. Varje version har sina egna moddar och sina egna uppsättningar.",
+      "picked": "Vald: dess moddar och uppsättningar visas"
+    },
+    "parties": {
+      "caption": "Dina uppsättningar: hjärtat i FS Passion",
+      "body": "Ett klick byter från en uppsättning till en annan: dess karta och alla beroenden följer med.\nFull uppsättning: alla dina moddar, för att uppdatera dem i spelet.\nTom uppsättning: inga moddar, för att testa originalspelet.",
+      "full_tip": "Alla moddar: för att köra modduppdateringar i spelet",
+      "empty_tip": "Inga moddar: för att testa originalspelet"
+    },
+    "tools": {
+      "caption": "Skapa, duplicera, byt namn, ta bort",
+      "body": "Åtgärder för den valda uppsättningen.\nTips: på en karta i ”Alla moddar” skapar knappen ”＋ Uppsättning” uppsättningen med kartan och alla dess beroenden, med ett klick."
+    },
+    "common": {
+      "caption": "Gemensamma moddar",
+      "body": "Fordonen, redskapen och spelskripten som du vill ha i alla dina uppsättningar.\nDe är påslagna som standard; stäng av dem för en enskild uppsättning vid behov.",
+      "on": "Gemensamma moddar ingår i den här uppsättningen",
+      "off": "Avstängda bara för den här uppsättningen"
+    },
+    "apply": {
+      "caption": "Tillämpa",
+      "body": "Tillämpar den valda uppsättningen: det är den som spelet läser in nästa gång det startar.\nKnappen lyser så länge den valda uppsättningen inte är tillämpad.",
+      "done": "Tillämpad: spelet läser in den vid nästa start"
+    },
+    "buttons": {
+      "caption": "Tema, aviseringar, inställningar",
+      "body": "Ljust eller mörkt gränssnitt, meddelandehistorik, inställningar… Och glödlampan, för att göra den här rundturen igen när du vill.",
+      "theme": "Ljust eller mörkt gränssnitt"
+    },
+    "list1": {
+      "caption": "Alla moddar",
+      "body": "Hela din moddmapp, sorterad efter kategori: DLC, kartor, andra moddar…\nEn modd ligger alltid kvar här, vad du än gör i de andra listorna. ”Osorterade” moddar finns inte i någon lista: spelet ser dem inte.\n[Ctrl] + [F]: sök efter en modd eller en skapare.",
+      "search_tip": "Sök: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Nyss hämtade moddar",
+      "body": "Den här knappen letar i mappen Hämtade filer efter moddarna som du just har hämtat.\nFS Passion känner igen spelversionen för var och en och lägger den, med ditt godkännande, i rätt moddmapp.\nDet sker också vid start: se Inställningar → Program → Hämtade filer.",
+      "found": "Var och en hamnar i moddmappen för sin spelversion"
+    },
+    "list2": {
+      "caption": "Uppsättningens moddar",
+      "body": "Moddarna i den valda uppsättningen: dess karta, beroenden och egna moddar.\nSpelet läser in dem utöver de gemensamma moddarna."
+    },
+    "list3": {
+      "caption": "Gemensamma moddar",
+      "body": "Moddarna som finns i alla dina uppsättningar: traktorer, redskap, skript…\nSortera dem här en gång: alla uppsättningar får dem."
+    },
+    "select": {
+      "caption": "Flerval",
+      "body": "[Ctrl] + klick: lägg till eller ta bort en modd ur markeringen.\n[Skift] + klick: markera ett helt intervall.\n[Ctrl] + [A]: markera allt i listan; [Esc]: rensa markeringen.\nSå snart en modd är markerad visas ett åtgärdsfält längst ned."
+    },
+    "move": {
+      "caption": "Dra och släpp",
+      "body": "Till ”Uppsättningens moddar” eller ”Gemensamma moddar”: det är en kopia, modden ligger kvar i ”Alla moddar”.\nMellan de här två listorna: det är en flytt. Håll ned [Ctrl] när du släpper för att kopiera.\nTill ”Alla moddar”, eller med tangenten [Delete]: modden tas bort från listan. Dess fil tas aldrig bort.",
+      "copy": "Kopiera",
+      "move": "Flytta · [Ctrl]: kopiera",
+      "remove": "Ta bort från listan · [Delete]"
+    },
+    "keys": {
+      "caption": "Kortkommandon",
+      "body": "För att gå snabbare:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Sök efter en modd eller en skapare"
+        },
+        {
+          "k": "[Ctrl] + klick",
+          "d": "Lägg till eller ta bort en modd ur markeringen"
+        },
+        {
+          "k": "[Skift] + klick",
+          "d": "Markera ett intervall av moddar"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Markera allt i listan"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Rensa markeringen eller avbryt en dragning"
+        },
+        {
+          "k": "[Ctrl] när du släpper",
+          "d": "Kopiera i stället för att flytta (mellan lista 2 och 3)"
+        },
+        {
+          "k": "[Delete]",
+          "d": "Ta bort från lista 2 eller 3 (filen ligger kvar)"
+        },
+        {
+          "k": "[Enter] på en karta",
+          "d": "Skapa en uppsättning med kartan och dess beroenden"
+        },
+        {
+          "k": "[F2]",
+          "d": "Byt namn på en modd"
+        },
+        {
+          "k": "[I]",
+          "d": "Fäst en modds kort"
+        },
+        {
+          "k": "[Blanksteg]  [↑] [↓] [←] [→]",
+          "d": "Markera och förflytta dig med tangentbordet"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Stäng utan att avsluta",
+      "body": "Krysset stänger fönstret, men FS Passion fortsätter att köras i bakgrunden, i meddelandefältet bredvid klockan.\nFör att ta fram det: pilen ”^” i aktivitetsfältet och sedan FS-ikonen. För att stänga det på riktigt: ”Avsluta” nere till höger, eller högerklicka på ikonen.\nDu kan ändra detta under Inställningar → Program → Fönster.",
+      "tip_close": "Stäng: FS Passion flyttar till meddelandefältet",
+      "tip_more": "Visa dolda ikoner",
+      "tip_icon": "Klick: FS Passion kommer tillbaka · Högerklick: Avsluta"
+    },
+    "end": {
+      "caption": "Nu är det din tur!",
+      "body": "Gör den här rundturen igen när du vill med glödlampan, eller under Inställningar → Hjälp och om."
+    },
+    "demo": {
+      "parties": [
+        "Gröna dalen — Djurhållning",
+        "Kullarna — Odling",
+        "Risfälten i söder"
+      ],
+      "party_sub": {
+        "one": "Karta + {count} modd",
+        "other": "Karta + {count} moddar"
+      },
+      "mods": [
+        "Sexcylindrig traktor",
+        "Skördetröska",
+        "6 m såmaskin",
+        "Lantbruksvagn",
+        "Redskapspaket",
+        "Väderskript"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1382 @@
+{
+  "_meta": {
+    "code": "de",
+    "name": "Deutsch",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion ist geschlossen",
+    "closed_help": "Du kannst diesen Tab schließen. Starte FS Passion erneut, um weiterzumachen."
+  },
+  "common": {
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "ok": "OK",
+    "copy": "Kopieren",
+    "copied": "In die Zwischenablage kopiert",
+    "soon": "Kommt in Version {version}",
+    "soon_action": "{action}: kommt in Version {version}"
+  },
+  "window": {
+    "minimize": "Minimieren",
+    "maximize": "Maximieren",
+    "restore": "Wiederherstellen",
+    "close": "FS Passion schließen"
+  },
+  "header": {
+    "settings": "Einstellungen",
+    "version": "Spielversion: {name}",
+    "current_party": "Aktuelles Setup",
+    "create": "Setup erstellen",
+    "duplicate": "Setup duplizieren",
+    "rename": "Setup umbenennen",
+    "delete": "Setup löschen",
+    "common_mods": "Gemeinsame Mods",
+    "common_mods_tip": "Gemeinsame Mods in dieses Setup aufnehmen",
+    "apply": "Anwenden",
+    "apply_tip": "Das Spiel dieses Setup laden lassen",
+    "apply_done_tip": "Dieses Setup ist angewendet und aktuell: Das Spiel lädt es",
+    "theme_light": "Helle Oberfläche",
+    "theme_dark": "Dunkle Oberfläche"
+  },
+  "versions": {
+    "coming": "Demnächst",
+    "ready": "Eingerichtet",
+    "installed": "Installiert",
+    "not_installed": "Nicht installiert",
+    "absent_help": "Woanders installiert? Einstellungen → Spiel und Pfade"
+  },
+  "party": {
+    "full": "Volles Setup",
+    "empty": "Leeres Setup",
+    "other": "Eigener Ordner",
+    "unsupported": "Keine Setups",
+    "unknown": "Unbekannt",
+    "none_yet": "Noch keine Setups. Erstelle eines mit ＋ oder mit „＋ Setup“ bei einer Map.",
+    "full_count": {
+      "one": "Alle Mods ({count})",
+      "other": "Alle Mods ({count})"
+    },
+    "empty_sub": "Keine Mods, um das Grundspiel zu testen",
+    "applied_tag": "angewendet",
+    "mods_count": {
+      "zero": "Keine Mods",
+      "one": "{count} Mod",
+      "other": "{count} Mods"
+    },
+    "full_tip": "Ideal, um Mods im Spiel zu aktualisieren"
+  },
+  "status": {
+    "running": "{game} läuft",
+    "other_folder": "Das Spiel lädt seine Mods aus einem anderen Ordner:",
+    "applied": "Angewendetes Setup: {name}",
+    "other_folder_path": "Das Spiel lädt einen anderen Ordner: {path}",
+    "stale": "Setup seit dem letzten Anwenden geändert"
+  },
+  "path": {
+    "empty": "",
+    "found": "Gefunden",
+    "not_found": "Dieser Ordner existiert nicht",
+    "not_game_exe": "Diese Datei ist keine ausführbare Datei von {game}",
+    "no_gamesettings": "gameSettings.xml nicht gefunden: Starte das Spiel einmal und komm dann zurück",
+    "not_ntfs": "Dieses Laufwerk ist nicht NTFS: Setups sind nicht möglich",
+    "onedrive": "Dieser Ordner liegt in OneDrive: nicht empfohlen",
+    "storage_overlap": "Dieser Ordner enthält den Haupt-Mod-Ordner (oder dessen Ordner FSPassion) oder liegt darin: Wähle einen anderen Ordner",
+    "storage_duplicate": "Dieser Ordner wird bereits vom anderen Speicherordner verwendet oder enthält ihn",
+    "storage_same_disk": "Gefunden · gleiches Laufwerk wie der Hauptordner: keine besonderen Rechte nötig",
+    "storage_other_disk": "Gefunden · anderes Laufwerk: symbolische Links"
+  },
+  "list1": {
+    "title": "Alle Mods",
+    "search": "Mod oder Autor suchen",
+    "search_clear": "Suche leeren",
+    "cat_unclassified": "Nicht einsortiert",
+    "cat_dlc": "DLC",
+    "cat_maps": "Maps",
+    "cat_others": "Andere Mods",
+    "cat_by_author": "Nach Autorenname",
+    "dlc_note": "Vom Spiel in jedem Setup geladen",
+    "selected": "ausgewählt",
+    "active": "aktiv",
+    "all": "insgesamt",
+    "scanning": "Mods werden gelesen: {done} von {total}",
+    "icons_pending": {
+      "one": "Symbole werden vorbereitet: noch {count}",
+      "other": "Symbole werden vorbereitet: noch {count}"
+    },
+    "anomalies": {
+      "one": "{count} Problem: Details anzeigen",
+      "other": "{count} Probleme: Details anzeigen"
+    },
+    "find_new": "In den Downloads nach neuen Mods suchen",
+    "open_settings": "Einstellungen öffnen",
+    "not_configured": "{game} ist noch nicht eingerichtet",
+    "not_configured_help": "Lege den Mod-Ordner in den Einstellungen fest oder lass FS Passion die Installation erkennen.",
+    "reading": "Mods werden gelesen…",
+    "no_match": "Kein Mod passt zu „{query}“",
+    "empty": "Dieser Mod-Ordner ist leer",
+    "empty_help": "Mods (.zip) und entpackte Mods (Ordner mit einer modDesc.xml) erscheinen hier.",
+    "unclassified_note": "Das Spiel sieht sie erst, wenn sie einsortiert sind",
+    "plus_party": "Setup",
+    "plus_party_tip": "Ein Setup mit dieser Map und ihren Abhängigkeiten erstellen (Eingabetaste)",
+    "mark_party": "Im aktuellen Setup",
+    "mark_common": "In den gemeinsamen Mods",
+    "info_tip": "Details des Mods anheften (Taste I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Mod-Ordner nicht gefunden",
+      "unexpected": "Lesen der Mods fehlgeschlagen: {error}"
+    }
+  },
+  "mod": {
+    "map": "Map",
+    "unpacked": "Entpackter Mod",
+    "multiplayer": "Mehrspieler",
+    "version": "Version",
+    "author": "Autor",
+    "game_version": "Spiel",
+    "gv_unknown": "Unbekannte Spielversion",
+    "size": "Größe",
+    "kind": "Format",
+    "kind_dir": "Ordner (entpackt)",
+    "kind_zip": ".zip-Archiv",
+    "parties": "In Listen",
+    "parties_none": "Keine",
+    "storage": "Speicherort",
+    "dependencies": {
+      "one": "{count} Abhängigkeit",
+      "other": "{count} Abhängigkeiten"
+    },
+    "more": {
+      "one": "und {count} weiterer",
+      "other": "und {count} weitere"
+    },
+    "no_dependencies": "Keine Abhängigkeiten angegeben",
+    "unpacked_tip": "Entpackter Mod: Er wird nicht vom ModHub aktualisiert und kann nicht im Mehrspielermodus verwendet werden. FS Passion schreibt nie hinein.",
+    "gv_conflict": "Das Namenspräfix und die descVersion weisen auf zwei verschiedene Versionen hin: Das Präfix wird verwendet.",
+    "unpin": "Schließen (Esc)",
+    "optional": {
+      "one": "{count} optionaler Mod",
+      "other": "{count} optionale Mods"
+    },
+    "searchmods_note": "Ältere Spielversion (Tag SearchMods): Der Spielstand lädt auch, wenn ein benötigter Mod fehlt; das Spiel meldet es danach.",
+    "links_hint": "Klicke auf „i“, um diese Details anzuheften und die Links zu öffnen.",
+    "links_old": "Vom Autor des Mods angegebene Links, oft alt: Die Seite existiert vielleicht nicht mehr.",
+    "link_open": "Im Browser öffnen",
+    "link_failed": "Der Link konnte nicht geöffnet werden."
+  },
+  "dep": {
+    "present": "vorhanden",
+    "absent": "fehlt",
+    "dlc_owned": "DLC vorhanden",
+    "dlc_missing": "DLC nicht vorhanden"
+  },
+  "dlc": {
+    "free": "Kostenloser DLC",
+    "paid": "DLC",
+    "info": "Das Spiel lädt installierte DLCs immer, in jedem Setup."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} unterstützt keine Setups",
+    "missing": "Nicht in den Mod-Ordnern",
+    "missing_tip": "{name} ist nicht mehr in deinen Mod-Ordnern. Wenn der Autor ihn umbenannt hat, nutze „Ersetzen durch…“.",
+    "replace": "Ersetzen durch…"
+  },
+  "list2": {
+    "title": "Setup-Mods",
+    "full": {
+      "one": "Volles Setup: alle Mods ({count})",
+      "other": "Volles Setup: alle Mods ({count})"
+    },
+    "full_help": "Das Spiel lädt den ganzen Mod-Ordner, wie vor FS Passion.",
+    "empty_party": "Leeres Setup: keine Mods",
+    "empty_help": "Um das Grundspiel ohne Mods zu testen.",
+    "no_mods": "Keine Mods in diesem Setup",
+    "no_mods_help": "Ziehe Mods aus „Alle Mods“ hierher oder wähle sie aus und nutze die Aktionsleiste."
+  },
+  "list3": {
+    "title": "Gemeinsame Mods",
+    "empty": "Noch keine gemeinsamen Mods",
+    "empty_help": "Gemeinsame Mods sind in jedem Setup vorhanden: Traktoren, Geräte, Skripte…",
+    "not_included": "In diesem Setup nicht enthalten"
+  },
+  "footer": {
+    "github_tip": "GitHub-Seite des Projekts",
+    "github_soon": "Die GitHub-Adresse des Projekts folgt in Kürze",
+    "running": "Spiel läuft",
+    "launch": "Spiel starten",
+    "launch_unconfigured": "Lege die ausführbare Datei von {game} in den Einstellungen fest",
+    "launch_tip": "Das Spiel mit dem angewendeten Setup starten",
+    "quit": "Beenden"
+  },
+  "launch": {
+    "started": "{game} wird gestartet…",
+    "failed": "{game} konnte nicht gestartet werden. Prüfe die ausführbare Datei und die Startart in den Einstellungen.",
+    "no_exe": "Ausführbare Datei von {game} nicht gefunden: Lege sie in den Einstellungen fest.",
+    "already_running": "{game} läuft bereits.",
+    "apply_title": "„{name}“ anwenden?",
+    "apply_text": "Das Setup „{name}“ ist nicht angewendet oder wurde seitdem geändert. Setup {name} anwenden und dann {game} starten?",
+    "apply_and_launch": "Anwenden und starten",
+    "without_apply": "Ohne Anwenden starten"
+  },
+  "backup": {
+    "created": "Original-Sicherung von gameSettings.xml für {game} erstellt",
+    "exported": "Konfiguration exportiert: {file}",
+    "demo_active": "Verlasse zuerst den Demomodus: Er verwendet andere Ordner als deine.",
+    "unreadable": "Diese Datei kann nicht gelesen werden: {path}",
+    "too_big": "Diese Datei ist zu groß für einen Export von FS Passion: {path}",
+    "not_export": "Diese Datei ist kein Export von FS Passion: {path}",
+    "too_new": "Diese Datei stammt aus einer neueren Version von FS Passion ({version}). Aktualisiere FS Passion, um sie zu importieren.",
+    "write_failed": "Die Datei konnte nicht gespeichert werden: {path}",
+    "expired": "Der Import ist abgelaufen: Wähle die Datei erneut.",
+    "running": "Schließe {game} vor dem Import: Seine Setups werden gleich geändert.",
+    "import": {
+      "title": "Konfiguration importieren",
+      "from": "Export vom {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} Setup",
+        "other": "{count} Setups"
+      },
+      "common": {
+        "one": "{count} gemeinsamer Mod",
+        "other": "{count} gemeinsame Mods"
+      },
+      "no_parties": "Diese Datei enthält kein Setup: Nur die Einstellungen werden importiert.",
+      "keep": "Aktuelle Pfade behalten (empfohlen)",
+      "keep_help": "Die Spiel-, Mod- und Download-Ordner dieses PCs ändern sich nicht. Nur Setups, gemeinsame Mods und neutrale Einstellungen (Sprache, Design, Optionen) werden importiert.",
+      "replace_help": "Die Pfade der Datei ersetzen die dieses PCs: Wähle das nur, wenn die Datei von diesem PC mit denselben Laufwerken stammt.",
+      "paths_differ": "Die Mod-Ordner in dieser Datei sind nicht die dieses PCs.",
+      "warning": "Die aktuellen Setups der oben genannten Versionen werden ersetzt. Der aktuelle Zustand wird vorher automatisch gesichert. Nichts wird angewendet: Die Setup-Ordner werden beim nächsten „Anwenden“ neu aufgebaut.",
+      "ok": "Importieren"
+    },
+    "result": {
+      "title": "Konfiguration importiert",
+      "done": "Der Import ist abgeschlossen.",
+      "parties": {
+        "one": "{count} Setup importiert",
+        "other": "{count} Setups importiert"
+      },
+      "skipped": "nicht importiert (Spielversion auf diesem PC nicht eingerichtet)",
+      "fallback": "Das Spiel lud ein Setup, das nicht mehr existiert: Es lädt jetzt das volle Setup.",
+      "apply": "Mods, die auf diesem PC fehlen, erscheinen in den Setups als fehlende Mods. Klicke auf „Anwenden“, damit das Spiel ein importiertes Setup lädt.",
+      "backup": "Zustand vor dem Import gespeichert in %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "game": {
+      "title": "Spiel und Pfade"
+    },
+    "look": {
+      "title": "Darstellung"
+    },
+    "app": {
+      "title": "Anwendung"
+    },
+    "help": {
+      "title": "Hilfe und Info"
+    },
+    "paths": {
+      "versions": "Spielversionen",
+      "game_exe": "Ausführbare Datei des Spiels",
+      "user_dir": "Spielordner in Dokumente",
+      "mods_dir": "Haupt-Mod-Ordner",
+      "mods_dirs": "Mod-Ordner",
+      "browse": "Durchsuchen…",
+      "fixed_fs2011": "Der Mod-Ordner von FS2011 kann nicht verschoben werden.",
+      "add_storage": "Einen Mod-Ordner auf einem anderen Laufwerk hinzufügen",
+      "derived": "Abgeleitete Pfade",
+      "not_applicable": "Für diese Version nicht zutreffend",
+      "d_game_dir": "Spielordner",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (Spielordner)",
+      "d_dlc_user": "DLC (Dokumente)",
+      "detect": "Installation erkennen",
+      "detect_all": "Alle Versionen erkennen",
+      "detect_all_help": "Sucht die Installationen aller Versionen und füllt ihre leeren Felder aus.",
+      "detect_one": "Diese Version erkennen",
+      "detect_one_help": "Ändert nur die oben ausgewählte Version. Die anderen Versionen bleiben unverändert.",
+      "detect_help": "Felder, die du angepasst hast, werden nie geändert.",
+      "detect_found": "Gefundene Installationen: {list}",
+      "detect_none": "Keine Installation gefunden. Lege die Pfade mit „Durchsuchen…“ fest.",
+      "launch_method": "Startart des Spiels",
+      "launch_auto": "Automatisch",
+      "launch_platform": "Plattform",
+      "launch_exe": "Ausführbare Datei",
+      "launch_help": "Automatisch wählt die richtige Methode (Steam, Epic Games, Microsoft Store, Xbox oder ausführbare Datei). Die anderen beiden sind Notlösungen.",
+      "minimize_on_launch": "FS Passion beim Spielstart minimieren",
+      "args_title": "Startparameter",
+      "args_show": "Startparameter anzeigen",
+      "args_hide": "Startparameter ausblenden",
+      "args_skip": "Intro-Video überspringen",
+      "args_skip_info": "Überspringt das Intro-Video und die Startbildschirme.",
+      "args_cheats": "Entwicklerkonsole",
+      "args_cheats_info": "Aktiviert die Entwicklerkonsole im Spiel. Setzt außerdem <controls> in game.xml, neben gameSettings.xml.",
+      "args_game_xml_absent": "game.xml nicht gefunden: Die Konsole wird erst aktiviert, nachdem das Spiel einmal gestartet wurde.",
+      "args_game_xml_error": "game.xml konnte nicht geändert werden: Die Entwicklerkonsole bleibt deaktiviert.",
+      "args_help_command": "FS Passion fügt sie dem Startbefehl von {game} hinzu.",
+      "args_help_steam": "{game} wird von Steam gestartet. Steam lehnt Parameter ab, die von einem anderen Programm übergeben werden (es würde bei jedem Start eine Bestätigung verlangen), daher startet FS Passion das Spiel ohne sie. Trage sie einmalig in Steam ein, siehe unten.",
+      "args_help_epic": "{game} wird von Epic Games gestartet, das keine Parameter von einem anderen Programm annimmt: Trage sie einmalig im Epic Games Launcher ein, siehe unten.",
+      "args_help_unsupported": "{game} ist über den Microsoft Store oder Xbox installiert.",
+      "args_store": "Der Microsoft Store und die Xbox-App erlauben keine Startparameter: Nur die Entwicklerkonsole (game.xml) kann aktiviert werden. Für Parameter wähle „Ausführbare Datei“ als Startart, sofern deine Installation das zulässt.",
+      "args_steam_where": "Wo du sie in Steam einträgst",
+      "args_steam_steps": "Steam-Bibliothek: Rechtsklick auf {game} → Eigenschaften…\nReiter Allgemein → Feld „Startoptionen“\nFüge den Text unten ein und schließe dann das Fenster",
+      "args_epic_where": "Wo du sie im Epic Games Launcher einträgst",
+      "args_epic_steps": "Bibliothek: „…“ unter {game} → Verwalten\n„Zusätzliche Befehlszeilenargumente“ ankreuzen\nFüge den Text unten ein (ältere Launcher: Profilbild → Einstellungen → {game})",
+      "args_none": "Kein Parameter angekreuzt",
+      "args_copy_label": "Zu kopierende Parameter",
+      "args_copy_help": "Nur erneut nötig, wenn du einen Parameter an- oder abwählst.",
+      "console_on": "Konsole in game.xml aktiviert",
+      "console_off": "Konsole in game.xml deaktiviert",
+      "console_enable": "In game.xml aktivieren",
+      "console_done": "Entwicklerkonsole in game.xml für {game} aktiviert",
+      "add_storage_help": "Bis zu zwei weitere Ordner. Ihre Mods werden aufgelistet und kommen wie die anderen in Setups; FS Passion schreibt dort sonst nichts.",
+      "extra_dir": "Zusätzlicher Mod-Ordner",
+      "extra_help": "Das Entfernen dieses Ordners berührt seine Mods nicht: Sie werden einfach nicht mehr aufgelistet.",
+      "remove_storage": "Diesen Ordner aus der Liste entfernen (seine Mods bleiben unberührt)"
+    },
+    "downloads": {
+      "title": "Downloads",
+      "folder": "Download-Ordner",
+      "help": "Der Ordner, in dem dein Browser heruntergeladene Mods speichert.",
+      "scan_at_start": "Beim Start nach neuen Mods suchen",
+      "scan_now": "Jetzt suchen"
+    },
+    "language": {
+      "title": "Sprache",
+      "personal": "persönlich",
+      "open_folder": "Ordner der persönlichen Sprachen öffnen",
+      "personal_help": "Dort kannst du FS Passion in deine Sprache übersetzen: Eine Vorlage und eine Anleitung liegen bei.",
+      "rejected": "Ignorierte Sprachdateien (ungültig oder zu groß): {list}"
+    },
+    "theme": {
+      "title": "Design",
+      "help": "Fahre über ein Farbfeld, um das Design anzusehen, klicke, um es zu wählen. Zweifarbige Designs haben nur zwei Farben; die anderen verwenden die offiziellen Farben beliebter Designs, jeweils in einer dunklen und einer hellen Version. Die Sonne/Mond-Schaltfläche in der Kopfzeile wechselt zwischen ihnen.",
+      "contrast": "Kontrast {ratio}:1",
+      "loop": "Design-Schleife: jede Minute das Design wechseln",
+      "light_effects": "Lichteffekte (Glanz, leuchtende Konturen, Neon)",
+      "reduce_motion": "Animationen reduzieren",
+      "follows_windows": "Folgt der Windows-Einstellung „Animationseffekte“.",
+      "follow_windows": "Windows-Einstellung folgen",
+      "atelier": "Design-Werkstatt öffnen",
+      "mode_dark": "Dunkel",
+      "mode_light": "Hell",
+      "group_duo": "Zweifarbig"
+    },
+    "backup": {
+      "title": "Sicherung der Konfiguration",
+      "help": "Exportiere deine Setups, gemeinsamen Mods und Einstellungen in eine Datei, um sie nach einer Neuinstallation oder auf einem anderen PC wiederherzustellen. Es wird kein Mod kopiert: nur ihre Namen.",
+      "export": "Exportieren",
+      "import": "Importieren"
+    },
+    "notice": {
+      "title": "Anleitung",
+      "open": "Anleitung öffnen",
+      "at_start": "Beim Start anzeigen",
+      "tour": "Geführte Tour durch die Oberfläche"
+    },
+    "anomalies": {
+      "title": "Probleme",
+      "show": "Probleme anzeigen",
+      "reset": {
+        "zero": "Keine ausgeblendeten Probleme",
+        "one": "Das ausgeblendete Problem wieder anzeigen",
+        "other": "Die {count} ausgeblendeten Probleme wieder anzeigen"
+      },
+      "reset_done": "Ausgeblendete Probleme werden wieder angezeigt"
+    },
+    "internet": {
+      "title": "Internetverbindung",
+      "allow": "FS Passion erlauben, den DLC-Katalog von GitHub herunterzuladen",
+      "help": "Der DLC-Katalog (Namen und Symbole) wird höchstens einmal am Tag von GitHub gelesen. Nur die Symbole der auf diesem PC vorhandenen DLCs werden heruntergeladen. Es werden keine persönlichen Daten gesendet.",
+      "catalog_off": "DLC-Katalog: der mit FS Passion gelieferte (Verbindung ausgeschaltet).",
+      "catalog_remote": "DLC-Katalog vom {date}, von GitHub heruntergeladen.",
+      "catalog_embedded": "DLC-Katalog vom {date}, mit FS Passion geliefert.",
+      "check": "Jetzt prüfen",
+      "checking": "Wird geprüft…",
+      "error_not_found": "Der Katalog ist noch nicht auf GitHub veröffentlicht.",
+      "error_unreachable": "Letzte Prüfung fehlgeschlagen (keine Verbindung?).",
+      "error_invalid": "Der veröffentlichte Katalog kann nicht gelesen werden: Der von FS Passion wird verwendet.",
+      "error_too_new": "Der veröffentlichte Katalog benötigt eine neuere Version von FS Passion.",
+      "error_too_big": "Der veröffentlichte Katalog ist zu groß: Er wird ignoriert."
+    },
+    "logs": {
+      "title": "Protokolle und Diagnose",
+      "open_logs": "Protokollordner öffnen",
+      "copy_diag": "Diagnose kopieren",
+      "diag_copied": "Diagnose kopiert: Füge sie in deinen Bericht ein"
+    },
+    "donate": {
+      "title": "Das Projekt unterstützen",
+      "text": "FS Passion ist und bleibt ein vertrauenswürdiges, quelloffenes und kostenloses Projekt. Wenn du dem Autor danken möchtest: Eine einmalige Spende dauert nur ein paar Sekunden, ohne Konto. Danke!",
+      "no_link": "Link folgt"
+    },
+    "about": {
+      "title": "Info",
+      "version": "Version",
+      "author": "Autor",
+      "license": "Lizenz",
+      "github_soon": "Adresse folgt",
+      "official": "Der einzige offizielle Download-Link ist die GitHub-Seite des Projekts.",
+      "unofficial": "FS Passion ist ein unabhängiges Projekt, nicht mit GIANTS Software verbunden. Farming Simulator ist eine Marke von GIANTS Software.",
+      "privacy": "FS Passion sendet keine Daten. Es lädt nur, wenn du es erlaubst, die öffentliche DLC-Liste von GitHub herunter.",
+      "window_mode": "Fenstertechnik (Entwicklung)",
+      "window_native": "Nativ",
+      "window_script": "Berechnet",
+      "window_thin": "Dünner Rahmen",
+      "window_restart": "Wirkt beim nächsten Start von FS Passion",
+      "window_help": "Aktuelle Technik: {current}. Ändere sie nur, wenn die Größenänderung an den Rändern nicht funktioniert."
+    },
+    "stop": {
+      "title": "FS Passion nicht mehr verwenden",
+      "show": "Details anzeigen",
+      "hide": "Details ausblenden",
+      "text": "Stellt die ursprüngliche Einstellung des Spiels wieder her und entfernt die Setup-Ordner. Deine Mods werden nie angerührt.",
+      "button": "FS Passion nicht mehr verwenden"
+    },
+    "window": {
+      "title": "Fenster",
+      "close_to_tray": "In den Infobereich schließen",
+      "close_to_tray_help": "Die Schließen-Schaltfläche des Fensters versteckt FS Passion neben der Windows-Uhr. Klicke auf das Symbol, um es zurückzuholen; „Beenden“ (unten rechts oder im Menü des Symbols) schließt es wirklich.",
+      "tray_off": "Der Infobereich ist nur im Fenster von FS Passion unter Windows verfügbar.",
+      "focus_after_game": "Nach dem Schließen des Spiels in den Vordergrund kommen",
+      "focus_after_game_help": "Wenn Farming Simulator geschlossen wird, erscheint FS Passion wieder, auch wenn es im Infobereich versteckt war."
+    },
+    "demo": {
+      "title": "Ohne das Spiel ausprobieren",
+      "help": "Unechte Mods, um alle Funktionen von FS Passion in einem Testordner auszuprobieren: Deine echten Pfade werden beiseitegelegt und beim Beenden wiederhergestellt.",
+      "start": "FS Passion ohne das Spiel ausprobieren",
+      "active_help": "Der Demomodus ist aktiv: Diese Pfade gehören zum Testordner. Deine echten Pfade kommen zurück, wenn du ihn verlässt."
+    }
+  },
+  "themes": {
+    "lime": "Limette",
+    "jade": "Jade",
+    "cuivre": "Kupfer",
+    "blue": "Weiß"
+  },
+  "anomalies": {
+    "title": "Gefundene Probleme",
+    "none": "Keine Probleme. Alles ist in Ordnung.",
+    "intro": "Diese Elemente in deinem Mod-Ordner kann das Spiel so nicht verwenden. Nichts Schlimmes, und FS Passion lässt sie in Ruhe.",
+    "new": "neu",
+    "hide_type": "Diese Art von Problem nicht mehr anzeigen",
+    "hide_folder": "Diesen Ordner nicht mehr anzeigen",
+    "rename": "Umbenennen…",
+    "others": {
+      "one": "Andere ignorierte Dateien ({count})",
+      "other": "Andere ignorierte Dateien ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar- oder .7z-Archiv",
+        "other": ".rar- oder .7z-Archive ({count})"
+      },
+      "explain": "Das Spiel liest nur .zip-Dateien. Entpacke das Archiv und packe den Mod bei Bedarf erneut als .zip."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip ohne modDesc.xml",
+        "other": ".zip-Dateien ohne modDesc.xml ({count})"
+      },
+      "explain": "Oft ein Paket mit mehreren Mods zum Entpacken.",
+      "nested": "modDesc.xml in einem Unterordner gefunden ({path}): Der Mod wurde falsch gepackt."
+    },
+    "A3": {
+      "title": {
+        "one": "Unlesbares Archiv",
+        "other": "Unlesbare Archive ({count})"
+      },
+      "explain": "Beschädigtes Archiv oder ungültige modDesc.xml. Lade den Mod erneut herunter.",
+      "zip": "Das Archiv kann nicht geöffnet werden.",
+      "xml": "Die Datei modDesc.xml ist ungültig."
+    },
+    "A4": {
+      "title": {
+        "one": "Ordner ohne modDesc.xml",
+        "other": "Ordner ohne modDesc.xml ({count})"
+      },
+      "explain": "Ohne modDesc.xml im Stammverzeichnis kann das Spiel diesen Ordner nicht verwenden. FS Passion rührt ihn nie an."
+    },
+    "A5": {
+      "title": {
+        "one": "Vom Spiel abgelehnter Name",
+        "other": "Vom Spiel abgelehnte Namen ({count})"
+      },
+      "explain": "Das Spiel akzeptiert nur Buchstaben ohne Akzente, Ziffern und „_“.",
+      "suggestion": "Vorgeschlagener Name: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod für eine andere Spielversion",
+        "other": "Mods für eine andere Spielversion ({count})"
+      },
+      "explain": "Dieser Mod wird von dieser Spielversion nicht geladen.",
+      "detected": "Mod für {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Fehlender Mod",
+        "other": "Fehlende Mods ({count})"
+      },
+      "explain": "Ein Setup verweist auf diesen Mod, aber er ist nicht mehr in den Mod-Ordnern.",
+      "in": "In: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Gelöschter Mod noch verknüpft",
+        "other": "Gelöschte Mods noch verknüpft ({count})"
+      },
+      "explain": "Dieser Mod wurde aus dem Mod-Ordner gelöscht, aber einige Setups enthalten ihn noch.",
+      "copy": "Eine Kopie existiert noch in: {list}",
+      "delete_title": "Verbleibende Kopie löschen?",
+      "delete_text": "Die letzte Kopie von „{name}“, die noch in Setup-Ordnern liegt, wird in den Papierkorb verschoben und der Mod aus allen Listen entfernt."
+    },
+    "A9": {
+      "title": {
+        "one": "Doppelter Mod",
+        "other": "Doppelte Mods ({count})"
+      },
+      "explain": "Derselbe Mod ist zweimal vorhanden: in zwei Speicherordnern oder als .zip und als Ordner nebeneinander. Das Spiel lädt nur einen. FS Passion verwendet den im Hauptordner und eher das Archiv als den Ordner.",
+      "zip_and_dir": "„{name}“ existiert sowohl als .zip als auch als entpackter Ordner: Das Spiel lädt nur einen, und der ModHub kann ihn nicht aktualisieren. Behalte nur eine Form (lösche die andere mit „Endgültig löschen“ oder verschiebe sie aus dem Mod-Ordner).",
+      "files": "Dateien: {list}"
+    },
+    "game": "{game}",
+    "folder": "Mod-Ordner: {path}",
+    "show_in_folder": "Im Explorer anzeigen",
+    "open_folder": "Mod-Ordner im Explorer öffnen (der Mod ist nicht mehr dort)"
+  },
+  "welcome": {
+    "subtitle": "Deine Mods, nur einmal gespeichert. So viele Setups, wie du willst.",
+    "language": "Wähle deine Sprache"
+  },
+  "notice": {
+    "title": "So funktioniert FS Passion",
+    "at_start": "Dieses Fenster beim Start der Anwendung anzeigen",
+    "understood": "Verstanden",
+    "blocks": [
+      {
+        "key": "Zuallererst: Wir empfehlen, eine Sicherungskopie aller deiner Mods auf einem anderen Laufwerk anzulegen. Das ist unerlässlich, wie vor jedem Eingriff an wichtigen Dateien."
+      },
+      {
+        "h": "Die Idee"
+      },
+      {
+        "p": "Mit FS Passion erstellst du schnell und einfach beliebig viele Setups für Farming Simulator und behältst dabei nur eine einzige Kopie deiner Mods in ihrem ursprünglichen Ordner."
+      },
+      {
+        "p": "Wechsle mit 1 Klick von einem Setup zum anderen!"
+      },
+      {
+        "h": "Installation"
+      },
+      {
+        "p": "Dein Mod-Ordner kann auf jedem Laufwerk liegen: FS Passion passt sich an. Es gibt nichts von Hand zu erstellen, zu verschieben oder umzubenennen. Laufwerk voll? Füge bis zu zwei Mod-Ordner auf anderen Laufwerken hinzu (Einstellungen → Spiel und Pfade): Ihre Mods kommen wie die anderen in Setups."
+      },
+      {
+        "h": "Erste Schritte"
+      },
+      {
+        "ul": [
+          "Erstelle deine Setups mit der magischen Schaltfläche „＋ Setup“ bei den Maps: Die Map und ihre Abhängigkeiten werden mit einem Klick zum Setup.",
+          "Sortiere dann die anderen Mods in die gemeinsamen Mods ein, die in jedem Setup vorhanden sind.",
+          "Klicke auf „Anwenden“: Das Spiel lädt das gewählte Setup beim nächsten Start."
+        ]
+      },
+      {
+        "h": "Mods hinzufügen, umbenennen, löschen"
+      },
+      {
+        "ul": [
+          "Neue Mods: Lade sie wie gewohnt herunter und klicke dann oben in der Liste auf „In den Downloads nach neuen Mods suchen“. FS Passion legt sie in den Mod-Ordner der richtigen Spielversion.",
+          "Lösche Mods lieber in FS Passion („Endgültig löschen“ in der Aktionsleiste) als im Explorer: Sie werden dann gleichzeitig aus den Listen und Setups entfernt und landen im Papierkorb.",
+          "Das Umbenennen eines Mods (Taste F2) löst ihn vom ModHub: Er erhält keine Updates mehr."
+        ]
+      },
+      {
+        "h": "Updates"
+      },
+      {
+        "p": "Nichts zu tun: Vom Spiel heruntergeladene Updates werden beim Schließen des Spiels oder beim nächsten Start von FS Passion übernommen. Die alte Version wird in „Old versions“ beiseitegelegt. Lädt das Spiel eine ältere Versionsnummer als deine herunter (oft ein Mod, den du verändert hast), fragt FS Passion, welche du behalten willst."
+      },
+      {
+        "h": "Deine Setups behalten"
+      },
+      {
+        "p": "Einstellungen → Anwendung → „Exportieren“ speichert deine Setups, gemeinsamen Mods und Einstellungen in einer Datei. „Importieren“ holt sie zurück, nach einer Neuinstallation oder auf einem anderen PC."
+      },
+      {
+        "h": "Aufhören"
+      },
+      {
+        "p": "„FS Passion nicht mehr verwenden“ (Einstellungen → Anwendung) stellt die ursprüngliche Einstellung des Spiels wieder her und entfernt die Setup-Ordner. Deine Mods werden nie angerührt."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Design-Werkstatt",
+    "id": "Kennung",
+    "name": "Name",
+    "dark": "Fensterhintergrund",
+    "light": "Hauptfarbe",
+    "mica": "Mica-Schimmer",
+    "grain": "Körnung",
+    "effect": "Effekt",
+    "effect_none": "Keiner",
+    "effect_metal": "Metallglanz",
+    "intensity": "Intensität",
+    "save": "Speichern",
+    "copy": "Definition kopieren",
+    "new": "Neu",
+    "copied": "Definition kopiert",
+    "saved": "Design in ui/themes.json gespeichert",
+    "contrast_low": "Kontrast {ratio}:1, unter 4,5:1. Kleiner Text verwendet {color}.",
+    "contrast_ok": "Kontrast {ratio}:1",
+    "mode": "Modus",
+    "mode_dark": "Dunkel",
+    "mode_light": "Hell",
+    "text": "Text",
+    "multi": "Mehrere Akzentfarben (eine pro Bereich)",
+    "accent_n": "Akzent {n}",
+    "pair": "Zwillingsdesign (Sonne/Mond)",
+    "pair_none": "Keines",
+    "gradient": "Zweifarbiger Verlauf (Titel, Schaltflächen Anwenden und Starten)",
+    "gradient_from": "Verlauf: Anfang",
+    "gradient_to": "Verlauf: Ende",
+    "style": "Stil",
+    "style_duo": "Zweifarbig",
+    "style_palette": "Offizielle Palette",
+    "style_classic": "Berechnete Schleier",
+    "surface_1": "Fensterhintergrund",
+    "surface_2": "Listen und Fenster",
+    "surface_3": "Abschnitte",
+    "surface_4": "Unterabschnitte",
+    "text_n": "Text {n}",
+    "neon": "Neon",
+    "neon_help": "Leuchten von Titeln, Symbolen und Konturen in der Farbe jedes Bereichs (0: kein Effekt). Wird durch „Lichteffekte“ ausgeschaltet."
+  },
+  "error": {
+    "bad_request": "Ungültige Anfrage.",
+    "forbidden": "Zugriff verweigert.",
+    "not_found": "Element nicht gefunden.",
+    "unexpected": "Unerwarteter Fehler. Kopiere die Diagnose (Einstellungen → Hilfe und Info) und hänge sie an deinen Bericht an.",
+    "offline": "Der Kern von FS Passion antwortet nicht.",
+    "internal": "Vorgang aus Sicherheitsgründen abgelehnt. Kopiere die Diagnose (Einstellungen → Hilfe und Info) und hänge sie an deinen Bericht an."
+  },
+  "detect": {
+    "busy": "Eine Erkennung läuft bereits."
+  },
+  "parties": {
+    "not_configured": "Lege den Mod-Ordner von {game} in den Einstellungen fest, um Setups zu erstellen.",
+    "name_label": "Name des Setups",
+    "name_empty": "Der Name darf nicht leer sein.",
+    "name_too_long": "Höchstens {max} Zeichen.",
+    "name_taken": "Ein Setup heißt bereits „{name}“.",
+    "special_locked": "Das volle Setup und das leere Setup können nicht geändert, umbenannt, dupliziert oder gelöscht werden.",
+    "not_found": "Dieses Setup existiert nicht mehr.",
+    "write_failed": "Die Setups konnten nicht in {path} gespeichert werden. Prüfe, ob auf dieses Laufwerk geschrieben werden kann.",
+    "recovered": "Die Setup-Datei von {game} konnte nicht gelesen werden: Ihre neueste Sicherung ({backup}) wurde geladen. Die beschädigte Datei wurde beiseitegelegt.",
+    "lost": "Die Setup-Datei von {game} konnte nicht gelesen werden, und keine Sicherung konnte geladen werden. Die beschädigte Datei wurde beiseitegelegt, nichts wurde gelöscht.",
+    "running_rename": "Schließe {game}, bevor du dieses Setup umbenennst: Sein Ordner kann sich nicht ändern, während das Spiel läuft.",
+    "running_delete": "Schließe {game}, bevor du dieses Setup löschst: Sein Ordner kann sich nicht ändern, während das Spiel läuft.",
+    "map_not_found": "Map nicht gefunden: {name}",
+    "mod_not_found": "Mod nicht gefunden: {name}",
+    "create_title": "Neues Setup",
+    "create_help": "Ein leeres Setup, das die gemeinsamen Mods enthält. Füge ihm dann Mods aus „Alle Mods“ hinzu.",
+    "create_ok": "Erstellen",
+    "created": "Setup „{name}“ erstellt",
+    "duplicate_title": "Setup duplizieren",
+    "duplicate_help": "Die Kopie behält die Mods von „{name}“ und seine Einstellung „Gemeinsame Mods“.",
+    "copy_name": "{name} (Kopie)",
+    "duplicate_ok": "Duplizieren",
+    "duplicated": "Setup „{name}“ erstellt",
+    "rename_title": "Setup umbenennen",
+    "rename_ok": "Umbenennen",
+    "renamed": "„{old}“ umbenannt in „{name}“",
+    "delete_title": "Setup löschen",
+    "delete_text": {
+      "zero": "Setup „{name}“ löschen? Es enthält keine Mods.",
+      "one": "Setup „{name}“ löschen? Sein Mod bleibt in deinem Mod-Ordner: Nur das Setup und sein Ordner mit Links verschwinden.",
+      "other": "Setup „{name}“ löschen? Seine {count} Mods bleiben in deinem Mod-Ordner: Nur das Setup und sein Ordner mit Links verschwinden."
+    },
+    "delete_ok": "Löschen",
+    "deleted": "Setup „{name}“ gelöscht",
+    "deleted_applied": "Das Setup {name} wurde gelöscht. Das Spiel verwendet jetzt das Setup {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "Mod ausgewählt",
+      "other": "Mods ausgewählt"
+    },
+    "add_party": "Zu Setup-Mods hinzufügen",
+    "add_common": "Zu gemeinsamen Mods hinzufügen",
+    "remove_party": "Aus Setup-Mods entfernen",
+    "remove_common": "Aus gemeinsamen Mods entfernen",
+    "rename": "Umbenennen…",
+    "rename_help": "Ein einzelner Mod, in „Alle Mods“ ausgewählt.",
+    "delete": "Endgültig löschen…",
+    "close": "Leiste schließen und Auswahl aufheben (Esc)",
+    "added_party": {
+      "one": "{count} Mod zum Setup „{name}“ hinzugefügt",
+      "other": "{count} Mods zum Setup „{name}“ hinzugefügt"
+    },
+    "added_common": {
+      "one": "{count} Mod zu den gemeinsamen Mods hinzugefügt",
+      "other": "{count} Mods zu den gemeinsamen Mods hinzugefügt"
+    },
+    "moved_party": {
+      "one": "{count} Mod ins Setup „{name}“ verschoben",
+      "other": "{count} Mods ins Setup „{name}“ verschoben"
+    },
+    "moved_common": {
+      "one": "{count} Mod zu den gemeinsamen Mods verschoben",
+      "other": "{count} Mods zu den gemeinsamen Mods verschoben"
+    },
+    "removed_party": {
+      "one": "{count} Mod aus dem Setup „{name}“ entfernt",
+      "other": "{count} Mods aus dem Setup „{name}“ entfernt"
+    },
+    "removed_common": {
+      "one": "{count} Mod aus den gemeinsamen Mods entfernt",
+      "other": "{count} Mods aus den gemeinsamen Mods entfernt"
+    },
+    "nothing_party": "Diese Mods sind bereits im Setup „{name}“",
+    "nothing_common": "Diese Mods sind bereits in den gemeinsamen Mods"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Auch seine Abhängigkeit hinzufügen?",
+      "other": "Auch seine {count} Abhängigkeiten hinzufügen?"
+    },
+    "ask_yes": {
+      "one": "Abhängigkeit auch hinzufügen",
+      "other": "Die {count} Abhängigkeiten auch hinzufügen"
+    },
+    "ask_no": "Nur die gewählten Mods",
+    "missing_warn": {
+      "one": "Abhängigkeit fehlt in deinen Mods: {list}",
+      "other": "{count} Abhängigkeiten fehlen in deinen Mods: {list}"
+    },
+    "needed_by_map": "Die Map „{name}“ benötigt:",
+    "needed_by_mod": "Der Mod „{name}“ benötigt:",
+    "needed": "Abhängigkeiten:",
+    "where_common": "den gemeinsamen Mods",
+    "where_party": "dem Setup „{name}“",
+    "ask_intro": {
+      "one": "Dieser Mod ist eine Abhängigkeit eines gewählten Mods, ist aber nicht in {where}.",
+      "other": "Diese {count} Mods sind Abhängigkeiten der gewählten Mods, sind aber nicht in {where}."
+    },
+    "missing_for": "{list} (benötigt von „{name}“)",
+    "optional_title": {
+      "one": "Auch einen optionalen Mod hinzufügen?",
+      "other": "Auch optionale Mods hinzufügen?"
+    },
+    "optional_intro": {
+      "one": "Ein optionaler Mod, bereits in deinen Mods:",
+      "other": "{count} optionale Mods, bereits in deinen Mods:"
+    },
+    "optional_for": "optional für „{name}“",
+    "optional_note": "Optional: Das Spiel braucht sie nicht. Nur die angekreuzten werden zu {where} hinzugefügt.",
+    "optional_continue": "Weiter"
+  },
+  "plus": {
+    "title": "Neues Setup aus einer Map",
+    "deps_title": {
+      "one": "{count} Abhängigkeit",
+      "other": "{count} Abhängigkeiten"
+    },
+    "dlc_title": "Benötigte DLCs",
+    "dlc_note": "Zur Information: Das Spiel lädt installierte DLCs immer. Sie werden nicht zum Setup hinzugefügt.",
+    "missing_note": "Fehlende Abhängigkeiten werden nicht hinzugefügt: Lade sie herunter und füge sie dann dem Setup hinzu.",
+    "no_deps": "Keine Abhängigkeiten angegeben: Das Setup enthält nur die Map.",
+    "summary": {
+      "zero": "Das Setup enthält nur die Map, dazu die gemeinsamen Mods.",
+      "one": "Das Setup enthält die Map und ihre Abhängigkeit, dazu die gemeinsamen Mods.",
+      "other": "Das Setup enthält die Map und ihre {count} Abhängigkeiten, dazu die gemeinsamen Mods."
+    },
+    "create": "Setup erstellen",
+    "created": {
+      "one": "Setup „{name}“ erstellt: {count} Mod",
+      "other": "Setup „{name}“ erstellt: {count} Mods"
+    },
+    "created_missing": {
+      "one": "Herunterzuladende Abhängigkeit: {list}",
+      "other": "{count} herunterzuladende Abhängigkeiten: {list}"
+    },
+    "optional_title": {
+      "one": "{count} optionaler Mod",
+      "other": "{count} optionale Mods"
+    },
+    "optional_note": "Optional: Das Spiel braucht sie nicht. Kreuze die an, die ins Setup sollen.",
+    "optional_none_present": "Keiner dieser optionalen Mods ist in deinen Mods. Das Spiel braucht sie nicht."
+  },
+  "replace": {
+    "title": "Ersetzen durch…",
+    "help": "{name} ist nicht mehr in deinen Mod-Ordnern. Wenn der Autor ihn umbenannt hat, wähle seine neue Version: Sie nimmt seinen Platz in allen Listen ein.",
+    "done": {
+      "one": "{old} in {count} Liste durch {name} ersetzt",
+      "other": "{old} in {count} Listen durch {name} ersetzt"
+    }
+  },
+  "notifications": {
+    "title": "Benachrichtigungen",
+    "unread": {
+      "one": "Benachrichtigungen: 1 neue Nachricht",
+      "other": "Benachrichtigungen: {count} neue Nachrichten"
+    },
+    "clear": "Alle löschen",
+    "none": "Noch keine Benachrichtigungen. Nachrichten unten rechts werden hier aufbewahrt, bis FS Passion geschlossen wird."
+  },
+  "tray": {
+    "show": "FS Passion anzeigen",
+    "quit": "FS Passion beenden",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion läuft hier weiter. Klicke auf das Symbol, um es zurückzuholen; „Beenden“ schließt es wirklich."
+  },
+  "apply": {
+    "unsupported": "Diese Spielversion kann ihren Mod-Ordner nicht ändern.",
+    "not_ready": "Lege zuerst den Mod-Ordner und den Ordner „Eigene Dateien“ des Spiels in den Einstellungen fest.",
+    "running": "Schließe {game}, bevor du ein Setup anwendest.",
+    "no_gamesettings": "gameSettings.xml von {game} wurde nicht gefunden: Starte das Spiel einmal oder prüfe den Ordner „Eigene Dateien“ in den Einstellungen.",
+    "busy": "Ein anderer Setup-Vorgang läuft. Versuche es gleich noch einmal.",
+    "library_busy": "Die Mods werden noch gelesen. Versuche es gleich noch einmal.",
+    "done": {
+      "zero": "Setup {name} angewendet: keine Mods.",
+      "one": "Setup {name} angewendet: {count} Mod.",
+      "other": "Setup {name} angewendet: {count} Mods."
+    },
+    "missing": {
+      "one": "1 Mod des Setups fehlt in deinem Mod-Ordner: {list}",
+      "other": "{count} Mods des Setups fehlen in deinem Mod-Ordner: {list}"
+    },
+    "updated": {
+      "one": "1 vom Spiel hinterlassenes Update wurde in deinen Mod-Ordner verschoben.",
+      "other": "{count} vom Spiel hinterlassene Updates wurden in deinen Mod-Ordner verschoben."
+    },
+    "added": {
+      "one": "1 vom Spiel hinterlassener Mod ist jetzt in deinem Mod-Ordner und im Setup {name}.",
+      "other": "{count} vom Spiel hinterlassene Mods sind jetzt in deinem Mod-Ordner und im Setup {name}."
+    },
+    "set_aside": {
+      "one": "1 Datei wurde beiseitegelegt, nichts wurde gelöscht (Ordner „Recovered“ oder „Old versions“, neben deinen Setups).",
+      "other": "{count} Dateien wurden beiseitegelegt, nichts wurde gelöscht (Ordner „Recovered“ und „Old versions“, neben deinen Setups)."
+    },
+    "empty_party": "Das Setup {name} enthält keine Mods: Das Spiel startet ohne Mods.",
+    "not_same_disk": "{name} kann nicht verknüpft werden: Der Setup-Ordner muss auf demselben Laufwerk wie der Mod-Ordner liegen.",
+    "no_hardlinks": "Dieses Laufwerk unterstützt keine festen Links: Der Mod-Ordner muss auf einem NTFS-Laufwerk liegen. Es wurde nichts geändert.",
+    "too_many_links": "{name} kann nicht verknüpft werden: Diese Datei hat das Windows-Limit für Links erreicht.",
+    "access_denied": "Zugriff verweigert beim Verknüpfen von {name}. Es wurde nichts geändert.",
+    "link_failed": "Der Link für {name} konnte nicht erstellt werden ({detail}). Es wurde nichts geändert.",
+    "junction_failed": "Die Verzeichnisverbindung des entpackten Mods {name} konnte nicht erstellt werden ({detail}). Es wurde nichts geändert.",
+    "folder_busy": "Der Ordner {path} wird von einem anderen Programm verwendet (Explorer?). Schließe es und versuche es erneut. Es wurde nichts geändert.",
+    "folder_exists": "Ein Ordner {path} existiert bereits: Wähle einen anderen Namen.",
+    "failed": "Das Setup konnte nicht angewendet werden ({detail}). Es wurde nichts geändert.",
+    "recovered_finished": "Ein Setup-Vorgang von {game} war unterbrochen worden (Stromausfall?). Er wurde abgeschlossen.",
+    "recovered_cancelled": "Ein Setup-Vorgang von {game} war unterbrochen worden (Stromausfall?). Er wurde abgebrochen: Es hat sich nichts geändert.",
+    "symlink_denied": "Windows verweigert den symbolischen Link zu {name}: Der Windows-Entwicklermodus oder Administratorrechte sind erforderlich.",
+    "blocked": {
+      "one": "1 Mod von einem anderen Laufwerk konnte nicht ins Setup aufgenommen werden (keine Rechte für symbolische Links): {list}. Siehe Einstellungen → Spiel und Pfade.",
+      "other": "{count} Mods von einem anderen Laufwerk konnten nicht ins Setup aufgenommen werden (keine Rechte für symbolische Links): {list}. Siehe Einstellungen → Spiel und Pfade."
+    }
+  },
+  "override": {
+    "title": "Das Spiel lädt einen unbekannten Ordner",
+    "text": "{game} lädt seine Mods aus einem Ordner, den FS Passion nicht kennt (von Hand oder von einem anderen Werkzeug geändert):",
+    "help": "Übernimm diesen Ordner als deinen Mod-Ordner, wende dein Setup erneut an oder lass das Spiel, wie es ist.",
+    "adopt": "Als Mod-Ordner übernehmen",
+    "reapply": "{name} erneut anwenden",
+    "ignore": "Nichts tun",
+    "adopted": "Neuer Mod-Ordner: {path}",
+    "read_failed": "gameSettings.xml kann nicht gelesen werden ({path}). Es wurde nichts geändert.",
+    "backup_failed": "Die Sicherung von gameSettings.xml konnte nicht geschrieben werden ({path}). Es wurde nichts geändert.",
+    "write_failed": "gameSettings.xml konnte nicht geschrieben werden ({path}). Ist das Spiel geöffnet?",
+    "check_failed": "Die Prüfung von gameSettings.xml ist fehlgeschlagen: Die Originaldatei wurde wiederhergestellt.",
+    "no_root": "gameSettings.xml sieht nicht wie eine Einstellungsdatei des Spiels aus. Es wurde nichts geändert."
+  },
+  "demo": {
+    "title": "Demomodus",
+    "pill": "Demo",
+    "quit": "Beenden",
+    "banner": "Demomodus: Diese Mods sind unecht. Deine echten Ordner und das Spiel werden nicht angerührt.",
+    "badge": "Unechter Mod (Demo)",
+    "installing": "Demo-Mods werden vorbereitet…",
+    "started": "Demomodus: Probiere alles aus, nichts berührt das Spiel.",
+    "stopped": "Demomodus beendet: Alles wurde gelöscht.",
+    "stop_title": "Demomodus beenden",
+    "stop_text": "Die unechten Mods, die Test-Setups und der ganze Demo-Ordner werden gelöscht. Deine echten Einstellungen kommen unverändert zurück.",
+    "stop_ok": "Beenden und alles löschen",
+    "offer_title": "FS Passion ohne das Spiel ausprobieren?",
+    "offer_text": "Auf diesem PC wurde kein Farming Simulator gefunden. Du kannst FS Passion mit unechten Mods ausprobieren: Setups erstellen, sortieren, anwenden… alles funktioniert, in einem Testordner, nie in einem Spiel.",
+    "offer_local": "Das Demo-Paket ist bereits auf diesem PC (etwa 2 MB).",
+    "offer_download": "Das Demo-Paket (etwa 2 MB) wird von der GitHub-Seite des Projekts heruntergeladen und dann geprüft.",
+    "offer_yes": "Ausprobieren",
+    "offer_no": "Später",
+    "unavailable": "Das Demo-Paket ist noch nicht verfügbar.",
+    "bad_pack": "Das Demo-Paket ist beschädigt oder entspricht nicht dem Original: Es wurde abgelehnt.",
+    "download_failed": "Das Demo-Paket konnte nicht heruntergeladen werden ({detail}).",
+    "install_failed": "Das Demo-Paket konnte nicht installiert werden ({detail}).",
+    "remove_failed": "Der Demo-Ordner konnte nicht vollständig gelöscht werden: {path}",
+    "no_detect": "Die Spielerkennung ist im Demomodus ausgeschaltet."
+  },
+  "delete": {
+    "title": {
+      "one": "Diesen Mod endgültig löschen?",
+      "other": "Diese {count} Mods endgültig löschen?"
+    },
+    "intro": {
+      "one": "Dieser Mod wird aus allen Listen und allen Setup-Ordnern entfernt und dann aus deinem Mod-Ordner gelöscht:",
+      "other": "Diese {count} Mods werden aus allen Listen und allen Setup-Ordnern entfernt und dann aus deinem Mod-Ordner gelöscht:"
+    },
+    "irreversible": "Das kann nicht rückgängig gemacht werden.",
+    "recycle": "Die Dateien landen im Windows-Papierkorb: Dort kannst du sie noch wiederherstellen.",
+    "no_recycle": "Dieses Laufwerk hat keinen Papierkorb: Das Löschen ist endgültig.",
+    "understand": {
+      "one": "Mir ist klar, dass diese Datei gelöscht wird",
+      "other": "Mir ist klar, dass diese Dateien gelöscht werden"
+    },
+    "ok": "Endgültig löschen",
+    "done_recycled": {
+      "one": "1 Mod in den Papierkorb verschoben",
+      "other": "{count} Mods in den Papierkorb verschoben"
+    },
+    "done_deleted": {
+      "one": "1 Mod endgültig gelöscht",
+      "other": "{count} Mods endgültig gelöscht"
+    },
+    "failed": {
+      "one": "1 Mod konnte nicht gelöscht werden: {list}. Er wurde aus den Listen entfernt; schließe das Programm, das ihn verwendet, und versuche es erneut.",
+      "other": "{count} Mods konnten nicht gelöscht werden: {list}. Sie wurden aus den Listen entfernt; schließe das Programm, das sie verwendet, und versuche es erneut."
+    },
+    "nothing": "Kein Mod zum Löschen.",
+    "running": "Schließe {game}, bevor du Mods löschst."
+  },
+  "rename": {
+    "title": "Mod umbenennen",
+    "label": "Neuer Name",
+    "prefix_tip": "Versionspräfix bleibt erhalten",
+    "final": "Dateiname: {file}",
+    "rule": "Nur Buchstaben ohne Akzente, Ziffern und „_“: Das Spiel lehnt andere Zeichen ab.",
+    "where": "In: {list}. Die Listen ändern sich nur mit deiner Zustimmung: FS Passion fragt dann, ob sie dem neuen Namen folgen sollen.",
+    "warning_modhub": "Wenn er aus dem ModHub stammt, erhält dieser Mod keine Updates mehr: Genau das ist der Sinn des Umbenennens.",
+    "warning_save": "Im Spiel suchen Spielstände, die diesen Mod verwenden, ihn unter seinem alten Namen.",
+    "warning_save_map": "Das ist eine Map: Im Spiel suchen die darauf erstellten Spielstände sie unter ihrem alten Namen und lassen sich nicht mehr laden.",
+    "warning_deps": {
+      "one": "1 Mod gibt ihn als Abhängigkeit an ({list}): Er sucht ihn unter seinem alten Namen.",
+      "other": "{count} Mods geben ihn als Abhängigkeit an ({list}): Sie suchen ihn unter seinem alten Namen."
+    },
+    "ok": "Umbenennen",
+    "done": {
+      "zero": "{old} umbenannt in {name}",
+      "one": "{old} umbenannt in {name}, in 1 Setup",
+      "other": "{old} umbenannt in {name}, in {count} Setups"
+    },
+    "renamed": "{old} umbenannt in {name}",
+    "lists_title": "Listen aktualisieren?",
+    "lists_ask": "„{old}“ ist noch in: {list}. Sollen sie dem neuen Namen „{name}“ folgen?",
+    "lists_yes": "Listen aktualisieren",
+    "lists_no": "Nichts tun",
+    "lists_done": "Listen aktualisiert ({count}).",
+    "empty": "Gib einen Namen ein.",
+    "too_long": "Name zu lang: höchstens {max} Zeichen.",
+    "invalid": "Nur Buchstaben ohne Akzente, Ziffern und „_“, keine Leerzeichen.",
+    "same": "Das ist bereits sein Name.",
+    "taken": "„{name}“ existiert bereits in deinen Mod-Ordnern.",
+    "not_found": "Mod {name} wurde in deinen Mod-Ordnern nicht gefunden.",
+    "failed": "{name} konnte nicht umbenannt werden: Er ist vielleicht in einem anderen Programm geöffnet.",
+    "running": "Schließe {game}, bevor du einen Mod umbenennst.",
+    "no_list": "keine Liste"
+  },
+  "downloads": {
+    "title": "Neue Mods gefunden",
+    "intro": "In {folder}. Übernehmen verschiebt jede angekreuzte Datei in den Mod-Ordner ihrer Spielversion.",
+    "count": {
+      "one": "1 Mod gefunden",
+      "other": "{count} Mods gefunden"
+    },
+    "col_mod": "Mod",
+    "col_version": "Spielversion",
+    "col_state": "Status",
+    "col_dest": "Ziel",
+    "state": {
+      "new": "Neu",
+      "update": "Update ({from} → {to})",
+      "older": "Älter als die installierte Version ({to} < {from})",
+      "present": "Bereits vorhanden",
+      "conflict": "Ein entpackter Mod hat bereits diesen Namen",
+      "unconfigured": "Version nicht eingerichtet: Richte sie in den Einstellungen ein"
+    },
+    "older_confirm": "Angekreuzt: Sie ersetzt die installierte Version (wird beiseitegelegt).",
+    "postpone": "{game} läuft: wird beim Schließen übernommen",
+    "not_configured": "{game} (nicht eingerichtet)",
+    "suffix": "Wird als {name} übernommen (Browser-Suffix entfernt)",
+    "dest_none": "Keins (nicht einsortiert)",
+    "dest_unclassified": "Nicht einsortiert",
+    "dest_party": "Setup „{name}“",
+    "ignore": "Diese Dateien ignorieren",
+    "ignored": {
+      "one": "1 Datei ignoriert: Sie wird nicht mehr vorgeschlagen",
+      "other": "{count} Dateien ignoriert: Sie werden nicht mehr vorgeschlagen"
+    },
+    "later": "Später",
+    "integrate": {
+      "zero": "Übernehmen",
+      "one": "1 Mod übernehmen",
+      "other": "{count} Mods übernehmen"
+    },
+    "none": "Kein neuer Mod in {folder}.",
+    "done": {
+      "one": "1 Mod übernommen: {list}",
+      "other": "{count} Mods übernommen: {list}"
+    },
+    "in_version": {
+      "one": "1 in {game}",
+      "other": "{count} in {game}"
+    },
+    "skipped": {
+      "one": "1 Datei an ihrem Platz gelassen (bereits vorhanden oder älter)",
+      "other": "{count} Dateien an ihrem Platz gelassen (bereits vorhanden oder älter)"
+    },
+    "postponed": {
+      "one": "1 Mod wird übernommen, wenn {game} geschlossen wird",
+      "other": "{count} Mods werden übernommen, wenn {game} geschlossen wird"
+    },
+    "postponed_done": {
+      "one": "1 Download nach dem Schließen von {game} übernommen",
+      "other": "{count} Downloads nach dem Schließen von {game} übernommen"
+    },
+    "failed": "{file} konnte nicht übernommen werden. Die Datei ist in deinen Downloads geblieben.",
+    "gone": "{file} ist nicht mehr im Download-Ordner.",
+    "unconfigured": "{file}: Die gewählte Spielversion ist nicht eingerichtet.",
+    "no_folder": "Download-Ordner nicht gefunden: Lege ihn unter Einstellungen → Anwendung → Downloads fest.",
+    "demo": "Während der Demo werden Downloads nicht übernommen.",
+    "done_in": {
+      "one": "1 Mod in {game} übernommen",
+      "other": "{count} Mods in {game} übernommen"
+    },
+    "col_storage": "Speicherort"
+  },
+  "move": {
+    "exists": "{file}: Eine Datei mit demselben Namen existiert bereits.",
+    "no_space": "{file}: nicht genug freier Speicher auf dem Laufwerk des Mod-Ordners.",
+    "check_failed": "{file}: Die geprüfte Kopie stimmt nicht mit dem Original überein. Es wurde nichts ersetzt.",
+    "failed": "{file} konnte nicht verschoben werden: Sie ist vielleicht in einem anderen Programm geöffnet."
+  },
+  "missing": {
+    "title": "In deinem Mod-Ordner fehlende Mods",
+    "intro": {
+      "one": "Dieser Mod fehlt in deinem Mod-Ordner, obwohl er in Setups ist. Was möchtest du tun?",
+      "other": "Diese {count} Mods fehlen in deinem Mod-Ordner, obwohl sie in Setups sind. Was möchtest du tun?"
+    },
+    "in": "In: {list}",
+    "copy": "Aus dem Mod-Ordner gelöscht, aber über seine Links existiert noch eine Kopie in: {list}",
+    "no_copy": "Keine Kopie: Lade ihn erneut herunter oder ersetze ihn durch einen vom Autor umbenannten Mod",
+    "restore": "In Mods wiederherstellen",
+    "restore_tip": "Die noch im Setup vorhandene Kopie wird wieder zum Mod deines Mod-Ordners (es wird nichts kopiert).",
+    "remove": "Aus Listen entfernen",
+    "remove_all": "Alle aus Listen entfernen",
+    "later": "Später",
+    "notice": "Lösche einen Mod lieber in FS Passion (Schaltfläche „Endgültig löschen“ in der Aktionsleiste): Er wird dann gleichzeitig aus den Listen und Setups entfernt.",
+    "removed": {
+      "one": "1 Mod aus allen Listen entfernt",
+      "other": "{count} Mods aus allen Listen entfernt"
+    },
+    "restored": {
+      "one": "1 Mod in deinem Mod-Ordner wiederhergestellt",
+      "other": "{count} Mods in deinem Mod-Ordner wiederhergestellt"
+    },
+    "deleted": {
+      "one": "1 Mod gelöscht und aus den Listen entfernt",
+      "other": "{count} Mods gelöscht und aus den Listen entfernt"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 Update übernommen: {list}",
+      "other": "{count} Updates übernommen: {list}"
+    },
+    "added": {
+      "one": "1 vom Spiel heruntergeladener Mod zum Setup „{name}“ hinzugefügt",
+      "other": "{count} vom Spiel heruntergeladene Mods zum Setup „{name}“ hinzugefügt"
+    },
+    "unclassified": {
+      "one": "1 vom Spiel heruntergeladener Mod ist jetzt in deinem Mod-Ordner (nicht einsortiert)",
+      "other": "{count} vom Spiel heruntergeladene Mods sind jetzt in deinem Mod-Ordner (nicht einsortiert)"
+    },
+    "errors": {
+      "one": "1 Ordner konnte nicht wieder in Ordnung gebracht werden: {list}. Siehe Protokoll.",
+      "other": "{count} Ordner konnten nicht wieder in Ordnung gebracht werden: {list}. Siehe Protokoll."
+    },
+    "reshaped": {
+      "one": "1 Mod entpackt oder neu gepackt: Das Setup folgt seiner neuen Form ({list})",
+      "other": "{count} Mods entpackt oder neu gepackt: Die Setups folgen ihrer neuen Form ({list})"
+    }
+  },
+  "rights": {
+    "title": "Rechte für Mods auf anderen Laufwerken",
+    "intro": "Damit ein auf einem anderen Laufwerk gespeicherter Mod in ein Setup kommt, erstellt FS Passion einen symbolischen Link. Windows erlaubt das nur mit dem Entwicklermodus oder mit Administratorrechten, und keines von beiden ist aktiv.",
+    "standard": "Dein Windows-Konto ist ein Standardkonto: Administratorrechte würden FS Passion unter einem anderen Konto ausführen, mit anderen Ordnern und Einstellungen. Der Entwicklermodus ist die richtige Wahl.",
+    "admin_title": "FS Passion immer als Administrator ausführen",
+    "admin_text": "FS Passion kreuzt für dich „Programm als Administrator ausführen“ an (Eigenschaften → Kompatibilität), nur für dein Konto, und startet dann neu. Folgen:",
+    "uac": "Windows fragt bei jedem Start von FS Passion nach einer Bestätigung.",
+    "game_normal": "Das Spiel und seine Plattform werden weiterhin mit normalen Rechten über den Windows-Explorer gestartet. Startparameter laufen dann wie gewohnt über die Plattform (Steam, Epic Games).",
+    "no_drop": "Windows blockiert das Ziehen von Dateien aus dem Explorer auf FS Passion. Derzeit ohne Auswirkung: FS Passion nutzt diese Geste nicht.",
+    "dev_title": "Oder: den Windows-Entwicklermodus einschalten",
+    "dev_text": "Windows-Einstellungen → System → Für Entwickler → „Entwicklermodus“. Keine weitere Folge für FS Passion. Komm dann hierher zurück und klicke auf „Erneut prüfen“.",
+    "without": "Ohne diese Rechte bleiben die zusätzlichen Ordner gespeichert: Ihre Mods werden aufgelistet, kommen aber in kein Setup.",
+    "later": "Später",
+    "dev_mode": "Entwicklermodus öffnen",
+    "admin": "Immer als Administrator ausführen",
+    "missing": "Windows verweigert symbolische Links: Mods auf anderen Laufwerken werden aufgelistet, kommen aber in kein Setup.",
+    "get": "Rechte erhalten…",
+    "check": "Erneut prüfen",
+    "ok": "Symbolische Links erlaubt (FS Passion läuft als Administrator): Mods auf anderen Laufwerken kommen in Setups.",
+    "ok_dev": "Symbolische Links erlaubt (Windows-Entwicklermodus): Mods auf anderen Laufwerken kommen in Setups.",
+    "unknown": "Die Rechte für symbolische Links wurden noch nicht geprüft.",
+    "admin_on": "FS Passion ist so eingestellt, dass es immer als Administrator läuft.",
+    "admin_off": "Nicht mehr als Administrator ausführen",
+    "restarting": "FS Passion startet als Administrator neu. Bestätige die Windows-Abfrage.",
+    "now_ok": "Symbolische Links erlaubt: Wende deine Setups erneut an, damit Mods auf anderen Laufwerken hineinkommen.",
+    "still_missing": "Windows verweigert weiterhin symbolische Links.",
+    "flag_failed": "Die Einstellung „Als Administrator ausführen“ konnte nicht geändert werden.",
+    "ok_plain": "Symbolische Links erlaubt: Mods auf anderen Laufwerken kommen in Setups.",
+    "admin_once_title": "FS Passion als Administrator neu starten",
+    "admin_once_text": "FS Passion startet nur dieses Mal als Administrator neu; bei jedem Start zu wiederholen. Der Entwicklermodus vermeidet das. Folgen:",
+    "admin_once": "Als Administrator neu starten"
+  },
+  "older": {
+    "title": "Ältere Version vom Spiel heruntergeladen",
+    "intro": {
+      "one": "Das Spiel hat einen Mod heruntergeladen, dessen Versionsnummer älter ist als deine. Er wurde beiseitegelegt, nichts wurde ersetzt. Was möchtest du tun?",
+      "other": "Das Spiel hat {count} Mods heruntergeladen, deren Versionsnummer älter ist als deine. Sie wurden beiseitegelegt, nichts wurde ersetzt. Was möchtest du tun?"
+    },
+    "versions": "Deine Version: {mine} · vom Spiel heruntergeladene Version: {game}",
+    "keep": "Meine Version behalten ({version})",
+    "use": "Die Version des Spiels verwenden ({version})",
+    "use_tip": "Die Version des Spiels nimmt den Platz deiner Version in ihrem Mod-Ordner ein; deine wird in „Old versions“ beiseitegelegt. Alle Setups folgen.",
+    "help": "Oft ist das ein Mod, den du verändert hast: Der ModHub vergleicht keine Versionsnummern, er bietet sein Original an. In jedem Fall wird nichts gelöscht: Die Datei, die du nicht behältst, bleibt im Ordner „Recovered“ oder „Old versions“, neben deinen Setups.",
+    "later": "Später",
+    "gone": "Diese Datei ist nicht mehr im Ordner „Recovered“: Es wurde nichts geändert.",
+    "failed": "Die Version des Spiels von {name} konnte nicht eingesetzt werden ({detail}). Deine Version hat sich nicht geändert."
+  },
+  "stop": {
+    "running": "Schließe zuerst {game}: Seine Einstellung muss bei geschlossenem Spiel wiederhergestellt werden.",
+    "folders_failed": "Die Setup-Ordner konnten nicht gelöscht werden.",
+    "closed": "FS Passion ist geschlossen. Das Spiel hat seine ursprüngliche Einstellung zurück.",
+    "export_first": "Exportiere vorher deine Konfiguration: So bekommst du deine Setups zurück, wenn du zu FS Passion zurückkehrst.",
+    "intro": "FS Passion stellt die ursprüngliche Einstellung des Spiels wieder her und entfernt dann die Setup-Ordner (sie enthalten nur Links):",
+    "no_version": "Keine Spielversion ist eingerichtet: Es gibt nichts wiederherzustellen.",
+    "mods_safe": "Deine Mod-Ordner werden nie angerührt, ebenso wenig „Old versions“ und „Recovered“, die beiseitegelegte Mods enthalten.",
+    "admin_flag": "Die von FS Passion gesetzte Einstellung „Programm als Administrator ausführen“ wird entfernt.",
+    "understand": "Mir ist klar: Das Spiel lädt keine Setups von FS Passion mehr.",
+    "plan": {
+      "restore": "Das Spiel lädt wieder seinen ursprünglichen Ordner: {dir}",
+      "deactivate": "Der eigene Mod-Ordner wird ausgeschaltet: Das Spiel kehrt zu seinem üblichen Ordner „mods“ zurück.",
+      "missing": "gameSettings.xml nicht gefunden: nichts wiederherzustellen.",
+      "none": "Spieleinstellung bereits ursprünglich.",
+      "folders": {
+        "one": "{count} Setup-Ordner entfernt",
+        "other": "{count} Setup-Ordner entfernt"
+      },
+      "kept": {
+        "one": "„{name}“ bleibt erhalten ({count} Datei).",
+        "other": "„{name}“ bleibt erhalten ({count} Dateien)."
+      }
+    },
+    "options": {
+      "title": "Auch löschen:",
+      "parties": "Setups und gemeinsame Mods (parties.json)",
+      "caches": "Caches (umgewandelte Symbole, DLC-Katalog)",
+      "settings": "Einstellungen von FS Passion",
+      "logs": "Protokolle",
+      "langs": "persönliche Sprachen"
+    },
+    "done": {
+      "title": "FS Passion wird nicht mehr verwendet",
+      "text": "Erledigt. Das Spiel hat seine ursprüngliche Einstellung zurück.",
+      "partial": "Erledigt, außer für mindestens eine Version: siehe unten. Das Protokoll enthält die Details.",
+      "version": {
+        "zero": "ursprüngliche Einstellung wiederhergestellt",
+        "one": "ursprüngliche Einstellung wiederhergestellt, {count} Setup-Ordner entfernt",
+        "other": "ursprüngliche Einstellung wiederhergestellt, {count} Setup-Ordner entfernt"
+      },
+      "set_aside": {
+        "one": "{count} in den Setup-Ordnern gefundene Datei wurde in „Recovered“ beiseitegelegt.",
+        "other": "{count} in den Setup-Ordnern gefundene Dateien wurden in „Recovered“ beiseitegelegt."
+      },
+      "close": "FS Passion schließen",
+      "uninstaller": "Dann die Deinstallation von FS Passion starten",
+      "error": {
+        "override": "Spieleinstellung NICHT wiederhergestellt (gameSettings.xml konnte nicht geändert werden); die Setup-Ordner bleiben erhalten",
+        "folders": "ursprüngliche Einstellung wiederhergestellt, aber die Setup-Ordner konnten nicht gelöscht werden"
+      }
+    },
+    "stopped": "FS Passion wird nicht mehr verwendet: Schließe es."
+  },
+  "tour": {
+    "button": "Geführte Tour",
+    "title": "Geführte Tour",
+    "count": "{n} / {total}",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "replay": "Wiederholen",
+    "finish": "Fertig",
+    "quit": "Tour verlassen",
+    "key_esc": "Esc",
+    "key_ctrl": "Strg",
+    "key_shift": "Umschalt",
+    "hint": {
+      "caption": "Lust auf eine geführte Tour?",
+      "body": "Klicke auf die Glühbirne: In einer Minute zeigt dir FS Passion das Wichtigste seiner Oberfläche. Sie bleibt dort, damit du die Tour jederzeit wiederholen kannst.",
+      "start": "Tour starten",
+      "later": "Später"
+    },
+    "versions": {
+      "caption": "Deine Spielversion",
+      "body": "Fahre über dieses Logo: Die Versionen von Farming Simulator erscheinen. Klicke auf die, die du verwalten willst.\nNicht installierte Versionen sind ausgegraut. Jede Version hat ihre eigenen Mods und Setups.",
+      "picked": "Ausgewählt: Ihre Mods und Setups werden angezeigt"
+    },
+    "parties": {
+      "caption": "Deine Setups: das Herz von FS Passion",
+      "body": "Ein Klick wechselt von einem Setup zum anderen: Seine Map und alle ihre Abhängigkeiten folgen.\nVolles Setup: alle deine Mods, um sie im Spiel zu aktualisieren.\nLeeres Setup: keine Mods, um das Originalspiel zu testen.",
+      "full_tip": "Alle Mods: um Mod-Updates im Spiel auszuführen",
+      "empty_tip": "Keine Mods: um das Originalspiel zu testen"
+    },
+    "tools": {
+      "caption": "Erstellen, duplizieren, umbenennen, löschen",
+      "body": "Aktionen für das ausgewählte Setup.\nTipp: Bei einer Map in „Alle Mods“ erstellt die Schaltfläche „＋ Setup“ das Setup mit der Map und allen ihren Abhängigkeiten, mit einem Klick."
+    },
+    "common": {
+      "caption": "Gemeinsame Mods",
+      "body": "Die Fahrzeuge, Geräte und Gameplay-Skripte, die du in allen deinen Setups haben willst.\nSie sind standardmäßig eingeschaltet; bei Bedarf schaltest du sie für ein einzelnes Setup aus.",
+      "on": "Gemeinsame Mods in diesem Setup enthalten",
+      "off": "Nur für dieses Setup ausgeschaltet"
+    },
+    "apply": {
+      "caption": "Anwenden",
+      "body": "Wendet das ausgewählte Setup an: Das Spiel lädt es beim nächsten Start.\nDie Schaltfläche leuchtet, solange das ausgewählte Setup nicht angewendet ist.",
+      "done": "Angewendet: Das Spiel lädt es beim nächsten Start"
+    },
+    "buttons": {
+      "caption": "Design, Benachrichtigungen, Einstellungen",
+      "body": "Helle oder dunkle Oberfläche, Nachrichtenverlauf, Einstellungen… Und die Glühbirne, um diese Tour jederzeit zu wiederholen.",
+      "theme": "Helle oder dunkle Oberfläche"
+    },
+    "list1": {
+      "caption": "Alle Mods",
+      "body": "Dein ganzer Mod-Ordner, nach Kategorien sortiert: DLC, Maps, andere Mods…\nEin Mod bleibt immer hier, egal was du in den anderen Listen tust. „Nicht einsortierte“ Mods sind in keiner Liste: Das Spiel sieht sie nicht.\n[Strg] + [F]: einen Mod oder einen Autor suchen.",
+      "search_tip": "Suchen: Strg + F"
+    },
+    "downloads": {
+      "caption": "Neu heruntergeladene Mods",
+      "body": "Diese Schaltfläche sucht die Mods, die du gerade heruntergeladen hast, in deinem Download-Ordner.\nFS Passion erkennt die Spielversion jedes Mods und legt ihn mit deiner Zustimmung in den richtigen Mod-Ordner.\nDas geschieht auch beim Start: siehe Einstellungen → Anwendung → Downloads.",
+      "found": "Jeder kommt in den Mod-Ordner seiner Spielversion"
+    },
+    "list2": {
+      "caption": "Setup-Mods",
+      "body": "Die Mods des ausgewählten Setups: seine Map, ihre Abhängigkeiten, seine eigenen Mods.\nDas Spiel lädt sie zusätzlich zu den gemeinsamen Mods."
+    },
+    "list3": {
+      "caption": "Gemeinsame Mods",
+      "body": "Die Mods, die in allen deinen Setups vorhanden sind: Traktoren, Geräte, Skripte…\nSortiere sie einmal hier ein: Jedes Setup bekommt sie."
+    },
+    "select": {
+      "caption": "Mehrfachauswahl",
+      "body": "[Strg] + Klick: einen Mod zur Auswahl hinzufügen oder daraus entfernen.\n[Umschalt] + Klick: einen ganzen Bereich auswählen.\n[Strg] + [A]: alles in der Liste auswählen; [Esc]: Auswahl aufheben.\nSobald ein Mod ausgewählt ist, erscheint unten eine Aktionsleiste."
+    },
+    "move": {
+      "caption": "Ziehen und Ablegen",
+      "body": "Nach „Setup-Mods“ oder „Gemeinsame Mods“: Das ist eine Kopie, der Mod bleibt in „Alle Mods“.\nZwischen diesen beiden Listen: Das ist ein Verschieben. Halte beim Ablegen [Strg] gedrückt, um zu kopieren.\nNach „Alle Mods“ oder mit der Taste [Entf]: Der Mod wird aus der Liste entfernt. Seine Datei wird nie gelöscht.",
+      "copy": "Kopieren",
+      "move": "Verschieben · [Strg]: kopieren",
+      "remove": "Aus der Liste entfernen · [Entf]"
+    },
+    "keys": {
+      "caption": "Tastenkürzel",
+      "body": "Um schneller zu sein:",
+      "rows": [
+        {
+          "k": "[Strg] + [F]",
+          "d": "Einen Mod oder einen Autor suchen"
+        },
+        {
+          "k": "[Strg] + Klick",
+          "d": "Einen Mod zur Auswahl hinzufügen oder daraus entfernen"
+        },
+        {
+          "k": "[Umschalt] + Klick",
+          "d": "Einen Bereich von Mods auswählen"
+        },
+        {
+          "k": "[Strg] + [A]",
+          "d": "Alles in der Liste auswählen"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Auswahl aufheben oder ein Ziehen abbrechen"
+        },
+        {
+          "k": "[Strg] beim Ablegen",
+          "d": "Kopieren statt verschieben (zwischen Liste 2 und 3)"
+        },
+        {
+          "k": "[Entf]",
+          "d": "Aus Liste 2 oder 3 entfernen (die Datei bleibt)"
+        },
+        {
+          "k": "[Eingabe] auf einer Map",
+          "d": "Ein Setup mit der Map und ihren Abhängigkeiten erstellen"
+        },
+        {
+          "k": "[F2]",
+          "d": "Einen Mod umbenennen"
+        },
+        {
+          "k": "[I]",
+          "d": "Die Karte eines Mods anheften"
+        },
+        {
+          "k": "[Leertaste]  [↑] [↓] [←] [→]",
+          "d": "Mit der Tastatur auswählen und sich bewegen"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Schließen, ohne zu beenden",
+      "body": "Das Kreuz schließt das Fenster, aber FS Passion läuft im Hintergrund weiter, im Infobereich neben der Uhr.\nZum Zurückholen: der Pfeil „^“ in der Taskleiste, dann das FS-Symbol. Zum wirklichen Schließen: „Beenden“ unten rechts oder Rechtsklick auf das Symbol.\nDu kannst das unter Einstellungen → Anwendung → Fenster ändern.",
+      "tip_close": "Schließen: FS Passion wandert in den Infobereich",
+      "tip_more": "Ausgeblendete Symbole anzeigen",
+      "tip_icon": "Klick: FS Passion kommt zurück · Rechtsklick: Beenden"
+    },
+    "end": {
+      "caption": "Jetzt bist du dran!",
+      "body": "Wiederhole diese Tour jederzeit mit der Glühbirne oder unter Einstellungen → Hilfe und Info."
+    },
+    "demo": {
+      "parties": [
+        "Grünes Tal — Viehzucht",
+        "Die Hügel — Ackerbau",
+        "Reisfelder im Süden"
+      ],
+      "party_sub": {
+        "one": "Map + {count} Mod",
+        "other": "Map + {count} Mods"
+      },
+      "mods": [
+        "Sechszylinder-Traktor",
+        "Mähdrescher",
+        "6-m-Sämaschine",
+        "Landwirtschaftlicher Anhänger",
+        "Gerätepaket",
+        "Wetter-Skript"
+      ]
+    }
+  }
+}

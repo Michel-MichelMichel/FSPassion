@@ -1,0 +1,884 @@
+/* Les trois listes et les tuiles.
+   Cartes neutres, contours et indicateurs dans la couleur d'accent. */
+
+/* --------------------------------------------------------------- liste 1 : en-tête */
+
+.lib-head {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap; /* Liste étroite, les outils passent sous le titre */
+  align-items: center;
+  gap: 12px 26px;
+  padding: 4px 24px 18px 16px; /* aligné sur la grille (marge de 16 px) */
+}
+.lib-title {
+  font-family: var(--font-display);
+  font-size: var(--t-xxl);
+  line-height: 1;
+  color: var(--text-1);
+  white-space: nowrap;
+}
+/* Titre et compteurs alignés par le bas (ligne de base commune) */
+.lib-titlebar { display: flex; align-items: baseline; gap: 26px; min-width: 0; }
+.counters { display: flex; gap: 20px; align-items: baseline; white-space: nowrap; }
+.counter { display: inline-flex; align-items: baseline; gap: 7px; font-size: var(--t-s); color: var(--text-3); }
+.counter b { font-size: var(--t-m); font-weight: 400; color: var(--text-1); font-variant-numeric: tabular-nums; }
+
+/* La recherche rétrécit (jusqu’à 220 px) avant que les outils ne
+   passent sur une seconde ligne, sous le titre et les compteurs. */
+.lib-tools { flex: 1 1 330px; min-width: 0; margin-left: auto; display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.lib-progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--t-s);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.lib-progress .ico { width: 16px; height: 16px; color: var(--accent); }
+.anomaly-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--r-m);
+  background: var(--fill-2);
+  box-shadow: var(--elev);
+  color: var(--text-1);
+  font-size: var(--t-s);
+  transition: background var(--d-fast) var(--ease);
+}
+.anomaly-indicator .ico { color: var(--caution); }
+.anomaly-indicator:hover { background: var(--fill-3); }
+.anomaly-indicator.has-new { background: var(--accent); color: var(--on-accent); box-shadow: var(--elev-accent); }
+.anomaly-indicator.has-new .ico { color: var(--on-accent); }
+
+.search { position: relative; flex: 0 1 390px; width: 390px; min-width: 220px; } /* 340 → 390 px, le texte pré-rempli tenait mal */
+.search .field-input { padding-left: 42px; padding-right: 40px; }
+.search > .ico { position: absolute; left: 13px; top: 10px; color: var(--text-3); pointer-events: none; transition: color var(--d-fast); }
+.search:focus-within > .ico { color: var(--accent); }
+.search .search-clear { position: absolute; right: 5px; top: 5px; }
+.search input::-webkit-search-cancel-button { display: none; -webkit-appearance: none; }
+
+/* --------------------------------------------------------------- liste 1 : grille */
+
+.grid-wrap { position: relative; flex: 1; min-height: 0; }
+.grid-scroll {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+  overscroll-behavior: contain;
+}
+.grid-canvas { position: relative; width: 100%; }
+
+.cat-head {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  height: 64px;
+  padding-top: 18px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--text-1);
+}
+.cat-head .cat-count { font-family: var(--font-ui); font-size: var(--t-s); color: var(--text-3); font-variant-numeric: tabular-nums; }
+.cat-head .cat-note { font-family: var(--font-ui); font-size: var(--t-s); color: var(--text-3); }
+
+.tile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  contain: layout style;
+  border-radius: var(--r-l);
+  outline: none;
+}
+.tile:focus-visible .tile-art { outline: 2px solid var(--focus); outline-offset: 3px; }
+.tile:hover, .tile:focus-visible { z-index: 3; }
+
+/* Image du mod : une carte aux coins arrondis, avec un trait fin intérieur ;
+   au survol, elle se soulève légèrement (ombre et trait plus clair). */
+.tile-art {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: var(--r-l);
+  background: var(--fill-2);
+  isolation: isolate;
+  box-shadow: var(--shadow-s);
+  transition: box-shadow var(--d) var(--ease), translate var(--d) var(--ease-out);
+}
+/* Trait intérieur, par-dessus l'image */
+.tile-art > .tile-edge {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .09);
+  pointer-events: none;
+  transition: box-shadow var(--d) var(--ease);
+}
+.tile:hover .tile-art, .tile:focus-visible .tile-art { box-shadow: var(--shadow-l); translate: 0 -3px; }
+.tile.is-wide .tile-art { height: 140px; }
+
+/* Icône légèrement désaturée, voilée de la couleur du thème ; vraies couleurs
+   au survol (la couleur d'origine reste bien visible). */
+.tile-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  filter: grayscale(.35) brightness(.96);
+  transition: opacity 180ms var(--ease), filter 280ms var(--ease);
+}
+.tile-img.loaded { opacity: 1; }
+.tile-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--fg); /* couleur principale du thème, jamais celle d'une zone */
+  mix-blend-mode: color;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 280ms var(--ease);
+}
+/* La teinte ne s'applique qu'à une icône affichée (pas aux emplacements vides). */
+.tile-art:has(.tile-img.loaded)::after { opacity: var(--tile-tint); }
+.tile:hover .tile-img, .tile:focus-visible .tile-img { filter: none; }
+.tile:hover .tile-art::after, .tile:focus-visible .tile-art::after { opacity: 0; }
+
+/* Emplacement vide : icône par défaut, ou attente */
+.tile-ph {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  overflow: hidden;
+}
+.tile-ph .ico { width: 56px; height: 56px; opacity: .55; }
+.tile.has-img .tile-ph .ico { opacity: 0; }
+
+/* Défilement rapide : pas de survol (ni détail, ni couleurs) tant que ça défile. */
+.grid-scroll.is-scrolling .tile { pointer-events: none; }
+
+/* Badges posés sur l'image : pastilles sombres en acrylique, icône d'accent. */
+.tile-badges { position: absolute; z-index: 3; top: 10px; left: 10px; display: flex; gap: 6px; }
+/* Badge de map : icône « map », en bas à gauche de l'image */
+.tile-map { position: absolute; z-index: 3; left: 10px; bottom: 10px; display: flex; }
+.tile-map .badge { width: 42px; height: 42px; border-radius: var(--r-l); }
+.tile-map .badge .ico { width: 24px; height: 24px; }
+.badge {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-m);
+  background: rgba(24, 24, 24, .72);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  backdrop-filter: blur(14px) saturate(1.4);
+  color: var(--accent);
+  box-shadow: var(--shadow-s), inset 0 0 0 1px rgba(255, 255, 255, .12);
+}
+.badge .ico { width: 18px; height: 18px; }
+/* Faux mod du mode démonstration : fiole d'erlenmeyer */
+.badge-demo { color: var(--accent); }
+/* Repères discrets : point plein = dans la partie en cours ;
+   anneau = dans les mods communs. */
+.tile-marks {
+  position: absolute;
+  z-index: 3;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  gap: 7px;
+  padding: 7px 8px;
+  border-radius: 20px;
+  background: rgba(24, 24, 24, .72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12);
+}
+.tile-marks:empty { display: none; }
+.mark { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+.mark-common { background: transparent; box-shadow: inset 0 0 0 2.5px var(--accent); }
+
+.tile-name {
+  margin: 12px 4px 0;
+  font-size: var(--t-name);
+  font-weight: 400;
+  line-height: 30px;
+  max-height: 60px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-wrap: anywhere;
+  color: var(--text-1);
+  transition: color var(--d-fast) var(--ease);
+}
+/* Survol : le nom complet s'affiche, sans fond derrière le titre. */
+.tile:hover .tile-name, .tile:focus-visible .tile-name {
+  max-height: none;
+  -webkit-line-clamp: unset;
+  position: relative;
+  z-index: 4;
+  text-shadow: 0 1px 2px var(--bg), 0 0 8px var(--bg);
+}
+
+/* Non classé : tuile surlignée, contour en pointillés épais.
+   Tirets de 4 px d'épaisseur, tirets et espaces de même longueur
+   (~14 px) ; un masque SVG les dessine régulièrement, coins compris. Le
+   contour est par-dessus l'icône (un « outline » passerait dessous). */
+.tile.is-unclassified .tile-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .28));
+}
+.tile-ring {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: none;
+  pointer-events: none;
+  background: var(--accent);
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><rect x='2' y='2' width='296' height='296' rx='7' fill='none' stroke='black' stroke-width='4' pathLength='840' stroke-dasharray='10 10' stroke-dashoffset='5'/></svg>") 0 0 / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><rect x='2' y='2' width='296' height='296' rx='7' fill='none' stroke='black' stroke-width='4' pathLength='840' stroke-dasharray='10 10' stroke-dashoffset='5'/></svg>") 0 0 / 100% 100% no-repeat;
+}
+.tile.is-unclassified .tile-ring { display: block; }
+.tile.is-unclassified.is-selected .tile-ring { display: none; }
+.cat-head.is-unclassified > span:first-child { color: var(--accent-text); }
+
+/* Sélection : contour d'accent autour de l'image et case cochée dans
+   l'angle (sélection d'une grille dans Windows 11). */
+.tile.is-selected .tile-art {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.tile.is-selected .tile-art::after { opacity: 0; }
+.tile.is-selected .tile-img { filter: none; }
+.tile.is-selected .tile-name { color: var(--accent-text); }
+.tile.is-selected::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--r-m);
+  background: var(--accent);
+  box-shadow: var(--shadow-m), inset 0 0 0 1px rgba(255, 255, 255, .25);
+  pointer-events: none;
+}
+.tile.is-selected::after {
+  content: "";
+  position: absolute;
+  z-index: 6;
+  top: 17px;
+  right: 17px;
+  width: 16px;
+  height: 16px;
+  background: var(--on-accent);
+  -webkit-mask: url("/assets/icons/check.svg") center / contain no-repeat;
+  mask: url("/assets/icons/check.svg") center / contain no-repeat;
+  pointer-events: none;
+}
+/* La case suit l'image quand elle se soulève au survol */
+.tile.is-selected:hover::before, .tile.is-selected:hover::after,
+.tile.is-selected:focus-visible::before, .tile.is-selected:focus-visible::after { translate: 0 -3px; }
+
+/* Bouton « ＋ Partie » des maps : au centre de l'image,
+   visible au survol et au focus clavier */
+.tile-plus {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 46px;
+  padding: 0 20px 0 15px;
+  border: 0;
+  border-radius: var(--r-l);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: var(--t-m);
+  white-space: nowrap;
+  box-shadow: var(--shadow-l), var(--elev-accent);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  translate: 0 8px;
+  pointer-events: none;
+  transition: opacity 150ms var(--ease), translate 220ms var(--ease-out), background var(--d-fast);
+}
+.tile-plus:hover { background: color-mix(in srgb, var(--accent) 90%, #fff); }
+.tile-plus:active { background: color-mix(in srgb, var(--accent) 82%, #000); }
+.tile:hover .tile-plus, .tile:focus-visible .tile-plus, .tile.is-selected .tile-plus {
+  opacity: 1;
+  translate: 0 0;
+  pointer-events: auto;
+}
+.tile-plus[hidden] { display: none; }
+.grid-scroll.is-scrolling .tile-plus, html.is-dragging .tile-plus { opacity: 0; pointer-events: none; }
+
+/* Bouton « i » (fiche épinglée), en haut à droite de l'image, visible
+   au survol et au focus ; il reste allumé tant que la fiche est épinglée. Une
+   tuile sélectionnée a sa case cochée dans l'angle : le bouton se place à sa gauche. */
+.tile-info {
+  position: absolute;
+  z-index: 7;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-m);
+  background: rgba(24, 24, 24, .72);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  backdrop-filter: blur(14px) saturate(1.4);
+  color: var(--accent);
+  box-shadow: var(--shadow-s), inset 0 0 0 1px rgba(255, 255, 255, .12);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms var(--ease), background var(--d-fast), color var(--d-fast);
+}
+.tile-info .ico { width: 19px; height: 19px; }
+.tile-info:hover { background: rgba(40, 40, 40, .86); }
+.tile.is-selected .tile-info { right: 48px; }
+.tile:hover .tile-info, .tile:focus-visible .tile-info, .tile.is-pinned .tile-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+.tile.is-pinned .tile-info { background: var(--accent); color: var(--on-accent); box-shadow: var(--shadow-m), var(--elev-accent); }
+.grid-scroll.is-scrolling .tile-info, html.is-dragging .tile-info { opacity: 0; pointer-events: none; }
+
+/* Lasso */
+.lasso {
+  position: absolute;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  border-radius: var(--r-xs);
+  background: rgba(255, 255, 255, .06);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  pointer-events: none;
+}
+.grid-scroll:focus, .side-body:focus { outline: none; }
+
+/* Mod manquant */
+.tile.is-missing { opacity: .45; }
+
+/* DLC : informatif, non sélectionnable */
+.tile.is-dlc { cursor: default; }
+.tile.is-dlc .tile-ph .ico { width: 48px; height: 48px; }
+/* DLC du catalogue non possédé : estompé, en niveaux de gris */
+.tile.is-absent .tile-art { opacity: .4; filter: grayscale(1); }
+
+/* Affichage différé : une tuile entrée pendant un défilement reste
+   en attente ; à l'arrêt, elle se déploie depuis l'angle haut-gauche, les
+   tuiles les unes après les autres avec un micro-délai. La position de la
+   tuile est donnée par « translate » : « scale » s'y ajoute sans la déplacer. */
+.tile.is-pending { visibility: hidden; }
+.tile, .cat-head { transform-origin: 0 0; }
+.tile.deploy, .cat-head.deploy {
+  animation: deploy 300ms var(--ease-spring) both;
+  animation-delay: var(--deploy-delay, 0ms);
+}
+@keyframes deploy {
+  from { opacity: 0; scale: .18; }
+  60% { opacity: 1; }
+  to { opacity: 1; scale: 1; }
+}
+
+.grid-empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 14px;
+  padding: 40px;
+  text-align: center;
+  color: var(--text-2);
+}
+.grid-empty-card {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  max-width: 560px;
+  padding: 28px 32px;
+  border-radius: var(--r-xl);
+  background: var(--surf-section, var(--surface-1));
+  box-shadow: inset 0 0 0 1px var(--stroke-card), var(--shadow-m, 0 8px 24px rgba(0, 0, 0, .25));
+}
+.grid-empty-card > .ico { width: 40px; height: 40px; color: var(--accent); }
+.grid-empty h3 { font-size: var(--t-l); font-weight: 400; color: var(--text-1); }
+.grid-empty p { max-width: 520px; }
+
+/* Repère alphabétique pendant le défilement : une carte en acrylique. */
+.scroll-hint {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  max-width: 72%;
+  padding: 22px 36px 26px;
+  border-radius: var(--r-xl);
+  background: var(--acrylic);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface);
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(.96);
+  transition: opacity 160ms var(--ease), transform 220ms var(--ease-out);
+}
+.scroll-hint.on { opacity: 1; transform: translate(-50%, -50%); }
+/* Repère de la liste 1 (corrigé) : une carte de largeur fixe, le
+   texte aligné à gauche. Chaque nom commence donc au même endroit pendant le
+   défilement (avec une carte à la largeur du nom, centrée, l'alignement ne se
+   voyait pas). Les 3 premières lettres du nom en accent, le reste en gris,
+   comme le titre de la carte. */
+.scroll-hint:not(.side-hint) {
+  width: min(72%, 760px);
+  text-align: left;
+}
+.scroll-hint .hint-lead { color: var(--accent); }
+.scroll-hint .hint-rest { color: var(--text-3); }
+.scroll-hint .hint-cat { font-size: var(--t-m); color: var(--text-3); margin-bottom: 4px; }
+.scroll-hint .hint-name {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1.08;
+  color: var(--accent);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --------------------------------------------------------------- listes 2 et 3 */
+
+/* Une carte (Card) chacune : voile neutre, trait fin. */
+.side-pane {
+  position: relative;
+  min-height: 0;
+  max-height: 100%;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 8px 10px 12px;
+  border-radius: var(--r-xl);
+  background: var(--layer);
+  box-shadow: inset 0 0 0 1px var(--stroke-card);
+  transition: opacity var(--d), background var(--d), box-shadow var(--d);
+}
+.side-head { flex: none; display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; padding: 0 8px 0 6px; }
+.side-title { font-family: var(--font-display); font-size: var(--t-l); color: var(--text-1); white-space: nowrap; }
+.side-count { font-size: var(--t-s); color: var(--text-3); font-variant-numeric: tabular-nums; }
+/* La mention (« Non incluse dans cette partie ») a sa propre ligne,
+   sous le titre, alignée à droite, sur une seule ligne. Absente = pas de ligne. */
+.side-note {
+  flex: none;
+  margin: -4px 8px 8px 0;
+  font-size: var(--t-xs);
+  color: var(--text-3);
+  text-align: right;
+  white-space: nowrap;
+}
+.side-note:empty { display: none; }
+.side-body { position: relative; flex: 1 1 auto; min-height: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; }
+.side-canvas { position: relative; width: 100%; }
+.side-pane.is-muted .side-body { opacity: .42; }
+.side-empty-wrap:empty { display: none; }
+.side-empty {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 6px 6px 8px;
+  font-size: var(--t-s);
+  color: var(--text-2);
+}
+.side-empty .ico { width: 18px; height: 18px; margin-top: 3px; color: var(--accent); }
+.side-empty strong { display: block; color: var(--text-1); font-size: var(--t-m); font-weight: 400; margin-bottom: 2px; }
+
+/* Glisser-déposer : la liste survolée s'éclaire si elle accepte le dépôt
+   (contour d'accent, voile neutre). */
+.side-pane.drop-ok, .pane-all.drop-ok {
+  background: rgba(255, 255, 255, .055);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+.pane-all { transition: background var(--d), box-shadow var(--d); }
+.side-pane.drop-no, .pane-all.drop-no { cursor: no-drop; }
+
+/* Tuile horizontale : petite icône, nom ; hauteur fixe. Sélection : voile
+   neutre et pastille d'accent à gauche (listes de Windows 11). */
+.row-tile {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 8px 6px 10px;
+  border-radius: var(--r-m);
+  outline: none;
+  contain: layout style;
+  transition: background var(--d-fast) var(--ease);
+}
+.row-tile:hover { background: var(--fill-2); }
+.row-tile:focus-visible { box-shadow: inset 0 0 0 2px var(--focus); }
+.row-art {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: var(--r-m);
+  background: var(--fill-2);
+  box-shadow: inset 0 0 0 1px var(--stroke);
+  color: var(--accent);
+  isolation: isolate;
+}
+.row-art .ico { width: 22px; height: 22px; opacity: .6; }
+.row-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  filter: grayscale(.35) brightness(.96);
+  transition: opacity 140ms var(--ease), filter 240ms var(--ease);
+}
+.row-img.loaded { opacity: 1; }
+.row-art:has(.row-img.loaded)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--fg); /* couleur principale du thème, jamais celle d'une zone */
+  mix-blend-mode: color;
+  opacity: var(--tile-tint);
+  pointer-events: none;
+  transition: opacity 240ms var(--ease);
+}
+.row-tile:hover .row-img, .row-tile.is-selected .row-img { filter: none; }
+.row-tile:hover .row-art::after, .row-tile.is-selected .row-art::after { opacity: 0; }
+.row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.25; }
+.row-name { font-size: var(--t-row); color: var(--text-1); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-sub { font-size: var(--t-xs); color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-badge { flex: none; color: var(--accent); display: grid; }
+.row-marks { flex: none; display: flex; gap: 5px; }
+.row-marks .mark { width: 10px; height: 10px; }
+.row-marks .mark-common { box-shadow: inset 0 0 0 2.5px var(--accent); }
+.row-marks:empty { display: none; }
+.row-tile.is-selected { background: var(--fill-3); }
+.row-tile.is-selected::before { opacity: 1; scale: 1; }
+.row-tile.is-selected:hover { background: var(--fill-4); }
+.row-tile.is-selected .row-art { box-shadow: 0 0 0 2px var(--accent); }
+.row-tile.is-missing .row-art, .row-tile.is-missing .row-name { opacity: .55; }
+.row-tile.is-missing .row-art { color: var(--caution); }
+.row-replace { flex: none; opacity: 0; pointer-events: none; transition: opacity var(--d-fast); }
+.row-tile:hover .row-replace, .row-tile:focus-visible .row-replace, .row-tile.is-selected .row-replace { opacity: 1; pointer-events: auto; }
+.side-body.is-scrolling .row-tile { pointer-events: none; }
+/* Apparition des tuiles quand la partie change. La position verticale
+   est donnée par « translate » : l'animation passe par « transform ». */
+.row-tile.deploy { animation: row-in 260ms var(--ease-out) both; animation-delay: var(--deploy-delay, 0ms); }
+@keyframes row-in { from { opacity: 0; transform: translateX(-16px); } }
+
+/* Repère du défilement, en plus petit dans les listes 2 et 3 */
+.scroll-hint.side-hint { top: calc(50% + 24px); max-width: 86%; padding: 14px 22px 16px; }
+.scroll-hint.side-hint .hint-name { font-size: 26px; }
+
+/* Survol d'une tuile des listes 2 et 3 : icône agrandie à ~300 px, en vraies
+   couleurs, avec le même déploiement que le détail des mods. */
+.row-preview {
+  position: absolute;
+  z-index: 60;
+  left: 0;
+  top: 0;
+  width: 324px;
+  padding: 12px 12px 14px;
+  border-radius: var(--r-xl);
+  background: var(--acrylic);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface);
+  pointer-events: none;
+  opacity: 0;
+  scale: .18;
+  transform-origin: 100% 50%;
+  transition: opacity 140ms var(--ease), scale 140ms var(--ease);
+}
+.row-preview.on { opacity: 1; scale: 1; transition: opacity 180ms var(--ease), scale 260ms var(--ease-spring); }
+.row-preview .pv-art {
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: var(--r-l);
+  background: var(--fill-1);
+  color: var(--accent);
+}
+.row-preview .pv-art img { width: 100%; height: 100%; object-fit: cover; }
+.row-preview .pv-art .ico { width: 56px; height: 56px; opacity: .55; }
+.row-preview .pv-name { margin: 10px 4px 0; font-size: var(--t-row); color: var(--text-1); overflow-wrap: anywhere; }
+.row-preview .pv-title { margin: 2px 4px 0; font-size: var(--t-xs); color: var(--text-3); overflow-wrap: anywhere; }
+
+/* --------------------------------------------------------------- glisser-déposer */
+
+html.is-dragging, html.is-dragging * { cursor: grabbing !important; }
+html.is-dragging .tile:hover .tile-img { filter: grayscale(.35) brightness(.96); }
+html.is-dragging .tile:hover .tile-art { translate: none; box-shadow: var(--shadow-s); }
+html.is-dragging .row-tile:hover:not(.is-selected) { background: transparent; }
+.drag-ghost {
+  position: absolute;
+  z-index: 900;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px 6px 6px;
+  border-radius: var(--r-xl);
+  background: var(--acrylic);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-l), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface);
+  pointer-events: none;
+  animation: ghost-in 160ms var(--ease-out) both;
+  transition: box-shadow var(--d-fast), opacity 160ms var(--ease), scale 160ms var(--ease);
+}
+.drag-ghost.is-ok { box-shadow: var(--shadow-l), 0 0 0 2px var(--accent); }
+.drag-ghost.out { opacity: 0; scale: .7; }
+.drag-ghost.out-ok { opacity: 0; scale: .5; }
+/* Ctrl maintenu = copie, le badge porte un « + ». */
+.drag-ghost.is-copy .dg-count::before { content: "+ "; }
+.drag-ghost .dg-art {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: var(--r-m);
+  background: var(--surface-2);
+  color: var(--accent);
+}
+.drag-ghost .dg-art img { width: 100%; height: 100%; object-fit: cover; }
+.drag-ghost .dg-stack {
+  position: absolute;
+  left: 11px;
+  top: 3px;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-m);
+  background: var(--fill-4);
+  box-shadow: inset 0 0 0 1px var(--stroke);
+  rotate: 7deg;
+}
+.drag-ghost .dg-count {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: var(--t-s);
+  line-height: 28px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+@keyframes ghost-in { from { opacity: 0; scale: .7; } }
+
+/* --------------------------------------------------------------- bandeau d'actions */
+
+/* Il glisse depuis le bas, au-dessus du pied de page : une barre de
+   commandes en acrylique. */
+.actionbar {
+  position: absolute;
+  z-index: 40;
+  /* Centré entre deux bords de 24 px (au lieu de left: 50 % et
+     translate) : sa largeur suit son contenu jusqu'à la largeur disponible ;
+     au-delà, les 4 boutons de classement passent sur 2 lignes. */
+  left: 24px;
+  right: 24px;
+  width: fit-content;
+  margin-inline: auto;
+  bottom: 126px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 7px 7px 18px;
+  border-radius: var(--r-xl);
+  background: var(--acrylic);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface);
+  opacity: 0;
+  translate: 0 26px;
+  pointer-events: none;
+  transition: opacity 180ms var(--ease), translate 300ms var(--ease-spring);
+}
+.actionbar.on { opacity: 1; translate: 0 0; pointer-events: auto; }
+.ab-count { display: inline-flex; align-items: baseline; gap: 7px; padding-right: 8px; white-space: nowrap; font-size: var(--t-s); color: var(--text-2); }
+.ab-count b { font-size: var(--t-l); font-weight: 400; color: var(--accent-text); font-variant-numeric: tabular-nums; }
+.ab-group { display: flex; gap: 4px; padding-left: 8px; box-shadow: inset 1px 0 0 var(--stroke-divider); }
+.ab-sort { flex-wrap: wrap; } /* Fenêtre étroite, 2 boutons par ligne (actionbar.js, fitBar) */
+.ab-sort.is-grid { display: grid; grid-template-columns: auto auto; justify-content: start; }
+.ab-count, .ab-group:not(.ab-sort), .ab-close, .ab-btn.btn-danger { flex: none; }
+.ab-btn { background: transparent; box-shadow: none; }
+.ab-btn:hover { background: var(--fill-2); }
+.ab-btn.btn-danger { box-shadow: none; }
+.ab-btn.is-compact { width: 36px; padding: 0; }
+.ab-btn.is-compact > span:not(.ico) { display: none; }
+.ab-spacer { width: 14px; }
+.ab-close { margin-left: 2px; }
+/* Bandeau ouvert : les listes gardent de la place pour leurs dernières tuiles. */
+#app.has-actionbar .grid-scroll { padding-bottom: 80px; }
+#app.has-actionbar .side { padding-bottom: 82px; }
+#app.has-actionbar-tall .grid-scroll { padding-bottom: 116px; }
+#app.has-actionbar-tall .side { padding-bottom: 118px; }
+
+/* --------------------------------------------------------------- détail d'un mod */
+
+.hovercard {
+  position: absolute;
+  z-index: 60;
+  left: 0;
+  top: 0;
+  width: 380px;
+  padding: 20px 22px;
+  max-height: calc(100% - 32px);
+  overflow: hidden;
+  border-radius: var(--r-xl);
+  background: var(--acrylic);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface);
+  pointer-events: none;
+  opacity: 0;
+  scale: .18;
+  transform-origin: var(--hc-origin, 0 0);
+  transition: opacity 160ms var(--ease), scale 160ms var(--ease);
+}
+/* Même déploiement que les tuiles : depuis l'angle haut-gauche (haut-droit
+   quand la bulle s'ouvre à gauche de la tuile, pour partir de la tuile). */
+.hovercard.on {
+  opacity: 1;
+  scale: 1;
+  transition: opacity 200ms var(--ease), scale 300ms var(--ease-spring);
+}
+.hc-title { font-family: var(--font-display); font-size: 20px; line-height: 1.25; color: var(--text-1); overflow-wrap: anywhere; }
+.hc-id { margin-top: 3px; font-size: var(--t-xs); color: var(--text-3); overflow-wrap: anywhere; }
+.hc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.hc-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 20px;
+  background: var(--fill-2);
+  box-shadow: inset 0 0 0 1px var(--stroke);
+  font-size: var(--t-xs);
+  color: var(--text-1);
+}
+.hc-tag .ico { width: 14px; height: 14px; color: var(--accent); }
+.hc-grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin-top: 14px; font-size: var(--t-s); }
+.hc-grid dt { color: var(--text-3); }
+.hc-grid dd { margin: 0; color: var(--text-1); overflow-wrap: anywhere; }
+.hc-section { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--stroke-divider); font-size: var(--t-xs); color: var(--text-3); }
+.hc-deps { margin-top: 6px; display: flex; flex-direction: column; gap: 4px; font-size: var(--t-s); }
+.hc-dep { display: flex; align-items: center; gap: 8px; }
+.hc-dep .ico { width: 15px; height: 15px; color: var(--accent); }
+.hc-dep.is-absent { color: var(--text-2); }
+.hc-dep.is-absent .ico { color: var(--caution); }
+.hc-dep.is-absent .dep-name { text-decoration: line-through; text-decoration-color: var(--text-4); }
+.hc-dep .dep-state { margin-left: auto; font-size: var(--t-xs); color: var(--text-3); white-space: nowrap; }
+/* Fiche épinglée (bouton « i ») : elle reçoit la souris, ses liens se
+   cliquent ; si elle est plus haute que la fenêtre, elle défile. */
+.hovercard.is-pinned {
+  pointer-events: auto;
+  max-height: calc(100% - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface), 0 0 0 2px var(--accent-line);
+}
+.hovercard.is-pinned .hc-title { padding-right: 34px; }
+.hc-close { position: absolute; top: 12px; right: 12px; color: var(--text-2); }
+.hc-close:hover { color: var(--text-1); }
+.hc-more { margin-top: 6px; font-size: var(--t-xs); color: var(--text-3); }
+.hc-dep .dep-main { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+.hc-dep .dep-name { min-width: 0; overflow-wrap: anywhere; }
+.hc-dep:has(.hc-link) { align-items: flex-start; }
+.hc-dep:has(.hc-link) > .ico { margin-top: 3px; }
+.hc-dep:has(.hc-link) .dep-state { margin-top: 2px; }
+.hc-dep + .hc-dep:has(.hc-link), .hc-dep:has(.hc-link) + .hc-dep { margin-top: 3px; }
+/* La fiche au survol ne dépasse pas la fenêtre (une fiche épinglée défile). */
+/* Lien de téléchargement : le nom du site, l'adresse dans l'infobulle. */
+.hc-link {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  height: 22px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--fill-2);
+  box-shadow: inset 0 0 0 1px var(--stroke);
+  color: var(--accent-text);
+  font-size: var(--t-xs);
+  white-space: nowrap;
+  transition: background var(--d-fast);
+}
+.hc-link > span { overflow: hidden; text-overflow: ellipsis; }
+.hc-link .ico { flex: none; width: 13px; height: 13px; color: var(--accent); }
+.hc-link:hover { background: var(--fill-3); }
+.hc-dep.is-absent .hc-link .ico { color: var(--accent); }
+.hovercard:not(.is-pinned) .hc-link { opacity: .8; }
+.hc-deps.is-optional .hc-dep.is-absent .ico { color: var(--text-3); }
+.hc-deps.is-optional .hc-dep.is-absent .hc-link .ico { color: var(--accent); }
+.hc-note { display: flex; gap: 8px; margin-top: 12px; font-size: var(--t-xs); color: var(--text-3); line-height: 1.45; }
+.hc-note .ico { flex: none; width: 15px; height: 15px; margin-top: 1px; color: var(--accent); }
+.hc-warn { display: flex; gap: 8px; margin-top: 12px; padding: 8px 10px; border-radius: var(--r-m); background: var(--fill-2); box-shadow: inset 0 0 0 1px var(--stroke); font-size: var(--t-xs); color: var(--text-2); }
+.hc-warn .ico { width: 15px; height: 15px; color: var(--caution); }
+
+/* Mode clair : lasso en voile sombre. */
+:root[data-mode="light"] .lasso { background: rgba(0, 0, 0, .05); }
+/* Un mod facultatif absent n'est pas une alerte : nom non barré. */
+.hc-deps.is-optional .hc-dep.is-absent .dep-name { text-decoration: none; }
+
+/* Redimensionnement de la fenêtre (hovercard.js) : les tuiles qui
+   passent sous la souris immobile ne réagissent plus (ni survol, ni fiche, ni
+   aperçu des listes 2 et 3). */
+html.is-resizing .tile, html.is-resizing .row-tile { pointer-events: none; }
+html.is-resizing .row-preview { opacity: 0; transition: none; }

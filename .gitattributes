@@ -1,0 +1,9 @@
+# Fins de ligne : Windows pour les fichiers .bat (cmd.exe les exige), Unix ailleurs.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.webp binary
+*.woff2 binary
+*.zip binary
+# Données de test : octets conservés tels quels (fins de ligne Windows comprises).
+tests/data/** -text

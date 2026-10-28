@@ -1,0 +1,25 @@
+# Environnement Python et caches
+.venv/
+.venv-linux/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Fabrication de l'exécutable
+build/
+dist/
+
+# Données locales à la racine seulement (« data/ » excluait aussi
+# src/fspassion/data/ et tests/data/, indispensables au programme et aux tests)
+/data/
+portable.txt
+
+# Documents de travail locaux, non publiés. Retirer cette règle pour les publier.
+/docs/
+
+
+# Sources des polices CJK : archives Sarasa Gothic téléchargées pour
+# tools/build_cjk_fonts.py (plusieurs centaines de Mo), jamais publiées.
+/fonts-src/

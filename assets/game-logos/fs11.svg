@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Farming Simulator 11">
+  <title>Farming Simulator 11</title>
+  <defs>
+    <linearGradient id="fs11-grad" gradientUnits="userSpaceOnUse" x1="0" y1="926.00" x2="0" y2="98.00">
+      <stop offset="0.00" stop-color="currentColor" stop-opacity="0.00"/>
+      <stop offset="0.18" stop-color="currentColor" stop-opacity="0.00"/>
+      <stop offset="1.00" stop-color="currentColor" stop-opacity="0.30"/>
+    </linearGradient>
+    <filter id="fs11-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="16.0"/>
+    </filter>
+    <clipPath id="fs11-clip"><path d="M221.47,162.97 A52.00,52.00 0 0 1 272.68,120.00 L871.22,120.00 A52.00,52.00 0 0 1 922.43,181.03 L802.53,861.03 A52.00,52.00 0 0 1 751.32,904.00 L90.81,904.00 Z"/></clipPath>
+  </defs>
+  <g fill="currentColor">
+    <!-- 1. remplissage : dégradé léger, rien en bas -->
+    <path d="M199.80,159.15 A74.00,74.00 0 0 1 272.68,98.00 L871.22,98.00 A74.00,74.00 0 0 1 944.10,184.85 L824.20,864.85 A74.00,74.00 0 0 1 751.32,926.00 L64.59,926.00 Z" fill="url(#fs11-grad)"/>
+    <!-- 2. éclairage interne le long du contour : halo diffus -->
+    <g clip-path="url(#fs11-clip)">
+      <path d="M221.47,162.97 A52.00,52.00 0 0 1 272.68,120.00 L871.22,120.00 A52.00,52.00 0 0 1 922.43,181.03 L802.53,861.03 A52.00,52.00 0 0 1 751.32,904.00 L90.81,904.00 Z M260.86,169.92 A12.00,12.00 0 0 1 272.68,160.00 L871.22,160.00 A12.00,12.00 0 0 1 883.04,174.08 L763.14,854.08 A12.00,12.00 0 0 1 751.32,864.00 L138.48,864.00 Z" fill-rule="evenodd" opacity="0.22" filter="url(#fs11-blur)"/>
+    </g>
+    <!-- 3. éclairage interne : bande nette -->
+    <path d="M199.80,159.15 A74.00,74.00 0 0 1 272.68,98.00 L871.22,98.00 A74.00,74.00 0 0 1 944.10,184.85 L824.20,864.85 A74.00,74.00 0 0 1 751.32,926.00 L64.59,926.00 Z M221.47,162.97 A52.00,52.00 0 0 1 272.68,120.00 L871.22,120.00 A52.00,52.00 0 0 1 922.43,181.03 L802.53,861.03 A52.00,52.00 0 0 1 751.32,904.00 L90.81,904.00 Z" fill-rule="evenodd" opacity="0.5"/>
+    <!-- 4. bord fort (couleur du texte) -->
+    <path d="M162.38,152.55 A112.00,112.00 0 0 1 272.68,60.00 L871.22,60.00 A112.00,112.00 0 0 1 981.52,191.45 L861.62,871.45 A112.00,112.00 0 0 1 751.32,964.00 L19.30,964.00 Z M199.80,159.15 A74.00,74.00 0 0 1 272.68,98.00 L871.22,98.00 A74.00,74.00 0 0 1 944.10,184.85 L824.20,864.85 A74.00,74.00 0 0 1 751.32,926.00 L64.59,926.00 Z" fill-rule="evenodd"/>
+    <!-- 5. chiffres : HelveticaLTStd-UltraComp, italique 10° -->
+    <path d="M325.66 373.98H382.62L312.44 771.97H389.85L481.53 252.03H418.00C410.36 299.50 378.70 313.37 335.19 319.94ZM555.69 373.98H612.65L542.47 771.97H619.88L711.56 252.03H648.03C640.39 299.50 608.73 313.37 565.22 319.94Z"/>
+  </g>
+</svg>

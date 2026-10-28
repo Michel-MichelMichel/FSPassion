@@ -1,0 +1,615 @@
+/* Mise en page : fenêtre, en-tête, page des listes, pied de page.
+   Fond « Mica », calques neutres, menus en acrylique. */
+
+/* Fond Mica : la couleur sombre du thème, éclairée par deux grandes lueurs
+   neutres très douces (comme le Mica de Windows 11, qui laisse deviner le
+   fond d'écran), plus le grain du thème. --mica règle l'intensité des lueurs. */
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform-origin: 0 0;
+  background-color: var(--bg);
+  background-image:
+    var(--grain),
+    radial-gradient(1400px 900px at 8% -12%, rgba(255, 255, 255, calc(.075 * var(--mica))), transparent 70%),
+    radial-gradient(1200px 1000px at 108% 112%, rgba(255, 255, 255, calc(.05 * var(--mica))), transparent 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, calc(.018 * var(--mica))), rgba(0, 0, 0, calc(.12 * var(--mica))));
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+}
+#app.is-loading > *:not(.boot) { visibility: hidden; }
+
+.boot {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--text-3);
+}
+#app:not(.is-loading) .boot { display: none; }
+
+/* --------------------------------------------------------------- en-tête */
+
+/* En-tête : logo à gauche, barre « Partie en cours » à droite ; l'icône
+   de la version active est à mi-distance des deux (deux espaces égaux). */
+.topbar {
+  position: relative;
+  z-index: 20;
+  flex: none;
+  display: flex;
+  align-items: center;
+  height: 138px;
+  padding: 0 24px 0 36px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: .32em;
+  font-family: var(--font-display);
+  font-size: 30px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+/* Logo FS Passion. Dessin d'une seule couleur, utilisé en masque :
+   il prend l'accent du thème (ou son dégradé bicolore), en sombre comme en clair.
+   Le dessin est celui de .app-logo-art ci-dessous. */
+.app-logo {
+  display: block;
+  flex: none;
+  height: 92px;
+  background: var(--accent-text);
+}
+:root[data-grad] .app-logo { background: var(--accent-grad); }
+.brand { align-items: center; }
+/* Une petite marge à gauche du logo de l'en-tête. */
+.brand > .app-logo { margin-left: 10px; }
+/* Logo de l'en-tête : pleine hauteur de la barre, du haut au bas, quelle
+   qu'elle soit (138 px sur 1 ligne, 164 px sur 2 lignes). */
+.topbar > .brand { align-self: stretch; }
+.topbar .app-logo.app-logo-art { height: 100%; }
+
+/* Logo « deux tracteurs » (gravure SVG), en masque comme le logo ci-dessus.
+   Son dégradé suit les couleurs du thème et s'anime lentement, comme le bouton
+   « Lancer le jeu » (même durée, même réglage « dégradé » et « mouvement réduit »). */
+.app-logo.app-logo-art {
+  height: 92px;
+  aspect-ratio: 1577 / 942;
+  background: var(--accent-text);
+  -webkit-mask: url("/assets/FS_Passion_logo/logo.svg") center / contain no-repeat;
+  mask: url("/assets/FS_Passion_logo/logo.svg") center / contain no-repeat;
+}
+:root[data-grad] .app-logo.app-logo-art {
+  background: linear-gradient(100deg, var(--grad-a), var(--grad-b), var(--grad-a));
+  background-size: 200% 100%;
+  animation: grad-flow 6s linear infinite;
+}
+html.reduce-motion .app-logo.app-logo-art { animation: none !important; }
+
+/* Mode démonstration : repère à côté du logo, avec « Quitter ». */
+.demo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  margin-left: 22px;
+  padding: 0 4px 0 12px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 1px var(--accent-line);
+  color: var(--accent-text);
+  font-size: var(--t-s);
+  white-space: nowrap;
+}
+.demo-pill .ico { color: var(--accent); }
+.demo-quit {
+  height: 26px;
+  margin-left: 4px;
+  padding: 0 11px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--fill-2);
+  color: var(--text-1);
+  font-size: var(--t-xs);
+  transition: background var(--d-fast);
+}
+.demo-quit:hover { background: var(--fill-4); }
+
+.topbar-spacer { flex: 1 1 0; min-width: 24px; }
+
+/* Logo Farming Simulator : à gauche de l'icône de
+   version, presque collé. Le bas de « Simulator » (98 % de la hauteur du logo,
+   mesuré) est aligné sur le bas des chiffres des logos de version (75,5 % de
+   leur hauteur, mesuré sur 11, 17, 22, 25…). L'ensemble est centré
+   verticalement dans l'en-tête. Couleur des textes, sans interaction. */
+.version-zone { display: flex; align-items: flex-end; gap: 0; align-self: center; margin-top: 10px; /* centre de l'ensemble = centre de l'en-tête */ }
+.fs-logo {
+  flex: none;
+  width: 159px;
+  height: 96px;
+  /* 68 px (bouton) - 10 px (marge de l'icône) - 48 × 75,5 % = bas des chiffres
+     à 21,8 px du bas du bouton ; bas de « Simulator » à 1,9 px du bas du logo. */
+  margin: 0 -8px 20px 0; /* 4 px de plus contre l'icône de version */
+  background: var(--text-1);
+  -webkit-mask: url("/assets/game-logos/fs_logo_black.svg") right bottom / contain no-repeat;
+  mask: url("/assets/game-logos/fs_logo_black.svg") right bottom / contain no-repeat;
+  pointer-events: none;
+}
+
+/* Version active : une icône, celle de la version en cours. Au survol, la
+   liste des versions s'ouvre en rangée horizontale, icônes seules. */
+.version-pick {
+  position: relative;
+}
+.version-btn {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  border: 0;
+  border-radius: var(--r-l);
+  background: transparent;
+  color: var(--accent);
+  transition: background var(--d-fast) var(--ease), box-shadow var(--d-fast) var(--ease);
+}
+/* Pas de fond au survol du logo de version (la liste s'ouvre). */
+.version-btn .game-logo { width: 48px; height: 48px; }
+/* Le sélecteur est dans .version-zone, la règle ne le
+   trouvait plus : la liste des versions est de nouveau centrée sous l'icône. */
+.version-pick > .menu.version-menu { left: 50%; translate: -50% 0; }
+.menu.version-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+  padding: 6px;
+}
+.version-item {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-m);
+  background: transparent;
+  color: var(--accent);
+  outline: none;
+  transition: background var(--d-fast), opacity var(--d-fast);
+}
+.version-item .game-logo { width: 40px; height: 40px; transition: scale 180ms var(--ease-out); }
+.version-item:hover .game-logo, .version-item:focus-visible .game-logo { scale: 1.22; }
+.version-item:focus-visible { background: var(--fill-2); }
+.version-item[aria-current="true"] { background: var(--fill-3); }
+.version-item[aria-current="true"]::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 16px;
+  height: 3px;
+  margin-left: -8px;
+  border-radius: 3px;
+  background: var(--accent);
+}
+/* Versions absentes et à venir : grisées (couleur des textes
+   secondaires au lieu de l'accent), sans agrandissement au survol, sans fond,
+   non sélectionnables. L'infobulle reste (nom et état). */
+.version-item.is-absent, .version-item.is-coming { color: var(--text-3); }
+.version-item.is-absent .game-logo { opacity: .5; }
+.version-item[aria-disabled="true"] { opacity: .55; cursor: default; }
+.version-item.is-coming[aria-disabled="true"] { opacity: .4; }
+.version-item[aria-disabled="true"] .game-logo,
+.version-item[aria-disabled="true"]:hover .game-logo { scale: 1; }
+.version-item[aria-disabled="true"]:hover, .version-item[aria-disabled="true"]:focus-visible { background: transparent; }
+
+/* Barre « Partie en cours » : le menu des parties, puis sur la même ligne les
+   actions sur les parties, le switch, Appliquer et les paramètres. L'intitulé
+   est posé au-dessus du menu, hors du flux : tout s'aligne sur le menu. */
+.party-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.party-block { position: relative; }
+.party-label {
+  position: absolute;
+  left: 2px;
+  bottom: calc(100% + 7px);
+  font-size: var(--t-xs);
+  color: var(--text-3);
+  white-space: nowrap;
+}
+/* Menu des parties : une liste déroulante de Windows 11 (ComboBox). */
+.party-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  width: 340px;
+  padding: 0 12px 0 14px;
+  border: 0;
+  border-radius: var(--r-m);
+  background: var(--fill-2);
+  box-shadow: var(--elev);
+  color: var(--text-1);
+  font-size: var(--t-l);
+  text-align: left;
+  transition: background var(--d-fast) var(--ease);
+}
+.party-select:hover { background: var(--fill-3); }
+.party-select[aria-expanded="true"] { background: var(--fill-press); }
+.party-select .party-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.party-select > .ico { color: var(--text-2); transition: translate var(--d) var(--ease-spring); }
+.party-select:active > .ico { translate: 0 2px; }
+.party-select[aria-disabled="true"] { opacity: .5; cursor: default; }
+
+/* Repère d'état : une ligne courte posée sous le menu des parties, comme
+   l'intitulé « Partie en cours » au-dessus ; il ne prend que la place de son
+   texte (« Partie appliquée : … », « jeu en cours d'exécution »…). */
+.party-status {
+  position: absolute;
+  left: 2px;
+  top: calc(100% + 8px);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  max-width: 720px;
+  font-size: var(--t-xs);
+  color: var(--text-2);
+  white-space: nowrap;
+  opacity: 0;
+  translate: 0 -4px;
+  pointer-events: none;
+  transition: opacity var(--d) var(--ease), translate var(--d) var(--ease-out);
+}
+.party-status.on { opacity: 1; translate: 0 0; pointer-events: auto; }
+.party-status > span { overflow: hidden; text-overflow: ellipsis; }
+.party-status .ico { color: var(--accent); }
+.party-status.is-warn .ico { color: var(--caution); }
+
+.party-tools { display: flex; gap: 2px; }
+
+.common-switch { margin-left: 4px; font-size: var(--t-s); color: var(--text-2); white-space: nowrap; }
+
+.apply-btn.is-needed { box-shadow: var(--elev-accent), 0 0 0 3px var(--accent-line); }
+.settings-btn { margin-left: 0; }
+
+/* En-tête sur 2 lignes quand la fenêtre est étroite (header.js,
+   fitHeader). Ligne du haut : « Partie en cours » puis le menu des parties,
+   sur la même ligne ; ligne du dessous : les autres boutons. Les deux lignes
+   partent du même bord gauche : la ligne du haut, plus courte, laisse libre
+   l'angle des boutons de fenêtre. L'en-tête gagne 26 px de hauteur, et le
+   repère d'état passe sous la seconde ligne. */
+.topbar.is-compact { height: 164px; }
+.topbar.is-compact .party-bar {
+  display: grid;
+  grid-template-columns: repeat(7, auto); /* avec l'ampoule du tour guidé */
+  justify-content: start;
+  align-items: center;
+  column-gap: 14px;
+  row-gap: 12px;
+  margin-top: -14px; /* repère d'état sous la seconde ligne : l'ensemble reste centré */
+}
+.topbar.is-compact .party-block {
+  position: static;
+  grid-column: 1 / -1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.topbar.is-compact .party-label {
+  position: static;
+  font-size: var(--t-s);
+}
+.topbar.is-compact .party-status { top: calc(100% + 8px); max-width: 100%; }
+/* Mode démonstration : en-tête sur 2 lignes, le repère garde la fiole et
+   « Quitter » ; le mot « Démonstration » reste dans l'infobulle. */
+.topbar.is-compact .demo-pill { margin-left: 16px; }
+.topbar.is-compact .demo-label { display: none; }
+
+/* Notifications : cloche avec pastille des messages non lus, et
+   historique des messages courts de la session. */
+.bell-pick { position: relative; margin-left: 6px; }
+.bell-btn { position: relative; }
+.bell-badge {
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: 0 0 0 2px var(--bg);
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+.bell-badge:empty { display: none; }
+.menu.notif-menu { left: auto; right: -8px; width: 480px; min-width: 0; padding: 8px; }
+.notif-head { display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 6px 6px 10px; }
+.notif-title { flex: 1; font-family: var(--font-display); font-size: var(--t-l); color: var(--text-1); }
+.notif-list { max-height: 460px; overflow-y: auto; display: flex; flex-direction: column; gap: 2px; }
+.notif-item {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--r-m);
+  font-size: var(--t-s);
+  color: var(--text-2);
+  line-height: 1.4;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.notif-item.is-unread { background: var(--fill-2); color: var(--text-1); }
+.notif-item.is-unread::before { opacity: 1; scale: 1; top: 22px; }
+.notif-ico { width: 18px; height: 18px; margin-top: 2px; color: var(--text-3); }
+.notif-item.is-unread .notif-ico { color: var(--accent); }
+.notif-warn .notif-ico { color: var(--caution); }
+.notif-error .notif-ico { color: var(--critical); }
+.notif-text { min-width: 0; overflow-wrap: anywhere; }
+.notif-time { margin-top: 2px; font-size: var(--t-xs); color: var(--text-3); font-variant-numeric: tabular-nums; }
+
+/* Boutons de fenêtre : collés à l'angle haut-droit, au-dessus de tout,
+   y compris des fenêtres internes (paramètres, notice…). Ils apparaissent
+   quand la souris passe dans la bande de l'en-tête. */
+.win-controls {
+  position: absolute;
+  z-index: 350;
+  top: 0;
+  right: 0;
+  display: flex;
+  opacity: 0;
+  transition: opacity var(--d) var(--ease);
+}
+.win-controls.is-near, .win-controls:hover, .win-controls:focus-within { opacity: 1; }
+.win-btn {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text-1);
+  transition: background var(--d-fast), color var(--d-fast);
+}
+.win-btn .ico { width: 16px; height: 16px; }
+.win-btn:hover { background: var(--fill-2); color: var(--text-1); }
+.win-btn:active { background: var(--fill-press); color: var(--text-2); }
+.win-close:hover { background: #911f14; color: #fff; }
+.win-close:active { background: #7a1a11; color: rgba(255, 255, 255, .8); }
+
+/* Menus déroulants (versions, parties, notifications) : acrylique de
+   Windows 11 — voile semi-transparent flouté, trait fin, ombre profonde. */
+.menu {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: max(300px, 100%);
+  padding: 5px;
+  border-radius: var(--r-xl);
+  background: var(--acrylic);
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow-l), 0 0 0 1px var(--stroke-outer), inset 0 0 0 1px var(--stroke-surface);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity var(--d-fast) var(--ease), transform var(--d-slow) var(--ease-out);
+}
+.menu.on { opacity: 1; transform: none; pointer-events: auto; }
+.menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 46px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: var(--r-m);
+  background: transparent;
+  color: var(--text-1);
+  font-size: var(--t-m);
+  text-align: left;
+  transition: background var(--d-fast) var(--ease);
+}
+.menu-item:hover, .menu-item:focus-visible, .menu-item.is-active-key { background: var(--fill-2); outline: none; }
+.menu-item:active { background: var(--fill-press); }
+.menu-item[aria-current="true"] { background: var(--fill-2); }
+.menu-item[aria-current="true"]::before { opacity: 1; scale: 1; }
+.menu-item .game-logo { width: 34px; height: 34px; }
+.menu-item .mi-text { flex: 1; display: flex; flex-direction: column; line-height: 1.25; }
+.menu-item .mi-sub { font-size: var(--t-xs); color: var(--text-3); }
+.menu-item[aria-disabled="true"] { opacity: .45; cursor: default; }
+.menu-item.is-dim .game-logo { opacity: .45; }
+.menu-sep { height: 1px; margin: 5px 6px; background: var(--stroke-divider); }
+.menu-special { color: var(--text-2); font-style: italic; }
+/* Étiquette (« appliquée ») : contour d'accent, sans fond. */
+.menu-tag {
+  padding: 1px 9px 2px;
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--accent-line);
+  font-size: var(--t-xs);
+  font-style: normal;
+  color: var(--accent-text);
+}
+.menu-empty { padding: 10px 12px; font-size: var(--t-s); color: var(--text-3); max-width: 340px; }
+.menu-scroll { max-height: 420px; overflow-y: auto; }
+
+/* Menu des parties : icône de la map de chaque partie */
+.party-ico {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: var(--r-s);
+  background: var(--fill-2);
+  box-shadow: inset 0 0 0 1px var(--stroke);
+  color: var(--accent);
+}
+.party-ico img { width: 100%; height: 100%; object-fit: cover; }
+.party-ico .ico { width: 17px; height: 17px; }
+.party-select .party-ico { width: 30px; height: 30px; margin-left: -6px; }
+.party-select .menu-tag { flex: none; }
+.party-menu { min-width: 380px; }
+.menu-special .party-ico { background: transparent; box-shadow: none; }
+
+/* --------------------------------------------------------------- page des listes */
+
+.main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 16px;
+  padding: 0 24px 0 36px;
+}
+
+/* Liste 1 posée sur un calque (Layer) : un voile neutre à peine plus clair que
+   le Mica, avec un trait fin. */
+.pane {
+  position: relative;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.pane-all {
+  padding-top: 20px;
+  border-radius: var(--r-xl);
+  background: var(--layer);
+  box-shadow: inset 0 0 0 1px var(--stroke-card);
+}
+
+/* Colonne de droite : liste 2 dans la moitié haute, liste 3 dans la moitié
+   basse. Une liste courte garde la hauteur de son contenu, en haut de
+   sa moitié. */
+.side {
+  min-height: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  padding-bottom: 0;
+  /* Hauteurs calculées par sidelists.js ; même famille d'animation que
+     l'accordéon des paramètres. */
+  transition: grid-template-rows 300ms var(--ease-spring), padding-bottom 300ms var(--ease-spring);
+}
+.side.no-anim { transition: none; }
+
+/* --------------------------------------------------------------- pied de page */
+
+.footer {
+  position: relative;
+  z-index: 2;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 114px;
+  padding: 0 24px 0 36px;
+}
+
+/* Bouton GitHub : le logo seul ; au survol, il glisse vers la gauche et
+   le mot « GitHub » apparaît en glissant vers la droite. Sans fond.
+   Au repos, le logo est au centre de l'ensemble (logo + texte = 116 px) ;
+   au survol, il va jusqu'au bord gauche : trajet de 43 px. */
+.gh-btn {
+  --gh-shift: 43px; /* (116 - 30) / 2 */
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  width: 116px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  transition: color 120ms var(--ease);
+}
+.gh-btn .gh-logo, .gh-btn .gh-text {
+  display: block;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--ico) center / contain no-repeat;
+  mask: var(--ico) center / contain no-repeat;
+  transition: transform 260ms var(--ease-out), opacity 200ms var(--ease);
+}
+.gh-btn .gh-logo { width: 30px; height: 30px; transform: translateX(var(--gh-shift)); }
+.gh-btn .gh-text {
+  width: 74px;
+  height: 20px;
+  margin-left: 12px;
+  color: var(--text-1);
+  opacity: 0;
+  transform: translateX(-24px);
+}
+.gh-btn:hover .gh-logo, .gh-btn:focus-visible .gh-logo { transform: translateX(0); }
+.gh-btn:hover .gh-text, .gh-btn:focus-visible .gh-text { opacity: 1; transform: translateX(0); transition-delay: 60ms; }
+.gh-btn[aria-disabled="true"] { cursor: default; }
+.gh-btn[aria-disabled="true"] .gh-logo { opacity: .55; }
+.gh-btn[aria-disabled="true"]:hover .gh-text { opacity: .55; }
+.footer-version { font-size: var(--t-xs); color: var(--text-4); }
+/* En thème clair, le numéro de version était trop pâle */
+:root[data-mode="light"] .footer-version { color: var(--text-2); }
+.footer-spacer { flex: 1; }
+.launch-btn { min-width: 200px; }
+
+/* --------------------------------------------------------------- bords de fenêtre */
+
+.frame-edges { position: absolute; inset: 0; z-index: 1000; pointer-events: none; }
+.edge { position: absolute; pointer-events: auto; }
+.edge-top { top: 0; left: 12px; right: 12px; height: 5px; cursor: ns-resize; }
+.edge-bottom { bottom: 0; left: 12px; right: 12px; height: 6px; cursor: ns-resize; }
+.edge-left { left: 0; top: 12px; bottom: 12px; width: 6px; cursor: ew-resize; }
+.edge-right { right: 0; top: 12px; bottom: 12px; width: 6px; cursor: ew-resize; }
+.edge-top-left { left: 0; top: 0; width: 12px; height: 12px; cursor: nwse-resize; }
+.edge-bottom-right { right: 0; bottom: 0; width: 14px; height: 14px; cursor: nwse-resize; }
+.edge-top-right { right: 0; top: 0; width: 12px; height: 12px; cursor: nesw-resize; }
+.edge-bottom-left { left: 0; bottom: 0; width: 14px; height: 14px; cursor: nesw-resize; }
+html.is-maximized .frame-edges { display: none; }
+
+/* --------------------------------------------------------------- reflet métallique */
+
+.metal-light {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 760px;
+  height: 760px;
+  margin: -380px 0 0 -380px;
+  z-index: 1500;
+  pointer-events: none;
+  border-radius: 50%;
+  /* « overlay » : les tons clairs (le cuivre) s'illuminent, les fonds sombres
+     restent sombres. */
+  mix-blend-mode: overlay;
+  opacity: 0;
+  transition: opacity .5s var(--ease);
+  will-change: transform;
+  background: radial-gradient(circle closest-side,
+    rgba(255, 236, 214, calc(.95 * var(--metal-strength))) 0%,
+    rgba(255, 214, 178, calc(.55 * var(--metal-strength))) 30%,
+    rgba(255, 200, 160, calc(.16 * var(--metal-strength))) 64%,
+    rgba(255, 200, 160, 0) 100%);
+}
+.metal-light.on.lit { opacity: 1; }

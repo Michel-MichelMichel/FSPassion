@@ -1,0 +1,105 @@
+# FS Passion — fabrication sur GitHub Actions.
+#
+# - À chaque envoi sur main et à chaque demande de fusion : tests sous Windows,
+#   puis fabrication (exécutable, version portable, installeur). Les fichiers
+#   sont disponibles 30 jours dans l'onglet « Actions » (Artifacts).
+# - À chaque étiquette « vX.Y.Z » (par exemple v0.8.0) : la même fabrication,
+#   puis un brouillon de publication (Release) avec l'installeur, la version
+#   portable et SHA256SUMS.txt. Le brouillon est à relire, puis à publier à la main.
+#
+# Fabrication vérifiable depuis le code source : c'est aussi ce que demande
+# SignPath Foundation pour la signature gratuite (à brancher plus tard).
+
+name: Fabrication
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*.*.*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 45
+    steps:
+      - name: Code source
+        uses: actions/checkout@v4
+
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+            requirements-build.txt
+
+      - name: Dépendances
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-build.txt
+
+      - name: Version de l'étiquette = version du projet
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: pwsh
+        env:
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          $v = (Select-String -Path src/fspassion/__init__.py -Pattern '^__version__ = "(.+)"').Matches[0].Groups[1].Value
+          if ("v$v" -ne "$env:REF_NAME") { throw "Étiquette $env:REF_NAME mais src/fspassion/__init__.py dit $v" }
+
+      - name: Inno Setup 6
+        shell: pwsh
+        run: |
+          if (-not (Test-Path "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe")) { choco install innosetup --no-progress -y }
+
+      - name: Analyse du code (ruff)
+        run: python -m ruff check src tests tools
+
+      - name: Fabrication (tests, exécutable, portable, installeur)
+        env:
+          PYTHONUTF8: "1"
+          PYTHONPATH: ${{ github.workspace }}\src
+        run: python tools/build.py
+
+      - name: Fichiers fabriqués
+        uses: actions/upload-artifact@v4
+        with:
+          name: FSPassion-${{ github.sha }}
+          path: build/release/
+          retention-days: 30
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Fichiers fabriqués
+        uses: actions/download-artifact@v4
+        with:
+          name: FSPassion-${{ github.sha }}
+          path: release
+
+      - name: Brouillon de publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          gh release create "$REF_NAME" release/* \
+            --repo "${{ github.repository }}" \
+            --draft \
+            --title "FS Passion $REF_NAME" \
+            --notes "Téléchargement : FSPassion-…-setup.exe (installeur) ou FSPassion-…-portable.zip (sans installation). Empreintes SHA-256 : SHA256SUMS.txt. Détail des changements : CHANGELOG.md."

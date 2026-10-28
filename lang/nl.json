@@ -1,0 +1,1382 @@
+{
+  "_meta": {
+    "code": "nl",
+    "name": "Nederlands",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion is gesloten",
+    "closed_help": "Je kunt dit tabblad sluiten. Start FS Passion opnieuw om verder te gaan."
+  },
+  "common": {
+    "close": "Sluiten",
+    "cancel": "Annuleren",
+    "ok": "OK",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd naar het klembord",
+    "soon": "Komt in versie {version}",
+    "soon_action": "{action}: komt in versie {version}"
+  },
+  "window": {
+    "minimize": "Minimaliseren",
+    "maximize": "Maximaliseren",
+    "restore": "Herstellen",
+    "close": "FS Passion sluiten"
+  },
+  "header": {
+    "settings": "Instellingen",
+    "version": "Spelversie: {name}",
+    "current_party": "Huidige setup",
+    "create": "Setup maken",
+    "duplicate": "Setup dupliceren",
+    "rename": "Setup hernoemen",
+    "delete": "Setup verwijderen",
+    "common_mods": "Gedeelde mods",
+    "common_mods_tip": "De gedeelde mods in deze setup opnemen",
+    "apply": "Toepassen",
+    "apply_tip": "Het spel deze setup laten laden",
+    "apply_done_tip": "Deze setup is toegepast en bijgewerkt: het spel laadt deze",
+    "theme_light": "Lichte interface",
+    "theme_dark": "Donkere interface"
+  },
+  "versions": {
+    "coming": "Binnenkort",
+    "ready": "Ingesteld",
+    "installed": "Geïnstalleerd",
+    "not_installed": "Niet geïnstalleerd",
+    "absent_help": "Ergens anders geïnstalleerd? Instellingen → Spel en paden"
+  },
+  "party": {
+    "full": "Volledige setup",
+    "empty": "Lege setup",
+    "other": "Eigen map",
+    "unsupported": "Geen setups",
+    "unknown": "Onbekend",
+    "none_yet": "Nog geen setups. Maak er een met ＋, of met “＋ Setup” bij een map.",
+    "full_count": {
+      "one": "Alle mods ({count})",
+      "other": "Alle mods ({count})"
+    },
+    "empty_sub": "Geen mods, om het basisspel te testen",
+    "applied_tag": "toegepast",
+    "mods_count": {
+      "zero": "Geen mods",
+      "one": "{count} mod",
+      "other": "{count} mods"
+    },
+    "full_tip": "Ideaal om mods in het spel bij te werken"
+  },
+  "status": {
+    "running": "{game} draait",
+    "other_folder": "Het spel laadt zijn mods uit een andere map:",
+    "applied": "Toegepaste setup: {name}",
+    "other_folder_path": "Het spel laadt een andere map: {path}",
+    "stale": "Setup gewijzigd sinds de laatste keer toepassen"
+  },
+  "path": {
+    "empty": "",
+    "found": "Gevonden",
+    "not_found": "Deze map bestaat niet",
+    "not_game_exe": "Dit bestand is geen uitvoerbaar bestand van {game}",
+    "no_gamesettings": "gameSettings.xml niet gevonden: start het spel één keer en kom dan terug",
+    "not_ntfs": "Dit station is geen NTFS: setups zijn niet mogelijk",
+    "onedrive": "Deze map staat in OneDrive: afgeraden",
+    "storage_overlap": "Deze map bevat de hoofdmap voor mods (of de bijbehorende map FSPassion), of ligt erin: kies een andere map",
+    "storage_duplicate": "Deze map wordt al gebruikt door de andere opslagmap, of bevat die",
+    "storage_same_disk": "Gevonden · zelfde station als de hoofdmap: geen speciale rechten nodig",
+    "storage_other_disk": "Gevonden · ander station: symbolische koppelingen"
+  },
+  "list1": {
+    "title": "Alle mods",
+    "search": "Zoek een mod of een maker",
+    "search_clear": "Zoekopdracht wissen",
+    "cat_unclassified": "Niet ingedeeld",
+    "cat_dlc": "DLC",
+    "cat_maps": "Maps",
+    "cat_others": "Andere mods",
+    "cat_by_author": "Op naam van de maker",
+    "dlc_note": "Door het spel in elke setup geladen",
+    "selected": "geselecteerd",
+    "active": "actief",
+    "all": "in totaal",
+    "scanning": "Mods lezen: {done} van {total}",
+    "icons_pending": {
+      "one": "Pictogrammen voorbereiden: nog {count}",
+      "other": "Pictogrammen voorbereiden: nog {count}"
+    },
+    "anomalies": {
+      "one": "{count} probleem: details tonen",
+      "other": "{count} problemen: details tonen"
+    },
+    "find_new": "Zoek nieuwe mods in de downloads",
+    "open_settings": "Instellingen openen",
+    "not_configured": "{game} is nog niet ingesteld",
+    "not_configured_help": "Geef de modmap op in de instellingen, of laat FS Passion de installatie detecteren.",
+    "reading": "Mods lezen…",
+    "no_match": "Geen mod komt overeen met “{query}”",
+    "empty": "Deze modmap is leeg",
+    "empty_help": "Mods (.zip) en uitgepakte mods (mappen met een modDesc.xml) verschijnen hier.",
+    "unclassified_note": "Het spel ziet ze pas als ze zijn ingedeeld",
+    "plus_party": "Setup",
+    "plus_party_tip": "Een setup maken met deze map en de afhankelijkheden ervan (Enter)",
+    "mark_party": "In de huidige setup",
+    "mark_common": "In de gedeelde mods",
+    "info_tip": "Details van de mod vastzetten (toets I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Modmap niet gevonden",
+      "unexpected": "Lezen van de mods mislukt: {error}"
+    }
+  },
+  "mod": {
+    "map": "Map",
+    "unpacked": "Uitgepakte mod",
+    "multiplayer": "Multiplayer",
+    "version": "Versie",
+    "author": "Maker",
+    "game_version": "Spel",
+    "gv_unknown": "Onbekende spelversie",
+    "size": "Grootte",
+    "kind": "Formaat",
+    "kind_dir": "Map (uitgepakt)",
+    "kind_zip": ".zip-archief",
+    "parties": "In lijsten",
+    "parties_none": "Geen",
+    "storage": "Opslag",
+    "dependencies": {
+      "one": "{count} afhankelijkheid",
+      "other": "{count} afhankelijkheden"
+    },
+    "more": {
+      "one": "en nog {count}",
+      "other": "en nog {count}"
+    },
+    "no_dependencies": "Geen afhankelijkheden opgegeven",
+    "unpacked_tip": "Uitgepakte mod: wordt niet bijgewerkt door de ModHub en kan niet in multiplayer worden gebruikt. FS Passion schrijft er nooit in.",
+    "gv_conflict": "Het naamvoorvoegsel en de descVersion wijzen naar twee verschillende versies: het voorvoegsel wordt gebruikt.",
+    "unpin": "Sluiten (Esc)",
+    "optional": {
+      "one": "{count} optionele mod",
+      "other": "{count} optionele mods"
+    },
+    "searchmods_note": "Oudere spelversie (tag SearchMods): de opgeslagen game laadt ook als een benodigde mod ontbreekt; het spel meldt het achteraf.",
+    "links_hint": "Klik op “i” om deze details vast te zetten en de links te openen.",
+    "links_old": "Links van de maker van de mod, vaak oud: de pagina bestaat misschien niet meer.",
+    "link_open": "Openen in de browser",
+    "link_failed": "De link kon niet worden geopend."
+  },
+  "dep": {
+    "present": "aanwezig",
+    "absent": "ontbreekt",
+    "dlc_owned": "DLC in bezit",
+    "dlc_missing": "DLC niet in bezit"
+  },
+  "dlc": {
+    "free": "Gratis DLC",
+    "paid": "DLC",
+    "info": "Het spel laadt geïnstalleerde DLC altijd, in elke setup."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} ondersteunt geen setups",
+    "missing": "Niet in de modmappen",
+    "missing_tip": "{name} staat niet meer in je modmappen. Als de maker de naam heeft gewijzigd, gebruik dan “Vervangen door…”.",
+    "replace": "Vervangen door…"
+  },
+  "list2": {
+    "title": "Setupmods",
+    "full": {
+      "one": "Volledige setup: alle mods ({count})",
+      "other": "Volledige setup: alle mods ({count})"
+    },
+    "full_help": "Het spel laadt de hele modmap, zoals vóór FS Passion.",
+    "empty_party": "Lege setup: geen mods",
+    "empty_help": "Om het basisspel te testen, zonder enige mod.",
+    "no_mods": "Geen mods in deze setup",
+    "no_mods_help": "Sleep mods vanuit “Alle mods”, of selecteer ze en gebruik de actiebalk."
+  },
+  "list3": {
+    "title": "Gedeelde mods",
+    "empty": "Nog geen gedeelde mods",
+    "empty_help": "Gedeelde mods zitten in elke setup: trekkers, werktuigen, scripts…",
+    "not_included": "Niet opgenomen in deze setup"
+  },
+  "footer": {
+    "github_tip": "De GitHub-pagina van het project",
+    "github_soon": "Het GitHub-adres van het project volgt binnenkort",
+    "running": "Spel draait",
+    "launch": "Spel starten",
+    "launch_unconfigured": "Geef het uitvoerbare bestand van {game} op in de instellingen",
+    "launch_tip": "Het spel starten met de toegepaste setup",
+    "quit": "Afsluiten"
+  },
+  "launch": {
+    "started": "{game} wordt gestart…",
+    "failed": "{game} kon niet worden gestart. Controleer het uitvoerbare bestand en de startmethode in de instellingen.",
+    "no_exe": "Uitvoerbaar bestand van {game} niet gevonden: geef het op in de instellingen.",
+    "already_running": "{game} draait al.",
+    "apply_title": "“{name}” toepassen?",
+    "apply_text": "De setup “{name}” is niet toegepast, of is sindsdien gewijzigd. Setup {name} toepassen en daarna {game} starten?",
+    "apply_and_launch": "Toepassen en starten",
+    "without_apply": "Starten zonder toepassen"
+  },
+  "backup": {
+    "created": "Originele back-up van gameSettings.xml gemaakt voor {game}",
+    "exported": "Configuratie geëxporteerd: {file}",
+    "demo_active": "Verlaat eerst de demomodus: die gebruikt andere mappen dan de jouwe.",
+    "unreadable": "Dit bestand kan niet worden gelezen: {path}",
+    "too_big": "Dit bestand is te groot om een export van FS Passion te zijn: {path}",
+    "not_export": "Dit bestand is geen export van FS Passion: {path}",
+    "too_new": "Dit bestand komt uit een nieuwere versie van FS Passion ({version}). Werk FS Passion bij om het te importeren.",
+    "write_failed": "Het bestand kon niet worden opgeslagen: {path}",
+    "expired": "De import is verlopen: kies het bestand opnieuw.",
+    "running": "Sluit {game} voordat je importeert: de setups ervan gaan veranderen.",
+    "import": {
+      "title": "Configuratie importeren",
+      "from": "Export van {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} setup",
+        "other": "{count} setups"
+      },
+      "common": {
+        "one": "{count} gedeelde mod",
+        "other": "{count} gedeelde mods"
+      },
+      "no_parties": "Dit bestand bevat geen setup: alleen de instellingen worden geïmporteerd.",
+      "keep": "Je huidige paden behouden (aanbevolen)",
+      "keep_help": "De spel-, mod- en downloadmappen van deze pc veranderen niet. Alleen setups, gedeelde mods en neutrale instellingen (taal, thema, opties) worden geïmporteerd.",
+      "replace_help": "De paden uit het bestand vervangen die van deze pc: kies dit alleen als het bestand van deze pc komt, met dezelfde stations.",
+      "paths_differ": "De modmappen in dit bestand zijn niet die van deze pc.",
+      "warning": "De huidige setups van de bovenstaande versies worden vervangen. De huidige toestand wordt eerst automatisch bewaard. Er wordt niets toegepast: de setupmappen worden opnieuw opgebouwd bij de volgende “Toepassen”.",
+      "ok": "Importeren"
+    },
+    "result": {
+      "title": "Configuratie geïmporteerd",
+      "done": "De import is voltooid.",
+      "parties": {
+        "one": "{count} setup geïmporteerd",
+        "other": "{count} setups geïmporteerd"
+      },
+      "skipped": "niet geïmporteerd (spelversie niet ingesteld op deze pc)",
+      "fallback": "Het spel laadde een setup die niet meer bestaat: het laadt nu de volledige setup.",
+      "apply": "Mods die op deze pc ontbreken, verschijnen in de setups als ontbrekende mods. Klik op “Toepassen” zodat het spel een geïmporteerde setup laadt.",
+      "backup": "Toestand vóór de import bewaard in %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Instellingen",
+    "game": {
+      "title": "Spel en paden"
+    },
+    "look": {
+      "title": "Weergave"
+    },
+    "app": {
+      "title": "Toepassing"
+    },
+    "help": {
+      "title": "Hulp en info"
+    },
+    "paths": {
+      "versions": "Spelversies",
+      "game_exe": "Uitvoerbaar bestand van het spel",
+      "user_dir": "Spelmap in Documenten",
+      "mods_dir": "Hoofdmap voor mods",
+      "mods_dirs": "Modmappen",
+      "browse": "Bladeren…",
+      "fixed_fs2011": "De modmap van FS2011 kan niet worden verplaatst.",
+      "add_storage": "Een modmap op een ander station toevoegen",
+      "derived": "Afgeleide paden",
+      "not_applicable": "Niet van toepassing op deze versie",
+      "d_game_dir": "Spelmap",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (spelmap)",
+      "d_dlc_user": "DLC (Documenten)",
+      "detect": "Installatie detecteren",
+      "detect_all": "Alle versies detecteren",
+      "detect_all_help": "Zoekt de installaties van alle versies en vult hun lege velden in.",
+      "detect_one": "Deze versie detecteren",
+      "detect_one_help": "Wijzigt alleen de hierboven geselecteerde versie. De andere versies blijven zoals ze zijn.",
+      "detect_help": "Velden die je zelf hebt aangepast, worden nooit gewijzigd.",
+      "detect_found": "Gevonden installaties: {list}",
+      "detect_none": "Geen installatie gevonden. Geef de paden op met “Bladeren…”.",
+      "launch_method": "Startmethode van het spel",
+      "launch_auto": "Automatisch",
+      "launch_platform": "Platform",
+      "launch_exe": "Uitvoerbaar bestand",
+      "launch_help": "Automatisch kiest de juiste methode (Steam, Epic Games, Microsoft Store, Xbox of uitvoerbaar bestand). De andere twee zijn noodoplossingen.",
+      "minimize_on_launch": "FS Passion minimaliseren als het spel start",
+      "args_title": "Startparameters",
+      "args_show": "Startparameters tonen",
+      "args_hide": "Startparameters verbergen",
+      "args_skip": "Introvideo overslaan",
+      "args_skip_info": "Slaat de introvideo en de openingsschermen over.",
+      "args_cheats": "Ontwikkelaarsconsole",
+      "args_cheats_info": "Schakelt de ontwikkelaarsconsole in het spel in. Stelt ook <controls> in game.xml in, naast gameSettings.xml.",
+      "args_game_xml_absent": "game.xml niet gevonden: de console wordt pas ingeschakeld nadat het spel één keer is gestart.",
+      "args_game_xml_error": "game.xml kon niet worden gewijzigd: de ontwikkelaarsconsole blijft uitgeschakeld.",
+      "args_help_command": "FS Passion voegt ze toe aan de startopdracht van {game}.",
+      "args_help_steam": "{game} wordt door Steam gestart. Steam weigert parameters die door een ander programma worden doorgegeven (het zou bij elke start om bevestiging vragen), dus FS Passion start het spel zonder. Vul ze één keer in Steam in, hieronder.",
+      "args_help_epic": "{game} wordt gestart door Epic Games, dat geen parameters van een ander programma accepteert: vul ze één keer in de Epic Games Launcher in, hieronder.",
+      "args_help_unsupported": "{game} is geïnstalleerd via de Microsoft Store of Xbox.",
+      "args_store": "De Microsoft Store en de Xbox-app staan geen startparameters toe: alleen de ontwikkelaarsconsole (game.xml) kan worden ingeschakeld. Kies voor parameters “Uitvoerbaar bestand” als startmethode, als je installatie dat toestaat.",
+      "args_steam_where": "Waar je ze in Steam invult",
+      "args_steam_steps": "Steam-bibliotheek: rechtsklik op {game} → Eigenschappen…\nTabblad Algemeen → veld “Opstartopties”\nPlak de tekst hieronder en sluit het venster",
+      "args_epic_where": "Waar je ze in de Epic Games Launcher invult",
+      "args_epic_steps": "Bibliotheek: “…” onder {game} → Beheren\nVink “Aanvullende opdrachtregelargumenten” aan\nPlak de tekst hieronder (oudere launchers: profielfoto → Instellingen → {game})",
+      "args_none": "Geen parameter aangevinkt",
+      "args_copy_label": "Te kopiëren parameters",
+      "args_copy_help": "Alleen opnieuw nodig als je een parameter aan- of uitvinkt.",
+      "console_on": "Console ingeschakeld in game.xml",
+      "console_off": "Console uitgeschakeld in game.xml",
+      "console_enable": "Inschakelen in game.xml",
+      "console_done": "Ontwikkelaarsconsole ingeschakeld in game.xml voor {game}",
+      "add_storage_help": "Maximaal twee extra mappen. Hun mods worden getoond en komen net als de andere in setups; FS Passion schrijft daar verder niets.",
+      "extra_dir": "Extra modmap",
+      "extra_help": "Het verwijderen van deze map raakt de mods niet aan: ze worden gewoon niet meer getoond.",
+      "remove_storage": "Deze map uit de lijst verwijderen (de mods blijven onaangeroerd)"
+    },
+    "downloads": {
+      "title": "Downloads",
+      "folder": "Downloadmap",
+      "help": "De map waarin je browser gedownloade mods opslaat.",
+      "scan_at_start": "Bij het starten naar nieuwe mods zoeken",
+      "scan_now": "Nu zoeken"
+    },
+    "language": {
+      "title": "Taal",
+      "personal": "eigen",
+      "open_folder": "Map met eigen talen openen",
+      "personal_help": "Daar kun je FS Passion in je eigen taal vertalen: een sjabloon en instructies zijn meegeleverd.",
+      "rejected": "Genegeerde taalbestanden (ongeldig of te groot): {list}"
+    },
+    "theme": {
+      "title": "Thema",
+      "help": "Beweeg over een staal om het thema te bekijken, klik om het te kiezen. Tweekleurige thema's hebben maar twee kleuren; de andere gebruiken de officiële kleuren van populaire thema's, elk in een donkere en een lichte versie. De zon/maan-knop in de kopbalk wisselt ertussen.",
+      "contrast": "Contrast {ratio}:1",
+      "loop": "Thema-lus: elke minuut van thema wisselen",
+      "light_effects": "Lichteffecten (glans, oplichtende randen, neon)",
+      "reduce_motion": "Animaties beperken",
+      "follows_windows": "Volgt de Windows-instelling “Animatie-effecten”.",
+      "follow_windows": "Windows-instelling volgen",
+      "atelier": "Themawerkplaats openen",
+      "mode_dark": "Donker",
+      "mode_light": "Licht",
+      "group_duo": "Tweekleurig"
+    },
+    "backup": {
+      "title": "Back-up van de configuratie",
+      "help": "Exporteer je setups, gedeelde mods en instellingen naar een bestand om ze terug te krijgen na een herinstallatie of op een andere pc. Er wordt geen enkele mod gekopieerd: alleen hun namen.",
+      "export": "Exporteren",
+      "import": "Importeren"
+    },
+    "notice": {
+      "title": "Handleiding",
+      "open": "Handleiding openen",
+      "at_start": "Tonen bij het starten",
+      "tour": "Rondleiding door de interface"
+    },
+    "anomalies": {
+      "title": "Problemen",
+      "show": "Problemen tonen",
+      "reset": {
+        "zero": "Geen verborgen problemen",
+        "one": "Het verborgen probleem opnieuw tonen",
+        "other": "De {count} verborgen problemen opnieuw tonen"
+      },
+      "reset_done": "Verborgen problemen worden weer getoond"
+    },
+    "internet": {
+      "title": "Internetverbinding",
+      "allow": "FS Passion toestaan de DLC-catalogus van GitHub te downloaden",
+      "help": "De DLC-catalogus (namen en pictogrammen) wordt hooguit één keer per dag van GitHub gelezen. Alleen de pictogrammen van DLC die op deze pc aanwezig zijn, worden gedownload. Er worden geen persoonlijke gegevens verstuurd.",
+      "catalog_off": "DLC-catalogus: die van FS Passion zelf (verbinding uitgeschakeld).",
+      "catalog_remote": "DLC-catalogus van {date}, gedownload van GitHub.",
+      "catalog_embedded": "DLC-catalogus van {date}, meegeleverd met FS Passion.",
+      "check": "Nu controleren",
+      "checking": "Controleren…",
+      "error_not_found": "De catalogus is nog niet op GitHub gepubliceerd.",
+      "error_unreachable": "Laatste controle mislukt (geen verbinding?).",
+      "error_invalid": "De gepubliceerde catalogus kan niet worden gelezen: die van FS Passion wordt gebruikt.",
+      "error_too_new": "De gepubliceerde catalogus vereist een nieuwere versie van FS Passion.",
+      "error_too_big": "De gepubliceerde catalogus is te groot: hij wordt genegeerd."
+    },
+    "logs": {
+      "title": "Logboeken en diagnose",
+      "open_logs": "Map met logboeken openen",
+      "copy_diag": "Diagnose kopiëren",
+      "diag_copied": "Diagnose gekopieerd: plak die in je melding"
+    },
+    "donate": {
+      "title": "Het project steunen",
+      "text": "FS Passion is en blijft een betrouwbaar, opensource en gratis project. Wil je de maker bedanken? Een eenmalige donatie kost een paar seconden, zonder account. Bedankt!",
+      "no_link": "Link volgt"
+    },
+    "about": {
+      "title": "Info",
+      "version": "Versie",
+      "author": "Maker",
+      "license": "Licentie",
+      "github_soon": "adres volgt",
+      "official": "De enige officiële downloadlink is de GitHub-pagina van het project.",
+      "unofficial": "FS Passion is een onafhankelijk project, niet verbonden aan GIANTS Software. Farming Simulator is een handelsmerk van GIANTS Software.",
+      "privacy": "FS Passion verstuurt geen gegevens. Het downloadt alleen, als je dat toestaat, de openbare DLC-lijst van GitHub.",
+      "window_mode": "Venstertechniek (ontwikkeling)",
+      "window_native": "Systeemeigen",
+      "window_script": "Berekend",
+      "window_thin": "Dun kader",
+      "window_restart": "Werkt bij de volgende start van FS Passion",
+      "window_help": "Huidige techniek: {current}. Wijzig deze alleen als het formaat wijzigen via de randen niet werkt."
+    },
+    "stop": {
+      "title": "Stoppen met FS Passion",
+      "show": "Details tonen",
+      "hide": "Details verbergen",
+      "text": "Zet de oorspronkelijke instelling van het spel terug en verwijdert de setupmappen. Je mods worden nooit aangeraakt.",
+      "button": "Stoppen met FS Passion"
+    },
+    "window": {
+      "title": "Venster",
+      "close_to_tray": "Sluiten naar het systeemvak",
+      "close_to_tray_help": "De sluitknop van het venster verbergt FS Passion naast de Windows-klok. Klik op het pictogram om het terug te halen; “Afsluiten” (rechtsonder, of in het menu van het pictogram) sluit het echt.",
+      "tray_off": "Het systeemvak is alleen beschikbaar in het venster van FS Passion, op Windows.",
+      "focus_after_game": "Naar voren komen als het spel sluit",
+      "focus_after_game_help": "Als Farming Simulator sluit, verschijnt FS Passion weer, ook als het in het systeemvak verborgen was."
+    },
+    "demo": {
+      "title": "Proberen zonder het spel",
+      "help": "Nepmods om alle functies van FS Passion te proberen, in een testmap: je echte paden worden opzijgezet en bij het afsluiten teruggezet.",
+      "start": "FS Passion proberen zonder het spel",
+      "active_help": "De demomodus staat aan: deze paden zijn die van de testmap. Je echte paden komen terug als je de demo verlaat."
+    }
+  },
+  "themes": {
+    "lime": "Limoen",
+    "jade": "Jade",
+    "cuivre": "Koper",
+    "blue": "Wit"
+  },
+  "anomalies": {
+    "title": "Gevonden problemen",
+    "none": "Geen problemen. Alles is in orde.",
+    "intro": "Deze items in je modmap kan het spel niet gebruiken zoals ze zijn. Niets ernstigs, en FS Passion laat ze met rust.",
+    "new": "nieuw",
+    "hide_type": "Dit soort probleem niet meer tonen",
+    "hide_folder": "Deze map niet meer tonen",
+    "rename": "Hernoemen…",
+    "others": {
+      "one": "Andere genegeerde bestanden ({count})",
+      "other": "Andere genegeerde bestanden ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar- of .7z-archief",
+        "other": ".rar- of .7z-archieven ({count})"
+      },
+      "explain": "Het spel leest alleen .zip-bestanden. Pak het archief uit en zip de mod zo nodig opnieuw."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip zonder modDesc.xml",
+        "other": ".zip-bestanden zonder modDesc.xml ({count})"
+      },
+      "explain": "Vaak een pakket met meerdere mods om uit te pakken.",
+      "nested": "modDesc.xml gevonden in een submap ({path}): de mod is verkeerd ingepakt."
+    },
+    "A3": {
+      "title": {
+        "one": "Onleesbaar archief",
+        "other": "Onleesbare archieven ({count})"
+      },
+      "explain": "Beschadigd archief of ongeldige modDesc.xml. Download de mod opnieuw.",
+      "zip": "Het archief kan niet worden geopend.",
+      "xml": "Het bestand modDesc.xml is ongeldig."
+    },
+    "A4": {
+      "title": {
+        "one": "Map zonder modDesc.xml",
+        "other": "Mappen zonder modDesc.xml ({count})"
+      },
+      "explain": "Zonder modDesc.xml in de hoofdmap kan het spel deze map niet gebruiken. FS Passion raakt hem nooit aan."
+    },
+    "A5": {
+      "title": {
+        "one": "Naam geweigerd door het spel",
+        "other": "Namen geweigerd door het spel ({count})"
+      },
+      "explain": "Het spel accepteert alleen letters zonder accenten, cijfers en “_”.",
+      "suggestion": "Voorgestelde naam: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod voor een andere spelversie",
+        "other": "Mods voor een andere spelversie ({count})"
+      },
+      "explain": "Deze mod wordt niet geladen door deze spelversie.",
+      "detected": "Mod voor {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Ontbrekende mod",
+        "other": "Ontbrekende mods ({count})"
+      },
+      "explain": "Een setup verwijst naar deze mod, maar die staat niet meer in de modmappen.",
+      "in": "In: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Verwijderde mod nog gekoppeld",
+        "other": "Verwijderde mods nog gekoppeld ({count})"
+      },
+      "explain": "Deze mod is uit de modmap verwijderd, maar sommige setups bevatten hem nog.",
+      "copy": "Er bestaat nog een kopie in: {list}",
+      "delete_title": "De resterende kopie verwijderen?",
+      "delete_text": "De laatste kopie van “{name}”, nog aanwezig in setupmappen, gaat naar de Prullenbak en de mod wordt uit alle lijsten verwijderd."
+    },
+    "A9": {
+      "title": {
+        "one": "Dubbele mod",
+        "other": "Dubbele mods ({count})"
+      },
+      "explain": "Dezelfde mod staat er twee keer: in twee opslagmappen, of als .zip en als map naast elkaar. Het spel laadt er maar één. FS Passion gebruikt die in de hoofdmap, en liever het archief dan de map.",
+      "zip_and_dir": "“{name}” bestaat zowel als .zip als als uitgepakte map: het spel laadt er maar één, en de ModHub kan hem niet bijwerken. Houd één vorm over (verwijder de andere met “Definitief verwijderen”, of zet hem buiten de modmap).",
+      "files": "Bestanden: {list}"
+    },
+    "game": "{game}",
+    "folder": "Modmap: {path}",
+    "show_in_folder": "Tonen in Verkenner",
+    "open_folder": "Modmap openen in Verkenner (de mod staat er niet meer)"
+  },
+  "welcome": {
+    "subtitle": "Je mods, maar één keer opgeslagen. Zoveel setups als je wilt.",
+    "language": "Kies je taal"
+  },
+  "notice": {
+    "title": "Hoe FS Passion werkt",
+    "at_start": "Dit venster tonen bij het starten van de toepassing",
+    "understood": "Begrepen",
+    "blocks": [
+      {
+        "key": "Allereerst: we raden aan een back-up van al je mods op een ander station te maken. Dat is onmisbaar, zoals vóór elke handeling met belangrijke bestanden."
+      },
+      {
+        "h": "Het idee"
+      },
+      {
+        "p": "Met FS Passion maak je snel en eenvoudig zoveel Farming Simulator-setups als je wilt, terwijl je mods maar één keer in hun oorspronkelijke map staan."
+      },
+      {
+        "p": "Wissel met 1 klik van de ene setup naar de andere!"
+      },
+      {
+        "h": "Installatie"
+      },
+      {
+        "p": "Je modmap kan op elk station staan: FS Passion past zich aan. Er hoeft niets met de hand te worden gemaakt, verplaatst of hernoemd. Station vol? Voeg maximaal twee modmappen op andere stations toe (Instellingen → Spel en paden): hun mods komen net als de andere in setups."
+      },
+      {
+        "h": "Eerste gebruik"
+      },
+      {
+        "ul": [
+          "Maak je setups met de magische knop “＋ Setup” bij de maps: de map en de afhankelijkheden ervan vormen met één klik de setup.",
+          "Deel daarna de andere mods in bij de gedeelde mods, die in elke setup zitten.",
+          "Klik op “Toepassen”: het spel laadt de gekozen setup bij de volgende start."
+        ]
+      },
+      {
+        "h": "Mods toevoegen, hernoemen, verwijderen"
+      },
+      {
+        "ul": [
+          "Nieuwe mods: download ze zoals gewoonlijk en klik dan bovenaan de lijst op “Zoek nieuwe mods in de downloads”. FS Passion zet ze in de modmap van de juiste spelversie.",
+          "Verwijder mods liever in FS Passion (“Definitief verwijderen” in de actiebalk) dan in Verkenner: ze worden dan tegelijk uit de lijsten en setups gehaald, en gaan naar de Prullenbak.",
+          "Een mod hernoemen (toets F2) koppelt hem los van de ModHub: hij krijgt geen updates meer."
+        ]
+      },
+      {
+        "h": "Updates"
+      },
+      {
+        "p": "Niets te doen: updates die het spel downloadt, worden overgenomen als het spel sluit, of bij de volgende start van FS Passion. De oude versie wordt opzijgezet in “Old versions”. Downloadt het spel een ouder versienummer dan het jouwe (vaak een mod die je zelf hebt aangepast), dan vraagt FS Passion welke je wilt houden."
+      },
+      {
+        "h": "Je setups bewaren"
+      },
+      {
+        "p": "Instellingen → Toepassing → “Exporteren” bewaart je setups, gedeelde mods en instellingen in een bestand. “Importeren” haalt ze terug, na een herinstallatie of op een andere pc."
+      },
+      {
+        "h": "Stoppen"
+      },
+      {
+        "p": "“Stoppen met FS Passion” (Instellingen → Toepassing) zet de oorspronkelijke instelling van het spel terug en verwijdert de setupmappen. Je mods worden nooit aangeraakt."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Themawerkplaats",
+    "id": "Identificatie",
+    "name": "Naam",
+    "dark": "Vensterachtergrond",
+    "light": "Hoofdkleur",
+    "mica": "Mica-gloed",
+    "grain": "Korrel",
+    "effect": "Effect",
+    "effect_none": "Geen",
+    "effect_metal": "Metaalglans",
+    "intensity": "Intensiteit",
+    "save": "Opslaan",
+    "copy": "Definitie kopiëren",
+    "new": "Nieuw",
+    "copied": "Definitie gekopieerd",
+    "saved": "Thema opgeslagen in ui/themes.json",
+    "contrast_low": "Contrast {ratio}:1, onder 4,5:1. Kleine tekst gebruikt {color}.",
+    "contrast_ok": "Contrast {ratio}:1",
+    "mode": "Modus",
+    "mode_dark": "Donker",
+    "mode_light": "Licht",
+    "text": "Tekst",
+    "multi": "Meerdere accentkleuren (één per zone)",
+    "accent_n": "Accent {n}",
+    "pair": "Tweelingthema (zon/maan)",
+    "pair_none": "Geen",
+    "gradient": "Tweekleurig verloop (titels, knoppen Toepassen en Starten)",
+    "gradient_from": "Verloop: begin",
+    "gradient_to": "Verloop: einde",
+    "style": "Stijl",
+    "style_duo": "Tweekleurig",
+    "style_palette": "Officieel palet",
+    "style_classic": "Berekende sluiers",
+    "surface_1": "Vensterachtergrond",
+    "surface_2": "Lijsten en vensters",
+    "surface_3": "Secties",
+    "surface_4": "Subsecties",
+    "text_n": "Tekst {n}",
+    "neon": "Neon",
+    "neon_help": "Gloed van titels, pictogrammen en randen, in de kleur van elke zone (0: geen effect). Uitgeschakeld door “Lichteffecten”."
+  },
+  "error": {
+    "bad_request": "Ongeldig verzoek.",
+    "forbidden": "Toegang geweigerd.",
+    "not_found": "Item niet gevonden.",
+    "unexpected": "Onverwachte fout. Kopieer de diagnose (Instellingen → Hulp en info) en voeg die toe aan je melding.",
+    "offline": "De kern van FS Passion reageert niet.",
+    "internal": "Bewerking geweigerd om veiligheidsredenen. Kopieer de diagnose (Instellingen → Hulp en info) en voeg die toe aan je melding."
+  },
+  "detect": {
+    "busy": "Er loopt al een detectie."
+  },
+  "parties": {
+    "not_configured": "Geef de modmap van {game} op in de instellingen om setups te maken.",
+    "name_label": "Naam van de setup",
+    "name_empty": "De naam mag niet leeg zijn.",
+    "name_too_long": "Maximaal {max} tekens.",
+    "name_taken": "Er bestaat al een setup met de naam “{name}”.",
+    "special_locked": "De volledige setup en de lege setup kunnen niet worden gewijzigd, hernoemd, gedupliceerd of verwijderd.",
+    "not_found": "Deze setup bestaat niet meer.",
+    "write_failed": "De setups konden niet worden opgeslagen in {path}. Controleer of er naar dit station kan worden geschreven.",
+    "recovered": "Het setupbestand van {game} kon niet worden gelezen: de meest recente back-up ({backup}) is geladen. Het beschadigde bestand is opzijgezet.",
+    "lost": "Het setupbestand van {game} kon niet worden gelezen en er kon geen back-up worden geladen. Het beschadigde bestand is opzijgezet, er is niets verwijderd.",
+    "running_rename": "Sluit {game} voordat je deze setup hernoemt: de map kan niet veranderen terwijl het spel draait.",
+    "running_delete": "Sluit {game} voordat je deze setup verwijdert: de map kan niet veranderen terwijl het spel draait.",
+    "map_not_found": "Map niet gevonden: {name}",
+    "mod_not_found": "Mod niet gevonden: {name}",
+    "create_title": "Nieuwe setup",
+    "create_help": "Een lege setup met de gedeelde mods. Voeg er daarna mods aan toe vanuit “Alle mods”.",
+    "create_ok": "Maken",
+    "created": "Setup “{name}” gemaakt",
+    "duplicate_title": "Setup dupliceren",
+    "duplicate_help": "De kopie behoudt de mods van “{name}” en de instelling “Gedeelde mods”.",
+    "copy_name": "{name} (kopie)",
+    "duplicate_ok": "Dupliceren",
+    "duplicated": "Setup “{name}” gemaakt",
+    "rename_title": "Setup hernoemen",
+    "rename_ok": "Hernoemen",
+    "renamed": "“{old}” hernoemd naar “{name}”",
+    "delete_title": "Setup verwijderen",
+    "delete_text": {
+      "zero": "Setup “{name}” verwijderen? Hij bevat geen mods.",
+      "one": "Setup “{name}” verwijderen? De mod blijft in je modmap: alleen de setup en de map met koppelingen verdwijnen.",
+      "other": "Setup “{name}” verwijderen? De {count} mods blijven in je modmap: alleen de setup en de map met koppelingen verdwijnen."
+    },
+    "delete_ok": "Verwijderen",
+    "deleted": "Setup “{name}” verwijderd",
+    "deleted_applied": "De setup {name} is verwijderd. Het spel gebruikt nu de setup {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod geselecteerd",
+      "other": "mods geselecteerd"
+    },
+    "add_party": "Toevoegen aan Setupmods",
+    "add_common": "Toevoegen aan Gedeelde mods",
+    "remove_party": "Verwijderen uit Setupmods",
+    "remove_common": "Verwijderen uit Gedeelde mods",
+    "rename": "Hernoemen…",
+    "rename_help": "Eén mod, geselecteerd in “Alle mods”.",
+    "delete": "Definitief verwijderen…",
+    "close": "Balk sluiten en selectie wissen (Esc)",
+    "added_party": {
+      "one": "{count} mod toegevoegd aan de setup “{name}”",
+      "other": "{count} mods toegevoegd aan de setup “{name}”"
+    },
+    "added_common": {
+      "one": "{count} mod toegevoegd aan de gedeelde mods",
+      "other": "{count} mods toegevoegd aan de gedeelde mods"
+    },
+    "moved_party": {
+      "one": "{count} mod verplaatst naar de setup “{name}”",
+      "other": "{count} mods verplaatst naar de setup “{name}”"
+    },
+    "moved_common": {
+      "one": "{count} mod verplaatst naar de gedeelde mods",
+      "other": "{count} mods verplaatst naar de gedeelde mods"
+    },
+    "removed_party": {
+      "one": "{count} mod verwijderd uit de setup “{name}”",
+      "other": "{count} mods verwijderd uit de setup “{name}”"
+    },
+    "removed_common": {
+      "one": "{count} mod verwijderd uit de gedeelde mods",
+      "other": "{count} mods verwijderd uit de gedeelde mods"
+    },
+    "nothing_party": "Deze mods zitten al in de setup “{name}”",
+    "nothing_common": "Deze mods zitten al in de gedeelde mods"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Ook de afhankelijkheid toevoegen?",
+      "other": "Ook de {count} afhankelijkheden toevoegen?"
+    },
+    "ask_yes": {
+      "one": "Ook de afhankelijkheid toevoegen",
+      "other": "Ook de {count} afhankelijkheden toevoegen"
+    },
+    "ask_no": "Alleen de gekozen mods",
+    "missing_warn": {
+      "one": "Afhankelijkheid ontbreekt in je mods: {list}",
+      "other": "{count} afhankelijkheden ontbreken in je mods: {list}"
+    },
+    "needed_by_map": "De map “{name}” heeft nodig:",
+    "needed_by_mod": "De mod “{name}” heeft nodig:",
+    "needed": "Afhankelijkheden:",
+    "where_common": "de gedeelde mods",
+    "where_party": "de setup “{name}”",
+    "ask_intro": {
+      "one": "Deze mod is een afhankelijkheid van een mod die je hebt gekozen, maar staat niet in {where}.",
+      "other": "Deze {count} mods zijn afhankelijkheden van de mods die je hebt gekozen, maar staan niet in {where}."
+    },
+    "missing_for": "{list} (vereist door “{name}”)",
+    "optional_title": {
+      "one": "Ook een optionele mod toevoegen?",
+      "other": "Ook optionele mods toevoegen?"
+    },
+    "optional_intro": {
+      "one": "Eén optionele mod, al aanwezig in je mods:",
+      "other": "{count} optionele mods, al aanwezig in je mods:"
+    },
+    "optional_for": "optioneel voor “{name}”",
+    "optional_note": "Optioneel: het spel heeft ze niet nodig. Alleen de aangevinkte worden toegevoegd aan {where}.",
+    "optional_continue": "Doorgaan"
+  },
+  "plus": {
+    "title": "Nieuwe setup vanuit een map",
+    "deps_title": {
+      "one": "{count} afhankelijkheid",
+      "other": "{count} afhankelijkheden"
+    },
+    "dlc_title": "Benodigde DLC",
+    "dlc_note": "Ter informatie: het spel laadt geïnstalleerde DLC altijd. Ze worden niet aan de setup toegevoegd.",
+    "missing_note": "Ontbrekende afhankelijkheden worden niet toegevoegd: download ze en voeg ze daarna aan de setup toe.",
+    "no_deps": "Geen afhankelijkheden opgegeven: de setup bevat alleen de map.",
+    "summary": {
+      "zero": "De setup bevat alleen de map, plus de gedeelde mods.",
+      "one": "De setup bevat de map en de afhankelijkheid ervan, plus de gedeelde mods.",
+      "other": "De setup bevat de map en de {count} afhankelijkheden ervan, plus de gedeelde mods."
+    },
+    "create": "Setup maken",
+    "created": {
+      "one": "Setup “{name}” gemaakt: {count} mod",
+      "other": "Setup “{name}” gemaakt: {count} mods"
+    },
+    "created_missing": {
+      "one": "Afhankelijkheid om te downloaden: {list}",
+      "other": "{count} afhankelijkheden om te downloaden: {list}"
+    },
+    "optional_title": {
+      "one": "{count} optionele mod",
+      "other": "{count} optionele mods"
+    },
+    "optional_note": "Optioneel: het spel heeft ze niet nodig. Vink aan welke je aan de setup wilt toevoegen.",
+    "optional_none_present": "Geen van deze optionele mods staat in je mods. Het spel heeft ze niet nodig."
+  },
+  "replace": {
+    "title": "Vervangen door…",
+    "help": "{name} staat niet meer in je modmappen. Als de maker de naam heeft gewijzigd, kies dan de nieuwe versie: die neemt zijn plaats in alle lijsten in.",
+    "done": {
+      "one": "{old} vervangen door {name} in {count} lijst",
+      "other": "{old} vervangen door {name} in {count} lijsten"
+    }
+  },
+  "notifications": {
+    "title": "Meldingen",
+    "unread": {
+      "one": "Meldingen: 1 nieuw bericht",
+      "other": "Meldingen: {count} nieuwe berichten"
+    },
+    "clear": "Alles wissen",
+    "none": "Nog geen meldingen. Berichten rechtsonder worden hier bewaard tot FS Passion wordt gesloten."
+  },
+  "tray": {
+    "show": "FS Passion tonen",
+    "quit": "FS Passion afsluiten",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion blijft hier draaien. Klik op het pictogram om het terug te halen; “Afsluiten” sluit het echt."
+  },
+  "apply": {
+    "unsupported": "Deze spelversie kan haar modmap niet wijzigen.",
+    "not_ready": "Geef eerst de modmap en de map Mijn documenten van het spel op in de instellingen.",
+    "running": "Sluit {game} voordat je een setup toepast.",
+    "no_gamesettings": "gameSettings.xml van {game} is niet gevonden: start het spel één keer, of controleer de map Mijn documenten in de instellingen.",
+    "busy": "Er loopt al een andere setupbewerking. Probeer het zo opnieuw.",
+    "library_busy": "De mods worden nog gelezen. Probeer het zo opnieuw.",
+    "done": {
+      "zero": "Setup {name} toegepast: geen mods.",
+      "one": "Setup {name} toegepast: {count} mod.",
+      "other": "Setup {name} toegepast: {count} mods."
+    },
+    "missing": {
+      "one": "1 mod van de setup ontbreekt in je modmap: {list}",
+      "other": "{count} mods van de setup ontbreken in je modmap: {list}"
+    },
+    "updated": {
+      "one": "1 update die het spel achterliet, is naar je modmap verplaatst.",
+      "other": "{count} updates die het spel achterliet, zijn naar je modmap verplaatst."
+    },
+    "added": {
+      "one": "1 mod die het spel achterliet, is toegevoegd aan je modmap en aan de setup {name}.",
+      "other": "{count} mods die het spel achterliet, zijn toegevoegd aan je modmap en aan de setup {name}."
+    },
+    "set_aside": {
+      "one": "1 bestand is opzijgezet, er is niets verwijderd (map “Recovered” of “Old versions”, naast je setups).",
+      "other": "{count} bestanden zijn opzijgezet, er is niets verwijderd (mappen “Recovered” en “Old versions”, naast je setups)."
+    },
+    "empty_party": "De setup {name} bevat geen mods: het spel start zonder mods.",
+    "not_same_disk": "{name} kan niet worden gekoppeld: de setupmap moet op hetzelfde station staan als de modmap.",
+    "no_hardlinks": "Dit station ondersteunt geen harde koppelingen: de modmap moet op een NTFS-station staan. Er is niets gewijzigd.",
+    "too_many_links": "{name} kan niet worden gekoppeld: dit bestand heeft de Windows-limiet voor koppelingen bereikt.",
+    "access_denied": "Toegang geweigerd bij het koppelen van {name}. Er is niets gewijzigd.",
+    "link_failed": "De koppeling voor {name} kon niet worden gemaakt ({detail}). Er is niets gewijzigd.",
+    "junction_failed": "De junction van de uitgepakte mod {name} kon niet worden gemaakt ({detail}). Er is niets gewijzigd.",
+    "folder_busy": "De map {path} wordt gebruikt door een ander programma (Verkenner?). Sluit het en probeer het opnieuw. Er is niets gewijzigd.",
+    "folder_exists": "Er bestaat al een map {path}: kies een andere naam.",
+    "failed": "De setup kon niet worden toegepast ({detail}). Er is niets gewijzigd.",
+    "recovered_finished": "Een setupbewerking van {game} was onderbroken (stroomstoring?). Ze is voltooid.",
+    "recovered_cancelled": "Een setupbewerking van {game} was onderbroken (stroomstoring?). Ze is geannuleerd: er is niets veranderd.",
+    "symlink_denied": "Windows weigert de symbolische koppeling naar {name}: de Windows-ontwikkelaarsmodus of beheerdersrechten zijn nodig.",
+    "blocked": {
+      "one": "1 mod van een ander station kon niet in de setup worden opgenomen (geen rechten voor symbolische koppelingen): {list}. Zie Instellingen → Spel en paden.",
+      "other": "{count} mods van een ander station konden niet in de setup worden opgenomen (geen rechten voor symbolische koppelingen): {list}. Zie Instellingen → Spel en paden."
+    }
+  },
+  "override": {
+    "title": "Het spel laadt een onbekende map",
+    "text": "{game} laadt zijn mods uit een map die FS Passion niet kent (met de hand of door een ander hulpmiddel gewijzigd):",
+    "help": "Neem deze map over als je modmap, pas je setup opnieuw toe, of laat het spel zoals het is.",
+    "adopt": "Overnemen als modmap",
+    "reapply": "{name} opnieuw toepassen",
+    "ignore": "Niets doen",
+    "adopted": "Nieuwe modmap: {path}",
+    "read_failed": "gameSettings.xml kan niet worden gelezen ({path}). Er is niets gewijzigd.",
+    "backup_failed": "De back-up van gameSettings.xml kon niet worden geschreven ({path}). Er is niets gewijzigd.",
+    "write_failed": "gameSettings.xml kon niet worden geschreven ({path}). Is het spel open?",
+    "check_failed": "De controle van gameSettings.xml is mislukt: het originele bestand is teruggezet.",
+    "no_root": "gameSettings.xml lijkt geen instellingenbestand van het spel. Er is niets gewijzigd."
+  },
+  "demo": {
+    "title": "Demomodus",
+    "pill": "Demo",
+    "quit": "Afsluiten",
+    "banner": "Demomodus: deze mods zijn nep. Je echte mappen en het spel worden niet aangeraakt.",
+    "badge": "Nepmod (demo)",
+    "installing": "Demomods voorbereiden…",
+    "started": "Demomodus: probeer alles, niets raakt het spel.",
+    "stopped": "Demomodus gesloten: alles is gewist.",
+    "stop_title": "Demomodus verlaten",
+    "stop_text": "De nepmods, de testsetups en de hele demomap worden gewist. Je echte instellingen komen ongewijzigd terug.",
+    "stop_ok": "Afsluiten en alles wissen",
+    "offer_title": "FS Passion proberen zonder het spel?",
+    "offer_text": "Er is geen Farming Simulator gevonden op deze pc. Je kunt FS Passion proberen met nepmods: setups maken, indelen, toepassen… alles werkt, in een testmap, nooit in een spel.",
+    "offer_local": "Het demopakket staat al op deze pc (ongeveer 2 MB).",
+    "offer_download": "Het demopakket (ongeveer 2 MB) wordt gedownload van de GitHub-pagina van het project en daarna gecontroleerd.",
+    "offer_yes": "Proberen",
+    "offer_no": "Later",
+    "unavailable": "Het demopakket is nog niet beschikbaar.",
+    "bad_pack": "Het demopakket is beschadigd of komt niet overeen met het origineel: het is geweigerd.",
+    "download_failed": "Het demopakket kon niet worden gedownload ({detail}).",
+    "install_failed": "Het demopakket kon niet worden geïnstalleerd ({detail}).",
+    "remove_failed": "De demomap kon niet volledig worden gewist: {path}",
+    "no_detect": "De speldetectie staat uit in de demomodus."
+  },
+  "delete": {
+    "title": {
+      "one": "Deze mod definitief verwijderen?",
+      "other": "Deze {count} mods definitief verwijderen?"
+    },
+    "intro": {
+      "one": "Deze mod wordt uit alle lijsten en alle setupmappen gehaald en daarna uit je modmap verwijderd:",
+      "other": "Deze {count} mods worden uit alle lijsten en alle setupmappen gehaald en daarna uit je modmap verwijderd:"
+    },
+    "irreversible": "Dit kan niet ongedaan worden gemaakt.",
+    "recycle": "De bestanden gaan naar de Windows-Prullenbak: daar kun je ze nog terugzetten.",
+    "no_recycle": "Dit station heeft geen Prullenbak: het verwijderen is definitief.",
+    "understand": {
+      "one": "Ik begrijp dat dit bestand wordt verwijderd",
+      "other": "Ik begrijp dat deze bestanden worden verwijderd"
+    },
+    "ok": "Definitief verwijderen",
+    "done_recycled": {
+      "one": "1 mod naar de Prullenbak verplaatst",
+      "other": "{count} mods naar de Prullenbak verplaatst"
+    },
+    "done_deleted": {
+      "one": "1 mod definitief verwijderd",
+      "other": "{count} mods definitief verwijderd"
+    },
+    "failed": {
+      "one": "1 mod kon niet worden verwijderd: {list}. Hij is uit de lijsten gehaald; sluit het programma dat hem gebruikt en probeer het opnieuw.",
+      "other": "{count} mods konden niet worden verwijderd: {list}. Ze zijn uit de lijsten gehaald; sluit het programma dat ze gebruikt en probeer het opnieuw."
+    },
+    "nothing": "Geen mod om te verwijderen.",
+    "running": "Sluit {game} voordat je mods verwijdert."
+  },
+  "rename": {
+    "title": "Mod hernoemen",
+    "label": "Nieuwe naam",
+    "prefix_tip": "Versievoorvoegsel blijft behouden",
+    "final": "Bestandsnaam: {file}",
+    "rule": "Alleen letters zonder accenten, cijfers en “_”: het spel weigert andere tekens.",
+    "where": "In: {list}. De lijsten veranderen alleen met je toestemming: FS Passion vraagt dan of ze de nieuwe naam moeten volgen.",
+    "warning_modhub": "Als hij van de ModHub komt, krijgt deze mod geen updates meer: dat is juist de bedoeling van het hernoemen.",
+    "warning_save": "In het spel zoeken opgeslagen games die deze mod gebruiken hem onder zijn oude naam.",
+    "warning_save_map": "Dit is een map: in het spel zoeken de opgeslagen games die erop zijn gemaakt hem onder zijn oude naam en laden ze niet meer.",
+    "warning_deps": {
+      "one": "1 mod geeft hem op als afhankelijkheid ({list}): die zoekt hem onder zijn oude naam.",
+      "other": "{count} mods geven hem op als afhankelijkheid ({list}): die zoeken hem onder zijn oude naam."
+    },
+    "ok": "Hernoemen",
+    "done": {
+      "zero": "{old} hernoemd naar {name}",
+      "one": "{old} hernoemd naar {name}, in 1 setup",
+      "other": "{old} hernoemd naar {name}, in {count} setups"
+    },
+    "renamed": "{old} hernoemd naar {name}",
+    "lists_title": "De lijsten bijwerken?",
+    "lists_ask": "“{old}” staat nog in: {list}. Moeten ze de nieuwe naam “{name}” volgen?",
+    "lists_yes": "Lijsten bijwerken",
+    "lists_no": "Niets doen",
+    "lists_done": "Lijsten bijgewerkt ({count}).",
+    "empty": "Voer een naam in.",
+    "too_long": "Naam te lang: maximaal {max} tekens.",
+    "invalid": "Alleen letters zonder accenten, cijfers en “_”, geen spaties.",
+    "same": "Dat is al de naam.",
+    "taken": "“{name}” bestaat al in je modmappen.",
+    "not_found": "Mod {name} is niet gevonden in je modmappen.",
+    "failed": "{name} kon niet worden hernoemd: misschien is hij geopend in een ander programma.",
+    "running": "Sluit {game} voordat je een mod hernoemt.",
+    "no_list": "geen lijst"
+  },
+  "downloads": {
+    "title": "Nieuwe mods gevonden",
+    "intro": "In {folder}. Opnemen verplaatst elk aangevinkt bestand naar de modmap van de bijbehorende spelversie.",
+    "count": {
+      "one": "1 mod gevonden",
+      "other": "{count} mods gevonden"
+    },
+    "col_mod": "Mod",
+    "col_version": "Spelversie",
+    "col_state": "Status",
+    "col_dest": "Bestemming",
+    "state": {
+      "new": "Nieuw",
+      "update": "Update ({from} → {to})",
+      "older": "Ouder dan de geïnstalleerde versie ({to} < {from})",
+      "present": "Al aanwezig",
+      "conflict": "Een uitgepakte mod heeft al deze naam",
+      "unconfigured": "Versie niet ingesteld: stel haar in bij de instellingen"
+    },
+    "older_confirm": "Aangevinkt: vervangt de geïnstalleerde versie (die wordt opzijgezet).",
+    "postpone": "{game} draait: wordt opgenomen als het sluit",
+    "not_configured": "{game} (niet ingesteld)",
+    "suffix": "Wordt opgenomen als {name} (browserachtervoegsel verwijderd)",
+    "dest_none": "Geen (niet ingedeeld)",
+    "dest_unclassified": "Niet ingedeeld",
+    "dest_party": "Setup “{name}”",
+    "ignore": "Deze bestanden negeren",
+    "ignored": {
+      "one": "1 bestand genegeerd: het wordt niet meer voorgesteld",
+      "other": "{count} bestanden genegeerd: ze worden niet meer voorgesteld"
+    },
+    "later": "Later",
+    "integrate": {
+      "zero": "Opnemen",
+      "one": "1 mod opnemen",
+      "other": "{count} mods opnemen"
+    },
+    "none": "Geen nieuwe mod in {folder}.",
+    "done": {
+      "one": "1 mod opgenomen: {list}",
+      "other": "{count} mods opgenomen: {list}"
+    },
+    "in_version": {
+      "one": "1 in {game}",
+      "other": "{count} in {game}"
+    },
+    "skipped": {
+      "one": "1 bestand op zijn plaats gelaten (al aanwezig of ouder)",
+      "other": "{count} bestanden op hun plaats gelaten (al aanwezig of ouder)"
+    },
+    "postponed": {
+      "one": "1 mod wordt opgenomen als {game} sluit",
+      "other": "{count} mods worden opgenomen als {game} sluit"
+    },
+    "postponed_done": {
+      "one": "1 download opgenomen nadat {game} was gesloten",
+      "other": "{count} downloads opgenomen nadat {game} was gesloten"
+    },
+    "failed": "{file} kon niet worden opgenomen. Het bestand is in je downloads gebleven.",
+    "gone": "{file} staat niet meer in de downloadmap.",
+    "unconfigured": "{file}: de gekozen spelversie is niet ingesteld.",
+    "no_folder": "Downloadmap niet gevonden: geef die op in Instellingen → Toepassing → Downloads.",
+    "demo": "Tijdens de demo worden downloads niet opgenomen.",
+    "done_in": {
+      "one": "1 mod opgenomen in {game}",
+      "other": "{count} mods opgenomen in {game}"
+    },
+    "col_storage": "Opslag"
+  },
+  "move": {
+    "exists": "{file}: er bestaat al een bestand met dezelfde naam.",
+    "no_space": "{file}: niet genoeg vrije ruimte op het station van de modmap.",
+    "check_failed": "{file}: de gecontroleerde kopie komt niet overeen met het origineel. Er is niets vervangen.",
+    "failed": "{file} kon niet worden verplaatst: misschien is het geopend in een ander programma."
+  },
+  "missing": {
+    "title": "Mods die in je modmap ontbreken",
+    "intro": {
+      "one": "Deze mod ontbreekt in je modmap, hoewel hij in setups zit. Wat wil je doen?",
+      "other": "Deze {count} mods ontbreken in je modmap, hoewel ze in setups zitten. Wat wil je doen?"
+    },
+    "in": "In: {list}",
+    "copy": "Verwijderd uit de modmap, maar via de koppelingen bestaat nog een kopie in: {list}",
+    "no_copy": "Geen kopie: download hem opnieuw, of vervang hem door een mod die de maker heeft hernoemd",
+    "restore": "Terugzetten in Mods",
+    "restore_tip": "De kopie die nog in de setup staat, wordt weer de mod van je modmap (er wordt niets gekopieerd).",
+    "remove": "Uit de lijsten halen",
+    "remove_all": "Alle uit de lijsten halen",
+    "later": "Later",
+    "notice": "Verwijder een mod liever in FS Passion (knop “Definitief verwijderen” in de actiebalk): hij wordt dan tegelijk uit de lijsten en setups gehaald.",
+    "removed": {
+      "one": "1 mod uit alle lijsten gehaald",
+      "other": "{count} mods uit alle lijsten gehaald"
+    },
+    "restored": {
+      "one": "1 mod teruggezet in je modmap",
+      "other": "{count} mods teruggezet in je modmap"
+    },
+    "deleted": {
+      "one": "1 mod verwijderd en uit de lijsten gehaald",
+      "other": "{count} mods verwijderd en uit de lijsten gehaald"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 update overgenomen: {list}",
+      "other": "{count} updates overgenomen: {list}"
+    },
+    "added": {
+      "one": "1 door het spel gedownloade mod toegevoegd aan setup “{name}”",
+      "other": "{count} door het spel gedownloade mods toegevoegd aan setup “{name}”"
+    },
+    "unclassified": {
+      "one": "1 door het spel gedownloade mod is in je modmap gezet (niet ingedeeld)",
+      "other": "{count} door het spel gedownloade mods zijn in je modmap gezet (niet ingedeeld)"
+    },
+    "errors": {
+      "one": "1 map kon niet weer op orde worden gebracht: {list}. Zie het logboek.",
+      "other": "{count} mappen konden niet weer op orde worden gebracht: {list}. Zie het logboek."
+    },
+    "reshaped": {
+      "one": "1 mod uitgepakt of opnieuw ingepakt: de setup volgt de nieuwe vorm ({list})",
+      "other": "{count} mods uitgepakt of opnieuw ingepakt: de setups volgen hun nieuwe vorm ({list})"
+    }
+  },
+  "rights": {
+    "title": "Rechten voor mods op andere stations",
+    "intro": "Om een mod die op een ander station staat in een setup op te nemen, maakt FS Passion een symbolische koppeling. Windows staat dat alleen toe met de ontwikkelaarsmodus of met beheerdersrechten, en geen van beide is actief.",
+    "standard": "Je Windows-account is een standaardaccount: beheerdersrechten zouden FS Passion onder een ander account laten draaien, met andere mappen en instellingen. De ontwikkelaarsmodus is de juiste keuze.",
+    "admin_title": "FS Passion altijd als administrator uitvoeren",
+    "admin_text": "FS Passion vinkt voor je “Dit programma als administrator uitvoeren” aan (Eigenschappen → Compatibiliteit), alleen voor jouw account, en start daarna opnieuw. Gevolgen:",
+    "uac": "Windows vraagt bij elke start van FS Passion om bevestiging.",
+    "game_normal": "Het spel en het platform worden nog steeds met normale rechten gestart, via Windows Verkenner. Startparameters gaan dan zoals gewoonlijk via het platform (Steam, Epic Games).",
+    "no_drop": "Windows blokkeert het slepen van bestanden uit Verkenner naar FS Passion. Op dit moment zonder gevolg: FS Passion gebruikt dat gebaar niet.",
+    "dev_title": "Of: schakel de Windows-ontwikkelaarsmodus in",
+    "dev_text": "Windows-instellingen → Systeem → Voor ontwikkelaars → “Ontwikkelaarsmodus”. Geen ander gevolg voor FS Passion. Kom daarna hier terug en klik op “Opnieuw controleren”.",
+    "without": "Zonder deze rechten blijven de extra mappen bewaard: hun mods worden getoond, maar komen in geen enkele setup.",
+    "later": "Later",
+    "dev_mode": "Ontwikkelaarsmodus openen",
+    "admin": "Altijd als administrator uitvoeren",
+    "missing": "Windows weigert symbolische koppelingen: mods op andere stations worden getoond, maar komen in geen enkele setup.",
+    "get": "Rechten verkrijgen…",
+    "check": "Opnieuw controleren",
+    "ok": "Symbolische koppelingen toegestaan (FS Passion draait als administrator): mods op andere stations komen in setups.",
+    "ok_dev": "Symbolische koppelingen toegestaan (Windows-ontwikkelaarsmodus): mods op andere stations komen in setups.",
+    "unknown": "De rechten voor symbolische koppelingen zijn nog niet gecontroleerd.",
+    "admin_on": "FS Passion is ingesteld om altijd als administrator te draaien.",
+    "admin_off": "Niet meer als administrator uitvoeren",
+    "restarting": "FS Passion start opnieuw als administrator. Bevestig de vraag van Windows.",
+    "now_ok": "Symbolische koppelingen toegestaan: pas je setups opnieuw toe zodat mods op andere stations erin kunnen komen.",
+    "still_missing": "Windows weigert nog steeds symbolische koppelingen.",
+    "flag_failed": "De instelling “Als administrator uitvoeren” kon niet worden gewijzigd.",
+    "ok_plain": "Symbolische koppelingen toegestaan: mods op andere stations komen in setups.",
+    "admin_once_title": "FS Passion opnieuw starten als administrator",
+    "admin_once_text": "FS Passion start alleen deze keer opnieuw als administrator; bij elke start te herhalen. De ontwikkelaarsmodus voorkomt dat. Gevolgen:",
+    "admin_once": "Opnieuw starten als administrator"
+  },
+  "older": {
+    "title": "Oudere versie gedownload door het spel",
+    "intro": {
+      "one": "Het spel heeft een mod gedownload met een ouder versienummer dan het jouwe. Hij is opzijgezet, er is niets vervangen. Wat wil je doen?",
+      "other": "Het spel heeft {count} mods gedownload met een ouder versienummer dan het jouwe. Ze zijn opzijgezet, er is niets vervangen. Wat wil je doen?"
+    },
+    "versions": "Jouw versie: {mine} · versie gedownload door het spel: {game}",
+    "keep": "Mijn versie behouden ({version})",
+    "use": "De versie van het spel gebruiken ({version})",
+    "use_tip": "De versie van het spel neemt de plaats in van de jouwe, in de modmap ervan; de jouwe wordt opzijgezet in “Old versions”. Alle setups volgen.",
+    "help": "Vaak is dit een mod die je zelf hebt aangepast: de ModHub vergelijkt geen versienummers, hij biedt zijn origineel aan. Hoe dan ook wordt er niets verwijderd: het bestand dat je niet houdt, blijft in de map “Recovered” of “Old versions”, naast je setups.",
+    "later": "Later",
+    "gone": "Dit bestand staat niet meer in de map “Recovered”: er is niets gewijzigd.",
+    "failed": "De versie van het spel van {name} kon niet worden geplaatst ({detail}). Jouw versie is niet veranderd."
+  },
+  "stop": {
+    "running": "Sluit eerst {game}: de instelling ervan moet worden teruggezet terwijl het spel gesloten is.",
+    "folders_failed": "De setupmappen konden niet worden verwijderd.",
+    "closed": "FS Passion is gesloten. Het spel heeft zijn oorspronkelijke instelling terug.",
+    "export_first": "Exporteer eerst je configuratie: dan krijg je je setups terug als je weer FS Passion gaat gebruiken.",
+    "intro": "FS Passion zet de oorspronkelijke instelling van het spel terug en verwijdert daarna de setupmappen (die bevatten alleen koppelingen):",
+    "no_version": "Er is geen spelversie ingesteld: er valt niets terug te zetten.",
+    "mods_safe": "Je modmappen worden nooit aangeraakt, net als “Old versions” en “Recovered”, die opzijgezette mods bevatten.",
+    "admin_flag": "De door FS Passion ingestelde optie “Dit programma als administrator uitvoeren” wordt verwijderd.",
+    "understand": "Ik begrijp het: het spel laadt geen setups van FS Passion meer.",
+    "plan": {
+      "restore": "Het spel laadt weer zijn oorspronkelijke map: {dir}",
+      "deactivate": "De eigen modmap wordt uitgeschakeld: het spel gaat terug naar zijn gebruikelijke map “mods”.",
+      "missing": "gameSettings.xml niet gevonden: niets terug te zetten.",
+      "none": "Spelinstelling is al oorspronkelijk.",
+      "folders": {
+        "one": "{count} setupmap verwijderd",
+        "other": "{count} setupmappen verwijderd"
+      },
+      "kept": {
+        "one": "“{name}” blijft behouden ({count} bestand).",
+        "other": "“{name}” blijft behouden ({count} bestanden)."
+      }
+    },
+    "options": {
+      "title": "Ook verwijderen:",
+      "parties": "setups en gedeelde mods (parties.json)",
+      "caches": "caches (omgezette pictogrammen, DLC-catalogus)",
+      "settings": "instellingen van FS Passion",
+      "logs": "logboeken",
+      "langs": "eigen talen"
+    },
+    "done": {
+      "title": "FS Passion wordt niet meer gebruikt",
+      "text": "Klaar. Het spel heeft zijn oorspronkelijke instelling terug.",
+      "partial": "Klaar, behalve voor minstens één versie: zie hieronder. Het logboek bevat de details.",
+      "version": {
+        "zero": "oorspronkelijke instelling teruggezet",
+        "one": "oorspronkelijke instelling teruggezet, {count} setupmap verwijderd",
+        "other": "oorspronkelijke instelling teruggezet, {count} setupmappen verwijderd"
+      },
+      "set_aside": {
+        "one": "{count} bestand gevonden in de setupmappen is opzijgezet in “Recovered”.",
+        "other": "{count} bestanden gevonden in de setupmappen zijn opzijgezet in “Recovered”."
+      },
+      "close": "FS Passion sluiten",
+      "uninstaller": "Daarna het verwijderen van FS Passion starten",
+      "error": {
+        "override": "spelinstelling NIET teruggezet (gameSettings.xml kon niet worden gewijzigd); de setupmappen blijven behouden",
+        "folders": "oorspronkelijke instelling teruggezet, maar de setupmappen konden niet worden verwijderd"
+      }
+    },
+    "stopped": "FS Passion wordt niet meer gebruikt: sluit het."
+  },
+  "tour": {
+    "button": "Rondleiding",
+    "title": "Rondleiding",
+    "count": "{n} / {total}",
+    "prev": "Vorige",
+    "next": "Volgende",
+    "replay": "Opnieuw",
+    "finish": "Klaar",
+    "quit": "Rondleiding verlaten",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Zin in een rondleiding?",
+      "body": "Klik op het lampje: in één minuut laat FS Passion je het belangrijkste van de interface zien. Het lampje blijft staan, zodat je de rondleiding kunt herhalen wanneer je wilt.",
+      "start": "Rondleiding starten",
+      "later": "Later"
+    },
+    "versions": {
+      "caption": "Je spelversie",
+      "body": "Beweeg over dit logo: de versies van Farming Simulator verschijnen. Klik op de versie die je wilt beheren.\nNiet-geïnstalleerde versies zijn grijs. Elke versie heeft haar eigen mods en eigen setups.",
+      "picked": "Geselecteerd: de mods en setups ervan worden getoond"
+    },
+    "parties": {
+      "caption": "Je setups: het hart van FS Passion",
+      "body": "Eén klik wisselt van de ene setup naar de andere: de map en alle afhankelijkheden ervan gaan mee.\nVolledige setup: al je mods, om ze in het spel bij te werken.\nLege setup: geen mods, om het originele spel te testen.",
+      "full_tip": "Alle mods: om de modupdates in het spel uit te voeren",
+      "empty_tip": "Geen mods: om het originele spel te testen"
+    },
+    "tools": {
+      "caption": "Maken, dupliceren, hernoemen, verwijderen",
+      "body": "Acties voor de geselecteerde setup.\nTip: bij een map in “Alle mods” maakt de knop “＋ Setup” de setup met de map en al haar afhankelijkheden, met één klik."
+    },
+    "common": {
+      "caption": "Gedeelde mods",
+      "body": "De voertuigen, werktuigen en gameplayscripts die je in al je setups wilt hebben.\nZe staan standaard aan; zet ze zo nodig uit voor één enkele setup.",
+      "on": "Gedeelde mods opgenomen in deze setup",
+      "off": "Alleen voor deze setup uitgeschakeld"
+    },
+    "apply": {
+      "caption": "Toepassen",
+      "body": "Past de geselecteerde setup toe: die laadt het spel bij de volgende start.\nDe knop licht op zolang de geselecteerde setup niet is toegepast.",
+      "done": "Toegepast: het spel laadt hem bij de volgende start"
+    },
+    "buttons": {
+      "caption": "Thema, meldingen, instellingen",
+      "body": "Lichte of donkere interface, berichtgeschiedenis, instellingen… En het lampje, om deze rondleiding te herhalen wanneer je wilt.",
+      "theme": "Lichte of donkere interface"
+    },
+    "list1": {
+      "caption": "Alle mods",
+      "body": "Je hele modmap, gesorteerd per categorie: DLC, maps, andere mods…\nEen mod blijft hier altijd staan, wat je ook doet in de andere lijsten. “Niet ingedeelde” mods staan in geen enkele lijst: het spel ziet ze niet.\n[Ctrl] + [F]: zoek een mod of een maker.",
+      "search_tip": "Zoeken: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Net gedownloade mods",
+      "body": "Deze knop zoekt in je map Downloads naar de mods die je net hebt gedownload.\nFS Passion herkent de spelversie van elke mod en zet hem, met jouw toestemming, in de juiste modmap.\nDat gebeurt ook bij het starten: zie Instellingen → Toepassing → Downloads.",
+      "found": "Elke mod gaat naar de modmap van zijn spelversie"
+    },
+    "list2": {
+      "caption": "Setupmods",
+      "body": "De mods van de geselecteerde setup: de map, de afhankelijkheden ervan, de eigen mods.\nHet spel laadt ze bovenop de gedeelde mods."
+    },
+    "list3": {
+      "caption": "Gedeelde mods",
+      "body": "De mods die in al je setups zitten: trekkers, werktuigen, scripts…\nDeel ze hier één keer in: elke setup krijgt ze."
+    },
+    "select": {
+      "caption": "Meervoudige selectie",
+      "body": "[Ctrl] + klik: een mod aan de selectie toevoegen of eruit halen.\n[Shift] + klik: een hele reeks selecteren.\n[Ctrl] + [A]: alles in de lijst selecteren; [Esc]: selectie wissen.\nZodra een mod is geselecteerd, verschijnt onderaan een actiebalk."
+    },
+    "move": {
+      "caption": "Slepen en neerzetten",
+      "body": "Naar “Setupmods” of “Gedeelde mods”: dat is een kopie, de mod blijft in “Alle mods”.\nTussen deze twee lijsten: dat is een verplaatsing. Houd [Ctrl] ingedrukt bij het neerzetten om te kopiëren.\nNaar “Alle mods”, of met de toets [Del]: de mod wordt uit de lijst gehaald. Het bestand wordt nooit verwijderd.",
+      "copy": "Kopiëren",
+      "move": "Verplaatsen · [Ctrl]: kopiëren",
+      "remove": "Uit de lijst halen · [Del]"
+    },
+    "keys": {
+      "caption": "Sneltoetsen",
+      "body": "Om sneller te werken:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Een mod of een maker zoeken"
+        },
+        {
+          "k": "[Ctrl] + klik",
+          "d": "Een mod aan de selectie toevoegen of eruit halen"
+        },
+        {
+          "k": "[Shift] + klik",
+          "d": "Een reeks mods selecteren"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Alles in de lijst selecteren"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Selectie wissen of slepen annuleren"
+        },
+        {
+          "k": "[Ctrl] bij neerzetten",
+          "d": "Kopiëren in plaats van verplaatsen (tussen lijst 2 en 3)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Uit lijst 2 of 3 halen (het bestand blijft)"
+        },
+        {
+          "k": "[Enter] op een map",
+          "d": "Een setup maken met de map en haar afhankelijkheden"
+        },
+        {
+          "k": "[F2]",
+          "d": "Een mod hernoemen"
+        },
+        {
+          "k": "[I]",
+          "d": "De kaart van een mod vastzetten"
+        },
+        {
+          "k": "[Spatie]  [↑] [↓] [←] [→]",
+          "d": "Selecteren en bewegen met het toetsenbord"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Sluiten zonder af te sluiten",
+      "body": "Het kruisje sluit het venster, maar FS Passion blijft op de achtergrond draaien, in het systeemvak naast de klok.\nTerughalen: de pijl “^” op de taakbalk, daarna het FS-pictogram. Echt sluiten: “Afsluiten” rechtsonder, of rechtsklik op het pictogram.\nJe kunt dit wijzigen in Instellingen → Toepassing → Venster.",
+      "tip_close": "Sluiten: FS Passion gaat naar het systeemvak",
+      "tip_more": "Verborgen pictogrammen weergeven",
+      "tip_icon": "Klik: FS Passion komt terug · Rechtsklik: Afsluiten"
+    },
+    "end": {
+      "caption": "Nu jij!",
+      "body": "Herhaal deze rondleiding wanneer je wilt met het lampje, of via Instellingen → Hulp en info."
+    },
+    "demo": {
+      "parties": [
+        "Groene Vallei — Veeteelt",
+        "De Heuvels — Akkerbouw",
+        "Rijstvelden in het Zuiden"
+      ],
+      "party_sub": {
+        "one": "Map + {count} mod",
+        "other": "Map + {count} mods"
+      },
+      "mods": [
+        "Zescilindertrekker",
+        "Maaidorser",
+        "Zaaimachine van 6 m",
+        "Landbouwaanhanger",
+        "Werktuigenpakket",
+        "Weerscript"
+      ]
+    }
+  }
+}

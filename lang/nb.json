@@ -1,0 +1,1382 @@
+{
+  "_meta": {
+    "code": "nb",
+    "name": "Norsk bokmål",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion er lukket",
+    "closed_help": "Du kan lukke denne fanen. Start FS Passion på nytt for å fortsette."
+  },
+  "common": {
+    "close": "Lukk",
+    "cancel": "Avbryt",
+    "ok": "OK",
+    "copy": "Kopier",
+    "copied": "Kopiert til utklippstavlen",
+    "soon": "Kommer i versjon {version}",
+    "soon_action": "{action}: kommer i versjon {version}"
+  },
+  "window": {
+    "minimize": "Minimer",
+    "maximize": "Maksimer",
+    "restore": "Gjenopprett",
+    "close": "Lukk FS Passion"
+  },
+  "header": {
+    "settings": "Innstillinger",
+    "version": "Spillversjon: {name}",
+    "current_party": "Gjeldende oppsett",
+    "create": "Lag et oppsett",
+    "duplicate": "Dupliser oppsettet",
+    "rename": "Gi nytt navn til oppsettet",
+    "delete": "Slett oppsettet",
+    "common_mods": "Felles modder",
+    "common_mods_tip": "Ta med de felles moddene i dette oppsettet",
+    "apply": "Bruk",
+    "apply_tip": "La spillet laste inn dette oppsettet",
+    "apply_done_tip": "Dette oppsettet er i bruk og oppdatert: det er dette spillet laster inn",
+    "theme_light": "Lyst grensesnitt",
+    "theme_dark": "Mørkt grensesnitt"
+  },
+  "versions": {
+    "coming": "Kommer",
+    "ready": "Konfigurert",
+    "installed": "Installert",
+    "not_installed": "Ikke installert",
+    "absent_help": "Installert et annet sted? Innstillinger → Spill og stier"
+  },
+  "party": {
+    "full": "Fullt oppsett",
+    "empty": "Tomt oppsett",
+    "other": "Egen mappe",
+    "unsupported": "Ingen oppsett",
+    "unknown": "Ukjent",
+    "none_yet": "Ingen oppsett ennå. Lag et med ＋, eller med «＋ Oppsett» på et kart.",
+    "full_count": {
+      "one": "Alle modder ({count})",
+      "other": "Alle modder ({count})"
+    },
+    "empty_sub": "Ingen modder, for å teste grunnspillet",
+    "applied_tag": "i bruk",
+    "mods_count": {
+      "zero": "Ingen modder",
+      "one": "{count} mod",
+      "other": "{count} modder"
+    },
+    "full_tip": "Ideelt for å oppdatere modder i spillet"
+  },
+  "status": {
+    "running": "{game} kjører",
+    "other_folder": "Spillet laster inn moddene sine fra en annen mappe:",
+    "applied": "Oppsett i bruk: {name}",
+    "other_folder_path": "Spillet laster inn en annen mappe: {path}",
+    "stale": "Oppsettet er endret siden det sist ble tatt i bruk"
+  },
+  "path": {
+    "empty": "",
+    "found": "Funnet",
+    "not_found": "Denne mappen finnes ikke",
+    "not_game_exe": "Denne filen er ikke en programfil for {game}",
+    "no_gamesettings": "Fant ikke gameSettings.xml: start spillet én gang, og kom så tilbake",
+    "not_ntfs": "Denne stasjonen er ikke NTFS: oppsett er ikke mulig",
+    "onedrive": "Denne mappen ligger i OneDrive: frarådes",
+    "storage_overlap": "Denne mappen inneholder hovedmappen for modder (eller FSPassion-mappen dens), eller ligger i den: velg en annen mappe",
+    "storage_duplicate": "Denne mappen brukes allerede av den andre lagringsmappen, eller inneholder den",
+    "storage_same_disk": "Funnet · samme stasjon som hovedmappen: ingen spesielle rettigheter nødvendig",
+    "storage_other_disk": "Funnet · annen stasjon: symbolske lenker"
+  },
+  "list1": {
+    "title": "Alle modder",
+    "search": "Søk etter en mod eller en forfatter",
+    "search_clear": "Tøm søket",
+    "cat_unclassified": "Ikke sortert",
+    "cat_dlc": "DLC",
+    "cat_maps": "Kart",
+    "cat_others": "Andre modder",
+    "cat_by_author": "Etter forfatternavn",
+    "dlc_note": "Lastes inn av spillet i alle oppsett",
+    "selected": "valgt",
+    "active": "aktive",
+    "all": "totalt",
+    "scanning": "Leser modder: {done} av {total}",
+    "icons_pending": {
+      "one": "Klargjør ikoner: {count} igjen",
+      "other": "Klargjør ikoner: {count} igjen"
+    },
+    "anomalies": {
+      "one": "{count} problem: vis detaljer",
+      "other": "{count} problemer: vis detaljer"
+    },
+    "find_new": "Se etter nye modder i nedlastingene",
+    "open_settings": "Åpne innstillingene",
+    "not_configured": "{game} er ikke konfigurert ennå",
+    "not_configured_help": "Angi moddmappen i innstillingene, eller la FS Passion finne installasjonen.",
+    "reading": "Leser modder…",
+    "no_match": "Ingen modder samsvarer med «{query}»",
+    "empty": "Denne moddmappen er tom",
+    "empty_help": "Modder (.zip) og utpakkede modder (mapper med en modDesc.xml) vises her.",
+    "unclassified_note": "Spillet ser dem ikke før de er sortert",
+    "plus_party": "Oppsett",
+    "plus_party_tip": "Lag et oppsett med dette kartet og avhengighetene (Enter)",
+    "mark_party": "I gjeldende oppsett",
+    "mark_common": "I de felles moddene",
+    "info_tip": "Fest moddens detaljer (tasten I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Fant ikke moddmappen",
+      "unexpected": "Kunne ikke lese moddene: {error}"
+    }
+  },
+  "mod": {
+    "map": "Kart",
+    "unpacked": "Utpakket mod",
+    "multiplayer": "Flerspiller",
+    "version": "Versjon",
+    "author": "Forfatter",
+    "game_version": "Spill",
+    "gv_unknown": "Ukjent spillversjon",
+    "size": "Størrelse",
+    "kind": "Format",
+    "kind_dir": "Mappe (utpakket)",
+    "kind_zip": ".zip-arkiv",
+    "parties": "Finnes i lister",
+    "parties_none": "Ingen",
+    "storage": "Lagring",
+    "dependencies": {
+      "one": "{count} avhengighet",
+      "other": "{count} avhengigheter"
+    },
+    "more": {
+      "one": "og {count} til",
+      "other": "og {count} til"
+    },
+    "no_dependencies": "Ingen oppgitte avhengigheter",
+    "unpacked_tip": "Utpakket mod: den oppdateres ikke av ModHub og kan ikke brukes i flerspiller. FS Passion skriver aldri i den.",
+    "gv_conflict": "Navneprefikset og descVersion peker på to ulike versjoner: prefikset brukes.",
+    "unpin": "Lukk (Esc)",
+    "optional": {
+      "one": "{count} valgfri mod",
+      "other": "{count} valgfrie modder"
+    },
+    "searchmods_note": "Eldre spillversjon (SearchMods-tagg): lagringen lastes inn selv om en nødvendig mod mangler; spillet sier fra etterpå.",
+    "links_hint": "Klikk på «i» for å feste disse detaljene og åpne lenkene.",
+    "links_old": "Lenker oppgitt av moddens forfatter, ofte gamle: siden finnes kanskje ikke lenger.",
+    "link_open": "Åpne i nettleseren",
+    "link_failed": "Kunne ikke åpne lenken."
+  },
+  "dep": {
+    "present": "til stede",
+    "absent": "mangler",
+    "dlc_owned": "DLC eid",
+    "dlc_missing": "DLC ikke eid"
+  },
+  "dlc": {
+    "free": "Gratis DLC",
+    "paid": "DLC",
+    "info": "Spillet laster alltid inn installerte DLC-er, i alle oppsett."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} støtter ikke oppsett",
+    "missing": "Ikke i moddmappene",
+    "missing_tip": "{name} er ikke lenger i moddmappene dine. Hvis forfatteren har gitt den nytt navn, bruk «Erstatt med…».",
+    "replace": "Erstatt med…"
+  },
+  "list2": {
+    "title": "Oppsettets modder",
+    "full": {
+      "one": "Fullt oppsett: alle modder ({count})",
+      "other": "Fullt oppsett: alle modder ({count})"
+    },
+    "full_help": "Spillet laster inn hele moddmappen, som før FS Passion.",
+    "empty_party": "Tomt oppsett: ingen modder",
+    "empty_help": "For å teste grunnspillet, uten noen modder.",
+    "no_mods": "Ingen modder i dette oppsettet",
+    "no_mods_help": "Dra modder fra «Alle modder», eller merk dem og bruk handlingslinjen."
+  },
+  "list3": {
+    "title": "Felles modder",
+    "empty": "Ingen felles modder ennå",
+    "empty_help": "Felles modder finnes i alle oppsett: traktorer, redskaper, skript…",
+    "not_included": "Ikke med i dette oppsettet"
+  },
+  "footer": {
+    "github_tip": "Prosjektets GitHub-side",
+    "github_soon": "Prosjektets GitHub-adresse legges til snart",
+    "running": "Spillet kjører",
+    "launch": "Start spillet",
+    "launch_unconfigured": "Angi programfilen for {game} i innstillingene",
+    "launch_tip": "Start spillet med oppsettet som er i bruk",
+    "quit": "Avslutt"
+  },
+  "launch": {
+    "started": "Starter {game}…",
+    "failed": "Kunne ikke starte {game}. Sjekk programfilen og oppstartsmetoden i innstillingene.",
+    "no_exe": "Fant ikke programfilen for {game}: angi den i innstillingene.",
+    "already_running": "{game} kjører allerede.",
+    "apply_title": "Bruke «{name}»?",
+    "apply_text": "Oppsettet «{name}» er ikke i bruk, eller er endret siden. Ta i bruk oppsettet {name}, og start deretter {game}?",
+    "apply_and_launch": "Bruk og start",
+    "without_apply": "Start uten å bruke"
+  },
+  "backup": {
+    "created": "Original sikkerhetskopi av gameSettings.xml laget for {game}",
+    "exported": "Konfigurasjon eksportert: {file}",
+    "demo_active": "Gå ut av demomodus først: den bruker andre mapper enn dine.",
+    "unreadable": "Denne filen kan ikke leses: {path}",
+    "too_big": "Denne filen er for stor til å være en eksport fra FS Passion: {path}",
+    "not_export": "Denne filen er ikke en eksport fra FS Passion: {path}",
+    "too_new": "Denne filen kommer fra en nyere versjon av FS Passion ({version}). Oppdater FS Passion for å importere den.",
+    "write_failed": "Kunne ikke lagre filen: {path}",
+    "expired": "Importen er utløpt: velg filen på nytt.",
+    "running": "Lukk {game} før import: oppsettene til spillet blir endret.",
+    "import": {
+      "title": "Importer en konfigurasjon",
+      "from": "Eksport fra {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} oppsett",
+        "other": "{count} oppsett"
+      },
+      "common": {
+        "one": "{count} felles mod",
+        "other": "{count} felles modder"
+      },
+      "no_parties": "Denne filen inneholder ingen oppsett: bare innstillingene importeres.",
+      "keep": "Behold de nåværende stiene (anbefalt)",
+      "keep_help": "Spill-, modd- og nedlastingsmappene på denne PC-en endres ikke. Bare oppsett, felles modder og nøytrale innstillinger (språk, tema, valg) importeres.",
+      "replace_help": "Stiene i filen erstatter stiene på denne PC-en: velg dette bare hvis filen kommer fra denne PC-en, med de samme stasjonene.",
+      "paths_differ": "Moddmappene i denne filen er ikke mappene på denne PC-en.",
+      "warning": "De nåværende oppsettene for versjonene ovenfor blir erstattet. Nåværende tilstand sikkerhetskopieres automatisk først. Ingenting tas i bruk: oppsettmappene bygges opp igjen ved neste «Bruk».",
+      "ok": "Importer"
+    },
+    "result": {
+      "title": "Konfigurasjon importert",
+      "done": "Importen er fullført.",
+      "parties": {
+        "one": "{count} oppsett importert",
+        "other": "{count} oppsett importert"
+      },
+      "skipped": "ikke importert (spillversjonen er ikke konfigurert på denne PC-en)",
+      "fallback": "Spillet lastet inn et oppsett som ikke finnes lenger: nå laster det inn det fulle oppsettet.",
+      "apply": "Modder som mangler på denne PC-en, vises som manglende modder i oppsettene. Klikk på «Bruk» for at spillet skal laste inn et importert oppsett.",
+      "backup": "Tilstanden før importen er lagret i %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "game": {
+      "title": "Spill og stier"
+    },
+    "look": {
+      "title": "Utseende"
+    },
+    "app": {
+      "title": "Program"
+    },
+    "help": {
+      "title": "Hjelp og om"
+    },
+    "paths": {
+      "versions": "Spillversjoner",
+      "game_exe": "Spillets programfil",
+      "user_dir": "Spillmappen i Dokumenter",
+      "mods_dir": "Hovedmappe for modder",
+      "mods_dirs": "Moddmapper",
+      "browse": "Bla gjennom…",
+      "fixed_fs2011": "Moddmappen for FS2011 kan ikke flyttes.",
+      "add_storage": "Legg til en moddmappe på en annen stasjon",
+      "derived": "Avledede stier",
+      "not_applicable": "Gjelder ikke denne versjonen",
+      "d_game_dir": "Spillmappe",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (spillmappe)",
+      "d_dlc_user": "DLC (Dokumenter)",
+      "detect": "Finn installasjon",
+      "detect_all": "Finn alle versjoner",
+      "detect_all_help": "Søker etter installasjonene av alle versjoner og fyller ut de tomme feltene deres.",
+      "detect_one": "Finn denne versjonen",
+      "detect_one_help": "Endrer bare versjonen som er valgt ovenfor. De andre versjonene forblir uendret.",
+      "detect_help": "Felt du har tilpasset, endres aldri.",
+      "detect_found": "Installasjoner funnet: {list}",
+      "detect_none": "Fant ingen installasjon. Angi stiene med «Bla gjennom…».",
+      "launch_method": "Spillets oppstartsmetode",
+      "launch_auto": "Automatisk",
+      "launch_platform": "Plattform",
+      "launch_exe": "Programfil",
+      "launch_help": "Automatisk velger riktig metode (Steam, Epic Games, Microsoft Store, Xbox eller programfil). De to andre er nødløsninger.",
+      "minimize_on_launch": "Minimer FS Passion når spillet starter",
+      "args_title": "Oppstartsparametere",
+      "args_show": "Vis oppstartsparametere",
+      "args_hide": "Skjul oppstartsparametere",
+      "args_skip": "Hopp over introvideoen",
+      "args_skip_info": "Hopper over introvideoen og åpningsskjermene.",
+      "args_cheats": "Utviklerkonsoll",
+      "args_cheats_info": "Slår på utviklerkonsollen i spillet. Setter også <controls> i game.xml, ved siden av gameSettings.xml.",
+      "args_game_xml_absent": "Fant ikke game.xml: konsollen slås først på etter at spillet er startet én gang.",
+      "args_game_xml_error": "Kunne ikke endre game.xml: utviklerkonsollen forblir avslått.",
+      "args_help_command": "FS Passion legger dem til i oppstartskommandoen for {game}.",
+      "args_help_steam": "{game} startes av Steam. Steam avviser parametere fra et annet program (det ville bedt om bekreftelse ved hver oppstart), så FS Passion starter spillet uten dem. Skriv dem inn én gang i Steam, nedenfor.",
+      "args_help_epic": "{game} startes av Epic Games, som ikke godtar parametere fra et annet program: skriv dem inn én gang i Epic Games Launcher, nedenfor.",
+      "args_help_unsupported": "{game} er installert fra Microsoft Store eller Xbox.",
+      "args_store": "Microsoft Store og Xbox-appen tillater ikke oppstartsparametere: bare utviklerkonsollen (game.xml) kan slås på. For parametere velger du «Programfil» som oppstartsmetode, hvis installasjonen din tillater det.",
+      "args_steam_where": "Hvor du skriver dem inn i Steam",
+      "args_steam_steps": "Steam-biblioteket: høyreklikk på {game} → Egenskaper…\nFanen Generelt → feltet «Oppstartsvalg»\nLim inn teksten nedenfor, og lukk vinduet",
+      "args_epic_where": "Hvor du skriver dem inn i Epic Games Launcher",
+      "args_epic_steps": "Bibliotek: «…» under {game} → Administrer\nKryss av for «Ekstra kommandolinjeargumenter»\nLim inn teksten nedenfor (eldre launchere: profilbilde → Innstillinger → {game})",
+      "args_none": "Ingen parametere avkrysset",
+      "args_copy_label": "Parametere som skal kopieres",
+      "args_copy_help": "Trengs bare på nytt når du krysser av eller fjerner avkrysningen for en parameter.",
+      "console_on": "Konsoll slått på i game.xml",
+      "console_off": "Konsoll slått av i game.xml",
+      "console_enable": "Slå på i game.xml",
+      "console_done": "Utviklerkonsoll slått på i game.xml for {game}",
+      "add_storage_help": "Opptil to ekstra mapper. Moddene der vises og kommer med i oppsett som de andre; FS Passion skriver ingenting annet der.",
+      "extra_dir": "Ekstra moddmappe",
+      "extra_help": "Å fjerne denne mappen rører ikke moddene i den: de vises bare ikke lenger.",
+      "remove_storage": "Fjern denne mappen fra listen (moddene i den røres ikke)"
+    },
+    "downloads": {
+      "title": "Nedlastinger",
+      "folder": "Nedlastingsmappe",
+      "help": "Mappen der nettleseren lagrer nedlastede modder.",
+      "scan_at_start": "Se etter nye modder ved oppstart",
+      "scan_now": "Søk nå"
+    },
+    "language": {
+      "title": "Språk",
+      "personal": "eget",
+      "open_folder": "Åpne mappen for egne språk",
+      "personal_help": "Der kan du oversette FS Passion til ditt språk: en mal og en veiledning følger med.",
+      "rejected": "Språkfiler ignorert (ugyldige eller for store): {list}"
+    },
+    "theme": {
+      "title": "Tema",
+      "help": "Hold pekeren over en fargeprøve for å forhåndsvise temaet, og klikk for å velge det. Tofargede temaer har bare to farger; de andre bruker de offisielle fargene til populære temaer, hver i en mørk og en lys versjon. Sol/måne-knappen øverst bytter mellom dem.",
+      "contrast": "Kontrast {ratio}:1",
+      "loop": "Tema i løkke: bytt tema hvert minutt",
+      "light_effects": "Lyseffekter (glans, lysende kanter, neon)",
+      "reduce_motion": "Reduser animasjoner",
+      "follows_windows": "Følger Windows-innstillingen «Animasjonseffekter».",
+      "follow_windows": "Følg Windows-innstillingen",
+      "atelier": "Åpne temaverkstedet",
+      "mode_dark": "Mørk",
+      "mode_light": "Lys",
+      "group_duo": "Tofargede"
+    },
+    "backup": {
+      "title": "Sikkerhetskopi av konfigurasjonen",
+      "help": "Eksporter oppsettene, de felles moddene og innstillingene dine til en fil, slik at du får dem tilbake etter en ny installasjon eller på en annen PC. Ingen modder kopieres: bare navnene deres.",
+      "export": "Eksporter",
+      "import": "Importer"
+    },
+    "notice": {
+      "title": "Veiledning",
+      "open": "Åpne veiledningen",
+      "at_start": "Vis ved oppstart",
+      "tour": "Omvisning i grensesnittet"
+    },
+    "anomalies": {
+      "title": "Problemer",
+      "show": "Vis problemer",
+      "reset": {
+        "zero": "Ingen skjulte problemer",
+        "one": "Vis det skjulte problemet igjen",
+        "other": "Vis de {count} skjulte problemene igjen"
+      },
+      "reset_done": "Skjulte problemer vises igjen"
+    },
+    "internet": {
+      "title": "Internettilkobling",
+      "allow": "La FS Passion laste ned DLC-katalogen fra GitHub",
+      "help": "DLC-katalogen (navn og ikoner) leses fra GitHub høyst én gang om dagen. Bare ikonene for DLC-er på denne PC-en lastes ned. Ingen personopplysninger sendes.",
+      "catalog_off": "DLC-katalog: den som følger med FS Passion (tilkobling slått av).",
+      "catalog_remote": "DLC-katalog fra {date}, lastet ned fra GitHub.",
+      "catalog_embedded": "DLC-katalog fra {date}, levert med FS Passion.",
+      "check": "Sjekk nå",
+      "checking": "Sjekker…",
+      "error_not_found": "Katalogen er ikke publisert på GitHub ennå.",
+      "error_unreachable": "Siste sjekk mislyktes (ingen tilkobling?).",
+      "error_invalid": "Den publiserte katalogen kan ikke leses: katalogen i FS Passion brukes.",
+      "error_too_new": "Den publiserte katalogen krever en nyere versjon av FS Passion.",
+      "error_too_big": "Den publiserte katalogen er for stor: den ignoreres."
+    },
+    "logs": {
+      "title": "Logger og diagnose",
+      "open_logs": "Åpne loggmappen",
+      "copy_diag": "Kopier diagnose",
+      "diag_copied": "Diagnose kopiert: lim den inn i rapporten din"
+    },
+    "donate": {
+      "title": "Støtt prosjektet",
+      "text": "FS Passion er og forblir et pålitelig, åpen kildekode- og gratis prosjekt. Vil du takke forfatteren, tar en enkeltgave noen sekunder, uten å opprette konto. Takk!",
+      "no_link": "Lenke kommer"
+    },
+    "about": {
+      "title": "Om",
+      "version": "Versjon",
+      "author": "Forfatter",
+      "license": "Lisens",
+      "github_soon": "adresse kommer",
+      "official": "Den eneste offisielle nedlastingslenken er prosjektets GitHub-side.",
+      "unofficial": "FS Passion er et uavhengig prosjekt uten tilknytning til GIANTS Software. Farming Simulator er et varemerke for GIANTS Software.",
+      "privacy": "FS Passion sender ingen data. Det laster bare ned, hvis du tillater det, den offentlige DLC-listen fra GitHub.",
+      "window_mode": "Vindusteknikk (utvikling)",
+      "window_native": "Innebygd",
+      "window_script": "Beregnet",
+      "window_thin": "Tynn ramme",
+      "window_restart": "Trer i kraft neste gang FS Passion starter",
+      "window_help": "Nåværende teknikk: {current}. Endre den bare hvis endring av størrelse fra kantene ikke fungerer."
+    },
+    "stop": {
+      "title": "Slutt å bruke FS Passion",
+      "show": "Vis detaljer",
+      "hide": "Skjul detaljer",
+      "text": "Gir spillet den opprinnelige innstillingen tilbake og fjerner oppsettmappene. Moddene dine røres aldri.",
+      "button": "Slutt å bruke FS Passion"
+    },
+    "window": {
+      "title": "Vindu",
+      "close_to_tray": "Lukk til varslingsområdet",
+      "close_to_tray_help": "Lukkeknappen i vinduet skjuler FS Passion ved siden av Windows-klokken. Klikk på ikonet for å hente det fram igjen; «Avslutt» (nede til høyre eller i ikonets meny) lukker det helt.",
+      "tray_off": "Varslingsområdet er bare tilgjengelig i FS Passion-vinduet på Windows.",
+      "focus_after_game": "Kom fram igjen når spillet lukkes",
+      "focus_after_game_help": "Når Farming Simulator lukkes, dukker FS Passion opp igjen, selv om det var skjult i varslingsområdet."
+    },
+    "demo": {
+      "title": "Prøv uten spillet",
+      "help": "Falske modder for å prøve alle funksjonene i FS Passion i en testmappe: de ekte stiene dine legges til side og gjenopprettes når du avslutter.",
+      "start": "Prøv FS Passion uten spillet",
+      "active_help": "Demomodus er på: disse stiene tilhører testmappen. De ekte stiene dine kommer tilbake når du går ut av den."
+    }
+  },
+  "themes": {
+    "lime": "Lime",
+    "jade": "Jade",
+    "cuivre": "Kobber",
+    "blue": "Hvit"
+  },
+  "anomalies": {
+    "title": "Problemer funnet",
+    "none": "Ingen problemer. Alt er i orden.",
+    "intro": "Spillet kan ikke bruke disse elementene i moddmappen din slik de er. Ikke noe alvorlig, og FS Passion lar dem være.",
+    "new": "ny",
+    "hide_type": "Ikke vis denne typen problem mer",
+    "hide_folder": "Ikke vis denne mappen mer",
+    "rename": "Gi nytt navn…",
+    "others": {
+      "one": "Andre ignorerte filer ({count})",
+      "other": "Andre ignorerte filer ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar- eller .7z-arkiv",
+        "other": ".rar- eller .7z-arkiver ({count})"
+      },
+      "explain": "Spillet leser bare .zip-filer. Pakk ut arkivet, og pakk modden som .zip igjen om nødvendig."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip uten modDesc.xml",
+        "other": ".zip-filer uten modDesc.xml ({count})"
+      },
+      "explain": "Ofte en pakke med flere modder som må pakkes ut.",
+      "nested": "modDesc.xml funnet i en undermappe ({path}): modden er pakket feil."
+    },
+    "A3": {
+      "title": {
+        "one": "Uleselig arkiv",
+        "other": "Uleselige arkiver ({count})"
+      },
+      "explain": "Skadet arkiv eller ugyldig modDesc.xml. Last ned modden på nytt.",
+      "zip": "Arkivet kan ikke åpnes.",
+      "xml": "Filen modDesc.xml er ugyldig."
+    },
+    "A4": {
+      "title": {
+        "one": "Mappe uten modDesc.xml",
+        "other": "Mapper uten modDesc.xml ({count})"
+      },
+      "explain": "Uten en modDesc.xml i roten kan ikke spillet bruke denne mappen. FS Passion rører den aldri."
+    },
+    "A5": {
+      "title": {
+        "one": "Navn avvist av spillet",
+        "other": "Navn avvist av spillet ({count})"
+      },
+      "explain": "Spillet godtar bare bokstaver uten aksenter, tall og «_».",
+      "suggestion": "Foreslått navn: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod for en annen spillversjon",
+        "other": "Modder for en annen spillversjon ({count})"
+      },
+      "explain": "Denne versjonen av spillet laster ikke inn denne modden.",
+      "detected": "Mod for {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Manglende mod",
+        "other": "Manglende modder ({count})"
+      },
+      "explain": "Et oppsett viser til denne modden, men den er ikke lenger i moddmappene.",
+      "in": "I: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Slettet mod fortsatt koblet",
+        "other": "Slettede modder fortsatt koblet ({count})"
+      },
+      "explain": "Denne modden er slettet fra moddmappen, men noen oppsett inneholder den fortsatt.",
+      "copy": "En kopi finnes fortsatt i: {list}",
+      "delete_title": "Slette den gjenværende kopien?",
+      "delete_text": "Den siste kopien av «{name}», som fortsatt ligger i oppsettmapper, flyttes til papirkurven, og modden fjernes fra alle lister."
+    },
+    "A9": {
+      "title": {
+        "one": "Duplisert mod",
+        "other": "Dupliserte modder ({count})"
+      },
+      "explain": "Den samme modden finnes to ganger: i to lagringsmapper, eller som .zip og som mappe side om side. Spillet laster bare inn én. FS Passion bruker den i hovedmappen, og heller arkivet enn mappen.",
+      "zip_and_dir": "«{name}» finnes både som .zip og som utpakket mappe: spillet laster bare inn én, og ModHub kan ikke oppdatere den. Behold bare én form (slett den andre med «Slett permanent», eller flytt den ut av moddmappen).",
+      "files": "Filer: {list}"
+    },
+    "game": "{game}",
+    "folder": "Moddmappe: {path}",
+    "show_in_folder": "Vis i Filutforsker",
+    "open_folder": "Åpne moddmappen i Filutforsker (modden er ikke der lenger)"
+  },
+  "welcome": {
+    "subtitle": "Moddene dine, lagret én gang. Så mange oppsett du vil.",
+    "language": "Velg språk"
+  },
+  "notice": {
+    "title": "Slik fungerer FS Passion",
+    "at_start": "Vis dette vinduet når programmet starter",
+    "understood": "Skjønner",
+    "blocks": [
+      {
+        "key": "Aller først: vi anbefaler å ta en sikkerhetskopi av alle moddene dine på en annen stasjon. Det er avgjørende, som før enhver operasjon på viktige filer."
+      },
+      {
+        "h": "Prinsippet"
+      },
+      {
+        "p": "Med FS Passion lager du enkelt og raskt så mange Farming Simulator-oppsett du vil, mens moddene dine ligger i ett eksemplar i den opprinnelige mappen."
+      },
+      {
+        "p": "Bytt fra ett oppsett til et annet med 1 klikk!"
+      },
+      {
+        "h": "Installasjon"
+      },
+      {
+        "p": "Moddmappen din kan ligge på hvilken som helst stasjon: FS Passion tilpasser seg. Det er ingenting å lage, flytte eller gi nytt navn for hånd. Full stasjon? Legg til opptil to moddmapper på andre stasjoner (Innstillinger → Spill og stier): moddene der kommer med i oppsett som de andre."
+      },
+      {
+        "h": "Første gangs bruk"
+      },
+      {
+        "ul": [
+          "Lag oppsettene dine med den magiske knappen «＋ Oppsett» på kartene: kartet og avhengighetene blir til oppsettet med ett klikk.",
+          "Sorter deretter de andre moddene i de felles moddene, som finnes i alle oppsett.",
+          "Klikk på «Bruk»: spillet laster inn det valgte oppsettet neste gang det starter."
+        ]
+      },
+      {
+        "h": "Legge til, gi nytt navn til og slette modder"
+      },
+      {
+        "ul": [
+          "Nye modder: last dem ned som vanlig, og klikk så på «Se etter nye modder i nedlastingene» øverst i listen. FS Passion legger dem i moddmappen for riktig spillversjon.",
+          "Slett heller modder i FS Passion («Slett permanent» i handlingslinjen) enn i Filutforsker: da fjernes de samtidig fra lister og oppsett, og havner i papirkurven.",
+          "Når du gir en mod nytt navn (tasten F2), kobles den fra ModHub: den får ikke flere oppdateringer."
+        ]
+      },
+      {
+        "h": "Oppdateringer"
+      },
+      {
+        "p": "Du trenger ikke gjøre noe: oppdateringer som spillet laster ned, hentes inn når det lukkes, eller neste gang FS Passion starter. Den gamle versjonen legges til side i «Old versions». Hvis spillet laster ned et eldre versjonsnummer enn ditt (ofte en mod du har endret selv), spør FS Passion hvilken du vil beholde."
+      },
+      {
+        "h": "Ta vare på oppsettene"
+      },
+      {
+        "p": "Innstillinger → Program → «Eksporter» lagrer oppsettene, de felles moddene og innstillingene dine i en fil. «Importer» henter dem tilbake etter en ny installasjon eller på en annen PC."
+      },
+      {
+        "h": "For å slutte"
+      },
+      {
+        "p": "«Slutt å bruke FS Passion» (Innstillinger → Program) gir spillet den opprinnelige innstillingen tilbake og fjerner oppsettmappene. Moddene dine røres aldri."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Temaverksted",
+    "id": "ID",
+    "name": "Navn",
+    "dark": "Vindusbakgrunn",
+    "light": "Hovedfarge",
+    "mica": "Mica-skjær",
+    "grain": "Korn",
+    "effect": "Effekt",
+    "effect_none": "Ingen",
+    "effect_metal": "Metallglans",
+    "intensity": "Intensitet",
+    "save": "Lagre",
+    "copy": "Kopier definisjonen",
+    "new": "Ny",
+    "copied": "Definisjon kopiert",
+    "saved": "Tema lagret i ui/themes.json",
+    "contrast_low": "Kontrast {ratio}:1, under 4,5:1. Liten tekst bruker {color}.",
+    "contrast_ok": "Kontrast {ratio}:1",
+    "mode": "Modus",
+    "mode_dark": "Mørk",
+    "mode_light": "Lys",
+    "text": "Tekst",
+    "multi": "Flere aksentfarger (én per område)",
+    "accent_n": "Aksent {n}",
+    "pair": "Tvillingtema (sol/måne)",
+    "pair_none": "Ingen",
+    "gradient": "Tofarget overgang (titler, knappene Bruk og Start)",
+    "gradient_from": "Overgang: start",
+    "gradient_to": "Overgang: slutt",
+    "style": "Stil",
+    "style_duo": "Tofarget",
+    "style_palette": "Offisiell palett",
+    "style_classic": "Beregnede slør",
+    "surface_1": "Vindusbakgrunn",
+    "surface_2": "Lister og vinduer",
+    "surface_3": "Seksjoner",
+    "surface_4": "Underseksjoner",
+    "text_n": "Tekst {n}",
+    "neon": "Neon",
+    "neon_help": "Glød fra titler, ikoner og kanter i fargen til hvert område (0: ingen effekt). Slås av med «Lyseffekter»."
+  },
+  "error": {
+    "bad_request": "Ugyldig forespørsel.",
+    "forbidden": "Tilgang nektet.",
+    "not_found": "Fant ikke elementet.",
+    "unexpected": "Uventet feil. Kopier diagnosen (Innstillinger → Hjelp og om), og legg den ved rapporten din.",
+    "offline": "Kjernen i FS Passion svarer ikke.",
+    "internal": "Operasjonen ble avvist av sikkerhetshensyn. Kopier diagnosen (Innstillinger → Hjelp og om), og legg den ved rapporten din."
+  },
+  "detect": {
+    "busy": "Et søk pågår allerede."
+  },
+  "parties": {
+    "not_configured": "Angi moddmappen for {game} i innstillingene for å lage oppsett.",
+    "name_label": "Navn på oppsettet",
+    "name_empty": "Navnet kan ikke være tomt.",
+    "name_too_long": "Høyst {max} tegn.",
+    "name_taken": "Det finnes allerede et oppsett som heter «{name}».",
+    "special_locked": "Det fulle oppsettet og det tomme oppsettet kan ikke endres, gis nytt navn, dupliseres eller slettes.",
+    "not_found": "Dette oppsettet finnes ikke lenger.",
+    "write_failed": "Kunne ikke lagre oppsettene i {path}. Sjekk at det går an å skrive til denne stasjonen.",
+    "recovered": "Kunne ikke lese oppsettfilen for {game}: den nyeste sikkerhetskopien ({backup}) ble lastet inn. Den skadede filen er lagt til side.",
+    "lost": "Kunne ikke lese oppsettfilen for {game}, og ingen sikkerhetskopi kunne lastes inn. Den skadede filen er lagt til side, ingenting er slettet.",
+    "running_rename": "Lukk {game} før du gir dette oppsettet nytt navn: mappen kan ikke endres mens spillet kjører.",
+    "running_delete": "Lukk {game} før du sletter dette oppsettet: mappen kan ikke endres mens spillet kjører.",
+    "map_not_found": "Fant ikke kartet: {name}",
+    "mod_not_found": "Fant ikke modden: {name}",
+    "create_title": "Nytt oppsett",
+    "create_help": "Et tomt oppsett som inneholder de felles moddene. Legg deretter til modder fra «Alle modder».",
+    "create_ok": "Lag",
+    "created": "Oppsettet «{name}» er laget",
+    "duplicate_title": "Dupliser oppsettet",
+    "duplicate_help": "Kopien beholder moddene i «{name}» og innstillingen «Felles modder».",
+    "copy_name": "{name} (kopi)",
+    "duplicate_ok": "Dupliser",
+    "duplicated": "Oppsettet «{name}» er laget",
+    "rename_title": "Gi nytt navn til oppsettet",
+    "rename_ok": "Gi nytt navn",
+    "renamed": "«{old}» har fått nytt navn: «{name}»",
+    "delete_title": "Slett oppsettet",
+    "delete_text": {
+      "zero": "Slette oppsettet «{name}»? Det inneholder ingen modder.",
+      "one": "Slette oppsettet «{name}»? Modden blir værende i moddmappen din: bare oppsettet og mappen med lenker forsvinner.",
+      "other": "Slette oppsettet «{name}»? De {count} moddene blir værende i moddmappen din: bare oppsettet og mappen med lenker forsvinner."
+    },
+    "delete_ok": "Slett",
+    "deleted": "Oppsettet «{name}» er slettet",
+    "deleted_applied": "Oppsettet {name} er slettet. Spillet bruker nå oppsettet {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod valgt",
+      "other": "modder valgt"
+    },
+    "add_party": "Legg til i Oppsettets modder",
+    "add_common": "Legg til i Felles modder",
+    "remove_party": "Fjern fra Oppsettets modder",
+    "remove_common": "Fjern fra Felles modder",
+    "rename": "Gi nytt navn…",
+    "rename_help": "Én enkelt mod, valgt i «Alle modder».",
+    "delete": "Slett permanent…",
+    "close": "Lukk linjen og fjern merkingen (Esc)",
+    "added_party": {
+      "one": "{count} mod lagt til i oppsettet «{name}»",
+      "other": "{count} modder lagt til i oppsettet «{name}»"
+    },
+    "added_common": {
+      "one": "{count} mod lagt til i de felles moddene",
+      "other": "{count} modder lagt til i de felles moddene"
+    },
+    "moved_party": {
+      "one": "{count} mod flyttet til oppsettet «{name}»",
+      "other": "{count} modder flyttet til oppsettet «{name}»"
+    },
+    "moved_common": {
+      "one": "{count} mod flyttet til de felles moddene",
+      "other": "{count} modder flyttet til de felles moddene"
+    },
+    "removed_party": {
+      "one": "{count} mod fjernet fra oppsettet «{name}»",
+      "other": "{count} modder fjernet fra oppsettet «{name}»"
+    },
+    "removed_common": {
+      "one": "{count} mod fjernet fra de felles moddene",
+      "other": "{count} modder fjernet fra de felles moddene"
+    },
+    "nothing_party": "Disse moddene er allerede i oppsettet «{name}»",
+    "nothing_common": "Disse moddene er allerede i de felles moddene"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Legge til avhengigheten også?",
+      "other": "Legge til de {count} avhengighetene også?"
+    },
+    "ask_yes": {
+      "one": "Legg til avhengigheten også",
+      "other": "Legg til de {count} avhengighetene også"
+    },
+    "ask_no": "Bare de valgte moddene",
+    "missing_warn": {
+      "one": "Avhengighet mangler i moddene dine: {list}",
+      "other": "{count} avhengigheter mangler i moddene dine: {list}"
+    },
+    "needed_by_map": "Kartet «{name}» trenger:",
+    "needed_by_mod": "Modden «{name}» trenger:",
+    "needed": "Avhengigheter:",
+    "where_common": "de felles moddene",
+    "where_party": "oppsettet «{name}»",
+    "ask_intro": {
+      "one": "Denne modden er en avhengighet for en mod du har valgt, men den er ikke i {where}.",
+      "other": "Disse {count} moddene er avhengigheter for moddene du har valgt, men de er ikke i {where}."
+    },
+    "missing_for": "{list} (kreves av «{name}»)",
+    "optional_title": {
+      "one": "Legge til en valgfri mod også?",
+      "other": "Legge til valgfrie modder også?"
+    },
+    "optional_intro": {
+      "one": "Én valgfri mod som du allerede har:",
+      "other": "{count} valgfrie modder som du allerede har:"
+    },
+    "optional_for": "valgfri for «{name}»",
+    "optional_note": "Valgfrie: spillet trenger dem ikke. Bare de du krysser av, legges til i {where}.",
+    "optional_continue": "Fortsett"
+  },
+  "plus": {
+    "title": "Nytt oppsett fra et kart",
+    "deps_title": {
+      "one": "{count} avhengighet",
+      "other": "{count} avhengigheter"
+    },
+    "dlc_title": "Nødvendige DLC-er",
+    "dlc_note": "Til informasjon: spillet laster alltid inn installerte DLC-er. De legges ikke til i oppsettet.",
+    "missing_note": "Manglende avhengigheter legges ikke til: last dem ned, og legg dem deretter til i oppsettet.",
+    "no_deps": "Ingen oppgitte avhengigheter: oppsettet vil bare inneholde kartet.",
+    "summary": {
+      "zero": "Oppsettet vil inneholde kartet alene, pluss de felles moddene.",
+      "one": "Oppsettet vil inneholde kartet og avhengigheten, pluss de felles moddene.",
+      "other": "Oppsettet vil inneholde kartet og de {count} avhengighetene, pluss de felles moddene."
+    },
+    "create": "Lag oppsettet",
+    "created": {
+      "one": "Oppsettet «{name}» er laget: {count} mod",
+      "other": "Oppsettet «{name}» er laget: {count} modder"
+    },
+    "created_missing": {
+      "one": "Avhengighet som må lastes ned: {list}",
+      "other": "{count} avhengigheter som må lastes ned: {list}"
+    },
+    "optional_title": {
+      "one": "{count} valgfri mod",
+      "other": "{count} valgfrie modder"
+    },
+    "optional_note": "Valgfrie: spillet trenger dem ikke. Kryss av for dem som skal legges til i oppsettet.",
+    "optional_none_present": "Ingen av disse valgfrie moddene finnes blant moddene dine. Spillet trenger dem ikke."
+  },
+  "replace": {
+    "title": "Erstatt med…",
+    "help": "{name} er ikke lenger i moddmappene dine. Hvis forfatteren har gitt den nytt navn, velger du den nye versjonen: den tar plassen i alle lister.",
+    "done": {
+      "one": "{old} erstattet med {name} i {count} liste",
+      "other": "{old} erstattet med {name} i {count} lister"
+    }
+  },
+  "notifications": {
+    "title": "Varsler",
+    "unread": {
+      "one": "Varsler: 1 ny melding",
+      "other": "Varsler: {count} nye meldinger"
+    },
+    "clear": "Fjern alle",
+    "none": "Ingen varsler ennå. Meldinger som vises nede til høyre, tas vare på her til FS Passion lukkes."
+  },
+  "tray": {
+    "show": "Vis FS Passion",
+    "quit": "Avslutt FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion kjører videre her. Klikk på ikonet for å hente det fram igjen; «Avslutt» lukker det helt."
+  },
+  "apply": {
+    "unsupported": "Denne versjonen av spillet kan ikke endre moddmappen sin.",
+    "not_ready": "Angi først spillets moddmappe og mappen Dokumenter i innstillingene.",
+    "running": "Lukk {game} før du tar i bruk et oppsett.",
+    "no_gamesettings": "Fant ikke gameSettings.xml for {game}: start spillet én gang, eller sjekk mappen Dokumenter i innstillingene.",
+    "busy": "En annen operasjon på oppsett pågår. Prøv igjen om litt.",
+    "library_busy": "Moddene leses fortsatt. Prøv igjen om litt.",
+    "done": {
+      "zero": "Oppsettet {name} er i bruk: ingen modder.",
+      "one": "Oppsettet {name} er i bruk: {count} mod.",
+      "other": "Oppsettet {name} er i bruk: {count} modder."
+    },
+    "missing": {
+      "one": "1 mod fra oppsettet mangler i moddmappen din: {list}",
+      "other": "{count} modder fra oppsettet mangler i moddmappen din: {list}"
+    },
+    "updated": {
+      "one": "1 oppdatering som spillet etterlot, er flyttet til moddmappen din.",
+      "other": "{count} oppdateringer som spillet etterlot, er flyttet til moddmappen din."
+    },
+    "added": {
+      "one": "1 mod som spillet etterlot, er kommet i moddmappen din og i oppsettet {name}.",
+      "other": "{count} modder som spillet etterlot, er kommet i moddmappen din og i oppsettet {name}."
+    },
+    "set_aside": {
+      "one": "1 fil er lagt til side, ingenting er slettet (mappen «Recovered» eller «Old versions», ved siden av oppsettene dine).",
+      "other": "{count} filer er lagt til side, ingenting er slettet (mappene «Recovered» og «Old versions», ved siden av oppsettene dine)."
+    },
+    "empty_party": "Oppsettet {name} inneholder ingen modder: spillet starter uten modder.",
+    "not_same_disk": "Kan ikke lenke {name}: oppsettmappen må ligge på samme stasjon som moddmappen.",
+    "no_hardlinks": "Denne stasjonen støtter ikke harde lenker: moddmappen må ligge på en NTFS-stasjon. Ingenting er endret.",
+    "too_many_links": "Kan ikke lenke {name}: denne filen har nådd Windows-grensen for lenker.",
+    "access_denied": "Tilgang nektet under lenking av {name}. Ingenting er endret.",
+    "link_failed": "Kunne ikke lage lenken for {name} ({detail}). Ingenting er endret.",
+    "junction_failed": "Kunne ikke lage mappekoblingen for den utpakkede modden {name} ({detail}). Ingenting er endret.",
+    "folder_busy": "Mappen {path} brukes av et annet program (Filutforsker?). Lukk det og prøv igjen. Ingenting er endret.",
+    "folder_exists": "Det finnes allerede en mappe {path}: velg et annet navn.",
+    "failed": "Kunne ikke ta i bruk oppsettet ({detail}). Ingenting er endret.",
+    "recovered_finished": "En operasjon på oppsettene for {game} ble avbrutt (strømbrudd?). Den er fullført.",
+    "recovered_cancelled": "En operasjon på oppsettene for {game} ble avbrutt (strømbrudd?). Den er avbrutt: ingenting er endret.",
+    "symlink_denied": "Windows avviser den symbolske lenken til {name}: Utviklermodus i Windows eller administratorrettigheter kreves.",
+    "blocked": {
+      "one": "1 mod fra en annen stasjon kunne ikke komme med i oppsettet (ingen rettigheter for symbolske lenker): {list}. Se Innstillinger → Spill og stier.",
+      "other": "{count} modder fra en annen stasjon kunne ikke komme med i oppsettet (ingen rettigheter for symbolske lenker): {list}. Se Innstillinger → Spill og stier."
+    }
+  },
+  "override": {
+    "title": "Spillet laster inn en ukjent mappe",
+    "text": "{game} laster inn moddene sine fra en mappe som FS Passion ikke kjenner (endret for hånd eller av et annet verktøy):",
+    "help": "Ta i bruk denne mappen som moddmappe, bruk oppsettet ditt på nytt, eller la spillet være som det er.",
+    "adopt": "Bruk som moddmappe",
+    "reapply": "Bruk {name} på nytt",
+    "ignore": "Ikke gjør noe",
+    "adopted": "Ny moddmappe: {path}",
+    "read_failed": "gameSettings.xml kan ikke leses ({path}). Ingenting er endret.",
+    "backup_failed": "Kunne ikke skrive sikkerhetskopien av gameSettings.xml ({path}). Ingenting er endret.",
+    "write_failed": "Kunne ikke skrive gameSettings.xml ({path}). Er spillet åpent?",
+    "check_failed": "Kontrollen av gameSettings.xml mislyktes: den opprinnelige filen er gjenopprettet.",
+    "no_root": "gameSettings.xml ser ikke ut som en innstillingsfil for spillet. Ingenting er endret."
+  },
+  "demo": {
+    "title": "Demomodus",
+    "pill": "Demo",
+    "quit": "Avslutt",
+    "banner": "Demomodus: disse moddene er falske. De ekte mappene dine og spillet røres ikke.",
+    "badge": "Falsk mod (demo)",
+    "installing": "Klargjør demomoddene…",
+    "started": "Demomodus: prøv alt, ingenting rører spillet.",
+    "stopped": "Demomodus lukket: alt er slettet.",
+    "stop_title": "Gå ut av demomodus",
+    "stop_text": "De falske moddene, testoppsettene og hele demomappen slettes. De ekte innstillingene dine kommer tilbake slik de var.",
+    "stop_ok": "Avslutt og slett alt",
+    "offer_title": "Prøve FS Passion uten spillet?",
+    "offer_text": "Fant ingen Farming Simulator på denne PC-en. Du kan prøve FS Passion med falske modder: lag oppsett, sorter, ta i bruk… alt fungerer, i en testmappe, aldri i et spill.",
+    "offer_local": "Demopakken er allerede på denne PC-en (ca. 2 MB).",
+    "offer_download": "Demopakken (ca. 2 MB) lastes ned fra prosjektets GitHub-side og kontrolleres deretter.",
+    "offer_yes": "Prøv",
+    "offer_no": "Senere",
+    "unavailable": "Demopakken er ikke tilgjengelig ennå.",
+    "bad_pack": "Demopakken er skadet eller samsvarer ikke med originalen: den ble avvist.",
+    "download_failed": "Kunne ikke laste ned demopakken ({detail}).",
+    "install_failed": "Kunne ikke installere demopakken ({detail}).",
+    "remove_failed": "Kunne ikke slette demomappen helt: {path}",
+    "no_detect": "Søk etter spillet er slått av i demomodus."
+  },
+  "delete": {
+    "title": {
+      "one": "Slette denne modden permanent?",
+      "other": "Slette disse {count} moddene permanent?"
+    },
+    "intro": {
+      "one": "Denne modden fjernes fra alle lister og alle oppsettmapper, og slettes deretter fra moddmappen din:",
+      "other": "Disse {count} moddene fjernes fra alle lister og alle oppsettmapper, og slettes deretter fra moddmappen din:"
+    },
+    "irreversible": "Dette kan ikke angres.",
+    "recycle": "Filene havner i papirkurven i Windows: der kan du fortsatt gjenopprette dem.",
+    "no_recycle": "Denne stasjonen har ingen papirkurv: slettingen blir permanent.",
+    "understand": {
+      "one": "Jeg forstår at denne filen blir slettet",
+      "other": "Jeg forstår at disse filene blir slettet"
+    },
+    "ok": "Slett permanent",
+    "done_recycled": {
+      "one": "1 mod flyttet til papirkurven",
+      "other": "{count} modder flyttet til papirkurven"
+    },
+    "done_deleted": {
+      "one": "1 mod slettet permanent",
+      "other": "{count} modder slettet permanent"
+    },
+    "failed": {
+      "one": "Kunne ikke slette 1 mod: {list}. Den er fjernet fra listene; lukk programmet som bruker den, og prøv igjen.",
+      "other": "Kunne ikke slette {count} modder: {list}. De er fjernet fra listene; lukk programmet som bruker dem, og prøv igjen."
+    },
+    "nothing": "Ingen modder å slette.",
+    "running": "Lukk {game} før du sletter modder."
+  },
+  "rename": {
+    "title": "Gi modden nytt navn",
+    "label": "Nytt navn",
+    "prefix_tip": "Versjonsprefikset beholdes",
+    "final": "Filnavn: {file}",
+    "rule": "Bare bokstaver uten aksenter, tall og «_»: spillet avviser andre tegn.",
+    "where": "I: {list}. Listene endres bare med ditt samtykke: FS Passion spør da om de skal følge det nye navnet.",
+    "warning_modhub": "Hvis den kommer fra ModHub, får denne modden ikke flere oppdateringer: det er nettopp poenget med å gi den nytt navn.",
+    "warning_save": "I spillet leter lagringer som bruker denne modden, etter den under det gamle navnet.",
+    "warning_save_map": "Dette er et kart: i spillet leter lagringer laget på det etter det under det gamle navnet, og de kan ikke lastes inn lenger.",
+    "warning_deps": {
+      "one": "1 mod oppgir den som avhengighet ({list}): den leter etter den under det gamle navnet.",
+      "other": "{count} modder oppgir den som avhengighet ({list}): de leter etter den under det gamle navnet."
+    },
+    "ok": "Gi nytt navn",
+    "done": {
+      "zero": "{old} har fått nytt navn: {name}",
+      "one": "{old} har fått nytt navn: {name}, i 1 oppsett",
+      "other": "{old} har fått nytt navn: {name}, i {count} oppsett"
+    },
+    "renamed": "{old} har fått nytt navn: {name}",
+    "lists_title": "Oppdatere listene?",
+    "lists_ask": "«{old}» er fortsatt i: {list}. Skal de følge det nye navnet «{name}»?",
+    "lists_yes": "Oppdater listene",
+    "lists_no": "Ikke gjør noe",
+    "lists_done": "Listene er oppdatert ({count}).",
+    "empty": "Skriv inn et navn.",
+    "too_long": "Navnet er for langt: høyst {max} tegn.",
+    "invalid": "Bare bokstaver uten aksenter, tall og «_», ingen mellomrom.",
+    "same": "Det er allerede navnet.",
+    "taken": "«{name}» finnes allerede i moddmappene dine.",
+    "not_found": "Fant ikke modden {name} i moddmappene dine.",
+    "failed": "Kunne ikke gi {name} nytt navn: den er kanskje åpen i et annet program.",
+    "running": "Lukk {game} før du gir en mod nytt navn.",
+    "no_list": "ingen liste"
+  },
+  "downloads": {
+    "title": "Nye modder funnet",
+    "intro": "I {folder}. Integrer flytter hver avkrysset fil til moddmappen for spillversjonen dens.",
+    "count": {
+      "one": "1 mod funnet",
+      "other": "{count} modder funnet"
+    },
+    "col_mod": "Mod",
+    "col_version": "Spillversjon",
+    "col_state": "Status",
+    "col_dest": "Mål",
+    "state": {
+      "new": "Ny",
+      "update": "Oppdatering ({from} → {to})",
+      "older": "Eldre enn den installerte versjonen ({to} < {from})",
+      "present": "Finnes allerede",
+      "conflict": "En utpakket mod har allerede dette navnet",
+      "unconfigured": "Versjonen er ikke konfigurert: konfigurer den i innstillingene"
+    },
+    "older_confirm": "Avkrysset: den erstatter den installerte versjonen (som legges til side).",
+    "postpone": "{game} kjører: integreres når spillet lukkes",
+    "not_configured": "{game} (ikke konfigurert)",
+    "suffix": "Integreres som {name} (nettleserens tillegg fjernet)",
+    "dest_none": "Ingen (ikke sortert)",
+    "dest_unclassified": "Ikke sortert",
+    "dest_party": "Oppsettet «{name}»",
+    "ignore": "Ignorer disse filene",
+    "ignored": {
+      "one": "1 fil ignorert: den foreslås ikke lenger",
+      "other": "{count} filer ignorert: de foreslås ikke lenger"
+    },
+    "later": "Senere",
+    "integrate": {
+      "zero": "Integrer",
+      "one": "Integrer 1 mod",
+      "other": "Integrer {count} modder"
+    },
+    "none": "Ingen nye modder i {folder}.",
+    "done": {
+      "one": "1 mod integrert: {list}",
+      "other": "{count} modder integrert: {list}"
+    },
+    "in_version": {
+      "one": "1 i {game}",
+      "other": "{count} i {game}"
+    },
+    "skipped": {
+      "one": "1 fil latt ligge (finnes allerede eller er eldre)",
+      "other": "{count} filer latt ligge (finnes allerede eller er eldre)"
+    },
+    "postponed": {
+      "one": "1 mod integreres når {game} lukkes",
+      "other": "{count} modder integreres når {game} lukkes"
+    },
+    "postponed_done": {
+      "one": "1 nedlasting integrert etter at {game} ble lukket",
+      "other": "{count} nedlastinger integrert etter at {game} ble lukket"
+    },
+    "failed": "Kunne ikke integrere {file}. Filen er fortsatt i nedlastingene dine.",
+    "gone": "{file} er ikke lenger i nedlastingsmappen.",
+    "unconfigured": "{file}: den valgte spillversjonen er ikke konfigurert.",
+    "no_folder": "Fant ikke nedlastingsmappen: angi den i Innstillinger → Program → Nedlastinger.",
+    "demo": "Nedlastinger integreres ikke under demoen.",
+    "done_in": {
+      "one": "1 mod integrert i {game}",
+      "other": "{count} modder integrert i {game}"
+    },
+    "col_storage": "Lagring"
+  },
+  "move": {
+    "exists": "{file}: det finnes allerede en fil med samme navn.",
+    "no_space": "{file}: ikke nok ledig plass på stasjonen til moddmappen.",
+    "check_failed": "{file}: den kontrollerte kopien samsvarer ikke med originalen. Ingenting er erstattet.",
+    "failed": "Kunne ikke flytte {file}: den er kanskje åpen i et annet program."
+  },
+  "missing": {
+    "title": "Modder som mangler i moddmappen din",
+    "intro": {
+      "one": "Denne modden mangler i moddmappen din, selv om den er i oppsett. Hva vil du gjøre?",
+      "other": "Disse {count} moddene mangler i moddmappen din, selv om de er i oppsett. Hva vil du gjøre?"
+    },
+    "in": "I: {list}",
+    "copy": "Slettet fra moddmappen, men en kopi finnes fortsatt via lenkene i: {list}",
+    "no_copy": "Ingen kopi: last den ned på nytt, eller erstatt den med en mod som forfatteren har gitt nytt navn",
+    "restore": "Gjenopprett i Mods",
+    "restore_tip": "Kopien som fortsatt ligger i oppsettet, blir igjen modden i moddmappen din (ingenting kopieres).",
+    "remove": "Fjern fra listene",
+    "remove_all": "Fjern alle fra listene",
+    "later": "Senere",
+    "notice": "Slett heller en mod i FS Passion (knappen «Slett permanent» i handlingslinjen): da fjernes den samtidig fra lister og oppsett.",
+    "removed": {
+      "one": "1 mod fjernet fra alle lister",
+      "other": "{count} modder fjernet fra alle lister"
+    },
+    "restored": {
+      "one": "1 mod gjenopprettet i moddmappen din",
+      "other": "{count} modder gjenopprettet i moddmappen din"
+    },
+    "deleted": {
+      "one": "1 mod slettet og fjernet fra listene",
+      "other": "{count} modder slettet og fjernet fra listene"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 oppdatering hentet inn: {list}",
+      "other": "{count} oppdateringer hentet inn: {list}"
+    },
+    "added": {
+      "one": "1 mod lastet ned av spillet lagt til i oppsettet «{name}»",
+      "other": "{count} modder lastet ned av spillet lagt til i oppsettet «{name}»"
+    },
+    "unclassified": {
+      "one": "1 mod lastet ned av spillet er kommet i moddmappen din (ikke sortert)",
+      "other": "{count} modder lastet ned av spillet er kommet i moddmappen din (ikke sortert)"
+    },
+    "errors": {
+      "one": "1 mappe kunne ikke ryddes opp: {list}. Se loggen.",
+      "other": "{count} mapper kunne ikke ryddes opp: {list}. Se loggen."
+    },
+    "reshaped": {
+      "one": "1 mod pakket ut eller pakket på nytt: oppsettet følger den nye formen ({list})",
+      "other": "{count} modder pakket ut eller pakket på nytt: oppsettene følger den nye formen ({list})"
+    }
+  },
+  "rights": {
+    "title": "Rettigheter for modder på andre stasjoner",
+    "intro": "For at en mod på en annen stasjon skal komme med i et oppsett, lager FS Passion en symbolsk lenke. Windows tillater det bare med Utviklermodus eller administratorrettigheter, og ingen av dem er aktive.",
+    "standard": "Windows-kontoen din er en standardkonto: administratorrettigheter ville kjøre FS Passion under en annen konto, med andre mapper og innstillinger. Utviklermodus er det riktige valget.",
+    "admin_title": "Kjør alltid FS Passion som administrator",
+    "admin_text": "FS Passion krysser av for «Kjør dette programmet som administrator» for deg (Egenskaper → Kompatibilitet), bare for kontoen din, og starter deretter på nytt. Konsekvenser:",
+    "uac": "Windows ber om bekreftelse hver gang FS Passion starter.",
+    "game_normal": "Spillet og plattformen startes fortsatt med vanlige rettigheter, via Windows Utforsker. Oppstartsparametere går da som vanlig gjennom plattformen (Steam, Epic Games).",
+    "no_drop": "Windows blokkerer at du drar filer fra Utforsker til FS Passion. Ingen betydning i dag: FS Passion bruker ikke den bevegelsen.",
+    "dev_title": "Eller: slå på Utviklermodus i Windows",
+    "dev_text": "Innstillinger i Windows → System → For utviklere → «Utviklermodus». Ingen andre konsekvenser for FS Passion. Kom deretter tilbake hit og klikk på «Sjekk igjen».",
+    "without": "Uten disse rettighetene forblir de ekstra mappene lagret: moddene der vises, men kommer ikke med i noe oppsett.",
+    "later": "Senere",
+    "dev_mode": "Åpne Utviklermodus",
+    "admin": "Kjør alltid som administrator",
+    "missing": "Windows avviser symbolske lenker: modder på andre stasjoner vises, men kommer ikke med i noe oppsett.",
+    "get": "Få rettighetene…",
+    "check": "Sjekk igjen",
+    "ok": "Symbolske lenker tillatt (FS Passion kjører som administrator): modder på andre stasjoner kommer med i oppsett.",
+    "ok_dev": "Symbolske lenker tillatt (Utviklermodus i Windows): modder på andre stasjoner kommer med i oppsett.",
+    "unknown": "Rettighetene for symbolske lenker er ikke sjekket ennå.",
+    "admin_on": "FS Passion er satt til alltid å kjøre som administrator.",
+    "admin_off": "Slutt å kjøre som administrator",
+    "restarting": "FS Passion starter på nytt som administrator. Bekreft spørsmålet fra Windows.",
+    "now_ok": "Symbolske lenker tillatt: ta i bruk oppsettene dine på nytt, slik at modder på andre stasjoner kan komme med.",
+    "still_missing": "Windows avviser fortsatt symbolske lenker.",
+    "flag_failed": "Kunne ikke endre innstillingen «Kjør som administrator».",
+    "ok_plain": "Symbolske lenker tillatt: modder på andre stasjoner kommer med i oppsett.",
+    "admin_once_title": "Start FS Passion på nytt som administrator",
+    "admin_once_text": "FS Passion starter på nytt som administrator bare denne gangen; det må gjentas ved hver oppstart. Utviklermodus unngår dette. Konsekvenser:",
+    "admin_once": "Start på nytt som administrator"
+  },
+  "older": {
+    "title": "Eldre versjon lastet ned av spillet",
+    "intro": {
+      "one": "Spillet har lastet ned en mod med et eldre versjonsnummer enn ditt. Den er lagt til side, ingenting er erstattet. Hva vil du gjøre?",
+      "other": "Spillet har lastet ned {count} modder med et eldre versjonsnummer enn dine. De er lagt til side, ingenting er erstattet. Hva vil du gjøre?"
+    },
+    "versions": "Din versjon: {mine} · versjon lastet ned av spillet: {game}",
+    "keep": "Behold min versjon ({version})",
+    "use": "Bruk spillets versjon ({version})",
+    "use_tip": "Spillets versjon tar plassen til din i moddmappen; din legges til side i «Old versions». Alle oppsett følger med.",
+    "help": "Det er ofte en mod du har endret selv: ModHub sammenligner ikke versjonsnumre, men tilbyr originalen sin. Uansett slettes ingenting: filen du ikke beholder, blir liggende i mappen «Recovered» eller «Old versions», ved siden av oppsettene dine.",
+    "later": "Senere",
+    "gone": "Denne filen er ikke lenger i mappen «Recovered»: ingenting er endret.",
+    "failed": "Kunne ikke sette spillets versjon av {name} på plass ({detail}). Din versjon er uendret."
+  },
+  "stop": {
+    "running": "Lukk {game} først: innstillingen må gjenopprettes mens spillet er lukket.",
+    "folders_failed": "Kunne ikke slette oppsettmappene.",
+    "closed": "FS Passion er lukket. Spillet har fått tilbake den opprinnelige innstillingen.",
+    "export_first": "Eksporter konfigurasjonen før du fortsetter: da får du oppsettene tilbake hvis du kommer tilbake til FS Passion.",
+    "intro": "FS Passion gir spillet den opprinnelige innstillingen tilbake og fjerner deretter oppsettmappene (de inneholder bare lenker):",
+    "no_version": "Ingen spillversjon er konfigurert: det er ingenting å gjenopprette.",
+    "mods_safe": "Moddmappene dine røres aldri, heller ikke «Old versions» og «Recovered», som inneholder modder som er lagt til side.",
+    "admin_flag": "Innstillingen «Kjør dette programmet som administrator», som FS Passion har satt, fjernes.",
+    "understand": "Jeg forstår: spillet vil ikke lenger laste inn oppsett fra FS Passion.",
+    "plan": {
+      "restore": "Spillet laster igjen inn den opprinnelige mappen: {dir}",
+      "deactivate": "Den egne moddmappen slås av: spillet går tilbake til den vanlige mappen «mods».",
+      "missing": "Fant ikke gameSettings.xml: ingenting å gjenopprette.",
+      "none": "Spillets innstilling er allerede den opprinnelige.",
+      "folders": {
+        "one": "{count} oppsettmappe fjernet",
+        "other": "{count} oppsettmapper fjernet"
+      },
+      "kept": {
+        "one": "«{name}» beholdes ({count} fil).",
+        "other": "«{name}» beholdes ({count} filer)."
+      }
+    },
+    "options": {
+      "title": "Slett også:",
+      "parties": "oppsett og felles modder (parties.json)",
+      "caches": "hurtigbuffere (konverterte ikoner, DLC-katalog)",
+      "settings": "innstillingene for FS Passion",
+      "logs": "logger",
+      "langs": "egne språk"
+    },
+    "done": {
+      "title": "FS Passion brukes ikke lenger",
+      "text": "Ferdig. Spillet har fått tilbake den opprinnelige innstillingen.",
+      "partial": "Ferdig, bortsett fra minst én versjon: se nedenfor. Loggen har detaljene.",
+      "version": {
+        "zero": "opprinnelig innstilling gjenopprettet",
+        "one": "opprinnelig innstilling gjenopprettet, {count} oppsettmappe fjernet",
+        "other": "opprinnelig innstilling gjenopprettet, {count} oppsettmapper fjernet"
+      },
+      "set_aside": {
+        "one": "{count} fil funnet i oppsettmappene er lagt til side i «Recovered».",
+        "other": "{count} filer funnet i oppsettmappene er lagt til side i «Recovered»."
+      },
+      "close": "Lukk FS Passion",
+      "uninstaller": "Start deretter avinstalleringen av FS Passion",
+      "error": {
+        "override": "spillets innstilling er IKKE gjenopprettet (kunne ikke endre gameSettings.xml); oppsettmappene beholdes",
+        "folders": "opprinnelig innstilling gjenopprettet, men oppsettmappene kunne ikke slettes"
+      }
+    },
+    "stopped": "FS Passion brukes ikke lenger: lukk det."
+  },
+  "tour": {
+    "button": "Omvisning",
+    "title": "Omvisning",
+    "count": "{n} / {total}",
+    "prev": "Forrige",
+    "next": "Neste",
+    "replay": "På nytt",
+    "finish": "Ferdig",
+    "quit": "Avslutt omvisningen",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Lyst på en omvisning?",
+      "body": "Klikk på lyspæren: på ett minutt viser FS Passion deg det viktigste i grensesnittet. Den blir stående, så du kan ta omvisningen på nytt når du vil.",
+      "start": "Start omvisningen",
+      "later": "Senere"
+    },
+    "versions": {
+      "caption": "Spillversjonen din",
+      "body": "Hold pekeren over denne logoen: versjonene av Farming Simulator vises. Klikk på den du vil administrere.\nVersjoner som ikke er installert, er grået ut. Hver versjon har sine egne modder og sine egne oppsett.",
+      "picked": "Valgt: moddene og oppsettene vises"
+    },
+    "parties": {
+      "caption": "Oppsettene dine: hjertet i FS Passion",
+      "body": "Ett klikk bytter fra ett oppsett til et annet: kartet og alle avhengighetene følger med.\nFullt oppsett: alle moddene dine, for å oppdatere dem i spillet.\nTomt oppsett: ingen modder, for å teste originalspillet.",
+      "full_tip": "Alle modder: for å kjøre moddoppdateringer i spillet",
+      "empty_tip": "Ingen modder: for å teste originalspillet"
+    },
+    "tools": {
+      "caption": "Lag, dupliser, gi nytt navn, slett",
+      "body": "Handlinger for det valgte oppsettet.\nTips: på et kart i «Alle modder» lager knappen «＋ Oppsett» oppsettet med kartet og alle avhengighetene, med ett klikk."
+    },
+    "common": {
+      "caption": "Felles modder",
+      "body": "Kjøretøyene, redskapene og gameplay-skriptene du vil ha i alle oppsettene dine.\nDe er slått på som standard; slå dem av for ett enkelt oppsett om nødvendig.",
+      "on": "Felles modder er med i dette oppsettet",
+      "off": "Slått av bare for dette oppsettet"
+    },
+    "apply": {
+      "caption": "Bruk",
+      "body": "Tar i bruk det valgte oppsettet: det er dette spillet laster inn neste gang det starter.\nKnappen lyser så lenge det valgte oppsettet ikke er i bruk.",
+      "done": "I bruk: spillet laster det inn ved neste oppstart"
+    },
+    "buttons": {
+      "caption": "Tema, varsler, innstillinger",
+      "body": "Lyst eller mørkt grensesnitt, meldingslogg, innstillinger… Og lyspæren, for å ta denne omvisningen på nytt når du vil.",
+      "theme": "Lyst eller mørkt grensesnitt"
+    },
+    "list1": {
+      "caption": "Alle modder",
+      "body": "Hele moddmappen din, sortert etter kategori: DLC, kart, andre modder…\nEn mod blir alltid her, uansett hva du gjør i de andre listene. «Ikke sorterte» modder er ikke i noen liste: spillet ser dem ikke.\n[Ctrl] + [F]: søk etter en mod eller en forfatter.",
+      "search_tip": "Søk: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Nylig nedlastede modder",
+      "body": "Denne knappen ser etter moddene du nettopp har lastet ned, i nedlastingsmappen din.\nFS Passion finner spillversjonen til hver av dem og legger den, med ditt samtykke, i riktig moddmappe.\nDet skjer også ved oppstart: se Innstillinger → Program → Nedlastinger.",
+      "found": "Hver av dem havner i moddmappen for sin spillversjon"
+    },
+    "list2": {
+      "caption": "Oppsettets modder",
+      "body": "Moddene i det valgte oppsettet: kartet, avhengighetene og de egne moddene.\nSpillet laster dem inn i tillegg til de felles moddene."
+    },
+    "list3": {
+      "caption": "Felles modder",
+      "body": "Moddene som finnes i alle oppsettene dine: traktorer, redskaper, skript…\nSorter dem her én gang: alle oppsett får dem."
+    },
+    "select": {
+      "caption": "Flervalg",
+      "body": "[Ctrl] + klikk: legg til eller fjern en mod fra merkingen.\n[Shift] + klikk: merk et helt område.\n[Ctrl] + [A]: merk alt i listen; [Esc]: fjern merkingen.\nSå snart en mod er merket, dukker en handlingslinje opp nederst."
+    },
+    "move": {
+      "caption": "Dra og slipp",
+      "body": "Til «Oppsettets modder» eller «Felles modder»: det er en kopi, modden blir værende i «Alle modder».\nMellom disse to listene: det er en flytting. Hold [Ctrl] nede når du slipper, for å kopiere.\nTil «Alle modder», eller med tasten [Delete]: modden fjernes fra listen. Filen slettes aldri.",
+      "copy": "Kopier",
+      "move": "Flytt · [Ctrl]: kopier",
+      "remove": "Fjern fra listen · [Delete]"
+    },
+    "keys": {
+      "caption": "Hurtigtaster",
+      "body": "For å gå raskere:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Søk etter en mod eller en forfatter"
+        },
+        {
+          "k": "[Ctrl] + klikk",
+          "d": "Legg til eller fjern en mod fra merkingen"
+        },
+        {
+          "k": "[Shift] + klikk",
+          "d": "Merk et område av modder"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Merk alt i listen"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Fjern merkingen eller avbryt dra-og-slipp"
+        },
+        {
+          "k": "[Ctrl] når du slipper",
+          "d": "Kopier i stedet for å flytte (mellom liste 2 og 3)"
+        },
+        {
+          "k": "[Delete]",
+          "d": "Fjern fra liste 2 eller 3 (filen blir værende)"
+        },
+        {
+          "k": "[Enter] på et kart",
+          "d": "Lag et oppsett med kartet og avhengighetene"
+        },
+        {
+          "k": "[F2]",
+          "d": "Gi en mod nytt navn"
+        },
+        {
+          "k": "[I]",
+          "d": "Fest kortet til en mod"
+        },
+        {
+          "k": "[Mellomrom]  [↑] [↓] [←] [→]",
+          "d": "Velg og flytt deg med tastaturet"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Lukk uten å avslutte",
+      "body": "Krysset lukker vinduet, men FS Passion kjører videre i bakgrunnen, i varslingsområdet ved siden av klokken.\nFor å hente det fram: pilen «^» på oppgavelinjen, deretter FS-ikonet. For å lukke det helt: «Avslutt» nede til høyre, eller høyreklikk på ikonet.\nDu kan endre dette under Innstillinger → Program → Vindu.",
+      "tip_close": "Lukk: FS Passion flytter til varslingsområdet",
+      "tip_more": "Vis skjulte ikoner",
+      "tip_icon": "Klikk: FS Passion kommer tilbake · Høyreklikk: Avslutt"
+    },
+    "end": {
+      "caption": "Nå er det din tur!",
+      "body": "Ta denne omvisningen på nytt når du vil, med lyspæren eller under Innstillinger → Hjelp og om."
+    },
+    "demo": {
+      "parties": [
+        "Grønndalen — Husdyr",
+        "Åsene — Åkerbruk",
+        "Rismarkene i sør"
+      ],
+      "party_sub": {
+        "one": "Kart + {count} mod",
+        "other": "Kart + {count} modder"
+      },
+      "mods": [
+        "Sekssylindret traktor",
+        "Skurtresker",
+        "6 m såmaskin",
+        "Landbrukshenger",
+        "Redskapspakke",
+        "Værskript"
+      ]
+    }
+  }
+}

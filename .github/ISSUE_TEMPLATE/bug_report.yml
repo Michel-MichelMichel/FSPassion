@@ -1,0 +1,35 @@
+name: Signaler un problème / Report a bug
+description: FS Passion ne fait pas ce qu'il devrait. / FS Passion does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci ! Joignez si possible le diagnostic : Paramètres → Aide et à propos → « Copier le diagnostic ».
+        Thank you! If possible, paste the diagnostic: Settings → Help and about → "Copy diagnostic".
+  - type: input
+    id: version
+    attributes:
+      label: Version de FS Passion / FS Passion version
+      placeholder: "X.Y.Z"
+    validations:
+      required: true
+  - type: dropdown
+    id: game
+    attributes:
+      label: Version du jeu / Game version
+      options: [FS25, FS22, FS19, FS17, FS15, FS2013, FS2011]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Que s'est-il passé ? / What happened?
+      description: Ce que vous avez fait, ce que vous attendiez, ce qui s'est produit. / Steps, expected result, actual result.
+    validations:
+      required: true
+  - type: textarea
+    id: diag
+    attributes:
+      label: Diagnostic
+      render: text

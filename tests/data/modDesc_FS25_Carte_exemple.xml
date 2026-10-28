@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="96">
+    <author>Auteur fictif</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Carte exemple</en>
+    </title>
+
+    <description>
+        <en>Carte fictive, pour les tests automatiques.</en>
+    </description>
+
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+
+    <dependencies>
+        <dependency>FS25_ExempleTracteur_A</dependency>
+    <!--<dependency>FS25_ExempleCommente</dependency>-->
+        <dependency>FS25_ExempleTracteur_B</dependency>
+        <dependency>FS25_ExempleChargeur</dependency>
+        <dependency>FS25_ExempleRemorque</dependency>
+        <dependency>FS25_ExempleSemoir</dependency>
+        <dependency>FS25_ExempleMoissonneuse</dependency>
+        <dependency>FS25_ExemplePulverisateur</dependency>
+        <dependency>FS25_ExempleFourgon</dependency>
+    </dependencies>
+
+    <maps>
+        <map id="ExempleCarte" configFilename="maps/config/exemple.xml">
+            <title>
+                <en>Carte exemple</en>
+            </title>
+            <description>
+                <en>Carte fictive, pour les tests automatiques.</en>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+
+    <l10n filenamePrefix="translations/l10n"/>
+
+</modDesc>

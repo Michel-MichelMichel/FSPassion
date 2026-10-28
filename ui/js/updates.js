@@ -69,7 +69,7 @@ export function footerUpdatePill(onOpen) {
     class: 'update-pill', type: 'button',
     'data-tip-text': t('settings.updates.pill_tip'),
     onclick: () => onOpen(),
-  }, icon('circle-arrow-up'), h('span', { text: t('settings.updates.pill', { version: v }) }));
+  }, icon('cloud-download'), h('span', { text: t('settings.updates.pill', { version: v }) }));
 }
 
 // -- Encart des Paramètres --------------------------------------------------
@@ -145,7 +145,7 @@ export function buildUpdates(saveSettings) {
   if (updateAvailable()) {
     const card = h('div', { class: 'update-card' },
       h('div', { class: 'update-card-head' },
-        icon('circle-arrow-up', 'update-card-ico'),
+        icon('cloud-download', 'update-card-ico'),
         h('div', {},
           h('div', { class: 'update-card-title', text: t('settings.updates.available', { version: u.latest.version }) }),
           h('div', { class: 'set-help', text: [

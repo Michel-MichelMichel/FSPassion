@@ -929,12 +929,12 @@ function buildTheme() {
 
 function buildApp() {
   return [
-    group('circle-arrow-up', 'settings.updates.title', buildUpdates(saveSettings), 'set-updates'),
+    group('cloud-download', 'settings.updates.title', buildUpdates(saveSettings), 'set-updates'),
     group('download', 'settings.downloads.title', buildDownloads()),
     group('app-window', 'settings.window.title', buildWindow()),
     windowModeGroup(),
     group('link', 'settings.internet.title', buildInternet()),
-    group('file-down', 'settings.backup.title', buildBackup()),
+    group('save-check', 'settings.backup.title', buildBackup()),
     group('log-out', 'settings.stop.title', foldable('settings.stop.show', 'settings.stop.hide', buildStop()), 'is-alert'),
   ];
 }

@@ -2,6 +2,16 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.7 — 28 octobre 2026 — icônes de la sauvegarde et des mises à jour
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui change
+
+1. **Paramètres → Application → Sauvegarde de la configuration** : icône `save-check` devant le titre.
+2. **Fenêtre d'importation** : le bouton « Importer » a la flèche vers le bas (`file-down`), comme le bouton Importer des Paramètres. Partout, ce qui sort de FS Passion monte (Exporter : `file-up`), ce qui y entre descend (Importer, téléchargements, mises à jour) ; un test le vérifie.
+3. **Mises à jour de FS Passion** : icône `cloud-download` devant le titre, dans la carte « Nouvelle version disponible » et dans « Nouvelle version » en bas de la fenêtre (à la place d'une flèche vers le haut).
+
 ## 0.9.6 — 28 octobre 2026 — mises à jour automatiques de FS Passion
 
 **Aucun fichier du jeu ni des mods n'est touché.**

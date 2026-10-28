@@ -79,7 +79,7 @@ function showPreview(prev) {
   };
   keep.addEventListener('change', syncHelp);
   syncHelp();
-  const ok = h('button', { class: 'btn btn-primary', type: 'button' }, icon('file-up'), h('span', { text: t('backup.import.ok') }));
+  const ok = h('button', { class: 'btn btn-primary', type: 'button' }, icon('file-down'), h('span', { text: t('backup.import.ok') }));
   const cancel = h('button', { class: 'btn btn-ghost', type: 'button', text: t('common.cancel') });
   const when = dateText(prev.created);
   const body = h('div', { class: 'dlg-body imp-dlg' },

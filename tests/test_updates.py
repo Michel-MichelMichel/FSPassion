@@ -333,11 +333,11 @@ def test_release_file_names_match_build():
 
 def test_interface_wiring():
     js = (ROOT / "ui" / "js" / "settings.js").read_text(encoding="utf-8")
-    assert "group('circle-arrow-up', 'settings.updates.title', buildUpdates(saveSettings), 'set-updates')" in js
+    assert "group('cloud-download', 'settings.updates.title', buildUpdates(saveSettings), 'set-updates')" in js
     # L'encart est le premier de la page Application.
     app = js[js.index("function buildApp()"):]
     assert app.index("settings.updates.title") < app.index("settings.downloads.title")
-    assert (ROOT / "assets" / "icons" / "circle-arrow-up.svg").is_file()
+    assert (ROOT / "assets" / "icons" / "cloud-download.svg").is_file()
     upd = (ROOT / "ui" / "js" / "updates.js").read_text(encoding="utf-8")
     # Repère discret : jamais de message qui surgit, seulement la cloche.
     assert "noteOnly(" in upd and "toast(" not in upd.replace("toastError(", "")

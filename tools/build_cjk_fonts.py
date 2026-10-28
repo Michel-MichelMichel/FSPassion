@@ -165,7 +165,10 @@ def build(variant: str, source: Path) -> Path:
     options.hinting = False
     options.notdef_outline = True
     sub = subset.Subsetter(options)
-    sub.populate(unicodes=charset(variant))
+    # Seuls les caractères que la source contient vraiment : certains symboles des
+    # tables de codage (par exemple U+00AD, U+223C) n'existent pas dans Sarasa.
+    present = set(font.getBestCmap())
+    sub.populate(unicodes=sorted(charset(variant) & present))
     sub.subset(font)
     rename(font, family, version)
     out = OUT / filename

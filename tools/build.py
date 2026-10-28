@@ -275,8 +275,11 @@ def verify_webview2(path: Path) -> None:
     )
     if os.name != "nt":
         raise SystemExit("Vérification de la signature de WebView2 : Windows requis.")
+    # PowerShell 7 (pwsh) charge sans problème le module de signature ; Windows PowerShell 5.1
+    # de certains postes ne le charge pas. On prend pwsh s'il existe, sinon powershell.
+    shell = shutil.which("pwsh") or "powershell"
     res = subprocess.run(
-        ["powershell", "-NoProfile", "-NonInteractive", "-Command", script],
+        [shell, "-NoProfile", "-NonInteractive", "-Command", script],
         env={**os.environ, "WV2_PATH": str(path)},
     )
     if res.returncode != 0:

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-27",
+  "updated": "2026-10-29",
   "_comment": "Noms : titres de https://farmingsimulator.wiki.gg/wiki/Downloadable_Content_Packs sans le préfixe « Farming Simulator XX - » (source=wiki, verified=true). verified=false : nom généré depuis le nom de fichier, absent de la page. keywords : le DLC est reconnu quand son nom de fichier contient tous ces mots (casse ignorée). Icône par défaut : <file>.png, puis <file>.jpg, dans icons_folder (PNG ou JPG, carré de 256 à 512 px ; 460 × 215 accepté pour FS2011 et FS2013).",
   "versions": {
     "FS2011": {
@@ -137,7 +137,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "9c8e912f1f59814e9662c5bc9f5c859dc9d6d84c7c62be53c83a10cc13fb80f9"
+          "sha256": "7bd7dedc0d8c6601b275cec2b573bab427d0e0c90e20c69fed227609462224a5"
         },
         {
           "file": "goldPack",
@@ -146,7 +146,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "8ce2f1d787d65533943331caf9b8bdf8680000144fb89b6667a29c4c5f7b2ec9"
+          "sha256": "e4573dddaeda1d76fb5f39389f8ba2c4a78d585028ef005d9c38da19e0a4251c"
         },
         {
           "file": "holmerPack",
@@ -155,7 +155,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "7b2ef869a7e86ce6501eb28712da09ac2f6ff60201b9f923edf2348eae074805"
+          "sha256": "f7367e78e61d29c5d74c4698c3c34d368f7cc7cad82f2cfbf0285ebf324495c6"
         },
         {
           "file": "itRunnerPack",
@@ -164,7 +164,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "b6e876bf87a9f134ba30419922faf4a4280d08866e50f324699608864a04610e"
+          "sha256": "d6a52bed1b5f1acce2e5469bbe28023bbbedd16a5501effb3c1630546d5db78c"
         },
         {
           "file": "jcbPack",
@@ -173,7 +173,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "c7dd540d86116b81779004f08ec813963e3e1f28738fb8cda83a9ef60aae3e2b"
+          "sha256": "2f3256acad0d71ebcf45e63047a12316b4f9de397347b37f2f09d6ab29e9e715"
         },
         {
           "file": "newHollandPack",
@@ -182,7 +182,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "9579610242b8878dd16c2ae89f371ec7fdec294623a3bb5faa419210c40fc7ed"
+          "sha256": "81ed16f46e34bde089f6a04f2342d43111e4b9f3dc0595472870b223e7e24172"
         }
       ]
     },
@@ -661,7 +661,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "b501e736625bae1bcf0ae4070c0dd81170d3b2afced299c3ff34d96b0ada011f"
+          "sha256": "1f1c424004c0391b93fc0f3ad49839106de65fc0cb113c507ae443b6c62aaf67"
         },
         {
           "file": "emergencyPack",
@@ -669,7 +669,7 @@
           "name": "Emergency Pack",
           "status": "released",
           "verified": false,
-          "sha256": "3aff1ec394354849cb485b0183d85be06d3e5e3514a8927b106e257a05febc9b"
+          "sha256": "bae2e5d1650c804512de3ecf01e0073f708a1ae503ffe53e3adc0b7dfb42cc90"
         },
         {
           "file": "extraContentNewHollandCR11",
@@ -678,7 +678,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "cfb87bb3a948973af942c339b9faf0eadb8c2e5edf6bd0cbb7572b93a439d349"
+          "sha256": "c9827ed7a957dcd70ce6f03cfd0872c54ffd0bf1d2001d993c34b8db29b9f956"
         },
         {
           "file": "extraContentWorldsFastestTractor",
@@ -687,7 +687,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "f2c97f71632ec85b6309b831976e4531844b393655abc7293f9924723f53853c"
+          "sha256": "8513a4be64089e3a7545691943d8c33f36821b092f4fcafea275153a223dae99"
         },
         {
           "file": "highlandsFishingPack",
@@ -696,7 +696,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "acf0460339105dd280b045212fab0184120f821eb79c69112c72de9a23277380"
+          "sha256": "1f3ddd1d7c7d40448b6d26fd602c3310bad26e2176fd2f518acc83eb12894600"
         },
         {
           "file": "macDonPack",
@@ -705,7 +705,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "0299bea2346ca7b62e79fe039517f774b3d339c1fbf1935a880723f1da3c2fa1"
+          "sha256": "7ca9d69b110c18573a6ff24f613f69ccb5f717c055beb47d04c4a7ddd8f3cb2e"
         },
         {
           "file": "nexatPack",
@@ -714,7 +714,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "2992b289d9c4e0f0c4c207353a0b12e4052acb75c677f4450d5632c28c97f171"
+          "sha256": "8748ca8e8246b8dc4d860c2cb44c8f25489a495f742d345db10b933fe64720e7"
         },
         {
           "file": "plainsAndPrairiesPack",
@@ -723,7 +723,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "ff63b3eec53fef8ed23a36ddd6b76d5bbfee575fc0d3157daaf6a5154c80d6f5"
+          "sha256": "623ca7f4482ceaa63458ef687f0cc5bd45de4129f68be7e48456171637faf6ac"
         },
         {
           "file": "pumpsAndHosesPack",
@@ -731,7 +731,7 @@
           "name": "Pumps And Hoses Pack",
           "status": "released",
           "verified": false,
-          "sha256": "a7e095892c164195bec6183b124c68c56470056b7a841db942ea4e5292055d2e"
+          "sha256": "75a4c6e0af95c9ac9d5ae6b2fa5beef9ef5d40c0e934417fc4d15af2bc06d2a5"
         },
         {
           "file": "skyAgriculturePack",
@@ -740,7 +740,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "6467280324929484d7a628b944682f55da4458961569772f2baa3621e5a2cf0b"
+          "sha256": "4b02d1d8d85c5d6c801c41eb47e040ff2580b7d8ba06ac754117c04fa7626169"
         },
         {
           "file": "strawHarvestPack",
@@ -749,7 +749,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "90463aae8136d3c9937772e7410cf41b32f66d3835aef1e1d0c6028bfdd30012"
+          "sha256": "04d35a961fee84d3bf47ad2373e3836c77d19eb9d2713d72ae1ff1967a64116e"
         },
         {
           "file": "vredoPack",
@@ -758,7 +758,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "dc4ee9c717ecb7bbc63e31c3081764621202f720e39e6b397654e682d9956302"
+          "sha256": "9f07354dfee22c6f1c083d0b4779be2c8516fcb2e85de7e138a63ebc6e77423b"
         },
         {
           "file": null,
@@ -767,10 +767,11 @@
             "alpacas"
           ],
           "name": "Beans & Alpacas Expansion",
-          "icon": "beansAndAlpacas.png",
-          "status": "announced",
+          "icon": "beansAndAlpacas.jpg",
+          "status": "released",
           "verified": true,
-          "sha256": "b094a1c74830674b09fe30c676e2310ed334cabff1b059b00ee74aa63d2f898d"
+          "release_date": "2026-10-28",
+          "sha256": "0d7cd0da7abe669dc98ad12cfc21732a2c9bfeb7e9444bea5bdd9cb5482670fe"
         },
         {
           "file": null,
@@ -794,7 +795,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "827c2c91d785fa21a10d66aabf016c40f0f82268314cd08a3a6445e49dfe8880"
+          "sha256": "a1d266ca8186d7f4f5b6b1f2f77b805c16b91027149868d023aab4c336a965e5"
         },
         {
           "file": null,
@@ -806,7 +807,7 @@
           "status": "released",
           "verified": true,
           "source": "wiki",
-          "sha256": "89740bedb4ba87397f1995298d9a83f3e825112973621fdade7b9d0a1744175c"
+          "sha256": "324b15fd1c4eaf2b06a673d1bb2f2bbad0b9dcd53d8fc9cc4f42e2b12fccfec9"
         }
       ]
     },

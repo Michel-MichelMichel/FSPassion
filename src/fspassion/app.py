@@ -11,8 +11,12 @@ Options :
     --debug         outils de développement dans la fenêtre
     --uninstall     ouvre directement « Ne plus utiliser FS Passion » (lancé par
                     le désinstalleur Windows)
-    --uninstall-quiet  désinstallation silencieuse : rétablit seulement la ligne
-                    d'override du jeu, sans fenêtre
+    --uninstall-quiet  désinstallation sans fenêtre (lancée par le désinstalleur
+                    Windows, qui pose lui-même les questions) : réglage du jeu
+                    rétabli, dossiers de parties retirés ; avec
+                    --remove parties,caches,settings,logs,langs : suppressions
+                    en plus. Code de sortie : 0 fait, 1 erreur, 3 jeu ouvert.
+    --uninstall-check  code de sortie 3 si un jeu configuré est ouvert, sinon 0
 """
 
 from __future__ import annotations
@@ -52,6 +56,8 @@ def parse_args(argv: list[str] | None) -> argparse.Namespace:
     p.add_argument("--debug", action="store_true")
     p.add_argument("--uninstall", action="store_true")
     p.add_argument("--uninstall-quiet", action="store_true")
+    p.add_argument("--uninstall-check", action="store_true")
+    p.add_argument("--remove", default="")
     return p.parse_args(argv)
 
 
@@ -278,6 +284,12 @@ def main(argv: list[str] | None = None) -> None:
     except Exception:  # noqa: BLE001
         pass
 
+    if args.uninstall_check:
+        # Désinstalleur : un jeu ouvert ? (lecture seule, sans verrou d'instance)
+        running = Core(dev=False).uninstall_running()
+        logging.shutdown()
+        raise SystemExit(3 if running else 0)
+
     if not acquire_single_instance():
         log.info("Une instance tourne déjà : elle est ramenée au premier plan")
         notify_existing_instance()
@@ -285,15 +297,20 @@ def main(argv: list[str] | None = None) -> None:
 
     core = Core(dev=args.dev)
     if args.uninstall_quiet:
-        # Désinstallation silencieuse : pas de fenêtre, rien n'est
-        # supprimé ; le jeu ne chargera plus un dossier de parties.
+        # Désinstalleur Windows : pas de fenêtre. Les choix (suppressions en
+        # plus) ont été faits dans la fenêtre du désinstalleur.
         core.uninstall_mode = True
+        code = 1
         try:
-            core.uninstall_minimal()
+            code = core.uninstall_headless([o.strip() for o in args.remove.split(",") if o.strip()])
+        except Exception:  # noqa: BLE001
+            log.exception("Désinstallation impossible")
         finally:
             core.shutdown()
             logging.shutdown()
-        return
+            if core.stopped:
+                stopuse.finish_at_exit(core.exit_cleanup)
+        raise SystemExit(code)
     core.uninstall_mode = bool(args.uninstall)
     core.startup()
 
@@ -366,4 +383,5 @@ def main(argv: list[str] | None = None) -> None:
         elif core.stopped:
             stopuse.finish_at_exit([])
         if core.run_uninstaller is not None:
-            winapi.startfile(str(core.run_uninstaller))
+            # « Ne plus utiliser » déjà fait : le désinstalleur ne repose pas ses questions.
+            winapi.startfile(str(core.run_uninstaller), args=["/FSPDONE=1"])

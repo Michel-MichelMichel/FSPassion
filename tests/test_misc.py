@@ -153,3 +153,16 @@ def test_web_link_rejects_other_addresses():
     assert config.web_link(info("https://github.com/x"), "stripe") is None  # mauvais domaine pour Stripe
     assert config.web_link(info("https://donate.stripe.com/abc"), "stripe") == "https://donate.stripe.com/abc"
     assert config.web_link(info("https://github.com/x"), "inconnu") is None
+
+
+def test_unreleased_dlc_are_hidden_until_their_date():
+    """0.9.8 : un DLC « announced » absent du PC n'apparaît qu'à sa date de sortie."""
+    assert dlc.is_released({"status": "released"}, "2026-10-29")
+    assert not dlc.is_released({"status": "announced"}, "2026-10-29")
+    assert not dlc.is_released({"status": "announced", "release_date": "2026-11-05"}, "2026-10-29")
+    assert dlc.is_released({"status": "announced", "release_date": "2026-10-29"}, "2026-10-29")
+    from fspassion import dlcremote
+
+    e = dlcremote._clean_entry({"name": "X", "release_date": "2026-11-05", "status": "announced"})
+    assert e["release_date"] == "2026-11-05"
+    assert "release_date" not in dlcremote._clean_entry({"name": "X", "release_date": "bientôt"})

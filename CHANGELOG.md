@@ -2,6 +2,22 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.8 — 29 octobre 2026 — désinstallation sans ouvrir FS Passion, DLC pas encore sortis cachés
+
+**Aucun fichier des mods n'est touché.**
+
+### Ce qui change
+
+1. **Désinstallation** (Paramètres Windows → Applications, ou menu Démarrer) : le désinstalleur n'ouvre plus FS Passion.
+   - Il pose lui-même ses questions dans une petite fenêtre Windows : ce qui va se passer (le jeu retrouve son réglage d'origine, les dossiers de parties sont retirés, les mods ne sont jamais touchés) et les suppressions en plus (parties, caches, réglages, journaux, langues personnelles), aucune cochée par défaut.
+   - Puis il lance FS Passion **sans fenêtre** (`--uninstall-quiet --remove …`), qui fait le même travail que « Ne plus utiliser FS Passion ».
+   - Farming Simulator ouvert : il demande de fermer le jeu (Réessayer / Annuler), avant toute suppression (`--uninstall-check`).
+   - Désinstallation silencieuse (`/SILENT`) : aucune question, aucune suppression en plus.
+   - Lancé depuis « Ne plus utiliser FS Passion », il ne repose pas ses questions.
+   - Cause de l'ancien choix : une condition `Check: UninstallSilent` dans `[UninstallRun]` est évaluée dès l'installation, où cette fonction est interdite ; les questions passent maintenant par le code `[Code]` du désinstalleur.
+2. **Catalogue des DLC** : nouveau champ `release_date` (AAAA-MM-JJ). Un DLC « announced » absent du PC n'est plus montré (estompé) avant sa date de sortie.
+3. **Beans & Alpacas Expansion** (FS25) : sorti le 28 octobre 2026, nouvelle image ; catalogue embarqué mis à jour.
+
 ## 0.9.7 — 28 octobre 2026 — icônes de la sauvegarde et des mises à jour
 
 **Aucun fichier du jeu ni des mods n'est touché.**

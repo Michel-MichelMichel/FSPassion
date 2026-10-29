@@ -56,10 +56,16 @@ def test_build_script_steps():
     assert "tools\\build.py" in _read("fabriquer.bat")
 
 
-def test_installer_runs_the_uninstall_window_and_keeps_the_mutex():
+def test_installer_asks_its_own_questions_and_keeps_the_mutex():
     iss = _read("packaging", "installer.iss")
-    assert 'Parameters: "--uninstall"' in iss and "waituntilterminated" in iss
-    assert 'Parameters: "--uninstall-quiet"' in iss and "UninstallSilent" in iss
+    # 0.9.8 : le désinstalleur n'ouvre plus FS Passion ; il pose ses questions
+    # dans sa propre fenêtre puis lance FS Passion sans fenêtre.
+    assert "[UninstallRun]" not in iss and "Parameters: \"--uninstall\"" not in iss
+    assert "'--uninstall-check'" in iss and "'--uninstall-quiet'" in iss and "' --remove '" in iss
+    assert "CreateCustomForm(" in iss and "SW_HIDE, ewWaitUntilTerminated" in iss
+    assert "UninstallSilent()" in iss and "{param:FSPDONE|0}" in iss
+    for key in ("parties", "caches", "settings", "logs", "langs"):
+        assert "AddOption(B" in iss and f"'{key}'" in iss
     assert "PrivilegesRequired=lowest" in iss
     assert "NeedsWebView2" in iss and "F3017226-FE2A-4295-8BDF-00C3A9A7E4C5" in iss
     assert app.MUTEX_NAME in iss                      # FS Passion ouvert : à fermer d'abord
@@ -82,7 +88,34 @@ def test_github_workflow():
 
 
 def test_uninstall_quiet_option():
-    assert app.parse_args(["--uninstall-quiet"]).uninstall_quiet
+    a = app.parse_args(["--uninstall-quiet", "--remove", "parties,logs"])
+    assert a.uninstall_quiet and a.remove == "parties,logs"
+    assert app.parse_args(["--uninstall-check"]).uninstall_check
+
+
+def test_uninstall_headless_does_stop_using_without_window(env, monkeypatch):  # noqa: F811
+    core = env["core"]
+    pid = make_party(env)
+    core.party_apply("FS25", pid)
+    monkeypatch.setattr(launcher, "running_versions", lambda names=None: set())
+    assert core.uninstall_running() == []
+    assert core.uninstall_headless(["parties", "inconnu"]) == 0
+    assert override_dir(env["gs"]) == os.path.normpath(env["mods"])
+    assert not env["parties"].exists()                  # dossiers de parties retirés
+    assert not (env["fsp"] / "parties.json").exists()   # choisi dans le désinstalleur
+    assert core.stopped
+
+
+def test_uninstall_headless_waits_for_the_game(env, monkeypatch):  # noqa: F811
+    core = env["core"]
+    pid = make_party(env)
+    core.party_apply("FS25", pid)
+    before = override_dir(env["gs"])
+    monkeypatch.setattr(launcher, "running_versions", lambda names=None: {"FS25"})
+    assert core.uninstall_running() == ["FS25"]
+    assert core.uninstall_headless([]) == 3
+    assert override_dir(env["gs"]) == before and env["parties"].exists()
+    assert not core.stopped
 
 
 def test_uninstall_minimal_restores_the_override_only(env, monkeypatch):  # noqa: F811

@@ -54,6 +54,7 @@ META = "catalog_meta.json"
 _NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _.()&+'-]{0,120}$")
 _FOLDER_RE = re.compile(r"^icons_dlc_fs\d{2}$")
 _SHA_RE = re.compile(r"^[0-9a-fA-F]{64}$")
+_DAY_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}")
 
 
@@ -156,6 +157,9 @@ def _clean_entry(raw: Any) -> dict[str, Any] | None:
     sha = raw.get("sha256")
     if isinstance(sha, str) and _SHA_RE.match(sha):
         out["sha256"] = sha.lower()
+    rd = raw.get("release_date")
+    if isinstance(rd, str) and _DAY_RE.match(rd):
+        out["release_date"] = rd
     return out
 
 

@@ -2131,6 +2131,46 @@ class Core:
         log.info("Désinstallation : override rétabli pour %d version(s) sur %d", len(done), len(vids))
         return done
 
+    def uninstall_running(self) -> list[str]:
+        """Versions configurées dont le jeu tourne (désinstalleur : « --uninstall-check »)."""
+        vids = self._stop_versions()
+        try:
+            running = set(launcher.running_versions())
+        except Exception:  # noqa: BLE001
+            return []
+        return [v for v in vids if v in running]
+
+    def uninstall_headless(self, options: list[str]) -> int:
+        """Désinstalleur Windows (« --uninstall-quiet [--remove …] ») : fait
+        « Ne plus utiliser FS Passion » sans ouvrir de fenêtre. Les choix sont
+        faits dans la fenêtre du désinstalleur lui-même.
+        Renvoie 0 (fait), 1 (fait sauf pour une version au moins) ou 3 (jeu
+        ouvert : rien n'est fait, le désinstalleur demande de le fermer)."""
+        chosen = {o for o in options if o in stopuse.OPTIONS}
+        vids = self._stop_versions()
+        running = self.uninstall_running()
+        if running:
+            log.warning("Désinstallation : jeu ouvert (%s), rien n'est fait", ", ".join(running))
+            return 3
+        log.info("Désinstallation : %s", ", ".join(sorted(chosen)) or "aucune suppression en plus")
+        if self.settings.demo_active():
+            try:
+                self.demo_stop()
+            except Exception as exc:  # noqa: BLE001
+                log.warning("Mode démonstration non quitté avant la désinstallation : %s", exc)
+        self.libs.disable_all()
+        rows = [self._stop_version(vid, chosen) for vid in vids]
+        if config.is_frozen() and winapi.run_as_admin_flag():
+            winapi.set_run_as_admin_flag(False)
+        stopuse.app_data_now(chosen)
+        if "settings" in chosen:
+            self.settings.frozen = True
+        self.exit_cleanup = stopuse.exit_paths(chosen)
+        self.stopped = True
+        errors = [r for r in rows if r.get("error")]
+        log.info("Désinstallation : %d version(s), %d erreur(s)", len(rows), len(errors))
+        return 1 if errors else 0
+
     def _stop_version(self, vid: str, chosen: set[str]) -> dict[str, Any]:
         v = versions.require(vid)
         vp = self._real_paths(vid)

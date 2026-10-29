@@ -18,6 +18,7 @@ from __future__ import annotations
 import logging
 import os
 import re
+import time
 from pathlib import Path
 from typing import Any
 
@@ -81,6 +82,14 @@ def match_entry(stem: str, entries: list[dict[str, Any]]) -> dict[str, Any] | No
             if all(k in low for k in kws):
                 return e
     return None
+
+
+def is_released(entry: dict[str, Any], today: str) -> bool:
+    """Un DLC « announced » n'est sorti qu'à sa date de sortie (AAAA-MM-JJ)."""
+    if entry.get("status") != "announced":
+        return True
+    rd = entry.get("release_date")
+    return isinstance(rd, str) and rd <= today
 
 
 def find_icon(folder_name: str, stem: str, entry: dict[str, Any] | None) -> Path | None:
@@ -168,9 +177,11 @@ def scan_dlc(v: GameVersion, dlc_dirs: list[Path], lang: str | None = None) -> l
             }
             if fixed:
                 seen[key]["rank"] = rank_of.get(id(entry), len(entries)) if entry is not None else len(entries)
-    # Les DLC du catalogue absents de ce PC, affichés estompés.
+    # Les DLC du catalogue absents de ce PC, affichés estompés. Un DLC pas
+    # encore sorti (annoncé, date de sortie à venir ou inconnue) n'est pas montré.
+    today = time.strftime("%Y-%m-%d")
     for i, entry in enumerate(entries):
-        if id(entry) in matched or not entry.get("name"):
+        if id(entry) in matched or not entry.get("name") or not is_released(entry, today):
             continue
         names = dict(entry.get("names") or {})
         names.setdefault("en", entry["name"])

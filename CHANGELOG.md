@@ -2,6 +2,19 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.11 — 29 octobre 2026 — fabrication GitHub : test du stockage fiabilisé, cache écrit malgré un antivirus
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui s'est passé
+
+La fabrication GitHub de la 0.9.10 s'est arrêtée sur le test `test_back_to_one_storage_full_party_is_the_mods_folder` (`apply.library_busy`, puis « Écriture du cache impossible : Accès refusé »). Le défaut était dans le test, pas dans FS Passion : après le retrait d'un dossier de stockage, FS Passion relit les mods en arrière-plan, et le test lançait une seconde lecture en même temps, sur l'ancienne bibliothèque. Sur la machine Windows de GitHub, plus lente, la lecture d'arrière-plan n'était pas finie au moment d'« Appliquer », et les deux lectures écrivaient le cache au même instant. Reproduit ici en ralentissant les lectures.
+
+### Ce qui change
+
+1. **Tests du stockage** : ils attendent la lecture en cours (`scan_now`) au lieu d'en lancer une autre en parallèle. Toute la suite passe aussi avec des lectures ralenties.
+2. **Écriture des fichiers (cache, réglages, parties)** : sous Windows, si le fichier est tenu un court instant (antivirus, indexation, lecture en cours : « Accès refusé »), le remplacement est réessayé jusqu'à 6 fois en moins d'une seconde, au lieu d'échouer.
+
 ## 0.9.10 — 29 octobre 2026 — FS Passion se range dans la zone de notification au lancement du jeu, repère des mods communs, captures d'écran du README
 
 **Aucun fichier du jeu ni des mods n'est touché.**

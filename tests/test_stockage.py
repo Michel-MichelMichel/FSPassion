@@ -70,7 +70,10 @@ def env(tmp_path, monkeypatch):
     core.set_storages("FS25", [str(extra)])
     core._reconciled.add("FS25")
     lib = core.libs.get("FS25")
-    lib._scan()
+    # set_storages lance un scan en arrière-plan : scan_now l'attend au lieu de
+    # lire les mods en même temps que lui (sous Windows, les deux écritures du
+    # cache se gênaient, et la bibliothèque n'était pas prête).
+    lib.scan_now()
     fsp = mods.parent / "FSPassion" / "FS25"
     yield {"core": core, "mods": mods, "extra": extra, "ids": info["ids"], "extra_ids": extra_ids,
            "gs": gs, "lib": lib, "user": user, "dl": dl, "fsp": fsp, "parties": fsp / "Parties",
@@ -167,7 +170,7 @@ def test_full_party_becomes_a_link_folder(env):
     folders = core._folders("FS25")
     assert not folders.is_stale(FULL)
     fakemods.make_zip_mod(env["extra"], "FS25_Nouveau", seed=77)
-    env["lib"]._scan()
+    env["lib"].scan_now()
     assert core._folders("FS25").is_stale(FULL)
 
 
@@ -178,7 +181,8 @@ def test_back_to_one_storage_full_party_is_the_mods_folder(env):
     assert full.is_dir()
     extra_files = {p.name: sha(p) for p in env["extra"].iterdir()}
     core.set_storages("FS25", [])
-    env["lib"]._scan()
+    # Nouvelle bibliothèque (set_storages la recrée) : attendre SON scan.
+    core.libs.get("FS25").scan_now()
     assert core._folders("FS25").is_stale(FULL)
     core.party_apply("FS25", FULL)
     assert override(env["gs"]) == os.path.normpath(str(env["mods"]))
@@ -381,7 +385,7 @@ def _older_case(env):
     core, extra = env["core"], env["extra"]
     name = "FS25_Joskin.zip"
     fakemods.make_zip_mod(extra, "FS25_Joskin", title="Joskin", seed=640, version="1.5.0.0")
-    env["lib"]._scan()
+    env["lib"].scan_now()
     core.party_apply("FS25", FULL)
     full = env["parties"] / apply.FULL_FOLDER
     assert links.kind_of(full / name) == "symlink"

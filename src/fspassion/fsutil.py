@@ -12,12 +12,27 @@ import logging
 import os
 import sys
 import tempfile
+import time
 from pathlib import Path
 from typing import Any
 
 log = logging.getLogger(__name__)
 
 IS_WINDOWS = sys.platform == "win32"
+
+
+def _replace(src: str, dst: Path, tries: int = 6) -> None:
+    """os.replace, réessayé quelques fois sous Windows : un antivirus,
+    l'indexation ou une lecture en cours tiennent parfois le fichier visé un
+    court instant (« Accès refusé », WinError 5)."""
+    for attempt in range(tries):
+        try:
+            os.replace(src, dst)
+            return
+        except PermissionError:
+            if os.name != "nt" or attempt == tries - 1:
+                raise
+            time.sleep(0.05 * (attempt + 1))
 
 
 def atomic_write_bytes(path: Path, data: bytes) -> None:
@@ -30,7 +45,7 @@ def atomic_write_bytes(path: Path, data: bytes) -> None:
             f.write(data)
             f.flush()
             os.fsync(f.fileno())
-        os.replace(tmp_name, path)
+        _replace(tmp_name, path)
     except BaseException:
         try:
             os.unlink(tmp_name)

@@ -145,3 +145,21 @@ def test_closing_in_uninstall_mode_quits_instead_of_hiding():
     src = _read("src", "fspassion", "app.py")
     assert "core.uninstall_mode or not tray.active" in src
     assert "if core.uninstall_mode and not core.stopped:" in src
+
+
+def test_installer_shortcuts_checked_by_default():
+    """0.9.9 : raccourcis du Bureau et du menu Démarrer cochés par défaut."""
+    iss = _read("packaging", "installer.iss")
+    assert 'Name: "desktopicon"; Description: "{cm:DesktopIcon}"\n' in iss
+    assert 'Name: "startmenuicon"; Description: "{cm:StartMenuIcon}"\n' in iss
+    assert "Tasks: startmenuicon" in iss and "fr.StartMenuIcon=" in iss and "en.StartMenuIcon=" in iss
+
+
+def test_process_really_ends_after_closing():
+    """0.9.9 : la fermeture ne peut plus laisser un processus sans fenêtre qui
+    tient le verrou d'instance unique."""
+    src = _read("src", "fspassion", "app.py")
+    assert "start_exit_watchdog()" in src and "end_process()" in src and "os._exit(code)" in src
+    assert "handle_stuck_instance()" in src
+    # Un essai raté ne garde pas de handle sur le verrou.
+    assert "k32.CloseHandle(ctypes.c_void_p(handle))" in src

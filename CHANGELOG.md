@@ -2,6 +2,19 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.9 — 29 octobre 2026 — fermeture fiable, fiche des maps sous l'en-tête, listes des thèmes bicolores, raccourcis
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui change
+
+1. **FS Passion restait en arrière-plan après sa fermeture** (sans fenêtre ni icône, visible seulement dans les « Processus en arrière-plan » du Gestionnaire des tâches). Il gardait le verrou d'instance unique : un double-clic sur le raccourci ne faisait plus rien. Le journal s'arrêtait à « Fermeture de FS Passion » : un fil d'exécution de la fenêtre (WebView2 / .NET) empêchait le processus de se terminer.
+   - Le processus se termine maintenant toujours à la fin de la fermeture ; si elle se bloque plus de 20 secondes, elle est forcée (ligne « Fermeture bloquée … : arrêt forcé » dans le journal). Une fermeture normale écrit « Fermeture terminée ».
+   - Au lancement, si une instance déjà ouverte ne répond pas : FS Passion attend 8 secondes qu'elle finisse de se fermer, puis propose de l'arrêter et démarre normalement.
+2. **Fiche d'information d'un mod** (survol, bouton « i ») : elle ne monte plus sur l'en-tête. Son haut s'arrête sous l'en-tête ; une longue liste de dépendances défile dans la fiche.
+3. **Thèmes bicolores** : la liste déroulante des langues (Paramètres → Affichage) a un fond plein ; on ne voit plus le reste à travers. Même chose pour les listes déroulantes de la fenêtre des téléchargements.
+4. **Installeur** : « Créer un raccourci sur le Bureau » est coché par défaut ; nouvelle case « Créer un raccourci dans le menu Démarrer », cochée par défaut.
+
 ## 0.9.8 — 29 octobre 2026 — désinstallation sans ouvrir FS Passion, DLC pas encore sortis cachés
 
 **Aucun fichier des mods n'est touché.**

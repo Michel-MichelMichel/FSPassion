@@ -299,6 +299,12 @@ export function showCard(anchor, item, { force = false } = {}) {
   const app = card.parentElement;
   const W = app.clientWidth;
   const H = app.clientHeight;
+  // La fiche ne monte jamais sur l'en-tête : son haut s'arrête sous lui, et
+  // une fiche plus haute que la place restante défile (épinglée) ou est coupée.
+  const bar = document.getElementById('topbar');
+  const appTop = localRect(app).top;
+  const minY = bar ? Math.round(localRect(bar).bottom - appTop) + 12 : 16;
+  card.style.maxHeight = `${Math.max(160, H - minY - 16)}px`;
   const cw = card.offsetWidth;
   const ch = card.offsetHeight;
   let x = r.right + 14;
@@ -313,7 +319,7 @@ export function showCard(anchor, item, { force = false } = {}) {
   }
   let y = r.top;
   if (y + ch > H - 16) y = H - ch - 16;
-  if (y < 16) y = 16;
+  if (y < minY) y = minY;
   card.style.translate = `${Math.round(x)}px ${Math.round(y)}px`;
   card.style.setProperty('--hc-origin', side === 'left' ? '0 0' : '100% 0');
   if (!wasOn) {

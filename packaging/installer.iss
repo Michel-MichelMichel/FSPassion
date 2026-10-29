@@ -81,6 +81,8 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 [CustomMessages]
 fr.DesktopIcon=Créer un raccourci sur le Bureau
 en.DesktopIcon=Create a desktop shortcut
+fr.StartMenuIcon=Créer un raccourci dans le menu Démarrer
+en.StartMenuIcon=Create a Start menu shortcut
 fr.LaunchApp=Lancer FS Passion
 en.LaunchApp=Launch FS Passion
 fr.WebView2Install=Installation de Microsoft Edge WebView2 (affichage de FS Passion)…
@@ -113,7 +115,8 @@ fr.UninstFailed=Le réglage du jeu n'a pas pu être rétabli pour au moins une v
 en.UninstFailed=The game setting could not be restored for at least one version. FS Passion's log gives the details.
 
 [Tasks]
-Name: "desktopicon"; Description: "{cm:DesktopIcon}"; Flags: unchecked
+Name: "desktopicon"; Description: "{cm:DesktopIcon}"
+Name: "startmenuicon"; Description: "{cm:StartMenuIcon}"
 
 [Files]
 Source: "{#SourceDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
@@ -127,7 +130,7 @@ Source: "{#WebView2Setup}"; DestDir: "{tmp}"; DestName: "MicrosoftEdgeWebview2Se
 Type: files; Name: "{app}\portable.txt"
 
 [Icons]
-Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExe}"
+Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExe}"; Tasks: startmenuicon
 Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExe}"; Tasks: desktopicon
 
 [Run]

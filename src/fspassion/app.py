@@ -73,8 +73,15 @@ def acquire_single_instance() -> bool:
 
     k32 = ctypes.WinDLL("kernel32", use_last_error=True)
     k32.CreateMutexW.restype = ctypes.c_void_p
-    _mutex_handle = k32.CreateMutexW(None, False, MUTEX_NAME)
-    return ctypes.get_last_error() != 183  # ERROR_ALREADY_EXISTS
+    handle = k32.CreateMutexW(None, False, MUTEX_NAME)
+    if ctypes.get_last_error() == 183:  # ERROR_ALREADY_EXISTS
+        # Ne pas garder ce handle : il ferait exister le verrou même après la
+        # fin de l'autre instance (nouvel essai dans handle_stuck_instance).
+        if handle:
+            k32.CloseHandle(ctypes.c_void_p(handle))
+        return False
+    _mutex_handle = handle
+    return True
 
 
 def notify_existing_instance() -> bool:
@@ -116,6 +123,111 @@ def remove_instance_file() -> None:
         config.instance_file().unlink()
     except OSError:
         pass
+
+
+# --------------------------------------------------------------------------
+# Fermeture : le processus doit vraiment se terminer.
+# --------------------------------------------------------------------------
+# 0.9.9 : après la fermeture de la fenêtre, un processus FS Passion pouvait
+# rester en arrière-plan, sans fenêtre ni icône : un fil d'exécution de la
+# fenêtre (WebView2 / .NET) le gardait en vie, et il tenait le verrou
+# d'instance unique. Les lancements suivants « ramenaient au premier plan »
+# une instance qui n'existait plus : rien ne s'ouvrait.
+
+EXIT_WATCHDOG_S = 20.0   # au-delà, la fermeture est forcée
+STUCK_WAIT_S = 8.0       # une instance qui se ferme a ce délai pour finir
+
+
+def end_process(code: int = 0) -> None:
+    """Termine le processus sans attendre les fils d'exécution restants
+    (application fabriquée seulement : les tests appellent main())."""
+    if config.is_frozen():
+        os._exit(code)
+
+
+def start_exit_watchdog(delay: float = EXIT_WATCHDOG_S) -> None:
+    """Si la fermeture se bloque (fenêtre, .NET…), le processus est arrêté."""
+    def force() -> None:
+        try:
+            log.warning("Fermeture bloquée depuis %.0f s : arrêt forcé", delay)
+            logging.shutdown()
+        finally:
+            end_process()
+
+    t = threading.Timer(delay, force)
+    t.daemon = True
+    t.start()
+
+
+def _other_instance_pids() -> list[int]:
+    """Autres processus FSPassion.exe de cet utilisateur (application fabriquée)."""
+    if sys.platform != "win32" or not config.is_frozen():
+        return []
+    import csv
+    import io
+    import subprocess
+
+    exe = os.path.basename(sys.executable)
+    try:
+        out = subprocess.run(
+            ["tasklist", "/FI", f"IMAGENAME eq {exe}", "/FO", "CSV", "/NH"],
+            capture_output=True, text=True, timeout=10, creationflags=0x08000000,
+        ).stdout
+    except (OSError, subprocess.SubprocessError):
+        return []
+    pids = []
+    for row in csv.reader(io.StringIO(out)):
+        if len(row) > 1 and row[1].isdigit() and int(row[1]) != os.getpid():
+            pids.append(int(row[1]))
+    return pids
+
+
+def _ask_close_stuck() -> bool:
+    import ctypes
+
+    fr = (winapi.ui_language() or "").lower().startswith("fr")
+    title = "FS Passion"
+    text = ("FS Passion est déjà ouvert, mais il ne répond pas : il est resté en arrière-plan "
+            "sans fenêtre.\n\nLe fermer et redémarrer FS Passion ?" if fr else
+            "FS Passion is already running, but it does not respond: it stayed in the background "
+            "without a window.\n\nClose it and restart FS Passion?")
+    MB_YESNO, MB_ICONWARNING, IDYES = 0x4, 0x30, 6
+    return ctypes.windll.user32.MessageBoxW(None, text, title, MB_YESNO | MB_ICONWARNING) == IDYES
+
+
+def handle_stuck_instance() -> bool:
+    """L'instance déjà ouverte ne répond pas. On lui laisse le temps de finir
+    de se fermer ; sinon, avec l'accord de l'utilisateur, on l'arrête et on
+    démarre normalement. Renvoie True si ce lancement doit continuer."""
+    deadline = time.monotonic() + STUCK_WAIT_S
+    while time.monotonic() < deadline:
+        time.sleep(0.5)
+        if acquire_single_instance():
+            log.info("L'instance précédente s'est fermée : démarrage")
+            return True
+        if notify_existing_instance():
+            return False
+    pids = _other_instance_pids()
+    if not pids:
+        log.warning("Instance précédente sans réponse, introuvable")
+        return False
+    log.warning("Instance précédente sans réponse (processus %s)", ", ".join(map(str, pids)))
+    if not _ask_close_stuck():
+        return False
+    import subprocess
+
+    for pid in pids:
+        try:
+            subprocess.run(["taskkill", "/F", "/PID", str(pid)], capture_output=True, timeout=10,
+                           creationflags=0x08000000)
+            log.info("Instance sans réponse arrêtée (processus %d)", pid)
+        except (OSError, subprocess.SubprocessError) as exc:
+            log.warning("Arrêt de l'instance %d impossible : %s", pid, exc)
+    for _ in range(20):
+        if acquire_single_instance():
+            return True
+        time.sleep(0.25)
+    return False
 
 
 # --------------------------------------------------------------------------
@@ -292,8 +404,8 @@ def main(argv: list[str] | None = None) -> None:
 
     if not acquire_single_instance():
         log.info("Une instance tourne déjà : elle est ramenée au premier plan")
-        notify_existing_instance()
-        return
+        if notify_existing_instance() or not handle_stuck_instance():
+            return
 
     core = Core(dev=args.dev)
     if args.uninstall_quiet:
@@ -354,6 +466,7 @@ def main(argv: list[str] | None = None) -> None:
                 pass
     finally:
         log.info("Fermeture de FS Passion")
+        start_exit_watchdog()
         if core.uninstall_mode and not core.stopped:
             # Désinstalleur fermé sans confirmer : l'override est quand même rétabli.
             try:
@@ -375,6 +488,7 @@ def main(argv: list[str] | None = None) -> None:
             launcher = None if config.is_frozen() else config.project_root() / "lancer_dev.bat"
             if not winapi.relaunch_elevated(launcher):
                 log.warning("Relance en administrateur refusée ou annulée")
+        log.info("Fermeture terminée")
         logging.shutdown()
         if core.exit_cleanup:
             # « Ne plus utiliser FS Passion » : journaux et données de la
@@ -385,3 +499,4 @@ def main(argv: list[str] | None = None) -> None:
         if core.run_uninstaller is not None:
             # « Ne plus utiliser » déjà fait : le désinstalleur ne repose pas ses questions.
             winapi.startfile(str(core.run_uninstaller), args=["/FSPDONE=1"])
+        end_process()

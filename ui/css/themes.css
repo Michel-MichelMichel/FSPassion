@@ -151,6 +151,10 @@
   box-shadow: inset 0 0 0 1px var(--duo-line-2);
 }
 :root[data-style="duo"] .launch-mode { border-radius: var(--r-l); }
+/* Listes déroulantes (langue…) : posées par-dessus le reste, elles gardent la
+   couleur sombre pleine, sinon on voit à travers. */
+:root[data-style="duo"] .lang-select-box > .lang-list.lang-list-vertical { background: var(--bg); }
+:root[data-style="duo"] :is(.field-select, select) option { background-color: var(--bg); color: var(--fg); }
 
 /* --- lueur qui court le long des contours (glow.js) ----------------------
    Un SVG posé sur le contour : le trait fixe est dessiné par la boîte ; le

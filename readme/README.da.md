@@ -23,6 +23,23 @@ Hjertet i FS Passion løser dette problem forbløffende effektivt: Opret med få
 
 > ⚠️ Projekt under udvikling (version: se siden [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Tag en fuld sikkerhedskopi af din mod-mappe, før du prøver det. Denne GitHub-side er det eneste officielle downloadsted.
 
+## Skærmbilleder
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Alle mods i en spilversion, infokort og valg af flere mods" /></a><br />Alle mods i en spilversion, infokort og valg af flere mods</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Opsætninger: skift med ét klik (lyst tema, fransk grænseflade)" /></a><br />Opsætninger: skift med ét klik (lyst tema, fransk grænseflade)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Stor forhåndsvisning, når musen holdes over (FS22, temaet Synthwave '84)" /></a><br />Stor forhåndsvisning, når musen holdes over (FS22, temaet Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Temaer og sprog (polsk grænseflade)" /></a><br />Temaer og sprog (polsk grænseflade)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Mod-mapper på flere drev" /></a><br />Mod-mapper på flere drev</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Indstillinger: meddelelsesområde, internetforbindelse, sikkerhedskopi (portugisisk grænseflade)" /></a><br />Indstillinger: meddelelsesområde, internetforbindelse, sikkerhedskopi (portugisisk grænseflade)</td>
+</tr>
+</table>
+
 ## Download
 
 På siden [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Filerne er endnu ikke signerede: Ved første start kan Windows SmartScreen vise 
 
 ## Hjælp med at forbedre oversættelserne
 
-Rettelser fra modersmålstalere er velkomne. Trin-for-trin-vejledning (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Oversættelserne er en første udgave: rettelser fra modersmålstalere er meget velkomne, både til de nuværende sprog og til dem, der kommer. Du behøver ikke kunne programmere, kun en teksteditor (Notesblok er fint).
+
+1. Åbn mappen [`lang`](../lang/) i dette repository, og hent filen for dit sprog (`da.json`). Hvis den ikke findes endnu, så hent `en.json`.
+2. Læg den i mappen med egne sprog i din FS Passion-installation (knappen **Åbn mappen med egne sprog** under Indstillinger → Udseende → Sprog åbner den):
+   - installeret version: `%APPDATA%\FSPassion\lang\`;
+   - portabel version: `data\lang\` ved siden af `FSPassion.exe`.
+3. Omdøb den, for eksempel til `da_corrected.json` (navnet må ikke begynde med `_`). Ret ikke linjen `"code"` øverst i filen: så erstatter din fil det indbyggede sprog. Hvis du starter fra `en.json`: skriv `"da"` på linjen `"code"` og `"Dansk"` på linjen `"name"`.
+4. Ret teksterne i anførselstegn til højre for `:`-tegnene, og gem filen (kodning UTF-8). Lad nøglerne til venstre og ordene i krøllede parenteser som `{count}` være uændrede.
+5. Genstart FS Passion, og vælg dit sprog under Indstillinger → Udseende → Sprog: det er markeret som »eget«. Kontrollér dine rettelser i grænsefladen.
+6. Send den rettede fil under fanen [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): opret et issue med en titel som »Translation: Dansk«, og vedhæft filen (pak den i en ZIP, hvis GitHub afviser filtypen `.json`).
 
 ## Rapportér et problem, foreslå en idé
 

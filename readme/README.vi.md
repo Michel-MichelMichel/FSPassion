@@ -23,6 +23,23 @@ Cốt lõi của FS Passion là giải quyết vấn đề này với hiệu qu�
 
 > ⚠️ Dự án đang phát triển (phiên bản: xem trang [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Hãy sao lưu đầy đủ thư mục mod trước khi dùng thử. Trang GitHub này là nguồn tải xuống chính thức duy nhất.
 
+## Ảnh chụp màn hình
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Tất cả mod của một phiên bản game, thẻ thông tin và chọn nhiều mod" /></a><br />Tất cả mod của một phiên bản game, thẻ thông tin và chọn nhiều mod</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Bộ cấu hình: chuyển đổi chỉ với một cú nhấp (giao diện sáng, tiếng Pháp)" /></a><br />Bộ cấu hình: chuyển đổi chỉ với một cú nhấp (giao diện sáng, tiếng Pháp)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Xem trước cỡ lớn khi rê chuột (FS22, chủ đề Synthwave '84)" /></a><br />Xem trước cỡ lớn khi rê chuột (FS22, chủ đề Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Chủ đề và ngôn ngữ (giao diện tiếng Ba Lan)" /></a><br />Chủ đề và ngôn ngữ (giao diện tiếng Ba Lan)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Thư mục mod trên nhiều ổ đĩa" /></a><br />Thư mục mod trên nhiều ổ đĩa</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Cài đặt: vùng thông báo, kết nối Internet, sao lưu (giao diện tiếng Bồ Đào Nha)" /></a><br />Cài đặt: vùng thông báo, kết nối Internet, sao lưu (giao diện tiếng Bồ Đào Nha)</td>
+</tr>
+</table>
+
 ## Tải xuống
 
 Trên trang [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Các tệp chưa được ký số: ở lần mở đầu tiên, Windows SmartSc
 
 ## Giúp cải thiện bản dịch
 
-Rất hoan nghênh các chỉnh sửa từ người bản ngữ. Hướng dẫn từng bước (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Các bản dịch mới là phiên bản đầu tiên: rất hoan nghênh người bản ngữ góp ý sửa lỗi, cho các ngôn ngữ hiện có lẫn các ngôn ngữ sắp ra mắt. Bạn không cần biết lập trình, chỉ cần một trình soạn thảo văn bản (Notepad là đủ).
+
+1. Trong kho mã này, mở thư mục [`lang`](../lang/) và tải tệp ngôn ngữ của bạn (`vi.json`). Nếu tệp chưa có, hãy tải `en.json`.
+2. Đặt tệp vào thư mục ngôn ngữ cá nhân của bản cài đặt FS Passion (nút **Open the personal languages folder** trong Settings → Display → Language sẽ mở thư mục này):
+   - bản cài đặt: `%APPDATA%\FSPassion\lang\`;
+   - bản di động: `data\lang\`, cạnh `FSPassion.exe`.
+3. Đổi tên tệp, ví dụ `vi_corrected.json` (tên không được bắt đầu bằng `_`). Đừng sửa dòng `"code"` ở đầu tệp: khi đó tệp của bạn sẽ thay thế ngôn ngữ có sẵn. Nếu bạn bắt đầu từ `en.json`: ghi `"vi"` vào dòng `"code"` và `"Tiếng Việt"` vào dòng `"name"`.
+4. Sửa các đoạn văn bản trong dấu ngoặc kép, ở bên phải dấu `:`, rồi lưu tệp (mã hóa UTF-8). Giữ nguyên các khóa ở bên trái và các từ trong dấu ngoặc nhọn như `{count}`.
+5. Khởi động lại FS Passion và chọn ngôn ngữ của bạn trong Settings → Display → Language: ngôn ngữ đó được đánh dấu “personal”. Kiểm tra các chỗ sửa trong giao diện.
+6. Gửi tệp đã sửa trong thẻ [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): tạo một issue có tiêu đề ví dụ “Translation: Tiếng Việt” và đính kèm tệp (nén thành ZIP nếu GitHub không nhận đuôi `.json`).
 
 ## Báo lỗi, đề xuất ý tưởng
 

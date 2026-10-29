@@ -81,8 +81,8 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 [CustomMessages]
 fr.DesktopIcon=Créer un raccourci sur le Bureau
 en.DesktopIcon=Create a desktop shortcut
-fr.StartMenuIcon=Créer un raccourci dans le menu Démarrer
-en.StartMenuIcon=Create a Start menu shortcut
+fr.StartMenuIcon=Ajouter FS Passion au menu Démarrer (liste « Toutes les applications »)
+en.StartMenuIcon=Add FS Passion to the Start menu (“All apps” list)
 fr.LaunchApp=Lancer FS Passion
 en.LaunchApp=Launch FS Passion
 fr.WebView2Install=Installation de Microsoft Edge WebView2 (affichage de FS Passion)…
@@ -130,6 +130,10 @@ Source: "{#WebView2Setup}"; DestDir: "{tmp}"; DestName: "MicrosoftEdgeWebview2Se
 Type: files; Name: "{app}\portable.txt"
 
 [Icons]
+; Menu Démarrer : le raccourci est rangé dans la liste « Toutes les applications »
+; (%APPDATA%\Microsoft\Windows\Start Menu\Programs, ou ProgramData pour tous
+; les utilisateurs). Windows interdit aux installeurs d'épingler une application
+; dans la partie « Épinglé » : c'est l'utilisateur qui le fait (clic droit).
 Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExe}"; Tasks: startmenuicon
 Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExe}"; Tasks: desktopicon
 

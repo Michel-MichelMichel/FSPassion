@@ -23,6 +23,23 @@ Hjertet i FS Passion løser dette problemet forbløffende effektivt: Lag **oppse
 
 > ⚠️ Prosjekt under utvikling (versjon: se siden [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Ta en full sikkerhetskopi av modmappen før du prøver det. Denne GitHub-siden er det eneste offisielle nedlastingsstedet.
 
+## Skjermbilder
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Alle moddene i en spillversjon, infokort og valg av flere modder" /></a><br />Alle moddene i en spillversjon, infokort og valg av flere modder</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Oppsett: bytt med ett klikk (lyst tema, fransk grensesnitt)" /></a><br />Oppsett: bytt med ett klikk (lyst tema, fransk grensesnitt)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Stor forhåndsvisning når musen holdes over (FS22, temaet Synthwave '84)" /></a><br />Stor forhåndsvisning når musen holdes over (FS22, temaet Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Temaer og språk (polsk grensesnitt)" /></a><br />Temaer og språk (polsk grensesnitt)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Modmapper på flere disker" /></a><br />Modmapper på flere disker</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Innstillinger: varslingsområde, internettilkobling, sikkerhetskopi (portugisisk grensesnitt)" /></a><br />Innstillinger: varslingsområde, internettilkobling, sikkerhetskopi (portugisisk grensesnitt)</td>
+</tr>
+</table>
+
 ## Nedlasting
 
 På siden [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Filene er ikke signert ennå: Ved første oppstart kan Windows SmartScreen vise 
 
 ## Hjelp til med å forbedre oversettelsene
 
-Rettelser fra morsmålstalere er velkomne. Trinn-for-trinn-veiledning (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Oversettelsene er en første versjon: rettelser fra morsmålsbrukere er hjertelig velkomne, både for de nåværende språkene og for dem som kommer. Du trenger ikke kunne programmere, bare et tekstredigeringsprogram (Notisblokk holder).
+
+1. Åpne mappen [`lang`](../lang/) i dette repositoriet, og last ned filen for språket ditt (`nb.json`). Hvis den ikke finnes ennå, last ned `en.json`.
+2. Legg den i mappen for egne språk i FS Passion-installasjonen din (knappen **Åpne mappen for egne språk** under Innstillinger → Utseende → Språk åpner den):
+   - installert versjon: `%APPDATA%\FSPassion\lang\`;
+   - bærbar versjon: `data\lang\` ved siden av `FSPassion.exe`.
+3. Gi den nytt navn, for eksempel `nb_corrected.json` (navnet kan ikke begynne med `_`). Ikke endre linjen `"code"` øverst i filen: da erstatter filen din det innebygde språket. Hvis du starter fra `en.json`: skriv `"nb"` på linjen `"code"` og `"Norsk bokmål"` på linjen `"name"`.
+4. Rett tekstene i anførselstegn til høyre for `:`-tegnene, og lagre filen (koding UTF-8). La nøklene til venstre og ordene i krøllparenteser som `{count}` være uendret.
+5. Start FS Passion på nytt, og velg språket ditt under Innstillinger → Utseende → Språk: det er merket «eget». Kontroller rettelsene dine i grensesnittet.
+6. Send den rettede filen under fanen [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): opprett et issue med en tittel som «Translation: Norsk bokmål», og legg ved filen (pakk den i en ZIP hvis GitHub avviser filtypen `.json`).
 
 ## Meld fra om et problem, foreslå en idé
 

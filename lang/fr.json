@@ -313,6 +313,7 @@
       "launch_exe": "Exécutable",
       "launch_help": "Automatique choisit la bonne méthode (Steam, Epic Games, Microsoft Store, Xbox ou exécutable). Les deux autres servent de recours.",
       "minimize_on_launch": "Réduire FS Passion au lancement du jeu",
+      "minimize_on_launch_help": "Dans la zone de notification si « Fermer dans la zone de notification » est actif (Application → Fenêtre), sinon dans la barre des tâches.",
       "args_title": "Arguments de lancement",
       "args_show": "Afficher les arguments de lancement",
       "args_hide": "Masquer les arguments de lancement",

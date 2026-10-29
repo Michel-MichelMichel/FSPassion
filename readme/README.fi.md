@@ -23,6 +23,23 @@ FS Passionin ydin ratkaisee tämän ongelman hämmästyttävän tehokkaasti: luo
 
 > ⚠️ Projekti on kehitysvaiheessa (versio: katso sivu [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Tee täydellinen varmuuskopio modikansiostasi ennen kokeilua. Tämä GitHub-sivu on ainoa virallinen latauspaikka.
 
+## Kuvakaappaukset
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Pelin version kaikki modit, tietokortti ja usean modin valinta" /></a><br />Pelin version kaikki modit, tietokortti ja usean modin valinta</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Kokoonpanot: vaihto yhdellä napsautuksella (vaalea teema, ranskankielinen käyttöliittymä)" /></a><br />Kokoonpanot: vaihto yhdellä napsautuksella (vaalea teema, ranskankielinen käyttöliittymä)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Suuri esikatselu, kun hiiri viedään modin päälle (FS22, teema Synthwave '84)" /></a><br />Suuri esikatselu, kun hiiri viedään modin päälle (FS22, teema Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Teemat ja kielet (puolankielinen käyttöliittymä)" /></a><br />Teemat ja kielet (puolankielinen käyttöliittymä)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Modikansiot usealla levyllä" /></a><br />Modikansiot usealla levyllä</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Asetukset: ilmaisinalue, internetyhteys, varmuuskopio (portugalinkielinen käyttöliittymä)" /></a><br />Asetukset: ilmaisinalue, internetyhteys, varmuuskopio (portugalinkielinen käyttöliittymä)</td>
+</tr>
+</table>
+
 ## Lataus
 
 Sivulla [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Tiedostoja ei ole vielä allekirjoitettu: ensimmäisellä käynnistyskerralla Wi
 
 ## Auta parantamaan käännöksiä
 
-Äidinkielisten puhujien korjaukset ovat tervetulleita. Vaiheittainen ohje (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Käännökset ovat ensimmäinen versio: äidinkielisten korjaukset ovat erittäin tervetulleita, sekä nykyisiin että tuleviin kieliin. Ohjelmointitaitoa ei tarvita, vain tekstieditori (Muistio riittää).
+
+1. Avaa tämän repositorion kansio [`lang`](../lang/) ja lataa oman kielesi tiedosto (`fi.json`). Jos sitä ei vielä ole, lataa `en.json`.
+2. Siirrä se FS Passion -asennuksesi omien kielten kansioon (painike **Avaa omien kielten kansio** kohdassa Asetukset → Ulkoasu → Kieli avaa sen):
+   - asennettu versio: `%APPDATA%\FSPassion\lang\`;
+   - siirrettävä versio: `data\lang\` tiedoston `FSPassion.exe` vieressä.
+3. Nimeä se uudelleen, esimerkiksi `fi_corrected.json` (nimi ei saa alkaa merkillä `_`). Älä muuta tiedoston alussa olevaa riviä `"code"`: silloin tiedostosi korvaa sisäänrakennetun kielen. Jos aloitat tiedostosta `en.json`: kirjoita riville `"code"` `"fi"` ja riville `"name"` `"Suomi"`.
+4. Korjaa lainausmerkeissä olevat tekstit `:`-merkkien oikealla puolella ja tallenna tiedosto (merkistö UTF-8). Jätä vasemmalla olevat avaimet ja aaltosulkeissa olevat sanat, kuten `{count}`, ennalleen.
+5. Käynnistä FS Passion uudelleen ja valitse kielesi kohdassa Asetukset → Ulkoasu → Kieli: se on merkitty ”oma”. Tarkista korjauksesi käyttöliittymässä.
+6. Lähetä korjattu tiedosto välilehdellä [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): luo issue, jonka otsikko on esimerkiksi ”Translation: Suomi”, ja liitä tiedosto (pakkaa se ZIP-tiedostoon, jos GitHub ei hyväksy päätettä `.json`).
 
 ## Ilmoita ongelmasta, ehdota ideaa
 

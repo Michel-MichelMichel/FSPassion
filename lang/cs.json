@@ -335,6 +335,7 @@
       "launch_exe": "Spustitelný soubor",
       "launch_help": "Automaticky zvolí správnou metodu (Steam, Epic Games, Microsoft Store, Xbox nebo spustitelný soubor). Další dvě jsou nouzová řešení.",
       "minimize_on_launch": "Minimalizovat FS Passion při spuštění hry",
+      "minimize_on_launch_help": "Do oznamovací oblasti, pokud je zapnuto „Zavírat do oznamovací oblasti“ (Aplikace → Okno), jinak na hlavní panel.",
       "args_title": "Spouštěcí parametry",
       "args_show": "Zobrazit spouštěcí parametry",
       "args_hide": "Skrýt spouštěcí parametry",

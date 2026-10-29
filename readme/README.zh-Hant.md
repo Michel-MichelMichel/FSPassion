@@ -23,6 +23,23 @@ FS Passion 的核心就是以驚人的效率解決這個問題：點幾下即可
 
 > ⚠️ 專案仍在開發中（版本：見 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 頁面）。試用前請完整備份你的模組資料夾。此 GitHub 頁面是唯一的官方下載位置。
 
+## 螢幕截圖
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="某個遊戲版本的全部模組、資訊卡片和多選" /></a><br />某個遊戲版本的全部模組、資訊卡片和多選</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="配置：一鍵切換（淺色主題，法文介面）" /></a><br />配置：一鍵切換（淺色主題，法文介面）</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="滑鼠停留時的大圖預覽（FS22，Synthwave '84 主題）" /></a><br />滑鼠停留時的大圖預覽（FS22，Synthwave '84 主題）</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="主題和語言（波蘭文介面）" /></a><br />主題和語言（波蘭文介面）</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="位於多個磁碟上的模組資料夾" /></a><br />位於多個磁碟上的模組資料夾</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="設定：通知區域、網際網路連線、備份（葡萄牙文介面）" /></a><br />設定：通知區域、網際網路連線、備份（葡萄牙文介面）</td>
+</tr>
+</table>
+
 ## 下載
 
 在 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 頁面：
@@ -35,7 +52,16 @@ FS Passion 的核心就是以驚人的效率解決這個問題：點幾下即可
 
 ## 協助改進翻譯
 
-歡迎母語者提出修正。逐步指南 (English)：[Help improve the translations](../README.md#help-improve-the-translations)。
+翻譯目前還是第一版：非常歡迎母語使用者提供修正，現有語言和即將推出的語言都可以。不需要任何程式設計知識，只要一個文字編輯器（記事本就可以）。
+
+1. 在本儲存庫中開啟 [`lang`](../lang/) 資料夾，下載你的語言檔（`zh-Hant.json`）。如果還沒有，就下載 `en.json`。
+2. 把它放到 FS Passion 安裝的個人語言資料夾中（Settings → Display → Language 中的 **Open the personal languages folder** 按鈕可以開啟它）：
+   - 安裝版：`%APPDATA%\FSPassion\lang\`；
+   - 可攜版：`FSPassion.exe` 旁邊的 `data\lang\`。
+3. 重新命名檔案，例如 `zh-Hant_corrected.json`（檔名不能以 `_` 開頭）。不要修改檔案開頭的 `"code"` 行：這樣你的檔案就會取代內建語言。如果從 `en.json` 開始：在 `"code"` 行寫 `"zh-Hant"`，在 `"name"` 行寫 `"繁體中文"`。
+4. 修改 `:` 右側引號中的文字，然後儲存檔案（UTF-8 編碼）。左側的鍵以及大括號中的詞（如 `{count}`）保持不變。
+5. 重新啟動 FS Passion，在 Settings → Display → Language 中選擇你的語言：它會標示為「personal」。在介面中檢查你的修正。
+6. 在 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 分頁提交修正後的檔案：建立一個 issue，標題例如「Translation: 繁體中文」，並附上檔案（如果 GitHub 不接受 `.json` 副檔名，請壓縮為 ZIP）。
 
 ## 回報問題、提出建議
 

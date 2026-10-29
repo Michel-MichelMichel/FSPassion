@@ -313,6 +313,7 @@
       "launch_exe": "Programfil",
       "launch_help": "Automatiskt väljer rätt metod (Steam, Epic Games, Microsoft Store, Xbox eller programfil). De två andra är reservlösningar.",
       "minimize_on_launch": "Minimera FS Passion när spelet startar",
+      "minimize_on_launch_help": "Till meddelandefältet om ”Stäng till meddelandefältet” är på (Program → Fönster), annars till aktivitetsfältet.",
       "args_title": "Startparametrar",
       "args_show": "Visa startparametrar",
       "args_hide": "Dölj startparametrar",

@@ -23,6 +23,23 @@ Inima FS Passion rezolvă această problemă cu o eficiență surprinzătoare: c
 
 > ⚠️ Proiect în dezvoltare (versiune: vezi pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Fă o copie de siguranță completă a folderului de moduri înainte de a-l încerca. Această pagină GitHub este singura sursă oficială de descărcare.
 
+## Capturi de ecran
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Toate modurile unei versiuni a jocului, fișa de informații și selecția multiplă" /></a><br />Toate modurile unei versiuni a jocului, fișa de informații și selecția multiplă</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Configurații: schimbare dintr-un clic (temă deschisă, interfață în franceză)" /></a><br />Configurații: schimbare dintr-un clic (temă deschisă, interfață în franceză)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Previzualizare mare la trecerea cu mouse-ul (FS22, tema Synthwave '84)" /></a><br />Previzualizare mare la trecerea cu mouse-ul (FS22, tema Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Teme și limbi (interfață în poloneză)" /></a><br />Teme și limbi (interfață în poloneză)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Foldere de moduri pe mai multe discuri" /></a><br />Foldere de moduri pe mai multe discuri</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Setări: zona de notificare, conexiunea la Internet, copia de siguranță (interfață în portugheză)" /></a><br />Setări: zona de notificare, conexiunea la Internet, copia de siguranță (interfață în portugheză)</td>
+</tr>
+</table>
+
 ## Descărcare
 
 Pe pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Fișierele nu sunt încă semnate: la prima pornire, Windows SmartScreen poate a
 
 ## Ajută la îmbunătățirea traducerilor
 
-Corecturile vorbitorilor nativi sunt binevenite. Ghid pas cu pas (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Traducerile sunt o primă versiune: corecturile vorbitorilor nativi sunt foarte binevenite, pentru limbile actuale și pentru cele care urmează. Nu e nevoie să știi programare, doar un editor de text (Notepad e suficient).
+
+1. În acest depozit, deschide folderul [`lang`](../lang/) și descarcă fișierul limbii tale (`ro.json`). Dacă nu există încă, descarcă `en.json`.
+2. Pune-l în folderul de limbi personale al instalării tale FS Passion (butonul **Open the personal languages folder** din Settings → Display → Language îl deschide):
+   - versiunea instalată: `%APPDATA%\FSPassion\lang\`;
+   - versiunea portabilă: `data\lang\`, lângă `FSPassion.exe`.
+3. Redenumește-l, de exemplu `ro_corrected.json` (numele nu trebuie să înceapă cu `_`). Nu modifica linia `"code"` de la începutul fișierului: astfel fișierul tău înlocuiește limba inclusă. Dacă pornești de la `en.json`: scrie `"ro"` pe linia `"code"` și `"Română"` pe linia `"name"`.
+4. Corectează textele dintre ghilimele, din dreapta semnelor `:`, și salvează fișierul (codificare UTF-8). Lasă neschimbate cheile din stânga și cuvintele dintre acolade, precum `{count}`.
+5. Repornește FS Passion și alege-ți limba din Settings → Display → Language: este marcată „personal”. Verifică-ți corecturile în interfață.
+6. Trimite fișierul corectat în fila [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): creează un issue cu un titlu precum „Translation: Română” și atașează fișierul (arhivat ZIP dacă GitHub refuză extensia `.json`).
 
 ## Raportează o problemă, propune o idee
 

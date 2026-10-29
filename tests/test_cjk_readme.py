@@ -85,7 +85,8 @@ def test_lang_metadata_names_every_language():
 
 def test_translations_follow_the_english_structure():
     """Chaque README traduit suit README.md : même nombre de sections, mêmes points,
-    point « Langues » avec les langues à venir, lien d'aide, point SignPath et liens
+    point « Langues » avec les langues à venir, aide aux traductions en six étapes,
+    captures d'écran, point SignPath et liens
     vers toutes les langues (le français est rédigé à la main et doit suivre aussi)."""
     import readme_translations as rt
 
@@ -106,8 +107,12 @@ def test_translations_follow_the_english_structure():
         languages = bullets[8]  # le point « Langues » suit les huit premiers points, comme dans README.md
         assert re.search(rf"(?<!\d){len(rt.SOON)}(?!\d)", languages), path.name
         assert all(rt.NAMES[c] in languages for c in rt.SOON), path.name
-        assert "help-improve-the-translations" in text, path.name
+        # Section d'aide complète (0.9.10) : six étapes, dossier lang et chemin des langues personnelles.
+        assert "](../lang/)" in text and "%APPDATA%\\FSPassion\\lang\\" in text, path.name
+        assert all(f"\n{n}. " in text for n in range(1, 7)), path.name
+        # Galerie : les six captures d'écran.
+        assert all(f"../assets/screenshots/{name}.webp" in text for name in rt.SHOT_FILES), path.name
         assert "SignPath" in text, path.name
         own = path.name[len("README."):-len(".md")]
         assert all(f"README.{c}.md" in text for c in rt.NAMES if c != own), path.name
-        assert "{" not in text, path.name
+        assert "{" not in text.replace("`{count}`", ""), path.name

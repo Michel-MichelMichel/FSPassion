@@ -347,6 +347,7 @@ def run_window(core: Core, server: Server, args: argparse.Namespace) -> bool:
 
     if tray.start():
         core.tray = tray
+        core.hide_to_tray = to_tray
         log.info("Icône de la zone de notification prête")
 
     webview.start(
@@ -357,6 +358,7 @@ def run_window(core: Core, server: Server, args: argparse.Namespace) -> bool:
     )
     tray.stop()
     core.tray = None
+    core.hide_to_tray = None
     return True
 
 

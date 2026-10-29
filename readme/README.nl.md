@@ -23,6 +23,23 @@ Het hart van FS Passion lost dit probleem verrassend efficiënt op: maak in een 
 
 > ⚠️ Project in ontwikkeling (versie: zie de pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Maak een volledige back-up van je modmap voordat je het probeert. Deze GitHub-pagina is de enige officiële downloadlocatie.
 
+## Schermafbeeldingen
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Alle mods van een spelversie, infokaart en meervoudige selectie" /></a><br />Alle mods van een spelversie, infokaart en meervoudige selectie</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Setups: wisselen met één klik (licht thema, Franse interface)" /></a><br />Setups: wisselen met één klik (licht thema, Franse interface)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Grote voorvertoning bij aanwijzen met de muis (FS22, thema Synthwave '84)" /></a><br />Grote voorvertoning bij aanwijzen met de muis (FS22, thema Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Thema's en talen (Poolse interface)" /></a><br />Thema's en talen (Poolse interface)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Modmappen op meerdere schijven" /></a><br />Modmappen op meerdere schijven</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Instellingen: systeemvak, internetverbinding, back-up (Portugese interface)" /></a><br />Instellingen: systeemvak, internetverbinding, back-up (Portugese interface)</td>
+</tr>
+</table>
+
 ## Downloaden
 
 Op de pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ De bestanden zijn nog niet ondertekend: bij de eerste start kan Windows SmartScr
 
 ## Help de vertalingen verbeteren
 
-Correcties van moedertaalsprekers zijn welkom. Stapsgewijze handleiding (English): [Help improve the translations](../README.md#help-improve-the-translations).
+De vertalingen zijn een eerste versie: correcties van moedertaalsprekers zijn van harte welkom, voor de huidige talen en voor de talen die nog komen. Programmeerkennis is niet nodig, alleen een teksteditor (Kladblok volstaat).
+
+1. Open in deze repository de map [`lang`](../lang/) en download het bestand van je taal (`nl.json`). Staat het er nog niet, download dan `en.json`.
+2. Zet het in de map met eigen talen van je FS Passion-installatie (de knop **Map met eigen talen openen** onder Instellingen → Weergave → Taal opent die map):
+   - geïnstalleerde versie: `%APPDATA%\FSPassion\lang\`;
+   - draagbare versie: `data\lang\`, naast `FSPassion.exe`.
+3. Geef het een andere naam, bijvoorbeeld `nl_corrected.json` (de naam mag niet met `_` beginnen). Wijzig de regel `"code"` bovenaan het bestand niet: je bestand vervangt dan de meegeleverde taal. Begin je met `en.json`: schrijf `"nl"` op de regel `"code"` en `"Nederlands"` op de regel `"name"`.
+4. Verbeter de teksten tussen aanhalingstekens, rechts van de `:`-tekens, en sla het bestand op (codering UTF-8). Laat de sleutels links en de woorden tussen accolades zoals `{count}` ongewijzigd.
+5. Start FS Passion opnieuw en kies je taal onder Instellingen → Weergave → Taal: die is gemarkeerd als „eigen”. Controleer je correcties in de interface.
+6. Stuur het verbeterde bestand via het tabblad [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): maak een issue aan met bijvoorbeeld de titel „Translation: Nederlands” en voeg het bestand toe (in een ZIP als GitHub de extensie `.json` weigert).
 
 ## Een probleem melden, een idee voorstellen
 

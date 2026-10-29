@@ -23,6 +23,23 @@ FS Passion の中心は、この問題を驚くほど効率よく解決するこ
 
 > ⚠️ 開発中のプロジェクトです（バージョン：[Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) ページを参照）。試す前に MOD フォルダーを完全にバックアップしてください。公式のダウンロード先はこの GitHub ページだけです。
 
+## スクリーンショット
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="ゲームバージョンのすべての MOD、情報カード、複数選択" /></a><br />ゲームバージョンのすべての MOD、情報カード、複数選択</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="構成：ワンクリックで切り替え（ライトテーマ、フランス語の画面）" /></a><br />構成：ワンクリックで切り替え（ライトテーマ、フランス語の画面）</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="マウスを重ねると大きなプレビュー（FS22、Synthwave '84 テーマ）" /></a><br />マウスを重ねると大きなプレビュー（FS22、Synthwave '84 テーマ）</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="テーマと言語（ポーランド語の画面）" /></a><br />テーマと言語（ポーランド語の画面）</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="複数ドライブ上の MOD フォルダー" /></a><br />複数ドライブ上の MOD フォルダー</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="設定：通知領域、インターネット接続、バックアップ（ポルトガル語の画面）" /></a><br />設定：通知領域、インターネット接続、バックアップ（ポルトガル語の画面）</td>
+</tr>
+</table>
+
 ## ダウンロード
 
 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) ページから：
@@ -35,7 +52,16 @@ FS Passion の中心は、この問題を驚くほど効率よく解決するこ
 
 ## 翻訳の改善にご協力ください
 
-ネイティブスピーカーによる修正を歓迎します。手順 (English): [Help improve the translations](../README.md#help-improve-the-translations)。
+翻訳はまだ最初の版です。ネイティブスピーカーによる修正を大歓迎します。現在の言語も、これから追加される言語も対象です。プログラミングの知識は不要で、テキストエディター（メモ帳で十分）があれば作業できます。
+
+1. このリポジトリの [`lang`](../lang/) フォルダーを開き、自分の言語のファイル（`ja.json`）をダウンロードします。まだない場合は `en.json` をダウンロードします。
+2. FS Passion のインストールにある個人用言語フォルダーにファイルを置きます（Settings → Display → Language の **Open the personal languages folder** ボタンで開けます）。
+   - インストール版：`%APPDATA%\FSPassion\lang\`
+   - ポータブル版：`FSPassion.exe` の隣の `data\lang\`
+3. ファイル名を変更します。例：`ja_corrected.json`（名前を `_` で始めないでください）。ファイル先頭の `"code"` 行は変更しないでください。そうすれば、このファイルが内蔵の言語を置き換えます。`en.json` から始める場合は、`"code"` 行に `"ja"`、`"name"` 行に `"日本語"` と書きます。
+4. `:` の右側にある引用符内のテキストを修正し、ファイルを保存します（文字コード UTF-8）。左側のキーと、`{count}` のような波かっこ内の語は変更しないでください。
+5. FS Passion を再起動し、Settings → Display → Language で自分の言語を選びます。言語には「personal」と表示されます。画面で修正内容を確認してください。
+6. 修正したファイルを [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) タブから送ってください。「Translation: 日本語」のようなタイトルで issue を作成し、ファイルを添付します（GitHub が `.json` 拡張子を受け付けない場合は ZIP に圧縮してください）。
 
 ## 問題の報告・アイデアの提案
 

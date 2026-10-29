@@ -2,6 +2,20 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.10 — 29 octobre 2026 — FS Passion se range dans la zone de notification au lancement du jeu, repère des mods communs, captures d'écran du README
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui change
+
+1. **Lancer le jeu** : FS Passion se range dans la zone de notification (plus de bouton dans la barre des tâches) quand « Fermer dans la zone de notification » est actif ; sinon il se réduit dans la barre des tâches, comme avant. Il revient à la fermeture du jeu (réglage « Revenir au premier plan quand le jeu se ferme »). Le réglage « Réduire FS Passion au lancement du jeu » (Paramètres → Jeu et chemins) l'explique sous son interrupteur.
+2. **Listes 2 et 3** : le repère « aussi dans l'autre liste » est posé sur la miniature, en bas à droite (8 px, couleur du thème, sur une petite pastille sombre), comme sur les tuiles de la liste 1 :
+   - liste 2 (mods de la partie) : anneau = le mod est aussi dans les mods communs ;
+   - liste 3 (mods communs) : point plein = le mod est aussi dans la partie en cours.
+   - Correctif : avec les thèmes à effet néon (Synthwave '84…), la lueur effaçait l'anneau, qui n'apparaissait plus que comme une tache sombre (listes 1 et 2).
+3. **Installeur** : la case du menu Démarrer s'intitule « Ajouter FS Passion au menu Démarrer (liste « Toutes les applications ») ». Le raccourci était bien créé en 0.9.9 (`%APPDATA%\Microsoft\Windows\Start Menu\Programs\FS Passion.lnk`) ; Windows ne permet pas à un installeur de l'épingler dans la partie « Épinglé ».
+4. **README** : galerie de six captures d'écran (`assets/screenshots/`, WebP), dans les 26 README ; la section « Aider à améliorer les traductions » est complète (six étapes) dans les 24 traductions et en français, avec les libellés de l'interface de chaque langue.
+
 ## 0.9.9 — 29 octobre 2026 — fermeture fiable, fiche des maps sous l'en-tête, listes des thèmes bicolores, raccourcis
 
 **Aucun fichier du jeu ni des mods n'est touché.**

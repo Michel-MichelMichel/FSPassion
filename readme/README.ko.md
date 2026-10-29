@@ -23,6 +23,23 @@ FS Passion의 핵심은 이 문제를 놀라울 만큼 효율적으로 해결하
 
 > ⚠️ 개발 중인 프로젝트입니다(버전: [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 페이지 참고). 사용해 보기 전에 모드 폴더를 완전히 백업하세요. 공식 다운로드 위치는 이 GitHub 페이지뿐입니다.
 
+## 스크린샷
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="게임 버전의 모든 모드, 정보 카드, 여러 항목 선택" /></a><br />게임 버전의 모든 모드, 정보 카드, 여러 항목 선택</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="구성: 클릭 한 번으로 전환 (밝은 테마, 프랑스어 화면)" /></a><br />구성: 클릭 한 번으로 전환 (밝은 테마, 프랑스어 화면)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="마우스를 올리면 큰 미리 보기 (FS22, Synthwave '84 테마)" /></a><br />마우스를 올리면 큰 미리 보기 (FS22, Synthwave '84 테마)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="테마와 언어 (폴란드어 화면)" /></a><br />테마와 언어 (폴란드어 화면)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="여러 드라이브의 모드 폴더" /></a><br />여러 드라이브의 모드 폴더</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="설정: 알림 영역, 인터넷 연결, 백업 (포르투갈어 화면)" /></a><br />설정: 알림 영역, 인터넷 연결, 백업 (포르투갈어 화면)</td>
+</tr>
+</table>
+
 ## 다운로드
 
 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 페이지에서:
@@ -35,7 +52,16 @@ FS Passion의 핵심은 이 문제를 놀라울 만큼 효율적으로 해결하
 
 ## 번역 개선에 도움 주기
 
-원어민의 수정을 환영합니다. 단계별 안내 (English): [Help improve the translations](../README.md#help-improve-the-translations).
+번역은 아직 첫 버전입니다. 원어민의 수정을 언제나 환영합니다. 현재 언어와 앞으로 추가될 언어 모두 해당됩니다. 프로그래밍 지식은 필요 없고 텍스트 편집기(메모장이면 충분)만 있으면 됩니다.
+
+1. 이 저장소에서 [`lang`](../lang/) 폴더를 열고 자신의 언어 파일(`ko.json`)을 내려받습니다. 아직 없다면 `en.json`을 내려받습니다.
+2. FS Passion 설치의 개인 언어 폴더에 파일을 넣습니다(Settings → Display → Language의 **Open the personal languages folder** 버튼으로 열 수 있습니다).
+   - 설치 버전: `%APPDATA%\FSPassion\lang\`;
+   - 포터블 버전: `FSPassion.exe` 옆의 `data\lang\`.
+3. 파일 이름을 바꿉니다. 예: `ko_corrected.json` (이름은 `_`로 시작하면 안 됩니다). 파일 맨 위의 `"code"` 줄은 바꾸지 마세요. 그러면 이 파일이 기본 제공 언어를 대신합니다. `en.json`에서 시작한다면 `"code"` 줄에 `"ko"`, `"name"` 줄에 `"한국어"`을 적습니다.
+4. `:` 기호 오른쪽의 따옴표 안 텍스트를 고치고 파일을 저장합니다(UTF-8 인코딩). 왼쪽의 키와 `{count}`처럼 중괄호 안에 있는 단어는 그대로 두세요.
+5. FS Passion을 다시 시작하고 Settings → Display → Language에서 언어를 선택합니다. 해당 언어에는 'personal' 표시가 붙습니다. 화면에서 수정 내용을 확인하세요.
+6. 수정한 파일을 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 탭으로 보내 주세요. 'Translation: 한국어' 같은 제목으로 issue를 만들고 파일을 첨부합니다(GitHub가 `.json` 확장자를 거부하면 ZIP으로 압축하세요).
 
 ## 문제 신고, 아이디어 제안
 

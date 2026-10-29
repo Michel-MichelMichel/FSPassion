@@ -23,6 +23,23 @@ Az FS Passion lényege, hogy ezt a problémát meglepő hatékonysággal oldja m
 
 > ⚠️ Fejlesztés alatt álló projekt (verzió: lásd a [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) oldalt). Kipróbálás előtt készíts teljes biztonsági mentést a modmappádról. Ez a GitHub-oldal az egyetlen hivatalos letöltési hely.
 
+## Képernyőképek
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Egy játékverzió összes modja, információs kártya és többszörös kijelölés" /></a><br />Egy játékverzió összes modja, információs kártya és többszörös kijelölés</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Összeállítások: váltás egy kattintással (világos téma, francia felület)" /></a><br />Összeállítások: váltás egy kattintással (világos téma, francia felület)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Nagy előnézet, ha az egeret a mod fölé viszi (FS22, Synthwave '84 téma)" /></a><br />Nagy előnézet, ha az egeret a mod fölé viszi (FS22, Synthwave '84 téma)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Témák és nyelvek (lengyel felület)" /></a><br />Témák és nyelvek (lengyel felület)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Modmappák több meghajtón" /></a><br />Modmappák több meghajtón</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Beállítások: értesítési terület, internetkapcsolat, biztonsági mentés (portugál felület)" /></a><br />Beállítások: értesítési terület, internetkapcsolat, biztonsági mentés (portugál felület)</td>
+</tr>
+</table>
+
 ## Letöltés
 
 A [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) oldalon:
@@ -35,7 +52,16 @@ A fájlok még nincsenek aláírva: első indításkor a Windows SmartScreen fig
 
 ## Segíts a fordítások javításában
 
-Az anyanyelvi beszélők javításait szívesen fogadjuk. Lépésről lépésre útmutató (English): [Help improve the translations](../README.md#help-improve-the-translations).
+A fordítások első változatok: az anyanyelvi beszélők javításait nagy örömmel fogadjuk, a jelenlegi és a hamarosan érkező nyelvekhez is. Nem kell programozni tudni, csak egy szövegszerkesztő kell (a Jegyzettömb is megfelel).
+
+1. Ebben a tárolóban nyisd meg a [`lang`](../lang/) mappát, és töltsd le a nyelved fájlját (`hu.json`). Ha még nincs ott, töltsd le az `en.json` fájlt.
+2. Tedd az FS Passion-telepítésed saját nyelveinek mappájába (a Settings → Display → Language alatti **Open the personal languages folder** gomb megnyitja):
+   - telepített változat: `%APPDATA%\FSPassion\lang\`;
+   - hordozható változat: `data\lang\`, a `FSPassion.exe` mellett.
+3. Nevezd át, például `hu_corrected.json` névre (a név nem kezdődhet `_` jellel). A fájl elején lévő `"code"` sort ne módosítsd: így a fájlod a beépített nyelv helyére lép. Ha az `en.json` fájlból indulsz: a `"code"` sorba írd be: `"hu"`, a `"name"` sorba: `"Magyar"`.
+4. Javítsd ki az idézőjelek közötti szövegeket a `:` jelektől jobbra, majd mentsd a fájlt (UTF-8 kódolással). A bal oldali kulcsokat és a kapcsos zárójelek közötti szavakat, például `{count}`, hagyd változatlanul.
+5. Indítsd újra az FS Passiont, és válaszd ki a nyelvedet itt: Settings → Display → Language. A nyelv „personal” jelölést kap. Ellenőrizd a javításaidat a felületen.
+6. Küldd el a javított fájlt az [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) lapon: hozz létre egy issue-t például „Translation: Magyar” címmel, és csatold a fájlt (ZIP-be tömörítve, ha a GitHub nem fogadja el a `.json` kiterjesztést).
 
 ## Hiba bejelentése, ötlet javaslása
 

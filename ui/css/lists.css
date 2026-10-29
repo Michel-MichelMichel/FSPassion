@@ -211,8 +211,10 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12);
 }
 .tile-marks:empty { display: none; }
-.mark { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
-.mark-common { background: transparent; box-shadow: inset 0 0 0 2.5px var(--accent); }
+/* L'anneau est une bordure, pas une ombre : la lueur des thèmes néon (ombre
+   sur .mark, themes.css) ne l'efface plus. */
+.mark { flex: none; box-sizing: border-box; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+.mark-common { background: transparent; border: 2.5px solid var(--accent); }
 
 .tile-name {
   margin: 12px 4px 0;
@@ -592,9 +594,25 @@
 .row-name { font-size: var(--t-row); color: var(--text-1); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row-sub { font-size: var(--t-xs); color: var(--text-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row-badge { flex: none; color: var(--accent); display: grid; }
-.row-marks { flex: none; display: flex; gap: 5px; }
-.row-marks .mark { width: 10px; height: 10px; }
-.row-marks .mark-common { box-shadow: inset 0 0 0 2.5px var(--accent); }
+/* Listes 2 et 3 : repère de 8 px sur la miniature (liste 2 : anneau = aussi
+   dans les mods communs ; liste 3 : point plein = aussi dans la partie). */
+.row-marks {
+  position: absolute;
+  z-index: 2;
+  right: 3px;
+  bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 8px;
+  background: rgba(24, 24, 24, .72);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12);
+}
+.row-marks .mark { width: 8px; height: 8px; }
+.row-marks .mark-common { border-width: 2px; }
 .row-marks:empty { display: none; }
 .row-tile.is-selected { background: var(--fill-3); }
 .row-tile.is-selected::before { opacity: 1; scale: 1; }

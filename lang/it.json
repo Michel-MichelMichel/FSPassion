@@ -313,6 +313,7 @@
       "launch_exe": "Eseguibile",
       "launch_help": "Automatica sceglie il metodo giusto (Steam, Epic Games, Microsoft Store, Xbox o eseguibile). Le altre due sono soluzioni di ripiego.",
       "minimize_on_launch": "Riduci FS Passion a icona all'avvio del gioco",
+      "minimize_on_launch_help": "Nell'area di notifica se «Chiudi nell'area di notifica» è attivo (Applicazione → Finestra), altrimenti nella barra delle applicazioni.",
       "args_title": "Argomenti di avvio",
       "args_show": "Mostra gli argomenti di avvio",
       "args_hide": "Nascondi gli argomenti di avvio",

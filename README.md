@@ -23,6 +23,23 @@ The heart of FS Passion is to solve this problem with disarming efficiency: crea
 
 > ⚠️ Work in progress (version: see the [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) page). Make a full backup of your mods folder before trying it. This GitHub page is the only official download location.
 
+## Screenshots
+
+<table>
+<tr>
+<td width="50%"><a href="assets/screenshots/1-all-mods.webp"><img src="assets/screenshots/1-all-mods.webp" alt="All mods of a game version, info card and multiple selection" /></a><br />All mods of a game version, info card and multiple selection</td>
+<td width="50%"><a href="assets/screenshots/2-setups.webp"><img src="assets/screenshots/2-setups.webp" alt="Setups: switch in one click (light theme, French interface)" /></a><br />Setups: switch in one click (light theme, French interface)</td>
+</tr>
+<tr>
+<td width="50%"><a href="assets/screenshots/3-preview.webp"><img src="assets/screenshots/3-preview.webp" alt="Large preview on mouse hover (FS22, Synthwave '84 theme)" /></a><br />Large preview on mouse hover (FS22, Synthwave '84 theme)</td>
+<td width="50%"><a href="assets/screenshots/4-themes-languages.webp"><img src="assets/screenshots/4-themes-languages.webp" alt="Themes and languages (Polish interface)" /></a><br />Themes and languages (Polish interface)</td>
+</tr>
+<tr>
+<td width="50%"><a href="assets/screenshots/5-several-drives.webp"><img src="assets/screenshots/5-several-drives.webp" alt="Mods folders on several drives" /></a><br />Mods folders on several drives</td>
+<td width="50%"><a href="assets/screenshots/6-settings.webp"><img src="assets/screenshots/6-settings.webp" alt="Settings: notification area, Internet connection, backup (Portuguese interface)" /></a><br />Settings: notification area, Internet connection, backup (Portuguese interface)</td>
+</tr>
+</table>
+
 ## Download
 
 On the [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) page:
@@ -37,11 +54,11 @@ The files are not signed yet: on first launch, Windows may show “Windows prote
 
 Translations are a first version: corrections from native speakers are very welcome, for the current languages and for the coming ones. No coding knowledge is needed, only a text editor (Notepad is fine).
 
-1. In this repository, open the [`lang`](lang/) folder and download the file of your language (for example `de.json`).
+1. In this repository, open the [`lang`](lang/) folder and download the file of your language (for example `de.json`). If it is not there yet, download `en.json`.
 2. Put it in the personal languages folder of your FS Passion installation (the **Open the personal languages folder** button in Settings → Display → Language opens it):
    - installed version: `%APPDATA%\FSPassion\lang\`;
    - portable version: `data\lang\` next to `FSPassion.exe`.
-3. Rename it, for example `de_corrected.json` (the name must not start with `_`). Do not change the `"code"` line at the top of the file: your file then replaces the built-in language.
+3. Rename it, for example `de_corrected.json` (the name must not start with `_`). Do not change the `"code"` line at the top of the file: your file then replaces the built-in language. Starting from `en.json` for a new language: write its code on the `"code"` line (for example `"hu"`) and its name on the `"name"` line (for example `"Magyar"`).
 4. Correct the texts between quotes, on the right of the `:` signs, and save the file (UTF-8 encoding). Leave the keys on the left, and the words between braces like `{count}`, unchanged.
 5. Restart FS Passion and select your language in Settings → Display → Language: it is marked “personal”. Check your corrections in the interface.
 6. Send the corrected file in the [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) tab: create an issue titled for example “Translation: Deutsch”, and attach the file (zip it if GitHub refuses the `.json` extension).

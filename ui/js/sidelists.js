@@ -189,9 +189,10 @@ class RowList {
     }, art, text);
     if (it.mod && it.mod.is_map) el.append(h('span', { class: 'row-badge', 'data-i18n-tip': 'mod.map' }, icon('map', 'ico-s')));
     if (it.mod && isDemo()) el.append(h('span', { class: 'row-badge', 'data-i18n-tip': 'demo.badge' }, icon('flask-conical', 'ico-s')));
+    // Repère posé sur la miniature, en bas à droite (comme les tuiles de la liste 1).
     el._marks = h('span', { class: 'row-marks' });
     el._marksSig = '';
-    el.append(el._marks);
+    art.append(el._marks);
     if (it.missing) {
       el.dataset.tipText = t('lists.missing_tip', { name: it.id });
       el.append(h('button', {

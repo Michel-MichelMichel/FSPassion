@@ -23,6 +23,23 @@ Das Herz von FS Passion löst dieses Problem verblüffend einfach: Erstelle mit 
 
 > ⚠️ Projekt in Entwicklung (Version: siehe Seite [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Lege vor dem Ausprobieren eine vollständige Sicherung deines Mod-Ordners an. Diese GitHub-Seite ist die einzige offizielle Download-Quelle.
 
+## Screenshots
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Alle Mods einer Spielversion, Infokarte und Mehrfachauswahl" /></a><br />Alle Mods einer Spielversion, Infokarte und Mehrfachauswahl</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Setups: Wechsel mit einem Klick (helles Design, französische Oberfläche)" /></a><br />Setups: Wechsel mit einem Klick (helles Design, französische Oberfläche)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Große Vorschau beim Überfahren mit der Maus (FS22, Design Synthwave '84)" /></a><br />Große Vorschau beim Überfahren mit der Maus (FS22, Design Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Designs und Sprachen (polnische Oberfläche)" /></a><br />Designs und Sprachen (polnische Oberfläche)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Mod-Ordner auf mehreren Laufwerken" /></a><br />Mod-Ordner auf mehreren Laufwerken</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Einstellungen: Infobereich, Internetverbindung, Sicherung (portugiesische Oberfläche)" /></a><br />Einstellungen: Infobereich, Internetverbindung, Sicherung (portugiesische Oberfläche)</td>
+</tr>
+</table>
+
 ## Download
 
 Auf der Seite [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Die Dateien sind noch nicht signiert: Beim ersten Start kann Windows SmartScreen
 
 ## Übersetzungen verbessern
 
-Korrekturen von Muttersprachlern sind willkommen. Die Anleitung (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Die Übersetzungen sind eine erste Fassung: Korrekturen von Muttersprachlern sind sehr willkommen, für die aktuellen und für die kommenden Sprachen. Programmierkenntnisse sind nicht nötig, nur ein Texteditor (der Windows-Editor genügt).
+
+1. Öffne in diesem Repository den Ordner [`lang`](../lang/) und lade die Datei deiner Sprache herunter (`de.json`). Ist sie noch nicht vorhanden, lade `en.json` herunter.
+2. Lege sie in den Ordner der persönlichen Sprachen deiner FS-Passion-Installation (die Schaltfläche **Ordner der persönlichen Sprachen öffnen** unter Einstellungen → Darstellung → Sprache öffnet ihn):
+   - installierte Version: `%APPDATA%\FSPassion\lang\`;
+   - portable Version: `data\lang\` neben `FSPassion.exe`.
+3. Benenne sie um, zum Beispiel in `de_corrected.json` (der Name darf nicht mit `_` beginnen). Ändere die Zeile `"code"` oben in der Datei nicht: Deine Datei ersetzt dann die mitgelieferte Sprache. Wenn du von `en.json` ausgehst: Schreibe `"de"` in die Zeile `"code"` und `"Deutsch"` in die Zeile `"name"`.
+4. Korrigiere die Texte in Anführungszeichen rechts der `:`-Zeichen und speichere die Datei (Kodierung UTF-8). Lass die Schlüssel links und die Wörter in geschweiften Klammern wie `{count}` unverändert.
+5. Starte FS Passion neu und wähle deine Sprache unter Einstellungen → Darstellung → Sprache: Sie ist als „persönlich“ markiert. Prüfe deine Korrekturen in der Oberfläche.
+6. Sende die korrigierte Datei im Reiter [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): Erstelle ein Issue, zum Beispiel mit dem Titel „Translation: Deutsch“, und hänge die Datei an (als ZIP, falls GitHub die Endung `.json` ablehnt).
 
 ## Problem melden, Idee vorschlagen
 

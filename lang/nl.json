@@ -313,6 +313,7 @@
       "launch_exe": "Uitvoerbaar bestand",
       "launch_help": "Automatisch kiest de juiste methode (Steam, Epic Games, Microsoft Store, Xbox of uitvoerbaar bestand). De andere twee zijn noodoplossingen.",
       "minimize_on_launch": "FS Passion minimaliseren als het spel start",
+      "minimize_on_launch_help": "Naar het systeemvak als „Sluiten naar het systeemvak” aan staat (Toepassing → Venster), anders naar de taakbalk.",
       "args_title": "Startparameters",
       "args_show": "Startparameters tonen",
       "args_hide": "Startparameters verbergen",

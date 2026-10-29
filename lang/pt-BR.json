@@ -313,6 +313,7 @@
       "launch_exe": "Executável",
       "launch_help": "Automático escolhe o método certo (Steam, Epic Games, Microsoft Store, Xbox ou executável). Os outros dois são alternativas de emergência.",
       "minimize_on_launch": "Minimizar o FS Passion quando o jogo iniciar",
+      "minimize_on_launch_help": "Na área de notificação se “Fechar para a área de notificação” estiver ativado (Aplicativo → Janela); senão, na barra de tarefas.",
       "args_title": "Argumentos de inicialização",
       "args_show": "Mostrar os argumentos de inicialização",
       "args_hide": "Ocultar os argumentos de inicialização",

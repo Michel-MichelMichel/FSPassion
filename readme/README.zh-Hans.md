@@ -23,6 +23,23 @@ FS Passion 的核心就是以惊人的效率解决这个问题：点几下即可
 
 > ⚠️ 项目仍在开发中（版本：见 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 页面）。试用前请完整备份你的模组文件夹。此 GitHub 页面是唯一的官方下载地址。
 
+## 截图
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="某个游戏版本的全部模组、信息卡片和多选" /></a><br />某个游戏版本的全部模组、信息卡片和多选</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="配置：一键切换（浅色主题，法语界面）" /></a><br />配置：一键切换（浅色主题，法语界面）</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="鼠标悬停时的大图预览（FS22，Synthwave '84 主题）" /></a><br />鼠标悬停时的大图预览（FS22，Synthwave '84 主题）</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="主题和语言（波兰语界面）" /></a><br />主题和语言（波兰语界面）</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="位于多个硬盘上的模组文件夹" /></a><br />位于多个硬盘上的模组文件夹</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="设置：通知区域、互联网连接、备份（葡萄牙语界面）" /></a><br />设置：通知区域、互联网连接、备份（葡萄牙语界面）</td>
+</tr>
+</table>
+
 ## 下载
 
 在 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 页面：
@@ -35,7 +52,16 @@ FS Passion 的核心就是以惊人的效率解决这个问题：点几下即可
 
 ## 帮助改进翻译
 
-欢迎母语者提出修正。分步指南 (English)：[Help improve the translations](../README.md#help-improve-the-translations)。
+翻译还只是第一版：非常欢迎母语使用者提出修改，现有语言和即将推出的语言都可以。不需要任何编程知识，只要一个文本编辑器（记事本就行）。
+
+1. 在本仓库中打开 [`lang`](../lang/) 文件夹，下载你的语言文件（`zh-Hans.json`）。如果还没有，就下载 `en.json`。
+2. 把它放到 FS Passion 安装的个人语言文件夹中（Settings → Display → Language 中的 **Open the personal languages folder** 按钮可以打开它）：
+   - 安装版：`%APPDATA%\FSPassion\lang\`；
+   - 便携版：`FSPassion.exe` 旁边的 `data\lang\`。
+3. 重命名文件，例如 `zh-Hans_corrected.json`（文件名不能以 `_` 开头）。不要修改文件开头的 `"code"` 行：这样你的文件就会替换内置语言。如果从 `en.json` 开始：在 `"code"` 行写 `"zh-Hans"`，在 `"name"` 行写 `"简体中文"`。
+4. 修改 `:` 右侧引号中的文字，然后保存文件（UTF-8 编码）。左侧的键以及花括号中的词（如 `{count}`）保持不变。
+5. 重启 FS Passion，在 Settings → Display → Language 中选择你的语言：它会标为“personal”。在界面中检查你的修改。
+6. 在 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 标签页提交修改后的文件：新建一个 issue，标题例如“Translation: 简体中文”，并附上文件（如果 GitHub 不接受 `.json` 扩展名，请压缩为 ZIP）。
 
 ## 报告问题、提出建议
 

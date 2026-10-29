@@ -313,6 +313,7 @@
       "launch_exe": "Programfil",
       "launch_help": "Automatisk velger riktig metode (Steam, Epic Games, Microsoft Store, Xbox eller programfil). De to andre er nødløsninger.",
       "minimize_on_launch": "Minimer FS Passion når spillet starter",
+      "minimize_on_launch_help": "Til varslingsområdet hvis «Lukk til varslingsområdet» er på (Program → Vindu), ellers til oppgavelinjen.",
       "args_title": "Oppstartsparametere",
       "args_show": "Vis oppstartsparametere",
       "args_hide": "Skjul oppstartsparametere",

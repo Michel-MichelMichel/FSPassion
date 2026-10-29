@@ -313,6 +313,7 @@
       "launch_exe": "Programfil",
       "launch_help": "Automatisk vælger den rigtige metode (Steam, Epic Games, Microsoft Store, Xbox eller programfil). De to andre er nødløsninger.",
       "minimize_on_launch": "Minimer FS Passion, når spillet starter",
+      "minimize_on_launch_help": "Til meddelelsesområdet, hvis »Luk til meddelelsesområdet« er slået til (Program → Vindue), ellers til proceslinjen.",
       "args_title": "Startparametre",
       "args_show": "Vis startparametre",
       "args_hide": "Skjul startparametre",

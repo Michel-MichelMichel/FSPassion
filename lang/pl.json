@@ -335,6 +335,7 @@
       "launch_exe": "Plik wykonywalny",
       "launch_help": "Automatyczny wybiera właściwą metodę (Steam, Epic Games, Microsoft Store, Xbox lub plik wykonywalny). Pozostałe dwa to rozwiązania awaryjne.",
       "minimize_on_launch": "Minimalizuj FS Passion po uruchomieniu gry",
+      "minimize_on_launch_help": "Do obszaru powiadomień, jeśli „Zamykaj do obszaru powiadomień” jest włączone (Aplikacja → Okno), w przeciwnym razie na pasek zadań.",
       "args_title": "Parametry uruchamiania",
       "args_show": "Pokaż parametry uruchamiania",
       "args_hide": "Ukryj parametry uruchamiania",

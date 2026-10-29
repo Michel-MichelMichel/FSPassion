@@ -23,6 +23,23 @@ Srdcem FS Passion je vyřešit tento problém s překvapivou účinností: vytvo
 
 > ⚠️ Projekt ve vývoji (verze: viz stránka [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Před vyzkoušením si udělejte úplnou zálohu složky modů. Tato stránka GitHub je jediným oficiálním místem ke stažení.
 
+## Snímky obrazovky
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Všechny mody jedné verze hry, informační karta a výběr více modů" /></a><br />Všechny mody jedné verze hry, informační karta a výběr více modů</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Sestavy: přepnutí jedním kliknutím (světlý motiv, francouzské rozhraní)" /></a><br />Sestavy: přepnutí jedním kliknutím (světlý motiv, francouzské rozhraní)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Velký náhled po najetí myší (FS22, motiv Synthwave '84)" /></a><br />Velký náhled po najetí myší (FS22, motiv Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Motivy a jazyky (polské rozhraní)" /></a><br />Motivy a jazyky (polské rozhraní)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Složky modů na více discích" /></a><br />Složky modů na více discích</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Nastavení: oznamovací oblast, připojení k internetu, záloha (portugalské rozhraní)" /></a><br />Nastavení: oznamovací oblast, připojení k internetu, záloha (portugalské rozhraní)</td>
+</tr>
+</table>
+
 ## Stažení
 
 Na stránce [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Soubory zatím nejsou podepsané: při prvním spuštění může Windows SmartS
 
 ## Pomozte zlepšit překlady
 
-Opravy od rodilých mluvčích jsou vítány. Postup krok za krokem (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Překlady jsou první verzí: opravy od rodilých mluvčích jsou velmi vítány, pro současné i pro připravované jazyky. Nepotřebujete znát programování, stačí textový editor (Poznámkový blok postačí).
+
+1. V tomto repozitáři otevřete složku [`lang`](../lang/) a stáhněte soubor svého jazyka (`cs.json`). Pokud tam ještě není, stáhněte `en.json`.
+2. Vložte ho do složky vlastních jazyků své instalace FS Passion (otevře ji tlačítko **Otevřít složku vlastních jazyků** v Nastavení → Vzhled → Jazyk):
+   - nainstalovaná verze: `%APPDATA%\FSPassion\lang\`;
+   - přenosná verze: `data\lang\` vedle `FSPassion.exe`.
+3. Přejmenujte ho, například na `cs_corrected.json` (název nesmí začínat znakem `_`). Neměňte řádek `"code"` na začátku souboru: váš soubor pak nahradí vestavěný jazyk. Pokud vycházíte z `en.json`: na řádek `"code"` napište `"cs"` a na řádek `"name"` `"Čeština"`.
+4. Opravte texty v uvozovkách napravo od znaků `:` a uložte soubor (kódování UTF-8). Klíče vlevo a slova ve složených závorkách, jako `{count}`, ponechte beze změny.
+5. Restartujte FS Passion a vyberte svůj jazyk v Nastavení → Vzhled → Jazyk: je označen jako „vlastní“. Zkontrolujte své opravy v rozhraní.
+6. Pošlete opravený soubor na kartě [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): vytvořte issue s názvem například „Translation: Čeština“ a přiložte soubor (zabalte ho do ZIP, pokud GitHub odmítne příponu `.json`).
 
 ## Nahlásit problém, navrhnout nápad
 

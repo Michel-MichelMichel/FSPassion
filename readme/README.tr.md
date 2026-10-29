@@ -23,6 +23,23 @@ FS Passion'ın özü bu sorunu şaşırtıcı bir verimlilikle çözmektir: birk
 
 > ⚠️ Geliştirme aşamasında bir proje (sürüm: [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) sayfasına bakın). Denemeden önce mod klasörünüzün tam bir yedeğini alın. Bu GitHub sayfası tek resmî indirme kaynağıdır.
 
+## Ekran görüntüleri
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Bir oyun sürümünün tüm modları, bilgi kartı ve çoklu seçim" /></a><br />Bir oyun sürümünün tüm modları, bilgi kartı ve çoklu seçim</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Kurulumlar: tek tıkla geçiş (açık tema, Fransızca arayüz)" /></a><br />Kurulumlar: tek tıkla geçiş (açık tema, Fransızca arayüz)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Fareyle üzerine gelince büyük önizleme (FS22, Synthwave '84 teması)" /></a><br />Fareyle üzerine gelince büyük önizleme (FS22, Synthwave '84 teması)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Temalar ve diller (Lehçe arayüz)" /></a><br />Temalar ve diller (Lehçe arayüz)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Birden çok sürücüde mod klasörleri" /></a><br />Birden çok sürücüde mod klasörleri</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Ayarlar: bildirim alanı, İnternet bağlantısı, yedekleme (Portekizce arayüz)" /></a><br />Ayarlar: bildirim alanı, İnternet bağlantısı, yedekleme (Portekizce arayüz)</td>
+</tr>
+</table>
+
 ## İndirme
 
 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) sayfasında:
@@ -35,7 +52,16 @@ Dosyalar henüz imzalı değildir: ilk açılışta Windows SmartScreen bir uyar
 
 ## Çevirilerin geliştirilmesine yardım edin
 
-Ana dili konuşanların düzeltmeleri memnuniyetle karşılanır. Adım adım rehber (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Çeviriler ilk sürümdür: ana dili konuşanların düzeltmeleri, hem mevcut diller hem de gelecek diller için memnuniyetle karşılanır. Kodlama bilgisi gerekmez, yalnızca bir metin düzenleyici yeterlidir (Not Defteri olur).
+
+1. Bu depoda [`lang`](../lang/) klasörünü açın ve dilinizin dosyasını indirin (`tr.json`). Henüz yoksa `en.json` dosyasını indirin.
+2. Dosyayı FS Passion kurulumunuzun kişisel diller klasörüne koyun (Settings → Display → Language altındaki **Open the personal languages folder** düğmesi bu klasörü açar):
+   - kurulu sürüm: `%APPDATA%\FSPassion\lang\`;
+   - taşınabilir sürüm: `FSPassion.exe` dosyasının yanındaki `data\lang\`.
+3. Dosyayı yeniden adlandırın, örneğin `tr_corrected.json` (ad `_` ile başlamamalıdır). Dosyanın başındaki `"code"` satırını değiştirmeyin: böylece dosyanız yerleşik dilin yerini alır. `en.json` dosyasından başlıyorsanız: `"code"` satırına `"tr"`, `"name"` satırına `"Türkçe"` yazın.
+4. `:` işaretlerinin sağındaki tırnak içindeki metinleri düzeltin ve dosyayı kaydedin (UTF-8 kodlaması). Soldaki anahtarlara ve `{count}` gibi süslü parantez içindeki sözcüklere dokunmayın.
+5. FS Passion'ı yeniden başlatın ve Settings → Display → Language altında dilinizi seçin: “personal” olarak işaretlenmiştir. Düzeltmelerinizi arayüzde kontrol edin.
+6. Düzeltilmiş dosyayı [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) sekmesinden gönderin: örneğin “Translation: Türkçe” başlıklı bir issue oluşturun ve dosyayı ekleyin (GitHub `.json` uzantısını kabul etmezse ZIP olarak sıkıştırın).
 
 ## Sorun bildirin, fikir önerin
 

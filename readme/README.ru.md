@@ -23,6 +23,23 @@
 
 > ⚠️ Проект в разработке (версия: см. страницу [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Перед использованием сделайте полную резервную копию папки модов. Эта страница GitHub — единственный официальный источник загрузки.
 
+## Снимки экрана
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Все моды одной версии игры, карточка мода и выбор нескольких модов" /></a><br />Все моды одной версии игры, карточка мода и выбор нескольких модов</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Сборки: переключение одним щелчком (светлая тема, интерфейс на французском)" /></a><br />Сборки: переключение одним щелчком (светлая тема, интерфейс на французском)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Большое превью при наведении мыши (FS22, тема Synthwave '84)" /></a><br />Большое превью при наведении мыши (FS22, тема Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Темы и языки (интерфейс на польском)" /></a><br />Темы и языки (интерфейс на польском)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Папки модов на нескольких дисках" /></a><br />Папки модов на нескольких дисках</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Настройки: область уведомлений, подключение к Интернету, резервная копия (интерфейс на португальском)" /></a><br />Настройки: область уведомлений, подключение к Интернету, резервная копия (интерфейс на португальском)</td>
+</tr>
+</table>
+
 ## Загрузка
 
 На странице [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@
 
 ## Помогите улучшить переводы
 
-Исправления от носителей языка приветствуются. Пошаговое руководство (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Переводы — это первая версия: исправления от носителей языка очень приветствуются, как для текущих языков, так и для будущих. Знать программирование не нужно, достаточно текстового редактора (подойдёт Блокнот).
+
+1. В этом репозитории откройте папку [`lang`](../lang/) и скачайте файл своего языка (`ru.json`). Если его ещё нет, скачайте `en.json`.
+2. Поместите его в папку личных языков вашей установки FS Passion (её открывает кнопка **Open the personal languages folder** в разделе Settings → Display → Language):
+   - установленная версия: `%APPDATA%\FSPassion\lang\`;
+   - портативная версия: `data\lang\` рядом с `FSPassion.exe`.
+3. Переименуйте его, например в `ru_corrected.json` (имя не должно начинаться с `_`). Не меняйте строку `"code"` в начале файла: тогда ваш файл заменит встроенный язык. Если вы начинаете с `en.json`: впишите `"ru"` в строку `"code"` и `"Русский"` в строку `"name"`.
+4. Исправьте тексты в кавычках справа от знаков `:` и сохраните файл (кодировка UTF-8). Ключи слева и слова в фигурных скобках, например `{count}`, оставьте без изменений.
+5. Перезапустите FS Passion и выберите свой язык в разделе Settings → Display → Language: он отмечен как «personal». Проверьте свои исправления в интерфейсе.
+6. Отправьте исправленный файл на вкладке [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): создайте issue с заголовком, например, «Translation: Русский» и приложите файл (в ZIP-архиве, если GitHub не принимает расширение `.json`).
 
 ## Сообщить о проблеме, предложить идею
 

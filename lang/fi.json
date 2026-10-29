@@ -313,6 +313,7 @@
       "launch_exe": "Ohjelmatiedosto",
       "launch_help": "Automaattinen valitsee oikean tavan (Steam, Epic Games, Microsoft Store, Xbox tai ohjelmatiedosto). Kaksi muuta ovat varavaihtoehtoja.",
       "minimize_on_launch": "Pienennä FS Passion, kun peli käynnistyy",
+      "minimize_on_launch_help": "Ilmaisinalueelle, jos ”Sulje ilmaisinalueelle” on käytössä (Sovellus → Ikkuna), muuten tehtäväpalkkiin.",
       "args_title": "Käynnistysparametrit",
       "args_show": "Näytä käynnistysparametrit",
       "args_hide": "Piilota käynnistysparametrit",

@@ -23,6 +23,23 @@ Kärnan i FS Passion löser problemet med häpnadsväckande effektivitet: skapa 
 
 > ⚠️ Projekt under utveckling (version: se sidan [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Gör en fullständig säkerhetskopia av din modmapp innan du provar. Den här GitHub-sidan är den enda officiella nedladdningsplatsen.
 
+## Skärmbilder
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Alla moddar i en spelversion, infokort och val av flera moddar" /></a><br />Alla moddar i en spelversion, infokort och val av flera moddar</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Uppsättningar: byt med ett klick (ljust tema, franskt gränssnitt)" /></a><br />Uppsättningar: byt med ett klick (ljust tema, franskt gränssnitt)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Stor förhandsvisning när musen hålls över (FS22, temat Synthwave '84)" /></a><br />Stor förhandsvisning när musen hålls över (FS22, temat Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Teman och språk (polskt gränssnitt)" /></a><br />Teman och språk (polskt gränssnitt)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Modmappar på flera enheter" /></a><br />Modmappar på flera enheter</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Inställningar: meddelandefält, internetanslutning, säkerhetskopia (portugisiskt gränssnitt)" /></a><br />Inställningar: meddelandefält, internetanslutning, säkerhetskopia (portugisiskt gränssnitt)</td>
+</tr>
+</table>
+
 ## Nedladdning
 
 På sidan [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ Filerna är inte signerade ännu: vid första starten kan Windows SmartScreen vi
 
 ## Hjälp till att förbättra översättningarna
 
-Rättelser från modersmålstalare är välkomna. Steg-för-steg-guide (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Översättningarna är en första version: rättelser från modersmålstalare är mycket välkomna, både för de nuvarande språken och för dem som kommer. Du behöver inte kunna programmera, bara en textredigerare (Anteckningar räcker).
+
+1. Öppna mappen [`lang`](../lang/) i det här repositoryt och ladda ned filen för ditt språk (`sv.json`). Om den inte finns än, ladda ned `en.json`.
+2. Lägg den i mappen för egna språk i din FS Passion-installation (knappen **Öppna mappen för egna språk** under Inställningar → Utseende → Språk öppnar den):
+   - installerad version: `%APPDATA%\FSPassion\lang\`;
+   - portabel version: `data\lang\` bredvid `FSPassion.exe`.
+3. Byt namn på den, till exempel `sv_corrected.json` (namnet får inte börja med `_`). Ändra inte raden `"code"` högst upp i filen: då ersätter din fil det inbyggda språket. Om du utgår från `en.json`: skriv `"sv"` på raden `"code"` och `"Svenska"` på raden `"name"`.
+4. Rätta texterna inom citattecken till höger om `:`-tecknen och spara filen (kodning UTF-8). Låt nycklarna till vänster och orden inom klammerparenteser som `{count}` vara oförändrade.
+5. Starta om FS Passion och välj ditt språk under Inställningar → Utseende → Språk: det är markerat som ”eget”. Kontrollera dina rättelser i gränssnittet.
+6. Skicka den rättade filen under fliken [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): skapa ett issue med en titel som ”Translation: Svenska” och bifoga filen (packa den i en ZIP om GitHub inte godtar filändelsen `.json`).
 
 ## Rapportera ett problem, föreslå en idé
 

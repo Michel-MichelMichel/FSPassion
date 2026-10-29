@@ -612,7 +612,8 @@ function launchMethod(v) {
     h('div', { class: 'set-group-title', text: t('settings.paths.launch_method') }),
     h('div', { class: 'set-row' }, seg),
     h('div', { class: 'set-help', text: t('settings.paths.launch_help') }),
-    switchCtl('settings.paths.minimize_on_launch', store.app.settings.minimize_on_launch, (on) => saveSettings({ minimize_on_launch: on })));
+    switchCtl('settings.paths.minimize_on_launch', store.app.settings.minimize_on_launch, (on) => saveSettings({ minimize_on_launch: on })),
+    h('div', { class: 'set-help', text: t('settings.paths.minimize_on_launch_help') }));
   return h('div', { class: 'launch-wrap' }, mode, launchArgs(v));
 }
 

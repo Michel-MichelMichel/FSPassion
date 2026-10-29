@@ -313,6 +313,7 @@
       "launch_exe": "Ausführbare Datei",
       "launch_help": "Automatisch wählt die richtige Methode (Steam, Epic Games, Microsoft Store, Xbox oder ausführbare Datei). Die anderen beiden sind Notlösungen.",
       "minimize_on_launch": "FS Passion beim Spielstart minimieren",
+      "minimize_on_launch_help": "In den Infobereich, wenn „In den Infobereich schließen“ aktiv ist (Anwendung → Fenster), sonst in die Taskleiste.",
       "args_title": "Startparameter",
       "args_show": "Startparameter anzeigen",
       "args_hide": "Startparameter ausblenden",

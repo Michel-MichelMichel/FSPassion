@@ -23,6 +23,23 @@ Il cuore di FS Passion risolve questo problema con un'efficacia sorprendente: cr
 
 > ⚠️ Progetto in sviluppo (versione: vedi la pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Fai un backup completo della tua cartella delle mod prima di provarlo. Questa pagina GitHub è l'unico link ufficiale per il download.
 
+## Schermate
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Tutte le mod di una versione del gioco, scheda informativa e selezione multipla" /></a><br />Tutte le mod di una versione del gioco, scheda informativa e selezione multipla</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Partite: si cambia con un clic (tema chiaro, interfaccia in francese)" /></a><br />Partite: si cambia con un clic (tema chiaro, interfaccia in francese)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Anteprima grande al passaggio del mouse (FS22, tema Synthwave '84)" /></a><br />Anteprima grande al passaggio del mouse (FS22, tema Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Temi e lingue (interfaccia in polacco)" /></a><br />Temi e lingue (interfaccia in polacco)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Cartelle delle mod su più dischi" /></a><br />Cartelle delle mod su più dischi</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Impostazioni: area di notifica, connessione a Internet, backup (interfaccia in portoghese)" /></a><br />Impostazioni: area di notifica, connessione a Internet, backup (interfaccia in portoghese)</td>
+</tr>
+</table>
+
 ## Download
 
 Nella pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ I file non sono ancora firmati: al primo avvio, Windows SmartScreen può mostrar
 
 ## Migliorare le traduzioni
 
-Le correzioni di madrelingua sono benvenute. Guida passo passo (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Le traduzioni sono una prima versione: le correzioni dei madrelingua sono molto gradite, per le lingue attuali e per quelle in arrivo. Non serve saper programmare, basta un editor di testo (va bene il Blocco note).
+
+1. In questo repository, apri la cartella [`lang`](../lang/) e scarica il file della tua lingua (`it.json`). Se non c'è ancora, scarica `en.json`.
+2. Mettilo nella cartella delle lingue personali della tua installazione di FS Passion (la apre il pulsante **Apri la cartella delle lingue personali**, in Impostazioni → Aspetto → Lingua):
+   - versione installata: `%APPDATA%\FSPassion\lang\`;
+   - versione portatile: `data\lang\`, accanto a `FSPassion.exe`.
+3. Rinominalo, per esempio `it_corrected.json` (il nome non deve iniziare con `_`). Non modificare la riga `"code"` all'inizio del file: così il tuo file sostituisce la lingua inclusa. Se parti da `en.json`: scrivi `"it"` nella riga `"code"` e `"Italiano"` nella riga `"name"`.
+4. Correggi i testi tra virgolette, a destra dei segni `:`, e salva il file (codifica UTF-8). Lascia invariate le chiavi a sinistra e le parole tra parentesi graffe come `{count}`.
+5. Riavvia FS Passion e scegli la tua lingua in Impostazioni → Aspetto → Lingua: è contrassegnata come «personale». Controlla le tue correzioni nell'interfaccia.
+6. Invia il file corretto nella scheda [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): crea una issue con un titolo come «Translation: Italiano» e allega il file (in uno ZIP se GitHub rifiuta l'estensione `.json`).
 
 ## Segnalare un problema, proporre un'idea
 

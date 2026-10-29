@@ -118,6 +118,9 @@ class Core:
         self._apply_locks: dict[str, threading.Lock] = {}
         # Zone de notification : posée par app.py quand l'icône existe.
         self.tray: Any = None
+        # Fenêtre cachée dans la zone de notification (fourni par app.py) :
+        # renvoie False si l'icône manque ou si le réglage est désactivé.
+        self.hide_to_tray: Any = None
         # Plateforme de chaque exécutable (Steam, Epic…), lue une fois.
         self._platforms: dict[str, dict[str, Any]] = {}
         # Réconciliation au démarrage : une fois par version et par session,
@@ -1628,13 +1631,21 @@ class Core:
         if applied is not None:
             res["applied"] = {k: applied[k] for k in ("party", "count", "missing")}
         if res.get("ok") and self.settings.get("minimize_on_launch"):
-            try:
-                native.minimize()
-                # Pendant le jeu, l'interface réduite se met en veille.
-                native.sleep_later(3.0)
-            except Exception:  # noqa: BLE001
-                pass
+            self._hide_for_game()
         return res
+
+    def _hide_for_game(self) -> None:
+        """Au lancement du jeu : FS Passion se range dans la zone de
+        notification (réglage « Fermer dans la zone de notification » actif,
+        icône présente), sinon il se réduit dans la barre des tâches. Dans les
+        deux cas, l'interface se met en veille pendant le jeu."""
+        try:
+            if self.hide_to_tray is not None and self.hide_to_tray():
+                return
+            native.minimize()
+            native.sleep_later(3.0)
+        except Exception:  # noqa: BLE001
+            log.exception("FS Passion n'a pas pu se ranger au lancement du jeu")
 
     def _on_game_exit(self, vid: str) -> None:
         """À la fermeture du jeu : reprise d'une opération restée en attente,

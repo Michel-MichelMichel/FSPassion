@@ -23,6 +23,23 @@ Inti dari FS Passion adalah menyelesaikan masalah ini dengan efisiensi yang meng
 
 > ⚠️ Proyek masih dalam pengembangan (versi: lihat halaman [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Buat cadangan lengkap folder mod Anda sebelum mencobanya. Halaman GitHub ini adalah satu-satunya sumber unduhan resmi.
 
+## Tangkapan layar
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Semua mod dari satu versi game, kartu info, dan pilihan banyak mod" /></a><br />Semua mod dari satu versi game, kartu info, dan pilihan banyak mod</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Konfigurasi: berganti dengan satu klik (tema terang, antarmuka bahasa Prancis)" /></a><br />Konfigurasi: berganti dengan satu klik (tema terang, antarmuka bahasa Prancis)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Pratinjau besar saat kursor diarahkan (FS22, tema Synthwave '84)" /></a><br />Pratinjau besar saat kursor diarahkan (FS22, tema Synthwave '84)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Tema dan bahasa (antarmuka bahasa Polandia)" /></a><br />Tema dan bahasa (antarmuka bahasa Polandia)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Folder mod di beberapa drive" /></a><br />Folder mod di beberapa drive</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Pengaturan: area notifikasi, koneksi Internet, cadangan (antarmuka bahasa Portugis)" /></a><br />Pengaturan: area notifikasi, koneksi Internet, cadangan (antarmuka bahasa Portugis)</td>
+</tr>
+</table>
+
 ## Unduh
 
 Di halaman [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases):
@@ -35,7 +52,16 @@ File belum ditandatangani: saat pertama dijalankan, Windows SmartScreen mungkin 
 
 ## Bantu meningkatkan terjemahan
 
-Koreksi dari penutur asli sangat diterima. Panduan langkah demi langkah (English): [Help improve the translations](../README.md#help-improve-the-translations).
+Terjemahan ini masih versi pertama: koreksi dari penutur asli sangat diharapkan, untuk bahasa yang sudah ada maupun yang akan datang. Tidak perlu bisa memprogram, cukup editor teks (Notepad pun bisa).
+
+1. Di repositori ini, buka folder [`lang`](../lang/) dan unduh berkas bahasa Anda (`id.json`). Jika belum ada, unduh `en.json`.
+2. Letakkan berkas itu di folder bahasa pribadi instalasi FS Passion Anda (tombol **Open the personal languages folder** di Settings → Display → Language membukanya):
+   - versi terpasang: `%APPDATA%\FSPassion\lang\`;
+   - versi portabel: `data\lang\`, di samping `FSPassion.exe`.
+3. Ganti namanya, misalnya `id_corrected.json` (nama tidak boleh diawali `_`). Jangan ubah baris `"code"` di awal berkas: dengan begitu berkas Anda menggantikan bahasa bawaan. Jika Anda mulai dari `en.json`: tulis `"id"` di baris `"code"` dan `"Bahasa Indonesia"` di baris `"name"`.
+4. Perbaiki teks di antara tanda kutip, di sebelah kanan tanda `:`, lalu simpan berkas (pengodean UTF-8). Jangan ubah kunci di sebelah kiri dan kata di dalam kurung kurawal seperti `{count}`.
+5. Mulai ulang FS Passion dan pilih bahasa Anda di Settings → Display → Language: bahasa itu ditandai “personal”. Periksa koreksi Anda di antarmuka.
+6. Kirim berkas yang sudah dikoreksi di tab [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): buat issue dengan judul misalnya “Translation: Bahasa Indonesia” dan lampirkan berkasnya (kompres menjadi ZIP jika GitHub menolak ekstensi `.json`).
 
 ## Laporkan masalah, usulkan ide
 

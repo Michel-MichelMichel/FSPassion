@@ -312,7 +312,7 @@ html.is-idle .apply-btn.is-needed { animation-play-state: paused; }
 :root[data-style="duo"] .tile:hover .tile-art,
 :root[data-style="duo"] .tile:focus-visible .tile-art { box-shadow: 0 0 22px -6px var(--duo-glow); }
 :root[data-style="duo"] .tile.is-selected .tile-art { box-shadow: 0 0 16px -4px var(--duo-glow); }
-:root[data-style="duo"] :is(.badge, .tile-marks, .tile-info) {
+:root[data-style="duo"] :is(.badge, .tile-marks, .row-marks, .tile-info) {
   background: color-mix(in srgb, var(--bg) 86%, transparent);
   box-shadow: inset 0 0 0 1px var(--duo-line-2);
 }

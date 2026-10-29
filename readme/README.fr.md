@@ -23,6 +23,23 @@ Le cœur de FS Passion est de répondre à ce problème avec une efficacité dé
 
 > ⚠️ Projet en développement (version : voir la page [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Faites une sauvegarde complète de votre dossier de mods avant de l'essayer. Le seul lien officiel de téléchargement est cette page GitHub.
 
+## Captures d'écran
+
+<table>
+<tr>
+<td width="50%"><a href="../assets/screenshots/1-all-mods.webp"><img src="../assets/screenshots/1-all-mods.webp" alt="Tous les mods d'une version du jeu, fiche d'information et sélection multiple (interface en anglais)" /></a><br />Tous les mods d'une version du jeu, fiche d'information et sélection multiple (interface en anglais)</td>
+<td width="50%"><a href="../assets/screenshots/2-setups.webp"><img src="../assets/screenshots/2-setups.webp" alt="Parties : changement en un clic (thème clair)" /></a><br />Parties : changement en un clic (thème clair)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/3-preview.webp"><img src="../assets/screenshots/3-preview.webp" alt="Grand aperçu au survol de la souris (FS22, thème Synthwave '84, interface en anglais)" /></a><br />Grand aperçu au survol de la souris (FS22, thème Synthwave '84, interface en anglais)</td>
+<td width="50%"><a href="../assets/screenshots/4-themes-languages.webp"><img src="../assets/screenshots/4-themes-languages.webp" alt="Thèmes et langues (interface en polonais)" /></a><br />Thèmes et langues (interface en polonais)</td>
+</tr>
+<tr>
+<td width="50%"><a href="../assets/screenshots/5-several-drives.webp"><img src="../assets/screenshots/5-several-drives.webp" alt="Dossiers de mods sur plusieurs disques" /></a><br />Dossiers de mods sur plusieurs disques</td>
+<td width="50%"><a href="../assets/screenshots/6-settings.webp"><img src="../assets/screenshots/6-settings.webp" alt="Paramètres : zone de notification, connexion Internet, sauvegarde (interface en portugais)" /></a><br />Paramètres : zone de notification, connexion Internet, sauvegarde (interface en portugais)</td>
+</tr>
+</table>
+
 ## Téléchargement
 
 Sur la page [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) :
@@ -35,7 +52,16 @@ Les fichiers ne sont pas encore signés : au premier lancement, Windows peut aff
 
 ## Aider à améliorer les traductions
 
-Les corrections des locuteurs natifs sont les bienvenues. Le mode d'emploi détaillé est en anglais : [Help improve the translations](../README.md#help-improve-the-translations) (English).
+Les traductions sont une première version : les corrections des locuteurs natifs sont les bienvenues, pour les langues actuelles comme pour celles à venir. Aucune connaissance en programmation n'est nécessaire, seulement un éditeur de texte (le Bloc-notes suffit).
+
+1. Dans ce dépôt, ouvrez le dossier [`lang`](../lang/) et téléchargez le fichier de votre langue (`fr.json`). S'il n'existe pas encore, téléchargez `en.json`.
+2. Placez-le dans le dossier des langues personnelles de votre installation de FS Passion (le bouton **Ouvrir le dossier des langues personnelles**, dans Paramètres → Affichage → Langue, l'ouvre) :
+   - version installée : `%APPDATA%\FSPassion\lang\` ;
+   - version portable : `data\lang\` à côté de `FSPassion.exe`.
+3. Renommez-le, par exemple `fr_corrige.json` (le nom ne doit pas commencer par `_`). Ne modifiez pas la ligne `"code"` en haut du fichier : votre fichier remplace alors la langue fournie. Si vous partez de `en.json` pour une nouvelle langue : écrivez son code sur la ligne `"code"` (par exemple `"hu"`) et son nom sur la ligne `"name"` (par exemple `"Magyar"`).
+4. Corrigez les textes entre guillemets, à droite des signes `:`, puis enregistrez le fichier (encodage UTF-8). Laissez inchangés les clés à gauche et les mots entre accolades comme `{count}`.
+5. Redémarrez FS Passion et choisissez votre langue dans Paramètres → Affichage → Langue : elle est marquée « personnelle ». Vérifiez vos corrections dans l'interface.
+6. Envoyez le fichier corrigé dans l'onglet [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) : créez un ticket intitulé par exemple « Traduction : Français », et joignez le fichier (compressé en ZIP si GitHub refuse l'extension `.json`).
 
 ## Signaler un problème, proposer une idée
 

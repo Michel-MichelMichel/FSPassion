@@ -194,11 +194,13 @@ begin
 end;
 
 function RunApp(Params: String): Integer;
+var
+  Code: Integer;
 begin
   Result := -1;
   if FileExists(AppExePath()) then
-    if not Exec(AppExePath(), Params, '', SW_HIDE, ewWaitUntilTerminated, Result) then
-      Result := -1;
+    if Exec(AppExePath(), Params, '', SW_HIDE, ewWaitUntilTerminated, Code) then
+      Result := Code;
 end;
 
 // Jeu ouvert : on demande de le fermer, avant toute suppression.

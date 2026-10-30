@@ -832,6 +832,30 @@
     "optional_note": "Facultatifs : le jeu n'en a pas besoin. Seuls ceux que vous cochez sont ajoutés à {where}.",
     "optional_continue": "Continuer"
   },
+  "commonguard": {
+    "title_maps": "Attention : des maps vont aller dans les Mods communs",
+    "title_classified": "Attention : des mods déjà classés vont aller dans les Mods communs",
+    "maps_intro": {
+      "one": "Vous commettez sans doute une erreur : votre sélection contient une map, et vous voulez l'ajouter aux Mods communs :",
+      "other": "Vous commettez sans doute une erreur : votre sélection contient {count} maps, et vous voulez les ajouter aux Mods communs :"
+    },
+    "classified_intro": {
+      "one": "Votre sélection contient aussi un mod déjà classé dans une de vos parties.",
+      "other": "Votre sélection contient aussi {count} mods déjà classés dans vos parties."
+    },
+    "why_maps": "Ce n'est probablement pas ce que vous souhaitez : tout ce qui est dans les Mods communs est chargé dans toutes vos parties. Ces maps seraient donc chargées partout, et c'est justement ce que FS Passion permet d'éviter.",
+    "why_classified": "Ce n'est probablement pas ce que vous souhaitez : tout ce qui est dans les Mods communs est chargé dans toutes vos parties. Ces mods ne seraient plus réservés à leur partie, et vos listes ne serviraient plus à rien.",
+    "unclassified_offer": {
+      "one": "Votre sélection contient un seul mod non classé (hors maps) : vous pouvez n'ajouter que lui.",
+      "other": "Votre sélection contient {count} mods non classés (hors maps) : vous pouvez n'ajouter qu'eux."
+    },
+    "tip": "Astuce : Ctrl+A sélectionne toute la liste « Tous les mods », y compris les maps et les mods déjà classés.",
+    "continue": "Poursuivre quand même",
+    "only_unclassified": {
+      "one": "Ajouter seulement le mod non classé",
+      "other": "Ajouter seulement les {count} mods non classés"
+    }
+  },
   "plus": {
     "title": "Nouvelle partie depuis une map",
     "deps_title": {

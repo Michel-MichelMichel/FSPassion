@@ -832,6 +832,30 @@
     "optional_note": "Optioneel: het spel heeft ze niet nodig. Alleen de aangevinkte worden toegevoegd aan {where}.",
     "optional_continue": "Doorgaan"
   },
+  "commonguard": {
+    "title_maps": "Let op: er gaan maps naar Gedeelde mods",
+    "title_classified": "Let op: er gaan al ingedeelde mods naar Gedeelde mods",
+    "maps_intro": {
+      "one": "Dit is waarschijnlijk een vergissing: je selectie bevat een map en je wilt die toevoegen aan Gedeelde mods:",
+      "other": "Dit is waarschijnlijk een vergissing: je selectie bevat {count} maps en je wilt die toevoegen aan Gedeelde mods:"
+    },
+    "classified_intro": {
+      "one": "Je selectie bevat ook een mod die al in een van je setups is ingedeeld.",
+      "other": "Je selectie bevat ook {count} mods die al in je setups zijn ingedeeld."
+    },
+    "why_maps": "Dit is waarschijnlijk niet wat je wilt: alles in Gedeelde mods wordt in al je setups geladen. Deze maps zouden dus overal geladen worden, en dat is precies wat FS Passion helpt te voorkomen.",
+    "why_classified": "Dit is waarschijnlijk niet wat je wilt: alles in Gedeelde mods wordt in al je setups geladen. Deze mods zouden niet langer bij hun eigen setup horen, en je lijsten zouden zinloos worden.",
+    "unclassified_offer": {
+      "one": "Je selectie bevat maar één niet-ingedeelde mod (zonder maps): je kunt alleen die toevoegen.",
+      "other": "Je selectie bevat {count} niet-ingedeelde mods (zonder maps): je kunt alleen die toevoegen."
+    },
+    "tip": "Tip: Ctrl+A selecteert de hele lijst ‘Alle mods’, ook maps en mods die al zijn ingedeeld.",
+    "continue": "Toch doorgaan",
+    "only_unclassified": {
+      "one": "Alleen de niet-ingedeelde mod toevoegen",
+      "other": "Alleen de {count} niet-ingedeelde mods toevoegen"
+    }
+  },
   "plus": {
     "title": "Nieuwe setup vanuit een map",
     "deps_title": {

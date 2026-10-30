@@ -832,6 +832,30 @@
     "optional_note": "Valfria: spelet behöver dem inte. Bara de du markerar läggs till i {where}.",
     "optional_continue": "Fortsätt"
   },
+  "commonguard": {
+    "title_maps": "Varning: kartor är på väg in i Gemensamma moddar",
+    "title_classified": "Varning: redan sorterade moddar är på väg in i Gemensamma moddar",
+    "maps_intro": {
+      "one": "Det här är troligen ett misstag: ditt urval innehåller en karta och du vill lägga till den i Gemensamma moddar:",
+      "other": "Det här är troligen ett misstag: ditt urval innehåller {count} kartor och du vill lägga till dem i Gemensamma moddar:"
+    },
+    "classified_intro": {
+      "one": "Ditt urval innehåller också en modd som redan är sorterad i en av dina uppsättningar.",
+      "other": "Ditt urval innehåller också {count} moddar som redan är sorterade i dina uppsättningar."
+    },
+    "why_maps": "Det är nog inte vad du vill: allt i Gemensamma moddar laddas i alla dina uppsättningar. Kartorna skulle alltså laddas överallt – precis det som FS Passion hjälper dig att undvika.",
+    "why_classified": "Det är nog inte vad du vill: allt i Gemensamma moddar laddas i alla dina uppsättningar. Moddarna skulle inte längre höra till sin egen uppsättning, och dina listor skulle bli meningslösa.",
+    "unclassified_offer": {
+      "one": "Ditt urval innehåller bara en osorterad modd (kartor ej medräknade): du kan lägga till bara den.",
+      "other": "Ditt urval innehåller {count} osorterade moddar (kartor ej medräknade): du kan lägga till bara dem."
+    },
+    "tip": "Tips: Ctrl+A markerar hela listan ”Alla moddar”, även kartor och moddar som redan är sorterade.",
+    "continue": "Fortsätt ändå",
+    "only_unclassified": {
+      "one": "Lägg bara till den osorterade modden",
+      "other": "Lägg bara till de {count} osorterade moddarna"
+    }
+  },
   "plus": {
     "title": "Ny uppsättning utifrån en karta",
     "deps_title": {

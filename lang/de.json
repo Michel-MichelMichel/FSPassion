@@ -832,6 +832,30 @@
     "optional_note": "Optional: Das Spiel braucht sie nicht. Nur die angekreuzten werden zu {where} hinzugefügt.",
     "optional_continue": "Weiter"
   },
+  "commonguard": {
+    "title_maps": "Achtung: Maps sollen zu den Gemeinsamen Mods",
+    "title_classified": "Achtung: bereits einsortierte Mods sollen zu den Gemeinsamen Mods",
+    "maps_intro": {
+      "one": "Das ist wahrscheinlich ein Versehen: Ihre Auswahl enthält eine Map, die Sie zu den Gemeinsamen Mods hinzufügen wollen:",
+      "other": "Das ist wahrscheinlich ein Versehen: Ihre Auswahl enthält {count} Maps, die Sie zu den Gemeinsamen Mods hinzufügen wollen:"
+    },
+    "classified_intro": {
+      "one": "Ihre Auswahl enthält außerdem einen Mod, der schon in einem Ihrer Setups einsortiert ist.",
+      "other": "Ihre Auswahl enthält außerdem {count} Mods, die schon in Ihren Setups einsortiert sind."
+    },
+    "why_maps": "Das ist vermutlich nicht gewollt: Alles in den Gemeinsamen Mods wird in allen Ihren Setups geladen. Diese Maps würden also überall geladen – genau das soll FS Passion verhindern.",
+    "why_classified": "Das ist vermutlich nicht gewollt: Alles in den Gemeinsamen Mods wird in allen Ihren Setups geladen. Diese Mods wären nicht mehr ihrem Setup vorbehalten, und Ihre Listen wären nutzlos.",
+    "unclassified_offer": {
+      "one": "Ihre Auswahl enthält nur einen nicht einsortierten Mod (ohne Maps): Sie können nur diesen hinzufügen.",
+      "other": "Ihre Auswahl enthält {count} nicht einsortierte Mods (ohne Maps): Sie können nur diese hinzufügen."
+    },
+    "tip": "Tipp: Strg+A wählt die ganze Liste „Alle Mods“ aus, auch Maps und bereits einsortierte Mods.",
+    "continue": "Trotzdem fortfahren",
+    "only_unclassified": {
+      "one": "Nur den nicht einsortierten Mod hinzufügen",
+      "other": "Nur die {count} nicht einsortierten Mods hinzufügen"
+    }
+  },
   "plus": {
     "title": "Neues Setup aus einer Map",
     "deps_title": {

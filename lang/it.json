@@ -832,6 +832,30 @@
     "optional_note": "Facoltative: il gioco non ne ha bisogno. Solo quelle che spunti vengono aggiunte a {where}.",
     "optional_continue": "Continua"
   },
+  "commonguard": {
+    "title_maps": "Attenzione: delle mappe stanno per finire nelle Mod comuni",
+    "title_classified": "Attenzione: delle mod già classificate stanno per finire nelle Mod comuni",
+    "maps_intro": {
+      "one": "Probabilmente è un errore: la selezione contiene una mappa e vuoi aggiungerla alle Mod comuni:",
+      "other": "Probabilmente è un errore: la selezione contiene {count} mappe e vuoi aggiungerle alle Mod comuni:"
+    },
+    "classified_intro": {
+      "one": "La selezione contiene anche una mod già classificata in una delle tue partite.",
+      "other": "La selezione contiene anche {count} mod già classificate nelle tue partite."
+    },
+    "why_maps": "Probabilmente non è ciò che vuoi: tutto ciò che è nelle Mod comuni viene caricato in tutte le tue partite. Queste mappe verrebbero caricate ovunque, ed è proprio ciò che FS Passion ti aiuta a evitare.",
+    "why_classified": "Probabilmente non è ciò che vuoi: tutto ciò che è nelle Mod comuni viene caricato in tutte le tue partite. Queste mod non sarebbero più riservate alla loro partita e le tue liste non servirebbero più a nulla.",
+    "unclassified_offer": {
+      "one": "La selezione contiene una sola mod non classificata (mappe escluse): puoi aggiungere solo quella.",
+      "other": "La selezione contiene {count} mod non classificate (mappe escluse): puoi aggiungere solo quelle."
+    },
+    "tip": "Suggerimento: Ctrl+A seleziona tutto l'elenco «Tutte le mod», comprese le mappe e le mod già classificate.",
+    "continue": "Continua comunque",
+    "only_unclassified": {
+      "one": "Aggiungi solo la mod non classificata",
+      "other": "Aggiungi solo le {count} mod non classificate"
+    }
+  },
   "plus": {
     "title": "Nuova partita da una mappa",
     "deps_title": {

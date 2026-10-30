@@ -832,6 +832,30 @@
     "optional_note": "Optional: the game does not need them. Only the ones you tick are added to {where}.",
     "optional_continue": "Continue"
   },
+  "commonguard": {
+    "title_maps": "Warning: maps are about to go into Common mods",
+    "title_classified": "Warning: already sorted mods are about to go into Common mods",
+    "maps_intro": {
+      "one": "This is probably a mistake: your selection contains a map, and you are about to add it to Common mods:",
+      "other": "This is probably a mistake: your selection contains {count} maps, and you are about to add them to Common mods:"
+    },
+    "classified_intro": {
+      "one": "Your selection also contains a mod already sorted into one of your setups.",
+      "other": "Your selection also contains {count} mods already sorted into your setups."
+    },
+    "why_maps": "This is probably not what you want: everything in Common mods is loaded in all your setups. These maps would be loaded everywhere, which is exactly what FS Passion helps you avoid.",
+    "why_classified": "This is probably not what you want: everything in Common mods is loaded in all your setups. These mods would no longer be kept to their own setup, and your lists would become pointless.",
+    "unclassified_offer": {
+      "one": "Your selection contains only one unsorted mod (maps excluded): you can add just that one.",
+      "other": "Your selection contains {count} unsorted mods (maps excluded): you can add just those."
+    },
+    "tip": "Tip: Ctrl+A selects the whole “All mods” list, including maps and mods that are already sorted.",
+    "continue": "Continue anyway",
+    "only_unclassified": {
+      "one": "Add only the unsorted mod",
+      "other": "Add only the {count} unsorted mods"
+    }
+  },
   "plus": {
     "title": "New setup from a map",
     "deps_title": {

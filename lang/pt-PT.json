@@ -832,6 +832,30 @@
     "optional_note": "Opcionais: o jogo não precisa deles. Só os que assinalar são adicionados a {where}.",
     "optional_continue": "Continuar"
   },
+  "commonguard": {
+    "title_maps": "Atenção: há mapas prestes a ir para os Mods comuns",
+    "title_classified": "Atenção: há mods já classificados prestes a ir para os Mods comuns",
+    "maps_intro": {
+      "one": "Provavelmente é um engano: a sua seleção contém um mapa e pretende adicioná-lo aos Mods comuns:",
+      "other": "Provavelmente é um engano: a sua seleção contém {count} mapas e pretende adicioná-los aos Mods comuns:"
+    },
+    "classified_intro": {
+      "one": "A sua seleção contém também um mod já classificado numa das suas partidas.",
+      "other": "A sua seleção contém também {count} mods já classificados nas suas partidas."
+    },
+    "why_maps": "Provavelmente não é isto que pretende: tudo o que está nos Mods comuns é carregado em todas as suas partidas. Estes mapas seriam carregados em todo o lado, precisamente o que o FS Passion ajuda a evitar.",
+    "why_classified": "Provavelmente não é isto que pretende: tudo o que está nos Mods comuns é carregado em todas as suas partidas. Estes mods deixariam de estar reservados à sua partida, e as suas listas deixariam de fazer sentido.",
+    "unclassified_offer": {
+      "one": "A sua seleção contém apenas um mod por classificar (sem contar mapas): pode adicionar só esse.",
+      "other": "A sua seleção contém {count} mods por classificar (sem contar mapas): pode adicionar só esses."
+    },
+    "tip": "Dica: Ctrl+A seleciona toda a lista «Todos os mods», incluindo os mapas e os mods já classificados.",
+    "continue": "Continuar mesmo assim",
+    "only_unclassified": {
+      "one": "Adicionar só o mod por classificar",
+      "other": "Adicionar só os {count} mods por classificar"
+    }
+  },
   "plus": {
     "title": "Nova partida a partir de um mapa",
     "deps_title": {

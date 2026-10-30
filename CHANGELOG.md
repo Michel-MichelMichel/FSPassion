@@ -2,6 +2,23 @@
 
 Les versions sont numérotées 0.x.y.
 
+## 0.9.12 — 30 octobre 2026 — avertissement avant d'envoyer des maps ou des mods déjà classés dans les Mods communs
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui s'est passé
+
+Un geste courant faisait perdre tout le classement : Ctrl+A dans la liste « Tous les mods », puis envoi dans les Mods communs. Ctrl+A sélectionne toute la liste, donc aussi les maps et les mods déjà classés dans des parties. Tout arrivait dans les Mods communs, donc dans toutes les parties.
+
+### Ce qui change
+
+1. **Avertissement avant l'ajout aux Mods communs** (bouton « Ajouter à Mods communs » et glisser-déposer vers la liste 3, depuis la liste 1 ou la liste 2). Il s'affiche quand :
+   - la sélection contient au moins une map (la fenêtre en donne la liste) ;
+   - ou elle mêle des mods non classés et des mods déjà classés dans une partie (signe d'un Ctrl+A).
+   Ajouter volontairement un seul mod déjà classé, ou des mods non classés seuls, ne déclenche rien.
+2. **Trois choix** : « Annuler », « Poursuivre quand même », et « Ajouter seulement les N mods non classés » (hors maps), proposé en premier quand il y en a.
+3. Textes dans les 14 langues fournies (`lang/*.json`, section `commonguard`).
+
 ## 0.9.11 — 29 octobre 2026 — fabrication GitHub : test du stockage fiabilisé, cache écrit malgré un antivirus
 
 **Aucun fichier du jeu ni des mods n'est touché.**

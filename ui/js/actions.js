@@ -330,11 +330,65 @@ async function askDependencies(target, ids) {
   });
 }
 
+// Garde-fou des mods communs : tout ce qui y est est chargé dans TOUTES les
+// parties. Une map n'y a presque jamais sa place, et une sélection qui mêle
+// mods non classés et mods déjà classés dans des parties trahit souvent un
+// Ctrl+A dans la liste 1. On prévient avant d'ajouter.
+// Renvoie la liste à ajouter, ou null si l'utilisateur annule.
+function guardCommon(ids) {
+  const m = membership();
+  const index = modIndex();
+  const maps = [];
+  const classified = [];
+  const loose = [];
+  for (const id of ids) {
+    const low = id.toLowerCase();
+    const mod = index.get(low);
+    if (!mod || m.common.has(low)) continue; // absent ou déjà commun : rien ne change
+    if (mod.is_map) maps.push(id);
+    else if (m.anyParty.has(low)) classified.push(id);
+    else loose.push(id);
+  }
+  const risky = maps.length > 0 || (classified.length > 0 && loose.length > 0);
+  if (!risky) return Promise.resolve(ids);
+  return new Promise((resolve) => {
+    let result = null;
+    const MAX = 8;
+    const names = (list) => {
+      const ul = h('ul', { class: 'deps-list' });
+      for (const id of list.slice(0, MAX)) ul.append(h('li', {}, icon('map', 'ico-s'), h('span', { class: 'dep-name', text: displayName(id) })));
+      if (list.length > MAX) ul.append(h('li', { class: 'faint', text: t('mod.more', { count: list.length - MAX }) }));
+      return ul;
+    };
+    const cancel = h('button', { class: 'btn btn-ghost', type: 'button', text: t('common.cancel'), onclick: () => dlg.close() });
+    const anyway = h('button', { class: 'btn btn-danger', type: 'button', text: t('commonguard.continue'),
+      onclick: () => { result = ids; dlg.close(); } });
+    const onlyLoose = loose.length ? h('button', { class: 'btn btn-primary', type: 'button', autofocus: true,
+      text: t('commonguard.only_unclassified', { count: loose.length }),
+      onclick: () => { result = loose; dlg.close(); } }) : null;
+    if (!onlyLoose) cancel.setAttribute('autofocus', 'true');
+    const body = h('div', { class: 'dlg-body' },
+      maps.length ? h('p', { class: 'dlg-text', text: t('commonguard.maps_intro', { count: maps.length }) }) : null,
+      maps.length ? names(maps) : null,
+      classified.length ? h('p', { class: 'dlg-text', text: t('commonguard.classified_intro', { count: classified.length }) }) : null,
+      h('p', { class: 'dlg-text', text: t(maps.length ? 'commonguard.why_maps' : 'commonguard.why_classified') }),
+      loose.length ? h('p', { class: 'dlg-text', text: t('commonguard.unclassified_offer', { count: loose.length }) }) : null,
+      h('p', { class: 'set-help', text: t('commonguard.tip') }),
+      h('div', { class: 'dlg-actions is-center' }, cancel, anyway, onlyLoose));
+    const title = t(maps.length ? 'commonguard.title_maps' : 'commonguard.title_classified');
+    const dlg = openDialog(body, { title, cls: 'dlg-deps', onClose: () => resolve(result) });
+  });
+}
+
 // Ajoute des mods à la partie sélectionnée ou aux mods communs ; avec
 // `source`, les déplace depuis l'autre liste.
 export async function addMods(target, ids, { source = null } = {}) {
   if (!ids.length || !store.parties || !store.parties.supported) return;
   if (target === 'party' && !userParty()) return;
+  if (target === 'common') {
+    ids = await guardCommon(ids);
+    if (!ids || !ids.length) return;
+  }
   const index = modIndex();
   const present = ids.filter((id) => index.has(id.toLowerCase()));
   const { extra, cancelled } = present.length ? await askDependencies(target, present) : { extra: [], cancelled: false };

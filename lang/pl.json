@@ -904,6 +904,38 @@
     "optional_note": "Opcjonalne: gra ich nie potrzebuje. Tylko zaznaczone zostaną dodane w {where}.",
     "optional_continue": "Dalej"
   },
+  "commonguard": {
+    "title_maps": "Uwaga: mapy trafią do Wspólnych modów",
+    "title_classified": "Uwaga: już przydzielone mody trafią do Wspólnych modów",
+    "maps_intro": {
+      "one": "To prawdopodobnie pomyłka: twój wybór zawiera mapę, a chcesz ją dodać do Wspólnych modów:",
+      "few": "To prawdopodobnie pomyłka: twój wybór zawiera {count} mapy, a chcesz je dodać do Wspólnych modów:",
+      "many": "To prawdopodobnie pomyłka: twój wybór zawiera {count} map, a chcesz je dodać do Wspólnych modów:",
+      "other": "To prawdopodobnie pomyłka: twój wybór zawiera {count} map, a chcesz je dodać do Wspólnych modów:"
+    },
+    "classified_intro": {
+      "one": "Twój wybór zawiera też mod już przydzielony do jednego z twoich zestawów.",
+      "few": "Twój wybór zawiera też {count} mody już przydzielone do twoich zestawów.",
+      "many": "Twój wybór zawiera też {count} modów już przydzielonych do twoich zestawów.",
+      "other": "Twój wybór zawiera też {count} modów już przydzielonych do twoich zestawów."
+    },
+    "why_maps": "Raczej nie o to ci chodzi: wszystko, co jest we Wspólnych modach, wczytuje się we wszystkich twoich zestawach. Te mapy wczytywałyby się wszędzie – a właśnie temu FS Passion pomaga zapobiec.",
+    "why_classified": "Raczej nie o to ci chodzi: wszystko, co jest we Wspólnych modach, wczytuje się we wszystkich twoich zestawach. Te mody nie byłyby już przypisane tylko do swojego zestawu, a twoje listy straciłyby sens.",
+    "unclassified_offer": {
+      "one": "Twój wybór zawiera tylko jeden nieprzydzielony mod (bez map): możesz dodać tylko jego.",
+      "few": "Twój wybór zawiera {count} nieprzydzielone mody (bez map): możesz dodać tylko je.",
+      "many": "Twój wybór zawiera {count} nieprzydzielonych modów (bez map): możesz dodać tylko je.",
+      "other": "Twój wybór zawiera {count} nieprzydzielonych modów (bez map): możesz dodać tylko je."
+    },
+    "tip": "Wskazówka: Ctrl+A zaznacza całą listę „Wszystkie mody”, także mapy i już przydzielone mody.",
+    "continue": "Kontynuuj mimo to",
+    "only_unclassified": {
+      "one": "Dodaj tylko nieprzydzielony mod",
+      "few": "Dodaj tylko {count} nieprzydzielone mody",
+      "many": "Dodaj tylko {count} nieprzydzielonych modów",
+      "other": "Dodaj tylko {count} nieprzydzielonych modów"
+    }
+  },
   "plus": {
     "title": "Nowy zestaw z mapy",
     "deps_title": {

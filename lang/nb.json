@@ -832,6 +832,30 @@
     "optional_note": "Valgfrie: spillet trenger dem ikke. Bare de du krysser av, legges til i {where}.",
     "optional_continue": "Fortsett"
   },
+  "commonguard": {
+    "title_maps": "Advarsel: kart er på vei inn i Felles modder",
+    "title_classified": "Advarsel: allerede sorterte modder er på vei inn i Felles modder",
+    "maps_intro": {
+      "one": "Dette er trolig en feil: utvalget ditt inneholder et kart, og du vil legge det til i Felles modder:",
+      "other": "Dette er trolig en feil: utvalget ditt inneholder {count} kart, og du vil legge dem til i Felles modder:"
+    },
+    "classified_intro": {
+      "one": "Utvalget ditt inneholder også en modd som allerede er sortert i et av oppsettene dine.",
+      "other": "Utvalget ditt inneholder også {count} modder som allerede er sortert i oppsettene dine."
+    },
+    "why_maps": "Dette er nok ikke det du vil: alt i Felles modder lastes i alle oppsettene dine. Disse kartene ville blitt lastet overalt – nettopp det FS Passion hjelper deg å unngå.",
+    "why_classified": "Dette er nok ikke det du vil: alt i Felles modder lastes i alle oppsettene dine. Disse moddene ville ikke lenger høre til sitt eget oppsett, og listene dine ville miste hensikten.",
+    "unclassified_offer": {
+      "one": "Utvalget ditt inneholder bare én usortert modd (uten kart): du kan legge til bare den.",
+      "other": "Utvalget ditt inneholder {count} usorterte modder (uten kart): du kan legge til bare dem."
+    },
+    "tip": "Tips: Ctrl+A velger hele listen «Alle modder», også kart og modder som allerede er sortert.",
+    "continue": "Fortsett likevel",
+    "only_unclassified": {
+      "one": "Legg til bare den usorterte modden",
+      "other": "Legg til bare de {count} usorterte moddene"
+    }
+  },
   "plus": {
     "title": "Nytt oppsett fra et kart",
     "deps_title": {

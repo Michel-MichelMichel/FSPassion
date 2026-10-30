@@ -832,6 +832,30 @@
     "optional_note": "Valgfrie: spillet har ikke brug for dem. Kun dem, du markerer, tilføjes til {where}.",
     "optional_continue": "Fortsæt"
   },
+  "commonguard": {
+    "title_maps": "Advarsel: maps er på vej ind i Fælles mods",
+    "title_classified": "Advarsel: allerede sorterede mods er på vej ind i Fælles mods",
+    "maps_intro": {
+      "one": "Det er sandsynligvis en fejl: dit valg indeholder et map, og du vil føje det til Fælles mods:",
+      "other": "Det er sandsynligvis en fejl: dit valg indeholder {count} maps, og du vil føje dem til Fælles mods:"
+    },
+    "classified_intro": {
+      "one": "Dit valg indeholder også et mod, der allerede er sorteret i en af dine opsætninger.",
+      "other": "Dit valg indeholder også {count} mods, der allerede er sorteret i dine opsætninger."
+    },
+    "why_maps": "Det er nok ikke det, du vil: alt i Fælles mods indlæses i alle dine opsætninger. Disse maps ville blive indlæst overalt – netop det, FS Passion hjælper dig med at undgå.",
+    "why_classified": "Det er nok ikke det, du vil: alt i Fælles mods indlæses i alle dine opsætninger. Disse mods ville ikke længere høre til deres egen opsætning, og dine lister ville miste deres formål.",
+    "unclassified_offer": {
+      "one": "Dit valg indeholder kun ét ikke-sorteret mod (uden maps): du kan tilføje kun det.",
+      "other": "Dit valg indeholder {count} ikke-sorterede mods (uden maps): du kan tilføje kun dem."
+    },
+    "tip": "Tip: Ctrl+A vælger hele listen »Alle mods«, også maps og mods, der allerede er sorteret.",
+    "continue": "Fortsæt alligevel",
+    "only_unclassified": {
+      "one": "Tilføj kun det ikke-sorterede mod",
+      "other": "Tilføj kun de {count} ikke-sorterede mods"
+    }
+  },
   "plus": {
     "title": "Ny opsætning ud fra et map",
     "deps_title": {

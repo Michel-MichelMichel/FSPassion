@@ -832,6 +832,30 @@
     "optional_note": "Valinnaisia: peli ei tarvitse niitä. Vain valitsemasi ovat jatkossa {where}.",
     "optional_continue": "Jatka"
   },
+  "commonguard": {
+    "title_maps": "Varoitus: karttoja on menossa Yhteisiin modeihin",
+    "title_classified": "Varoitus: jo lajiteltuja modeja on menossa Yhteisiin modeihin",
+    "maps_intro": {
+      "one": "Tämä on luultavasti virhe: valintasi sisältää kartan, ja olet lisäämässä sen Yhteisiin modeihin:",
+      "other": "Tämä on luultavasti virhe: valintasi sisältää {count} karttaa, ja olet lisäämässä ne Yhteisiin modeihin:"
+    },
+    "classified_intro": {
+      "one": "Valintasi sisältää myös modin, joka on jo lajiteltu johonkin kokoonpanoosi.",
+      "other": "Valintasi sisältää myös {count} modia, jotka on jo lajiteltu kokoonpanoihisi."
+    },
+    "why_maps": "Tätä et luultavasti halua: kaikki Yhteisissä modeissa ladataan kaikissa kokoonpanoissasi. Nämä kartat ladattaisiin siis kaikkialla – juuri sitä FS Passion auttaa välttämään.",
+    "why_classified": "Tätä et luultavasti halua: kaikki Yhteisissä modeissa ladataan kaikissa kokoonpanoissasi. Nämä modit eivät enää kuuluisi vain omaan kokoonpanoonsa, ja listasi menettäisivät merkityksensä.",
+    "unclassified_offer": {
+      "one": "Valintasi sisältää vain yhden lajittelemattoman modin (karttoja lukuun ottamatta): voit lisätä vain sen.",
+      "other": "Valintasi sisältää {count} lajittelematonta modia (karttoja lukuun ottamatta): voit lisätä vain ne."
+    },
+    "tip": "Vinkki: Ctrl+A valitsee koko ”Kaikki modit” -listan, myös kartat ja jo lajitellut modit.",
+    "continue": "Jatka silti",
+    "only_unclassified": {
+      "one": "Lisää vain lajittelematon modi",
+      "other": "Lisää vain {count} lajittelematonta modia"
+    }
+  },
   "plus": {
     "title": "Uusi kokoonpano kartasta",
     "deps_title": {

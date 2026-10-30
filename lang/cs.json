@@ -904,6 +904,38 @@
     "optional_note": "Volitelné: hra je nepotřebuje. Do {where} se přidají jen ty, které zaškrtnete.",
     "optional_continue": "Pokračovat"
   },
+  "commonguard": {
+    "title_maps": "Pozor: do Společných modů míří mapy",
+    "title_classified": "Pozor: do Společných modů míří už zařazené mody",
+    "maps_intro": {
+      "one": "Nejspíš jde o omyl: váš výběr obsahuje mapu a chcete ji přidat do Společných modů:",
+      "few": "Nejspíš jde o omyl: váš výběr obsahuje {count} mapy a chcete je přidat do Společných modů:",
+      "many": "Nejspíš jde o omyl: váš výběr obsahuje {count} mapy a chcete je přidat do Společných modů:",
+      "other": "Nejspíš jde o omyl: váš výběr obsahuje {count} map a chcete je přidat do Společných modů:"
+    },
+    "classified_intro": {
+      "one": "Váš výběr obsahuje také mod, který už je zařazen v jedné z vašich sestav.",
+      "few": "Váš výběr obsahuje také {count} mody, které už jsou zařazeny ve vašich sestavách.",
+      "many": "Váš výběr obsahuje také {count} modu, které už jsou zařazeny ve vašich sestavách.",
+      "other": "Váš výběr obsahuje také {count} modů, které už jsou zařazeny ve vašich sestavách."
+    },
+    "why_maps": "To asi nechcete: vše ve Společných modech se načítá ve všech vašich sestavách. Tyto mapy by se tedy načítaly všude – a právě tomu FS Passion pomáhá předejít.",
+    "why_classified": "To asi nechcete: vše ve Společných modech se načítá ve všech vašich sestavách. Tyto mody by už nepatřily jen ke své sestavě a vaše seznamy by ztratily smysl.",
+    "unclassified_offer": {
+      "one": "Váš výběr obsahuje jen jeden nezařazený mod (bez map): můžete přidat jen ten.",
+      "few": "Váš výběr obsahuje {count} nezařazené mody (bez map): můžete přidat jen je.",
+      "many": "Váš výběr obsahuje {count} nezařazeného modu (bez map): můžete přidat jen je.",
+      "other": "Váš výběr obsahuje {count} nezařazených modů (bez map): můžete přidat jen je."
+    },
+    "tip": "Tip: Ctrl+A vybere celý seznam „Všechny mody“, včetně map a už zařazených modů.",
+    "continue": "Přesto pokračovat",
+    "only_unclassified": {
+      "one": "Přidat jen nezařazený mod",
+      "few": "Přidat jen {count} nezařazené mody",
+      "many": "Přidat jen {count} nezařazeného modu",
+      "other": "Přidat jen {count} nezařazených modů"
+    }
+  },
   "plus": {
     "title": "Nová sestava z mapy",
     "deps_title": {

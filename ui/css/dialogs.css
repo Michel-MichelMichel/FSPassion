@@ -1102,6 +1102,9 @@ select.field-input option { background: var(--surface-2); color: var(--text-1); 
    dans la couleur d'accent, avec la petite barre de sélection à gauche. */
 .lang-list-vertical .lang-item {
   position: relative;
+  /* 1.0.1 : avec 26 langues, la liste (colonne flexible à hauteur limitée)
+     écrasait ses lignes au lieu de défiler. */
+  flex: none;
   display: flex;
   width: 100%;
   height: auto;

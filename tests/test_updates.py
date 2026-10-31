@@ -317,9 +317,16 @@ def test_installer_relaunches_after_silent_update():
     assert "function RelaunchAfterUpdate" in iss
     assert "{param:RELAUNCH|0}" in iss
     assert "Check: RelaunchAfterUpdate" in iss
+    for flag in ("/SILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/RELAUNCH=1"):
+        assert flag in updates.INSTALLER_ARGS
+    # 1.0.1 : plus de PowerShell intermédiaire ; FS Passion lance l'installeur
+    # en dernier (app.py), et l'installeur attend sa fermeture.
     src = (ROOT / "src" / "fspassion" / "updates.py").read_text(encoding="utf-8")
-    for flag in ("/SILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/RELAUNCH=1", "Wait-Process"):
-        assert flag in src
+    assert "powershell" not in src.lower().split("# 1.0.1", 1)[0]
+    app = (ROOT / "src" / "fspassion" / "app.py").read_text(encoding="utf-8")
+    assert "winapi.startfile(str(core.run_installer), args=updates.INSTALLER_ARGS)" in app
+    assert app.index("winapi.release_single_instance(_mutex_handle)\n        log.info(\"Fermeture terminée\")") > 0
+    assert "function InitializeSetup" in iss and "CheckForMutexes(" in iss
 
 
 def test_release_file_names_match_build():

@@ -182,6 +182,26 @@ begin
   Result := ExpandConstant('{param:RELAUNCH|0}') = '1';
 end;
 
+// 1.0.1 : FS Passion lance l'installeur juste avant de se terminer. L'installeur
+// attend que FS Passion soit vraiment fermé (verrou d'instance libéré, puis
+// une seconde pour la fin du processus), 30 secondes au plus.
+function InitializeSetup(): Boolean;
+var
+  I: Integer;
+begin
+  Result := True;
+  if RelaunchAfterUpdate() then
+  begin
+    I := 0;
+    while CheckForMutexes('Local\FSPassion.Instance,FSPassion.Instance') and (I < 120) do
+    begin
+      Sleep(250);
+      I := I + 1;
+    end;
+    Sleep(1000);
+  end;
+end;
+
 // --------------------------------------------------------------------------
 // Désinstallation : questions posées ici, FS Passion n'est pas ouvert.
 // --------------------------------------------------------------------------

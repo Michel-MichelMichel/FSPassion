@@ -145,3 +145,11 @@ def test_best_match():
 
 def test_lang_dir_location():
     assert config.user_lang_dir().name == "lang"
+
+
+def test_language_menu_order_ignores_accents():
+    """1.0.1 : « Čeština » se range au C ; les écritures non latines à la fin."""
+    names = [lang["name"] for lang in i18n.Languages().available()]
+    assert names.index("Čeština") < names.index("Dansk")
+    latin = [n for n in names if n[:1].isascii() or n == "Čeština"]
+    assert names[: len(latin)] == latin

@@ -17,6 +17,7 @@ import copy
 import json
 import logging
 import shutil
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -95,6 +96,13 @@ def _flatten(node: dict[str, Any], prefix: str = "") -> set[str]:
     return keys
 
 
+def _sort_key(name: str) -> tuple[int, str]:
+    """1.0.1 : ordre alphabétique sans tenir compte des accents (« Čeština »
+    se range au C, pas après « Türkçe ») ; les écritures non latines suivent."""
+    base = "".join(c for c in unicodedata.normalize("NFKD", name) if not unicodedata.combining(c)).casefold()
+    return (0 if base[:1].isascii() else 1, base)
+
+
 class Languages:
     def __init__(self) -> None:
         self.builtin: dict[str, dict[str, Any]] = {}
@@ -135,7 +143,7 @@ class Languages:
                 "name": meta.get("name", code),
                 "personal": code in self.user,
             })
-        out.sort(key=lambda x: x["name"].lower())
+        out.sort(key=lambda x: _sort_key(x["name"]))
         return out
 
     def strings(self, code: str) -> dict[str, Any]:

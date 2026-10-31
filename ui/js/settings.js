@@ -822,6 +822,8 @@ export function languageSelect(onPick) {
   };
   function close() {
     list.hidden = true;
+    list.style.top = '';
+    list.style.maxHeight = '';
     btn.setAttribute('aria-expanded', 'false');
     document.removeEventListener('pointerdown', outside, true);
     window.removeEventListener('keydown', onKey, true);
@@ -832,6 +834,7 @@ export function languageSelect(onPick) {
       return;
     }
     list.hidden = false;
+    placeLanguageList(btn, list);
     btn.setAttribute('aria-expanded', 'true');
     document.addEventListener('pointerdown', outside, true);
     // Sur window, avant la fenêtre des Paramètres : Échap ferme la liste seule.
@@ -840,6 +843,47 @@ export function languageSelect(onPick) {
     if (cur) cur.scrollIntoView({ block: 'nearest' });
   });
   return wrap;
+}
+
+// 1.0.1 : 26 langues. La liste prend la place libre : d'abord vers le bas,
+// jusqu'au bas de la zone visible (Paramètres qui défilent, ou fenêtre), puis,
+// s'il en faut encore, elle remonte au-dessus du bouton. Elle ne défile que si
+// toute la hauteur disponible ne suffit pas.
+const LIST_GAP = 6;
+const LIST_MARGIN = 12;
+
+function clipRect(el) {
+  const view = { top: 0, bottom: window.innerHeight };
+  for (let p = el.parentElement; p && p !== document.body; p = p.parentElement) {
+    const oy = getComputedStyle(p).overflowY;
+    if (oy === 'auto' || oy === 'scroll' || oy === 'hidden') {
+      const r = p.getBoundingClientRect();
+      return { top: Math.max(view.top, r.top), bottom: Math.min(view.bottom, r.bottom) };
+    }
+  }
+  return view;
+}
+
+function placeLanguageList(btn, list) {
+  list.style.top = '';
+  list.style.maxHeight = 'none';
+  const s = uiScale() || 1;
+  const natural = list.scrollHeight;
+  const b = btn.getBoundingClientRect();
+  const clip = clipRect(list.parentElement);
+  const btnH = b.height / s;
+  const below = Math.max(0, (clip.bottom - b.bottom) / s - LIST_GAP - LIST_MARGIN);
+  const above = Math.max(0, (b.top - clip.top) / s - LIST_MARGIN);
+  let top = btnH + LIST_GAP;
+  let max = natural;
+  if (natural > below) {
+    // Remonte de ce qui manque, au plus jusqu'en haut de la zone visible.
+    const shift = Math.min(natural - below, above + btnH + LIST_GAP);
+    top -= shift;
+    max = Math.min(natural, below + shift);
+  }
+  list.style.top = `${Math.round(top)}px`;
+  list.style.maxHeight = `${Math.max(120, Math.floor(max))}px`;
 }
 
 function buildLanguage() {

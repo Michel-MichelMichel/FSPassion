@@ -2,6 +2,21 @@
 
 Les versions sont numérotées x.y.z : 0.x.y pendant le développement, 1.0.0 pour la version finale.
 
+## 1.0.1 — 31 octobre 2026 — liste des langues, installation des mises à jour
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui s'est passé
+
+1. **Liste des langues** (Paramètres → Affichage, et fenêtre de bienvenue) : avec 26 langues, les lignes étaient écrasées les unes sur les autres au lieu de défiler. La liste, une colonne flexible de 360 px au plus, rétrécissait ses lignes.
+2. **« Installer la mise à jour » ne faisait rien** (constaté en passant de 0.9.12 à 1.0.0) : FS Passion se fermait, mais l'installeur ne démarrait pas, sans erreur ni trace dans le journal. Lancé à la main avec les mêmes options, l'installeur fonctionnait. En cause : le PowerShell caché qui devait attendre la fin de FS Passion puis lancer l'installeur.
+
+### Ce qui change
+
+1. **Liste des langues** : les lignes gardent leur hauteur. La liste prend toute la place libre, d'abord vers le bas jusqu'au bas de la zone visible, puis, s'il le faut, elle remonte au-dessus du bouton ; elle ne défile que si cela ne suffit pas. Ordre alphabétique sans tenir compte des accents (Čeština au C), les écritures non latines à la fin.
+2. **Mises à jour** : plus de PowerShell. FS Passion lance lui-même l'installeur en dernier, juste avant la fin du processus, après avoir libéré son verrou d'instance unique (même méthode que le désinstalleur après « Ne plus utiliser FS Passion »). L'installeur attend que FS Passion soit fermé (30 secondes au plus) avant de remplacer les fichiers, puis le relance. Le journal note « Lancement de l'installeur ».
+   - Limite : la correction vaut pour les mises à jour faites **depuis la 1.0.1**. Depuis la 0.9.x ou la 1.0.0, si la mise à jour ne s'installe pas, télécharger l'installeur sur la page Releases et le lancer : réglages, parties et mods sont conservés.
+
 ## 1.0.0 — 31 octobre 2026 — version finale : l'interface en 26 langues
 
 **Aucun fichier du jeu ni des mods n'est touché.**

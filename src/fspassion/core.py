@@ -141,6 +141,8 @@ class Core:
         self.ui_perf: dict[str, Any] = {}
         self.exit_cleanup: list[Path] = []
         self.run_uninstaller: Path | None = None
+        # 1.0.1 : installeur d'une mise à jour, lancé par app.py à la toute fin.
+        self.run_installer: Path | None = None
         # Mises à jour de FS Passion (Releases GitHub).
         self.updater = updates.Updater(
             self.app_info,
@@ -1847,10 +1849,11 @@ class Core:
         kind = updates.install_kind()
         if kind == "installed":
             try:
-                updates.launch_installer_after_exit(path, os.getpid())
-            except (OSError, updates.UpdateError) as exc:
+                updates.check_installer_launch()
+            except updates.UpdateError as exc:
                 log.warning("Lancement de l'installeur impossible : %s", exc)
                 raise AppError("settings.updates.error_launch", status=500) from exc
+            self.run_installer = path
             log.info("Installation de %s au prochain arrêt de FS Passion", path.name)
             return {"action": "quit", "state": self.updater.state()}
         winapi.reveal(path)

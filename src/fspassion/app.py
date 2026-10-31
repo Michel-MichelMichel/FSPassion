@@ -31,7 +31,7 @@ import urllib.request
 import webbrowser
 from typing import Any
 
-from fspassion import __version__, config, fsutil, logs, stopuse, winapi
+from fspassion import __version__, config, fsutil, logs, stopuse, updates, winapi
 from fspassion.core import Core
 from fspassion.server import Server
 from fspassion.tray import Tray
@@ -490,6 +490,12 @@ def main(argv: list[str] | None = None) -> None:
             launcher = None if config.is_frozen() else config.project_root() / "lancer_dev.bat"
             if not winapi.relaunch_elevated(launcher):
                 log.warning("Relance en administrateur refusée ou annulée")
+        if core.run_installer is not None:
+            # 1.0.1 : mise à jour. Le verrou d'instance est libéré pour que
+            # l'installeur ne voie plus FS Passion ouvert ; il attend lui-même
+            # la fin du processus avant de remplacer les fichiers.
+            log.info("Lancement de l'installeur %s", core.run_installer.name)
+            winapi.release_single_instance(_mutex_handle)
         log.info("Fermeture terminée")
         logging.shutdown()
         if core.exit_cleanup:
@@ -501,4 +507,6 @@ def main(argv: list[str] | None = None) -> None:
         if core.run_uninstaller is not None:
             # « Ne plus utiliser » déjà fait : le désinstalleur ne repose pas ses questions.
             winapi.startfile(str(core.run_uninstaller), args=["/FSPDONE=1"])
+        if core.run_installer is not None:
+            winapi.startfile(str(core.run_installer), args=updates.INSTALLER_ARGS)
         end_process()

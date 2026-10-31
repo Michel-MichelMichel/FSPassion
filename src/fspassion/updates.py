@@ -33,7 +33,6 @@ import hashlib
 import json
 import logging
 import re
-import subprocess
 import sys
 import threading
 import time
@@ -325,27 +324,20 @@ def clean_old_downloads() -> None:
             pass
 
 
-def launch_installer_after_exit(installer: Path, pid: int) -> None:
-    """Lance l'installeur dès que le processus `pid` (FS Passion) est fermé.
+# 1.0.1 : jusqu'en 1.0.0, un PowerShell caché attendait la fin de FS Passion
+# puis lançait l'installeur. Il ne faisait rien chez certains utilisateurs
+# (aucune erreur, aucune trace) : la mise à jour ne s'installait pas. FS Passion
+# lance maintenant l'installeur lui-même, en dernier, juste avant la fin du
+# processus (app.py), après avoir libéré son verrou d'instance unique ; c'est
+# l'installeur qui attend que FS Passion soit fermé (installer.iss,
+# InitializeSetup). Même méthode que le désinstalleur après « Ne plus utiliser ».
+INSTALLER_ARGS = ["/SILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/NOCANCEL", "/RELAUNCH=1"]
 
-    Un petit PowerShell caché attend la fin de FS Passion, puis démarre
-    l'installeur en silencieux (barre de progression visible), sans
-    redémarrage du PC, et lui demande de relancer FS Passion à la fin
-    (/RELAUNCH=1, voir packaging\\installer.iss)."""
+
+def check_installer_launch() -> None:
+    """L'installation automatique n'existe que sous Windows."""
     if sys.platform != "win32":
         raise UpdateError("unsupported")
-    path = str(installer).replace("'", "''")
-    args = "'/SILENT','/SUPPRESSMSGBOXES','/NORESTART','/NOCANCEL','/RELAUNCH=1'"
-    script = (
-        f"Wait-Process -Id {int(pid)} -Timeout 90 -ErrorAction SilentlyContinue; "
-        f"Start-Process -FilePath '{path}' -ArgumentList {args}"
-    )
-    flags = 0x00000008 | 0x00000200 | 0x08000000  # DETACHED, NEW_PROCESS_GROUP, NO_WINDOW
-    subprocess.Popen(  # noqa: S603 - commande fixe, chemin de notre dossier
-        ["powershell.exe", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
-         "-WindowStyle", "Hidden", "-Command", script],
-        creationflags=flags, close_fds=True,
-    )
 
 
 # --------------------------------------------------------------------------

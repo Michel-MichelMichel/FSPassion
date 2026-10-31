@@ -1,0 +1,1536 @@
+{
+  "_meta": {
+    "code": "ro",
+    "name": "Română",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion este închis",
+    "closed_help": "Poți închide această filă. Pornește din nou FS Passion pentru a continua."
+  },
+  "common": {
+    "close": "Închide",
+    "cancel": "Anulează",
+    "ok": "OK",
+    "copy": "Copiază",
+    "copied": "Copiat în clipboard",
+    "soon": "Vine în versiunea {version}",
+    "soon_action": "{action}: vine în versiunea {version}"
+  },
+  "window": {
+    "minimize": "Minimizează",
+    "maximize": "Maximizează",
+    "restore": "Restaurează",
+    "close": "Închide FS Passion"
+  },
+  "header": {
+    "settings": "Setări",
+    "version": "Versiunea jocului: {name}",
+    "current_party": "Configurația curentă",
+    "create": "Creează o configurație",
+    "duplicate": "Duplică configurația",
+    "rename": "Redenumește configurația",
+    "delete": "Șterge configurația",
+    "common_mods": "Moduri comune",
+    "common_mods_tip": "Include modurile comune în această configurație",
+    "apply": "Aplică",
+    "apply_tip": "Fă ca jocul să încarce această configurație",
+    "apply_done_tip": "Această configurație este aplicată și la zi: pe ea o încarcă jocul",
+    "theme_light": "Interfață luminoasă",
+    "theme_dark": "Interfață întunecată"
+  },
+  "versions": {
+    "coming": "În curând",
+    "ready": "Configurată",
+    "installed": "Instalată",
+    "not_installed": "Neinstalată",
+    "absent_help": "Instalată în altă parte? Setări → Joc și căi"
+  },
+  "party": {
+    "full": "Configurație completă",
+    "empty": "Configurație goală",
+    "other": "Folder personalizat",
+    "unsupported": "Fără configurații",
+    "unknown": "Necunoscut",
+    "none_yet": "Nicio configurație încă. Creează una cu ＋ sau cu „＋ Configurație” pe o hartă.",
+    "full_count": {
+      "one": "Toate modurile ({count})",
+      "few": "Toate modurile ({count})",
+      "other": "Toate modurile ({count})"
+    },
+    "empty_sub": "Fără moduri, pentru a testa jocul de bază",
+    "applied_tag": "aplicată",
+    "mods_count": {
+      "zero": "Niciun mod",
+      "one": "{count} mod",
+      "few": "{count} moduri",
+      "other": "{count} de moduri"
+    },
+    "full_tip": "Ideală pentru actualizarea modurilor în joc"
+  },
+  "status": {
+    "running": "{game} rulează",
+    "other_folder": "Jocul își încarcă modurile din alt folder:",
+    "applied": "Configurație aplicată: {name}",
+    "other_folder_path": "Jocul încarcă alt folder: {path}",
+    "stale": "Configurația s-a schimbat de la ultima aplicare"
+  },
+  "path": {
+    "empty": "",
+    "found": "Găsit",
+    "not_found": "Acest folder nu există",
+    "not_game_exe": "Acest fișier nu este un executabil {game}",
+    "no_gamesettings": "gameSettings.xml nu a fost găsit: pornește jocul o dată, apoi revino",
+    "not_ntfs": "Această unitate nu este NTFS: configurațiile nu sunt posibile",
+    "onedrive": "Acest folder este în OneDrive: nerecomandat",
+    "storage_overlap": "Acest folder conține folderul principal de moduri (sau folderul său FSPassion) ori se află în el: alege alt folder",
+    "storage_duplicate": "Acest folder este deja folosit de celălalt folder de stocare sau îl conține",
+    "storage_same_disk": "Găsit · aceeași unitate ca folderul principal: nu sunt necesare drepturi speciale",
+    "storage_other_disk": "Găsit · altă unitate: legături simbolice"
+  },
+  "list1": {
+    "title": "Toate modurile",
+    "search": "Caută un mod sau un autor",
+    "search_clear": "Golește căutarea",
+    "cat_unclassified": "Nesortate",
+    "cat_dlc": "DLC",
+    "cat_maps": "Hărți",
+    "cat_others": "Alte moduri",
+    "cat_by_author": "După numele autorului",
+    "dlc_note": "Încărcate de joc în fiecare configurație",
+    "selected": "selectate",
+    "active": "active",
+    "all": "în total",
+    "scanning": "Citirea modurilor: {done} din {total}",
+    "icons_pending": {
+      "one": "Pregătirea pictogramelor: a mai rămas {count}",
+      "few": "Pregătirea pictogramelor: au mai rămas {count}",
+      "other": "Pregătirea pictogramelor: au mai rămas {count}"
+    },
+    "anomalies": {
+      "one": "{count} problemă: vezi detaliile",
+      "few": "{count} probleme: vezi detaliile",
+      "other": "{count} de probleme: vezi detaliile"
+    },
+    "find_new": "Caută moduri noi în descărcări",
+    "open_settings": "Deschide setările",
+    "not_configured": "{game} nu este încă configurat",
+    "not_configured_help": "Setează folderul său de moduri în setări sau lasă FS Passion să detecteze instalarea.",
+    "reading": "Citirea modurilor…",
+    "no_match": "Niciun mod nu corespunde cu „{query}”",
+    "empty": "Acest folder de moduri este gol",
+    "empty_help": "Aici vor apărea modurile (.zip) și modurile despachetate (foldere cu un modDesc.xml).",
+    "unclassified_note": "Jocul nu le va vedea până nu sunt sortate",
+    "plus_party": "Configurație",
+    "plus_party_tip": "Creează o configurație cu această hartă și dependențele ei (Enter)",
+    "mark_party": "În configurația curentă",
+    "mark_common": "În modurile comune",
+    "info_tip": "Fixează detaliile modului (tasta I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Folderul de moduri nu a fost găsit",
+      "unexpected": "Citirea modurilor a eșuat: {error}"
+    }
+  },
+  "mod": {
+    "map": "Hartă",
+    "unpacked": "Mod despachetat",
+    "multiplayer": "Multiplayer",
+    "version": "Versiune",
+    "author": "Autor",
+    "game_version": "Joc",
+    "gv_unknown": "Versiunea jocului necunoscută",
+    "size": "Dimensiune",
+    "kind": "Format",
+    "kind_dir": "Folder (despachetat)",
+    "kind_zip": "Arhivă .zip",
+    "parties": "Prezent în liste",
+    "parties_none": "Niciuna",
+    "storage": "Stocare",
+    "dependencies": {
+      "one": "{count} dependență",
+      "few": "{count} dependențe",
+      "other": "{count} de dependențe"
+    },
+    "more": {
+      "one": "și încă {count}",
+      "few": "și încă {count}",
+      "other": "și încă {count}"
+    },
+    "no_dependencies": "Nicio dependență declarată",
+    "unpacked_tip": "Mod despachetat: nu este actualizat de ModHub și nu poate fi folosit în multiplayer. FS Passion nu scrie niciodată în el.",
+    "gv_conflict": "Prefixul numelui și descVersion indică două versiuni diferite: se folosește prefixul.",
+    "unpin": "Închide (Esc)",
+    "optional": {
+      "one": "{count} mod opțional",
+      "few": "{count} moduri opționale",
+      "other": "{count} de moduri opționale"
+    },
+    "searchmods_note": "Versiune mai veche a jocului (eticheta SearchMods): salvarea se încarcă chiar dacă lipsește un mod necesar; jocul semnalează asta ulterior.",
+    "links_hint": "Fă clic pe „i” pentru a fixa aceste detalii și a deschide legăturile.",
+    "links_old": "Legături date de autorul modului, adesea vechi: pagina s-ar putea să nu mai existe.",
+    "link_open": "Deschide în browser",
+    "link_failed": "Legătura nu a putut fi deschisă."
+  },
+  "dep": {
+    "present": "prezent",
+    "absent": "lipsă",
+    "dlc_owned": "DLC deținut",
+    "dlc_missing": "DLC nedeținut"
+  },
+  "dlc": {
+    "free": "DLC gratuit",
+    "paid": "DLC",
+    "info": "Jocul încarcă întotdeauna DLC-urile instalate, în fiecare configurație."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} nu acceptă configurații",
+    "missing": "Nu este în folderele de moduri",
+    "missing_tip": "{name} nu mai este în folderele tale de moduri. Dacă autorul l-a redenumit, folosește „Înlocuiește cu…”.",
+    "replace": "Înlocuiește cu…"
+  },
+  "list2": {
+    "title": "Modurile configurației",
+    "full": {
+      "one": "Configurație completă: toate modurile ({count})",
+      "few": "Configurație completă: toate modurile ({count})",
+      "other": "Configurație completă: toate modurile ({count})"
+    },
+    "full_help": "Jocul încarcă tot folderul de moduri, ca înainte de FS Passion.",
+    "empty_party": "Configurație goală: fără moduri",
+    "empty_help": "Pentru a testa jocul de bază, fără niciun mod.",
+    "no_mods": "Niciun mod în această configurație",
+    "no_mods_help": "Trage moduri din „Toate modurile” sau selectează-le și folosește bara de acțiuni."
+  },
+  "list3": {
+    "title": "Moduri comune",
+    "empty": "Niciun mod comun încă",
+    "empty_help": "Modurile comune sunt prezente în fiecare configurație: tractoare, utilaje, scripturi…",
+    "not_included": "Neincluse în această configurație"
+  },
+  "footer": {
+    "github_tip": "Pagina GitHub a proiectului",
+    "github_soon": "Adresa GitHub a proiectului va fi adăugată în curând",
+    "running": "Jocul rulează",
+    "launch": "Pornește jocul",
+    "launch_unconfigured": "Setează executabilul {game} în setări",
+    "launch_tip": "Pornește jocul cu configurația aplicată",
+    "quit": "Ieșire"
+  },
+  "launch": {
+    "started": "Se pornește {game}…",
+    "failed": "{game} nu a putut fi pornit. Verifică executabilul și metoda de pornire în setări.",
+    "no_exe": "Executabilul {game} nu a fost găsit: setează-l în setări.",
+    "already_running": "{game} rulează deja.",
+    "apply_title": "Aplici „{name}”?",
+    "apply_text": "Configurația „{name}” nu este aplicată sau s-a schimbat între timp. Aplici configurația {name}, apoi pornești {game}?",
+    "apply_and_launch": "Aplică și pornește",
+    "without_apply": "Pornește fără a aplica"
+  },
+  "backup": {
+    "created": "Copie de siguranță originală a gameSettings.xml creată pentru {game}",
+    "exported": "Configurare exportată: {file}",
+    "demo_active": "Ieși mai întâi din modul demonstrativ: folosește alte foldere decât ale tale.",
+    "unreadable": "Acest fișier nu poate fi citit: {path}",
+    "too_big": "Acest fișier este prea mare pentru a fi un export FS Passion: {path}",
+    "not_export": "Acest fișier nu este un export FS Passion: {path}",
+    "too_new": "Acest fișier provine dintr-o versiune mai nouă de FS Passion ({version}). Actualizează FS Passion pentru a-l importa.",
+    "write_failed": "Fișierul nu a putut fi salvat: {path}",
+    "expired": "Importul a expirat: alege din nou fișierul.",
+    "running": "Închide {game} înainte de import: configurațiile sale urmează să se schimbe.",
+    "import": {
+      "title": "Importă o configurare",
+      "from": "Export din {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} configurație",
+        "few": "{count} configurații",
+        "other": "{count} de configurații"
+      },
+      "common": {
+        "one": "{count} mod comun",
+        "few": "{count} moduri comune",
+        "other": "{count} de moduri comune"
+      },
+      "no_parties": "Acest fișier nu conține nicio configurație: vor fi importate doar setările.",
+      "keep": "Păstrează căile actuale (recomandat)",
+      "keep_help": "Folderele de joc, moduri și descărcări ale acestui PC nu se schimbă. Se importă doar configurațiile, modurile comune și setările neutre (limbă, temă, opțiuni).",
+      "replace_help": "Căile din fișier le înlocuiesc pe cele ale acestui PC: alege asta doar dacă fișierul provine de pe acest PC, cu aceleași unități.",
+      "paths_differ": "Folderele de moduri din acest fișier nu sunt cele ale acestui PC.",
+      "warning": "Configurațiile actuale ale versiunilor de mai sus vor fi înlocuite. Starea actuală este salvată automat înainte. Nimic nu este aplicat: folderele configurațiilor sunt refăcute la următorul „Aplică”.",
+      "ok": "Importă"
+    },
+    "result": {
+      "title": "Configurare importată",
+      "done": "Importul s-a încheiat.",
+      "parties": {
+        "one": "{count} configurație importată",
+        "few": "{count} configurații importate",
+        "other": "{count} de configurații importate"
+      },
+      "skipped": "neimportat (versiunea jocului nu este configurată pe acest PC)",
+      "fallback": "Jocul încărca o configurație care nu mai există: acum încarcă Configurația completă.",
+      "apply": "Modurile care lipsesc de pe acest PC apar ca moduri lipsă în configurații. Fă clic pe „Aplică” pentru ca jocul să încarce o configurație importată.",
+      "backup": "Starea dinaintea importului a fost salvată în %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Setări",
+    "game": {
+      "title": "Joc și căi"
+    },
+    "look": {
+      "title": "Afișare"
+    },
+    "app": {
+      "title": "Aplicație"
+    },
+    "help": {
+      "title": "Ajutor și despre"
+    },
+    "paths": {
+      "versions": "Versiunile jocului",
+      "game_exe": "Executabilul jocului",
+      "user_dir": "Folderul jocului din Documente",
+      "mods_dir": "Folderul principal de moduri",
+      "mods_dirs": "Foldere de moduri",
+      "browse": "Răsfoiește…",
+      "fixed_fs2011": "Folderul de moduri FS2011 nu poate fi mutat.",
+      "add_storage": "Adaugă un folder de moduri pe altă unitate",
+      "derived": "Căi derivate",
+      "not_applicable": "Nu se aplică acestei versiuni",
+      "d_game_dir": "Folderul jocului",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (folderul jocului)",
+      "d_dlc_user": "DLC (Documente)",
+      "detect": "Detectează instalarea",
+      "detect_all": "Detectează toate versiunile",
+      "detect_all_help": "Caută instalările tuturor versiunilor și completează câmpurile lor goale.",
+      "detect_one": "Detectează această versiune",
+      "detect_one_help": "Modifică doar versiunea selectată mai sus. Celelalte versiuni rămân neschimbate.",
+      "detect_help": "Câmpurile pe care le-ai personalizat nu sunt modificate niciodată.",
+      "detect_found": "Instalări găsite: {list}",
+      "detect_none": "Nicio instalare găsită. Setează căile cu „Răsfoiește…”.",
+      "launch_method": "Modul de pornire a jocului",
+      "launch_auto": "Automat",
+      "launch_platform": "Platformă",
+      "launch_exe": "Executabil",
+      "launch_help": "Automat alege metoda potrivită (Steam, Epic Games, Microsoft Store, Xbox sau executabil). Celelalte două sunt soluții de rezervă.",
+      "minimize_on_launch": "Minimizează FS Passion la pornirea jocului",
+      "minimize_on_launch_help": "În zona de notificare dacă „Închide în zona de notificare” este activat (Aplicație → Fereastră), altfel în bara de activități.",
+      "args_title": "Argumente de pornire",
+      "args_show": "Afișează argumentele de pornire",
+      "args_hide": "Ascunde argumentele de pornire",
+      "args_skip": "Sari peste videoclipul de introducere",
+      "args_skip_info": "Sare peste videoclipul de introducere și ecranele de pornire.",
+      "args_cheats": "Consola de dezvoltare",
+      "args_cheats_info": "Activează consola de dezvoltare din joc. Setează și <controls> în game.xml, lângă gameSettings.xml.",
+      "args_game_xml_absent": "game.xml nu a fost găsit: consola va fi activată doar după ce jocul a fost pornit o dată.",
+      "args_game_xml_error": "game.xml nu a putut fi modificat: consola de dezvoltare rămâne dezactivată.",
+      "args_help_command": "FS Passion le adaugă la comanda de pornire a {game}.",
+      "args_help_steam": "{game} este pornit de Steam. Steam refuză argumentele transmise de alt program (ar cere confirmare la fiecare pornire), așa că FS Passion pornește jocul fără ele. Introdu-le o singură dată în Steam, mai jos.",
+      "args_help_epic": "{game} este pornit de Epic Games, care nu acceptă argumente de la alt program: introdu-le o singură dată în Epic Games Launcher, mai jos.",
+      "args_help_unsupported": "{game} este instalat din Microsoft Store sau Xbox.",
+      "args_store": "Microsoft Store și aplicația Xbox nu permit argumente de pornire: poate fi activată doar consola de dezvoltare (game.xml). Pentru argumente, alege „Executabil” ca mod de pornire, dacă instalarea ta o permite.",
+      "args_steam_where": "Unde le introduci în Steam",
+      "args_steam_steps": "Biblioteca Steam: clic dreapta pe {game} → Proprietăți…\nFila General → câmpul „Opțiuni de lansare”\nLipește textul de mai jos, apoi închide fereastra",
+      "args_epic_where": "Unde le introduci în Epic Games Launcher",
+      "args_epic_steps": "Bibliotecă: „…” sub {game} → Gestionare\nBifează „Argumente suplimentare pentru linia de comandă”\nLipește textul de mai jos (launchere mai vechi: imaginea de profil → Setări → {game})",
+      "args_none": "Niciun argument bifat",
+      "args_copy_label": "Argumente de copiat",
+      "args_copy_help": "Necesar din nou doar când bifezi sau debifezi un argument.",
+      "console_on": "Consolă activată în game.xml",
+      "console_off": "Consolă dezactivată în game.xml",
+      "console_enable": "Activează în game.xml",
+      "console_done": "Consola de dezvoltare a fost activată în game.xml pentru {game}",
+      "add_storage_help": "Până la încă două foldere. Modurile lor sunt listate și intră în configurații ca celelalte; FS Passion nu scrie nimic altceva acolo.",
+      "extra_dir": "Folder suplimentar de moduri",
+      "extra_help": "Eliminarea acestui folder nu afectează modurile lui: pur și simplu nu mai sunt listate.",
+      "remove_storage": "Elimină acest folder din listă (modurile lui nu sunt atinse)"
+    },
+    "downloads": {
+      "title": "Descărcări",
+      "folder": "Folderul de descărcări",
+      "help": "Folderul în care browserul tău salvează modurile descărcate.",
+      "scan_at_start": "Caută moduri noi la pornire",
+      "scan_now": "Caută acum"
+    },
+    "language": {
+      "title": "Limbă",
+      "personal": "personală",
+      "open_folder": "Deschide folderul limbilor personale",
+      "personal_help": "Acolo poți traduce FS Passion în limba ta: sunt incluse un șablon și instrucțiuni.",
+      "rejected": "Fișiere de limbă ignorate (nevalide sau prea mari): {list}"
+    },
+    "theme": {
+      "title": "Temă",
+      "help": "Treci cu mouse-ul peste o mostră pentru a previzualiza tema, fă clic pentru a o alege. Temele bicolore au doar două culori; celelalte folosesc culorile oficiale ale unor teme populare, fiecare în variantă întunecată și luminoasă. Butonul soare/lună din antet comută între ele.",
+      "contrast": "Contrast {ratio}:1",
+      "loop": "Temă în buclă: schimbă tema în fiecare minut",
+      "light_effects": "Efecte de lumină (luciu, contururi strălucitoare, neon)",
+      "reduce_motion": "Redu animațiile",
+      "follows_windows": "Urmează setarea Windows „Efecte de animație”.",
+      "follow_windows": "Urmează setarea Windows",
+      "atelier": "Deschide atelierul de teme",
+      "mode_dark": "Întunecată",
+      "mode_light": "Luminoasă",
+      "group_duo": "Bicolore"
+    },
+    "backup": {
+      "title": "Copie de siguranță a configurării",
+      "help": "Exportă configurațiile, modurile comune și setările într-un fișier, pentru a le recupera după o reinstalare sau pe alt PC. Niciun mod nu este copiat: doar numele lor.",
+      "export": "Exportă",
+      "import": "Importă"
+    },
+    "notice": {
+      "title": "Ghid",
+      "open": "Deschide ghidul",
+      "at_start": "Afișează la pornire",
+      "tour": "Tur ghidat al interfeței"
+    },
+    "anomalies": {
+      "title": "Probleme",
+      "show": "Afișează problemele",
+      "reset": {
+        "zero": "Nicio problemă ascunsă",
+        "one": "Afișează din nou problema ascunsă",
+        "few": "Afișează din nou cele {count} probleme ascunse",
+        "other": "Afișează din nou cele {count} de probleme ascunse"
+      },
+      "reset_done": "Problemele ascunse sunt afișate din nou"
+    },
+    "internet": {
+      "title": "Conexiune la internet",
+      "allow": "Permite lui FS Passion să descarce catalogul DLC de pe GitHub",
+      "help": "Catalogul DLC (nume și pictograme) este citit de pe GitHub cel mult o dată pe zi. Se descarcă doar pictogramele DLC-urilor prezente pe acest PC. Nu se trimit date personale.",
+      "catalog_off": "Catalog DLC: cel livrat cu FS Passion (conexiune dezactivată).",
+      "catalog_remote": "Catalog DLC din {date}, descărcat de pe GitHub.",
+      "catalog_embedded": "Catalog DLC din {date}, livrat cu FS Passion.",
+      "check": "Verifică acum",
+      "checking": "Se verifică…",
+      "error_not_found": "Catalogul nu este încă publicat pe GitHub.",
+      "error_unreachable": "Ultima verificare a eșuat (fără conexiune?).",
+      "error_invalid": "Catalogul publicat nu poate fi citit: se folosește cel din FS Passion.",
+      "error_too_new": "Catalogul publicat necesită o versiune mai nouă de FS Passion.",
+      "error_too_big": "Catalogul publicat este prea mare: este ignorat."
+    },
+    "updates": {
+      "title": "Actualizări FS Passion",
+      "allow": "Caută actualizări FS Passion pe GitHub",
+      "help": "La fiecare pornire (apoi o dată pe zi cât rămâne deschis), FS Passion citește pe GitHub numărul ultimei versiuni publicate. Nu se trimit date personale.",
+      "off": "Căutarea actualizărilor este dezactivată.",
+      "checking": "Se verifică…",
+      "last_check": "Ultima verificare: {date}.",
+      "up_to_date": "FS Passion este la zi (versiunea {version}).",
+      "never": "Versiune instalată: {version}.",
+      "available": "Versiune nouă disponibilă: {version}",
+      "published": "Lansată pe {date}",
+      "current": "Versiune instalată: {version}",
+      "install": "Instalează actualizarea",
+      "download_portable": "Descarcă versiunea portabilă",
+      "downloading": "Se descarcă… {percent}%",
+      "closing": "Se instalează…",
+      "closing_help": "FS Passion se închide, instalează noua versiune, apoi se redeschide.",
+      "see_release": "Vezi noutățile",
+      "check": "Verifică acum",
+      "how_installed": "Programul de instalare este descărcat de pe GitHub și verificat (sumă de control SHA-256). FS Passion se închide în timpul instalării, apoi se redeschide. Setările, configurațiile și modurile tale sunt păstrate.",
+      "how_portable": "Fișierul .zip este descărcat și verificat în folderul de descărcări. Închide FS Passion, apoi înlocuiește fișierele din folderul lui cu cele din .zip, păstrând folderul „data” (setările tale).",
+      "how_source": "Descarcă noua versiune de pe pagina ei GitHub.",
+      "note": "Versiune nouă FS Passion disponibilă: {version}",
+      "pill": "Versiune nouă {version}",
+      "pill_tip": "Actualizare FS Passion disponibilă: Setări → Aplicație",
+      "portable_ready": "Versiunea portabilă a fost descărcată și verificată: {file}",
+      "error_not_found": "Nicio versiune nu a fost încă publicată pe GitHub.",
+      "error_unreachable": "Verificarea a eșuat (fără conexiune?).",
+      "error_rate_limited": "GitHub limitează verificările deocamdată: se va încerca din nou mai târziu.",
+      "error_invalid": "Lansarea de pe GitHub nu poate fi citită.",
+      "error_no_source": "Lipsește adresa depozitului GitHub.",
+      "error_checksum": "Fișierul descărcat nu corespunde sumei sale de control: a fost șters, nu s-a instalat nimic.",
+      "error_no_checksum": "Lansarea nu oferă nicio sumă de control SHA-256 pentru acest fișier: din motive de siguranță, nu s-a instalat nimic.",
+      "error_missing_file": "Această lansare nu conține fișierul așteptat: descarcă-l de pe pagina ei GitHub.",
+      "error_disabled": "Căutarea actualizărilor este dezactivată.",
+      "error_busy": "O descărcare este deja în curs.",
+      "error_none": "Nicio actualizare de instalat.",
+      "error_unsupported": "Instalarea automată nu este posibilă aici: descarcă actualizarea de pe pagina ei GitHub.",
+      "error_launch": "Programul de instalare nu a putut fi pornit: descarcă actualizarea de pe pagina ei GitHub.",
+      "error_game_running": "Închide mai întâi Farming Simulator: FS Passion îți pune în ordine configurațiile când jocul se închide."
+    },
+    "logs": {
+      "title": "Jurnale și diagnosticare",
+      "open_logs": "Deschide folderul jurnalelor",
+      "copy_diag": "Copiază diagnosticarea",
+      "diag_copied": "Diagnosticare copiată: lipește-o în raportul tău"
+    },
+    "donate": {
+      "title": "Susține proiectul",
+      "text": "FS Passion este și va rămâne un proiect de încredere, open source și gratuit. Dacă vrei să-i mulțumești autorului, o donație unică durează câteva secunde, fără cont de creat. Mulțumesc!",
+      "no_link": "Legătura vine în curând"
+    },
+    "about": {
+      "title": "Despre",
+      "version": "Versiune",
+      "author": "Autor",
+      "license": "Licență",
+      "github_soon": "adresa vine în curând",
+      "official": "Singura legătură oficială de descărcare este pagina GitHub a proiectului.",
+      "unofficial": "FS Passion este un proiect independent, neafiliat cu GIANTS Software. Farming Simulator este o marcă înregistrată a GIANTS Software.",
+      "privacy": "FS Passion nu trimite date. Doar descarcă, dacă permiți, lista publică de DLC-uri de pe GitHub.",
+      "window_mode": "Tehnica ferestrei (dezvoltare)",
+      "window_native": "Nativă",
+      "window_script": "Calculată",
+      "window_thin": "Cadru subțire",
+      "window_restart": "Intră în vigoare la următoarea pornire a FS Passion",
+      "window_help": "Tehnica actuală: {current}. Schimb-o doar dacă redimensionarea de la margini nu funcționează."
+    },
+    "stop": {
+      "title": "Nu mai folosi FS Passion",
+      "show": "Afișează detaliile",
+      "hide": "Ascunde detaliile",
+      "text": "Readuce jocului setarea originală și elimină folderele configurațiilor. Modurile tale nu sunt atinse niciodată.",
+      "button": "Nu mai folosi FS Passion"
+    },
+    "window": {
+      "title": "Fereastră",
+      "close_to_tray": "Închide în zona de notificare",
+      "close_to_tray_help": "Butonul de închidere al ferestrei ascunde FS Passion lângă ceasul Windows. Fă clic pe pictograma lui pentru a-l readuce; „Ieșire” (dreapta jos sau în meniul pictogramei) îl închide cu adevărat.",
+      "tray_off": "Zona de notificare este disponibilă doar în fereastra FS Passion, pe Windows.",
+      "focus_after_game": "Revino în prim-plan când jocul se închide",
+      "focus_after_game_help": "Când Farming Simulator se închide, FS Passion reapare, chiar dacă era ascuns în zona de notificare."
+    },
+    "demo": {
+      "title": "Încearcă fără joc",
+      "help": "Moduri false pentru a încerca toate funcțiile FS Passion, într-un folder de test: căile tale reale sunt puse deoparte, apoi restaurate la ieșire.",
+      "start": "Încearcă FS Passion fără joc",
+      "active_help": "Modul demonstrativ este activ: aceste căi sunt cele ale folderului de test. Căile tale reale revin când ieși din el."
+    }
+  },
+  "themes": {
+    "lime": "Lime",
+    "jade": "Jad",
+    "cuivre": "Cupru",
+    "blue": "Alb"
+  },
+  "anomalies": {
+    "title": "Probleme găsite",
+    "none": "Nicio problemă. Totul este în ordine.",
+    "intro": "Aceste elemente din folderul tău de moduri nu pot fi folosite ca atare de joc. Nimic grav, iar FS Passion nu le atinge.",
+    "new": "nou",
+    "hide_type": "Nu mai afișa acest tip de problemă",
+    "hide_folder": "Nu mai afișa acest folder",
+    "rename": "Redenumește…",
+    "others": {
+      "one": "Alte fișiere ignorate ({count})",
+      "few": "Alte fișiere ignorate ({count})",
+      "other": "Alte fișiere ignorate ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": "Arhivă .rar sau .7z",
+        "few": "Arhive .rar sau .7z ({count})",
+        "other": "Arhive .rar sau .7z ({count})"
+      },
+      "explain": "Jocul citește doar fișiere .zip. Extrage arhiva, apoi arhivează din nou modul în zip dacă e nevoie."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip fără modDesc.xml",
+        "few": "Fișiere .zip fără modDesc.xml ({count})",
+        "other": "Fișiere .zip fără modDesc.xml ({count})"
+      },
+      "explain": "Adesea un pachet de mai multe moduri de extras.",
+      "nested": "modDesc.xml găsit într-un subfolder ({path}): modul a fost arhivat greșit."
+    },
+    "A3": {
+      "title": {
+        "one": "Arhivă ilizibilă",
+        "few": "Arhive ilizibile ({count})",
+        "other": "Arhive ilizibile ({count})"
+      },
+      "explain": "Arhivă deteriorată sau modDesc.xml nevalid. Descarcă din nou modul.",
+      "zip": "Arhiva nu poate fi deschisă.",
+      "xml": "Fișierul modDesc.xml este nevalid."
+    },
+    "A4": {
+      "title": {
+        "one": "Folder fără modDesc.xml",
+        "few": "Foldere fără modDesc.xml ({count})",
+        "other": "Foldere fără modDesc.xml ({count})"
+      },
+      "explain": "Fără un modDesc.xml la rădăcină, jocul nu poate folosi acest folder. FS Passion nu-l atinge niciodată."
+    },
+    "A5": {
+      "title": {
+        "one": "Nume refuzat de joc",
+        "few": "Nume refuzate de joc ({count})",
+        "other": "Nume refuzate de joc ({count})"
+      },
+      "explain": "Jocul acceptă doar litere fără diacritice, cifre și „_”.",
+      "suggestion": "Nume sugerat: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod pentru altă versiune a jocului",
+        "few": "Moduri pentru altă versiune a jocului ({count})",
+        "other": "Moduri pentru altă versiune a jocului ({count})"
+      },
+      "explain": "Acest mod nu va fi încărcat de această versiune a jocului.",
+      "detected": "Mod pentru {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Mod lipsă",
+        "few": "Moduri lipsă ({count})",
+        "other": "Moduri lipsă ({count})"
+      },
+      "explain": "O configurație face referire la acest mod, dar el nu mai este în folderele de moduri.",
+      "in": "În: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Mod șters încă legat",
+        "few": "Moduri șterse încă legate ({count})",
+        "other": "Moduri șterse încă legate ({count})"
+      },
+      "explain": "Acest mod a fost șters din folderul de moduri, dar unele configurații încă îl conțin.",
+      "copy": "O copie există încă în: {list}",
+      "delete_title": "Ștergi copia rămasă?",
+      "delete_text": "Ultima copie a „{name}”, încă prezentă în folderele configurațiilor, va fi trimisă în Coșul de reciclare, iar modul eliminat din toate listele."
+    },
+    "A9": {
+      "title": {
+        "one": "Mod duplicat",
+        "few": "Moduri duplicate ({count})",
+        "other": "Moduri duplicate ({count})"
+      },
+      "explain": "Același mod apare de două ori: în două foldere de stocare sau ca .zip și folder unul lângă altul. Jocul îl încarcă doar pe unul. FS Passion îl folosește pe cel din folderul principal, și arhiva în locul folderului.",
+      "zip_and_dir": "„{name}” există atât ca .zip, cât și ca folder despachetat: jocul îl încarcă doar pe unul, iar ModHub nu-l poate actualiza. Păstrează o singură formă (șterge-o pe cealaltă cu „Șterge definitiv” sau mut-o din folderul de moduri).",
+      "files": "Fișiere: {list}"
+    },
+    "game": "{game}",
+    "folder": "Folder de moduri: {path}",
+    "show_in_folder": "Afișează în Explorer",
+    "open_folder": "Deschide folderul de moduri în Explorer (modul nu mai este acolo)"
+  },
+  "welcome": {
+    "subtitle": "Modurile tale, stocate o singură dată. Câte configurații vrei.",
+    "language": "Alege-ți limba"
+  },
+  "notice": {
+    "title": "Cum funcționează FS Passion",
+    "at_start": "Afișează această fereastră la pornirea aplicației",
+    "understood": "Am înțeles",
+    "blocks": [
+      {
+        "key": "Înainte de toate: îți recomandăm să faci o copie de siguranță a tuturor modurilor tale pe altă unitate. Este esențial, ca înainte de orice operație cu fișiere importante."
+      },
+      {
+        "h": "Ideea"
+      },
+      {
+        "p": "FS Passion îți permite să creezi, rapid și ușor, câte configurații Farming Simulator vrei, păstrând o singură copie a modurilor tale în folderul lor original."
+      },
+      {
+        "p": "Treci de la o configurație la alta cu 1 clic!"
+      },
+      {
+        "h": "Instalare"
+      },
+      {
+        "p": "Folderul tău de moduri poate fi pe orice unitate: FS Passion se adaptează. Nu trebuie să creezi, să muți sau să redenumești nimic manual. Unitate plină? Adaugă până la două foldere de moduri pe alte unități (Setări → Joc și căi): modurile lor intră în configurații ca celelalte."
+      },
+      {
+        "h": "Prima utilizare"
+      },
+      {
+        "ul": [
+          "Creează-ți configurațiile cu butonul magic „＋ Configurație” de pe hărți: harta și dependențele ei devin configurația cu un singur clic.",
+          "Apoi sortează celelalte moduri în modurile comune, prezente în fiecare configurație.",
+          "Fă clic pe „Aplică”: jocul va încărca configurația aleasă la următoarea pornire."
+        ]
+      },
+      {
+        "h": "Adăugarea, redenumirea, ștergerea modurilor"
+      },
+      {
+        "ul": [
+          "Moduri noi: descarcă-le ca de obicei, apoi fă clic pe „Caută moduri noi” în partea de sus a listei. FS Passion le pune în folderul de moduri al versiunii corecte a jocului.",
+          "Pentru a șterge moduri, fă-o în FS Passion („Șterge definitiv” din bara de acțiuni), nu în Explorer: ele sunt astfel eliminate din liste și configurații în același timp și ajung în Coșul de reciclare.",
+          "Redenumirea unui mod (tasta F2) îl desparte de ModHub: nu va mai primi actualizări."
+        ]
+      },
+      {
+        "h": "Actualizări"
+      },
+      {
+        "p": "Nimic de făcut: actualizările descărcate de joc sunt recuperate când acesta se închide sau la următoarea pornire a FS Passion. Versiunea veche este pusă deoparte în „Old versions”. Dacă jocul descarcă un număr de versiune mai vechi decât al tău (adesea un mod pe care l-ai modificat), FS Passion te întreabă pe care să o păstrezi."
+      },
+      {
+        "p": "FS Passion însuși: când apare o versiune nouă, un punct apare pe rotița Setări și „Versiune nouă” lângă numărul versiunii, jos. Setări → Aplicație → „Instalează actualizarea”."
+      },
+      {
+        "h": "Păstrarea configurațiilor"
+      },
+      {
+        "p": "Setări → Aplicație → „Exportă” salvează configurațiile, modurile comune și setările într-un fișier. „Importă” le readuce, după o reinstalare sau pe alt PC."
+      },
+      {
+        "h": "Pentru a renunța"
+      },
+      {
+        "p": "„Nu mai folosi FS Passion” (Setări → Aplicație) readuce jocului setarea originală și elimină folderele configurațiilor. Modurile tale nu sunt atinse niciodată."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Atelierul de teme",
+    "id": "Identificator",
+    "name": "Nume",
+    "dark": "Fundalul ferestrei",
+    "light": "Culoare dominantă",
+    "mica": "Strălucire Mica",
+    "grain": "Granulație",
+    "effect": "Efect",
+    "effect_none": "Niciunul",
+    "effect_metal": "Luciu metalic",
+    "intensity": "Intensitate",
+    "save": "Salvează",
+    "copy": "Copiază definiția",
+    "new": "Nouă",
+    "copied": "Definiție copiată",
+    "saved": "Temă salvată în ui/themes.json",
+    "contrast_low": "Contrast {ratio}:1, sub 4.5:1. Textul mic va folosi {color}.",
+    "contrast_ok": "Contrast {ratio}:1",
+    "mode": "Mod",
+    "mode_dark": "Întunecat",
+    "mode_light": "Luminos",
+    "text": "Text",
+    "multi": "Mai multe culori de accent (câte una pe zonă)",
+    "accent_n": "Accent {n}",
+    "pair": "Temă pereche (soare/lună)",
+    "pair_none": "Niciuna",
+    "gradient": "Degrade bicolor (titluri, butoanele Aplică și Pornește)",
+    "gradient_from": "Degrade: început",
+    "gradient_to": "Degrade: sfârșit",
+    "style": "Stil",
+    "style_duo": "Bicolor",
+    "style_palette": "Paletă oficială",
+    "style_classic": "Voaluri calculate",
+    "surface_1": "Fundalul ferestrei",
+    "surface_2": "Liste și ferestre",
+    "surface_3": "Secțiuni",
+    "surface_4": "Subsecțiuni",
+    "text_n": "Text {n}",
+    "neon": "Neon",
+    "neon_help": "Strălucirea titlurilor, pictogramelor și contururilor, în culoarea fiecărei zone (0: fără efect). Dezactivată de „Efecte de lumină”."
+  },
+  "error": {
+    "bad_request": "Cerere nevalidă.",
+    "forbidden": "Acces refuzat.",
+    "not_found": "Element negăsit.",
+    "unexpected": "Eroare neașteptată. Copiază diagnosticarea (Setări → Ajutor și despre) și atașeaz-o la raportul tău.",
+    "offline": "Nucleul FS Passion nu răspunde.",
+    "internal": "Operație refuzată din motive de siguranță. Copiază diagnosticarea (Setări → Ajutor și despre) și atașeaz-o la raportul tău."
+  },
+  "detect": {
+    "busy": "O detectare este deja în curs."
+  },
+  "parties": {
+    "not_configured": "Setează folderul de moduri al {game} în setări pentru a crea configurații.",
+    "name_label": "Numele configurației",
+    "name_empty": "Numele nu poate fi gol.",
+    "name_too_long": "Cel mult {max} caractere.",
+    "name_taken": "O configurație se numește deja „{name}”.",
+    "special_locked": "Configurația completă și Configurația goală nu pot fi modificate, redenumite, duplicate sau șterse.",
+    "not_found": "Această configurație nu mai există.",
+    "write_failed": "Configurațiile nu au putut fi salvate în {path}. Verifică dacă pe această unitate se poate scrie.",
+    "recovered": "Fișierul de configurații al {game} nu a putut fi citit: a fost încărcată cea mai recentă copie de siguranță ({backup}). Fișierul deteriorat a fost pus deoparte.",
+    "lost": "Fișierul de configurații al {game} nu a putut fi citit și nicio copie de siguranță nu a putut fi încărcată. Fișierul deteriorat a fost pus deoparte, nu s-a șters nimic.",
+    "running_rename": "Închide {game} înainte de a redenumi această configurație: folderul ei nu se poate schimba cât timp jocul rulează.",
+    "running_delete": "Închide {game} înainte de a șterge această configurație: folderul ei nu se poate schimba cât timp jocul rulează.",
+    "map_not_found": "Hartă negăsită: {name}",
+    "mod_not_found": "Mod negăsit: {name}",
+    "create_title": "Configurație nouă",
+    "create_help": "O configurație goală care include modurile comune. Apoi adaugă-i moduri din „Toate modurile”.",
+    "create_ok": "Creează",
+    "created": "Configurația „{name}” a fost creată",
+    "duplicate_title": "Duplică configurația",
+    "duplicate_help": "Copia păstrează modurile din „{name}” și setarea sa „Moduri comune”.",
+    "copy_name": "{name} (copie)",
+    "duplicate_ok": "Duplică",
+    "duplicated": "Configurația „{name}” a fost creată",
+    "rename_title": "Redenumește configurația",
+    "rename_ok": "Redenumește",
+    "renamed": "„{old}” a fost redenumită „{name}”",
+    "delete_title": "Șterge configurația",
+    "delete_text": {
+      "zero": "Ștergi configurația „{name}”? Nu conține niciun mod.",
+      "one": "Ștergi configurația „{name}”? Modul ei rămâne în folderul tău de moduri: dispar doar configurația și folderul ei de legături.",
+      "few": "Ștergi configurația „{name}”? Cele {count} moduri ale ei rămân în folderul tău de moduri: dispar doar configurația și folderul ei de legături.",
+      "other": "Ștergi configurația „{name}”? Cele {count} de moduri ale ei rămân în folderul tău de moduri: dispar doar configurația și folderul ei de legături."
+    },
+    "delete_ok": "Șterge",
+    "deleted": "Configurația „{name}” a fost ștearsă",
+    "deleted_applied": "Configurația {name} a fost ștearsă. Jocul folosește acum configurația {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod selectat",
+      "few": "moduri selectate",
+      "other": "de moduri selectate"
+    },
+    "add_party": "Adaugă la Modurile configurației",
+    "add_common": "Adaugă la Moduri comune",
+    "remove_party": "Elimină din Modurile configurației",
+    "remove_common": "Elimină din Moduri comune",
+    "rename": "Redenumește…",
+    "rename_help": "Un singur mod, selectat în „Toate modurile”.",
+    "delete": "Șterge definitiv…",
+    "close": "Închide bara și golește selecția (Esc)",
+    "added_party": {
+      "one": "{count} mod adăugat în configurația „{name}”",
+      "few": "{count} moduri adăugate în configurația „{name}”",
+      "other": "{count} de moduri adăugate în configurația „{name}”"
+    },
+    "added_common": {
+      "one": "{count} mod adăugat la modurile comune",
+      "few": "{count} moduri adăugate la modurile comune",
+      "other": "{count} de moduri adăugate la modurile comune"
+    },
+    "moved_party": {
+      "one": "{count} mod mutat în configurația „{name}”",
+      "few": "{count} moduri mutate în configurația „{name}”",
+      "other": "{count} de moduri mutate în configurația „{name}”"
+    },
+    "moved_common": {
+      "one": "{count} mod mutat în modurile comune",
+      "few": "{count} moduri mutate în modurile comune",
+      "other": "{count} de moduri mutate în modurile comune"
+    },
+    "removed_party": {
+      "one": "{count} mod eliminat din configurația „{name}”",
+      "few": "{count} moduri eliminate din configurația „{name}”",
+      "other": "{count} de moduri eliminate din configurația „{name}”"
+    },
+    "removed_common": {
+      "one": "{count} mod eliminat din modurile comune",
+      "few": "{count} moduri eliminate din modurile comune",
+      "other": "{count} de moduri eliminate din modurile comune"
+    },
+    "nothing_party": "Aceste moduri sunt deja în configurația „{name}”",
+    "nothing_common": "Aceste moduri sunt deja în modurile comune"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Adaugi și dependența?",
+      "few": "Adaugi și cele {count} dependențe?",
+      "other": "Adaugi și cele {count} de dependențe?"
+    },
+    "ask_yes": {
+      "one": "Adaugă și dependența",
+      "few": "Adaugă și cele {count} dependențe",
+      "other": "Adaugă și cele {count} de dependențe"
+    },
+    "ask_no": "Doar modurile alese",
+    "missing_warn": {
+      "one": "Dependență lipsă din modurile tale: {list}",
+      "few": "{count} dependențe lipsă din modurile tale: {list}",
+      "other": "{count} de dependențe lipsă din modurile tale: {list}"
+    },
+    "needed_by_map": "Harta „{name}” are nevoie de:",
+    "needed_by_mod": "Modul „{name}” are nevoie de:",
+    "needed": "Dependențe:",
+    "where_common": "modurile comune",
+    "where_party": "configurația „{name}”",
+    "ask_intro": {
+      "one": "Acest mod este o dependență a unui mod ales de tine, dar nu este în {where}.",
+      "few": "Aceste {count} moduri sunt dependențe ale modurilor alese de tine, dar nu sunt în {where}.",
+      "other": "Aceste {count} de moduri sunt dependențe ale modurilor alese de tine, dar nu sunt în {where}."
+    },
+    "missing_for": "{list} (necesar pentru „{name}”)",
+    "optional_title": {
+      "one": "Adaugi și un mod opțional?",
+      "few": "Adaugi și moduri opționale?",
+      "other": "Adaugi și moduri opționale?"
+    },
+    "optional_intro": {
+      "one": "Un mod opțional, deja printre modurile tale:",
+      "few": "{count} moduri opționale, deja printre modurile tale:",
+      "other": "{count} de moduri opționale, deja printre modurile tale:"
+    },
+    "optional_for": "opțional pentru „{name}”",
+    "optional_note": "Opționale: jocul nu are nevoie de ele. Doar cele bifate sunt adăugate în {where}.",
+    "optional_continue": "Continuă"
+  },
+  "commonguard": {
+    "title_maps": "Atenție: niște hărți sunt pe cale să intre în Moduri comune",
+    "title_classified": "Atenție: moduri deja sortate sunt pe cale să intre în Moduri comune",
+    "maps_intro": {
+      "one": "Probabil este o greșeală: selecția ta conține o hartă și ești pe cale să o adaugi la Moduri comune:",
+      "few": "Probabil este o greșeală: selecția ta conține {count} hărți și ești pe cale să le adaugi la Moduri comune:",
+      "other": "Probabil este o greșeală: selecția ta conține {count} de hărți și ești pe cale să le adaugi la Moduri comune:"
+    },
+    "classified_intro": {
+      "one": "Selecția ta conține și un mod deja sortat într-una dintre configurațiile tale.",
+      "few": "Selecția ta conține și {count} moduri deja sortate în configurațiile tale.",
+      "other": "Selecția ta conține și {count} de moduri deja sortate în configurațiile tale."
+    },
+    "why_maps": "Probabil nu asta vrei: tot ce este în Moduri comune se încarcă în toate configurațiile tale. Aceste hărți s-ar încărca peste tot, exact ce te ajută FS Passion să eviți.",
+    "why_classified": "Probabil nu asta vrei: tot ce este în Moduri comune se încarcă în toate configurațiile tale. Aceste moduri nu ar mai fi limitate la propria configurație, iar listele tale și-ar pierde rostul.",
+    "unclassified_offer": {
+      "one": "Selecția ta conține un singur mod nesortat (fără hărți): îl poți adăuga doar pe acesta.",
+      "few": "Selecția ta conține {count} moduri nesortate (fără hărți): le poți adăuga doar pe acestea.",
+      "other": "Selecția ta conține {count} de moduri nesortate (fără hărți): le poți adăuga doar pe acestea."
+    },
+    "tip": "Sfat: Ctrl+A selectează toată lista „Toate modurile”, inclusiv hărțile și modurile deja sortate.",
+    "continue": "Continuă oricum",
+    "only_unclassified": {
+      "one": "Adaugă doar modul nesortat",
+      "few": "Adaugă doar cele {count} moduri nesortate",
+      "other": "Adaugă doar cele {count} de moduri nesortate"
+    }
+  },
+  "plus": {
+    "title": "Configurație nouă dintr-o hartă",
+    "deps_title": {
+      "one": "{count} dependență",
+      "few": "{count} dependențe",
+      "other": "{count} de dependențe"
+    },
+    "dlc_title": "DLC-uri necesare",
+    "dlc_note": "Informativ: jocul încarcă întotdeauna DLC-urile instalate. Ele nu sunt adăugate în configurație.",
+    "missing_note": "Dependențele lipsă nu sunt adăugate: descarcă-le, apoi adaugă-le în configurație.",
+    "no_deps": "Nicio dependență declarată: configurația va conține doar harta.",
+    "summary": {
+      "zero": "Configurația va conține doar harta, plus modurile comune.",
+      "one": "Configurația va conține harta și dependența ei, plus modurile comune.",
+      "few": "Configurația va conține harta și cele {count} dependențe ale ei, plus modurile comune.",
+      "other": "Configurația va conține harta și cele {count} de dependențe ale ei, plus modurile comune."
+    },
+    "create": "Creează configurația",
+    "created": {
+      "one": "Configurația „{name}” a fost creată: {count} mod",
+      "few": "Configurația „{name}” a fost creată: {count} moduri",
+      "other": "Configurația „{name}” a fost creată: {count} de moduri"
+    },
+    "created_missing": {
+      "one": "Dependență de descărcat: {list}",
+      "few": "{count} dependențe de descărcat: {list}",
+      "other": "{count} de dependențe de descărcat: {list}"
+    },
+    "optional_title": {
+      "one": "{count} mod opțional",
+      "few": "{count} moduri opționale",
+      "other": "{count} de moduri opționale"
+    },
+    "optional_note": "Opționale: jocul nu are nevoie de ele. Bifează-le pe cele de adăugat în configurație.",
+    "optional_none_present": "Niciunul dintre aceste moduri opționale nu este printre modurile tale. Jocul nu are nevoie de ele."
+  },
+  "replace": {
+    "title": "Înlocuiește cu…",
+    "help": "{name} nu mai este în folderele tale de moduri. Dacă autorul l-a redenumit, alege noua lui versiune: îi va lua locul în fiecare listă.",
+    "done": {
+      "one": "{old} înlocuit cu {name} într-o listă",
+      "few": "{old} înlocuit cu {name} în {count} liste",
+      "other": "{old} înlocuit cu {name} în {count} de liste"
+    }
+  },
+  "notifications": {
+    "title": "Notificări",
+    "unread": {
+      "one": "Notificări: 1 mesaj nou",
+      "few": "Notificări: {count} mesaje noi",
+      "other": "Notificări: {count} de mesaje noi"
+    },
+    "clear": "Golește tot",
+    "none": "Nicio notificare încă. Mesajele afișate în dreapta jos sunt păstrate aici până la închiderea FS Passion."
+  },
+  "tray": {
+    "show": "Afișează FS Passion",
+    "quit": "Ieși din FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion continuă să ruleze aici. Fă clic pe pictogramă pentru a-l readuce; „Ieșire” îl închide cu adevărat."
+  },
+  "apply": {
+    "unsupported": "Această versiune a jocului nu își poate schimba folderul de moduri.",
+    "not_ready": "Setează mai întâi în setări folderul de moduri și folderul Documente al jocului.",
+    "running": "Închide {game} înainte de a aplica o configurație.",
+    "no_gamesettings": "gameSettings.xml al {game} nu a fost găsit: pornește jocul o dată sau verifică folderul Documente în setări.",
+    "busy": "O altă operație cu configurații este în curs. Încearcă din nou peste câteva momente.",
+    "library_busy": "Modurile sunt încă în curs de citire. Încearcă din nou peste câteva momente.",
+    "done": {
+      "zero": "Configurația {name} a fost aplicată: niciun mod.",
+      "one": "Configurația {name} a fost aplicată: {count} mod.",
+      "few": "Configurația {name} a fost aplicată: {count} moduri.",
+      "other": "Configurația {name} a fost aplicată: {count} de moduri."
+    },
+    "missing": {
+      "one": "1 mod al configurației lipsește din folderul tău de moduri: {list}",
+      "few": "{count} moduri ale configurației lipsesc din folderul tău de moduri: {list}",
+      "other": "{count} de moduri ale configurației lipsesc din folderul tău de moduri: {list}"
+    },
+    "updated": {
+      "one": "1 actualizare lăsată de joc a fost mutată în folderul tău de moduri.",
+      "few": "{count} actualizări lăsate de joc au fost mutate în folderul tău de moduri.",
+      "other": "{count} de actualizări lăsate de joc au fost mutate în folderul tău de moduri."
+    },
+    "added": {
+      "one": "1 mod lăsat de joc a intrat în folderul tău de moduri și în configurația {name}.",
+      "few": "{count} moduri lăsate de joc au intrat în folderul tău de moduri și în configurația {name}.",
+      "other": "{count} de moduri lăsate de joc au intrat în folderul tău de moduri și în configurația {name}."
+    },
+    "set_aside": {
+      "one": "1 fișier a fost pus deoparte, nu s-a șters nimic (folderul „Recovered” sau „Old versions”, lângă configurațiile tale).",
+      "few": "{count} fișiere au fost puse deoparte, nu s-a șters nimic (folderele „Recovered” și „Old versions”, lângă configurațiile tale).",
+      "other": "{count} de fișiere au fost puse deoparte, nu s-a șters nimic (folderele „Recovered” și „Old versions”, lângă configurațiile tale)."
+    },
+    "empty_party": "Configurația {name} nu conține niciun mod: jocul va porni fără moduri.",
+    "not_same_disk": "Nu se poate lega {name}: folderul configurațiilor trebuie să fie pe aceeași unitate ca folderul de moduri.",
+    "no_hardlinks": "Această unitate nu acceptă legături fixe: folderul de moduri trebuie să fie pe o unitate NTFS. Nu s-a schimbat nimic.",
+    "too_many_links": "Nu se poate lega {name}: acest fișier a atins limita de legături a Windows.",
+    "access_denied": "Acces refuzat la legarea {name}. Nu s-a schimbat nimic.",
+    "link_failed": "Legătura pentru {name} nu a putut fi creată ({detail}). Nu s-a schimbat nimic.",
+    "junction_failed": "Joncțiunea modului despachetat {name} nu a putut fi creată ({detail}). Nu s-a schimbat nimic.",
+    "folder_busy": "Folderul {path} este folosit de alt program (Explorer?). Închide-l și încearcă din nou. Nu s-a schimbat nimic.",
+    "folder_exists": "Există deja un folder {path}: alege alt nume.",
+    "failed": "Configurația nu a putut fi aplicată ({detail}). Nu s-a schimbat nimic.",
+    "recovered_finished": "O operație cu configurațiile {game} fusese întreruptă (pană de curent?). A fost finalizată.",
+    "recovered_cancelled": "O operație cu configurațiile {game} fusese întreruptă (pană de curent?). A fost anulată: nu s-a schimbat nimic.",
+    "symlink_denied": "Windows refuză legătura simbolică spre {name}: este necesar Modul dezvoltator Windows sau drepturi de administrator.",
+    "blocked": {
+      "one": "1 mod de pe altă unitate nu a putut intra în configurație (fără drepturi pentru legături simbolice): {list}. Vezi Setări → Joc și căi.",
+      "few": "{count} moduri de pe altă unitate nu au putut intra în configurație (fără drepturi pentru legături simbolice): {list}. Vezi Setări → Joc și căi.",
+      "other": "{count} de moduri de pe altă unitate nu au putut intra în configurație (fără drepturi pentru legături simbolice): {list}. Vezi Setări → Joc și căi."
+    }
+  },
+  "override": {
+    "title": "Jocul încarcă un folder necunoscut",
+    "text": "{game} își încarcă modurile dintr-un folder pe care FS Passion nu-l cunoaște (schimbat manual sau de alt instrument):",
+    "help": "Adoptă acest folder ca folder de moduri, aplică din nou configurația sau lasă jocul așa cum este.",
+    "adopt": "Adoptă ca folder de moduri",
+    "reapply": "Aplică din nou {name}",
+    "ignore": "Nu face nimic",
+    "adopted": "Folder nou de moduri: {path}",
+    "read_failed": "gameSettings.xml nu poate fi citit ({path}). Nu s-a schimbat nimic.",
+    "backup_failed": "Copia de siguranță a gameSettings.xml nu a putut fi scrisă ({path}). Nu s-a schimbat nimic.",
+    "write_failed": "gameSettings.xml nu a putut fi scris ({path}). Jocul este deschis?",
+    "check_failed": "Verificarea gameSettings.xml a eșuat: fișierul original a fost restaurat.",
+    "no_root": "gameSettings.xml nu pare a fi un fișier de setări al jocului. Nu s-a schimbat nimic."
+  },
+  "demo": {
+    "title": "Mod demonstrativ",
+    "pill": "Demo",
+    "quit": "Ieșire",
+    "banner": "Mod demonstrativ: aceste moduri sunt false. Folderele tale reale și jocul nu sunt atinse.",
+    "badge": "Mod fals (demo)",
+    "installing": "Se pregătesc modurile demonstrative…",
+    "started": "Mod demonstrativ: încearcă totul, nimic nu atinge jocul.",
+    "stopped": "Modul demonstrativ a fost închis: totul a fost șters.",
+    "stop_title": "Ieși din modul demonstrativ",
+    "stop_text": "Modurile false, configurațiile de test și întregul folder demonstrativ vor fi șterse. Setările tale reale revin așa cum erau.",
+    "stop_ok": "Ieși și șterge tot",
+    "offer_title": "Încerci FS Passion fără joc?",
+    "offer_text": "Niciun Farming Simulator nu a fost găsit pe acest PC. Poți încerca FS Passion cu moduri false: creează configurații, sortează, aplică… totul funcționează, într-un folder de test, niciodată într-un joc.",
+    "offer_local": "Pachetul demonstrativ este deja pe acest PC (aproximativ 2 MB).",
+    "offer_download": "Pachetul demonstrativ (aproximativ 2 MB) va fi descărcat de pe pagina GitHub a proiectului, apoi verificat.",
+    "offer_yes": "Încearcă",
+    "offer_no": "Mai târziu",
+    "unavailable": "Pachetul demonstrativ nu este încă disponibil.",
+    "bad_pack": "Pachetul demonstrativ este deteriorat sau nu corespunde originalului: a fost refuzat.",
+    "download_failed": "Pachetul demonstrativ nu a putut fi descărcat ({detail}).",
+    "install_failed": "Pachetul demonstrativ nu a putut fi instalat ({detail}).",
+    "remove_failed": "Folderul demonstrativ nu a putut fi șters complet: {path}",
+    "no_detect": "Detectarea jocului este dezactivată în modul demonstrativ."
+  },
+  "delete": {
+    "title": {
+      "one": "Ștergi definitiv acest mod?",
+      "few": "Ștergi definitiv aceste {count} moduri?",
+      "other": "Ștergi definitiv aceste {count} de moduri?"
+    },
+    "intro": {
+      "one": "Acest mod va fi eliminat din fiecare listă și din fiecare folder de configurație, apoi șters din folderul tău de moduri:",
+      "few": "Aceste {count} moduri vor fi eliminate din fiecare listă și din fiecare folder de configurație, apoi șterse din folderul tău de moduri:",
+      "other": "Aceste {count} de moduri vor fi eliminate din fiecare listă și din fiecare folder de configurație, apoi șterse din folderul tău de moduri:"
+    },
+    "irreversible": "Acțiunea nu poate fi anulată.",
+    "recycle": "Fișierele vor ajunge în Coșul de reciclare Windows: le mai poți restaura de acolo.",
+    "no_recycle": "Această unitate nu are Coș de reciclare: ștergerea va fi definitivă.",
+    "understand": {
+      "one": "Înțeleg că acest fișier va fi șters",
+      "few": "Înțeleg că aceste fișiere vor fi șterse",
+      "other": "Înțeleg că aceste fișiere vor fi șterse"
+    },
+    "ok": "Șterge definitiv",
+    "done_recycled": {
+      "one": "1 mod trimis în Coșul de reciclare",
+      "few": "{count} moduri trimise în Coșul de reciclare",
+      "other": "{count} de moduri trimise în Coșul de reciclare"
+    },
+    "done_deleted": {
+      "one": "1 mod șters definitiv",
+      "few": "{count} moduri șterse definitiv",
+      "other": "{count} de moduri șterse definitiv"
+    },
+    "failed": {
+      "one": "1 mod nu a putut fi șters: {list}. A fost eliminat din liste; închide programul care îl folosește, apoi încearcă din nou.",
+      "few": "{count} moduri nu au putut fi șterse: {list}. Au fost eliminate din liste; închide programul care le folosește, apoi încearcă din nou.",
+      "other": "{count} de moduri nu au putut fi șterse: {list}. Au fost eliminate din liste; închide programul care le folosește, apoi încearcă din nou."
+    },
+    "nothing": "Niciun mod de șters.",
+    "running": "Închide {game} înainte de a șterge moduri."
+  },
+  "rename": {
+    "title": "Redenumește modul",
+    "label": "Nume nou",
+    "prefix_tip": "Prefixul de versiune este păstrat",
+    "final": "Numele fișierului: {file}",
+    "rule": "Doar litere fără diacritice, cifre și „_”: jocul refuză alte caractere.",
+    "where": "În: {list}. Listele se schimbă doar cu acordul tău: FS Passion te va întreba apoi dacă urmează noul nume.",
+    "warning_modhub": "Dacă provine din ModHub, acest mod nu va mai primi actualizări: acesta este rostul redenumirii.",
+    "warning_save": "În joc, salvările care folosesc acest mod îl vor căuta sub vechiul nume.",
+    "warning_save_map": "Aceasta este o hartă: în joc, salvările făcute pe ea o vor căuta sub vechiul nume și nu se vor mai încărca.",
+    "warning_deps": {
+      "one": "1 mod îl declară ca dependență ({list}): îl va căuta sub vechiul nume.",
+      "few": "{count} moduri îl declară ca dependență ({list}): îl vor căuta sub vechiul nume.",
+      "other": "{count} de moduri îl declară ca dependență ({list}): îl vor căuta sub vechiul nume."
+    },
+    "ok": "Redenumește",
+    "done": {
+      "zero": "{old} redenumit în {name}",
+      "one": "{old} redenumit în {name}, într-o configurație",
+      "few": "{old} redenumit în {name}, în {count} configurații",
+      "other": "{old} redenumit în {name}, în {count} de configurații"
+    },
+    "renamed": "{old} redenumit în {name}",
+    "lists_title": "Actualizezi listele?",
+    "lists_ask": "„{old}” este încă în: {list}. Să urmeze noul nume „{name}”?",
+    "lists_yes": "Actualizează listele",
+    "lists_no": "Nu face nimic",
+    "lists_done": "Liste actualizate ({count}).",
+    "empty": "Introdu un nume.",
+    "too_long": "Nume prea lung: cel mult {max} caractere.",
+    "invalid": "Doar litere fără diacritice, cifre și „_”, fără spații.",
+    "same": "Acesta este deja numele lui.",
+    "taken": "„{name}” există deja în folderele tale de moduri.",
+    "not_found": "Modul {name} nu poate fi găsit în folderele tale de moduri.",
+    "failed": "{name} nu a putut fi redenumit: poate este deschis în alt program.",
+    "running": "Închide {game} înainte de a redenumi un mod.",
+    "no_list": "nicio listă"
+  },
+  "downloads": {
+    "title": "Moduri noi găsite",
+    "intro": "În {folder}. Integrează mută fiecare fișier bifat în folderul de moduri al versiunii sale de joc.",
+    "count": {
+      "one": "1 mod găsit",
+      "few": "{count} moduri găsite",
+      "other": "{count} de moduri găsite"
+    },
+    "col_mod": "Mod",
+    "col_version": "Versiunea jocului",
+    "col_state": "Stare",
+    "col_dest": "Destinație",
+    "state": {
+      "new": "Nou",
+      "update": "Actualizare ({from} → {to})",
+      "older": "Mai vechi decât versiunea instalată ({to} < {from})",
+      "present": "Deja prezent",
+      "conflict": "Un mod despachetat are deja acest nume",
+      "unconfigured": "Versiune neconfigurată: configureaz-o în setări"
+    },
+    "older_confirm": "Bifat: va înlocui versiunea instalată (pusă deoparte).",
+    "postpone": "{game} rulează: integrat la închidere",
+    "not_configured": "{game} (neconfigurat)",
+    "suffix": "Va fi integrat ca {name} (sufixul browserului eliminat)",
+    "dest_none": "Niciuna (nesortat)",
+    "dest_unclassified": "Nesortat",
+    "dest_party": "Configurația „{name}”",
+    "ignore": "Ignoră aceste fișiere",
+    "ignored": {
+      "one": "1 fișier ignorat: nu va mai fi propus",
+      "few": "{count} fișiere ignorate: nu vor mai fi propuse",
+      "other": "{count} de fișiere ignorate: nu vor mai fi propuse"
+    },
+    "later": "Mai târziu",
+    "integrate": {
+      "zero": "Integrează",
+      "one": "Integrează 1 mod",
+      "few": "Integrează {count} moduri",
+      "other": "Integrează {count} de moduri"
+    },
+    "none": "Niciun mod nou în {folder}.",
+    "done": {
+      "one": "1 mod integrat: {list}",
+      "few": "{count} moduri integrate: {list}",
+      "other": "{count} de moduri integrate: {list}"
+    },
+    "in_version": {
+      "one": "1 în {game}",
+      "few": "{count} în {game}",
+      "other": "{count} în {game}"
+    },
+    "skipped": {
+      "one": "1 fișier lăsat pe loc (deja prezent sau mai vechi)",
+      "few": "{count} fișiere lăsate pe loc (deja prezente sau mai vechi)",
+      "other": "{count} de fișiere lăsate pe loc (deja prezente sau mai vechi)"
+    },
+    "postponed": {
+      "one": "1 mod va fi integrat când {game} se închide",
+      "few": "{count} moduri vor fi integrate când {game} se închide",
+      "other": "{count} de moduri vor fi integrate când {game} se închide"
+    },
+    "postponed_done": {
+      "one": "1 descărcare integrată după închiderea {game}",
+      "few": "{count} descărcări integrate după închiderea {game}",
+      "other": "{count} de descărcări integrate după închiderea {game}"
+    },
+    "failed": "{file} nu a putut fi integrat. Fișierul a rămas în descărcările tale.",
+    "gone": "{file} nu mai este în folderul de descărcări.",
+    "unconfigured": "{file}: versiunea de joc aleasă nu este configurată.",
+    "no_folder": "Folderul de descărcări nu a fost găsit: setează-l în Setări → Aplicație → Descărcări.",
+    "demo": "Descărcările nu sunt integrate în timpul demonstrației.",
+    "done_in": {
+      "one": "1 mod integrat în {game}",
+      "few": "{count} moduri integrate în {game}",
+      "other": "{count} de moduri integrate în {game}"
+    },
+    "col_storage": "Stocare"
+  },
+  "move": {
+    "exists": "{file}: există deja un fișier cu același nume.",
+    "no_space": "{file}: spațiu liber insuficient pe unitatea folderului de moduri.",
+    "check_failed": "{file}: copia verificată nu corespunde originalului. Nu s-a înlocuit nimic.",
+    "failed": "{file} nu a putut fi mutat: poate este deschis în alt program."
+  },
+  "missing": {
+    "title": "Moduri lipsă din folderul tău de moduri",
+    "intro": {
+      "one": "Acest mod lipsește din folderul tău de moduri deși este în configurații. Ce vrei să faci?",
+      "few": "Aceste {count} moduri lipsesc din folderul tău de moduri deși sunt în configurații. Ce vrei să faci?",
+      "other": "Aceste {count} de moduri lipsesc din folderul tău de moduri deși sunt în configurații. Ce vrei să faci?"
+    },
+    "in": "În: {list}",
+    "copy": "Șters din folderul de moduri, dar o copie există încă prin legăturile sale în: {list}",
+    "no_copy": "Nicio copie: descarcă-l din nou sau înlocuiește-l cu un mod redenumit de autorul său",
+    "restore": "Restaurează în Mods",
+    "restore_tip": "Copia încă prezentă în configurație redevine modul folderului tău de moduri (nu se copiază nimic).",
+    "remove": "Elimină din liste",
+    "remove_all": "Elimină-le pe toate din liste",
+    "later": "Mai târziu",
+    "notice": "Pentru a șterge un mod, fă-o în FS Passion (butonul „Șterge definitiv” din bara de acțiuni): este astfel eliminat din liste și configurații în același timp.",
+    "removed": {
+      "one": "1 mod eliminat din toate listele",
+      "few": "{count} moduri eliminate din toate listele",
+      "other": "{count} de moduri eliminate din toate listele"
+    },
+    "restored": {
+      "one": "1 mod restaurat în folderul tău de moduri",
+      "few": "{count} moduri restaurate în folderul tău de moduri",
+      "other": "{count} de moduri restaurate în folderul tău de moduri"
+    },
+    "deleted": {
+      "one": "1 mod șters și eliminat din liste",
+      "few": "{count} moduri șterse și eliminate din liste",
+      "other": "{count} de moduri șterse și eliminate din liste"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 actualizare recuperată: {list}",
+      "few": "{count} actualizări recuperate: {list}",
+      "other": "{count} de actualizări recuperate: {list}"
+    },
+    "added": {
+      "one": "1 mod descărcat de joc adăugat în configurația „{name}”",
+      "few": "{count} moduri descărcate de joc adăugate în configurația „{name}”",
+      "other": "{count} de moduri descărcate de joc adăugate în configurația „{name}”"
+    },
+    "unclassified": {
+      "one": "1 mod descărcat de joc a intrat în folderul tău de moduri (nesortat)",
+      "few": "{count} moduri descărcate de joc au intrat în folderul tău de moduri (nesortate)",
+      "other": "{count} de moduri descărcate de joc au intrat în folderul tău de moduri (nesortate)"
+    },
+    "errors": {
+      "one": "1 folder nu a putut fi pus în ordine: {list}. Vezi jurnalul.",
+      "few": "{count} foldere nu au putut fi puse în ordine: {list}. Vezi jurnalul.",
+      "other": "{count} de foldere nu au putut fi puse în ordine: {list}. Vezi jurnalul."
+    },
+    "reshaped": {
+      "one": "1 mod despachetat sau reîmpachetat: configurația urmează noua lui formă ({list})",
+      "few": "{count} moduri despachetate sau reîmpachetate: configurațiile urmează noua lor formă ({list})",
+      "other": "{count} de moduri despachetate sau reîmpachetate: configurațiile urmează noua lor formă ({list})"
+    }
+  },
+  "rights": {
+    "title": "Drepturi pentru modurile de pe alte unități",
+    "intro": "Pentru ca un mod stocat pe altă unitate să intre într-o configurație, FS Passion creează o legătură simbolică. Windows permite asta doar cu Modul dezvoltator sau cu drepturi de administrator, iar niciuna nu este activă.",
+    "standard": "Contul tău Windows este un cont standard: obținerea drepturilor de administrator ar rula FS Passion sub alt cont, cu alte foldere și setări. Modul dezvoltator este alegerea potrivită.",
+    "admin_title": "Rulează mereu FS Passion ca administrator",
+    "admin_text": "FS Passion bifează pentru tine „Rulează acest program ca administrator” (Proprietăți → Compatibilitate), doar pentru contul tău, apoi repornește. Consecințe:",
+    "uac": "Windows cere confirmare la fiecare pornire a FS Passion.",
+    "game_normal": "Jocul și platforma lui sunt pornite în continuare cu drepturi normale, prin Windows Explorer. Argumentele de pornire trec atunci prin platformă (Steam, Epic Games), ca de obicei.",
+    "no_drop": "Windows blochează tragerea fișierelor din Explorer pe FS Passion. Niciun efect deocamdată: FS Passion nu folosește acest gest.",
+    "dev_title": "Sau: activează Modul dezvoltator Windows",
+    "dev_text": "Setări Windows → Sistem → Pentru dezvoltatori → „Mod dezvoltator”. Nicio altă consecință pentru FS Passion. Apoi revino aici și fă clic pe „Verifică din nou”.",
+    "without": "Fără aceste drepturi, folderele suplimentare rămân salvate: modurile lor sunt listate, dar nu intră în nicio configurație.",
+    "later": "Mai târziu",
+    "dev_mode": "Deschide Modul dezvoltator",
+    "admin": "Rulează mereu ca administrator",
+    "missing": "Windows refuză legăturile simbolice: modurile de pe alte unități sunt listate, dar nu intră în nicio configurație.",
+    "get": "Obține drepturile…",
+    "check": "Verifică din nou",
+    "ok": "Legături simbolice permise (FS Passion rulează ca administrator): modurile de pe alte unități intră în configurații.",
+    "ok_dev": "Legături simbolice permise (Modul dezvoltator Windows): modurile de pe alte unități intră în configurații.",
+    "unknown": "Drepturile pentru legături simbolice nu au fost încă verificate.",
+    "admin_on": "FS Passion este setat să ruleze mereu ca administrator.",
+    "admin_off": "Nu mai rula ca administrator",
+    "restarting": "FS Passion repornește ca administrator. Confirmă solicitarea Windows.",
+    "now_ok": "Legături simbolice permise: aplică din nou configurațiile pentru ca modurile de pe alte unități să intre în ele.",
+    "still_missing": "Windows refuză în continuare legăturile simbolice.",
+    "flag_failed": "Setarea „Rulează ca administrator” nu a putut fi modificată.",
+    "ok_plain": "Legături simbolice permise: modurile de pe alte unități intră în configurații.",
+    "admin_once_title": "Repornește FS Passion ca administrator",
+    "admin_once_text": "FS Passion repornește ca administrator doar de data aceasta; de refăcut la fiecare pornire. Modul dezvoltator evită asta. Consecințe:",
+    "admin_once": "Repornește ca administrator"
+  },
+  "older": {
+    "title": "Versiune mai veche descărcată de joc",
+    "intro": {
+      "one": "Jocul a descărcat un mod al cărui număr de versiune este mai vechi decât al tău. A fost pus deoparte, nu s-a înlocuit nimic. Ce vrei să faci?",
+      "few": "Jocul a descărcat {count} moduri ale căror numere de versiune sunt mai vechi decât ale tale. Au fost puse deoparte, nu s-a înlocuit nimic. Ce vrei să faci?",
+      "other": "Jocul a descărcat {count} de moduri ale căror numere de versiune sunt mai vechi decât ale tale. Au fost puse deoparte, nu s-a înlocuit nimic. Ce vrei să faci?"
+    },
+    "versions": "Versiunea ta: {mine} · versiunea descărcată de joc: {game}",
+    "keep": "Păstrează versiunea mea ({version})",
+    "use": "Folosește versiunea jocului ({version})",
+    "use_tip": "Versiunea jocului îi ia locul celei tale, în folderul de moduri; a ta este pusă deoparte în „Old versions”. Toate configurațiile urmează.",
+    "help": "Adesea este un mod pe care l-ai modificat: ModHub nu compară numerele de versiune, oferă originalul său. Oricum, nu se șterge nimic: fișierul pe care nu-l păstrezi rămâne în folderul „Recovered” sau „Old versions”, lângă configurațiile tale.",
+    "later": "Mai târziu",
+    "gone": "Acest fișier nu mai este în folderul „Recovered”: nu s-a schimbat nimic.",
+    "failed": "Versiunea jocului pentru {name} nu a putut fi pusă în loc ({detail}). Versiunea ta nu s-a schimbat."
+  },
+  "stop": {
+    "running": "Închide mai întâi {game}: setarea lui trebuie restaurată cu jocul închis.",
+    "folders_failed": "Folderele configurațiilor nu au putut fi șterse.",
+    "closed": "FS Passion este închis. Jocul și-a recăpătat setarea originală.",
+    "export_first": "Înainte de a continua, exportă-ți configurarea: îți vei recupera configurațiile dacă revii la FS Passion.",
+    "intro": "FS Passion va readuce jocului setarea originală, apoi va elimina folderele configurațiilor (conțin doar legături):",
+    "no_version": "Nicio versiune a jocului nu este configurată: nu este nimic de restaurat.",
+    "mods_safe": "Folderele tale de moduri nu sunt atinse niciodată, nici „Old versions” și „Recovered”, care conțin moduri puse deoparte.",
+    "admin_flag": "Setarea „Rulează acest program ca administrator” pusă de FS Passion va fi eliminată.",
+    "understand": "Înțeleg: jocul nu va mai încărca configurațiile FS Passion.",
+    "plan": {
+      "restore": "Jocul încarcă din nou folderul său original: {dir}",
+      "deactivate": "Folderul personalizat de moduri este dezactivat: jocul revine la folderul său obișnuit „mods”.",
+      "missing": "gameSettings.xml nu a fost găsit: nimic de restaurat.",
+      "none": "Setarea jocului este deja cea originală.",
+      "folders": {
+        "one": "{count} folder de configurație eliminat",
+        "few": "{count} foldere de configurații eliminate",
+        "other": "{count} de foldere de configurații eliminate"
+      },
+      "kept": {
+        "one": "„{name}” este păstrat ({count} fișier).",
+        "few": "„{name}” este păstrat ({count} fișiere).",
+        "other": "„{name}” este păstrat ({count} de fișiere)."
+      }
+    },
+    "options": {
+      "title": "Șterge și:",
+      "parties": "configurațiile și modurile comune (parties.json)",
+      "caches": "memoriile cache (pictograme convertite, catalog DLC)",
+      "settings": "setările FS Passion",
+      "logs": "jurnalele",
+      "langs": "limbile personale"
+    },
+    "done": {
+      "title": "FS Passion nu mai este folosit",
+      "text": "Gata. Jocul și-a recăpătat setarea originală.",
+      "partial": "Gata, cu excepția a cel puțin unei versiuni: vezi mai jos. Jurnalul are detaliile.",
+      "version": {
+        "zero": "setarea originală restaurată",
+        "one": "setarea originală restaurată, {count} folder de configurație eliminat",
+        "few": "setarea originală restaurată, {count} foldere de configurații eliminate",
+        "other": "setarea originală restaurată, {count} de foldere de configurații eliminate"
+      },
+      "set_aside": {
+        "one": "{count} fișier găsit în folderele configurațiilor a fost pus deoparte în „Recovered”.",
+        "few": "{count} fișiere găsite în folderele configurațiilor au fost puse deoparte în „Recovered”.",
+        "other": "{count} de fișiere găsite în folderele configurațiilor au fost puse deoparte în „Recovered”."
+      },
+      "close": "Închide FS Passion",
+      "uninstaller": "Apoi pornește dezinstalarea FS Passion",
+      "error": {
+        "override": "setarea jocului NU a fost restaurată (gameSettings.xml nu a putut fi modificat); folderele configurațiilor sunt păstrate",
+        "folders": "setarea originală restaurată, dar folderele configurațiilor nu au putut fi șterse"
+      }
+    },
+    "stopped": "FS Passion nu mai este folosit: închide-l."
+  },
+  "tour": {
+    "button": "Tur ghidat",
+    "title": "Tur ghidat",
+    "count": "{n} / {total}",
+    "prev": "Înapoi",
+    "next": "Înainte",
+    "replay": "Reia",
+    "finish": "Gata",
+    "quit": "Ieși din tur",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Ai chef de un tur ghidat?",
+      "body": "Fă clic pe bec: într-un minut, FS Passion îți arată esențialul interfeței sale. Becul rămâne acolo ca să poți relua turul oricând vrei.",
+      "start": "Începe turul",
+      "later": "Mai târziu"
+    },
+    "versions": {
+      "caption": "Versiunea ta de joc",
+      "body": "Treci cu mouse-ul peste această siglă: apar versiunile Farming Simulator. Fă clic pe cea pe care vrei să o gestionezi.\nVersiunile neinstalate sunt estompate. Fiecare versiune are propriile moduri și propriile configurații.",
+      "picked": "Selectată: modurile și configurațiile ei sunt afișate"
+    },
+    "parties": {
+      "caption": "Configurațiile tale: inima FS Passion",
+      "body": "Un clic te mută de la o configurație la alta: harta ei și toate dependențele urmează.\nConfigurație completă: toate modurile tale, pentru a le actualiza în joc.\nConfigurație goală: fără moduri, pentru a testa jocul original.",
+      "full_tip": "Toate modurile: pentru a rula actualizările modurilor în joc",
+      "empty_tip": "Fără moduri: pentru a testa jocul original"
+    },
+    "tools": {
+      "caption": "Creează, duplică, redenumește, șterge",
+      "body": "Acțiuni asupra configurației selectate.\nSfat: pe o hartă din „Toate modurile”, butonul „＋ Configurație” creează configurația cu harta și toate dependențele ei, cu un singur clic."
+    },
+    "common": {
+      "caption": "Moduri comune",
+      "body": "Vehiculele, utilajele și scripturile de joc pe care le vrei în toate configurațiile tale.\nSunt activate implicit; la nevoie, dezactivează-le pentru o singură configurație.",
+      "on": "Moduri comune incluse în această configurație",
+      "off": "Dezactivate doar pentru această configurație"
+    },
+    "apply": {
+      "caption": "Aplică",
+      "body": "Aplică configurația selectată: pe ea o va încărca jocul la următoarea pornire.\nButonul se aprinde cât timp configurația selectată nu este aplicată.",
+      "done": "Aplicată: jocul o va încărca la următoarea pornire"
+    },
+    "buttons": {
+      "caption": "Temă, notificări, setări",
+      "body": "Interfață luminoasă sau întunecată, istoricul mesajelor, setări… Și becul, pentru a relua acest tur oricând vrei.",
+      "theme": "Interfață luminoasă sau întunecată"
+    },
+    "list1": {
+      "caption": "Toate modurile",
+      "body": "Tot folderul tău de moduri, sortat pe categorii: DLC, hărți, alte moduri…\nUn mod rămâne mereu aici, orice ai face în celelalte liste. Modurile „nesortate” nu sunt în nicio listă: jocul nu le vede.\n[Ctrl] + [F]: caută un mod sau un autor.",
+      "search_tip": "Căutare: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Moduri proaspăt descărcate",
+      "body": "Acest buton caută modurile pe care tocmai le-ai descărcat în folderul Descărcări.\nFS Passion detectează versiunea de joc a fiecăruia și, cu acordul tău, îl pune în folderul de moduri potrivit.\nFace asta și la pornire: vezi Setări → Aplicație → Descărcări.",
+      "found": "Fiecare merge în folderul de moduri al versiunii sale de joc"
+    },
+    "list2": {
+      "caption": "Modurile configurației",
+      "body": "Modurile configurației selectate: harta ei, dependențele ei, modurile ei proprii.\nJocul le încarcă pe lângă modurile comune."
+    },
+    "list3": {
+      "caption": "Moduri comune",
+      "body": "Modurile prezente în toate configurațiile tale: tractoare, utilaje, scripturi…\nSortează-le aici o singură dată: fiecare configurație le primește."
+    },
+    "select": {
+      "caption": "Selecție multiplă",
+      "body": "[Ctrl] + clic: adaugă sau elimină un mod din selecție.\n[Shift] + clic: selectează un interval întreg.\n[Ctrl] + [A]: selectează tot din listă; [Esc]: golește selecția.\nImediat ce un mod este selectat, jos apare o bară de acțiuni."
+    },
+    "move": {
+      "caption": "Glisare și plasare",
+      "body": "Spre „Modurile configurației” sau „Moduri comune”: este o copiere, modul rămâne în „Toate modurile”.\nÎntre aceste două liste: este o mutare. Ține apăsat [Ctrl] la plasare pentru a copia.\nSpre „Toate modurile” sau tasta [Del]: modul este eliminat din listă. Fișierul lui nu este șters niciodată.",
+      "copy": "Copiază",
+      "move": "Mută · [Ctrl]: copiază",
+      "remove": "Elimină din listă · [Del]"
+    },
+    "keys": {
+      "caption": "Comenzi rapide de la tastatură",
+      "body": "Pentru a merge mai repede:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Caută un mod sau un autor"
+        },
+        {
+          "k": "[Ctrl] + clic",
+          "d": "Adaugă sau elimină un mod din selecție"
+        },
+        {
+          "k": "[Shift] + clic",
+          "d": "Selectează un interval de moduri"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Selectează tot din listă"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Golește selecția sau anulează o glisare"
+        },
+        {
+          "k": "[Ctrl] la plasare",
+          "d": "Copiază în loc să muți (între listele 2 și 3)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Elimină din lista 2 sau 3 (fișierul rămâne)"
+        },
+        {
+          "k": "[Enter] pe o hartă",
+          "d": "Creează o configurație cu harta și dependențele ei"
+        },
+        {
+          "k": "[F2]",
+          "d": "Redenumește un mod"
+        },
+        {
+          "k": "[I]",
+          "d": "Fixează fișa unui mod"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "Selectează și deplasează-te cu tastatura"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Închide fără a ieși",
+      "body": "Crucea închide fereastra, dar FS Passion continuă să ruleze în fundal, în zona de notificare de lângă ceas.\nPentru a-l readuce: săgeata „^” din bara de activități, apoi pictograma FS. Pentru a-l închide cu adevărat: „Ieșire”, dreapta jos, sau clic dreapta pe pictogramă.\nPoți schimba asta în Setări → Aplicație → Fereastră.",
+      "tip_close": "Închide: FS Passion trece în zona de notificare",
+      "tip_more": "Afișează pictogramele ascunse",
+      "tip_icon": "Clic: FS Passion revine · Clic dreapta: Ieșire"
+    },
+    "end": {
+      "caption": "E rândul tău!",
+      "body": "Reia acest tur oricând vrei cu becul sau din Setări → Ajutor și despre."
+    },
+    "demo": {
+      "parties": [
+        "Valea Verde — Zootehnie",
+        "Dealurile — Culturi",
+        "Orezăriile din Sud"
+      ],
+      "party_sub": {
+        "one": "Hartă + {count} mod",
+        "few": "Hartă + {count} moduri",
+        "other": "Hartă + {count} de moduri"
+      },
+      "mods": [
+        "Tractor cu șase cilindri",
+        "Combină",
+        "Semănătoare de 6 m",
+        "Remorcă agricolă",
+        "Pachet de utilaje",
+        "Script meteo"
+      ]
+    }
+  }
+}

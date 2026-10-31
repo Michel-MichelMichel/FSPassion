@@ -132,8 +132,14 @@ def test_best_match():
     assert langs.best_match("pt-BR") == "pt-BR"
     assert langs.best_match("nn-NO") == "nb"  # nynorsk : bokmål
     assert langs.best_match("cs-CZ") == "cs"
-    assert langs.best_match("es-MX") == "es"
-    assert langs.best_match("ja-JP") == "en"  # pas encore traduit : anglais
+    assert langs.best_match("es-MX") == "es-419"  # 1.0.0 : espagnol d'Amérique latine
+    # 1.0.0 : les 26 langues sont traduites
+    assert langs.best_match("ja-JP") == "ja"
+    assert langs.best_match("zh-CN") == "zh-Hans"
+    assert langs.best_match("zh-TW") == "zh-Hant"
+    assert langs.best_match("ru-RU") == "ru"
+    assert langs.best_match("ko-KR") == "ko"
+    assert langs.best_match("tlh") == "en"  # langue non traduite : anglais
     assert langs.best_match(None) == "en"
 
 

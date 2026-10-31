@@ -1,0 +1,1451 @@
+{
+  "_meta": {
+    "code": "id",
+    "name": "Bahasa Indonesia",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion telah ditutup",
+    "closed_help": "Anda boleh menutup tab ini. Jalankan FS Passion lagi untuk melanjutkan."
+  },
+  "common": {
+    "close": "Tutup",
+    "cancel": "Batal",
+    "ok": "OK",
+    "copy": "Salin",
+    "copied": "Disalin ke papan klip",
+    "soon": "Hadir di versi {version}",
+    "soon_action": "{action}: hadir di versi {version}"
+  },
+  "window": {
+    "minimize": "Perkecil",
+    "maximize": "Perbesar",
+    "restore": "Pulihkan",
+    "close": "Tutup FS Passion"
+  },
+  "header": {
+    "settings": "Pengaturan",
+    "version": "Versi game: {name}",
+    "current_party": "Konfigurasi saat ini",
+    "create": "Buat konfigurasi",
+    "duplicate": "Duplikasi konfigurasi",
+    "rename": "Ganti nama konfigurasi",
+    "delete": "Hapus konfigurasi",
+    "common_mods": "Mod bersama",
+    "common_mods_tip": "Sertakan mod bersama dalam konfigurasi ini",
+    "apply": "Terapkan",
+    "apply_tip": "Buat game memuat konfigurasi ini",
+    "apply_done_tip": "Konfigurasi ini sudah diterapkan dan terbaru: inilah yang dimuat game",
+    "theme_light": "Antarmuka terang",
+    "theme_dark": "Antarmuka gelap"
+  },
+  "versions": {
+    "coming": "Segera hadir",
+    "ready": "Dikonfigurasi",
+    "installed": "Terpasang",
+    "not_installed": "Tidak terpasang",
+    "absent_help": "Terpasang di tempat lain? Pengaturan → Game dan jalur"
+  },
+  "party": {
+    "full": "Konfigurasi lengkap",
+    "empty": "Konfigurasi kosong",
+    "other": "Folder khusus",
+    "unsupported": "Tidak ada konfigurasi",
+    "unknown": "Tidak diketahui",
+    "none_yet": "Belum ada konfigurasi. Buat dengan ＋, atau dengan “＋ Konfigurasi” pada sebuah peta.",
+    "full_count": {
+      "one": "Semua mod ({count})",
+      "other": "Semua mod ({count})"
+    },
+    "empty_sub": "Tanpa mod, untuk menguji game dasar",
+    "applied_tag": "diterapkan",
+    "mods_count": {
+      "zero": "Tanpa mod",
+      "one": "{count} mod",
+      "other": "{count} mod"
+    },
+    "full_tip": "Ideal untuk memperbarui mod di dalam game"
+  },
+  "status": {
+    "running": "{game} sedang berjalan",
+    "other_folder": "Game memuat mod dari folder lain:",
+    "applied": "Konfigurasi yang diterapkan: {name}",
+    "other_folder_path": "Game memuat folder lain: {path}",
+    "stale": "Konfigurasi berubah sejak terakhir diterapkan"
+  },
+  "path": {
+    "empty": "",
+    "found": "Ditemukan",
+    "not_found": "Folder ini tidak ada",
+    "not_game_exe": "File ini bukan file eksekusi {game}",
+    "no_gamesettings": "gameSettings.xml tidak ditemukan: jalankan game sekali, lalu kembali",
+    "not_ntfs": "Drive ini bukan NTFS: konfigurasi tidak dimungkinkan",
+    "onedrive": "Folder ini ada di OneDrive: tidak disarankan",
+    "storage_overlap": "Folder ini berisi folder mod utama (atau folder FSPassion-nya), atau berada di dalamnya: pilih folder lain",
+    "storage_duplicate": "Folder ini sudah dipakai oleh folder penyimpanan lain, atau berisi folder tersebut",
+    "storage_same_disk": "Ditemukan · drive yang sama dengan folder utama: tidak perlu hak khusus",
+    "storage_other_disk": "Ditemukan · drive lain: tautan simbolik"
+  },
+  "list1": {
+    "title": "Semua mod",
+    "search": "Cari mod atau pembuat",
+    "search_clear": "Hapus pencarian",
+    "cat_unclassified": "Belum dipilah",
+    "cat_dlc": "DLC",
+    "cat_maps": "Peta",
+    "cat_others": "Mod lain",
+    "cat_by_author": "Menurut nama pembuat",
+    "dlc_note": "Dimuat game di setiap konfigurasi",
+    "selected": "dipilih",
+    "active": "aktif",
+    "all": "total",
+    "scanning": "Membaca mod: {done} dari {total}",
+    "icons_pending": {
+      "one": "Menyiapkan ikon: tersisa {count}",
+      "other": "Menyiapkan ikon: tersisa {count}"
+    },
+    "anomalies": {
+      "one": "{count} masalah: lihat detail",
+      "other": "{count} masalah: lihat detail"
+    },
+    "find_new": "Cari mod baru di unduhan",
+    "open_settings": "Buka pengaturan",
+    "not_configured": "{game} belum dikonfigurasi",
+    "not_configured_help": "Tentukan folder modnya di pengaturan, atau biarkan FS Passion mendeteksi instalasinya.",
+    "reading": "Membaca mod…",
+    "no_match": "Tidak ada mod yang cocok dengan “{query}”",
+    "empty": "Folder mod ini kosong",
+    "empty_help": "Mod (.zip) dan mod yang diekstrak (folder berisi modDesc.xml) akan muncul di sini.",
+    "unclassified_note": "Game tidak akan melihatnya sampai dipilah",
+    "plus_party": "Konfigurasi",
+    "plus_party_tip": "Buat konfigurasi dengan peta ini dan dependensinya (Enter)",
+    "mark_party": "Di konfigurasi saat ini",
+    "mark_common": "Di mod bersama",
+    "info_tip": "Sematkan detail mod (tombol I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Folder mod tidak ditemukan",
+      "unexpected": "Gagal membaca mod: {error}"
+    }
+  },
+  "mod": {
+    "map": "Peta",
+    "unpacked": "Mod diekstrak",
+    "multiplayer": "Multipemain",
+    "version": "Versi",
+    "author": "Pembuat",
+    "game_version": "Game",
+    "gv_unknown": "Versi game tidak diketahui",
+    "size": "Ukuran",
+    "kind": "Format",
+    "kind_dir": "Folder (diekstrak)",
+    "kind_zip": "Arsip .zip",
+    "parties": "Ada di daftar",
+    "parties_none": "Tidak ada",
+    "storage": "Penyimpanan",
+    "dependencies": {
+      "one": "{count} dependensi",
+      "other": "{count} dependensi"
+    },
+    "more": {
+      "one": "dan {count} lainnya",
+      "other": "dan {count} lainnya"
+    },
+    "no_dependencies": "Tidak ada dependensi yang dinyatakan",
+    "unpacked_tip": "Mod diekstrak: tidak diperbarui oleh ModHub dan tidak bisa dipakai di multipemain. FS Passion tidak pernah menulis ke dalamnya.",
+    "gv_conflict": "Awalan nama dan descVersion menunjuk ke dua versi berbeda: awalan yang dipakai.",
+    "unpin": "Tutup (Esc)",
+    "optional": {
+      "one": "{count} mod opsional",
+      "other": "{count} mod opsional"
+    },
+    "searchmods_note": "Versi game lama (tag SearchMods): simpanan tetap dimuat meski mod yang diperlukan tidak ada; game melaporkannya setelahnya.",
+    "links_hint": "Klik “i” untuk menyematkan detail ini dan membuka tautan.",
+    "links_old": "Tautan dari pembuat mod, sering kali lama: halamannya mungkin sudah tidak ada.",
+    "link_open": "Buka di peramban",
+    "link_failed": "Tautan tidak dapat dibuka."
+  },
+  "dep": {
+    "present": "ada",
+    "absent": "tidak ada",
+    "dlc_owned": "DLC dimiliki",
+    "dlc_missing": "DLC tidak dimiliki"
+  },
+  "dlc": {
+    "free": "DLC gratis",
+    "paid": "DLC",
+    "info": "Game selalu memuat DLC yang terpasang, di setiap konfigurasi."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} tidak mendukung konfigurasi",
+    "missing": "Tidak ada di folder mod",
+    "missing_tip": "{name} sudah tidak ada di folder mod Anda. Jika pembuatnya mengganti namanya, gunakan “Ganti dengan…”.",
+    "replace": "Ganti dengan…"
+  },
+  "list2": {
+    "title": "Mod konfigurasi",
+    "full": {
+      "one": "Konfigurasi lengkap: semua mod ({count})",
+      "other": "Konfigurasi lengkap: semua mod ({count})"
+    },
+    "full_help": "Game memuat seluruh folder mod, seperti sebelum ada FS Passion.",
+    "empty_party": "Konfigurasi kosong: tanpa mod",
+    "empty_help": "Untuk menguji game dasar, tanpa mod apa pun.",
+    "no_mods": "Tidak ada mod di konfigurasi ini",
+    "no_mods_help": "Seret mod dari “Semua mod”, atau pilih lalu gunakan bilah tindakan."
+  },
+  "list3": {
+    "title": "Mod bersama",
+    "empty": "Belum ada mod bersama",
+    "empty_help": "Mod bersama ada di setiap konfigurasi: traktor, alat, skrip…",
+    "not_included": "Tidak disertakan dalam konfigurasi ini"
+  },
+  "footer": {
+    "github_tip": "Halaman GitHub proyek",
+    "github_soon": "Alamat GitHub proyek akan segera ditambahkan",
+    "running": "Game sedang berjalan",
+    "launch": "Jalankan game",
+    "launch_unconfigured": "Tentukan file eksekusi {game} di pengaturan",
+    "launch_tip": "Jalankan game dengan konfigurasi yang diterapkan",
+    "quit": "Keluar"
+  },
+  "launch": {
+    "started": "Menjalankan {game}…",
+    "failed": "{game} tidak dapat dijalankan. Periksa file eksekusi dan metode peluncuran di pengaturan.",
+    "no_exe": "File eksekusi {game} tidak ditemukan: tentukan di pengaturan.",
+    "already_running": "{game} sudah berjalan.",
+    "apply_title": "Terapkan “{name}”?",
+    "apply_text": "Konfigurasi “{name}” belum diterapkan, atau sudah berubah sejak itu. Terapkan konfigurasi {name}, lalu jalankan {game}?",
+    "apply_and_launch": "Terapkan dan jalankan",
+    "without_apply": "Jalankan tanpa menerapkan"
+  },
+  "backup": {
+    "created": "Cadangan asli gameSettings.xml dibuat untuk {game}",
+    "exported": "Konfigurasi diekspor: {file}",
+    "demo_active": "Keluar dulu dari mode demo: mode ini memakai folder yang berbeda dari milik Anda.",
+    "unreadable": "File ini tidak dapat dibaca: {path}",
+    "too_big": "File ini terlalu besar untuk menjadi ekspor FS Passion: {path}",
+    "not_export": "File ini bukan ekspor FS Passion: {path}",
+    "too_new": "File ini berasal dari versi FS Passion yang lebih baru ({version}). Perbarui FS Passion untuk mengimpornya.",
+    "write_failed": "File tidak dapat disimpan: {path}",
+    "expired": "Impor sudah kedaluwarsa: pilih file lagi.",
+    "running": "Tutup {game} sebelum mengimpor: konfigurasinya akan berubah.",
+    "import": {
+      "title": "Impor konfigurasi",
+      "from": "Ekspor tanggal {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} konfigurasi",
+        "other": "{count} konfigurasi"
+      },
+      "common": {
+        "one": "{count} mod bersama",
+        "other": "{count} mod bersama"
+      },
+      "no_parties": "File ini tidak berisi konfigurasi: hanya pengaturan yang akan diimpor.",
+      "keep": "Pertahankan jalur saat ini (disarankan)",
+      "keep_help": "Folder game, mod, dan unduhan di PC ini tidak berubah. Hanya konfigurasi, mod bersama, dan pengaturan umum (bahasa, tema, opsi) yang diimpor.",
+      "replace_help": "Jalur dalam file menggantikan jalur di PC ini: pilih ini hanya jika file berasal dari PC ini, dengan drive yang sama.",
+      "paths_differ": "Folder mod dalam file ini bukan milik PC ini.",
+      "warning": "Konfigurasi saat ini dari versi di atas akan diganti. Keadaan saat ini dicadangkan otomatis terlebih dahulu. Tidak ada yang diterapkan: folder konfigurasi dibangun ulang pada “Terapkan” berikutnya.",
+      "ok": "Impor"
+    },
+    "result": {
+      "title": "Konfigurasi diimpor",
+      "done": "Impor selesai.",
+      "parties": {
+        "one": "{count} konfigurasi diimpor",
+        "other": "{count} konfigurasi diimpor"
+      },
+      "skipped": "tidak diimpor (versi game tidak dikonfigurasi di PC ini)",
+      "fallback": "Game memuat konfigurasi yang sudah tidak ada: sekarang game memuat Konfigurasi lengkap.",
+      "apply": "Mod yang tidak ada di PC ini muncul sebagai mod hilang di konfigurasi. Klik “Terapkan” agar game memuat konfigurasi yang diimpor.",
+      "backup": "Keadaan sebelum impor disimpan di %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "game": {
+      "title": "Game dan jalur"
+    },
+    "look": {
+      "title": "Tampilan"
+    },
+    "app": {
+      "title": "Aplikasi"
+    },
+    "help": {
+      "title": "Bantuan dan tentang"
+    },
+    "paths": {
+      "versions": "Versi game",
+      "game_exe": "File eksekusi game",
+      "user_dir": "Folder game di Dokumen",
+      "mods_dir": "Folder mod utama",
+      "mods_dirs": "Folder mod",
+      "browse": "Telusuri…",
+      "fixed_fs2011": "Folder mod FS2011 tidak dapat dipindahkan.",
+      "add_storage": "Tambahkan folder mod di drive lain",
+      "derived": "Jalur turunan",
+      "not_applicable": "Tidak berlaku untuk versi ini",
+      "d_game_dir": "Folder game",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (folder game)",
+      "d_dlc_user": "DLC (Dokumen)",
+      "detect": "Deteksi instalasi",
+      "detect_all": "Deteksi semua versi",
+      "detect_all_help": "Mencari instalasi semua versi, dan mengisi kolom yang kosong.",
+      "detect_one": "Deteksi versi ini",
+      "detect_one_help": "Hanya mengubah versi yang dipilih di atas. Versi lain tetap seperti semula.",
+      "detect_help": "Kolom yang Anda sesuaikan tidak pernah diubah.",
+      "detect_found": "Instalasi ditemukan: {list}",
+      "detect_none": "Tidak ada instalasi ditemukan. Tentukan jalur dengan “Telusuri…”.",
+      "launch_method": "Metode peluncuran game",
+      "launch_auto": "Otomatis",
+      "launch_platform": "Platform",
+      "launch_exe": "File eksekusi",
+      "launch_help": "Otomatis memilih metode yang tepat (Steam, Epic Games, Microsoft Store, Xbox, atau file eksekusi). Dua lainnya adalah cadangan.",
+      "minimize_on_launch": "Perkecil FS Passion saat game dimulai",
+      "minimize_on_launch_help": "Ke area notifikasi jika “Tutup ke area notifikasi” aktif (Aplikasi → Jendela), jika tidak ke bilah tugas.",
+      "args_title": "Argumen peluncuran",
+      "args_show": "Tampilkan argumen peluncuran",
+      "args_hide": "Sembunyikan argumen peluncuran",
+      "args_skip": "Lewati video intro",
+      "args_skip_info": "Melewati video intro dan layar pembuka.",
+      "args_cheats": "Konsol pengembang",
+      "args_cheats_info": "Mengaktifkan konsol pengembang di dalam game. Juga mengatur <controls> di game.xml, di samping gameSettings.xml.",
+      "args_game_xml_absent": "game.xml tidak ditemukan: konsol baru aktif setelah game dijalankan sekali.",
+      "args_game_xml_error": "game.xml tidak dapat diubah: konsol pengembang tetap nonaktif.",
+      "args_help_command": "FS Passion menambahkannya ke perintah peluncuran {game}.",
+      "args_help_steam": "{game} dijalankan oleh Steam. Steam menolak argumen yang dikirim program lain (Steam akan meminta konfirmasi setiap kali diluncurkan), jadi FS Passion menjalankan game tanpa argumen. Masukkan argumen sekali di Steam, seperti di bawah.",
+      "args_help_epic": "{game} dijalankan oleh Epic Games, yang tidak menerima argumen dari program lain: masukkan argumen sekali di Epic Games Launcher, seperti di bawah.",
+      "args_help_unsupported": "{game} dipasang dari Microsoft Store atau Xbox.",
+      "args_store": "Microsoft Store dan aplikasi Xbox tidak mengizinkan argumen peluncuran: hanya konsol pengembang (game.xml) yang dapat diaktifkan. Untuk argumen, pilih “File eksekusi” sebagai metode peluncuran, jika instalasi Anda memungkinkan.",
+      "args_steam_where": "Tempat memasukkannya di Steam",
+      "args_steam_steps": "Pustaka Steam: klik kanan {game} → Properti…\nTab Umum → kolom “Opsi peluncuran”\nTempel teks di bawah, lalu tutup jendela",
+      "args_epic_where": "Tempat memasukkannya di Epic Games Launcher",
+      "args_epic_steps": "Pustaka: “…” di bawah {game} → Kelola\nCentang “Argumen Baris Perintah Tambahan”\nTempel teks di bawah (launcher lama: foto profil → Pengaturan → {game})",
+      "args_none": "Tidak ada argumen yang dicentang",
+      "args_copy_label": "Argumen untuk disalin",
+      "args_copy_help": "Hanya perlu diulang saat Anda mencentang atau menghapus centang argumen.",
+      "console_on": "Konsol diaktifkan di game.xml",
+      "console_off": "Konsol dinonaktifkan di game.xml",
+      "console_enable": "Aktifkan di game.xml",
+      "console_done": "Konsol pengembang diaktifkan di game.xml untuk {game}",
+      "add_storage_help": "Hingga dua folder lagi. Mod di dalamnya didaftar dan masuk ke konfigurasi seperti yang lain; FS Passion tidak menulis apa pun lagi di sana.",
+      "extra_dir": "Folder mod tambahan",
+      "extra_help": "Menghapus folder ini tidak menyentuh mod di dalamnya: mod itu hanya tidak didaftar lagi.",
+      "remove_storage": "Hapus folder ini dari daftar (mod di dalamnya tidak disentuh)"
+    },
+    "downloads": {
+      "title": "Unduhan",
+      "folder": "Folder unduhan",
+      "help": "Folder tempat peramban Anda menyimpan mod yang diunduh.",
+      "scan_at_start": "Cari mod baru saat mulai",
+      "scan_now": "Cari sekarang"
+    },
+    "language": {
+      "title": "Bahasa",
+      "personal": "pribadi",
+      "open_folder": "Buka folder bahasa pribadi",
+      "personal_help": "Di sana Anda dapat menerjemahkan FS Passion ke bahasa Anda: tersedia templat dan petunjuk.",
+      "rejected": "File bahasa diabaikan (tidak valid atau terlalu besar): {list}"
+    },
+    "theme": {
+      "title": "Tema",
+      "help": "Arahkan kursor ke contoh untuk pratinjau tema, klik untuk memilih. Tema dua warna hanya memiliki dua warna; yang lain memakai warna resmi tema populer, masing-masing dalam versi gelap dan terang. Tombol matahari/bulan di kepala halaman beralih di antaranya.",
+      "contrast": "Kontras {ratio}:1",
+      "loop": "Putaran tema: ganti tema setiap menit",
+      "light_effects": "Efek cahaya (kilau, garis tepi bercahaya, neon)",
+      "reduce_motion": "Kurangi animasi",
+      "follows_windows": "Mengikuti pengaturan Windows “Efek animasi”.",
+      "follow_windows": "Ikuti pengaturan Windows",
+      "atelier": "Buka bengkel tema",
+      "mode_dark": "Gelap",
+      "mode_light": "Terang",
+      "group_duo": "Dua warna"
+    },
+    "backup": {
+      "title": "Cadangan konfigurasi",
+      "help": "Ekspor konfigurasi, mod bersama, dan pengaturan Anda ke sebuah file, untuk mendapatkannya kembali setelah instal ulang atau di PC lain. Tidak ada mod yang disalin: hanya namanya.",
+      "export": "Ekspor",
+      "import": "Impor"
+    },
+    "notice": {
+      "title": "Panduan",
+      "open": "Buka panduan",
+      "at_start": "Tampilkan saat mulai",
+      "tour": "Tur antarmuka"
+    },
+    "anomalies": {
+      "title": "Masalah",
+      "show": "Tampilkan masalah",
+      "reset": {
+        "zero": "Tidak ada masalah tersembunyi",
+        "one": "Tampilkan lagi masalah yang disembunyikan",
+        "other": "Tampilkan lagi {count} masalah yang disembunyikan"
+      },
+      "reset_done": "Masalah yang disembunyikan ditampilkan lagi"
+    },
+    "internet": {
+      "title": "Koneksi internet",
+      "allow": "Izinkan FS Passion mengunduh katalog DLC dari GitHub",
+      "help": "Katalog DLC (nama dan ikon) dibaca dari GitHub paling banyak sekali sehari. Hanya ikon DLC yang ada di PC ini yang diunduh. Tidak ada data pribadi yang dikirim.",
+      "catalog_off": "Katalog DLC: yang disertakan bersama FS Passion (koneksi dimatikan).",
+      "catalog_remote": "Katalog DLC tanggal {date}, diunduh dari GitHub.",
+      "catalog_embedded": "Katalog DLC tanggal {date}, disertakan bersama FS Passion.",
+      "check": "Periksa sekarang",
+      "checking": "Memeriksa…",
+      "error_not_found": "Katalog belum diterbitkan di GitHub.",
+      "error_unreachable": "Pemeriksaan terakhir gagal (tidak ada koneksi?).",
+      "error_invalid": "Katalog yang diterbitkan tidak dapat dibaca: yang ada di FS Passion dipakai.",
+      "error_too_new": "Katalog yang diterbitkan memerlukan versi FS Passion yang lebih baru.",
+      "error_too_big": "Katalog yang diterbitkan terlalu besar: diabaikan."
+    },
+    "updates": {
+      "title": "Pembaruan FS Passion",
+      "allow": "Periksa pembaruan FS Passion di GitHub",
+      "help": "Setiap kali dijalankan (lalu sekali sehari selama tetap terbuka), FS Passion membaca nomor versi terbaru yang diterbitkan di GitHub. Tidak ada data pribadi yang dikirim.",
+      "off": "Pemeriksaan pembaruan dimatikan.",
+      "checking": "Memeriksa…",
+      "last_check": "Pemeriksaan terakhir: {date}.",
+      "up_to_date": "FS Passion sudah terbaru (versi {version}).",
+      "never": "Versi terpasang: {version}.",
+      "available": "Versi baru tersedia: {version}",
+      "published": "Dirilis pada {date}",
+      "current": "Versi terpasang: {version}",
+      "install": "Pasang pembaruan",
+      "download_portable": "Unduh versi portabel",
+      "downloading": "Mengunduh… {percent}%",
+      "closing": "Memasang…",
+      "closing_help": "FS Passion ditutup, memasang versi baru, lalu dibuka kembali.",
+      "see_release": "Lihat yang baru",
+      "check": "Periksa sekarang",
+      "how_installed": "Penginstal diunduh dari GitHub dan diverifikasi (checksum SHA-256). FS Passion ditutup selama pemasangan, lalu dibuka kembali. Pengaturan, konfigurasi, dan mod Anda tetap tersimpan.",
+      "how_portable": "File .zip diunduh dan diverifikasi di folder unduhan Anda. Tutup FS Passion, lalu ganti file di foldernya dengan file dari .zip, pertahankan folder “data” (pengaturan Anda).",
+      "how_source": "Unduh versi baru dari halaman GitHub-nya.",
+      "note": "Versi baru FS Passion tersedia: {version}",
+      "pill": "Versi baru {version}",
+      "pill_tip": "Pembaruan FS Passion tersedia: Pengaturan → Aplikasi",
+      "portable_ready": "Versi portabel diunduh dan diverifikasi: {file}",
+      "error_not_found": "Belum ada versi yang diterbitkan di GitHub.",
+      "error_unreachable": "Pemeriksaan gagal (tidak ada koneksi?).",
+      "error_rate_limited": "GitHub sedang membatasi pemeriksaan: akan dicoba lagi nanti.",
+      "error_invalid": "Rilis di GitHub tidak dapat dibaca.",
+      "error_no_source": "Alamat repositori GitHub tidak ada.",
+      "error_checksum": "File yang diunduh tidak cocok dengan checksum-nya: file dihapus, tidak ada yang dipasang.",
+      "error_no_checksum": "Rilis tidak menyertakan checksum SHA-256 untuk file ini: demi keamanan, tidak ada yang dipasang.",
+      "error_missing_file": "Rilis ini tidak berisi file yang diharapkan: unduh dari halaman GitHub-nya.",
+      "error_disabled": "Pemeriksaan pembaruan dimatikan.",
+      "error_busy": "Unduhan sedang berlangsung.",
+      "error_none": "Tidak ada pembaruan untuk dipasang.",
+      "error_unsupported": "Pemasangan otomatis tidak dimungkinkan di sini: unduh pembaruan dari halaman GitHub-nya.",
+      "error_launch": "Penginstal tidak dapat dijalankan: unduh pembaruan dari halaman GitHub-nya.",
+      "error_game_running": "Tutup Farming Simulator dulu: FS Passion merapikan konfigurasi Anda saat game ditutup."
+    },
+    "logs": {
+      "title": "Log dan diagnostik",
+      "open_logs": "Buka folder log",
+      "copy_diag": "Salin diagnostik",
+      "diag_copied": "Diagnostik disalin: tempelkan ke laporan Anda"
+    },
+    "donate": {
+      "title": "Dukung proyek ini",
+      "text": "FS Passion adalah dan akan tetap menjadi proyek yang tepercaya, sumber terbuka, dan gratis. Jika Anda ingin berterima kasih kepada pembuatnya, donasi sekali hanya butuh beberapa detik, tanpa perlu membuat akun. Terima kasih!",
+      "no_link": "Tautan segera hadir"
+    },
+    "about": {
+      "title": "Tentang",
+      "version": "Versi",
+      "author": "Pembuat",
+      "license": "Lisensi",
+      "github_soon": "alamat segera hadir",
+      "official": "Satu-satunya tautan unduhan resmi adalah halaman GitHub proyek.",
+      "unofficial": "FS Passion adalah proyek independen, tidak berafiliasi dengan GIANTS Software. Farming Simulator adalah merek dagang GIANTS Software.",
+      "privacy": "FS Passion tidak mengirim data apa pun. FS Passion hanya mengunduh, jika Anda mengizinkan, daftar DLC publik dari GitHub.",
+      "window_mode": "Teknik jendela (pengembangan)",
+      "window_native": "Bawaan",
+      "window_script": "Dihitung",
+      "window_thin": "Bingkai tipis",
+      "window_restart": "Berlaku saat FS Passion dijalankan berikutnya",
+      "window_help": "Teknik saat ini: {current}. Ubah hanya jika mengubah ukuran dari tepi tidak berfungsi."
+    },
+    "stop": {
+      "title": "Berhenti memakai FS Passion",
+      "show": "Tampilkan detail",
+      "hide": "Sembunyikan detail",
+      "text": "Mengembalikan pengaturan asli game dan menghapus folder konfigurasi. Mod Anda tidak pernah disentuh.",
+      "button": "Berhenti memakai FS Passion"
+    },
+    "window": {
+      "title": "Jendela",
+      "close_to_tray": "Tutup ke area notifikasi",
+      "close_to_tray_help": "Tombol tutup jendela menyembunyikan FS Passion di samping jam Windows. Klik ikonnya untuk memunculkannya kembali; “Keluar” (kanan bawah, atau di menu ikon) benar-benar menutupnya.",
+      "tray_off": "Area notifikasi hanya tersedia di jendela FS Passion, di Windows.",
+      "focus_after_game": "Kembali ke depan saat game ditutup",
+      "focus_after_game_help": "Saat Farming Simulator ditutup, FS Passion muncul kembali, meski sedang disembunyikan di area notifikasi."
+    },
+    "demo": {
+      "title": "Coba tanpa game",
+      "help": "Mod palsu untuk mencoba semua fitur FS Passion, di folder uji: jalur asli Anda disisihkan, lalu dipulihkan saat Anda keluar.",
+      "start": "Coba FS Passion tanpa game",
+      "active_help": "Mode demo aktif: jalur ini milik folder uji. Jalur asli Anda kembali saat Anda keluar dari mode ini."
+    }
+  },
+  "themes": {
+    "lime": "Limau",
+    "jade": "Giok",
+    "cuivre": "Tembaga",
+    "blue": "Putih"
+  },
+  "anomalies": {
+    "title": "Masalah ditemukan",
+    "none": "Tidak ada masalah. Semua beres.",
+    "intro": "Item-item di folder mod Anda ini tidak dapat dipakai apa adanya oleh game. Bukan masalah serius, dan FS Passion membiarkannya.",
+    "new": "baru",
+    "hide_type": "Jangan tampilkan jenis masalah ini lagi",
+    "hide_folder": "Jangan tampilkan folder ini lagi",
+    "rename": "Ganti nama…",
+    "others": {
+      "one": "File lain yang diabaikan ({count})",
+      "other": "File lain yang diabaikan ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": "Arsip .rar atau .7z ({count})",
+        "other": "Arsip .rar atau .7z ({count})"
+      },
+      "explain": "Game hanya membaca file .zip. Ekstrak arsipnya, lalu zip ulang modnya jika perlu."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip tanpa modDesc.xml ({count})",
+        "other": ".zip tanpa modDesc.xml ({count})"
+      },
+      "explain": "Sering kali paket berisi beberapa mod yang perlu diekstrak.",
+      "nested": "modDesc.xml ditemukan di subfolder ({path}): mod di-zip dengan salah."
+    },
+    "A3": {
+      "title": {
+        "one": "Arsip tidak terbaca ({count})",
+        "other": "Arsip tidak terbaca ({count})"
+      },
+      "explain": "Arsip rusak atau modDesc.xml tidak valid. Unduh ulang modnya.",
+      "zip": "Arsip tidak dapat dibuka.",
+      "xml": "File modDesc.xml tidak valid."
+    },
+    "A4": {
+      "title": {
+        "one": "Folder tanpa modDesc.xml ({count})",
+        "other": "Folder tanpa modDesc.xml ({count})"
+      },
+      "explain": "Tanpa modDesc.xml di akarnya, game tidak dapat memakai folder ini. FS Passion tidak pernah menyentuhnya."
+    },
+    "A5": {
+      "title": {
+        "one": "Nama ditolak game ({count})",
+        "other": "Nama ditolak game ({count})"
+      },
+      "explain": "Game hanya menerima huruf tanpa aksen, angka, dan “_”.",
+      "suggestion": "Nama yang disarankan: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod untuk versi game lain ({count})",
+        "other": "Mod untuk versi game lain ({count})"
+      },
+      "explain": "Mod ini tidak akan dimuat oleh versi game ini.",
+      "detected": "Mod untuk {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Mod hilang ({count})",
+        "other": "Mod hilang ({count})"
+      },
+      "explain": "Sebuah konfigurasi merujuk mod ini, tetapi mod ini sudah tidak ada di folder mod.",
+      "in": "Di: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Mod terhapus yang masih tertaut ({count})",
+        "other": "Mod terhapus yang masih tertaut ({count})"
+      },
+      "explain": "Mod ini dihapus dari folder mod, tetapi beberapa konfigurasi masih memuatnya.",
+      "copy": "Salinannya masih ada di: {list}",
+      "delete_title": "Hapus salinan yang tersisa?",
+      "delete_text": "Salinan terakhir “{name}”, yang masih ada di folder konfigurasi, akan dikirim ke Recycle Bin, dan mod dihapus dari setiap daftar."
+    },
+    "A9": {
+      "title": {
+        "one": "Mod duplikat ({count})",
+        "other": "Mod duplikat ({count})"
+      },
+      "explain": "Mod yang sama ada dua kali: di dua folder penyimpanan, atau sebagai .zip dan folder berdampingan. Game hanya memuat satu. FS Passion memakai yang ada di folder utama, dan arsip alih-alih folder.",
+      "zip_and_dir": "“{name}” ada sebagai .zip sekaligus folder yang diekstrak: game hanya memuat satu, dan ModHub tidak dapat memperbaruinya. Pertahankan satu bentuk saja (hapus yang lain dengan “Hapus permanen”, atau pindahkan keluar dari folder mod).",
+      "files": "File: {list}"
+    },
+    "game": "{game}",
+    "folder": "Folder mod: {path}",
+    "show_in_folder": "Tampilkan di File Explorer",
+    "open_folder": "Buka folder mod di File Explorer (mod sudah tidak ada di sana)"
+  },
+  "welcome": {
+    "subtitle": "Mod Anda, disimpan sekali. Konfigurasi sebanyak yang Anda mau.",
+    "language": "Pilih bahasa Anda"
+  },
+  "notice": {
+    "title": "Cara kerja FS Passion",
+    "at_start": "Tampilkan jendela ini saat aplikasi dimulai",
+    "understood": "Mengerti",
+    "blocks": [
+      {
+        "key": "Pertama-tama: kami sarankan membuat salinan cadangan semua mod Anda di drive lain. Ini penting, seperti sebelum setiap operasi pada file penting."
+      },
+      {
+        "h": "Idenya"
+      },
+      {
+        "p": "FS Passion memungkinkan Anda membuat, dengan cepat dan mudah, konfigurasi Farming Simulator sebanyak yang Anda mau, sambil tetap menyimpan satu salinan mod saja di folder aslinya."
+      },
+      {
+        "p": "Beralih dari satu konfigurasi ke konfigurasi lain dalam 1 klik!"
+      },
+      {
+        "h": "Instalasi"
+      },
+      {
+        "p": "Folder mod Anda bisa berada di drive mana pun: FS Passion menyesuaikan diri. Tidak ada yang perlu dibuat, dipindahkan, atau diganti namanya secara manual. Drive penuh? Tambahkan hingga dua folder mod di drive lain (Pengaturan → Game dan jalur): mod di dalamnya masuk ke konfigurasi seperti yang lain."
+      },
+      {
+        "h": "Penggunaan pertama"
+      },
+      {
+        "ul": [
+          "Buat konfigurasi Anda dengan tombol ajaib “＋ Konfigurasi” pada peta: peta dan dependensinya menjadi konfigurasi dalam satu klik.",
+          "Lalu pilah mod lainnya ke mod bersama, yang ada di setiap konfigurasi.",
+          "Klik “Terapkan”: game akan memuat konfigurasi yang dipilih saat dijalankan berikutnya."
+        ]
+      },
+      {
+        "h": "Menambah, mengganti nama, menghapus mod"
+      },
+      {
+        "ul": [
+          "Mod baru: unduh seperti biasa, lalu klik “Cari mod baru” di bagian atas daftar. FS Passion menaruhnya di folder mod versi game yang tepat.",
+          "Untuk menghapus mod, lakukan di FS Passion (“Hapus permanen” di bilah tindakan) dan bukan di File Explorer: mod langsung dihapus dari daftar dan konfigurasi sekaligus, dan masuk ke Recycle Bin.",
+          "Mengganti nama mod (tombol F2) melepaskannya dari ModHub: mod itu tidak akan menerima pembaruan lagi."
+        ]
+      },
+      {
+        "h": "Pembaruan"
+      },
+      {
+        "p": "Tidak perlu melakukan apa pun: pembaruan yang diunduh game diambil saat game ditutup, atau saat FS Passion dijalankan berikutnya. Versi lama disisihkan di “Old versions”. Jika game mengunduh nomor versi yang lebih lama dari milik Anda (sering kali mod yang Anda ubah), FS Passion menanyakan mana yang disimpan."
+      },
+      {
+        "p": "FS Passion sendiri: saat versi baru dirilis, sebuah titik muncul di roda gigi Pengaturan dan “Versi baru” di samping nomor versi, di bagian bawah. Pengaturan → Aplikasi → “Pasang pembaruan”."
+      },
+      {
+        "h": "Menyimpan konfigurasi Anda"
+      },
+      {
+        "p": "Pengaturan → Aplikasi → “Ekspor” menyimpan konfigurasi, mod bersama, dan pengaturan Anda ke sebuah file. “Impor” mengembalikannya, setelah instal ulang atau di PC lain."
+      },
+      {
+        "h": "Untuk berhenti"
+      },
+      {
+        "p": "“Berhenti memakai FS Passion” (Pengaturan → Aplikasi) mengembalikan pengaturan asli game dan menghapus folder konfigurasi. Mod Anda tidak pernah disentuh."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Bengkel tema",
+    "id": "Pengenal",
+    "name": "Nama",
+    "dark": "Latar jendela",
+    "light": "Warna dominan",
+    "mica": "Cahaya Mica",
+    "grain": "Butiran",
+    "effect": "Efek",
+    "effect_none": "Tidak ada",
+    "effect_metal": "Kilau logam",
+    "intensity": "Intensitas",
+    "save": "Simpan",
+    "copy": "Salin definisi",
+    "new": "Baru",
+    "copied": "Definisi disalin",
+    "saved": "Tema disimpan ke ui/themes.json",
+    "contrast_low": "Kontras {ratio}:1, di bawah 4.5:1. Teks kecil akan memakai {color}.",
+    "contrast_ok": "Kontras {ratio}:1",
+    "mode": "Mode",
+    "mode_dark": "Gelap",
+    "mode_light": "Terang",
+    "text": "Teks",
+    "multi": "Beberapa warna aksen (satu per area)",
+    "accent_n": "Aksen {n}",
+    "pair": "Tema kembar (matahari/bulan)",
+    "pair_none": "Tidak ada",
+    "gradient": "Gradien dua warna (judul, tombol Terapkan dan Jalankan)",
+    "gradient_from": "Gradien: awal",
+    "gradient_to": "Gradien: akhir",
+    "style": "Gaya",
+    "style_duo": "Dua warna",
+    "style_palette": "Palet resmi",
+    "style_classic": "Selubung terhitung",
+    "surface_1": "Latar jendela",
+    "surface_2": "Daftar dan jendela",
+    "surface_3": "Bagian",
+    "surface_4": "Subbagian",
+    "text_n": "Teks {n}",
+    "neon": "Neon",
+    "neon_help": "Cahaya judul, ikon, dan garis tepi, dengan warna setiap area (0: tanpa efek). Dimatikan oleh “Efek cahaya”."
+  },
+  "error": {
+    "bad_request": "Permintaan tidak valid.",
+    "forbidden": "Akses ditolak.",
+    "not_found": "Item tidak ditemukan.",
+    "unexpected": "Kesalahan tak terduga. Salin diagnostik (Pengaturan → Bantuan dan tentang) dan lampirkan ke laporan Anda.",
+    "offline": "Inti FS Passion tidak merespons.",
+    "internal": "Operasi ditolak demi keamanan. Salin diagnostik (Pengaturan → Bantuan dan tentang) dan lampirkan ke laporan Anda."
+  },
+  "detect": {
+    "busy": "Deteksi sedang berjalan."
+  },
+  "parties": {
+    "not_configured": "Tentukan folder mod {game} di pengaturan untuk membuat konfigurasi.",
+    "name_label": "Nama konfigurasi",
+    "name_empty": "Nama tidak boleh kosong.",
+    "name_too_long": "Paling banyak {max} karakter.",
+    "name_taken": "Sudah ada konfigurasi bernama “{name}”.",
+    "special_locked": "Konfigurasi lengkap dan Konfigurasi kosong tidak dapat diubah, diganti namanya, diduplikasi, atau dihapus.",
+    "not_found": "Konfigurasi ini sudah tidak ada.",
+    "write_failed": "Konfigurasi tidak dapat disimpan di {path}. Periksa apakah drive ini bisa ditulisi.",
+    "recovered": "File konfigurasi {game} tidak dapat dibaca: cadangan terbarunya ({backup}) dimuat. File yang rusak disisihkan.",
+    "lost": "File konfigurasi {game} tidak dapat dibaca dan tidak ada cadangan yang dapat dimuat. File yang rusak disisihkan, tidak ada yang dihapus.",
+    "running_rename": "Tutup {game} sebelum mengganti nama konfigurasi ini: foldernya tidak dapat berubah selama game berjalan.",
+    "running_delete": "Tutup {game} sebelum menghapus konfigurasi ini: foldernya tidak dapat berubah selama game berjalan.",
+    "map_not_found": "Peta tidak ditemukan: {name}",
+    "mod_not_found": "Mod tidak ditemukan: {name}",
+    "create_title": "Konfigurasi baru",
+    "create_help": "Konfigurasi kosong yang menyertakan mod bersama. Lalu tambahkan mod dari “Semua mod”.",
+    "create_ok": "Buat",
+    "created": "Konfigurasi “{name}” dibuat",
+    "duplicate_title": "Duplikasi konfigurasi",
+    "duplicate_help": "Salinannya mempertahankan mod “{name}” dan pengaturan “Mod bersama”-nya.",
+    "copy_name": "{name} (salinan)",
+    "duplicate_ok": "Duplikasi",
+    "duplicated": "Konfigurasi “{name}” dibuat",
+    "rename_title": "Ganti nama konfigurasi",
+    "rename_ok": "Ganti nama",
+    "renamed": "“{old}” diganti namanya menjadi “{name}”",
+    "delete_title": "Hapus konfigurasi",
+    "delete_text": {
+      "zero": "Hapus konfigurasi “{name}”? Konfigurasi ini tidak berisi mod.",
+      "one": "Hapus konfigurasi “{name}”? Mod-nya tetap di folder mod Anda: hanya konfigurasi dan folder tautannya yang hilang.",
+      "other": "Hapus konfigurasi “{name}”? {count} mod-nya tetap di folder mod Anda: hanya konfigurasi dan folder tautannya yang hilang."
+    },
+    "delete_ok": "Hapus",
+    "deleted": "Konfigurasi “{name}” dihapus",
+    "deleted_applied": "Konfigurasi {name} dihapus. Game sekarang memakai konfigurasi {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod dipilih",
+      "other": "mod dipilih"
+    },
+    "add_party": "Tambahkan ke Mod konfigurasi",
+    "add_common": "Tambahkan ke Mod bersama",
+    "remove_party": "Hapus dari Mod konfigurasi",
+    "remove_common": "Hapus dari Mod bersama",
+    "rename": "Ganti nama…",
+    "rename_help": "Satu mod saja, dipilih di “Semua mod”.",
+    "delete": "Hapus permanen…",
+    "close": "Tutup bilah dan kosongkan pilihan (Esc)",
+    "added_party": {
+      "one": "{count} mod ditambahkan ke konfigurasi “{name}”",
+      "other": "{count} mod ditambahkan ke konfigurasi “{name}”"
+    },
+    "added_common": {
+      "one": "{count} mod ditambahkan ke mod bersama",
+      "other": "{count} mod ditambahkan ke mod bersama"
+    },
+    "moved_party": {
+      "one": "{count} mod dipindahkan ke konfigurasi “{name}”",
+      "other": "{count} mod dipindahkan ke konfigurasi “{name}”"
+    },
+    "moved_common": {
+      "one": "{count} mod dipindahkan ke mod bersama",
+      "other": "{count} mod dipindahkan ke mod bersama"
+    },
+    "removed_party": {
+      "one": "{count} mod dihapus dari konfigurasi “{name}”",
+      "other": "{count} mod dihapus dari konfigurasi “{name}”"
+    },
+    "removed_common": {
+      "one": "{count} mod dihapus dari mod bersama",
+      "other": "{count} mod dihapus dari mod bersama"
+    },
+    "nothing_party": "Mod ini sudah ada di konfigurasi “{name}”",
+    "nothing_common": "Mod ini sudah ada di mod bersama"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Tambahkan juga dependensinya?",
+      "other": "Tambahkan juga {count} dependensinya?"
+    },
+    "ask_yes": {
+      "one": "Tambahkan juga dependensinya",
+      "other": "Tambahkan juga {count} dependensinya"
+    },
+    "ask_no": "Hanya mod yang dipilih",
+    "missing_warn": {
+      "one": "Dependensi tidak ada di mod Anda: {list}",
+      "other": "{count} dependensi tidak ada di mod Anda: {list}"
+    },
+    "needed_by_map": "Peta “{name}” memerlukan:",
+    "needed_by_mod": "Mod “{name}” memerlukan:",
+    "needed": "Dependensi:",
+    "where_common": "mod bersama",
+    "where_party": "konfigurasi “{name}”",
+    "ask_intro": {
+      "one": "Mod ini adalah dependensi dari mod yang Anda pilih, tetapi tidak ada di {where}.",
+      "other": "{count} mod ini adalah dependensi dari mod yang Anda pilih, tetapi tidak ada di {where}."
+    },
+    "missing_for": "{list} (diperlukan oleh “{name}”)",
+    "optional_title": {
+      "one": "Tambahkan juga mod opsional?",
+      "other": "Tambahkan juga mod opsional?"
+    },
+    "optional_intro": {
+      "one": "Satu mod opsional, sudah ada di mod Anda:",
+      "other": "{count} mod opsional, sudah ada di mod Anda:"
+    },
+    "optional_for": "opsional untuk “{name}”",
+    "optional_note": "Opsional: game tidak memerlukannya. Hanya yang Anda centang yang ditambahkan ke {where}.",
+    "optional_continue": "Lanjutkan"
+  },
+  "commonguard": {
+    "title_maps": "Peringatan: peta akan masuk ke Mod bersama",
+    "title_classified": "Peringatan: mod yang sudah dipilah akan masuk ke Mod bersama",
+    "maps_intro": {
+      "one": "Ini mungkin kekeliruan: pilihan Anda berisi sebuah peta, dan Anda akan menambahkannya ke Mod bersama:",
+      "other": "Ini mungkin kekeliruan: pilihan Anda berisi {count} peta, dan Anda akan menambahkannya ke Mod bersama:"
+    },
+    "classified_intro": {
+      "one": "Pilihan Anda juga berisi sebuah mod yang sudah dipilah ke salah satu konfigurasi Anda.",
+      "other": "Pilihan Anda juga berisi {count} mod yang sudah dipilah ke konfigurasi Anda."
+    },
+    "why_maps": "Ini mungkin bukan yang Anda inginkan: semua yang ada di Mod bersama dimuat di semua konfigurasi Anda. Peta-peta ini akan dimuat di mana-mana, justru hal yang dibantu FS Passion untuk Anda hindari.",
+    "why_classified": "Ini mungkin bukan yang Anda inginkan: semua yang ada di Mod bersama dimuat di semua konfigurasi Anda. Mod-mod ini tidak lagi terbatas pada konfigurasinya sendiri, dan daftar Anda kehilangan maknanya.",
+    "unclassified_offer": {
+      "one": "Pilihan Anda hanya berisi satu mod yang belum dipilah (tanpa peta): Anda bisa menambahkan mod itu saja.",
+      "other": "Pilihan Anda berisi {count} mod yang belum dipilah (tanpa peta): Anda bisa menambahkan mod itu saja."
+    },
+    "tip": "Tips: Ctrl+A memilih seluruh daftar “Semua mod”, termasuk peta dan mod yang sudah dipilah.",
+    "continue": "Tetap lanjutkan",
+    "only_unclassified": {
+      "one": "Tambahkan hanya mod yang belum dipilah",
+      "other": "Tambahkan hanya {count} mod yang belum dipilah"
+    }
+  },
+  "plus": {
+    "title": "Konfigurasi baru dari peta",
+    "deps_title": {
+      "one": "{count} dependensi",
+      "other": "{count} dependensi"
+    },
+    "dlc_title": "DLC yang diperlukan",
+    "dlc_note": "Sebagai informasi: game selalu memuat DLC yang terpasang. DLC tidak ditambahkan ke konfigurasi.",
+    "missing_note": "Dependensi yang tidak ada tidak ditambahkan: unduh, lalu tambahkan ke konfigurasi.",
+    "no_deps": "Tidak ada dependensi yang dinyatakan: konfigurasi hanya akan berisi peta.",
+    "summary": {
+      "zero": "Konfigurasi akan berisi peta saja, ditambah mod bersama.",
+      "one": "Konfigurasi akan berisi peta dan dependensinya, ditambah mod bersama.",
+      "other": "Konfigurasi akan berisi peta dan {count} dependensinya, ditambah mod bersama."
+    },
+    "create": "Buat konfigurasi",
+    "created": {
+      "one": "Konfigurasi “{name}” dibuat: {count} mod",
+      "other": "Konfigurasi “{name}” dibuat: {count} mod"
+    },
+    "created_missing": {
+      "one": "Dependensi yang perlu diunduh: {list}",
+      "other": "{count} dependensi yang perlu diunduh: {list}"
+    },
+    "optional_title": {
+      "one": "{count} mod opsional",
+      "other": "{count} mod opsional"
+    },
+    "optional_note": "Opsional: game tidak memerlukannya. Centang yang akan ditambahkan ke konfigurasi.",
+    "optional_none_present": "Tidak satu pun mod opsional ini ada di mod Anda. Game tidak memerlukannya."
+  },
+  "replace": {
+    "title": "Ganti dengan…",
+    "help": "{name} sudah tidak ada di folder mod Anda. Jika pembuatnya mengganti namanya, pilih versi barunya: versi itu akan menggantikannya di setiap daftar.",
+    "done": {
+      "one": "{old} diganti dengan {name} di {count} daftar",
+      "other": "{old} diganti dengan {name} di {count} daftar"
+    }
+  },
+  "notifications": {
+    "title": "Notifikasi",
+    "unread": {
+      "one": "Notifikasi: 1 pesan baru",
+      "other": "Notifikasi: {count} pesan baru"
+    },
+    "clear": "Hapus semua",
+    "none": "Belum ada notifikasi. Pesan yang muncul di kanan bawah disimpan di sini sampai FS Passion ditutup."
+  },
+  "tray": {
+    "show": "Tampilkan FS Passion",
+    "quit": "Keluar dari FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion tetap berjalan di sini. Klik ikonnya untuk memunculkannya kembali; “Keluar” benar-benar menutupnya."
+  },
+  "apply": {
+    "unsupported": "Versi game ini tidak dapat mengganti folder modnya.",
+    "not_ready": "Tentukan dulu folder mod dan folder Dokumen game di pengaturan.",
+    "running": "Tutup {game} sebelum menerapkan konfigurasi.",
+    "no_gamesettings": "gameSettings.xml {game} tidak ditemukan: jalankan game sekali, atau periksa folder Dokumen di pengaturan.",
+    "busy": "Operasi konfigurasi lain sedang berlangsung. Coba lagi sebentar lagi.",
+    "library_busy": "Mod masih dibaca. Coba lagi sebentar lagi.",
+    "done": {
+      "zero": "Konfigurasi {name} diterapkan: tanpa mod.",
+      "one": "Konfigurasi {name} diterapkan: {count} mod.",
+      "other": "Konfigurasi {name} diterapkan: {count} mod."
+    },
+    "missing": {
+      "one": "1 mod dari konfigurasi tidak ada di folder mod Anda: {list}",
+      "other": "{count} mod dari konfigurasi tidak ada di folder mod Anda: {list}"
+    },
+    "updated": {
+      "one": "1 pembaruan yang ditinggalkan game dipindahkan ke folder mod Anda.",
+      "other": "{count} pembaruan yang ditinggalkan game dipindahkan ke folder mod Anda."
+    },
+    "added": {
+      "one": "1 mod yang ditinggalkan game masuk ke folder mod Anda dan konfigurasi {name}.",
+      "other": "{count} mod yang ditinggalkan game masuk ke folder mod Anda dan konfigurasi {name}."
+    },
+    "set_aside": {
+      "one": "1 file disisihkan, tidak ada yang dihapus (folder “Recovered” atau “Old versions”, di samping konfigurasi Anda).",
+      "other": "{count} file disisihkan, tidak ada yang dihapus (folder “Recovered” dan “Old versions”, di samping konfigurasi Anda)."
+    },
+    "empty_party": "Konfigurasi {name} tidak berisi mod: game akan dimulai tanpa mod.",
+    "not_same_disk": "Tidak dapat menautkan {name}: folder konfigurasi harus berada di drive yang sama dengan folder mod.",
+    "no_hardlinks": "Drive ini tidak mendukung tautan keras: folder mod harus berada di drive NTFS. Tidak ada yang diubah.",
+    "too_many_links": "Tidak dapat menautkan {name}: file ini sudah mencapai batas tautan Windows.",
+    "access_denied": "Akses ditolak saat menautkan {name}. Tidak ada yang diubah.",
+    "link_failed": "Tautan {name} tidak dapat dibuat ({detail}). Tidak ada yang diubah.",
+    "junction_failed": "Junction untuk mod yang diekstrak {name} tidak dapat dibuat ({detail}). Tidak ada yang diubah.",
+    "folder_busy": "Folder {path} sedang dipakai program lain (File Explorer?). Tutup lalu coba lagi. Tidak ada yang diubah.",
+    "folder_exists": "Folder {path} sudah ada: pilih nama lain.",
+    "failed": "Konfigurasi tidak dapat diterapkan ({detail}). Tidak ada yang diubah.",
+    "recovered_finished": "Operasi konfigurasi {game} sempat terputus (listrik padam?). Operasi itu sudah diselesaikan.",
+    "recovered_cancelled": "Operasi konfigurasi {game} sempat terputus (listrik padam?). Operasi itu dibatalkan: tidak ada yang berubah.",
+    "symlink_denied": "Windows menolak tautan simbolik ke {name}: diperlukan Mode Pengembang Windows atau hak administrator.",
+    "blocked": {
+      "one": "1 mod dari drive lain tidak dapat masuk ke konfigurasi (tidak ada hak untuk tautan simbolik): {list}. Lihat Pengaturan → Game dan jalur.",
+      "other": "{count} mod dari drive lain tidak dapat masuk ke konfigurasi (tidak ada hak untuk tautan simbolik): {list}. Lihat Pengaturan → Game dan jalur."
+    }
+  },
+  "override": {
+    "title": "Game memuat folder yang tidak dikenal",
+    "text": "{game} memuat mod dari folder yang tidak dikenal FS Passion (diubah manual, atau oleh alat lain):",
+    "help": "Jadikan folder ini sebagai folder mod Anda, terapkan ulang konfigurasi Anda, atau biarkan game apa adanya.",
+    "adopt": "Jadikan folder mod",
+    "reapply": "Terapkan ulang {name}",
+    "ignore": "Jangan lakukan apa pun",
+    "adopted": "Folder mod baru: {path}",
+    "read_failed": "gameSettings.xml tidak dapat dibaca ({path}). Tidak ada yang diubah.",
+    "backup_failed": "Cadangan gameSettings.xml tidak dapat ditulis ({path}). Tidak ada yang diubah.",
+    "write_failed": "gameSettings.xml tidak dapat ditulis ({path}). Apakah game sedang terbuka?",
+    "check_failed": "Pemeriksaan gameSettings.xml gagal: file asli dipulihkan.",
+    "no_root": "gameSettings.xml tidak tampak seperti file pengaturan game. Tidak ada yang diubah."
+  },
+  "demo": {
+    "title": "Mode demo",
+    "pill": "Demo",
+    "quit": "Keluar",
+    "banner": "Mode demo: mod-mod ini palsu. Folder asli Anda dan game tidak disentuh.",
+    "badge": "Mod palsu (demo)",
+    "installing": "Menyiapkan mod demo…",
+    "started": "Mode demo: coba semuanya, tidak ada yang menyentuh game.",
+    "stopped": "Mode demo ditutup: semuanya dihapus.",
+    "stop_title": "Keluar dari mode demo",
+    "stop_text": "Mod palsu, konfigurasi uji, dan seluruh folder demo akan dihapus. Pengaturan asli Anda kembali seperti semula.",
+    "stop_ok": "Keluar dan hapus semuanya",
+    "offer_title": "Coba FS Passion tanpa game?",
+    "offer_text": "Tidak ada Farming Simulator yang ditemukan di PC ini. Anda dapat mencoba FS Passion dengan mod palsu: buat konfigurasi, pilah, terapkan… semuanya berfungsi, di folder uji, tidak pernah di game.",
+    "offer_local": "Paket demo sudah ada di PC ini (sekitar 2 MB).",
+    "offer_download": "Paket demo (sekitar 2 MB) akan diunduh dari halaman GitHub proyek, lalu diperiksa.",
+    "offer_yes": "Coba",
+    "offer_no": "Nanti",
+    "unavailable": "Paket demo belum tersedia.",
+    "bad_pack": "Paket demo rusak atau tidak cocok dengan aslinya: ditolak.",
+    "download_failed": "Paket demo tidak dapat diunduh ({detail}).",
+    "install_failed": "Paket demo tidak dapat dipasang ({detail}).",
+    "remove_failed": "Folder demo tidak dapat dihapus sepenuhnya: {path}",
+    "no_detect": "Deteksi game dimatikan dalam mode demo."
+  },
+  "delete": {
+    "title": {
+      "one": "Hapus mod ini secara permanen?",
+      "other": "Hapus {count} mod ini secara permanen?"
+    },
+    "intro": {
+      "one": "Mod ini akan dihapus dari setiap daftar dan setiap folder konfigurasi, lalu dihapus dari folder mod Anda:",
+      "other": "{count} mod ini akan dihapus dari setiap daftar dan setiap folder konfigurasi, lalu dihapus dari folder mod Anda:"
+    },
+    "irreversible": "Tindakan ini tidak dapat dibatalkan.",
+    "recycle": "File akan masuk ke Recycle Bin Windows: Anda masih bisa memulihkannya dari sana.",
+    "no_recycle": "Drive ini tidak punya Recycle Bin: penghapusan akan permanen.",
+    "understand": {
+      "one": "Saya mengerti bahwa file ini akan dihapus",
+      "other": "Saya mengerti bahwa file-file ini akan dihapus"
+    },
+    "ok": "Hapus permanen",
+    "done_recycled": {
+      "one": "1 mod dikirim ke Recycle Bin",
+      "other": "{count} mod dikirim ke Recycle Bin"
+    },
+    "done_deleted": {
+      "one": "1 mod dihapus permanen",
+      "other": "{count} mod dihapus permanen"
+    },
+    "failed": {
+      "one": "1 mod tidak dapat dihapus: {list}. Mod itu dihapus dari daftar; tutup program yang memakainya, lalu coba lagi.",
+      "other": "{count} mod tidak dapat dihapus: {list}. Mod-mod itu dihapus dari daftar; tutup program yang memakainya, lalu coba lagi."
+    },
+    "nothing": "Tidak ada mod untuk dihapus.",
+    "running": "Tutup {game} sebelum menghapus mod."
+  },
+  "rename": {
+    "title": "Ganti nama mod",
+    "label": "Nama baru",
+    "prefix_tip": "Awalan versi dipertahankan",
+    "final": "Nama file: {file}",
+    "rule": "Hanya huruf tanpa aksen, angka, dan “_”: game menolak karakter lain.",
+    "where": "Di: {list}. Daftar hanya berubah dengan persetujuan Anda: FS Passion kemudian menanyakan apakah daftar mengikuti nama baru.",
+    "warning_modhub": "Jika berasal dari ModHub, mod ini tidak akan menerima pembaruan lagi: itulah tujuan mengganti namanya.",
+    "warning_save": "Di dalam game, simpanan yang memakai mod ini akan mencarinya dengan nama lama.",
+    "warning_save_map": "Ini adalah peta: di dalam game, simpanan yang dibuat di peta ini akan mencarinya dengan nama lama dan tidak akan dimuat lagi.",
+    "warning_deps": {
+      "one": "1 mod menyatakannya sebagai dependensi ({list}): mod itu akan mencarinya dengan nama lama.",
+      "other": "{count} mod menyatakannya sebagai dependensi ({list}): mod-mod itu akan mencarinya dengan nama lama."
+    },
+    "ok": "Ganti nama",
+    "done": {
+      "zero": "{old} diganti namanya menjadi {name}",
+      "one": "{old} diganti namanya menjadi {name}, di 1 konfigurasi",
+      "other": "{old} diganti namanya menjadi {name}, di {count} konfigurasi"
+    },
+    "renamed": "{old} diganti namanya menjadi {name}",
+    "lists_title": "Perbarui daftar?",
+    "lists_ask": "“{old}” masih ada di: {list}. Apakah daftar mengikuti nama baru “{name}”?",
+    "lists_yes": "Perbarui daftar",
+    "lists_no": "Jangan lakukan apa pun",
+    "lists_done": "Daftar diperbarui ({count}).",
+    "empty": "Masukkan nama.",
+    "too_long": "Nama terlalu panjang: paling banyak {max} karakter.",
+    "invalid": "Hanya huruf tanpa aksen, angka, dan “_”, tanpa spasi.",
+    "same": "Itu sudah namanya.",
+    "taken": "“{name}” sudah ada di folder mod Anda.",
+    "not_found": "Mod {name} tidak ditemukan di folder mod Anda.",
+    "failed": "{name} tidak dapat diganti namanya: mungkin sedang terbuka di program lain.",
+    "running": "Tutup {game} sebelum mengganti nama mod.",
+    "no_list": "tidak ada daftar"
+  },
+  "downloads": {
+    "title": "Mod baru ditemukan",
+    "intro": "Di {folder}. Integrasikan memindahkan setiap file yang dicentang ke folder mod versi game-nya.",
+    "count": {
+      "one": "1 mod ditemukan",
+      "other": "{count} mod ditemukan"
+    },
+    "col_mod": "Mod",
+    "col_version": "Versi game",
+    "col_state": "Status",
+    "col_dest": "Tujuan",
+    "state": {
+      "new": "Baru",
+      "update": "Pembaruan ({from} → {to})",
+      "older": "Lebih lama dari versi terpasang ({to} < {from})",
+      "present": "Sudah ada",
+      "conflict": "Mod yang diekstrak sudah memakai nama ini",
+      "unconfigured": "Versi belum dikonfigurasi: atur di pengaturan"
+    },
+    "older_confirm": "Dicentang: akan menggantikan versi terpasang (yang disisihkan).",
+    "postpone": "{game} sedang berjalan: diintegrasikan saat ditutup",
+    "not_configured": "{game} (belum dikonfigurasi)",
+    "suffix": "Akan diintegrasikan sebagai {name} (akhiran peramban dihapus)",
+    "dest_none": "Tidak ada (belum dipilah)",
+    "dest_unclassified": "Belum dipilah",
+    "dest_party": "Konfigurasi “{name}”",
+    "ignore": "Abaikan file-file ini",
+    "ignored": {
+      "one": "1 file diabaikan: tidak akan ditawarkan lagi",
+      "other": "{count} file diabaikan: tidak akan ditawarkan lagi"
+    },
+    "later": "Nanti",
+    "integrate": {
+      "zero": "Integrasikan",
+      "one": "Integrasikan 1 mod",
+      "other": "Integrasikan {count} mod"
+    },
+    "none": "Tidak ada mod baru di {folder}.",
+    "done": {
+      "one": "1 mod diintegrasikan: {list}",
+      "other": "{count} mod diintegrasikan: {list}"
+    },
+    "in_version": {
+      "one": "1 di {game}",
+      "other": "{count} di {game}"
+    },
+    "skipped": {
+      "one": "1 file dibiarkan di tempatnya (sudah ada atau lebih lama)",
+      "other": "{count} file dibiarkan di tempatnya (sudah ada atau lebih lama)"
+    },
+    "postponed": {
+      "one": "1 mod akan diintegrasikan saat {game} ditutup",
+      "other": "{count} mod akan diintegrasikan saat {game} ditutup"
+    },
+    "postponed_done": {
+      "one": "1 unduhan diintegrasikan setelah {game} ditutup",
+      "other": "{count} unduhan diintegrasikan setelah {game} ditutup"
+    },
+    "failed": "{file} tidak dapat diintegrasikan. File tetap di unduhan Anda.",
+    "gone": "{file} sudah tidak ada di folder unduhan.",
+    "unconfigured": "{file}: versi game yang dipilih belum dikonfigurasi.",
+    "no_folder": "Folder unduhan tidak ditemukan: tentukan di Pengaturan → Aplikasi → Unduhan.",
+    "demo": "Unduhan tidak diintegrasikan selama demo.",
+    "done_in": {
+      "one": "1 mod diintegrasikan ke {game}",
+      "other": "{count} mod diintegrasikan ke {game}"
+    },
+    "col_storage": "Penyimpanan"
+  },
+  "move": {
+    "exists": "{file}: sudah ada file dengan nama yang sama.",
+    "no_space": "{file}: ruang kosong tidak cukup di drive folder mod.",
+    "check_failed": "{file}: salinan yang diverifikasi tidak cocok dengan aslinya. Tidak ada yang diganti.",
+    "failed": "{file} tidak dapat dipindahkan: mungkin sedang terbuka di program lain."
+  },
+  "missing": {
+    "title": "Mod yang tidak ada di folder mod Anda",
+    "intro": {
+      "one": "Mod ini tidak ada di folder mod Anda padahal ada di konfigurasi. Apa yang ingin Anda lakukan?",
+      "other": "{count} mod ini tidak ada di folder mod Anda padahal ada di konfigurasi. Apa yang ingin Anda lakukan?"
+    },
+    "in": "Di: {list}",
+    "copy": "Dihapus dari folder mod, tetapi salinannya masih ada melalui tautannya di: {list}",
+    "no_copy": "Tidak ada salinan: unduh ulang, atau ganti dengan mod yang diganti namanya oleh pembuatnya",
+    "restore": "Pulihkan ke Mods",
+    "restore_tip": "Salinan yang masih ada di konfigurasi kembali menjadi mod folder mod Anda (tidak ada yang disalin).",
+    "remove": "Hapus dari daftar",
+    "remove_all": "Hapus semua dari daftar",
+    "later": "Nanti",
+    "notice": "Untuk menghapus mod, lakukan di FS Passion (tombol “Hapus permanen” di bilah tindakan): mod langsung dihapus dari daftar dan konfigurasi sekaligus.",
+    "removed": {
+      "one": "1 mod dihapus dari setiap daftar",
+      "other": "{count} mod dihapus dari setiap daftar"
+    },
+    "restored": {
+      "one": "1 mod dipulihkan ke folder mod Anda",
+      "other": "{count} mod dipulihkan ke folder mod Anda"
+    },
+    "deleted": {
+      "one": "1 mod dihapus dan dikeluarkan dari daftar",
+      "other": "{count} mod dihapus dan dikeluarkan dari daftar"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 pembaruan diambil: {list}",
+      "other": "{count} pembaruan diambil: {list}"
+    },
+    "added": {
+      "one": "1 mod yang diunduh game ditambahkan ke konfigurasi “{name}”",
+      "other": "{count} mod yang diunduh game ditambahkan ke konfigurasi “{name}”"
+    },
+    "unclassified": {
+      "one": "1 mod yang diunduh game masuk ke folder mod Anda (belum dipilah)",
+      "other": "{count} mod yang diunduh game masuk ke folder mod Anda (belum dipilah)"
+    },
+    "errors": {
+      "one": "1 folder tidak dapat dirapikan: {list}. Lihat log.",
+      "other": "{count} folder tidak dapat dirapikan: {list}. Lihat log."
+    },
+    "reshaped": {
+      "one": "1 mod diekstrak atau dikemas ulang: konfigurasi mengikuti bentuk barunya ({list})",
+      "other": "{count} mod diekstrak atau dikemas ulang: konfigurasi mengikuti bentuk barunya ({list})"
+    }
+  },
+  "rights": {
+    "title": "Hak untuk mod di drive lain",
+    "intro": "Agar mod yang disimpan di drive lain dapat masuk ke konfigurasi, FS Passion membuat tautan simbolik. Windows hanya mengizinkannya dengan Mode Pengembang atau hak administrator, dan keduanya tidak aktif.",
+    "standard": "Akun Windows Anda adalah akun standar: mendapatkan hak administrator akan menjalankan FS Passion di bawah akun lain, dengan folder dan pengaturan lain. Mode Pengembang adalah pilihan yang tepat.",
+    "admin_title": "Selalu jalankan FS Passion sebagai administrator",
+    "admin_text": "FS Passion mencentang “Jalankan program ini sebagai administrator” untuk Anda (Properti → Kompatibilitas), hanya untuk akun Anda, lalu memulai ulang. Akibatnya:",
+    "uac": "Windows meminta konfirmasi setiap kali FS Passion dimulai.",
+    "game_normal": "Game dan platformnya tetap dijalankan dengan hak normal, melalui Windows Explorer. Argumen peluncuran lalu melalui platform (Steam, Epic Games), seperti biasa.",
+    "no_drop": "Windows memblokir penyeretan file dari Explorer ke FS Passion. Saat ini tidak berpengaruh: FS Passion tidak memakai gerakan itu.",
+    "dev_title": "Atau: aktifkan Mode Pengembang Windows",
+    "dev_text": "Pengaturan Windows → Sistem → Untuk pengembang → “Mode Pengembang”. Tidak ada akibat lain bagi FS Passion. Lalu kembali ke sini dan klik “Periksa lagi”.",
+    "without": "Tanpa hak ini, folder tambahan tetap tersimpan: mod di dalamnya didaftar, tetapi tidak masuk ke konfigurasi mana pun.",
+    "later": "Nanti",
+    "dev_mode": "Buka Mode Pengembang",
+    "admin": "Selalu jalankan sebagai administrator",
+    "missing": "Windows menolak tautan simbolik: mod di drive lain didaftar, tetapi tidak masuk ke konfigurasi mana pun.",
+    "get": "Dapatkan hak…",
+    "check": "Periksa lagi",
+    "ok": "Tautan simbolik diizinkan (FS Passion berjalan sebagai administrator): mod di drive lain masuk ke konfigurasi.",
+    "ok_dev": "Tautan simbolik diizinkan (Mode Pengembang Windows): mod di drive lain masuk ke konfigurasi.",
+    "unknown": "Hak untuk tautan simbolik belum diperiksa.",
+    "admin_on": "FS Passion diatur agar selalu berjalan sebagai administrator.",
+    "admin_off": "Berhenti menjalankan sebagai administrator",
+    "restarting": "FS Passion dimulai ulang sebagai administrator. Konfirmasikan permintaan Windows.",
+    "now_ok": "Tautan simbolik diizinkan: terapkan ulang konfigurasi Anda agar mod di drive lain dapat masuk.",
+    "still_missing": "Windows masih menolak tautan simbolik.",
+    "flag_failed": "Pengaturan “Jalankan sebagai administrator” tidak dapat diubah.",
+    "ok_plain": "Tautan simbolik diizinkan: mod di drive lain masuk ke konfigurasi.",
+    "admin_once_title": "Mulai ulang FS Passion sebagai administrator",
+    "admin_once_text": "FS Passion dimulai ulang sebagai administrator hanya kali ini; perlu diulang setiap kali dijalankan. Mode Pengembang menghindari hal ini. Akibatnya:",
+    "admin_once": "Mulai ulang sebagai administrator"
+  },
+  "older": {
+    "title": "Versi lebih lama diunduh oleh game",
+    "intro": {
+      "one": "Game mengunduh mod dengan nomor versi lebih lama dari milik Anda. Mod itu disisihkan, tidak ada yang diganti. Apa yang ingin Anda lakukan?",
+      "other": "Game mengunduh {count} mod dengan nomor versi lebih lama dari milik Anda. Mod-mod itu disisihkan, tidak ada yang diganti. Apa yang ingin Anda lakukan?"
+    },
+    "versions": "Versi Anda: {mine} · versi yang diunduh game: {game}",
+    "keep": "Pertahankan versi saya ({version})",
+    "use": "Pakai versi game ({version})",
+    "use_tip": "Versi game menggantikan versi Anda di folder mod; versi Anda disisihkan di “Old versions”. Semua konfigurasi mengikuti.",
+    "help": "Ini sering kali mod yang Anda ubah: ModHub tidak membandingkan nomor versi, ModHub menawarkan aslinya. Bagaimanapun, tidak ada yang dihapus: file yang tidak Anda pertahankan tetap ada di folder “Recovered” atau “Old versions”, di samping konfigurasi Anda.",
+    "later": "Nanti",
+    "gone": "File ini sudah tidak ada di folder “Recovered”: tidak ada yang diubah.",
+    "failed": "Versi game untuk {name} tidak dapat dipasang ({detail}). Versi Anda tidak berubah."
+  },
+  "stop": {
+    "running": "Tutup {game} dulu: pengaturannya harus dipulihkan saat game tertutup.",
+    "folders_failed": "Folder konfigurasi tidak dapat dihapus.",
+    "closed": "FS Passion ditutup. Game kembali ke pengaturan aslinya.",
+    "export_first": "Sebelum melanjutkan, ekspor konfigurasi Anda: Anda akan mendapatkan kembali konfigurasi Anda jika kembali ke FS Passion.",
+    "intro": "FS Passion akan mengembalikan pengaturan asli game, lalu menghapus folder konfigurasi (folder itu hanya berisi tautan):",
+    "no_version": "Tidak ada versi game yang dikonfigurasi: tidak ada yang perlu dipulihkan.",
+    "mods_safe": "Folder mod Anda tidak pernah disentuh, begitu pula “Old versions” dan “Recovered”, yang berisi mod yang disisihkan.",
+    "admin_flag": "Pengaturan “Jalankan program ini sebagai administrator” yang diatur FS Passion akan dihapus.",
+    "understand": "Saya mengerti: game tidak akan memuat konfigurasi FS Passion lagi.",
+    "plan": {
+      "restore": "Game memuat folder aslinya lagi: {dir}",
+      "deactivate": "Folder mod khusus dimatikan: game kembali ke folder “mods” biasanya.",
+      "missing": "gameSettings.xml tidak ditemukan: tidak ada yang perlu dipulihkan.",
+      "none": "Pengaturan game sudah asli.",
+      "folders": {
+        "one": "{count} folder konfigurasi dihapus",
+        "other": "{count} folder konfigurasi dihapus"
+      },
+      "kept": {
+        "one": "“{name}” dipertahankan ({count} file).",
+        "other": "“{name}” dipertahankan ({count} file)."
+      }
+    },
+    "options": {
+      "title": "Hapus juga:",
+      "parties": "konfigurasi dan mod bersama (parties.json)",
+      "caches": "cache (ikon yang dikonversi, katalog DLC)",
+      "settings": "pengaturan FS Passion",
+      "logs": "log",
+      "langs": "bahasa pribadi"
+    },
+    "done": {
+      "title": "FS Passion tidak lagi dipakai",
+      "text": "Selesai. Game kembali ke pengaturan aslinya.",
+      "partial": "Selesai, kecuali untuk setidaknya satu versi: lihat di bawah. Log berisi detailnya.",
+      "version": {
+        "zero": "pengaturan asli dipulihkan",
+        "one": "pengaturan asli dipulihkan, {count} folder konfigurasi dihapus",
+        "other": "pengaturan asli dipulihkan, {count} folder konfigurasi dihapus"
+      },
+      "set_aside": {
+        "one": "{count} file yang ditemukan di folder konfigurasi disisihkan di “Recovered”.",
+        "other": "{count} file yang ditemukan di folder konfigurasi disisihkan di “Recovered”."
+      },
+      "close": "Tutup FS Passion",
+      "uninstaller": "Lalu mulai mencopot pemasangan FS Passion",
+      "error": {
+        "override": "pengaturan game TIDAK dipulihkan (gameSettings.xml tidak dapat diubah); folder konfigurasi dipertahankan",
+        "folders": "pengaturan asli dipulihkan, tetapi folder konfigurasi tidak dapat dihapus"
+      }
+    },
+    "stopped": "FS Passion tidak lagi dipakai: tutuplah."
+  },
+  "tour": {
+    "button": "Tur terpandu",
+    "title": "Tur terpandu",
+    "count": "{n} / {total}",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "replay": "Ulangi",
+    "finish": "Selesai",
+    "quit": "Keluar dari tur",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Mau tur terpandu?",
+      "body": "Klik bola lampu: dalam satu menit, FS Passion menunjukkan hal-hal penting dari antarmukanya. Bola lampu tetap di sana agar Anda bisa mengulang tur kapan saja.",
+      "start": "Mulai tur",
+      "later": "Nanti"
+    },
+    "versions": {
+      "caption": "Versi game Anda",
+      "body": "Arahkan kursor ke logo ini: versi Farming Simulator muncul. Klik versi yang ingin Anda kelola.\nVersi yang tidak terpasang tampak samar. Setiap versi punya mod dan konfigurasinya sendiri.",
+      "picked": "Dipilih: mod dan konfigurasinya ditampilkan"
+    },
+    "parties": {
+      "caption": "Konfigurasi Anda: jantung FS Passion",
+      "body": "Satu klik untuk berpindah dari satu konfigurasi ke yang lain: petanya dan semua dependensinya ikut.\nKonfigurasi lengkap: semua mod Anda, untuk memperbaruinya di game.\nKonfigurasi kosong: tanpa mod, untuk menguji game asli.",
+      "full_tip": "Semua mod: untuk menjalankan pembaruan mod di game",
+      "empty_tip": "Tanpa mod: untuk menguji game asli"
+    },
+    "tools": {
+      "caption": "Buat, duplikasi, ganti nama, hapus",
+      "body": "Tindakan pada konfigurasi yang dipilih.\nTips: pada peta di “Semua mod”, tombol “＋ Konfigurasi” membuat konfigurasi dengan peta dan semua dependensinya, dalam satu klik."
+    },
+    "common": {
+      "caption": "Mod bersama",
+      "body": "Kendaraan, alat, dan skrip gameplay yang Anda inginkan di semua konfigurasi.\nSecara bawaan aktif; jika perlu, matikan untuk satu konfigurasi saja.",
+      "on": "Mod bersama disertakan dalam konfigurasi ini",
+      "off": "Dimatikan hanya untuk konfigurasi ini"
+    },
+    "apply": {
+      "caption": "Terapkan",
+      "body": "Menerapkan konfigurasi yang dipilih: inilah yang akan dimuat game saat dijalankan berikutnya.\nTombol menyala selama konfigurasi yang dipilih belum diterapkan.",
+      "done": "Diterapkan: game akan memuatnya saat dijalankan berikutnya"
+    },
+    "buttons": {
+      "caption": "Tema, notifikasi, pengaturan",
+      "body": "Antarmuka terang atau gelap, riwayat pesan, pengaturan… Dan bola lampu, untuk mengulang tur ini kapan saja.",
+      "theme": "Antarmuka terang atau gelap"
+    },
+    "list1": {
+      "caption": "Semua mod",
+      "body": "Seluruh folder mod Anda, menurut kategori: DLC, peta, mod lain…\nSebuah mod selalu tetap di sini, apa pun yang Anda lakukan di daftar lain. Mod “belum dipilah” tidak ada di daftar mana pun: game tidak melihatnya.\n[Ctrl] + [F]: cari mod atau pembuat.",
+      "search_tip": "Cari: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Mod yang baru diunduh",
+      "body": "Tombol ini mencari mod yang baru saja Anda unduh di folder Unduhan.\nFS Passion mendeteksi versi game masing-masing dan, dengan persetujuan Anda, menaruhnya di folder mod yang tepat.\nIni juga dilakukan saat mulai: lihat Pengaturan → Aplikasi → Unduhan.",
+      "found": "Masing-masing masuk ke folder mod versi game-nya"
+    },
+    "list2": {
+      "caption": "Mod konfigurasi",
+      "body": "Mod dari konfigurasi yang dipilih: petanya, dependensinya, mod khususnya.\nGame memuatnya bersama mod bersama."
+    },
+    "list3": {
+      "caption": "Mod bersama",
+      "body": "Mod yang ada di semua konfigurasi Anda: traktor, alat, skrip…\nPilah ke sini sekali saja: setiap konfigurasi mendapatkannya."
+    },
+    "select": {
+      "caption": "Pilihan ganda",
+      "body": "[Ctrl] + klik: tambahkan atau hapus mod dari pilihan.\n[Shift] + klik: pilih satu rentang penuh.\n[Ctrl] + [A]: pilih semua di daftar; [Esc]: kosongkan pilihan.\nBegitu ada mod yang dipilih, bilah tindakan muncul di bagian bawah."
+    },
+    "move": {
+      "caption": "Seret dan lepas",
+      "body": "Ke “Mod konfigurasi” atau “Mod bersama”: ini adalah salinan, mod tetap di “Semua mod”.\nDi antara kedua daftar ini: ini adalah pemindahan. Tahan [Ctrl] saat melepas untuk menyalin.\nKe “Semua mod”, atau tombol [Del]: mod dihapus dari daftar. Filenya tidak pernah dihapus.",
+      "copy": "Salin",
+      "move": "Pindahkan · [Ctrl]: salin",
+      "remove": "Hapus dari daftar · [Del]"
+    },
+    "keys": {
+      "caption": "Pintasan keyboard",
+      "body": "Agar lebih cepat:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Cari mod atau pembuat"
+        },
+        {
+          "k": "[Ctrl] + klik",
+          "d": "Tambahkan atau hapus mod dari pilihan"
+        },
+        {
+          "k": "[Shift] + klik",
+          "d": "Pilih rentang mod"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Pilih semua di daftar"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Kosongkan pilihan, atau batalkan seretan"
+        },
+        {
+          "k": "[Ctrl] saat melepas",
+          "d": "Salin alih-alih memindahkan (antara daftar 2 dan 3)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Hapus dari daftar 2 atau 3 (file tetap ada)"
+        },
+        {
+          "k": "[Enter] pada peta",
+          "d": "Buat konfigurasi dengan peta dan dependensinya"
+        },
+        {
+          "k": "[F2]",
+          "d": "Ganti nama mod"
+        },
+        {
+          "k": "[I]",
+          "d": "Sematkan kartu mod"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "Pilih dan bergerak dengan keyboard"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Tutup tanpa keluar",
+      "body": "Tanda silang menutup jendela, tetapi FS Passion tetap berjalan di latar belakang, di area notifikasi di samping jam.\nUntuk memunculkannya kembali: panah “^” di bilah tugas, lalu ikon FS. Untuk benar-benar menutupnya: “Keluar”, kanan bawah, atau klik kanan ikonnya.\nAnda dapat mengubah ini di Pengaturan → Aplikasi → Jendela.",
+      "tip_close": "Tutup: FS Passion pindah ke area notifikasi",
+      "tip_more": "Tampilkan ikon tersembunyi",
+      "tip_icon": "Klik: FS Passion kembali · Klik kanan: Keluar"
+    },
+    "end": {
+      "caption": "Sekarang giliran Anda!",
+      "body": "Ulangi tur ini kapan saja dengan bola lampu, atau di Pengaturan → Bantuan dan tentang."
+    },
+    "demo": {
+      "parties": [
+        "Lembah Hijau — Peternakan",
+        "Perbukitan — Tanaman",
+        "Sawah Selatan"
+      ],
+      "party_sub": {
+        "one": "Peta + {count} mod",
+        "other": "Peta + {count} mod"
+      },
+      "mods": [
+        "Traktor enam silinder",
+        "Mesin panen gabungan",
+        "Penabur 6 m",
+        "Trailer pertanian",
+        "Paket alat",
+        "Skrip cuaca"
+      ]
+    }
+  }
+}

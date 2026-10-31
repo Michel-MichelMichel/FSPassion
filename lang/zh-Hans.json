@@ -1,0 +1,1451 @@
+{
+  "_meta": {
+    "code": "zh-Hans",
+    "name": "简体中文",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion 已关闭",
+    "closed_help": "可以关闭此标签页。重新启动 FS Passion 即可继续。"
+  },
+  "common": {
+    "close": "关闭",
+    "cancel": "取消",
+    "ok": "确定",
+    "copy": "复制",
+    "copied": "已复制到剪贴板",
+    "soon": "将在 {version} 版本中推出",
+    "soon_action": "{action}：将在 {version} 版本中推出"
+  },
+  "window": {
+    "minimize": "最小化",
+    "maximize": "最大化",
+    "restore": "还原",
+    "close": "关闭 FS Passion"
+  },
+  "header": {
+    "settings": "设置",
+    "version": "游戏版本：{name}",
+    "current_party": "当前配置",
+    "create": "新建配置",
+    "duplicate": "复制配置",
+    "rename": "重命名配置",
+    "delete": "删除配置",
+    "common_mods": "公共模组",
+    "common_mods_tip": "在此配置中包含公共模组",
+    "apply": "应用",
+    "apply_tip": "让游戏加载此配置",
+    "apply_done_tip": "此配置已应用且为最新：游戏加载的就是它",
+    "theme_light": "浅色界面",
+    "theme_dark": "深色界面"
+  },
+  "versions": {
+    "coming": "即将推出",
+    "ready": "已配置",
+    "installed": "已安装",
+    "not_installed": "未安装",
+    "absent_help": "安装在其他位置？设置 → 游戏与路径"
+  },
+  "party": {
+    "full": "完整配置",
+    "empty": "空配置",
+    "other": "自定义文件夹",
+    "unsupported": "无配置",
+    "unknown": "未知",
+    "none_yet": "还没有配置。用 ＋ 按钮，或在地图上点“＋ 配置”来新建。",
+    "full_count": {
+      "one": "全部模组（{count}）",
+      "other": "全部模组（{count}）"
+    },
+    "empty_sub": "不含模组，用于测试原版游戏",
+    "applied_tag": "已应用",
+    "mods_count": {
+      "zero": "无模组",
+      "one": "{count} 个模组",
+      "other": "{count} 个模组"
+    },
+    "full_tip": "适合在游戏中更新模组"
+  },
+  "status": {
+    "running": "{game} 正在运行",
+    "other_folder": "游戏正从另一个文件夹加载模组：",
+    "applied": "已应用的配置：{name}",
+    "other_folder_path": "游戏正在加载另一个文件夹：{path}",
+    "stale": "配置在上次应用后已更改"
+  },
+  "path": {
+    "empty": "",
+    "found": "已找到",
+    "not_found": "此文件夹不存在",
+    "not_game_exe": "此文件不是 {game} 的可执行文件",
+    "no_gamesettings": "未找到 gameSettings.xml：请先启动一次游戏，然后再回来",
+    "not_ntfs": "此驱动器不是 NTFS：无法使用配置",
+    "onedrive": "此文件夹位于 OneDrive 中：不推荐",
+    "storage_overlap": "此文件夹包含主模组文件夹（或其 FSPassion 文件夹），或位于其中：请选择其他文件夹",
+    "storage_duplicate": "此文件夹已被另一个存储文件夹使用，或包含该文件夹",
+    "storage_same_disk": "已找到 · 与主文件夹在同一驱动器：无需特殊权限",
+    "storage_other_disk": "已找到 · 其他驱动器：符号链接"
+  },
+  "list1": {
+    "title": "全部模组",
+    "search": "搜索模组或作者",
+    "search_clear": "清除搜索",
+    "cat_unclassified": "未分类",
+    "cat_dlc": "DLC",
+    "cat_maps": "地图",
+    "cat_others": "其他模组",
+    "cat_by_author": "按作者名",
+    "dlc_note": "游戏在每个配置中都会加载",
+    "selected": "已选",
+    "active": "启用",
+    "all": "总计",
+    "scanning": "正在读取模组：{done} / {total}",
+    "icons_pending": {
+      "one": "正在准备图标：剩余 {count} 个",
+      "other": "正在准备图标：剩余 {count} 个"
+    },
+    "anomalies": {
+      "one": "{count} 个问题：查看详情",
+      "other": "{count} 个问题：查看详情"
+    },
+    "find_new": "在下载中查找新模组",
+    "open_settings": "打开设置",
+    "not_configured": "{game} 尚未配置",
+    "not_configured_help": "请在设置中指定其模组文件夹，或让 FS Passion 检测安装位置。",
+    "reading": "正在读取模组…",
+    "no_match": "没有与“{query}”匹配的模组",
+    "empty": "此模组文件夹为空",
+    "empty_help": "模组（.zip）和解压的模组（含 modDesc.xml 的文件夹）将显示在这里。",
+    "unclassified_note": "分类之前游戏看不到它们",
+    "plus_party": "配置",
+    "plus_party_tip": "用此地图及其依赖项新建配置（Enter）",
+    "mark_party": "在当前配置中",
+    "mark_common": "在公共模组中",
+    "info_tip": "固定模组详情（I 键）"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "未找到模组文件夹",
+      "unexpected": "读取模组失败：{error}"
+    }
+  },
+  "mod": {
+    "map": "地图",
+    "unpacked": "解压的模组",
+    "multiplayer": "多人游戏",
+    "version": "版本",
+    "author": "作者",
+    "game_version": "游戏",
+    "gv_unknown": "游戏版本未知",
+    "size": "大小",
+    "kind": "格式",
+    "kind_dir": "文件夹（已解压）",
+    "kind_zip": ".zip 压缩包",
+    "parties": "所在列表",
+    "parties_none": "无",
+    "storage": "存储位置",
+    "dependencies": {
+      "one": "{count} 个依赖项",
+      "other": "{count} 个依赖项"
+    },
+    "more": {
+      "one": "另有 {count} 个",
+      "other": "另有 {count} 个"
+    },
+    "no_dependencies": "未声明依赖项",
+    "unpacked_tip": "解压的模组：不会通过 ModHub 更新，也不能用于多人游戏。FS Passion 从不写入其中。",
+    "gv_conflict": "名称前缀与 descVersion 指向两个不同版本：以前缀为准。",
+    "unpin": "关闭（Esc）",
+    "optional": {
+      "one": "{count} 个可选模组",
+      "other": "{count} 个可选模组"
+    },
+    "searchmods_note": "旧版游戏（SearchMods 标签）：即使缺少必需模组，存档也会加载；游戏会在之后提示。",
+    "links_hint": "点击“i”可固定这些详情并打开链接。",
+    "links_old": "模组作者提供的链接，往往已经过时：页面可能已不存在。",
+    "link_open": "在浏览器中打开",
+    "link_failed": "无法打开链接。"
+  },
+  "dep": {
+    "present": "已有",
+    "absent": "缺失",
+    "dlc_owned": "已拥有的 DLC",
+    "dlc_missing": "未拥有的 DLC"
+  },
+  "dlc": {
+    "free": "免费 DLC",
+    "paid": "DLC",
+    "info": "游戏在每个配置中都会加载已安装的 DLC。"
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} 不支持配置",
+    "missing": "不在模组文件夹中",
+    "missing_tip": "{name} 已不在你的模组文件夹中。如果作者给它改了名，请使用“替换为…”。",
+    "replace": "替换为…"
+  },
+  "list2": {
+    "title": "配置中的模组",
+    "full": {
+      "one": "完整配置：全部模组（{count}）",
+      "other": "完整配置：全部模组（{count}）"
+    },
+    "full_help": "游戏会加载整个模组文件夹，和使用 FS Passion 之前一样。",
+    "empty_party": "空配置：无模组",
+    "empty_help": "用于在不加载任何模组的情况下测试原版游戏。",
+    "no_mods": "此配置中没有模组",
+    "no_mods_help": "从“全部模组”拖入模组，或选中后使用操作栏。"
+  },
+  "list3": {
+    "title": "公共模组",
+    "empty": "还没有公共模组",
+    "empty_help": "公共模组存在于每个配置中：拖拉机、农具、脚本…",
+    "not_included": "未包含在此配置中"
+  },
+  "footer": {
+    "github_tip": "项目的 GitHub 页面",
+    "github_soon": "项目的 GitHub 地址即将添加",
+    "running": "游戏运行中",
+    "launch": "启动游戏",
+    "launch_unconfigured": "请在设置中指定 {game} 的可执行文件",
+    "launch_tip": "使用已应用的配置启动游戏",
+    "quit": "退出"
+  },
+  "launch": {
+    "started": "正在启动 {game}…",
+    "failed": "无法启动 {game}。请在设置中检查可执行文件和启动方式。",
+    "no_exe": "未找到 {game} 的可执行文件：请在设置中指定。",
+    "already_running": "{game} 已在运行。",
+    "apply_title": "应用“{name}”？",
+    "apply_text": "配置“{name}”尚未应用，或之后已更改。要应用配置 {name}，然后启动 {game} 吗？",
+    "apply_and_launch": "应用并启动",
+    "without_apply": "不应用直接启动"
+  },
+  "backup": {
+    "created": "已为 {game} 创建 gameSettings.xml 的原始备份",
+    "exported": "配置已导出：{file}",
+    "demo_active": "请先退出演示模式：它使用的不是你的文件夹。",
+    "unreadable": "无法读取此文件：{path}",
+    "too_big": "此文件太大，不可能是 FS Passion 导出文件：{path}",
+    "not_export": "此文件不是 FS Passion 导出文件：{path}",
+    "too_new": "此文件来自更新版本的 FS Passion（{version}）。请更新 FS Passion 后再导入。",
+    "write_failed": "无法保存文件：{path}",
+    "expired": "导入已过期：请重新选择文件。",
+    "running": "导入前请关闭 {game}：它的配置即将被更改。",
+    "import": {
+      "title": "导入配置",
+      "from": "{date} 的导出，FS Passion {version}。",
+      "parties": {
+        "one": "{count} 个配置",
+        "other": "{count} 个配置"
+      },
+      "common": {
+        "one": "{count} 个公共模组",
+        "other": "{count} 个公共模组"
+      },
+      "no_parties": "此文件不含配置：只会导入设置。",
+      "keep": "保留当前路径（推荐）",
+      "keep_help": "本机的游戏、模组和下载文件夹保持不变。只导入配置、公共模组和通用设置（语言、主题、选项）。",
+      "replace_help": "文件中的路径将替换本机的路径：仅当文件来自本机且驱动器相同时才选择此项。",
+      "paths_differ": "此文件中的模组文件夹不是本机的文件夹。",
+      "warning": "上述版本的当前配置将被替换。替换前会自动备份当前状态。不会应用任何内容：配置文件夹将在下次“应用”时重建。",
+      "ok": "导入"
+    },
+    "result": {
+      "title": "配置已导入",
+      "done": "导入完成。",
+      "parties": {
+        "one": "已导入 {count} 个配置",
+        "other": "已导入 {count} 个配置"
+      },
+      "skipped": "未导入（本机未配置该游戏版本）",
+      "fallback": "游戏之前加载的配置已不存在：现在改为加载完整配置。",
+      "apply": "本机缺少的模组会在配置中显示为缺失模组。点击“应用”让游戏加载导入的配置。",
+      "backup": "导入前的状态已保存到 %APPDATA%\\FSPassion\\backups\\{file}。"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "game": {
+      "title": "游戏与路径"
+    },
+    "look": {
+      "title": "显示"
+    },
+    "app": {
+      "title": "应用程序"
+    },
+    "help": {
+      "title": "帮助与关于"
+    },
+    "paths": {
+      "versions": "游戏版本",
+      "game_exe": "游戏可执行文件",
+      "user_dir": "“文档”中的游戏文件夹",
+      "mods_dir": "主模组文件夹",
+      "mods_dirs": "模组文件夹",
+      "browse": "浏览…",
+      "fixed_fs2011": "FS2011 的模组文件夹无法移动。",
+      "add_storage": "在其他驱动器上添加模组文件夹",
+      "derived": "派生路径",
+      "not_applicable": "不适用于此版本",
+      "d_game_dir": "游戏文件夹",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC（游戏文件夹）",
+      "d_dlc_user": "DLC（文档）",
+      "detect": "检测安装",
+      "detect_all": "检测所有版本",
+      "detect_all_help": "查找所有版本的安装位置，并填写其空白字段。",
+      "detect_one": "检测此版本",
+      "detect_one_help": "只更改上方选中的版本。其他版本保持不变。",
+      "detect_help": "你自定义过的字段永远不会被更改。",
+      "detect_found": "找到的安装：{list}",
+      "detect_none": "未找到安装。请用“浏览…”指定路径。",
+      "launch_method": "游戏启动方式",
+      "launch_auto": "自动",
+      "launch_platform": "平台",
+      "launch_exe": "可执行文件",
+      "launch_help": "“自动”会选择合适的方式（Steam、Epic Games、Microsoft Store、Xbox 或可执行文件）。另外两种是备选方式。",
+      "minimize_on_launch": "游戏启动时最小化 FS Passion",
+      "minimize_on_launch_help": "如果开启了“关闭到通知区域”（应用程序 → 窗口），则最小化到通知区域，否则最小化到任务栏。",
+      "args_title": "启动参数",
+      "args_show": "显示启动参数",
+      "args_hide": "隐藏启动参数",
+      "args_skip": "跳过开场视频",
+      "args_skip_info": "跳过开场视频和启动画面。",
+      "args_cheats": "开发者控制台",
+      "args_cheats_info": "启用游戏内的开发者控制台。同时会在 gameSettings.xml 旁边的 game.xml 中设置 <controls>。",
+      "args_game_xml_absent": "未找到 game.xml：控制台要在游戏启动过一次后才会启用。",
+      "args_game_xml_error": "无法修改 game.xml：开发者控制台保持禁用。",
+      "args_help_command": "FS Passion 会将它们添加到 {game} 的启动命令中。",
+      "args_help_steam": "{game} 由 Steam 启动。Steam 会拒绝其他程序传递的参数（每次启动都会要求确认），所以 FS Passion 启动游戏时不带参数。请按下方说明在 Steam 中输入一次。",
+      "args_help_epic": "{game} 由 Epic Games 启动，它不接受其他程序传递的参数：请按下方说明在 Epic Games Launcher 中输入一次。",
+      "args_help_unsupported": "{game} 是从 Microsoft Store 或 Xbox 安装的。",
+      "args_store": "Microsoft Store 和 Xbox 应用不允许使用启动参数：只能启用开发者控制台（game.xml）。如需使用参数，请在安装方式允许的情况下将启动方式选为“可执行文件”。",
+      "args_steam_where": "在 Steam 中的输入位置",
+      "args_steam_steps": "Steam 库：右键点击 {game} → 属性…\n通用选项卡 → “启动选项”字段\n粘贴下方文本，然后关闭窗口",
+      "args_epic_where": "在 Epic Games Launcher 中的输入位置",
+      "args_epic_steps": "库：{game} 下方的“…”→ 管理\n勾选“额外命令行参数”\n粘贴下方文本（旧版启动器：头像 → 设置 → {game}）",
+      "args_none": "未勾选任何参数",
+      "args_copy_label": "要复制的参数",
+      "args_copy_help": "只有在勾选或取消勾选参数时才需要重新操作。",
+      "console_on": "game.xml 中已启用控制台",
+      "console_off": "game.xml 中已禁用控制台",
+      "console_enable": "在 game.xml 中启用",
+      "console_done": "已在 {game} 的 game.xml 中启用开发者控制台",
+      "add_storage_help": "最多再添加两个文件夹。其中的模组会列出，并像其他模组一样加入配置；FS Passion 不会在那里写入任何其他内容。",
+      "extra_dir": "附加模组文件夹",
+      "extra_help": "移除此文件夹不会影响其中的模组：它们只是不再列出。",
+      "remove_storage": "从列表中移除此文件夹（不会影响其中的模组）"
+    },
+    "downloads": {
+      "title": "下载",
+      "folder": "下载文件夹",
+      "help": "浏览器保存下载模组的文件夹。",
+      "scan_at_start": "启动时查找新模组",
+      "scan_now": "立即查找"
+    },
+    "language": {
+      "title": "语言",
+      "personal": "个人",
+      "open_folder": "打开个人语言文件夹",
+      "personal_help": "你可以在那里将 FS Passion 翻译成你的语言：附有模板和说明。",
+      "rejected": "已忽略的语言文件（无效或过大）：{list}"
+    },
+    "theme": {
+      "title": "主题",
+      "help": "将鼠标悬停在色样上可预览主题，点击即可选用。双色主题只有两种颜色；其他主题使用流行主题的官方配色，各有深色和浅色版本。标题栏中的太阳/月亮按钮可在两者间切换。",
+      "contrast": "对比度 {ratio}:1",
+      "loop": "主题轮换：每分钟更换主题",
+      "light_effects": "光效（光泽、发光轮廓、霓虹）",
+      "reduce_motion": "减少动画",
+      "follows_windows": "跟随 Windows 的“动画效果”设置。",
+      "follow_windows": "跟随 Windows 设置",
+      "atelier": "打开主题工坊",
+      "mode_dark": "深色",
+      "mode_light": "浅色",
+      "group_duo": "双色"
+    },
+    "backup": {
+      "title": "配置备份",
+      "help": "将你的配置、公共模组和设置导出到文件，以便重装后或在另一台电脑上恢复。不会复制任何模组：只保存名称。",
+      "export": "导出",
+      "import": "导入"
+    },
+    "notice": {
+      "title": "指南",
+      "open": "打开指南",
+      "at_start": "启动时显示",
+      "tour": "界面导览"
+    },
+    "anomalies": {
+      "title": "问题",
+      "show": "显示问题",
+      "reset": {
+        "zero": "没有隐藏的问题",
+        "one": "重新显示隐藏的问题",
+        "other": "重新显示 {count} 个隐藏的问题"
+      },
+      "reset_done": "已重新显示隐藏的问题"
+    },
+    "internet": {
+      "title": "网络连接",
+      "allow": "允许 FS Passion 从 GitHub 下载 DLC 目录",
+      "help": "DLC 目录（名称和图标）每天最多从 GitHub 读取一次。只下载本机已有 DLC 的图标。不会发送任何个人数据。",
+      "catalog_off": "DLC 目录：FS Passion 自带的版本（连接已关闭）。",
+      "catalog_remote": "{date} 的 DLC 目录，从 GitHub 下载。",
+      "catalog_embedded": "{date} 的 DLC 目录，随 FS Passion 附带。",
+      "check": "立即检查",
+      "checking": "正在检查…",
+      "error_not_found": "目录尚未在 GitHub 上发布。",
+      "error_unreachable": "上次检查失败（无网络连接？）。",
+      "error_invalid": "无法读取已发布的目录：改用 FS Passion 自带的目录。",
+      "error_too_new": "已发布的目录需要更新版本的 FS Passion。",
+      "error_too_big": "已发布的目录过大：已忽略。"
+    },
+    "updates": {
+      "title": "FS Passion 更新",
+      "allow": "在 GitHub 上检查 FS Passion 更新",
+      "help": "每次启动时（之后保持打开期间每天一次），FS Passion 会在 GitHub 上读取最新发布的版本号。不会发送任何个人数据。",
+      "off": "更新检查已关闭。",
+      "checking": "正在检查…",
+      "last_check": "上次检查：{date}。",
+      "up_to_date": "FS Passion 已是最新版本（{version}）。",
+      "never": "已安装版本：{version}。",
+      "available": "有新版本可用：{version}",
+      "published": "发布于 {date}",
+      "current": "已安装版本：{version}",
+      "install": "安装更新",
+      "download_portable": "下载便携版",
+      "downloading": "正在下载… {percent}%",
+      "closing": "正在安装…",
+      "closing_help": "FS Passion 将关闭，安装新版本，然后重新打开。",
+      "see_release": "查看新内容",
+      "check": "立即检查",
+      "how_installed": "安装程序从 GitHub 下载并经过校验（SHA-256 校验和）。安装期间 FS Passion 会关闭，之后重新打开。你的设置、配置和模组都会保留。",
+      "how_portable": ".zip 文件会下载到你的下载文件夹并经过校验。关闭 FS Passion，然后用 .zip 中的文件替换其文件夹中的文件，保留“data”文件夹（你的设置）。",
+      "how_source": "请从 GitHub 页面下载新版本。",
+      "note": "FS Passion 有新版本可用：{version}",
+      "pill": "新版本 {version}",
+      "pill_tip": "FS Passion 有可用更新：设置 → 应用程序",
+      "portable_ready": "便携版已下载并校验：{file}",
+      "error_not_found": "GitHub 上尚未发布任何版本。",
+      "error_unreachable": "检查失败（无网络连接？）。",
+      "error_rate_limited": "GitHub 暂时限制了检查：稍后会再试。",
+      "error_invalid": "无法读取 GitHub 上的发布版本。",
+      "error_no_source": "缺少 GitHub 仓库地址。",
+      "error_checksum": "下载的文件与校验和不符：已删除，未安装任何内容。",
+      "error_no_checksum": "该发布版本未提供此文件的 SHA-256 校验和：为安全起见，未安装任何内容。",
+      "error_missing_file": "该发布版本不包含所需文件：请从其 GitHub 页面下载。",
+      "error_disabled": "更新检查已关闭。",
+      "error_busy": "已有下载正在进行。",
+      "error_none": "没有可安装的更新。",
+      "error_unsupported": "此处无法自动安装：请从 GitHub 页面下载更新。",
+      "error_launch": "无法启动安装程序：请从 GitHub 页面下载更新。",
+      "error_game_running": "请先关闭 Farming Simulator：FS Passion 会在游戏关闭时整理你的配置。"
+    },
+    "logs": {
+      "title": "日志与诊断",
+      "open_logs": "打开日志文件夹",
+      "copy_diag": "复制诊断信息",
+      "diag_copied": "诊断信息已复制：请粘贴到你的报告中"
+    },
+    "donate": {
+      "title": "支持本项目",
+      "text": "FS Passion 是并将始终是一个值得信赖、开源且免费的项目。如果你想感谢作者，一次性捐助只需几秒钟，无需注册账户。谢谢！",
+      "no_link": "链接即将提供"
+    },
+    "about": {
+      "title": "关于",
+      "version": "版本",
+      "author": "作者",
+      "license": "许可证",
+      "github_soon": "地址即将提供",
+      "official": "唯一的官方下载链接是项目的 GitHub 页面。",
+      "unofficial": "FS Passion 是独立项目，与 GIANTS Software 无关。Farming Simulator 是 GIANTS Software 的商标。",
+      "privacy": "FS Passion 不发送任何数据。只有在你允许时，才会从 GitHub 下载公开的 DLC 列表。",
+      "window_mode": "窗口技术（开发）",
+      "window_native": "原生",
+      "window_script": "计算式",
+      "window_thin": "细边框",
+      "window_restart": "下次启动 FS Passion 时生效",
+      "window_help": "当前技术：{current}。只有在无法拖动边缘调整大小时才需要更改。"
+    },
+    "stop": {
+      "title": "停止使用 FS Passion",
+      "show": "显示详情",
+      "hide": "隐藏详情",
+      "text": "恢复游戏的原始设置并移除配置文件夹。你的模组绝不会被改动。",
+      "button": "停止使用 FS Passion"
+    },
+    "window": {
+      "title": "窗口",
+      "close_to_tray": "关闭到通知区域",
+      "close_to_tray_help": "窗口的关闭按钮会把 FS Passion 隐藏到 Windows 时钟旁边。点击其图标即可恢复；“退出”（右下角，或图标菜单中）才会真正关闭它。",
+      "tray_off": "通知区域仅在 Windows 上的 FS Passion 窗口中可用。",
+      "focus_after_game": "游戏关闭时回到前台",
+      "focus_after_game_help": "Farming Simulator 关闭时，FS Passion 会重新出现，即使它之前隐藏在通知区域中。"
+    },
+    "demo": {
+      "title": "无需游戏试用",
+      "help": "在测试文件夹中用虚拟模组试用 FS Passion 的全部功能：你的真实路径会被暂存，退出时恢复。",
+      "start": "无需游戏试用 FS Passion",
+      "active_help": "演示模式已开启：这些路径属于测试文件夹。退出后你的真实路径会恢复。"
+    }
+  },
+  "themes": {
+    "lime": "青柠",
+    "jade": "翡翠",
+    "cuivre": "紫铜",
+    "blue": "白色"
+  },
+  "anomalies": {
+    "title": "发现的问题",
+    "none": "没有问题。一切正常。",
+    "intro": "模组文件夹中的这些项目无法被游戏直接使用。问题不严重，FS Passion 不会动它们。",
+    "new": "新",
+    "hide_type": "不再显示此类问题",
+    "hide_folder": "不再显示此文件夹",
+    "rename": "重命名…",
+    "others": {
+      "one": "其他已忽略的文件（{count}）",
+      "other": "其他已忽略的文件（{count}）"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar 或 .7z 压缩包（{count}）",
+        "other": ".rar 或 .7z 压缩包（{count}）"
+      },
+      "explain": "游戏只读取 .zip 文件。请解压压缩包，必要时再将模组重新压缩为 zip。"
+    },
+    "A2": {
+      "title": {
+        "one": "不含 modDesc.xml 的 .zip（{count}）",
+        "other": "不含 modDesc.xml 的 .zip（{count}）"
+      },
+      "explain": "通常是包含多个模组、需要解压的合集包。",
+      "nested": "在子文件夹中找到 modDesc.xml（{path}）：模组压缩方式不正确。"
+    },
+    "A3": {
+      "title": {
+        "one": "无法读取的压缩包（{count}）",
+        "other": "无法读取的压缩包（{count}）"
+      },
+      "explain": "压缩包损坏或 modDesc.xml 无效。请重新下载模组。",
+      "zip": "无法打开压缩包。",
+      "xml": "modDesc.xml 文件无效。"
+    },
+    "A4": {
+      "title": {
+        "one": "不含 modDesc.xml 的文件夹（{count}）",
+        "other": "不含 modDesc.xml 的文件夹（{count}）"
+      },
+      "explain": "根目录中没有 modDesc.xml，游戏就无法使用此文件夹。FS Passion 从不动它。"
+    },
+    "A5": {
+      "title": {
+        "one": "被游戏拒绝的名称（{count}）",
+        "other": "被游戏拒绝的名称（{count}）"
+      },
+      "explain": "游戏只接受不带重音符号的字母、数字和“_”。",
+      "suggestion": "建议名称：{name}"
+    },
+    "A6": {
+      "title": {
+        "one": "其他游戏版本的模组（{count}）",
+        "other": "其他游戏版本的模组（{count}）"
+      },
+      "explain": "此版本的游戏不会加载这个模组。",
+      "detected": "{game} 的模组"
+    },
+    "A7": {
+      "title": {
+        "one": "缺失的模组（{count}）",
+        "other": "缺失的模组（{count}）"
+      },
+      "explain": "某个配置引用了此模组，但它已不在模组文件夹中。",
+      "in": "所在：{list}"
+    },
+    "A8": {
+      "title": {
+        "one": "已删除但仍被链接的模组（{count}）",
+        "other": "已删除但仍被链接的模组（{count}）"
+      },
+      "explain": "此模组已从模组文件夹中删除，但某些配置仍包含它。",
+      "copy": "副本仍存在于：{list}",
+      "delete_title": "删除剩余的副本？",
+      "delete_text": "仍留在配置文件夹中的“{name}”的最后一个副本将被移到回收站，并从所有列表中移除该模组。"
+    },
+    "A9": {
+      "title": {
+        "one": "重复的模组（{count}）",
+        "other": "重复的模组（{count}）"
+      },
+      "explain": "同一个模组出现了两次：在两个存储文件夹中，或以 .zip 和文件夹形式并存。游戏只会加载其中一个。FS Passion 使用主文件夹中的那个，并优先使用压缩包而非文件夹。",
+      "zip_and_dir": "“{name}”同时以 .zip 和解压文件夹两种形式存在：游戏只会加载其中一个，ModHub 也无法更新它。请只保留一种形式（用“永久删除”删除另一种，或将其移出模组文件夹）。",
+      "files": "文件：{list}"
+    },
+    "game": "{game}",
+    "folder": "模组文件夹：{path}",
+    "show_in_folder": "在文件资源管理器中显示",
+    "open_folder": "在文件资源管理器中打开模组文件夹（模组已不在那里）"
+  },
+  "welcome": {
+    "subtitle": "模组只存一份。配置想建多少就建多少。",
+    "language": "选择你的语言"
+  },
+  "notice": {
+    "title": "FS Passion 的工作原理",
+    "at_start": "应用程序启动时显示此窗口",
+    "understood": "知道了",
+    "blocks": [
+      {
+        "key": "首先：建议你将所有模组备份到另一个驱动器。这一点很重要，就像对重要文件进行任何操作之前一样。"
+      },
+      {
+        "h": "理念"
+      },
+      {
+        "p": "FS Passion 让你快速、轻松地创建任意数量的 Farming Simulator 配置，同时只在原始文件夹中保留一份模组。"
+      },
+      {
+        "p": "1 次点击即可在配置之间切换！"
+      },
+      {
+        "h": "安装"
+      },
+      {
+        "p": "你的模组文件夹可以位于任何驱动器：FS Passion 会自动适应。无需手动创建、移动或重命名任何内容。驱动器满了？可在其他驱动器上最多添加两个模组文件夹（设置 → 游戏与路径）：其中的模组会像其他模组一样加入配置。"
+      },
+      {
+        "h": "首次使用"
+      },
+      {
+        "ul": [
+          "用地图上神奇的“＋ 配置”按钮创建配置：地图及其依赖项一键变成配置。",
+          "然后把其他模组归入公共模组，它们存在于每个配置中。",
+          "点击“应用”：游戏下次启动时会加载所选的配置。"
+        ]
+      },
+      {
+        "h": "添加、重命名、删除模组"
+      },
+      {
+        "ul": [
+          "新模组：照常下载，然后点击列表顶部的“查找新模组”。FS Passion 会把它们放进对应游戏版本的模组文件夹。",
+          "删除模组时，请在 FS Passion 中操作（操作栏中的“永久删除”），而不是在文件资源管理器中：这样它们会同时从列表和配置中移除，并进入回收站。",
+          "重命名模组（F2 键）会使其与 ModHub 脱离：它将不再收到更新。"
+        ]
+      },
+      {
+        "h": "更新"
+      },
+      {
+        "p": "无需任何操作：游戏下载的更新会在游戏关闭时或下次启动 FS Passion 时被回收。旧版本会暂存到“Old versions”。如果游戏下载的版本号比你的旧（通常是你修改过的模组），FS Passion 会询问你保留哪一个。"
+      },
+      {
+        "p": "FS Passion 本身：有新版本发布时，设置齿轮上会出现一个圆点，底部版本号旁会显示“新版本”。设置 → 应用程序 → “安装更新”。"
+      },
+      {
+        "h": "保存你的配置"
+      },
+      {
+        "p": "设置 → 应用程序 → “导出”可将配置、公共模组和设置保存到文件。“导入”可在重装后或在另一台电脑上恢复它们。"
+      },
+      {
+        "h": "停止使用"
+      },
+      {
+        "p": "“停止使用 FS Passion”（设置 → 应用程序）会恢复游戏的原始设置并移除配置文件夹。你的模组绝不会被改动。"
+      }
+    ]
+  },
+  "atelier": {
+    "title": "主题工坊",
+    "id": "标识符",
+    "name": "名称",
+    "dark": "窗口背景",
+    "light": "主色",
+    "mica": "Mica 光晕",
+    "grain": "颗粒",
+    "effect": "效果",
+    "effect_none": "无",
+    "effect_metal": "金属光泽",
+    "intensity": "强度",
+    "save": "保存",
+    "copy": "复制定义",
+    "new": "新建",
+    "copied": "定义已复制",
+    "saved": "主题已保存到 ui/themes.json",
+    "contrast_low": "对比度 {ratio}:1，低于 4.5:1。小号文字将使用 {color}。",
+    "contrast_ok": "对比度 {ratio}:1",
+    "mode": "模式",
+    "mode_dark": "深色",
+    "mode_light": "浅色",
+    "text": "文字",
+    "multi": "多种强调色（每个区域一种）",
+    "accent_n": "强调色 {n}",
+    "pair": "配对主题（太阳/月亮）",
+    "pair_none": "无",
+    "gradient": "双色渐变（标题、“应用”和“启动”按钮）",
+    "gradient_from": "渐变：起点",
+    "gradient_to": "渐变：终点",
+    "style": "风格",
+    "style_duo": "双色",
+    "style_palette": "官方调色板",
+    "style_classic": "计算式蒙层",
+    "surface_1": "窗口背景",
+    "surface_2": "列表与窗口",
+    "surface_3": "分区",
+    "surface_4": "子分区",
+    "text_n": "文字 {n}",
+    "neon": "霓虹",
+    "neon_help": "标题、图标和轮廓按各区域的颜色发光（0：无效果）。关闭“光效”时一并关闭。"
+  },
+  "error": {
+    "bad_request": "请求无效。",
+    "forbidden": "访问被拒绝。",
+    "not_found": "未找到项目。",
+    "unexpected": "意外错误。请复制诊断信息（设置 → 帮助与关于）并附到你的报告中。",
+    "offline": "FS Passion 核心未响应。",
+    "internal": "出于安全原因，操作被拒绝。请复制诊断信息（设置 → 帮助与关于）并附到你的报告中。"
+  },
+  "detect": {
+    "busy": "检测已在进行中。"
+  },
+  "parties": {
+    "not_configured": "请在设置中指定 {game} 的模组文件夹以创建配置。",
+    "name_label": "配置名称",
+    "name_empty": "名称不能为空。",
+    "name_too_long": "最多 {max} 个字符。",
+    "name_taken": "已有名为“{name}”的配置。",
+    "special_locked": "完整配置和空配置不能修改、重命名、复制或删除。",
+    "not_found": "此配置已不存在。",
+    "write_failed": "无法将配置保存到 {path}。请检查此驱动器是否可写入。",
+    "recovered": "无法读取 {game} 的配置文件：已加载其最新备份（{backup}）。损坏的文件已暂存。",
+    "lost": "无法读取 {game} 的配置文件，也无法加载任何备份。损坏的文件已暂存，未删除任何内容。",
+    "running_rename": "重命名此配置前请关闭 {game}：游戏运行时其文件夹无法更改。",
+    "running_delete": "删除此配置前请关闭 {game}：游戏运行时其文件夹无法更改。",
+    "map_not_found": "未找到地图：{name}",
+    "mod_not_found": "未找到模组：{name}",
+    "create_title": "新建配置",
+    "create_help": "包含公共模组的空配置。然后从“全部模组”中添加模组。",
+    "create_ok": "创建",
+    "created": "已创建配置“{name}”",
+    "duplicate_title": "复制配置",
+    "duplicate_help": "副本保留“{name}”的模组及其“公共模组”设置。",
+    "copy_name": "{name}（副本）",
+    "duplicate_ok": "复制",
+    "duplicated": "已创建配置“{name}”",
+    "rename_title": "重命名配置",
+    "rename_ok": "重命名",
+    "renamed": "已将“{old}”重命名为“{name}”",
+    "delete_title": "删除配置",
+    "delete_text": {
+      "zero": "删除配置“{name}”？它不含任何模组。",
+      "one": "删除配置“{name}”？其模组仍保留在你的模组文件夹中：只会删除配置及其链接文件夹。",
+      "other": "删除配置“{name}”？其 {count} 个模组仍保留在你的模组文件夹中：只会删除配置及其链接文件夹。"
+    },
+    "delete_ok": "删除",
+    "deleted": "已删除配置“{name}”",
+    "deleted_applied": "配置 {name} 已删除。游戏现在使用配置 {other}。"
+  },
+  "actions": {
+    "selected": {
+      "one": "个模组已选",
+      "other": "个模组已选"
+    },
+    "add_party": "添加到配置中的模组",
+    "add_common": "添加到公共模组",
+    "remove_party": "从配置中的模组移除",
+    "remove_common": "从公共模组移除",
+    "rename": "重命名…",
+    "rename_help": "仅限在“全部模组”中选中的单个模组。",
+    "delete": "永久删除…",
+    "close": "关闭操作栏并清除选择（Esc）",
+    "added_party": {
+      "one": "已将 {count} 个模组添加到配置“{name}”",
+      "other": "已将 {count} 个模组添加到配置“{name}”"
+    },
+    "added_common": {
+      "one": "已将 {count} 个模组添加到公共模组",
+      "other": "已将 {count} 个模组添加到公共模组"
+    },
+    "moved_party": {
+      "one": "已将 {count} 个模组移到配置“{name}”",
+      "other": "已将 {count} 个模组移到配置“{name}”"
+    },
+    "moved_common": {
+      "one": "已将 {count} 个模组移到公共模组",
+      "other": "已将 {count} 个模组移到公共模组"
+    },
+    "removed_party": {
+      "one": "已从配置“{name}”移除 {count} 个模组",
+      "other": "已从配置“{name}”移除 {count} 个模组"
+    },
+    "removed_common": {
+      "one": "已从公共模组移除 {count} 个模组",
+      "other": "已从公共模组移除 {count} 个模组"
+    },
+    "nothing_party": "这些模组已在配置“{name}”中",
+    "nothing_common": "这些模组已在公共模组中"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "同时添加其依赖项？",
+      "other": "同时添加其 {count} 个依赖项？"
+    },
+    "ask_yes": {
+      "one": "同时添加依赖项",
+      "other": "同时添加 {count} 个依赖项"
+    },
+    "ask_no": "仅所选模组",
+    "missing_warn": {
+      "one": "你的模组中缺少依赖项：{list}",
+      "other": "你的模组中缺少 {count} 个依赖项：{list}"
+    },
+    "needed_by_map": "地图“{name}”需要：",
+    "needed_by_mod": "模组“{name}”需要：",
+    "needed": "依赖项：",
+    "where_common": "公共模组",
+    "where_party": "配置“{name}”",
+    "ask_intro": {
+      "one": "此模组是你所选模组的依赖项，但它不在{where}中。",
+      "other": "这 {count} 个模组是你所选模组的依赖项，但它们不在{where}中。"
+    },
+    "missing_for": "{list}（“{name}”需要）",
+    "optional_title": {
+      "one": "同时添加可选模组？",
+      "other": "同时添加可选模组？"
+    },
+    "optional_intro": {
+      "one": "1 个可选模组，已在你的模组中：",
+      "other": "{count} 个可选模组，已在你的模组中："
+    },
+    "optional_for": "“{name}”的可选模组",
+    "optional_note": "可选：游戏不需要它们。只有勾选的才会添加到{where}。",
+    "optional_continue": "继续"
+  },
+  "commonguard": {
+    "title_maps": "注意：地图即将进入公共模组",
+    "title_classified": "注意：已分类的模组即将进入公共模组",
+    "maps_intro": {
+      "one": "这很可能是误操作：你的选择中包含一张地图，你即将把它添加到公共模组：",
+      "other": "这很可能是误操作：你的选择中包含 {count} 张地图，你即将把它们添加到公共模组："
+    },
+    "classified_intro": {
+      "one": "你的选择中还包含一个已归入某个配置的模组。",
+      "other": "你的选择中还包含 {count} 个已归入配置的模组。"
+    },
+    "why_maps": "这很可能不是你想要的：公共模组中的所有内容都会在你的所有配置中加载。这些地图将在所有地方加载，而这正是 FS Passion 帮你避免的情况。",
+    "why_classified": "这很可能不是你想要的：公共模组中的所有内容都会在你的所有配置中加载。这些模组将不再局限于各自的配置，你的列表也将失去意义。",
+    "unclassified_offer": {
+      "one": "你的选择中只有一个未分类的模组（不含地图）：可以只添加它。",
+      "other": "你的选择中有 {count} 个未分类的模组（不含地图）：可以只添加它们。"
+    },
+    "tip": "提示：Ctrl+A 会选中整个“全部模组”列表，包括地图和已分类的模组。",
+    "continue": "仍然继续",
+    "only_unclassified": {
+      "one": "只添加未分类的模组",
+      "other": "只添加 {count} 个未分类的模组"
+    }
+  },
+  "plus": {
+    "title": "从地图新建配置",
+    "deps_title": {
+      "one": "{count} 个依赖项",
+      "other": "{count} 个依赖项"
+    },
+    "dlc_title": "所需 DLC",
+    "dlc_note": "供参考：游戏总会加载已安装的 DLC。它们不会被添加到配置中。",
+    "missing_note": "缺失的依赖项不会被添加：请下载后再添加到配置中。",
+    "no_deps": "未声明依赖项：配置中只会包含地图。",
+    "summary": {
+      "zero": "配置将只包含地图，外加公共模组。",
+      "one": "配置将包含地图及其依赖项，外加公共模组。",
+      "other": "配置将包含地图及其 {count} 个依赖项，外加公共模组。"
+    },
+    "create": "创建配置",
+    "created": {
+      "one": "已创建配置“{name}”：{count} 个模组",
+      "other": "已创建配置“{name}”：{count} 个模组"
+    },
+    "created_missing": {
+      "one": "需下载的依赖项：{list}",
+      "other": "需下载的 {count} 个依赖项：{list}"
+    },
+    "optional_title": {
+      "one": "{count} 个可选模组",
+      "other": "{count} 个可选模组"
+    },
+    "optional_note": "可选：游戏不需要它们。勾选要添加到配置中的模组。",
+    "optional_none_present": "这些可选模组都不在你的模组中。游戏不需要它们。"
+  },
+  "replace": {
+    "title": "替换为…",
+    "help": "{name} 已不在你的模组文件夹中。如果作者给它改了名，请选择其新版本：它将在每个列表中取而代之。",
+    "done": {
+      "one": "已在 {count} 个列表中将 {old} 替换为 {name}",
+      "other": "已在 {count} 个列表中将 {old} 替换为 {name}"
+    }
+  },
+  "notifications": {
+    "title": "通知",
+    "unread": {
+      "one": "通知：1 条新消息",
+      "other": "通知：{count} 条新消息"
+    },
+    "clear": "全部清除",
+    "none": "还没有通知。右下角显示的消息会保留在这里，直到 FS Passion 关闭。"
+  },
+  "tray": {
+    "show": "显示 FS Passion",
+    "quit": "退出 FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion 仍在这里运行。点击图标即可恢复；“退出”才会真正关闭它。"
+  },
+  "apply": {
+    "unsupported": "此版本的游戏无法更改其模组文件夹。",
+    "not_ready": "请先在设置中指定游戏的模组文件夹和“我的文档”文件夹。",
+    "running": "应用配置前请关闭 {game}。",
+    "no_gamesettings": "未找到 {game} 的 gameSettings.xml：请启动一次游戏，或在设置中检查“我的文档”文件夹。",
+    "busy": "另一个配置操作正在进行。请稍后再试。",
+    "library_busy": "模组仍在读取中。请稍后再试。",
+    "done": {
+      "zero": "已应用配置 {name}：无模组。",
+      "one": "已应用配置 {name}：{count} 个模组。",
+      "other": "已应用配置 {name}：{count} 个模组。"
+    },
+    "missing": {
+      "one": "配置中有 1 个模组不在你的模组文件夹中：{list}",
+      "other": "配置中有 {count} 个模组不在你的模组文件夹中：{list}"
+    },
+    "updated": {
+      "one": "游戏留下的 1 个更新已移入你的模组文件夹。",
+      "other": "游戏留下的 {count} 个更新已移入你的模组文件夹。"
+    },
+    "added": {
+      "one": "游戏留下的 1 个模组已加入你的模组文件夹和配置 {name}。",
+      "other": "游戏留下的 {count} 个模组已加入你的模组文件夹和配置 {name}。"
+    },
+    "set_aside": {
+      "one": "已暂存 1 个文件，未删除任何内容（配置旁的“Recovered”或“Old versions”文件夹）。",
+      "other": "已暂存 {count} 个文件，未删除任何内容（配置旁的“Recovered”和“Old versions”文件夹）。"
+    },
+    "empty_party": "配置 {name} 不含模组：游戏将在无模组状态下启动。",
+    "not_same_disk": "无法链接 {name}：配置文件夹必须与模组文件夹在同一驱动器上。",
+    "no_hardlinks": "此驱动器不支持硬链接：模组文件夹必须位于 NTFS 驱动器上。未做任何更改。",
+    "too_many_links": "无法链接 {name}：此文件已达到 Windows 的链接数上限。",
+    "access_denied": "链接 {name} 时访问被拒绝。未做任何更改。",
+    "link_failed": "无法创建 {name} 的链接（{detail}）。未做任何更改。",
+    "junction_failed": "无法为解压的模组 {name} 创建联接点（{detail}）。未做任何更改。",
+    "folder_busy": "文件夹 {path} 正被另一个程序使用（文件资源管理器？）。请关闭后重试。未做任何更改。",
+    "folder_exists": "文件夹 {path} 已存在：请选择其他名称。",
+    "failed": "无法应用配置（{detail}）。未做任何更改。",
+    "recovered_finished": "{game} 的一项配置操作曾被中断（断电？）。现已完成。",
+    "recovered_cancelled": "{game} 的一项配置操作曾被中断（断电？）。现已取消：没有任何更改。",
+    "symlink_denied": "Windows 拒绝指向 {name} 的符号链接：需要 Windows 开发者模式或管理员权限。",
+    "blocked": {
+      "one": "来自其他驱动器的 1 个模组无法加入配置（没有符号链接权限）：{list}。请参阅 设置 → 游戏与路径。",
+      "other": "来自其他驱动器的 {count} 个模组无法加入配置（没有符号链接权限）：{list}。请参阅 设置 → 游戏与路径。"
+    }
+  },
+  "override": {
+    "title": "游戏正在加载未知文件夹",
+    "text": "{game} 正从 FS Passion 不认识的文件夹加载模组（被手动或其他工具更改）：",
+    "help": "可将此文件夹设为你的模组文件夹、重新应用你的配置，或保持游戏现状。",
+    "adopt": "设为模组文件夹",
+    "reapply": "重新应用 {name}",
+    "ignore": "不做任何操作",
+    "adopted": "新的模组文件夹：{path}",
+    "read_failed": "无法读取 gameSettings.xml（{path}）。未做任何更改。",
+    "backup_failed": "无法写入 gameSettings.xml 的备份（{path}）。未做任何更改。",
+    "write_failed": "无法写入 gameSettings.xml（{path}）。游戏是否已打开？",
+    "check_failed": "gameSettings.xml 校验失败：已恢复原始文件。",
+    "no_root": "gameSettings.xml 看起来不是游戏设置文件。未做任何更改。"
+  },
+  "demo": {
+    "title": "演示模式",
+    "pill": "演示",
+    "quit": "退出",
+    "banner": "演示模式：这些模组是虚拟的。不会改动你的真实文件夹和游戏。",
+    "badge": "虚拟模组（演示）",
+    "installing": "正在准备演示模组…",
+    "started": "演示模式：随意尝试，游戏不会受到任何影响。",
+    "stopped": "演示模式已关闭：一切已清除。",
+    "stop_title": "退出演示模式",
+    "stop_text": "虚拟模组、测试配置和整个演示文件夹都将被清除。你的真实设置会恢复原样。",
+    "stop_ok": "退出并全部清除",
+    "offer_title": "无需游戏试用 FS Passion？",
+    "offer_text": "本机未找到 Farming Simulator。你可以用虚拟模组试用 FS Passion：创建配置、分类、应用……一切都在测试文件夹中运行，绝不涉及游戏。",
+    "offer_local": "演示包已在本机（约 2 MB）。",
+    "offer_download": "演示包（约 2 MB）将从项目的 GitHub 页面下载，然后进行校验。",
+    "offer_yes": "试用",
+    "offer_no": "以后再说",
+    "unavailable": "演示包暂不可用。",
+    "bad_pack": "演示包已损坏或与原始文件不符：已拒绝。",
+    "download_failed": "无法下载演示包（{detail}）。",
+    "install_failed": "无法安装演示包（{detail}）。",
+    "remove_failed": "无法完全清除演示文件夹：{path}",
+    "no_detect": "演示模式下已关闭游戏检测。"
+  },
+  "delete": {
+    "title": {
+      "one": "永久删除此模组？",
+      "other": "永久删除这 {count} 个模组？"
+    },
+    "intro": {
+      "one": "此模组将从所有列表和所有配置文件夹中移除，然后从你的模组文件夹中删除：",
+      "other": "这 {count} 个模组将从所有列表和所有配置文件夹中移除，然后从你的模组文件夹中删除："
+    },
+    "irreversible": "此操作无法撤销。",
+    "recycle": "文件将进入 Windows 回收站：你仍可以从那里恢复。",
+    "no_recycle": "此驱动器没有回收站：删除将是永久性的。",
+    "understand": {
+      "one": "我了解此文件将被删除",
+      "other": "我了解这些文件将被删除"
+    },
+    "ok": "永久删除",
+    "done_recycled": {
+      "one": "已将 1 个模组移到回收站",
+      "other": "已将 {count} 个模组移到回收站"
+    },
+    "done_deleted": {
+      "one": "已永久删除 1 个模组",
+      "other": "已永久删除 {count} 个模组"
+    },
+    "failed": {
+      "one": "无法删除 1 个模组：{list}。它已从列表中移除；请关闭正在使用它的程序后重试。",
+      "other": "无法删除 {count} 个模组：{list}。它们已从列表中移除；请关闭正在使用它们的程序后重试。"
+    },
+    "nothing": "没有要删除的模组。",
+    "running": "删除模组前请关闭 {game}。"
+  },
+  "rename": {
+    "title": "重命名模组",
+    "label": "新名称",
+    "prefix_tip": "保留版本前缀",
+    "final": "文件名：{file}",
+    "rule": "仅限不带重音符号的字母、数字和“_”：游戏会拒绝其他字符。",
+    "where": "所在：{list}。列表只有在你同意后才会更改：FS Passion 随后会询问它们是否跟随新名称。",
+    "warning_modhub": "如果此模组来自 ModHub，它将不再收到更新：这正是重命名的目的。",
+    "warning_save": "在游戏中，使用此模组的存档会按旧名称查找它。",
+    "warning_save_map": "这是一张地图：在游戏中，基于它的存档会按旧名称查找它，且将无法再加载。",
+    "warning_deps": {
+      "one": "有 1 个模组将其声明为依赖项（{list}）：它会按旧名称查找。",
+      "other": "有 {count} 个模组将其声明为依赖项（{list}）：它们会按旧名称查找。"
+    },
+    "ok": "重命名",
+    "done": {
+      "zero": "已将 {old} 重命名为 {name}",
+      "one": "已将 {old} 重命名为 {name}，涉及 1 个配置",
+      "other": "已将 {old} 重命名为 {name}，涉及 {count} 个配置"
+    },
+    "renamed": "已将 {old} 重命名为 {name}",
+    "lists_title": "更新列表？",
+    "lists_ask": "“{old}”仍在：{list}。是否让它们跟随新名称“{name}”？",
+    "lists_yes": "更新列表",
+    "lists_no": "不做任何操作",
+    "lists_done": "列表已更新（{count}）。",
+    "empty": "请输入名称。",
+    "too_long": "名称太长：最多 {max} 个字符。",
+    "invalid": "仅限不带重音符号的字母、数字和“_”，不能有空格。",
+    "same": "这已经是它的名称。",
+    "taken": "你的模组文件夹中已存在“{name}”。",
+    "not_found": "在你的模组文件夹中找不到模组 {name}。",
+    "failed": "无法重命名 {name}：它可能正在另一个程序中打开。",
+    "running": "重命名模组前请关闭 {game}。",
+    "no_list": "无列表"
+  },
+  "downloads": {
+    "title": "发现新模组",
+    "intro": "位于 {folder}。“集成”会将每个勾选的文件移到其游戏版本的模组文件夹。",
+    "count": {
+      "one": "发现 1 个模组",
+      "other": "发现 {count} 个模组"
+    },
+    "col_mod": "模组",
+    "col_version": "游戏版本",
+    "col_state": "状态",
+    "col_dest": "目标",
+    "state": {
+      "new": "新",
+      "update": "更新（{from} → {to}）",
+      "older": "比已安装版本旧（{to} < {from}）",
+      "present": "已存在",
+      "conflict": "已有同名的解压模组",
+      "unconfigured": "版本未配置：请在设置中配置"
+    },
+    "older_confirm": "已勾选：将替换已安装的版本（旧版本会暂存）。",
+    "postpone": "{game} 正在运行：将在其关闭时集成",
+    "not_configured": "{game}（未配置）",
+    "suffix": "将以 {name} 集成（已去掉浏览器添加的后缀）",
+    "dest_none": "无（未分类）",
+    "dest_unclassified": "未分类",
+    "dest_party": "配置“{name}”",
+    "ignore": "忽略这些文件",
+    "ignored": {
+      "one": "已忽略 1 个文件：以后不会再提示",
+      "other": "已忽略 {count} 个文件：以后不会再提示"
+    },
+    "later": "以后再说",
+    "integrate": {
+      "zero": "集成",
+      "one": "集成 1 个模组",
+      "other": "集成 {count} 个模组"
+    },
+    "none": "{folder} 中没有新模组。",
+    "done": {
+      "one": "已集成 1 个模组：{list}",
+      "other": "已集成 {count} 个模组：{list}"
+    },
+    "in_version": {
+      "one": "1 个到 {game}",
+      "other": "{count} 个到 {game}"
+    },
+    "skipped": {
+      "one": "1 个文件保持原位（已存在或更旧）",
+      "other": "{count} 个文件保持原位（已存在或更旧）"
+    },
+    "postponed": {
+      "one": "1 个模组将在 {game} 关闭时集成",
+      "other": "{count} 个模组将在 {game} 关闭时集成"
+    },
+    "postponed_done": {
+      "one": "{game} 关闭后已集成 1 个下载",
+      "other": "{game} 关闭后已集成 {count} 个下载"
+    },
+    "failed": "无法集成 {file}。文件仍留在你的下载中。",
+    "gone": "{file} 已不在下载文件夹中。",
+    "unconfigured": "{file}：所选游戏版本未配置。",
+    "no_folder": "未找到下载文件夹：请在 设置 → 应用程序 → 下载 中指定。",
+    "demo": "演示期间不集成下载。",
+    "done_in": {
+      "one": "已将 1 个模组集成到 {game}",
+      "other": "已将 {count} 个模组集成到 {game}"
+    },
+    "col_storage": "存储位置"
+  },
+  "move": {
+    "exists": "{file}：已存在同名文件。",
+    "no_space": "{file}：模组文件夹所在驱动器的可用空间不足。",
+    "check_failed": "{file}：校验后的副本与原件不符。未替换任何内容。",
+    "failed": "无法移动 {file}：它可能正在另一个程序中打开。"
+  },
+  "missing": {
+    "title": "模组文件夹中缺失的模组",
+    "intro": {
+      "one": "此模组在配置中，却不在你的模组文件夹里。你想怎么做？",
+      "other": "这 {count} 个模组在配置中，却不在你的模组文件夹里。你想怎么做？"
+    },
+    "in": "所在：{list}",
+    "copy": "已从模组文件夹中删除，但通过其链接仍有副本存在于：{list}",
+    "no_copy": "没有副本：请重新下载，或替换为作者改过名的模组",
+    "restore": "恢复到 Mods",
+    "restore_tip": "配置中仍存在的副本会重新成为你模组文件夹中的模组（不复制任何内容）。",
+    "remove": "从列表中移除",
+    "remove_all": "全部从列表中移除",
+    "later": "以后再说",
+    "notice": "删除模组请在 FS Passion 中操作（操作栏中的“永久删除”按钮）：这样它会同时从列表和配置中移除。",
+    "removed": {
+      "one": "已从所有列表中移除 1 个模组",
+      "other": "已从所有列表中移除 {count} 个模组"
+    },
+    "restored": {
+      "one": "已将 1 个模组恢复到你的模组文件夹",
+      "other": "已将 {count} 个模组恢复到你的模组文件夹"
+    },
+    "deleted": {
+      "one": "已删除 1 个模组并从列表中移除",
+      "other": "已删除 {count} 个模组并从列表中移除"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "已回收 1 个更新：{list}",
+      "other": "已回收 {count} 个更新：{list}"
+    },
+    "added": {
+      "one": "游戏下载的 1 个模组已添加到配置“{name}”",
+      "other": "游戏下载的 {count} 个模组已添加到配置“{name}”"
+    },
+    "unclassified": {
+      "one": "游戏下载的 1 个模组已加入你的模组文件夹（未分类）",
+      "other": "游戏下载的 {count} 个模组已加入你的模组文件夹（未分类）"
+    },
+    "errors": {
+      "one": "无法整理 1 个文件夹：{list}。请查看日志。",
+      "other": "无法整理 {count} 个文件夹：{list}。请查看日志。"
+    },
+    "reshaped": {
+      "one": "1 个模组已被解压或重新打包：配置会跟随其新形式（{list}）",
+      "other": "{count} 个模组已被解压或重新打包：配置会跟随其新形式（{list}）"
+    }
+  },
+  "rights": {
+    "title": "其他驱动器上模组所需的权限",
+    "intro": "为了让存储在其他驱动器上的模组加入配置，FS Passion 会创建符号链接。Windows 只在开启开发者模式或拥有管理员权限时才允许这样做，而两者目前都未启用。",
+    "standard": "你的 Windows 账户是标准账户：获取管理员权限会让 FS Passion 在另一个账户下运行，使用不同的文件夹和设置。开发者模式才是正确的选择。",
+    "admin_title": "始终以管理员身份运行 FS Passion",
+    "admin_text": "FS Passion 会仅为你的账户勾选“以管理员身份运行此程序”（属性 → 兼容性），然后重启。影响：",
+    "uac": "每次启动 FS Passion 时 Windows 都会要求确认。",
+    "game_normal": "游戏及其平台仍通过 Windows 资源管理器以普通权限启动。启动参数照常通过平台（Steam、Epic Games）传递。",
+    "no_drop": "Windows 会阻止从资源管理器将文件拖到 FS Passion 上。目前没有影响：FS Passion 不使用此操作。",
+    "dev_title": "或者：开启 Windows 开发者模式",
+    "dev_text": "Windows 设置 → 系统 → 开发者选项 → “开发者模式”。对 FS Passion 没有其他影响。然后回到这里，点击“重新检查”。",
+    "without": "没有这些权限时，附加文件夹仍会保存：其中的模组会列出，但不会加入任何配置。",
+    "later": "以后再说",
+    "dev_mode": "打开开发者模式",
+    "admin": "始终以管理员身份运行",
+    "missing": "Windows 拒绝符号链接：其他驱动器上的模组会列出，但不会加入任何配置。",
+    "get": "获取权限…",
+    "check": "重新检查",
+    "ok": "已允许符号链接（FS Passion 以管理员身份运行）：其他驱动器上的模组会加入配置。",
+    "ok_dev": "已允许符号链接（Windows 开发者模式）：其他驱动器上的模组会加入配置。",
+    "unknown": "尚未检查符号链接权限。",
+    "admin_on": "FS Passion 已设为始终以管理员身份运行。",
+    "admin_off": "不再以管理员身份运行",
+    "restarting": "FS Passion 正在以管理员身份重启。请在 Windows 提示中确认。",
+    "now_ok": "已允许符号链接：请重新应用配置，让其他驱动器上的模组加入。",
+    "still_missing": "Windows 仍然拒绝符号链接。",
+    "flag_failed": "无法更改“以管理员身份运行”设置。",
+    "ok_plain": "已允许符号链接：其他驱动器上的模组会加入配置。",
+    "admin_once_title": "以管理员身份重启 FS Passion",
+    "admin_once_text": "FS Passion 仅此一次以管理员身份重启；每次启动都需要重新操作。开发者模式可以避免这一点。影响：",
+    "admin_once": "以管理员身份重启"
+  },
+  "older": {
+    "title": "游戏下载了旧版本",
+    "intro": {
+      "one": "游戏下载了一个版本号比你的旧的模组。它已被暂存，未替换任何内容。你想怎么做？",
+      "other": "游戏下载了 {count} 个版本号比你的旧的模组。它们已被暂存，未替换任何内容。你想怎么做？"
+    },
+    "versions": "你的版本：{mine} · 游戏下载的版本：{game}",
+    "keep": "保留我的版本（{version}）",
+    "use": "使用游戏的版本（{version}）",
+    "use_tip": "游戏的版本将在模组文件夹中取代你的版本；你的版本会暂存到“Old versions”。所有配置都会跟随。",
+    "help": "这通常是你修改过的模组：ModHub 不比较版本号，只提供其原版。无论如何都不会删除任何内容：你未保留的文件会留在配置旁的“Recovered”或“Old versions”文件夹中。",
+    "later": "以后再说",
+    "gone": "此文件已不在“Recovered”文件夹中：未做任何更改。",
+    "failed": "无法放置 {name} 的游戏版本（{detail}）。你的版本未改变。"
+  },
+  "stop": {
+    "running": "请先关闭 {game}：必须在游戏关闭时恢复其设置。",
+    "folders_failed": "无法删除配置文件夹。",
+    "closed": "FS Passion 已关闭。游戏已恢复原始设置。",
+    "export_first": "继续之前，请导出你的配置：如果你以后再用 FS Passion，就能找回你的配置。",
+    "intro": "FS Passion 将恢复游戏的原始设置，然后移除配置文件夹（其中只有链接）：",
+    "no_version": "未配置任何游戏版本：没有需要恢复的内容。",
+    "mods_safe": "你的模组文件夹绝不会被改动，存放暂存模组的“Old versions”和“Recovered”也不会。",
+    "admin_flag": "FS Passion 设置的“以管理员身份运行此程序”将被移除。",
+    "understand": "我了解：游戏将不再加载 FS Passion 的配置。",
+    "plan": {
+      "restore": "游戏将重新加载其原始文件夹：{dir}",
+      "deactivate": "自定义模组文件夹已关闭：游戏回到其常规的“mods”文件夹。",
+      "missing": "未找到 gameSettings.xml：没有需要恢复的内容。",
+      "none": "游戏设置已是原始状态。",
+      "folders": {
+        "one": "移除 {count} 个配置文件夹",
+        "other": "移除 {count} 个配置文件夹"
+      },
+      "kept": {
+        "one": "保留“{name}”（{count} 个文件）。",
+        "other": "保留“{name}”（{count} 个文件）。"
+      }
+    },
+    "options": {
+      "title": "同时删除：",
+      "parties": "配置和公共模组（parties.json）",
+      "caches": "缓存（转换后的图标、DLC 目录）",
+      "settings": "FS Passion 设置",
+      "logs": "日志",
+      "langs": "个人语言"
+    },
+    "done": {
+      "title": "已停止使用 FS Passion",
+      "text": "完成。游戏已恢复原始设置。",
+      "partial": "已完成，但至少有一个版本例外：见下文。详情见日志。",
+      "version": {
+        "zero": "已恢复原始设置",
+        "one": "已恢复原始设置，已移除 {count} 个配置文件夹",
+        "other": "已恢复原始设置，已移除 {count} 个配置文件夹"
+      },
+      "set_aside": {
+        "one": "在配置文件夹中发现的 {count} 个文件已暂存到“Recovered”。",
+        "other": "在配置文件夹中发现的 {count} 个文件已暂存到“Recovered”。"
+      },
+      "close": "关闭 FS Passion",
+      "uninstaller": "然后开始卸载 FS Passion",
+      "error": {
+        "override": "游戏设置未恢复（无法修改 gameSettings.xml）；配置文件夹已保留",
+        "folders": "已恢复原始设置，但无法删除配置文件夹"
+      }
+    },
+    "stopped": "已停止使用 FS Passion：请关闭它。"
+  },
+  "tour": {
+    "button": "导览",
+    "title": "导览",
+    "count": "{n} / {total}",
+    "prev": "上一步",
+    "next": "下一步",
+    "replay": "重新播放",
+    "finish": "完成",
+    "quit": "退出导览",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "来一次导览？",
+      "body": "点击灯泡：一分钟内，FS Passion 会向你展示其界面的要点。灯泡会一直在那里，随时可以重新导览。",
+      "start": "开始导览",
+      "later": "以后再说"
+    },
+    "versions": {
+      "caption": "你的游戏版本",
+      "body": "将鼠标悬停在此标志上：会出现 Farming Simulator 的各个版本。点击你要管理的版本。\n未安装的版本显示为灰色。每个版本都有自己的模组和配置。",
+      "picked": "已选中：显示其模组和配置"
+    },
+    "parties": {
+      "caption": "你的配置：FS Passion 的核心",
+      "body": "点击一次即可从一个配置切换到另一个：其地图和所有依赖项都会随之切换。\n完整配置：你的全部模组，用于在游戏中更新它们。\n空配置：不含模组，用于测试原版游戏。",
+      "full_tip": "全部模组：用于在游戏中更新模组",
+      "empty_tip": "无模组：用于测试原版游戏"
+    },
+    "tools": {
+      "caption": "新建、复制、重命名、删除",
+      "body": "对所选配置的操作。\n提示：在“全部模组”中的地图上，“＋ 配置”按钮可一键创建包含该地图及其所有依赖项的配置。"
+    },
+    "common": {
+      "caption": "公共模组",
+      "body": "你希望在所有配置中都有的车辆、农具和玩法脚本。\n它们默认开启；如有需要，可只在某个配置中关闭。",
+      "on": "此配置包含公共模组",
+      "off": "仅在此配置中关闭"
+    },
+    "apply": {
+      "caption": "应用",
+      "body": "应用所选配置：游戏下次启动时会加载它。\n只要所选配置尚未应用，按钮就会亮起。",
+      "done": "已应用：游戏下次启动时会加载它"
+    },
+    "buttons": {
+      "caption": "主题、通知、设置",
+      "body": "浅色或深色界面、消息历史、设置……还有灯泡，可随时重新导览。",
+      "theme": "浅色或深色界面"
+    },
+    "list1": {
+      "caption": "全部模组",
+      "body": "你的整个模组文件夹，按类别排列：DLC、地图、其他模组……\n无论你在其他列表中做什么，模组始终留在这里。“未分类”的模组不在任何列表中：游戏看不到它们。\n[Ctrl] + [F]：搜索模组或作者。",
+      "search_tip": "搜索：Ctrl + F"
+    },
+    "downloads": {
+      "caption": "刚下载的模组",
+      "body": "此按钮会在你的下载文件夹中查找刚下载的模组。\nFS Passion 会识别每个模组的游戏版本，并在你同意后将其放入正确的模组文件夹。\n启动时也会这样做：参见 设置 → 应用程序 → 下载。",
+      "found": "每个模组都会进入其游戏版本的模组文件夹"
+    },
+    "list2": {
+      "caption": "配置中的模组",
+      "body": "所选配置的模组：其地图、依赖项和专属模组。\n游戏会在公共模组之外加载它们。"
+    },
+    "list3": {
+      "caption": "公共模组",
+      "body": "存在于你所有配置中的模组：拖拉机、农具、脚本……\n在这里归类一次：每个配置都会获得它们。"
+    },
+    "select": {
+      "caption": "多选",
+      "body": "[Ctrl] + 点击：将模组加入或移出选择。\n[Shift] + 点击：选择一整段范围。\n[Ctrl] + [A]：选择列表中的全部内容；[Esc]：清除选择。\n一旦选中模组，底部就会出现操作栏。"
+    },
+    "move": {
+      "caption": "拖放",
+      "body": "拖到“配置中的模组”或“公共模组”：这是复制，模组仍留在“全部模组”中。\n在这两个列表之间：这是移动。放下时按住 [Ctrl] 即为复制。\n拖到“全部模组”，或按 [Del] 键：将模组从列表中移除。其文件绝不会被删除。",
+      "copy": "复制",
+      "move": "移动 · [Ctrl]：复制",
+      "remove": "从列表中移除 · [Del]"
+    },
+    "keys": {
+      "caption": "键盘快捷键",
+      "body": "提高效率：",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "搜索模组或作者"
+        },
+        {
+          "k": "[Ctrl] + 点击",
+          "d": "将模组加入或移出选择"
+        },
+        {
+          "k": "[Shift] + 点击",
+          "d": "选择一段模组"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "选择列表中的全部内容"
+        },
+        {
+          "k": "[Esc]",
+          "d": "清除选择，或取消拖动"
+        },
+        {
+          "k": "放下时按 [Ctrl]",
+          "d": "复制而非移动（列表 2 和 3 之间）"
+        },
+        {
+          "k": "[Del]",
+          "d": "从列表 2 或 3 中移除（文件保留）"
+        },
+        {
+          "k": "在地图上按 [Enter]",
+          "d": "用地图及其依赖项创建配置"
+        },
+        {
+          "k": "[F2]",
+          "d": "重命名模组"
+        },
+        {
+          "k": "[I]",
+          "d": "固定模组卡片"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "用键盘选择和移动"
+        }
+      ]
+    },
+    "close": {
+      "caption": "关闭但不退出",
+      "body": "叉号会关闭窗口，但 FS Passion 会继续在后台运行，位于时钟旁的通知区域。\n要恢复它：点击任务栏上的“^”箭头，然后点击 FS 图标。要真正关闭它：点击右下角的“退出”，或右键点击图标。\n你可以在 设置 → 应用程序 → 窗口 中更改此行为。",
+      "tip_close": "关闭：FS Passion 转到通知区域",
+      "tip_more": "显示隐藏的图标",
+      "tip_icon": "点击：FS Passion 回来 · 右键：退出"
+    },
+    "end": {
+      "caption": "轮到你了！",
+      "body": "随时可以用灯泡，或在 设置 → 帮助与关于 中重新导览。"
+    },
+    "demo": {
+      "parties": [
+        "绿谷 — 畜牧",
+        "丘陵 — 种植",
+        "南方稻田"
+      ],
+      "party_sub": {
+        "one": "地图 + {count} 个模组",
+        "other": "地图 + {count} 个模组"
+      },
+      "mods": [
+        "六缸拖拉机",
+        "联合收割机",
+        "6 米播种机",
+        "农用拖车",
+        "农具包",
+        "天气脚本"
+      ]
+    }
+  }
+}

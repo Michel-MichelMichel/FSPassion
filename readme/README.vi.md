@@ -18,7 +18,7 @@ Cốt lõi của FS Passion là giải quyết vấn đề này với hiệu qu�
 - **Hướng dẫn tham quan**: bóng đèn ở tiêu đề giới thiệu giao diện trong một phút với ví dụ hoạt hình (phiên bản, bộ cấu hình, danh sách, chọn nhiều, kéo và thả, phím tắt).
 - **Ngừng dùng FS Passion**: trò chơi trở lại cài đặt ban đầu, các thư mục bộ cấu hình bị gỡ bỏ; mod của bạn không bao giờ bị động đến.
 - **Giao diện** hai màu và các giao diện lấy cảm hứng từ những chủ đề phổ biến, tối và sáng (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Ngôn ngữ**: giao diện bằng 14 ngôn ngữ (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska), tự chọn theo ngôn ngữ của Windows và có thể đổi trong phần Cài đặt; bạn có thể thêm bản dịch của riêng mình. **Sắp có: thêm 12 ngôn ngữ**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **Ngôn ngữ**: giao diện bằng 26 ngôn ngữ (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文), tự chọn theo ngôn ngữ của Windows và có thể đổi trong phần Cài đặt; bạn có thể thêm bản dịch của riêng mình.
 - **Bản demo**: ứng dụng chỉ dành cho người sở hữu các trò chơi Farming Simulator. Nếu bạn tò mò và muốn thử tính năng mà không có trò chơi, có một gói trình diễn trong phần Cài đặt.
 
 > ⚠️ Dự án đang phát triển (phiên bản: xem trang [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Hãy sao lưu đầy đủ thư mục mod trước khi dùng thử. Trang GitHub này là nguồn tải xuống chính thức duy nhất.
@@ -55,17 +55,17 @@ Các tệp chưa được ký số: ở lần mở đầu tiên, Windows SmartSc
 Các bản dịch mới là phiên bản đầu tiên: rất hoan nghênh người bản ngữ góp ý sửa lỗi, cho các ngôn ngữ hiện có lẫn các ngôn ngữ sắp ra mắt. Bạn không cần biết lập trình, chỉ cần một trình soạn thảo văn bản (Notepad là đủ).
 
 1. Trong kho mã này, mở thư mục [`lang`](../lang/) và tải tệp ngôn ngữ của bạn (`vi.json`). Nếu tệp chưa có, hãy tải `en.json`.
-2. Đặt tệp vào thư mục ngôn ngữ cá nhân của bản cài đặt FS Passion (nút **Open the personal languages folder** trong Settings → Display → Language sẽ mở thư mục này):
+2. Đặt tệp vào thư mục ngôn ngữ cá nhân của bản cài đặt FS Passion (nút **Mở thư mục ngôn ngữ cá nhân** trong Cài đặt → Hiển thị → Ngôn ngữ sẽ mở thư mục này):
    - bản cài đặt: `%APPDATA%\FSPassion\lang\`;
    - bản di động: `data\lang\`, cạnh `FSPassion.exe`.
 3. Đổi tên tệp, ví dụ `vi_corrected.json` (tên không được bắt đầu bằng `_`). Đừng sửa dòng `"code"` ở đầu tệp: khi đó tệp của bạn sẽ thay thế ngôn ngữ có sẵn. Nếu bạn bắt đầu từ `en.json`: ghi `"vi"` vào dòng `"code"` và `"Tiếng Việt"` vào dòng `"name"`.
 4. Sửa các đoạn văn bản trong dấu ngoặc kép, ở bên phải dấu `:`, rồi lưu tệp (mã hóa UTF-8). Giữ nguyên các khóa ở bên trái và các từ trong dấu ngoặc nhọn như `{count}`.
-5. Khởi động lại FS Passion và chọn ngôn ngữ của bạn trong Settings → Display → Language: ngôn ngữ đó được đánh dấu “personal”. Kiểm tra các chỗ sửa trong giao diện.
+5. Khởi động lại FS Passion và chọn ngôn ngữ của bạn trong Cài đặt → Hiển thị → Ngôn ngữ: ngôn ngữ đó được đánh dấu “cá nhân”. Kiểm tra các chỗ sửa trong giao diện.
 6. Gửi tệp đã sửa trong thẻ [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): tạo một issue có tiêu đề ví dụ “Translation: Tiếng Việt” và đính kèm tệp (nén thành ZIP nếu GitHub không nhận đuôi `.json`).
 
 ## Báo lỗi, đề xuất ý tưởng
 
-Thẻ [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues). Khi gặp lỗi, hãy đính kèm nội dung của “Copy diagnostics” (Settings → Help and about → Logs and diagnostics).
+Thẻ [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues). Khi gặp lỗi, hãy đính kèm nội dung của “Sao chép chẩn đoán” (Cài đặt → Trợ giúp và giới thiệu → Nhật ký và chẩn đoán).
 
 ## Ủng hộ dự án
 
@@ -73,7 +73,7 @@ FS Passion là và sẽ luôn là một dự án đáng tin cậy, mã nguồn m
 
 ## Kết nối Internet
 
-FS Passion chỉ kết nối với GitHub để đọc danh mục DLC (tên và biểu tượng, kho công khai `FSPassion-data`), tối đa một lần mỗi ngày. Không có dữ liệu cá nhân nào được gửi đi. Cài đặt “Internet connection” (Settings → Application) sẽ tắt tính năng này. Ngoài ra, mỗi lần khởi động (sau đó mỗi ngày một lần), ứng dụng kiểm tra trên GitHub xem có phiên bản FS Passion mới không: cài đặt “FS Passion updates” (Settings → Application) sẽ tắt tính năng này.
+FS Passion chỉ kết nối với GitHub để đọc danh mục DLC (tên và biểu tượng, kho công khai `FSPassion-data`), tối đa một lần mỗi ngày. Không có dữ liệu cá nhân nào được gửi đi. Cài đặt “Kết nối Internet” (Cài đặt → Ứng dụng) sẽ tắt tính năng này. Ngoài ra, mỗi lần khởi động (sau đó mỗi ngày một lần), ứng dụng kiểm tra trên GitHub xem có phiên bản FS Passion mới không: cài đặt “Cập nhật FS Passion” (Cài đặt → Ứng dụng) sẽ tắt tính năng này.
 
 ## Giấy phép
 

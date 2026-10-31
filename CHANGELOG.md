@@ -1,6 +1,22 @@
 # Journal des versions
 
-Les versions sont numérotées 0.x.y.
+Les versions sont numérotées x.y.z : 0.x.y pendant le développement, 1.0.0 pour la version finale.
+
+## 1.0.0 — 31 octobre 2026 — version finale : l'interface en 26 langues
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+Dernière version du projet.
+
+### Ce qui change
+
+1. **12 nouvelles langues** pour toute l'interface (`lang/*.json`, environ 1 000 textes chacune, avec le guide, le tour guidé et les noms de démonstration) : magyar (`hu`), română (`ro`), русский (`ru`), українська (`uk`), Türkçe (`tr`), Tiếng Việt (`vi`), Bahasa Indonesia (`id`), español de Latinoamérica (`es-419`), 日本語 (`ja`), 한국어 (`ko`), 简体中文 (`zh-Hans`), 繁體中文 (`zh-Hant`). FS Passion compte maintenant 26 langues ; au premier lancement, il choisit celle de Windows (un Windows mexicain ou argentin reçoit l'espagnol d'Amérique latine).
+   - Pluriels complets : russe et ukrainien (1 / 2-4 / 5 et plus), roumain (1 / 2-19 / 20 et plus) ; vérifiés par `tests/test_export_langues.py`.
+   - Touches du clavier et guillemets selon l'usage de chaque langue (« … », „…”, 「…」, “…”).
+2. **Polices asiatiques** : le japonais, le coréen, le chinois simplifié et le chinois traditionnel s'affichent avec les polices FS Passion CJK (Sarasa Gothic réduite, déjà chargées seulement pour leur langue). La police du chinois simplifié a été refabriquée (`tools/build_cjk_fonts.py`) : deux caractères des nouveaux textes y manquaient (浏, 翡). Le russe, l'ukrainien, le vietnamien, le turc, le roumain et le hongrois sont couverts par Iosevka Etoile Compact.
+3. **Tour guidé** : en japonais et en chinois, les titres écrits à la main peuvent passer à la ligne entre deux caractères (ces langues n'ont pas d'espaces). En vietnamien, les titres gardent la police de l'interface : Caveat n'a pas les lettres vietnamiennes.
+4. **README** : les 26 langues sont listées ; la mention « bientôt : 12 autres langues » est retirée (`tools/readme_translations.py`, `README.md`, `readme/README.fr.md`, et les 24 traductions régénérées).
+5. Numéro de version : **1.0.0**.
 
 ## 0.9.12 — 30 octobre 2026 — avertissement avant d'envoyer des maps ou des mods déjà classés dans les Mods communs
 

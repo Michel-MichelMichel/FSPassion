@@ -18,7 +18,7 @@ Le cœur de FS Passion est de répondre à ce problème avec une efficacité dé
 - **Visite guidée** : l'ampoule de l'en-tête présente l'interface en une minute, avec des exemples animés (versions, parties, listes, sélection multiple, glisser-déposer, raccourcis clavier).
 - **Ne plus utiliser FS Passion** : le jeu retrouve son réglage d'origine, les dossiers de parties sont retirés ; vos mods ne sont jamais touchés.
 - **Thèmes** bicolores, et thèmes inspirés de thèmes populaires en sombre et en clair (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Langues** : interface en 14 langues (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska), choisie selon la langue de Windows et modifiable dans les Paramètres ; vous pouvez ajouter votre propre traduction. **Bientôt : 12 autres langues** : Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **Langues** : interface en 26 langues (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文), choisie selon la langue de Windows et modifiable dans les Paramètres ; vous pouvez ajouter votre propre traduction.
 - **Démo** : l'application s'adresse exclusivement aux possesseurs des jeux Farming Simulator. Si vous êtes un curieux qui veut tester les fonctionnalités de l'application sans posséder de jeu, un pack de démonstration est à votre disposition dans les Paramètres.
 
 > ⚠️ Projet en développement (version : voir la page [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Faites une sauvegarde complète de votre dossier de mods avant de l'essayer. Le seul lien officiel de téléchargement est cette page GitHub.
@@ -52,7 +52,7 @@ Les fichiers ne sont pas encore signés : au premier lancement, Windows peut aff
 
 ## Aider à améliorer les traductions
 
-Les traductions sont une première version : les corrections des locuteurs natifs sont les bienvenues, pour les langues actuelles comme pour celles à venir. Aucune connaissance en programmation n'est nécessaire, seulement un éditeur de texte (le Bloc-notes suffit).
+Les traductions sont une première version : les corrections des locuteurs natifs sont les bienvenues, dans toutes les langues. Aucune connaissance en programmation n'est nécessaire, seulement un éditeur de texte (le Bloc-notes suffit).
 
 1. Dans ce dépôt, ouvrez le dossier [`lang`](../lang/) et téléchargez le fichier de votre langue (`fr.json`). S'il n'existe pas encore, téléchargez `en.json`.
 2. Placez-le dans le dossier des langues personnelles de votre installation de FS Passion (le bouton **Ouvrir le dossier des langues personnelles**, dans Paramètres → Affichage → Langue, l'ouvre) :

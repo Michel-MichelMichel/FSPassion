@@ -18,7 +18,7 @@ FS Passion 的核心就是以驚人的效率解決這個問題：點幾下即可
 - **導覽**：標題列的燈泡用一分鐘介紹介面，搭配動畫範例（版本、配置、清單、多選、拖放、鍵盤快速鍵）。
 - **停止使用 FS Passion**：遊戲恢復原始設定，配置資料夾會被移除；你的模組絕不會被更動。
 - 雙色**主題**，以及受熱門主題啟發的深色與淺色主題（Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84）。
-- **語言**：介面支援 14 種語言（English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska），依 Windows 語言自動選擇，可在設定中變更；也可以加入自己的翻譯。 **即將推出：另外 12 種語言**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **語言**：介面支援 26 種語言（English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文），依 Windows 語言自動選擇，可在設定中變更；也可以加入自己的翻譯。
 - **示範**：本應用程式僅供 Farming Simulator 遊戲的擁有者使用。如果你感到好奇，想在沒有遊戲的情況下試用功能，可以在設定中使用示範套件。
 
 > ⚠️ 專案仍在開發中（版本：見 [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 頁面）。試用前請完整備份你的模組資料夾。此 GitHub 頁面是唯一的官方下載位置。
@@ -55,17 +55,17 @@ FS Passion 的核心就是以驚人的效率解決這個問題：點幾下即可
 翻譯目前還是第一版：非常歡迎母語使用者提供修正，現有語言和即將推出的語言都可以。不需要任何程式設計知識，只要一個文字編輯器（記事本就可以）。
 
 1. 在本儲存庫中開啟 [`lang`](../lang/) 資料夾，下載你的語言檔（`zh-Hant.json`）。如果還沒有，就下載 `en.json`。
-2. 把它放到 FS Passion 安裝的個人語言資料夾中（Settings → Display → Language 中的 **Open the personal languages folder** 按鈕可以開啟它）：
+2. 把它放到 FS Passion 安裝的個人語言資料夾中（設定 → 顯示 → 語言 中的 **開啟個人語言資料夾** 按鈕可以開啟它）：
    - 安裝版：`%APPDATA%\FSPassion\lang\`；
    - 可攜版：`FSPassion.exe` 旁邊的 `data\lang\`。
 3. 重新命名檔案，例如 `zh-Hant_corrected.json`（檔名不能以 `_` 開頭）。不要修改檔案開頭的 `"code"` 行：這樣你的檔案就會取代內建語言。如果從 `en.json` 開始：在 `"code"` 行寫 `"zh-Hant"`，在 `"name"` 行寫 `"繁體中文"`。
 4. 修改 `:` 右側引號中的文字，然後儲存檔案（UTF-8 編碼）。左側的鍵以及大括號中的詞（如 `{count}`）保持不變。
-5. 重新啟動 FS Passion，在 Settings → Display → Language 中選擇你的語言：它會標示為「personal」。在介面中檢查你的修正。
+5. 重新啟動 FS Passion，在 設定 → 顯示 → 語言 中選擇你的語言：它會標示為「個人」。在介面中檢查你的修正。
 6. 在 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 分頁提交修正後的檔案：建立一個 issue，標題例如「Translation: 繁體中文」，並附上檔案（如果 GitHub 不接受 `.json` 副檔名，請壓縮為 ZIP）。
 
 ## 回報問題、提出建議
 
-請前往 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 分頁。回報問題時，請附上「Copy diagnostics」（Settings → Help and about → Logs and diagnostics）中的文字。
+請前往 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 分頁。回報問題時，請附上「複製診斷資訊」（設定 → 幫助與關於 → 日誌與診斷）中的文字。
 
 ## 支持本專案
 
@@ -73,7 +73,7 @@ FS Passion 是且將始終是值得信賴、開源且免費的專案。向作者
 
 ## 網路連線
 
-FS Passion 只連線到 GitHub，用於讀取 DLC 目錄（名稱和圖示，公開儲存庫 `FSPassion-data`），每天最多一次。不會傳送任何個人資料。「Internet connection」設定（Settings → Application）可將其關閉。此外，每次啟動時（之後每天一次）會在 GitHub 上檢查 FS Passion 是否有新版本。「FS Passion updates」設定（Settings → Application）可將其關閉。
+FS Passion 只連線到 GitHub，用於讀取 DLC 目錄（名稱和圖示，公開儲存庫 `FSPassion-data`），每天最多一次。不會傳送任何個人資料。「網路連線」設定（設定 → 應用程式）可將其關閉。此外，每次啟動時（之後每天一次）會在 GitHub 上檢查 FS Passion 是否有新版本。「FS Passion 更新」設定（設定 → 應用程式）可將其關閉。
 
 ## 授權
 

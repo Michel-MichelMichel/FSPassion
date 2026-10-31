@@ -1,0 +1,1451 @@
+{
+  "_meta": {
+    "code": "hu",
+    "name": "Magyar",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "Az FS Passion bezárult",
+    "closed_help": "Ezt a lapot bezárhatod. A folytatáshoz indítsd újra az FS Passiont."
+  },
+  "common": {
+    "close": "Bezárás",
+    "cancel": "Mégse",
+    "ok": "OK",
+    "copy": "Másolás",
+    "copied": "Vágólapra másolva",
+    "soon": "A(z) {version} verzióban érkezik",
+    "soon_action": "{action}: a(z) {version} verzióban érkezik"
+  },
+  "window": {
+    "minimize": "Kis méret",
+    "maximize": "Teljes méret",
+    "restore": "Előző méret",
+    "close": "Az FS Passion bezárása"
+  },
+  "header": {
+    "settings": "Beállítások",
+    "version": "Játékverzió: {name}",
+    "current_party": "Jelenlegi összeállítás",
+    "create": "Összeállítás létrehozása",
+    "duplicate": "Összeállítás másolása",
+    "rename": "Összeállítás átnevezése",
+    "delete": "Összeállítás törlése",
+    "common_mods": "Közös modok",
+    "common_mods_tip": "A közös modok bevonása ebbe az összeállításba",
+    "apply": "Alkalmazás",
+    "apply_tip": "A játék ezt az összeállítást töltse be",
+    "apply_done_tip": "Ez az összeállítás alkalmazva van és naprakész: ezt tölti be a játék",
+    "theme_light": "Világos felület",
+    "theme_dark": "Sötét felület"
+  },
+  "versions": {
+    "coming": "Hamarosan",
+    "ready": "Beállítva",
+    "installed": "Telepítve",
+    "not_installed": "Nincs telepítve",
+    "absent_help": "Máshová telepítetted? Beállítások → Játék és elérési utak"
+  },
+  "party": {
+    "full": "Teljes összeállítás",
+    "empty": "Üres összeállítás",
+    "other": "Egyéni mappa",
+    "unsupported": "Nincsenek összeállítások",
+    "unknown": "Ismeretlen",
+    "none_yet": "Még nincs összeállítás. Hozz létre egyet a ＋ gombbal, vagy egy térképen a „＋ Összeállítás” gombbal.",
+    "full_count": {
+      "one": "Minden mod ({count})",
+      "other": "Minden mod ({count})"
+    },
+    "empty_sub": "Modok nélkül, az alapjáték kipróbálásához",
+    "applied_tag": "alkalmazva",
+    "mods_count": {
+      "zero": "Nincs mod",
+      "one": "{count} mod",
+      "other": "{count} mod"
+    },
+    "full_tip": "Ideális a modok játékon belüli frissítéséhez"
+  },
+  "status": {
+    "running": "A(z) {game} fut",
+    "other_folder": "A játék egy másik mappából tölti be a modokat:",
+    "applied": "Alkalmazott összeállítás: {name}",
+    "other_folder_path": "A játék egy másik mappát tölt be: {path}",
+    "stale": "Az összeállítás módosult a legutóbbi alkalmazás óta"
+  },
+  "path": {
+    "empty": "",
+    "found": "Megtalálva",
+    "not_found": "Ez a mappa nem létezik",
+    "not_game_exe": "Ez a fájl nem a(z) {game} futtatható fájlja",
+    "no_gamesettings": "A gameSettings.xml nem található: indítsd el egyszer a játékot, majd gyere vissza",
+    "not_ntfs": "Ez a meghajtó nem NTFS: összeállítások nem lehetségesek",
+    "onedrive": "Ez a mappa a OneDrive-ban van: nem ajánlott",
+    "storage_overlap": "Ez a mappa tartalmazza a fő modmappát (vagy annak FSPassion mappáját), vagy azon belül van: válassz másik mappát",
+    "storage_duplicate": "Ezt a mappát már a másik tárolómappa használja, vagy tartalmazza azt",
+    "storage_same_disk": "Megtalálva · ugyanaz a meghajtó, mint a fő mappáé: nincs szükség külön jogokra",
+    "storage_other_disk": "Megtalálva · másik meghajtó: szimbolikus hivatkozások"
+  },
+  "list1": {
+    "title": "Minden mod",
+    "search": "Mod vagy szerző keresése",
+    "search_clear": "Keresés törlése",
+    "cat_unclassified": "Besorolatlan",
+    "cat_dlc": "DLC",
+    "cat_maps": "Térképek",
+    "cat_others": "Egyéb modok",
+    "cat_by_author": "Szerző neve szerint",
+    "dlc_note": "A játék minden összeállításban betölti",
+    "selected": "kijelölve",
+    "active": "aktív",
+    "all": "összesen",
+    "scanning": "Modok beolvasása: {done} / {total}",
+    "icons_pending": {
+      "one": "Ikonok előkészítése: még {count}",
+      "other": "Ikonok előkészítése: még {count}"
+    },
+    "anomalies": {
+      "one": "{count} probléma: részletek",
+      "other": "{count} probléma: részletek"
+    },
+    "find_new": "Új modok keresése a letöltések között",
+    "open_settings": "Beállítások megnyitása",
+    "not_configured": "A(z) {game} még nincs beállítva",
+    "not_configured_help": "Add meg a modmappáját a beállításokban, vagy hagyd, hogy az FS Passion megkeresse a telepítést.",
+    "reading": "Modok beolvasása…",
+    "no_match": "Egy mod sem felel meg ennek: „{query}”",
+    "empty": "Ez a modmappa üres",
+    "empty_help": "Itt jelennek meg a modok (.zip) és a kicsomagolt modok (modDesc.xml-t tartalmazó mappák).",
+    "unclassified_note": "A játék nem látja őket, amíg nincsenek besorolva",
+    "plus_party": "Összeállítás",
+    "plus_party_tip": "Összeállítás létrehozása ezzel a térképpel és a függőségeivel (Enter)",
+    "mark_party": "A jelenlegi összeállításban",
+    "mark_common": "A közös modok között",
+    "info_tip": "A mod adatainak rögzítése (I billentyű)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "A modmappa nem található",
+      "unexpected": "A modok beolvasása sikertelen: {error}"
+    }
+  },
+  "mod": {
+    "map": "Térkép",
+    "unpacked": "Kicsomagolt mod",
+    "multiplayer": "Többjátékos",
+    "version": "Verzió",
+    "author": "Szerző",
+    "game_version": "Játék",
+    "gv_unknown": "Ismeretlen játékverzió",
+    "size": "Méret",
+    "kind": "Formátum",
+    "kind_dir": "Mappa (kicsomagolt)",
+    "kind_zip": ".zip archívum",
+    "parties": "Ezekben a listákban",
+    "parties_none": "Egyikben sem",
+    "storage": "Tárolás",
+    "dependencies": {
+      "one": "{count} függőség",
+      "other": "{count} függőség"
+    },
+    "more": {
+      "one": "és még {count}",
+      "other": "és még {count}"
+    },
+    "no_dependencies": "Nincs megadott függőség",
+    "unpacked_tip": "Kicsomagolt mod: a ModHub nem frissíti, és többjátékos módban nem használható. Az FS Passion soha nem ír bele.",
+    "gv_conflict": "A név előtagja és a descVersion két különböző verzióra utal: az előtag érvényes.",
+    "unpin": "Bezárás (Esc)",
+    "optional": {
+      "one": "{count} opcionális mod",
+      "other": "{count} opcionális mod"
+    },
+    "searchmods_note": "Régebbi játékverzió (SearchMods címke): a mentés akkor is betöltődik, ha egy szükséges mod hiányzik; a játék utána jelzi.",
+    "links_hint": "Kattints az „i”-re az adatok rögzítéséhez és a hivatkozások megnyitásához.",
+    "links_old": "A mod szerzője által megadott, gyakran régi hivatkozások: lehet, hogy az oldal már nem létezik.",
+    "link_open": "Megnyitás böngészőben",
+    "link_failed": "A hivatkozás nem nyitható meg."
+  },
+  "dep": {
+    "present": "megvan",
+    "absent": "hiányzik",
+    "dlc_owned": "DLC megvan",
+    "dlc_missing": "DLC nincs meg"
+  },
+  "dlc": {
+    "free": "Ingyenes DLC",
+    "paid": "DLC",
+    "info": "A játék mindig betölti a telepített DLC-ket, minden összeállításban."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "A(z) {game} nem támogatja az összeállításokat",
+    "missing": "Nincs a modmappákban",
+    "missing_tip": "{name} már nincs a modmappáidban. Ha a szerzője átnevezte, használd a „Csere erre…” lehetőséget.",
+    "replace": "Csere erre…"
+  },
+  "list2": {
+    "title": "Az összeállítás modjai",
+    "full": {
+      "one": "Teljes összeállítás: minden mod ({count})",
+      "other": "Teljes összeállítás: minden mod ({count})"
+    },
+    "full_help": "A játék a teljes modmappát betölti, mint az FS Passion előtt.",
+    "empty_party": "Üres összeállítás: nincs mod",
+    "empty_help": "Az alapjáték kipróbálásához, modok nélkül.",
+    "no_mods": "Ebben az összeállításban nincs mod",
+    "no_mods_help": "Húzz ide modokat a „Minden mod” listából, vagy jelöld ki őket, és használd a műveletsávot."
+  },
+  "list3": {
+    "title": "Közös modok",
+    "empty": "Még nincsenek közös modok",
+    "empty_help": "A közös modok minden összeállításban jelen vannak: traktorok, munkagépek, szkriptek…",
+    "not_included": "Ebbe az összeállításba nincsenek bevonva"
+  },
+  "footer": {
+    "github_tip": "A projekt GitHub-oldala",
+    "github_soon": "A projekt GitHub-címe hamarosan elérhető lesz",
+    "running": "A játék fut",
+    "launch": "Játék indítása",
+    "launch_unconfigured": "Add meg a(z) {game} futtatható fájlját a beállításokban",
+    "launch_tip": "A játék indítása az alkalmazott összeállítással",
+    "quit": "Kilépés"
+  },
+  "launch": {
+    "started": "A(z) {game} indítása…",
+    "failed": "A(z) {game} nem indítható. Ellenőrizd a futtatható fájlt és az indítási módot a beállításokban.",
+    "no_exe": "A(z) {game} futtatható fájlja nem található: add meg a beállításokban.",
+    "already_running": "A(z) {game} már fut.",
+    "apply_title": "Alkalmazod ezt: „{name}”?",
+    "apply_text": "A(z) „{name}” összeállítás nincs alkalmazva, vagy azóta módosult. Alkalmazod a(z) {name} összeállítást, majd elindítod a(z) {game} játékot?",
+    "apply_and_launch": "Alkalmazás és indítás",
+    "without_apply": "Indítás alkalmazás nélkül"
+  },
+  "backup": {
+    "created": "Elkészült a gameSettings.xml eredeti biztonsági másolata ehhez: {game}",
+    "exported": "Konfiguráció exportálva: {file}",
+    "demo_active": "Előbb lépj ki a bemutató módból: az nem a te mappáidat használja.",
+    "unreadable": "Ez a fájl nem olvasható: {path}",
+    "too_big": "Ez a fájl túl nagy ahhoz, hogy FS Passion-export legyen: {path}",
+    "not_export": "Ez a fájl nem FS Passion-export: {path}",
+    "too_new": "Ez a fájl az FS Passion egy újabb verziójából származik ({version}). Frissítsd az FS Passiont az importáláshoz.",
+    "write_failed": "A fájl nem menthető: {path}",
+    "expired": "Az importálás lejárt: válaszd ki újra a fájlt.",
+    "running": "Importálás előtt zárd be a(z) {game} játékot: az összeállításai módosulni fognak.",
+    "import": {
+      "title": "Konfiguráció importálása",
+      "from": "Export: {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} összeállítás",
+        "other": "{count} összeállítás"
+      },
+      "common": {
+        "one": "{count} közös mod",
+        "other": "{count} közös mod"
+      },
+      "no_parties": "Ez a fájl nem tartalmaz összeállítást: csak a beállítások kerülnek importálásra.",
+      "keep": "A jelenlegi elérési utak megtartása (ajánlott)",
+      "keep_help": "A gép játék-, mod- és letöltési mappái nem változnak. Csak az összeállítások, a közös modok és a semleges beállítások (nyelv, téma, opciók) kerülnek importálásra.",
+      "replace_help": "A fájl elérési útjai lecserélik ennek a gépnek az útjait: csak akkor válaszd, ha a fájl erről a gépről származik, ugyanazokkal a meghajtókkal.",
+      "paths_differ": "A fájlban lévő modmappák nem ennek a gépnek a mappái.",
+      "warning": "A fenti verziók jelenlegi összeállításai lecserélődnek. A jelenlegi állapotról előbb automatikus mentés készül. Semmi nem lesz alkalmazva: az összeállítások mappái a következő „Alkalmazás”-kor épülnek újra.",
+      "ok": "Importálás"
+    },
+    "result": {
+      "title": "Konfiguráció importálva",
+      "done": "Az importálás befejeződött.",
+      "parties": {
+        "one": "{count} összeállítás importálva",
+        "other": "{count} összeállítás importálva"
+      },
+      "skipped": "nem importálva (a játékverzió nincs beállítva ezen a gépen)",
+      "fallback": "A játék egy már nem létező összeállítást töltött be: mostantól a Teljes összeállítást tölti be.",
+      "apply": "Az ezen a gépen hiányzó modok hiányzó modként jelennek meg az összeállításokban. Kattints az „Alkalmazás” gombra, hogy a játék betöltsön egy importált összeállítást.",
+      "backup": "Az importálás előtti állapot mentve: %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Beállítások",
+    "game": {
+      "title": "Játék és elérési utak"
+    },
+    "look": {
+      "title": "Megjelenés"
+    },
+    "app": {
+      "title": "Alkalmazás"
+    },
+    "help": {
+      "title": "Súgó és névjegy"
+    },
+    "paths": {
+      "versions": "Játékverziók",
+      "game_exe": "A játék futtatható fájlja",
+      "user_dir": "A játék mappája a Dokumentumokban",
+      "mods_dir": "Fő modmappa",
+      "mods_dirs": "Modmappák",
+      "browse": "Tallózás…",
+      "fixed_fs2011": "Az FS2011 modmappája nem helyezhető át.",
+      "add_storage": "Modmappa hozzáadása egy másik meghajtón",
+      "derived": "Származtatott elérési utak",
+      "not_applicable": "Erre a verzióra nem vonatkozik",
+      "d_game_dir": "A játék mappája",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (játékmappa)",
+      "d_dlc_user": "DLC (Dokumentumok)",
+      "detect": "Telepítés keresése",
+      "detect_all": "Minden verzió keresése",
+      "detect_all_help": "Megkeresi minden verzió telepítését, és kitölti az üres mezőiket.",
+      "detect_one": "Ennek a verziónak a keresése",
+      "detect_one_help": "Csak a fent kiválasztott verziót módosítja. A többi verzió változatlan marad.",
+      "detect_help": "Az általad módosított mezők sosem változnak.",
+      "detect_found": "Talált telepítések: {list}",
+      "detect_none": "Nem található telepítés. Add meg az elérési utakat a „Tallózás…” gombbal.",
+      "launch_method": "A játék indítási módja",
+      "launch_auto": "Automatikus",
+      "launch_platform": "Platform",
+      "launch_exe": "Futtatható fájl",
+      "launch_help": "Az Automatikus a megfelelő módot választja (Steam, Epic Games, Microsoft Store, Xbox vagy futtatható fájl). A másik kettő tartalék megoldás.",
+      "minimize_on_launch": "Az FS Passion kis méretre állítása a játék indításakor",
+      "minimize_on_launch_help": "Az értesítési területre, ha a „Bezárás az értesítési területre” be van kapcsolva (Alkalmazás → Ablak), egyébként a tálcára.",
+      "args_title": "Indítási paraméterek",
+      "args_show": "Indítási paraméterek megjelenítése",
+      "args_hide": "Indítási paraméterek elrejtése",
+      "args_skip": "Bevezető videó kihagyása",
+      "args_skip_info": "Kihagyja a bevezető videót és a nyitóképernyőket.",
+      "args_cheats": "Fejlesztői konzol",
+      "args_cheats_info": "Bekapcsolja a játékon belüli fejlesztői konzolt. A gameSettings.xml melletti game.xml fájlban is beállítja a <controls> elemet.",
+      "args_game_xml_absent": "A game.xml nem található: a konzol csak a játék első indítása után kapcsol be.",
+      "args_game_xml_error": "A game.xml nem módosítható: a fejlesztői konzol kikapcsolva marad.",
+      "args_help_command": "Az FS Passion hozzáadja őket a(z) {game} indítási parancsához.",
+      "args_help_steam": "A(z) {game} játékot a Steam indítja. A Steam elutasítja a más program által átadott paramétereket (minden indításkor megerősítést kérne), ezért az FS Passion nélkülük indítja a játékot. Add meg őket egyszer a Steamben, lent.",
+      "args_help_epic": "A(z) {game} játékot az Epic Games indítja, amely nem fogad el paramétereket más programtól: add meg őket egyszer az Epic Games Launcherben, lent.",
+      "args_help_unsupported": "A(z) {game} a Microsoft Store-ból vagy az Xboxról van telepítve.",
+      "args_store": "A Microsoft Store és az Xbox alkalmazás nem enged indítási paramétereket: csak a fejlesztői konzol (game.xml) kapcsolható be. Paraméterekhez válaszd a „Futtatható fájl” indítási módot, ha a telepítésed lehetővé teszi.",
+      "args_steam_where": "Hol add meg őket a Steamben",
+      "args_steam_steps": "Steam-könyvtár: jobb kattintás a(z) {game} játékon → Tulajdonságok…\nÁltalános lap → „Indítási beállítások” mező\nIlleszd be a lenti szöveget, majd zárd be az ablakot",
+      "args_epic_where": "Hol add meg őket az Epic Games Launcherben",
+      "args_epic_steps": "Könyvtár: „…” a(z) {game} alatt → Kezelés\nJelöld be a „További parancssori argumentumok” lehetőséget\nIlleszd be a lenti szöveget (régebbi launcherekben: profilkép → Beállítások → {game})",
+      "args_none": "Nincs bejelölt paraméter",
+      "args_copy_label": "Másolandó paraméterek",
+      "args_copy_help": "Csak akkor kell újra, ha bejelölsz vagy kiveszel egy paramétert.",
+      "console_on": "Konzol bekapcsolva a game.xml-ben",
+      "console_off": "Konzol kikapcsolva a game.xml-ben",
+      "console_enable": "Bekapcsolás a game.xml-ben",
+      "console_done": "Fejlesztői konzol bekapcsolva a game.xml-ben ehhez: {game}",
+      "add_storage_help": "Legfeljebb két további mappa. A modjaik megjelennek a listában, és a többihez hasonlóan bekerülnek az összeállításokba; az FS Passion semmi mást nem ír oda.",
+      "extra_dir": "További modmappa",
+      "extra_help": "A mappa eltávolítása nem érinti a modjait: egyszerűen nem jelennek meg többé.",
+      "remove_storage": "A mappa eltávolítása a listából (a modjait nem érinti)"
+    },
+    "downloads": {
+      "title": "Letöltések",
+      "folder": "Letöltések mappa",
+      "help": "A mappa, ahová a böngésződ a letöltött modokat menti.",
+      "scan_at_start": "Új modok keresése indításkor",
+      "scan_now": "Keresés most"
+    },
+    "language": {
+      "title": "Nyelv",
+      "personal": "saját",
+      "open_folder": "A saját nyelvek mappájának megnyitása",
+      "personal_help": "Itt lefordíthatod az FS Passiont a saját nyelvedre: sablont és útmutatót is találsz.",
+      "rejected": "Figyelmen kívül hagyott nyelvi fájlok (érvénytelenek vagy túl nagyok): {list}"
+    },
+    "theme": {
+      "title": "Téma",
+      "help": "Vidd az egeret egy mintára az előnézethez, kattints a kiválasztáshoz. A kétszínű témáknak csak két színük van; a többi népszerű témák hivatalos színeit használja, mindegyik sötét és világos változatban. A fejléc nap/hold gombja vált köztük.",
+      "contrast": "Kontraszt {ratio}:1",
+      "loop": "Témaforgó: témaváltás percenként",
+      "light_effects": "Fényeffektusok (csillogás, izzó körvonalak, neon)",
+      "reduce_motion": "Animációk csökkentése",
+      "follows_windows": "A Windows „Animációs effektusok” beállítását követi.",
+      "follow_windows": "A Windows beállításának követése",
+      "atelier": "A témaműhely megnyitása",
+      "mode_dark": "Sötét",
+      "mode_light": "Világos",
+      "group_duo": "Kétszínű"
+    },
+    "backup": {
+      "title": "Konfiguráció mentése",
+      "help": "Exportáld fájlba az összeállításaidat, a közös modokat és a beállításokat, hogy újratelepítés után vagy egy másik gépen visszakapd őket. Modot nem másol: csak a neveiket.",
+      "export": "Exportálás",
+      "import": "Importálás"
+    },
+    "notice": {
+      "title": "Útmutató",
+      "open": "Az útmutató megnyitása",
+      "at_start": "Megjelenítés indításkor",
+      "tour": "A felület bemutatása"
+    },
+    "anomalies": {
+      "title": "Problémák",
+      "show": "Problémák megjelenítése",
+      "reset": {
+        "zero": "Nincs elrejtett probléma",
+        "one": "Az elrejtett probléma újbóli megjelenítése",
+        "other": "A(z) {count} elrejtett probléma újbóli megjelenítése"
+      },
+      "reset_done": "Az elrejtett problémák ismét láthatók"
+    },
+    "internet": {
+      "title": "Internetkapcsolat",
+      "allow": "Az FS Passion letöltheti a DLC-katalógust a GitHubról",
+      "help": "A DLC-katalógust (nevek és ikonok) naponta legfeljebb egyszer olvassa a GitHubról. Csak az ezen a gépen lévő DLC-k ikonjait tölti le. Személyes adatot nem küld.",
+      "catalog_off": "DLC-katalógus: az FS Passionnel szállított (kapcsolat kikapcsolva).",
+      "catalog_remote": "{date} keltezésű DLC-katalógus, a GitHubról letöltve.",
+      "catalog_embedded": "{date} keltezésű DLC-katalógus, az FS Passionnel szállítva.",
+      "check": "Ellenőrzés most",
+      "checking": "Ellenőrzés…",
+      "error_not_found": "A katalógus még nincs közzétéve a GitHubon.",
+      "error_unreachable": "A legutóbbi ellenőrzés sikertelen (nincs kapcsolat?).",
+      "error_invalid": "A közzétett katalógus nem olvasható: az FS Passion saját katalógusa van használatban.",
+      "error_too_new": "A közzétett katalógushoz az FS Passion újabb verziója kell.",
+      "error_too_big": "A közzétett katalógus túl nagy: figyelmen kívül hagyva."
+    },
+    "updates": {
+      "title": "FS Passion-frissítések",
+      "allow": "FS Passion-frissítések keresése a GitHubon",
+      "help": "Minden indításkor (majd naponta egyszer, amíg nyitva van) az FS Passion beolvassa a GitHubról a legújabb közzétett verzió számát. Személyes adatot nem küld.",
+      "off": "A frissítéskeresés ki van kapcsolva.",
+      "checking": "Ellenőrzés…",
+      "last_check": "Utolsó ellenőrzés: {date}.",
+      "up_to_date": "Az FS Passion naprakész ({version}. verzió).",
+      "never": "Telepített verzió: {version}.",
+      "available": "Új verzió érhető el: {version}",
+      "published": "Megjelent: {date}",
+      "current": "Telepített verzió: {version}",
+      "install": "A frissítés telepítése",
+      "download_portable": "A hordozható verzió letöltése",
+      "downloading": "Letöltés… {percent}%",
+      "closing": "Telepítés…",
+      "closing_help": "Az FS Passion bezárul, telepíti az új verziót, majd újra megnyílik.",
+      "see_release": "Újdonságok",
+      "check": "Ellenőrzés most",
+      "how_installed": "A telepítő letöltődik a GitHubról, és ellenőrzésre kerül (SHA-256 ellenőrzőösszeg). Az FS Passion a telepítés idejére bezárul, majd újra megnyílik. A beállításaid, összeállításaid és modjaid megmaradnak.",
+      "how_portable": "A .zip fájl letöltődik és ellenőrzésre kerül a letöltések mappában. Zárd be az FS Passiont, majd cseréld le a mappájában lévő fájlokat a .zip tartalmára, a „data” mappát (a beállításaidat) megtartva.",
+      "how_source": "Töltsd le az új verziót a GitHub-oldaláról.",
+      "note": "Új FS Passion-verzió érhető el: {version}",
+      "pill": "Új verzió: {version}",
+      "pill_tip": "FS Passion-frissítés érhető el: Beállítások → Alkalmazás",
+      "portable_ready": "A hordozható verzió letöltve és ellenőrizve: {file}",
+      "error_not_found": "Még nincs közzétett verzió a GitHubon.",
+      "error_unreachable": "Az ellenőrzés sikertelen (nincs kapcsolat?).",
+      "error_rate_limited": "A GitHub egyelőre korlátozza az ellenőrzéseket: később újra próbálkozik.",
+      "error_invalid": "A GitHubon lévő kiadás nem olvasható.",
+      "error_no_source": "Hiányzik a GitHub-tároló címe.",
+      "error_checksum": "A letöltött fájl nem egyezik az ellenőrzőösszegével: törölve, semmi nincs telepítve.",
+      "error_no_checksum": "A kiadás nem ad SHA-256 ellenőrzőösszeget ehhez a fájlhoz: a biztonság kedvéért semmi nincs telepítve.",
+      "error_missing_file": "Ez a kiadás nem tartalmazza a várt fájlt: töltsd le a GitHub-oldaláról.",
+      "error_disabled": "A frissítéskeresés ki van kapcsolva.",
+      "error_busy": "Már folyamatban van egy letöltés.",
+      "error_none": "Nincs telepítendő frissítés.",
+      "error_unsupported": "Az automatikus telepítés itt nem lehetséges: töltsd le a frissítést a GitHub-oldaláról.",
+      "error_launch": "A telepítő nem indítható: töltsd le a frissítést a GitHub-oldaláról.",
+      "error_game_running": "Előbb zárd be a Farming Simulatort: az FS Passion a játék bezárásakor rendezi az összeállításaidat."
+    },
+    "logs": {
+      "title": "Naplók és diagnosztika",
+      "open_logs": "A naplók mappájának megnyitása",
+      "copy_diag": "Diagnosztika másolása",
+      "diag_copied": "Diagnosztika másolva: illeszd be a hibajelentésedbe"
+    },
+    "donate": {
+      "title": "A projekt támogatása",
+      "text": "Az FS Passion megbízható, nyílt forráskódú és ingyenes projekt, és az is marad. Ha szeretnéd megköszönni a szerzőnek, egy egyszeri adomány néhány másodperc, fiók létrehozása nélkül. Köszönöm!",
+      "no_link": "A hivatkozás hamarosan érkezik"
+    },
+    "about": {
+      "title": "Névjegy",
+      "version": "Verzió",
+      "author": "Szerző",
+      "license": "Licenc",
+      "github_soon": "a cím hamarosan érkezik",
+      "official": "Az egyetlen hivatalos letöltési hely a projekt GitHub-oldala.",
+      "unofficial": "Az FS Passion független projekt, nem kapcsolódik a GIANTS Software-hez. A Farming Simulator a GIANTS Software védjegye.",
+      "privacy": "Az FS Passion nem küld adatot. Csak letölti – ha engedélyezed – a nyilvános DLC-listát a GitHubról.",
+      "window_mode": "Ablaktechnika (fejlesztés)",
+      "window_native": "Natív",
+      "window_script": "Számított",
+      "window_thin": "Vékony keret",
+      "window_restart": "Az FS Passion következő indításakor lép érvénybe",
+      "window_help": "Jelenlegi technika: {current}. Csak akkor módosítsd, ha a szélek húzásával nem működik az átméretezés."
+    },
+    "stop": {
+      "title": "Az FS Passion használatának befejezése",
+      "show": "Részletek megjelenítése",
+      "hide": "Részletek elrejtése",
+      "text": "Visszaadja a játéknak az eredeti beállítását, és eltávolítja az összeállítások mappáit. A modjaidhoz soha nem nyúl.",
+      "button": "Az FS Passion használatának befejezése"
+    },
+    "window": {
+      "title": "Ablak",
+      "close_to_tray": "Bezárás az értesítési területre",
+      "close_to_tray_help": "Az ablak bezárás gombja a Windows órája mellé rejti az FS Passiont. Kattints az ikonjára a visszahozásához; a „Kilépés” (jobbra lent, vagy az ikon menüjében) valóban bezárja.",
+      "tray_off": "Az értesítési terület csak az FS Passion ablakában, Windowson érhető el.",
+      "focus_after_game": "Előtérbe hozás a játék bezárásakor",
+      "focus_after_game_help": "Amikor a Farming Simulator bezárul, az FS Passion újra megjelenik, akkor is, ha az értesítési területen volt elrejtve."
+    },
+    "demo": {
+      "title": "Kipróbálás játék nélkül",
+      "help": "Álmodok, hogy az FS Passion minden funkcióját kipróbálhasd egy tesztmappában: a valódi elérési utaid félre lesznek téve, és kilépéskor visszaállnak.",
+      "start": "Az FS Passion kipróbálása játék nélkül",
+      "active_help": "Bemutató mód aktív: ezek az elérési utak a tesztmappáé. A valódi elérési utaid kilépéskor visszatérnek."
+    }
+  },
+  "themes": {
+    "lime": "Lime",
+    "jade": "Jáde",
+    "cuivre": "Réz",
+    "blue": "Fehér"
+  },
+  "anomalies": {
+    "title": "Talált problémák",
+    "none": "Nincs probléma. Minden rendben.",
+    "intro": "A modmappád ezen elemeit a játék nem tudja így használni. Semmi komoly, és az FS Passion nem nyúl hozzájuk.",
+    "new": "új",
+    "hide_type": "Ez a problématípus ne jelenjen meg többé",
+    "hide_folder": "Ez a mappa ne jelenjen meg többé",
+    "rename": "Átnevezés…",
+    "others": {
+      "one": "Egyéb figyelmen kívül hagyott fájlok ({count})",
+      "other": "Egyéb figyelmen kívül hagyott fájlok ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar vagy .7z archívum",
+        "other": ".rar vagy .7z archívumok ({count})"
+      },
+      "explain": "A játék csak .zip fájlokat olvas. Csomagold ki az archívumot, majd szükség esetén tömörítsd újra a modot zip-be."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip modDesc.xml nélkül",
+        "other": ".zip fájlok modDesc.xml nélkül ({count})"
+      },
+      "explain": "Gyakran több mod csomagja, amelyet ki kell csomagolni.",
+      "nested": "modDesc.xml egy almappában található ({path}): a mod rosszul van tömörítve."
+    },
+    "A3": {
+      "title": {
+        "one": "Olvashatatlan archívum",
+        "other": "Olvashatatlan archívumok ({count})"
+      },
+      "explain": "Sérült archívum vagy érvénytelen modDesc.xml. Töltsd le újra a modot.",
+      "zip": "Az archívum nem nyitható meg.",
+      "xml": "A modDesc.xml fájl érvénytelen."
+    },
+    "A4": {
+      "title": {
+        "one": "Mappa modDesc.xml nélkül",
+        "other": "Mappák modDesc.xml nélkül ({count})"
+      },
+      "explain": "A gyökerében lévő modDesc.xml nélkül a játék nem tudja használni ezt a mappát. Az FS Passion soha nem nyúl hozzá."
+    },
+    "A5": {
+      "title": {
+        "one": "A játék által elutasított név",
+        "other": "A játék által elutasított nevek ({count})"
+      },
+      "explain": "A játék csak ékezet nélküli betűket, számjegyeket és „_” jelet fogad el.",
+      "suggestion": "Javasolt név: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod egy másik játékverzióhoz",
+        "other": "Modok egy másik játékverzióhoz ({count})"
+      },
+      "explain": "Ezt a modot a játék ezen verziója nem tölti be.",
+      "detected": "Mod ehhez: {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Hiányzó mod",
+        "other": "Hiányzó modok ({count})"
+      },
+      "explain": "Egy összeállítás hivatkozik erre a modra, de az már nincs a modmappákban.",
+      "in": "Itt: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Törölt, de még hivatkozott mod",
+        "other": "Törölt, de még hivatkozott modok ({count})"
+      },
+      "explain": "Ezt a modot törölték a modmappából, de néhány összeállítás még tartalmazza.",
+      "copy": "Egy másolat még létezik itt: {list}",
+      "delete_title": "Törlöd a megmaradt másolatot?",
+      "delete_text": "A(z) „{name}” utolsó, az összeállítások mappáiban még meglévő másolata a Lomtárba kerül, a mod pedig minden listából eltávolításra kerül."
+    },
+    "A9": {
+      "title": {
+        "one": "Duplikált mod",
+        "other": "Duplikált modok ({count})"
+      },
+      "explain": "Ugyanaz a mod kétszer van meg: két tárolómappában, vagy .zip-ként és mappaként egymás mellett. A játék csak az egyiket tölti be. Az FS Passion a fő mappában lévőt használja, és inkább az archívumot, mint a mappát.",
+      "zip_and_dir": "A(z) „{name}” .zip-ként és kicsomagolt mappaként is megvan: a játék csak az egyiket tölti be, és a ModHub nem tudja frissíteni. Tarts meg egyetlen formát (töröld a másikat a „Végleges törlés” paranccsal, vagy helyezd át a modmappán kívülre).",
+      "files": "Fájlok: {list}"
+    },
+    "game": "{game}",
+    "folder": "Modmappa: {path}",
+    "show_in_folder": "Megjelenítés a Fájlkezelőben",
+    "open_folder": "A modmappa megnyitása a Fájlkezelőben (a mod már nincs ott)"
+  },
+  "welcome": {
+    "subtitle": "A modjaid egyszer tárolva. Annyi összeállítás, amennyit csak szeretnél.",
+    "language": "Válassz nyelvet"
+  },
+  "notice": {
+    "title": "Hogyan működik az FS Passion",
+    "at_start": "Ez az ablak jelenjen meg az alkalmazás indításakor",
+    "understood": "Értem",
+    "blocks": [
+      {
+        "key": "Mindenekelőtt: javasoljuk, hogy készíts biztonsági másolatot az összes mododról egy másik meghajtóra. Ez elengedhetetlen, mint minden fontos fájlokkal végzett művelet előtt."
+      },
+      {
+        "h": "Az ötlet"
+      },
+      {
+        "p": "Az FS Passionnel gyorsan és egyszerűen hozhatsz létre annyi Farming Simulator-összeállítást, amennyit csak szeretnél, miközben a modjaidból egyetlen példány marad az eredeti mappájukban."
+      },
+      {
+        "p": "Válts összeállítások között 1 kattintással!"
+      },
+      {
+        "h": "Telepítés"
+      },
+      {
+        "p": "A modmappád bármelyik meghajtón lehet: az FS Passion alkalmazkodik. Semmit nem kell kézzel létrehozni, áthelyezni vagy átnevezni. Megtelt a meghajtó? Adj hozzá legfeljebb két modmappát más meghajtókon (Beállítások → Játék és elérési utak): a modjaik a többihez hasonlóan bekerülnek az összeállításokba."
+      },
+      {
+        "h": "Első használat"
+      },
+      {
+        "ul": [
+          "Hozd létre az összeállításaidat a térképeken található varázslatos „＋ Összeállítás” gombbal: a térkép és a függőségei egy kattintással összeállítássá válnak.",
+          "Ezután sorold a többi modot a közös modok közé, amelyek minden összeállításban jelen vannak.",
+          "Kattints az „Alkalmazás” gombra: a játék a következő indításkor a kiválasztott összeállítást tölti be."
+        ]
+      },
+      {
+        "h": "Modok hozzáadása, átnevezése, törlése"
+      },
+      {
+        "ul": [
+          "Új modok: töltsd le őket a szokásos módon, majd kattints a lista tetején az „Új modok keresése” gombra. Az FS Passion a megfelelő játékverzió modmappájába teszi őket.",
+          "A modokat az FS Passionben töröld (a műveletsáv „Végleges törlés” gombjával), ne a Fájlkezelőben: így egyszerre tűnnek el a listákból és az összeállításokból, és a Lomtárba kerülnek.",
+          "Egy mod átnevezése (F2 billentyű) leválasztja a ModHubról: többé nem kap frissítéseket."
+        ]
+      },
+      {
+        "h": "Frissítések"
+      },
+      {
+        "p": "Semmi teendő: a játék által letöltött frissítéseket a játék bezárásakor vagy az FS Passion következő indításakor veszi át. A régi verzió az „Old versions” mappába kerül. Ha a játék a tiédnél régebbi verziószámot tölt le (gyakran egy általad módosított mod), az FS Passion megkérdezi, melyiket tartsd meg."
+      },
+      {
+        "p": "Maga az FS Passion: amikor új verzió jelenik meg, egy pont látható a Beállítások fogaskerekén, és lent a verziószám mellett az „Új verzió” felirat. Beállítások → Alkalmazás → „A frissítés telepítése”."
+      },
+      {
+        "h": "Az összeállítások megőrzése"
+      },
+      {
+        "p": "Beállítások → Alkalmazás → „Exportálás” fájlba menti az összeállításaidat, a közös modokat és a beállításokat. Az „Importálás” visszahozza őket újratelepítés után vagy egy másik gépen."
+      },
+      {
+        "h": "Befejezés"
+      },
+      {
+        "p": "„Az FS Passion használatának befejezése” (Beállítások → Alkalmazás) visszaadja a játéknak az eredeti beállítását, és eltávolítja az összeállítások mappáit. A modjaidhoz soha nem nyúl."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Témaműhely",
+    "id": "Azonosító",
+    "name": "Név",
+    "dark": "Ablakháttér",
+    "light": "Domináns szín",
+    "mica": "Mica-ragyogás",
+    "grain": "Szemcsésség",
+    "effect": "Effektus",
+    "effect_none": "Nincs",
+    "effect_metal": "Fémes csillogás",
+    "intensity": "Erősség",
+    "save": "Mentés",
+    "copy": "Definíció másolása",
+    "new": "Új",
+    "copied": "Definíció másolva",
+    "saved": "Téma mentve: ui/themes.json",
+    "contrast_low": "Kontraszt {ratio}:1, 4.5:1 alatt. A kis szöveg színe {color} lesz.",
+    "contrast_ok": "Kontraszt {ratio}:1",
+    "mode": "Mód",
+    "mode_dark": "Sötét",
+    "mode_light": "Világos",
+    "text": "Szöveg",
+    "multi": "Több kiemelőszín (területenként egy)",
+    "accent_n": "Kiemelés {n}",
+    "pair": "Ikertéma (nap/hold)",
+    "pair_none": "Nincs",
+    "gradient": "Kétszínű színátmenet (címek, Alkalmazás és Indítás gombok)",
+    "gradient_from": "Színátmenet: kezdet",
+    "gradient_to": "Színátmenet: vég",
+    "style": "Stílus",
+    "style_duo": "Kétszínű",
+    "style_palette": "Hivatalos paletta",
+    "style_classic": "Számított fátylak",
+    "surface_1": "Ablakháttér",
+    "surface_2": "Listák és ablakok",
+    "surface_3": "Szakaszok",
+    "surface_4": "Alszakaszok",
+    "text_n": "Szöveg {n}",
+    "neon": "Neon",
+    "neon_help": "A címek, ikonok és körvonalak ragyogása az egyes területek színében (0: nincs effektus). A „Fényeffektusok” kikapcsolja."
+  },
+  "error": {
+    "bad_request": "Érvénytelen kérés.",
+    "forbidden": "Hozzáférés megtagadva.",
+    "not_found": "Az elem nem található.",
+    "unexpected": "Váratlan hiba. Másold ki a diagnosztikát (Beállítások → Súgó és névjegy), és csatold a hibajelentésedhez.",
+    "offline": "Az FS Passion magja nem válaszol.",
+    "internal": "Biztonsági okból elutasított művelet. Másold ki a diagnosztikát (Beállítások → Súgó és névjegy), és csatold a hibajelentésedhez."
+  },
+  "detect": {
+    "busy": "Már folyamatban van egy keresés."
+  },
+  "parties": {
+    "not_configured": "Összeállítások létrehozásához add meg a(z) {game} modmappáját a beállításokban.",
+    "name_label": "Az összeállítás neve",
+    "name_empty": "A név nem lehet üres.",
+    "name_too_long": "Legfeljebb {max} karakter.",
+    "name_taken": "Már van „{name}” nevű összeállítás.",
+    "special_locked": "A Teljes és az Üres összeállítás nem módosítható, nem nevezhető át, nem másolható és nem törölhető.",
+    "not_found": "Ez az összeállítás már nem létezik.",
+    "write_failed": "Az összeállítások nem menthetők ide: {path}. Ellenőrizd, hogy erre a meghajtóra lehet-e írni.",
+    "recovered": "A(z) {game} összeállításfájlja nem olvasható: a legutóbbi biztonsági másolata ({backup}) lett betöltve. A sérült fájl félre lett téve.",
+    "lost": "A(z) {game} összeállításfájlja nem olvasható, és egyetlen biztonsági másolat sem tölthető be. A sérült fájl félre lett téve, semmi nem lett törölve.",
+    "running_rename": "Az összeállítás átnevezése előtt zárd be a(z) {game} játékot: a mappája nem változhat, amíg a játék fut.",
+    "running_delete": "Az összeállítás törlése előtt zárd be a(z) {game} játékot: a mappája nem változhat, amíg a játék fut.",
+    "map_not_found": "A térkép nem található: {name}",
+    "mod_not_found": "A mod nem található: {name}",
+    "create_title": "Új összeállítás",
+    "create_help": "Üres összeállítás a közös modokkal. Utána adj hozzá modokat a „Minden mod” listából.",
+    "create_ok": "Létrehozás",
+    "created": "„{name}” összeállítás létrehozva",
+    "duplicate_title": "Összeállítás másolása",
+    "duplicate_help": "A másolat megtartja a(z) „{name}” modjait és a „Közös modok” beállítását.",
+    "copy_name": "{name} (másolat)",
+    "duplicate_ok": "Másolás",
+    "duplicated": "„{name}” összeállítás létrehozva",
+    "rename_title": "Összeállítás átnevezése",
+    "rename_ok": "Átnevezés",
+    "renamed": "„{old}” átnevezve erre: „{name}”",
+    "delete_title": "Összeállítás törlése",
+    "delete_text": {
+      "zero": "Törlöd a(z) „{name}” összeállítást? Nincs benne mod.",
+      "one": "Törlöd a(z) „{name}” összeállítást? A modja a modmappádban marad: csak az összeállítás és a hivatkozásokat tartalmazó mappája tűnik el.",
+      "other": "Törlöd a(z) „{name}” összeállítást? A(z) {count} modja a modmappádban marad: csak az összeállítás és a hivatkozásokat tartalmazó mappája tűnik el."
+    },
+    "delete_ok": "Törlés",
+    "deleted": "„{name}” összeállítás törölve",
+    "deleted_applied": "A(z) {name} összeállítás törölve. A játék mostantól a(z) {other} összeállítást használja."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod kijelölve",
+      "other": "mod kijelölve"
+    },
+    "add_party": "Hozzáadás az összeállítás modjaihoz",
+    "add_common": "Hozzáadás a közös modokhoz",
+    "remove_party": "Eltávolítás az összeállítás modjai közül",
+    "remove_common": "Eltávolítás a közös modok közül",
+    "rename": "Átnevezés…",
+    "rename_help": "Egyetlen mod, a „Minden mod” listában kijelölve.",
+    "delete": "Végleges törlés…",
+    "close": "A sáv bezárása és a kijelölés megszüntetése (Esc)",
+    "added_party": {
+      "one": "{count} mod hozzáadva a(z) „{name}” összeállításhoz",
+      "other": "{count} mod hozzáadva a(z) „{name}” összeállításhoz"
+    },
+    "added_common": {
+      "one": "{count} mod hozzáadva a közös modokhoz",
+      "other": "{count} mod hozzáadva a közös modokhoz"
+    },
+    "moved_party": {
+      "one": "{count} mod áthelyezve a(z) „{name}” összeállításba",
+      "other": "{count} mod áthelyezve a(z) „{name}” összeállításba"
+    },
+    "moved_common": {
+      "one": "{count} mod áthelyezve a közös modok közé",
+      "other": "{count} mod áthelyezve a közös modok közé"
+    },
+    "removed_party": {
+      "one": "{count} mod eltávolítva a(z) „{name}” összeállításból",
+      "other": "{count} mod eltávolítva a(z) „{name}” összeállításból"
+    },
+    "removed_common": {
+      "one": "{count} mod eltávolítva a közös modok közül",
+      "other": "{count} mod eltávolítva a közös modok közül"
+    },
+    "nothing_party": "Ezek a modok már benne vannak a(z) „{name}” összeállításban",
+    "nothing_common": "Ezek a modok már a közös modok között vannak"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "A függőségét is hozzáadod?",
+      "other": "A(z) {count} függőségét is hozzáadod?"
+    },
+    "ask_yes": {
+      "one": "A függőség hozzáadása is",
+      "other": "A(z) {count} függőség hozzáadása is"
+    },
+    "ask_no": "Csak a kiválasztott modok",
+    "missing_warn": {
+      "one": "Hiányzó függőség a modjaid közül: {list}",
+      "other": "{count} hiányzó függőség a modjaid közül: {list}"
+    },
+    "needed_by_map": "A(z) „{name}” térképhez szükséges:",
+    "needed_by_mod": "A(z) „{name}” modhoz szükséges:",
+    "needed": "Függőségek:",
+    "where_common": "a közös modok",
+    "where_party": "a(z) „{name}” összeállítás",
+    "ask_intro": {
+      "one": "Ez a mod egy általad választott mod függősége, de nincs benne ebben: {where}.",
+      "other": "Ez a(z) {count} mod az általad választott modok függősége, de nincsenek benne ebben: {where}."
+    },
+    "missing_for": "{list} (szükséges ehhez: „{name}”)",
+    "optional_title": {
+      "one": "Egy opcionális modot is hozzáadsz?",
+      "other": "Opcionális modokat is hozzáadsz?"
+    },
+    "optional_intro": {
+      "one": "Egy opcionális mod, már megvan a modjaid között:",
+      "other": "{count} opcionális mod, már megvannak a modjaid között:"
+    },
+    "optional_for": "opcionális ehhez: „{name}”",
+    "optional_note": "Opcionális: a játéknak nincs rájuk szüksége. Csak a bejelöltek kerülnek ide: {where}.",
+    "optional_continue": "Tovább"
+  },
+  "commonguard": {
+    "title_maps": "Figyelem: térképek kerülnének a közös modok közé",
+    "title_classified": "Figyelem: már besorolt modok kerülnének a közös modok közé",
+    "maps_intro": {
+      "one": "Ez valószínűleg tévedés: a kijelölésed egy térképet tartalmaz, és a közös modokhoz készülsz hozzáadni:",
+      "other": "Ez valószínűleg tévedés: a kijelölésed {count} térképet tartalmaz, és a közös modokhoz készülsz hozzáadni őket:"
+    },
+    "classified_intro": {
+      "one": "A kijelölésed egy olyan modot is tartalmaz, amely már be van sorolva az egyik összeállításodba.",
+      "other": "A kijelölésed {count} olyan modot is tartalmaz, amely már be van sorolva az összeállításaidba."
+    },
+    "why_maps": "Valószínűleg nem ezt szeretnéd: minden, ami a közös modok között van, az összes összeállításodban betöltődik. Ezek a térképek mindenhol betöltődnének, és pont ezt segít elkerülni az FS Passion.",
+    "why_classified": "Valószínűleg nem ezt szeretnéd: minden, ami a közös modok között van, az összes összeállításodban betöltődik. Ezek a modok többé nem maradnának a saját összeállításukban, és a listáid értelmüket vesztenék.",
+    "unclassified_offer": {
+      "one": "A kijelölésed csak egy besorolatlan modot tartalmaz (térképek nélkül): hozzáadhatod csak azt.",
+      "other": "A kijelölésed {count} besorolatlan modot tartalmaz (térképek nélkül): hozzáadhatod csak azokat."
+    },
+    "tip": "Tipp: a Ctrl+A a teljes „Minden mod” listát kijelöli, a térképeket és a már besorolt modokat is.",
+    "continue": "Folytatás mégis",
+    "only_unclassified": {
+      "one": "Csak a besorolatlan mod hozzáadása",
+      "other": "Csak a(z) {count} besorolatlan mod hozzáadása"
+    }
+  },
+  "plus": {
+    "title": "Új összeállítás egy térképből",
+    "deps_title": {
+      "one": "{count} függőség",
+      "other": "{count} függőség"
+    },
+    "dlc_title": "Szükséges DLC-k",
+    "dlc_note": "Tájékoztatásul: a játék mindig betölti a telepített DLC-ket. Ezek nem kerülnek az összeállításba.",
+    "missing_note": "A hiányzó függőségek nem kerülnek hozzáadásra: töltsd le őket, majd add hozzá az összeállításhoz.",
+    "no_deps": "Nincs megadott függőség: az összeállítás csak a térképet tartalmazza.",
+    "summary": {
+      "zero": "Az összeállítás csak a térképet tartalmazza, plusz a közös modokat.",
+      "one": "Az összeállítás a térképet és a függőségét tartalmazza, plusz a közös modokat.",
+      "other": "Az összeállítás a térképet és a(z) {count} függőségét tartalmazza, plusz a közös modokat."
+    },
+    "create": "Az összeállítás létrehozása",
+    "created": {
+      "one": "„{name}” összeállítás létrehozva: {count} mod",
+      "other": "„{name}” összeállítás létrehozva: {count} mod"
+    },
+    "created_missing": {
+      "one": "Letöltendő függőség: {list}",
+      "other": "{count} letöltendő függőség: {list}"
+    },
+    "optional_title": {
+      "one": "{count} opcionális mod",
+      "other": "{count} opcionális mod"
+    },
+    "optional_note": "Opcionális: a játéknak nincs rájuk szüksége. Jelöld be, melyiket add hozzá az összeállításhoz.",
+    "optional_none_present": "Ezen opcionális modok egyike sincs meg a modjaid között. A játéknak nincs rájuk szüksége."
+  },
+  "replace": {
+    "title": "Csere erre…",
+    "help": "{name} már nincs a modmappáidban. Ha a szerzője átnevezte, válaszd ki az új verzióját: minden listában átveszi a helyét.",
+    "done": {
+      "one": "{old} lecserélve erre: {name}, {count} listában",
+      "other": "{old} lecserélve erre: {name}, {count} listában"
+    }
+  },
+  "notifications": {
+    "title": "Értesítések",
+    "unread": {
+      "one": "Értesítések: 1 új üzenet",
+      "other": "Értesítések: {count} új üzenet"
+    },
+    "clear": "Összes törlése",
+    "none": "Még nincs értesítés. A jobbra lent megjelenő üzenetek itt maradnak, amíg az FS Passion be nem zárul."
+  },
+  "tray": {
+    "show": "Az FS Passion megjelenítése",
+    "quit": "Kilépés az FS Passionből",
+    "tooltip": "FS Passion",
+    "hint": "Az FS Passion itt fut tovább. Kattints az ikonra a visszahozásához; a „Kilépés” valóban bezárja."
+  },
+  "apply": {
+    "unsupported": "A játék ezen verziója nem tudja megváltoztatni a modmappáját.",
+    "not_ready": "Előbb add meg a beállításokban a játék modmappáját és Dokumentumok mappáját.",
+    "running": "Összeállítás alkalmazása előtt zárd be a(z) {game} játékot.",
+    "no_gamesettings": "A(z) {game} gameSettings.xml fájlja nem található: indítsd el egyszer a játékot, vagy ellenőrizd a Dokumentumok mappát a beállításokban.",
+    "busy": "Egy másik összeállítás-művelet van folyamatban. Próbáld újra egy pillanat múlva.",
+    "library_busy": "A modok beolvasása még tart. Próbáld újra egy pillanat múlva.",
+    "done": {
+      "zero": "{name} összeállítás alkalmazva: nincs mod.",
+      "one": "{name} összeállítás alkalmazva: {count} mod.",
+      "other": "{name} összeállítás alkalmazva: {count} mod."
+    },
+    "missing": {
+      "one": "Az összeállítás 1 modja hiányzik a modmappádból: {list}",
+      "other": "Az összeállítás {count} modja hiányzik a modmappádból: {list}"
+    },
+    "updated": {
+      "one": "A játék által hagyott 1 frissítés átkerült a modmappádba.",
+      "other": "A játék által hagyott {count} frissítés átkerült a modmappádba."
+    },
+    "added": {
+      "one": "A játék által hagyott 1 mod bekerült a modmappádba és a(z) {name} összeállításba.",
+      "other": "A játék által hagyott {count} mod bekerült a modmappádba és a(z) {name} összeállításba."
+    },
+    "set_aside": {
+      "one": "1 fájl félre lett téve, semmi nem lett törölve („Recovered” vagy „Old versions” mappa, az összeállításaid mellett).",
+      "other": "{count} fájl félre lett téve, semmi nem lett törölve („Recovered” és „Old versions” mappa, az összeállításaid mellett)."
+    },
+    "empty_party": "A(z) {name} összeállítás nem tartalmaz modot: a játék modok nélkül indul.",
+    "not_same_disk": "{name} nem csatolható: az összeállítások mappájának ugyanazon a meghajtón kell lennie, mint a modmappának.",
+    "no_hardlinks": "Ez a meghajtó nem támogatja a rögzített hivatkozásokat: a modmappának NTFS-meghajtón kell lennie. Semmi nem változott.",
+    "too_many_links": "{name} nem csatolható: a fájl elérte a Windows hivatkozáskorlátját.",
+    "access_denied": "Hozzáférés megtagadva {name} csatolásakor. Semmi nem változott.",
+    "link_failed": "{name} hivatkozása nem hozható létre ({detail}). Semmi nem változott.",
+    "junction_failed": "A(z) {name} kicsomagolt mod csomópontja nem hozható létre ({detail}). Semmi nem változott.",
+    "folder_busy": "A(z) {path} mappát egy másik program használja (Fájlkezelő?). Zárd be, és próbáld újra. Semmi nem változott.",
+    "folder_exists": "Már létezik {path} mappa: válassz másik nevet.",
+    "failed": "Az összeállítás nem alkalmazható ({detail}). Semmi nem változott.",
+    "recovered_finished": "A(z) {game} egyik összeállítás-művelete megszakadt (áramkimaradás?). Befejezésre került.",
+    "recovered_cancelled": "A(z) {game} egyik összeállítás-művelete megszakadt (áramkimaradás?). Visszavonásra került: semmi nem változott.",
+    "symlink_denied": "A Windows elutasítja a(z) {name} szimbolikus hivatkozását: a Windows fejlesztői módja vagy rendszergazdai jogok szükségesek.",
+    "blocked": {
+      "one": "Egy másik meghajtón lévő 1 mod nem került be az összeállításba (nincs jog szimbolikus hivatkozásokhoz): {list}. Lásd: Beállítások → Játék és elérési utak.",
+      "other": "Egy másik meghajtón lévő {count} mod nem került be az összeállításba (nincs jog szimbolikus hivatkozásokhoz): {list}. Lásd: Beállítások → Játék és elérési utak."
+    }
+  },
+  "override": {
+    "title": "A játék egy ismeretlen mappát tölt be",
+    "text": "A(z) {game} egy, az FS Passion számára ismeretlen mappából tölti be a modokat (kézzel vagy egy másik eszközzel módosítva):",
+    "help": "Fogadd el ezt a mappát modmappaként, alkalmazd újra az összeállításodat, vagy hagyd a játékot úgy, ahogy van.",
+    "adopt": "Elfogadás modmappaként",
+    "reapply": "{name} újbóli alkalmazása",
+    "ignore": "Ne tegyen semmit",
+    "adopted": "Új modmappa: {path}",
+    "read_failed": "A gameSettings.xml nem olvasható ({path}). Semmi nem változott.",
+    "backup_failed": "A gameSettings.xml biztonsági másolata nem írható ({path}). Semmi nem változott.",
+    "write_failed": "A gameSettings.xml nem írható ({path}). Nyitva van a játék?",
+    "check_failed": "A gameSettings.xml ellenőrzése sikertelen: az eredeti fájl visszaállítva.",
+    "no_root": "A gameSettings.xml nem tűnik játékbeállítási fájlnak. Semmi nem változott."
+  },
+  "demo": {
+    "title": "Bemutató mód",
+    "pill": "Bemutató",
+    "quit": "Kilépés",
+    "banner": "Bemutató mód: ezek a modok nem valódiak. A valódi mappáidat és a játékot nem érinti.",
+    "badge": "Álmod (bemutató)",
+    "installing": "A bemutató modok előkészítése…",
+    "started": "Bemutató mód: próbálj ki mindent, semmi nem érinti a játékot.",
+    "stopped": "Bemutató mód bezárva: minden törölve.",
+    "stop_title": "Kilépés a bemutató módból",
+    "stop_text": "Az álmodok, a tesztösszeállítások és a teljes bemutató mappa törlődik. A valódi beállításaid visszaállnak.",
+    "stop_ok": "Kilépés és minden törlése",
+    "offer_title": "Kipróbálod az FS Passiont játék nélkül?",
+    "offer_text": "Ezen a gépen nem található Farming Simulator. Kipróbálhatod az FS Passiont álmodokkal: hozz létre összeállításokat, sorolj be, alkalmazz… minden működik, egy tesztmappában, sosem a játékban.",
+    "offer_local": "A bemutató csomag már megvan ezen a gépen (kb. 2 MB).",
+    "offer_download": "A bemutató csomag (kb. 2 MB) letöltődik a projekt GitHub-oldaláról, majd ellenőrzésre kerül.",
+    "offer_yes": "Kipróbálom",
+    "offer_no": "Később",
+    "unavailable": "A bemutató csomag még nem érhető el.",
+    "bad_pack": "A bemutató csomag sérült vagy nem egyezik az eredetivel: elutasítva.",
+    "download_failed": "A bemutató csomag nem tölthető le ({detail}).",
+    "install_failed": "A bemutató csomag nem telepíthető ({detail}).",
+    "remove_failed": "A bemutató mappa nem törölhető teljesen: {path}",
+    "no_detect": "A játék keresése ki van kapcsolva bemutató módban."
+  },
+  "delete": {
+    "title": {
+      "one": "Véglegesen törlöd ezt a modot?",
+      "other": "Véglegesen törlöd ezt a(z) {count} modot?"
+    },
+    "intro": {
+      "one": "Ez a mod minden listából és minden összeállításmappából eltávolításra kerül, majd törlődik a modmappádból:",
+      "other": "Ez a(z) {count} mod minden listából és minden összeállításmappából eltávolításra kerül, majd törlődik a modmappádból:"
+    },
+    "irreversible": "Ez nem vonható vissza.",
+    "recycle": "A fájlok a Windows Lomtárába kerülnek: onnan még visszaállíthatod őket.",
+    "no_recycle": "Ezen a meghajtón nincs Lomtár: a törlés végleges lesz.",
+    "understand": {
+      "one": "Tudomásul veszem, hogy ez a fájl törlődik",
+      "other": "Tudomásul veszem, hogy ezek a fájlok törlődnek"
+    },
+    "ok": "Végleges törlés",
+    "done_recycled": {
+      "one": "1 mod a Lomtárba került",
+      "other": "{count} mod a Lomtárba került"
+    },
+    "done_deleted": {
+      "one": "1 mod véglegesen törölve",
+      "other": "{count} mod véglegesen törölve"
+    },
+    "failed": {
+      "one": "1 mod nem törölhető: {list}. El lett távolítva a listákból; zárd be az azt használó programot, és próbáld újra.",
+      "other": "{count} mod nem törölhető: {list}. El lettek távolítva a listákból; zárd be az azokat használó programot, és próbáld újra."
+    },
+    "nothing": "Nincs törlendő mod.",
+    "running": "Modok törlése előtt zárd be a(z) {game} játékot."
+  },
+  "rename": {
+    "title": "A mod átnevezése",
+    "label": "Új név",
+    "prefix_tip": "A verzió-előtag megmarad",
+    "final": "Fájlnév: {file}",
+    "rule": "Csak ékezet nélküli betűk, számjegyek és „_”: a játék más karaktereket elutasít.",
+    "where": "Itt: {list}. A listák csak a beleegyezéseddel változnak: az FS Passion utána megkérdezi, kövessék-e az új nevet.",
+    "warning_modhub": "Ha a ModHubról származik, ez a mod többé nem kap frissítéseket: épp ez az átnevezés célja.",
+    "warning_save": "A játékban az ezt a modot használó mentések a régi nevén fogják keresni.",
+    "warning_save_map": "Ez egy térkép: a játékban a rajta készült mentések a régi nevén fogják keresni, és nem töltődnek be többé.",
+    "warning_deps": {
+      "one": "1 mod függőségként adja meg ({list}): a régi nevén fogja keresni.",
+      "other": "{count} mod függőségként adja meg ({list}): a régi nevén fogják keresni."
+    },
+    "ok": "Átnevezés",
+    "done": {
+      "zero": "{old} átnevezve erre: {name}",
+      "one": "{old} átnevezve erre: {name}, 1 összeállításban",
+      "other": "{old} átnevezve erre: {name}, {count} összeállításban"
+    },
+    "renamed": "{old} átnevezve erre: {name}",
+    "lists_title": "Frissíted a listákat?",
+    "lists_ask": "„{old}” még szerepel itt: {list}. Kövessék az új nevet („{name}”)?",
+    "lists_yes": "A listák frissítése",
+    "lists_no": "Ne tegyen semmit",
+    "lists_done": "Listák frissítve ({count}).",
+    "empty": "Adj meg egy nevet.",
+    "too_long": "A név túl hosszú: legfeljebb {max} karakter.",
+    "invalid": "Csak ékezet nélküli betűk, számjegyek és „_”, szóközök nélkül.",
+    "same": "Már ez a neve.",
+    "taken": "„{name}” már létezik a modmappáidban.",
+    "not_found": "A(z) {name} mod nem található a modmappáidban.",
+    "failed": "{name} nem nevezhető át: lehet, hogy egy másik programban meg van nyitva.",
+    "running": "Mod átnevezése előtt zárd be a(z) {game} játékot.",
+    "no_list": "nincs lista"
+  },
+  "downloads": {
+    "title": "Új modok találhatók",
+    "intro": "Itt: {folder}. Az Integrálás minden bejelölt fájlt a játékverziójának modmappájába helyez át.",
+    "count": {
+      "one": "1 mod található",
+      "other": "{count} mod található"
+    },
+    "col_mod": "Mod",
+    "col_version": "Játékverzió",
+    "col_state": "Állapot",
+    "col_dest": "Cél",
+    "state": {
+      "new": "Új",
+      "update": "Frissítés ({from} → {to})",
+      "older": "Régebbi a telepített verziónál ({to} < {from})",
+      "present": "Már megvan",
+      "conflict": "Egy kicsomagolt modnak már ez a neve",
+      "unconfigured": "A verzió nincs beállítva: állítsd be a beállításokban"
+    },
+    "older_confirm": "Bejelölve: lecseréli a telepített verziót (az félre lesz téve).",
+    "postpone": "A(z) {game} fut: a bezárásakor lesz integrálva",
+    "not_configured": "{game} (nincs beállítva)",
+    "suffix": "Így lesz integrálva: {name} (a böngésző utótagja eltávolítva)",
+    "dest_none": "Nincs (besorolatlan)",
+    "dest_unclassified": "Besorolatlan",
+    "dest_party": "„{name}” összeállítás",
+    "ignore": "Ezek a fájlok figyelmen kívül hagyása",
+    "ignored": {
+      "one": "1 fájl figyelmen kívül hagyva: többé nem lesz felajánlva",
+      "other": "{count} fájl figyelmen kívül hagyva: többé nem lesznek felajánlva"
+    },
+    "later": "Később",
+    "integrate": {
+      "zero": "Integrálás",
+      "one": "1 mod integrálása",
+      "other": "{count} mod integrálása"
+    },
+    "none": "Nincs új mod itt: {folder}.",
+    "done": {
+      "one": "1 mod integrálva: {list}",
+      "other": "{count} mod integrálva: {list}"
+    },
+    "in_version": {
+      "one": "1 ide: {game}",
+      "other": "{count} ide: {game}"
+    },
+    "skipped": {
+      "one": "1 fájl a helyén maradt (már megvan vagy régebbi)",
+      "other": "{count} fájl a helyén maradt (már megvan vagy régebbi)"
+    },
+    "postponed": {
+      "one": "1 mod a(z) {game} bezárásakor lesz integrálva",
+      "other": "{count} mod a(z) {game} bezárásakor lesz integrálva"
+    },
+    "postponed_done": {
+      "one": "1 letöltés integrálva a(z) {game} bezárása után",
+      "other": "{count} letöltés integrálva a(z) {game} bezárása után"
+    },
+    "failed": "{file} nem integrálható. A fájl a letöltéseid között maradt.",
+    "gone": "{file} már nincs a letöltések mappájában.",
+    "unconfigured": "{file}: a kiválasztott játékverzió nincs beállítva.",
+    "no_folder": "A letöltések mappa nem található: add meg itt: Beállítások → Alkalmazás → Letöltések.",
+    "demo": "A bemutató alatt a letöltések nem kerülnek integrálásra.",
+    "done_in": {
+      "one": "1 mod integrálva ide: {game}",
+      "other": "{count} mod integrálva ide: {game}"
+    },
+    "col_storage": "Tárolás"
+  },
+  "move": {
+    "exists": "{file}: már létezik ilyen nevű fájl.",
+    "no_space": "{file}: nincs elég szabad hely a modmappa meghajtóján.",
+    "check_failed": "{file}: az ellenőrzött másolat nem egyezik az eredetivel. Semmi nem lett lecserélve.",
+    "failed": "{file} nem helyezhető át: lehet, hogy egy másik programban meg van nyitva."
+  },
+  "missing": {
+    "title": "A modmappádból hiányzó modok",
+    "intro": {
+      "one": "Ez a mod hiányzik a modmappádból, pedig összeállításokban szerepel. Mit szeretnél tenni?",
+      "other": "Ez a(z) {count} mod hiányzik a modmappádból, pedig összeállításokban szerepelnek. Mit szeretnél tenni?"
+    },
+    "in": "Itt: {list}",
+    "copy": "Törölve a modmappából, de a hivatkozásain keresztül még létezik egy másolat itt: {list}",
+    "no_copy": "Nincs másolat: töltsd le újra, vagy cseréld le a szerzője által átnevezett modra",
+    "restore": "Visszaállítás a Mods mappába",
+    "restore_tip": "Az összeállításban még meglévő másolat ismét a modmappád modja lesz (semmi nem másolódik).",
+    "remove": "Eltávolítás a listákból",
+    "remove_all": "Mind eltávolítása a listákból",
+    "later": "Később",
+    "notice": "Modot az FS Passionben törölj (a műveletsáv „Végleges törlés” gombjával): így egyszerre kerül ki a listákból és az összeállításokból.",
+    "removed": {
+      "one": "1 mod eltávolítva minden listából",
+      "other": "{count} mod eltávolítva minden listából"
+    },
+    "restored": {
+      "one": "1 mod visszaállítva a modmappádba",
+      "other": "{count} mod visszaállítva a modmappádba"
+    },
+    "deleted": {
+      "one": "1 mod törölve és eltávolítva a listákból",
+      "other": "{count} mod törölve és eltávolítva a listákból"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 frissítés átvéve: {list}",
+      "other": "{count} frissítés átvéve: {list}"
+    },
+    "added": {
+      "one": "A játék által letöltött 1 mod hozzáadva a(z) „{name}” összeállításhoz",
+      "other": "A játék által letöltött {count} mod hozzáadva a(z) „{name}” összeállításhoz"
+    },
+    "unclassified": {
+      "one": "A játék által letöltött 1 mod bekerült a modmappádba (besorolatlan)",
+      "other": "A játék által letöltött {count} mod bekerült a modmappádba (besorolatlan)"
+    },
+    "errors": {
+      "one": "1 mappát nem sikerült rendbe tenni: {list}. Lásd a naplót.",
+      "other": "{count} mappát nem sikerült rendbe tenni: {list}. Lásd a naplót."
+    },
+    "reshaped": {
+      "one": "1 mod ki- vagy újracsomagolva: az összeállítás követi az új formáját ({list})",
+      "other": "{count} mod ki- vagy újracsomagolva: az összeállítások követik az új formájukat ({list})"
+    }
+  },
+  "rights": {
+    "title": "Jogok a más meghajtókon lévő modokhoz",
+    "intro": "Ahhoz, hogy egy másik meghajtón tárolt mod bekerüljön egy összeállításba, az FS Passion szimbolikus hivatkozást hoz létre. A Windows ezt csak fejlesztői módban vagy rendszergazdai jogokkal engedi, és egyik sem aktív.",
+    "standard": "A Windows-fiókod normál fiók: rendszergazdai jogok szerzése egy másik fiók alatt futtatná az FS Passiont, más mappákkal és beállításokkal. A fejlesztői mód a jó választás.",
+    "admin_title": "Az FS Passion futtatása mindig rendszergazdaként",
+    "admin_text": "Az FS Passion bejelöli helyetted a „A program futtatása rendszergazdaként” lehetőséget (Tulajdonságok → Kompatibilitás), csak a te fiókodra, majd újraindul. Következmények:",
+    "uac": "A Windows az FS Passion minden indításakor megerősítést kér.",
+    "game_normal": "A játék és a platformja továbbra is normál jogokkal indul, a Windows Intézőn keresztül. Az indítási paraméterek ilyenkor a platformon (Steam, Epic Games) keresztül mennek, a szokásos módon.",
+    "no_drop": "A Windows letiltja a fájlok áthúzását a Fájlkezelőből az FS Passionre. Jelenleg ennek nincs hatása: az FS Passion nem használja ezt a mozdulatot.",
+    "dev_title": "Vagy: kapcsold be a Windows fejlesztői módját",
+    "dev_text": "Windows Gépház → Rendszer → Fejlesztőknek → „Fejlesztői mód”. Az FS Passionre nincs más következménye. Utána gyere vissza ide, és kattints az „Újraellenőrzés” gombra.",
+    "without": "E jogok nélkül a további mappák mentve maradnak: a modjaik megjelennek, de egyik összeállításba sem kerülnek be.",
+    "later": "Később",
+    "dev_mode": "A fejlesztői mód megnyitása",
+    "admin": "Mindig rendszergazdaként",
+    "missing": "A Windows elutasítja a szimbolikus hivatkozásokat: a más meghajtókon lévő modok megjelennek, de egyik összeállításba sem kerülnek be.",
+    "get": "Jogok megszerzése…",
+    "check": "Újraellenőrzés",
+    "ok": "Szimbolikus hivatkozások engedélyezve (az FS Passion rendszergazdaként fut): a más meghajtókon lévő modok bekerülnek az összeállításokba.",
+    "ok_dev": "Szimbolikus hivatkozások engedélyezve (Windows fejlesztői mód): a más meghajtókon lévő modok bekerülnek az összeállításokba.",
+    "unknown": "A szimbolikus hivatkozásokhoz szükséges jogok még nincsenek ellenőrizve.",
+    "admin_on": "Az FS Passion mindig rendszergazdaként fut.",
+    "admin_off": "Ne fusson többé rendszergazdaként",
+    "restarting": "Az FS Passion rendszergazdaként újraindul. Erősítsd meg a Windows kérdését.",
+    "now_ok": "Szimbolikus hivatkozások engedélyezve: alkalmazd újra az összeállításaidat, hogy a más meghajtókon lévő modok bekerüljenek.",
+    "still_missing": "A Windows továbbra is elutasítja a szimbolikus hivatkozásokat.",
+    "flag_failed": "A „Futtatás rendszergazdaként” beállítás nem módosítható.",
+    "ok_plain": "Szimbolikus hivatkozások engedélyezve: a más meghajtókon lévő modok bekerülnek az összeállításokba.",
+    "admin_once_title": "Az FS Passion újraindítása rendszergazdaként",
+    "admin_once_text": "Az FS Passion csak most indul újra rendszergazdaként; minden indításkor meg kell ismételni. A fejlesztői móddal ez elkerülhető. Következmények:",
+    "admin_once": "Újraindítás rendszergazdaként"
+  },
+  "older": {
+    "title": "A játék régebbi verziót töltött le",
+    "intro": {
+      "one": "A játék letöltött egy modot, amelynek a verziószáma régebbi a tiédnél. Félre lett téve, semmi nem lett lecserélve. Mit szeretnél tenni?",
+      "other": "A játék letöltött {count} modot, amelyek verziószáma régebbi a tiédnél. Félre lettek téve, semmi nem lett lecserélve. Mit szeretnél tenni?"
+    },
+    "versions": "A te verziód: {mine} · a játék által letöltött verzió: {game}",
+    "keep": "A saját verzióm megtartása ({version})",
+    "use": "A játék verziójának használata ({version})",
+    "use_tip": "A játék verziója átveszi a tiéd helyét a modmappában; a tiéd az „Old versions” mappába kerül. Minden összeállítás követi.",
+    "help": "Ez gyakran egy általad módosított mod: a ModHub nem hasonlítja össze a verziószámokat, az eredetijét kínálja. Semmi nem törlődik: a meg nem tartott fájl a „Recovered” vagy az „Old versions” mappában marad, az összeállításaid mellett.",
+    "later": "Később",
+    "gone": "Ez a fájl már nincs a „Recovered” mappában: semmi nem változott.",
+    "failed": "{name} játékverziója nem helyezhető a helyére ({detail}). A te verziód nem változott."
+  },
+  "stop": {
+    "running": "Előbb zárd be a(z) {game} játékot: a beállítását zárt játék mellett kell visszaállítani.",
+    "folders_failed": "Az összeállítások mappái nem törölhetők.",
+    "closed": "Az FS Passion bezárult. A játék visszakapta eredeti beállítását.",
+    "export_first": "Mielőtt folytatod, exportáld a konfigurációdat: így visszakapod az összeállításaidat, ha visszatérsz az FS Passionhöz.",
+    "intro": "Az FS Passion visszaadja a játéknak az eredeti beállítását, majd eltávolítja az összeállítások mappáit (csak hivatkozásokat tartalmaznak):",
+    "no_version": "Nincs beállított játékverzió: nincs mit visszaállítani.",
+    "mods_safe": "A modmappáidhoz soha nem nyúl, és az „Old versions” és „Recovered” mappákhoz sem, amelyek a félretett modokat tartalmazzák.",
+    "admin_flag": "Az FS Passion által beállított „A program futtatása rendszergazdaként” beállítás eltávolításra kerül.",
+    "understand": "Tudomásul veszem: a játék többé nem tölti be az FS Passion összeállításait.",
+    "plan": {
+      "restore": "A játék ismét az eredeti mappáját tölti be: {dir}",
+      "deactivate": "Az egyéni modmappa kikapcsolva: a játék visszatér a szokásos „mods” mappájához.",
+      "missing": "A gameSettings.xml nem található: nincs mit visszaállítani.",
+      "none": "A játék beállítása már az eredeti.",
+      "folders": {
+        "one": "{count} összeállításmappa eltávolítva",
+        "other": "{count} összeállításmappa eltávolítva"
+      },
+      "kept": {
+        "one": "„{name}” megmarad ({count} fájl).",
+        "other": "„{name}” megmarad ({count} fájl)."
+      }
+    },
+    "options": {
+      "title": "Törlendő még:",
+      "parties": "összeállítások és közös modok (parties.json)",
+      "caches": "gyorsítótárak (átalakított ikonok, DLC-katalógus)",
+      "settings": "az FS Passion beállításai",
+      "logs": "naplók",
+      "langs": "saját nyelvek"
+    },
+    "done": {
+      "title": "Az FS Passion már nincs használatban",
+      "text": "Kész. A játék visszakapta eredeti beállítását.",
+      "partial": "Kész, legalább egy verzió kivételével: lásd lent. A naplóban vannak a részletek.",
+      "version": {
+        "zero": "eredeti beállítás visszaállítva",
+        "one": "eredeti beállítás visszaállítva, {count} összeállításmappa eltávolítva",
+        "other": "eredeti beállítás visszaállítva, {count} összeállításmappa eltávolítva"
+      },
+      "set_aside": {
+        "one": "Az összeállítások mappáiban talált {count} fájl félre lett téve a „Recovered” mappába.",
+        "other": "Az összeállítások mappáiban talált {count} fájl félre lett téve a „Recovered” mappába."
+      },
+      "close": "Az FS Passion bezárása",
+      "uninstaller": "Ezután az FS Passion eltávolításának indítása",
+      "error": {
+        "override": "a játék beállítása NINCS visszaállítva (a gameSettings.xml nem módosítható); az összeállítások mappái megmaradnak",
+        "folders": "eredeti beállítás visszaállítva, de az összeállítások mappái nem törölhetők"
+      }
+    },
+    "stopped": "Az FS Passion már nincs használatban: zárd be."
+  },
+  "tour": {
+    "button": "Bemutató túra",
+    "title": "Bemutató túra",
+    "count": "{n} / {total}",
+    "prev": "Előző",
+    "next": "Következő",
+    "replay": "Újra",
+    "finish": "Befejezés",
+    "quit": "Kilépés a túrából",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Kérsz egy bemutató túrát?",
+      "body": "Kattints a villanykörtére: egy perc alatt az FS Passion megmutatja a felülete lényegét. Ott marad, hogy bármikor újra megnézhesd a túrát.",
+      "start": "A túra indítása",
+      "later": "Később"
+    },
+    "versions": {
+      "caption": "A játékverziód",
+      "body": "Vidd az egeret erre a logóra: megjelennek a Farming Simulator verziói. Kattints arra, amelyiket kezelni szeretnéd.\nA nem telepített verziók szürkék. Minden verziónak saját modjai és saját összeállításai vannak.",
+      "picked": "Kiválasztva: a modjai és összeállításai láthatók"
+    },
+    "parties": {
+      "caption": "Az összeállításaid: az FS Passion szíve",
+      "body": "Egy kattintás, és válthatsz az összeállítások között: a térképe és minden függősége követi.\nTeljes összeállítás: minden modod, hogy a játékban frissíthesd őket.\nÜres összeállítás: modok nélkül, az eredeti játék kipróbálásához.",
+      "full_tip": "Minden mod: a modfrissítések futtatásához a játékban",
+      "empty_tip": "Modok nélkül: az eredeti játék kipróbálásához"
+    },
+    "tools": {
+      "caption": "Létrehozás, másolás, átnevezés, törlés",
+      "body": "Műveletek a kiválasztott összeállításon.\nTipp: a „Minden mod” egyik térképén a „＋ Összeállítás” gomb egy kattintással létrehozza az összeállítást a térképpel és minden függőségével."
+    },
+    "common": {
+      "caption": "Közös modok",
+      "body": "A járművek, munkagépek és játékmenet-szkriptek, amelyeket minden összeállításodban szeretnél.\nAlapból be vannak kapcsolva; szükség esetén egyetlen összeállításra kikapcsolhatod őket.",
+      "on": "Közös modok bevonva ebbe az összeállításba",
+      "off": "Csak erre az összeállításra kikapcsolva"
+    },
+    "apply": {
+      "caption": "Alkalmazás",
+      "body": "Alkalmazza a kiválasztott összeállítást: ezt tölti be a játék a következő indításkor.\nA gomb addig világít, amíg a kiválasztott összeállítás nincs alkalmazva.",
+      "done": "Alkalmazva: a játék a következő indításkor ezt tölti be"
+    },
+    "buttons": {
+      "caption": "Téma, értesítések, beállítások",
+      "body": "Világos vagy sötét felület, üzenetelőzmények, beállítások… És a villanykörte, hogy bármikor újranézhesd ezt a túrát.",
+      "theme": "Világos vagy sötét felület"
+    },
+    "list1": {
+      "caption": "Minden mod",
+      "body": "A teljes modmappád, kategóriák szerint: DLC-k, térképek, egyéb modok…\nEgy mod mindig itt marad, bármit is teszel a többi listában. A „besorolatlan” modok egyik listában sincsenek: a játék nem látja őket.\n[Ctrl] + [F]: mod vagy szerző keresése.",
+      "search_tip": "Keresés: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Frissen letöltött modok",
+      "body": "Ez a gomb megkeresi a Letöltések mappában az imént letöltött modokat.\nAz FS Passion mindegyiknél felismeri a játékverziót, és a beleegyezéseddel a megfelelő modmappába teszi.\nIndításkor is megteszi: lásd Beállítások → Alkalmazás → Letöltések.",
+      "found": "Mindegyik a saját játékverziójának modmappájába kerül"
+    },
+    "list2": {
+      "caption": "Az összeállítás modjai",
+      "body": "A kiválasztott összeállítás modjai: a térképe, a függőségei, a saját modjai.\nA játék a közös modok mellett tölti be őket."
+    },
+    "list3": {
+      "caption": "Közös modok",
+      "body": "A minden összeállításodban jelen lévő modok: traktorok, munkagépek, szkriptek…\nEgyszer sorold be őket ide: minden összeállítás megkapja őket."
+    },
+    "select": {
+      "caption": "Többszörös kijelölés",
+      "body": "[Ctrl] + kattintás: mod hozzáadása a kijelöléshez vagy eltávolítása belőle.\n[Shift] + kattintás: egy teljes tartomány kijelölése.\n[Ctrl] + [A]: a lista minden elemének kijelölése; [Esc]: a kijelölés megszüntetése.\nAmint egy mod ki van jelölve, lent megjelenik egy műveletsáv."
+    },
+    "move": {
+      "caption": "Fogd és vidd",
+      "body": "Az „Az összeállítás modjai” vagy a „Közös modok” listába: ez másolás, a mod a „Minden mod” listában marad.\nE két lista között: ez áthelyezés. Másoláshoz tartsd lenyomva a [Ctrl] billentyűt elengedéskor.\nA „Minden mod” listába, vagy a [Del] billentyű: a mod kikerül a listából. A fájlja sosem törlődik.",
+      "copy": "Másolás",
+      "move": "Áthelyezés · [Ctrl]: másolás",
+      "remove": "Eltávolítás a listából · [Del]"
+    },
+    "keys": {
+      "caption": "Billentyűparancsok",
+      "body": "A gyorsabb munkához:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Mod vagy szerző keresése"
+        },
+        {
+          "k": "[Ctrl] + kattintás",
+          "d": "Mod hozzáadása a kijelöléshez vagy eltávolítása belőle"
+        },
+        {
+          "k": "[Shift] + kattintás",
+          "d": "Modok tartományának kijelölése"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "A lista minden elemének kijelölése"
+        },
+        {
+          "k": "[Esc]",
+          "d": "A kijelölés megszüntetése vagy a húzás megszakítása"
+        },
+        {
+          "k": "[Ctrl] elengedéskor",
+          "d": "Másolás áthelyezés helyett (a 2. és 3. lista között)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Eltávolítás a 2. vagy 3. listából (a fájl megmarad)"
+        },
+        {
+          "k": "[Enter] egy térképen",
+          "d": "Összeállítás létrehozása a térképpel és a függőségeivel"
+        },
+        {
+          "k": "[F2]",
+          "d": "Mod átnevezése"
+        },
+        {
+          "k": "[I]",
+          "d": "Egy mod adatlapjának rögzítése"
+        },
+        {
+          "k": "[Szóköz]  [↑] [↓] [←] [→]",
+          "d": "Kijelölés és mozgás a billentyűzettel"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Bezárás kilépés nélkül",
+      "body": "Az X bezárja az ablakot, de az FS Passion a háttérben fut tovább, az értesítési területen az óra mellett.\nVisszahozás: a tálca „^” nyila, majd az FS ikon. Valódi bezárás: „Kilépés” jobbra lent, vagy jobb kattintás az ikonon.\nEzt itt módosíthatod: Beállítások → Alkalmazás → Ablak.",
+      "tip_close": "Bezárás: az FS Passion az értesítési területre kerül",
+      "tip_more": "Rejtett ikonok megjelenítése",
+      "tip_icon": "Kattintás: az FS Passion visszatér · Jobb kattintás: Kilépés"
+    },
+    "end": {
+      "caption": "Rajtad a sor!",
+      "body": "Nézd meg újra ezt a túrát bármikor a villanykörtével, vagy itt: Beállítások → Súgó és névjegy."
+    },
+    "demo": {
+      "parties": [
+        "Zöld völgy — Állattartás",
+        "A dombok — Növénytermesztés",
+        "Déli rizsföldek"
+      ],
+      "party_sub": {
+        "one": "Térkép + {count} mod",
+        "other": "Térkép + {count} mod"
+      },
+      "mods": [
+        "Hathengeres traktor",
+        "Kombájn",
+        "6 m-es vetőgép",
+        "Mezőgazdasági pótkocsi",
+        "Munkagépcsomag",
+        "Időjárás-szkript"
+      ]
+    }
+  }
+}

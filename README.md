@@ -18,7 +18,7 @@ The heart of FS Passion is to solve this problem with disarming efficiency: crea
 - **Guided tour**: the light bulb in the header presents the interface in a minute, with animated examples (versions, setups, lists, multiple selection, drag and drop, keyboard shortcuts).
 - **Stop using FS Passion**: the game gets its original setting back and setup folders are removed; your mods are never touched.
 - Two-color **themes**, and themes inspired by popular ones in dark and light (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Languages**: interface in 14 languages (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska), chosen from the Windows language and changeable in the Settings; you can add your own translation. **Coming soon: 12 more languages**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文 (see [Help improve the translations](#help-improve-the-translations)).
+- **Languages**: interface in 26 languages (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文), chosen from the Windows language and changeable in the Settings; you can add your own translation (see [Help improve the translations](#help-improve-the-translations)).
 - **Demo**: the application is meant for owners of Farming Simulator games only. If you are curious and want to try its features without owning a game, a demo pack is available in the Settings.
 
 > ⚠️ Work in progress (version: see the [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) page). Make a full backup of your mods folder before trying it. This GitHub page is the only official download location.
@@ -52,7 +52,7 @@ The files are not signed yet: on first launch, Windows may show “Windows prote
 
 ## Help improve the translations
 
-Translations are a first version: corrections from native speakers are very welcome, for the current languages and for the coming ones. No coding knowledge is needed, only a text editor (Notepad is fine).
+Translations are a first version: corrections from native speakers are very welcome, in every language. No coding knowledge is needed, only a text editor (Notepad is fine).
 
 1. In this repository, open the [`lang`](lang/) folder and download the file of your language (for example `de.json`). If it is not there yet, download `en.json`.
 2. Put it in the personal languages folder of your FS Passion installation (the **Open the personal languages folder** button in Settings → Display → Language opens it):

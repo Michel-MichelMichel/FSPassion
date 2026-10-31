@@ -40,7 +40,11 @@ import re  # noqa: E402
 
 _PLURAL = {"zero", "one", "two", "few", "many", "other"}
 # Formes exigées en plus de « other » selon la langue (Intl.PluralRules).
-_EXTRA_FORMS = {"pl": {"few", "many"}, "cs": {"few", "many"}}
+_EXTRA_FORMS = {
+    "pl": {"few", "many"}, "cs": {"few", "many"},
+    # 1.0.0 : russe et ukrainien (one/few/many), roumain (one/few).
+    "ru": {"few", "many"}, "uk": {"few", "many"}, "ro": {"few"},
+}
 
 
 def _is_plural(v):
@@ -89,7 +93,9 @@ def _compare(ref, tr, code, path, errors):
 def test_every_language_file_is_complete():
     en = json.loads(_read("lang", "en.json"))
     codes = sorted(p.stem for p in (ROOT / "lang").glob("*.json"))
-    for code in ("de", "es", "it", "pl", "pt-BR", "nl", "cs", "da", "fi", "nb", "sv", "pt-PT"):
+    for code in ("de", "es", "it", "pl", "pt-BR", "nl", "cs", "da", "fi", "nb", "sv", "pt-PT",
+                 # 1.0.0 : les 12 dernières langues
+                 "hu", "ro", "ru", "uk", "tr", "vi", "id", "es-419", "ja", "ko", "zh-Hans", "zh-Hant"):
         assert code in codes
     for code in codes:
         data = json.loads(_read("lang", f"{code}.json"))

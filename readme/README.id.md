@@ -18,7 +18,7 @@ Inti dari FS Passion adalah menyelesaikan masalah ini dengan efisiensi yang meng
 - **Tur terpandu**: bola lampu di header memperkenalkan antarmuka dalam satu menit, dengan contoh beranimasi (versi, konfigurasi, daftar, pilihan ganda, seret dan lepas, pintasan keyboard).
 - **Berhenti memakai FS Passion**: game mendapatkan kembali pengaturan aslinya dan folder konfigurasi dihapus; mod Anda tidak pernah disentuh.
 - **Tema** dua warna dan tema yang terinspirasi tema populer, gelap dan terang (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Bahasa**: antarmuka dalam 14 bahasa (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska), dipilih sesuai bahasa Windows dan dapat diubah di Pengaturan; Anda dapat menambahkan terjemahan sendiri. **Segera hadir: 12 bahasa lagi**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **Bahasa**: antarmuka dalam 26 bahasa (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文), dipilih sesuai bahasa Windows dan dapat diubah di Pengaturan; Anda dapat menambahkan terjemahan sendiri.
 - **Demo**: aplikasi ini hanya ditujukan bagi pemilik game Farming Simulator. Jika Anda penasaran dan ingin mencoba fiturnya tanpa memiliki game, tersedia paket demo di Pengaturan.
 
 > ⚠️ Proyek masih dalam pengembangan (versi: lihat halaman [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Buat cadangan lengkap folder mod Anda sebelum mencobanya. Halaman GitHub ini adalah satu-satunya sumber unduhan resmi.
@@ -55,17 +55,17 @@ File belum ditandatangani: saat pertama dijalankan, Windows SmartScreen mungkin 
 Terjemahan ini masih versi pertama: koreksi dari penutur asli sangat diharapkan, untuk bahasa yang sudah ada maupun yang akan datang. Tidak perlu bisa memprogram, cukup editor teks (Notepad pun bisa).
 
 1. Di repositori ini, buka folder [`lang`](../lang/) dan unduh berkas bahasa Anda (`id.json`). Jika belum ada, unduh `en.json`.
-2. Letakkan berkas itu di folder bahasa pribadi instalasi FS Passion Anda (tombol **Open the personal languages folder** di Settings → Display → Language membukanya):
+2. Letakkan berkas itu di folder bahasa pribadi instalasi FS Passion Anda (tombol **Buka folder bahasa pribadi** di Pengaturan → Tampilan → Bahasa membukanya):
    - versi terpasang: `%APPDATA%\FSPassion\lang\`;
    - versi portabel: `data\lang\`, di samping `FSPassion.exe`.
 3. Ganti namanya, misalnya `id_corrected.json` (nama tidak boleh diawali `_`). Jangan ubah baris `"code"` di awal berkas: dengan begitu berkas Anda menggantikan bahasa bawaan. Jika Anda mulai dari `en.json`: tulis `"id"` di baris `"code"` dan `"Bahasa Indonesia"` di baris `"name"`.
 4. Perbaiki teks di antara tanda kutip, di sebelah kanan tanda `:`, lalu simpan berkas (pengodean UTF-8). Jangan ubah kunci di sebelah kiri dan kata di dalam kurung kurawal seperti `{count}`.
-5. Mulai ulang FS Passion dan pilih bahasa Anda di Settings → Display → Language: bahasa itu ditandai “personal”. Periksa koreksi Anda di antarmuka.
+5. Mulai ulang FS Passion dan pilih bahasa Anda di Pengaturan → Tampilan → Bahasa: bahasa itu ditandai “pribadi”. Periksa koreksi Anda di antarmuka.
 6. Kirim berkas yang sudah dikoreksi di tab [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): buat issue dengan judul misalnya “Translation: Bahasa Indonesia” dan lampirkan berkasnya (kompres menjadi ZIP jika GitHub menolak ekstensi `.json`).
 
 ## Laporkan masalah, usulkan ide
 
-Tab [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues). Untuk masalah, lampirkan teks dari “Copy diagnostics” (Settings → Help and about → Logs and diagnostics).
+Tab [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues). Untuk masalah, lampirkan teks dari “Salin diagnostik” (Pengaturan → Bantuan dan tentang → Log dan diagnostik).
 
 ## Dukung proyek ini
 
@@ -73,7 +73,7 @@ FS Passion adalah dan akan tetap menjadi proyek yang tepercaya, sumber terbuka, 
 
 ## Koneksi internet
 
-FS Passion hanya terhubung ke GitHub untuk membaca katalog DLC (nama dan ikon, repositori publik `FSPassion-data`), paling banyak sekali sehari. Tidak ada data pribadi yang dikirim. Pengaturan “Internet connection” (Settings → Application) mematikannya. Selain itu, setiap kali dijalankan (lalu sekali sehari), FS Passion memeriksa versi baru di GitHub: pengaturan “FS Passion updates” (Settings → Application) mematikannya.
+FS Passion hanya terhubung ke GitHub untuk membaca katalog DLC (nama dan ikon, repositori publik `FSPassion-data`), paling banyak sekali sehari. Tidak ada data pribadi yang dikirim. Pengaturan “Koneksi internet” (Pengaturan → Aplikasi) mematikannya. Selain itu, setiap kali dijalankan (lalu sekali sehari), FS Passion memeriksa versi baru di GitHub: pengaturan “Pembaruan FS Passion” (Pengaturan → Aplikasi) mematikannya.
 
 ## Lisensi
 

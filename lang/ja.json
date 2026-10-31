@@ -1,0 +1,1451 @@
+{
+  "_meta": {
+    "code": "ja",
+    "name": "日本語",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion は終了しました",
+    "closed_help": "このタブは閉じてかまいません。続けるには FS Passion をもう一度起動してください。"
+  },
+  "common": {
+    "close": "閉じる",
+    "cancel": "キャンセル",
+    "ok": "OK",
+    "copy": "コピー",
+    "copied": "クリップボードにコピーしました",
+    "soon": "バージョン {version} で対応予定",
+    "soon_action": "{action}：バージョン {version} で対応予定"
+  },
+  "window": {
+    "minimize": "最小化",
+    "maximize": "最大化",
+    "restore": "元に戻す",
+    "close": "FS Passion を閉じる"
+  },
+  "header": {
+    "settings": "設定",
+    "version": "ゲームのバージョン：{name}",
+    "current_party": "現在の構成",
+    "create": "構成を作成",
+    "duplicate": "構成を複製",
+    "rename": "構成の名前を変更",
+    "delete": "構成を削除",
+    "common_mods": "共通 MOD",
+    "common_mods_tip": "この構成に共通 MOD を含める",
+    "apply": "適用",
+    "apply_tip": "この構成をゲームに読み込ませる",
+    "apply_done_tip": "この構成は適用済みで最新です。ゲームが読み込むのはこの構成です",
+    "theme_light": "ライトモード",
+    "theme_dark": "ダークモード"
+  },
+  "versions": {
+    "coming": "近日対応",
+    "ready": "設定済み",
+    "installed": "インストール済み",
+    "not_installed": "未インストール",
+    "absent_help": "別の場所にインストールしましたか？ 設定 → ゲームとパス"
+  },
+  "party": {
+    "full": "全 MOD 構成",
+    "empty": "空の構成",
+    "other": "カスタムフォルダー",
+    "unsupported": "構成なし",
+    "unknown": "不明",
+    "none_yet": "まだ構成がありません。＋ ボタン、またはマップの「＋ 構成」で作成してください。",
+    "full_count": {
+      "one": "すべての MOD（{count}）",
+      "other": "すべての MOD（{count}）"
+    },
+    "empty_sub": "MOD なし。素のゲームを試すために",
+    "applied_tag": "適用中",
+    "mods_count": {
+      "zero": "MOD なし",
+      "one": "{count} 個の MOD",
+      "other": "{count} 個の MOD"
+    },
+    "full_tip": "ゲーム内で MOD を更新するのに最適です"
+  },
+  "status": {
+    "running": "{game} を実行中",
+    "other_folder": "ゲームは別のフォルダーから MOD を読み込んでいます：",
+    "applied": "適用中の構成：{name}",
+    "other_folder_path": "ゲームは別のフォルダーを読み込んでいます：{path}",
+    "stale": "最後に適用してから構成が変更されています"
+  },
+  "path": {
+    "empty": "",
+    "found": "見つかりました",
+    "not_found": "このフォルダーは存在しません",
+    "not_game_exe": "このファイルは {game} の実行ファイルではありません",
+    "no_gamesettings": "gameSettings.xml が見つかりません。一度ゲームを起動してから戻ってきてください",
+    "not_ntfs": "このドライブは NTFS ではありません。構成は使えません",
+    "onedrive": "このフォルダーは OneDrive 内にあります。おすすめしません",
+    "storage_overlap": "このフォルダーはメインの MOD フォルダー（またはその FSPassion フォルダー）を含むか、その中にあります。別のフォルダーを選んでください",
+    "storage_duplicate": "このフォルダーはもう一方の保存フォルダーですでに使われているか、それを含んでいます",
+    "storage_same_disk": "見つかりました · メインフォルダーと同じドライブ：特別な権限は不要です",
+    "storage_other_disk": "見つかりました · 別のドライブ：シンボリックリンク"
+  },
+  "list1": {
+    "title": "すべての MOD",
+    "search": "MOD または作者を検索",
+    "search_clear": "検索をクリア",
+    "cat_unclassified": "未分類",
+    "cat_dlc": "DLC",
+    "cat_maps": "マップ",
+    "cat_others": "その他の MOD",
+    "cat_by_author": "作者名順",
+    "dlc_note": "どの構成でもゲームが読み込みます",
+    "selected": "選択中",
+    "active": "有効",
+    "all": "合計",
+    "scanning": "MOD を読み込み中：{done} / {total}",
+    "icons_pending": {
+      "one": "アイコンを準備中：残り {count}",
+      "other": "アイコンを準備中：残り {count}"
+    },
+    "anomalies": {
+      "one": "{count} 件の問題：詳細を表示",
+      "other": "{count} 件の問題：詳細を表示"
+    },
+    "find_new": "ダウンロードから新しい MOD を探す",
+    "open_settings": "設定を開く",
+    "not_configured": "{game} はまだ設定されていません",
+    "not_configured_help": "設定で MOD フォルダーを指定するか、FS Passion にインストールを検出させてください。",
+    "reading": "MOD を読み込み中…",
+    "no_match": "「{query}」に一致する MOD はありません",
+    "empty": "この MOD フォルダーは空です",
+    "empty_help": "MOD（.zip）と展開済み MOD（modDesc.xml を含むフォルダー）がここに表示されます。",
+    "unclassified_note": "分類するまでゲームからは見えません",
+    "plus_party": "構成",
+    "plus_party_tip": "このマップと依存 MOD で構成を作成（Enter）",
+    "mark_party": "現在の構成に含まれる",
+    "mark_common": "共通 MOD に含まれる",
+    "info_tip": "MOD の詳細を固定（I キー）"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "MOD フォルダーが見つかりません",
+      "unexpected": "MOD を読み込めませんでした：{error}"
+    }
+  },
+  "mod": {
+    "map": "マップ",
+    "unpacked": "展開済み MOD",
+    "multiplayer": "マルチプレイ",
+    "version": "バージョン",
+    "author": "作者",
+    "game_version": "ゲーム",
+    "gv_unknown": "ゲームのバージョン不明",
+    "size": "サイズ",
+    "kind": "形式",
+    "kind_dir": "フォルダー（展開済み）",
+    "kind_zip": ".zip アーカイブ",
+    "parties": "含まれるリスト",
+    "parties_none": "なし",
+    "storage": "保存場所",
+    "dependencies": {
+      "one": "依存 MOD {count} 個",
+      "other": "依存 MOD {count} 個"
+    },
+    "more": {
+      "one": "ほか {count} 個",
+      "other": "ほか {count} 個"
+    },
+    "no_dependencies": "依存 MOD の指定はありません",
+    "unpacked_tip": "展開済み MOD：ModHub では更新されず、マルチプレイでは使えません。FS Passion がこの中に書き込むことはありません。",
+    "gv_conflict": "名前の接頭辞と descVersion が別々のバージョンを示しています。接頭辞を使用します。",
+    "unpin": "閉じる（Esc）",
+    "optional": {
+      "one": "オプション MOD {count} 個",
+      "other": "オプション MOD {count} 個"
+    },
+    "searchmods_note": "古いゲームバージョン（SearchMods タグ）：必要な MOD がなくてもセーブデータは読み込まれ、後でゲームが知らせます。",
+    "links_hint": "「i」をクリックすると、この詳細を固定してリンクを開けます。",
+    "links_old": "MOD の作者によるリンクで、古いことが多いです。ページがもう存在しない場合があります。",
+    "link_open": "ブラウザーで開く",
+    "link_failed": "リンクを開けませんでした。"
+  },
+  "dep": {
+    "present": "あり",
+    "absent": "なし",
+    "dlc_owned": "所有 DLC",
+    "dlc_missing": "未所有 DLC"
+  },
+  "dlc": {
+    "free": "無料 DLC",
+    "paid": "DLC",
+    "info": "インストール済みの DLC は、どの構成でも常にゲームが読み込みます。"
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} は構成に対応していません",
+    "missing": "MOD フォルダーにありません",
+    "missing_tip": "{name} は MOD フォルダーにもうありません。作者が名前を変えた場合は「置き換え…」を使ってください。",
+    "replace": "置き換え…"
+  },
+  "list2": {
+    "title": "構成の MOD",
+    "full": {
+      "one": "全 MOD 構成：すべての MOD（{count}）",
+      "other": "全 MOD 構成：すべての MOD（{count}）"
+    },
+    "full_help": "FS Passion 導入前と同じく、ゲームは MOD フォルダー全体を読み込みます。",
+    "empty_party": "空の構成：MOD なし",
+    "empty_help": "MOD を一切使わずに素のゲームを試すために。",
+    "no_mods": "この構成には MOD がありません",
+    "no_mods_help": "「すべての MOD」から MOD をドラッグするか、選択してアクションバーを使ってください。"
+  },
+  "list3": {
+    "title": "共通 MOD",
+    "empty": "共通 MOD はまだありません",
+    "empty_help": "共通 MOD はすべての構成に含まれます：トラクター、作業機、スクリプト…",
+    "not_included": "この構成には含めない"
+  },
+  "footer": {
+    "github_tip": "プロジェクトの GitHub ページ",
+    "github_soon": "プロジェクトの GitHub アドレスは近日追加予定です",
+    "running": "ゲーム実行中",
+    "launch": "ゲームを起動",
+    "launch_unconfigured": "設定で {game} の実行ファイルを指定してください",
+    "launch_tip": "適用中の構成でゲームを起動",
+    "quit": "終了"
+  },
+  "launch": {
+    "started": "{game} を起動中…",
+    "failed": "{game} を起動できませんでした。設定で実行ファイルと起動方法を確認してください。",
+    "no_exe": "{game} の実行ファイルが見つかりません。設定で指定してください。",
+    "already_running": "{game} はすでに実行中です。",
+    "apply_title": "「{name}」を適用しますか？",
+    "apply_text": "構成「{name}」は適用されていないか、その後変更されています。構成 {name} を適用してから {game} を起動しますか？",
+    "apply_and_launch": "適用して起動",
+    "without_apply": "適用せずに起動"
+  },
+  "backup": {
+    "created": "{game} の gameSettings.xml の元のバックアップを作成しました",
+    "exported": "設定をエクスポートしました：{file}",
+    "demo_active": "先にデモモードを終了してください。デモモードはあなたのフォルダーとは別のフォルダーを使います。",
+    "unreadable": "このファイルは読み込めません：{path}",
+    "too_big": "このファイルは FS Passion のエクスポートにしては大きすぎます：{path}",
+    "not_export": "このファイルは FS Passion のエクスポートではありません：{path}",
+    "too_new": "このファイルは新しいバージョンの FS Passion（{version}）で作成されています。インポートするには FS Passion を更新してください。",
+    "write_failed": "ファイルを保存できませんでした：{path}",
+    "expired": "インポートの有効期限が切れました。もう一度ファイルを選んでください。",
+    "running": "インポートの前に {game} を終了してください。構成が変更されます。",
+    "import": {
+      "title": "設定をインポート",
+      "from": "{date} のエクスポート、FS Passion {version}。",
+      "parties": {
+        "one": "構成 {count} 個",
+        "other": "構成 {count} 個"
+      },
+      "common": {
+        "one": "共通 MOD {count} 個",
+        "other": "共通 MOD {count} 個"
+      },
+      "no_parties": "このファイルには構成がありません。設定のみをインポートします。",
+      "keep": "現在のパスを維持（推奨）",
+      "keep_help": "この PC のゲーム・MOD・ダウンロードのフォルダーは変わりません。構成、共通 MOD、共通の設定（言語、テーマ、オプション）のみをインポートします。",
+      "replace_help": "ファイル内のパスでこの PC のパスを置き換えます。同じドライブ構成のこの PC から作ったファイルの場合のみ選んでください。",
+      "paths_differ": "このファイル内の MOD フォルダーはこの PC のものではありません。",
+      "warning": "上記バージョンの現在の構成は置き換えられます。現在の状態は事前に自動でバックアップされます。何も適用されません。構成フォルダーは次回の「適用」時に作り直されます。",
+      "ok": "インポート"
+    },
+    "result": {
+      "title": "設定をインポートしました",
+      "done": "インポートが完了しました。",
+      "parties": {
+        "one": "構成を {count} 個インポートしました",
+        "other": "構成を {count} 個インポートしました"
+      },
+      "skipped": "インポートされませんでした（この PC ではゲームのバージョンが未設定）",
+      "fallback": "ゲームはもう存在しない構成を読み込んでいました。今後は全 MOD 構成を読み込みます。",
+      "apply": "この PC にない MOD は、構成内で不足 MOD として表示されます。インポートした構成をゲームに読み込ませるには「適用」をクリックしてください。",
+      "backup": "インポート前の状態は %APPDATA%\\FSPassion\\backups\\{file} に保存されています。"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "game": {
+      "title": "ゲームとパス"
+    },
+    "look": {
+      "title": "表示"
+    },
+    "app": {
+      "title": "アプリケーション"
+    },
+    "help": {
+      "title": "ヘルプと情報"
+    },
+    "paths": {
+      "versions": "ゲームのバージョン",
+      "game_exe": "ゲームの実行ファイル",
+      "user_dir": "ドキュメント内のゲームフォルダー",
+      "mods_dir": "メインの MOD フォルダー",
+      "mods_dirs": "MOD フォルダー",
+      "browse": "参照…",
+      "fixed_fs2011": "FS2011 の MOD フォルダーは移動できません。",
+      "add_storage": "別のドライブに MOD フォルダーを追加",
+      "derived": "派生パス",
+      "not_applicable": "このバージョンには該当しません",
+      "d_game_dir": "ゲームフォルダー",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC（ゲームフォルダー）",
+      "d_dlc_user": "DLC（ドキュメント）",
+      "detect": "インストールを検出",
+      "detect_all": "すべてのバージョンを検出",
+      "detect_all_help": "すべてのバージョンのインストールを探し、空欄を埋めます。",
+      "detect_one": "このバージョンを検出",
+      "detect_one_help": "上で選択したバージョンのみ変更します。ほかのバージョンはそのままです。",
+      "detect_help": "あなたが手動で変更した項目は決して変更されません。",
+      "detect_found": "見つかったインストール：{list}",
+      "detect_none": "インストールが見つかりません。「参照…」でパスを指定してください。",
+      "launch_method": "ゲームの起動方法",
+      "launch_auto": "自動",
+      "launch_platform": "プラットフォーム",
+      "launch_exe": "実行ファイル",
+      "launch_help": "「自動」は適切な方法（Steam、Epic Games、Microsoft Store、Xbox、実行ファイル）を選びます。残りの 2 つは予備の方法です。",
+      "minimize_on_launch": "ゲーム起動時に FS Passion を最小化",
+      "minimize_on_launch_help": "「通知領域に閉じる」がオンなら（アプリケーション → ウィンドウ）通知領域へ、そうでなければタスクバーへ。",
+      "args_title": "起動オプション",
+      "args_show": "起動オプションを表示",
+      "args_hide": "起動オプションを隠す",
+      "args_skip": "イントロ動画をスキップ",
+      "args_skip_info": "イントロ動画とスプラッシュ画面をスキップします。",
+      "args_cheats": "開発者コンソール",
+      "args_cheats_info": "ゲーム内の開発者コンソールを有効にします。gameSettings.xml の隣にある game.xml の <controls> も設定します。",
+      "args_game_xml_absent": "game.xml が見つかりません。コンソールはゲームを一度起動した後にのみ有効になります。",
+      "args_game_xml_error": "game.xml を変更できませんでした。開発者コンソールは無効のままです。",
+      "args_help_command": "FS Passion はこれらを {game} の起動コマンドに追加します。",
+      "args_help_steam": "{game} は Steam から起動されます。Steam はほかのプログラムから渡されたオプションを拒否します（起動のたびに確認を求めます）。そのため FS Passion はオプションなしでゲームを起動します。下記のとおり Steam で一度だけ入力してください。",
+      "args_help_epic": "{game} は Epic Games から起動されます。Epic Games はほかのプログラムからのオプションを受け付けません。下記のとおり Epic Games Launcher で一度だけ入力してください。",
+      "args_help_unsupported": "{game} は Microsoft Store または Xbox からインストールされています。",
+      "args_store": "Microsoft Store と Xbox アプリでは起動オプションを使えません。有効にできるのは開発者コンソール（game.xml）だけです。オプションを使うには、インストールが対応していれば起動方法で「実行ファイル」を選んでください。",
+      "args_steam_where": "Steam での入力場所",
+      "args_steam_steps": "Steam ライブラリ：{game} を右クリック → プロパティ…\n一般タブ → 「起動オプション」欄\n下のテキストを貼り付けてウィンドウを閉じる",
+      "args_epic_where": "Epic Games Launcher での入力場所",
+      "args_epic_steps": "ライブラリ：{game} の下の「…」→ 管理\n「追加のコマンドライン引数」にチェック\n下のテキストを貼り付ける（古いランチャー：プロフィール画像 → 設定 → {game}）",
+      "args_none": "チェックされたオプションはありません",
+      "args_copy_label": "コピーするオプション",
+      "args_copy_help": "オプションのチェックを付け外ししたときだけ、もう一度必要です。",
+      "console_on": "game.xml でコンソール有効",
+      "console_off": "game.xml でコンソール無効",
+      "console_enable": "game.xml で有効にする",
+      "console_done": "{game} の game.xml で開発者コンソールを有効にしました",
+      "add_storage_help": "最大 2 つまで追加できます。その MOD は一覧に表示され、ほかと同じように構成に加わります。FS Passion がそこにほかのものを書き込むことはありません。",
+      "extra_dir": "追加の MOD フォルダー",
+      "extra_help": "このフォルダーを外しても MOD には影響しません。一覧に表示されなくなるだけです。",
+      "remove_storage": "このフォルダーを一覧から外す（MOD には触れません）"
+    },
+    "downloads": {
+      "title": "ダウンロード",
+      "folder": "ダウンロードフォルダー",
+      "help": "ブラウザーがダウンロードした MOD を保存するフォルダーです。",
+      "scan_at_start": "起動時に新しい MOD を探す",
+      "scan_now": "今すぐ探す"
+    },
+    "language": {
+      "title": "言語",
+      "personal": "個人用",
+      "open_folder": "個人用言語フォルダーを開く",
+      "personal_help": "ここで FS Passion をあなたの言語に翻訳できます。テンプレートと説明書が入っています。",
+      "rejected": "無視した言語ファイル（無効またはサイズ超過）：{list}"
+    },
+    "theme": {
+      "title": "テーマ",
+      "help": "見本にカーソルを合わせるとプレビュー、クリックで選択します。2 色テーマは 2 色のみです。ほかは人気テーマの公式カラーを使い、それぞれダーク版とライト版があります。ヘッダーの太陽/月ボタンで切り替えます。",
+      "contrast": "コントラスト {ratio}:1",
+      "loop": "テーマループ：1 分ごとにテーマを変更",
+      "light_effects": "光の効果（光沢、光る輪郭、ネオン）",
+      "reduce_motion": "アニメーションを減らす",
+      "follows_windows": "Windows の「アニメーション効果」設定に従います。",
+      "follow_windows": "Windows の設定に従う",
+      "atelier": "テーマ工房を開く",
+      "mode_dark": "ダーク",
+      "mode_light": "ライト",
+      "group_duo": "2 色"
+    },
+    "backup": {
+      "title": "設定のバックアップ",
+      "help": "構成、共通 MOD、設定をファイルにエクスポートし、再インストール後や別の PC で復元できます。MOD 自体はコピーされず、名前だけが保存されます。",
+      "export": "エクスポート",
+      "import": "インポート"
+    },
+    "notice": {
+      "title": "ガイド",
+      "open": "ガイドを開く",
+      "at_start": "起動時に表示",
+      "tour": "インターフェースのガイドツアー"
+    },
+    "anomalies": {
+      "title": "問題",
+      "show": "問題を表示",
+      "reset": {
+        "zero": "非表示にした問題はありません",
+        "one": "非表示にした問題を再表示",
+        "other": "非表示にした {count} 件の問題を再表示"
+      },
+      "reset_done": "非表示にした問題を再び表示しています"
+    },
+    "internet": {
+      "title": "インターネット接続",
+      "allow": "FS Passion に GitHub から DLC カタログのダウンロードを許可",
+      "help": "DLC カタログ（名前とアイコン）は GitHub から 1 日に最大 1 回読み込まれます。ダウンロードするのはこの PC にある DLC のアイコンだけです。個人データは送信されません。",
+      "catalog_off": "DLC カタログ：FS Passion 同梱版（接続オフ）。",
+      "catalog_remote": "{date} の DLC カタログ（GitHub からダウンロード）。",
+      "catalog_embedded": "{date} の DLC カタログ（FS Passion に同梱）。",
+      "check": "今すぐ確認",
+      "checking": "確認中…",
+      "error_not_found": "カタログはまだ GitHub に公開されていません。",
+      "error_unreachable": "前回の確認に失敗しました（接続なし？）。",
+      "error_invalid": "公開されたカタログを読み込めません。FS Passion 内のカタログを使用します。",
+      "error_too_new": "公開されたカタログには新しいバージョンの FS Passion が必要です。",
+      "error_too_big": "公開されたカタログが大きすぎるため無視しました。"
+    },
+    "updates": {
+      "title": "FS Passion のアップデート",
+      "allow": "GitHub で FS Passion のアップデートを確認",
+      "help": "起動のたびに（その後は開いている間 1 日 1 回）、FS Passion は GitHub で最新の公開バージョン番号を読み込みます。個人データは送信されません。",
+      "off": "アップデートの確認はオフです。",
+      "checking": "確認中…",
+      "last_check": "最終確認：{date}。",
+      "up_to_date": "FS Passion は最新です（バージョン {version}）。",
+      "never": "インストール済みバージョン：{version}。",
+      "available": "新しいバージョンがあります：{version}",
+      "published": "{date} 公開",
+      "current": "インストール済みバージョン：{version}",
+      "install": "アップデートをインストール",
+      "download_portable": "ポータブル版をダウンロード",
+      "downloading": "ダウンロード中… {percent}%",
+      "closing": "インストール中…",
+      "closing_help": "FS Passion は終了して新しいバージョンをインストールし、再び起動します。",
+      "see_release": "新機能を見る",
+      "check": "今すぐ確認",
+      "how_installed": "インストーラーを GitHub からダウンロードして検証します（SHA-256 チェックサム）。インストール中は FS Passion が終了し、その後再び起動します。設定、構成、MOD はそのまま残ります。",
+      "how_portable": ".zip ファイルをダウンロードフォルダーにダウンロードして検証します。FS Passion を終了し、フォルダー内のファイルを .zip の中身で置き換えてください。「data」フォルダー（あなたの設定）は残してください。",
+      "how_source": "新しいバージョンを GitHub ページからダウンロードしてください。",
+      "note": "FS Passion の新しいバージョンがあります：{version}",
+      "pill": "新バージョン {version}",
+      "pill_tip": "FS Passion のアップデートがあります：設定 → アプリケーション",
+      "portable_ready": "ポータブル版をダウンロードして検証しました：{file}",
+      "error_not_found": "GitHub にはまだバージョンが公開されていません。",
+      "error_unreachable": "確認に失敗しました（接続なし？）。",
+      "error_rate_limited": "GitHub が一時的に確認を制限しています。後でもう一度試します。",
+      "error_invalid": "GitHub のリリースを読み込めません。",
+      "error_no_source": "GitHub リポジトリのアドレスがありません。",
+      "error_checksum": "ダウンロードしたファイルがチェックサムと一致しません。ファイルは削除され、何もインストールされていません。",
+      "error_no_checksum": "このリリースにはこのファイルの SHA-256 チェックサムがありません。安全のため何もインストールしていません。",
+      "error_missing_file": "このリリースには必要なファイルが含まれていません。GitHub ページからダウンロードしてください。",
+      "error_disabled": "アップデートの確認はオフです。",
+      "error_busy": "すでにダウンロード中です。",
+      "error_none": "インストールするアップデートはありません。",
+      "error_unsupported": "ここでは自動インストールできません。アップデートを GitHub ページからダウンロードしてください。",
+      "error_launch": "インストーラーを起動できませんでした。アップデートを GitHub ページからダウンロードしてください。",
+      "error_game_running": "先に Farming Simulator を終了してください。FS Passion はゲーム終了時に構成を整理します。"
+    },
+    "logs": {
+      "title": "ログと診断",
+      "open_logs": "ログフォルダーを開く",
+      "copy_diag": "診断情報をコピー",
+      "diag_copied": "診断情報をコピーしました。報告に貼り付けてください"
+    },
+    "donate": {
+      "title": "プロジェクトを支援",
+      "text": "FS Passion は信頼できるオープンソースの無料プロジェクトであり、これからもそうあり続けます。作者にお礼をしたい場合、1 回限りの寄付は数秒で済み、アカウント作成も不要です。ありがとうございます！",
+      "no_link": "リンクは近日追加予定"
+    },
+    "about": {
+      "title": "情報",
+      "version": "バージョン",
+      "author": "作者",
+      "license": "ライセンス",
+      "github_soon": "アドレスは近日追加予定",
+      "official": "公式のダウンロードリンクはプロジェクトの GitHub ページだけです。",
+      "unofficial": "FS Passion は独立したプロジェクトであり、GIANTS Software とは関係ありません。Farming Simulator は GIANTS Software の商標です。",
+      "privacy": "FS Passion はデータを一切送信しません。許可した場合に限り、公開されている DLC 一覧を GitHub からダウンロードするだけです。",
+      "window_mode": "ウィンドウ方式（開発用）",
+      "window_native": "ネイティブ",
+      "window_script": "計算方式",
+      "window_thin": "細枠",
+      "window_restart": "次回 FS Passion 起動時に反映されます",
+      "window_help": "現在の方式：{current}。端をドラッグしてサイズを変えられない場合のみ変更してください。"
+    },
+    "stop": {
+      "title": "FS Passion の使用をやめる",
+      "show": "詳細を表示",
+      "hide": "詳細を隠す",
+      "text": "ゲームの設定を元に戻し、構成フォルダーを削除します。MOD には一切触れません。",
+      "button": "FS Passion の使用をやめる"
+    },
+    "window": {
+      "title": "ウィンドウ",
+      "close_to_tray": "通知領域に閉じる",
+      "close_to_tray_help": "ウィンドウの閉じるボタンで FS Passion は Windows の時計の横に隠れます。アイコンをクリックすると戻ります。「終了」（右下、またはアイコンのメニュー）で完全に終了します。",
+      "tray_off": "通知領域は Windows 上の FS Passion ウィンドウでのみ使えます。",
+      "focus_after_game": "ゲーム終了時に前面に戻る",
+      "focus_after_game_help": "Farming Simulator を終了すると、通知領域に隠れていても FS Passion が再び表示されます。"
+    },
+    "demo": {
+      "title": "ゲームなしで試す",
+      "help": "テスト用フォルダーで FS Passion のすべての機能を試せるダミー MOD です。本来のパスは退避され、終了時に元に戻ります。",
+      "start": "ゲームなしで FS Passion を試す",
+      "active_help": "デモモード中：これらのパスはテスト用フォルダーのものです。デモモードを終了すると本来のパスに戻ります。"
+    }
+  },
+  "themes": {
+    "lime": "ライム",
+    "jade": "ジェイド",
+    "cuivre": "カッパー",
+    "blue": "ホワイト"
+  },
+  "anomalies": {
+    "title": "見つかった問題",
+    "none": "問題はありません。すべて正常です。",
+    "intro": "MOD フォルダー内のこれらの項目は、そのままではゲームで使えません。深刻なものではなく、FS Passion はこれらに触れません。",
+    "new": "新規",
+    "hide_type": "この種類の問題を今後表示しない",
+    "hide_folder": "このフォルダーを今後表示しない",
+    "rename": "名前を変更…",
+    "others": {
+      "one": "その他の無視したファイル（{count}）",
+      "other": "その他の無視したファイル（{count}）"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar または .7z アーカイブ（{count}）",
+        "other": ".rar または .7z アーカイブ（{count}）"
+      },
+      "explain": "ゲームは .zip ファイルしか読み込みません。アーカイブを展開し、必要なら MOD を zip で圧縮し直してください。"
+    },
+    "A2": {
+      "title": {
+        "one": "modDesc.xml のない .zip（{count}）",
+        "other": "modDesc.xml のない .zip（{count}）"
+      },
+      "explain": "展開が必要な、複数の MOD をまとめたパックであることが多いです。",
+      "nested": "modDesc.xml がサブフォルダー内にあります（{path}）。MOD の圧縮方法が正しくありません。"
+    },
+    "A3": {
+      "title": {
+        "one": "読み込めないアーカイブ（{count}）",
+        "other": "読み込めないアーカイブ（{count}）"
+      },
+      "explain": "アーカイブの破損、または modDesc.xml が無効です。MOD をダウンロードし直してください。",
+      "zip": "アーカイブを開けません。",
+      "xml": "modDesc.xml ファイルが無効です。"
+    },
+    "A4": {
+      "title": {
+        "one": "modDesc.xml のないフォルダー（{count}）",
+        "other": "modDesc.xml のないフォルダー（{count}）"
+      },
+      "explain": "ルートに modDesc.xml がないと、ゲームはこのフォルダーを使えません。FS Passion がこれに触れることはありません。"
+    },
+    "A5": {
+      "title": {
+        "one": "ゲームが受け付けない名前（{count}）",
+        "other": "ゲームが受け付けない名前（{count}）"
+      },
+      "explain": "ゲームが受け付けるのは、アクセント記号のない英字、数字、「_」だけです。",
+      "suggestion": "推奨名：{name}"
+    },
+    "A6": {
+      "title": {
+        "one": "別のゲームバージョン用の MOD（{count}）",
+        "other": "別のゲームバージョン用の MOD（{count}）"
+      },
+      "explain": "このバージョンのゲームはこの MOD を読み込みません。",
+      "detected": "{game} 用の MOD"
+    },
+    "A7": {
+      "title": {
+        "one": "不足 MOD（{count}）",
+        "other": "不足 MOD（{count}）"
+      },
+      "explain": "ある構成がこの MOD を参照していますが、MOD フォルダーにはもうありません。",
+      "in": "含まれる場所：{list}"
+    },
+    "A8": {
+      "title": {
+        "one": "削除済みだがリンクが残る MOD（{count}）",
+        "other": "削除済みだがリンクが残る MOD（{count}）"
+      },
+      "explain": "この MOD は MOD フォルダーから削除されましたが、一部の構成にまだ含まれています。",
+      "copy": "コピーがまだ残っている場所：{list}",
+      "delete_title": "残っているコピーを削除しますか？",
+      "delete_text": "構成フォルダーにまだ残っている「{name}」の最後のコピーをごみ箱に送り、MOD をすべてのリストから外します。"
+    },
+    "A9": {
+      "title": {
+        "one": "重複 MOD（{count}）",
+        "other": "重複 MOD（{count}）"
+      },
+      "explain": "同じ MOD が 2 つあります。2 つの保存フォルダーにあるか、.zip とフォルダーが並んでいます。ゲームが読み込むのは 1 つだけです。FS Passion はメインフォルダーにあるもの、そしてフォルダーよりアーカイブを使います。",
+      "zip_and_dir": "「{name}」は .zip と展開済みフォルダーの両方で存在します。ゲームが読み込むのは 1 つだけで、ModHub はこれを更新できません。どちらか 1 つの形式だけ残してください（もう一方は「完全に削除」で削除するか、MOD フォルダーの外に移動）。",
+      "files": "ファイル：{list}"
+    },
+    "game": "{game}",
+    "folder": "MOD フォルダー：{path}",
+    "show_in_folder": "エクスプローラーで表示",
+    "open_folder": "エクスプローラーで MOD フォルダーを開く（MOD はもうありません）"
+  },
+  "welcome": {
+    "subtitle": "MOD の保存は 1 回だけ。構成はいくつでも。",
+    "language": "言語を選んでください"
+  },
+  "notice": {
+    "title": "FS Passion のしくみ",
+    "at_start": "アプリケーションの起動時にこのウィンドウを表示",
+    "understood": "了解",
+    "blocks": [
+      {
+        "key": "まず最初に：すべての MOD のバックアップを別のドライブに作成することをおすすめします。大切なファイルを扱う前と同様、これは欠かせません。"
+      },
+      {
+        "h": "コンセプト"
+      },
+      {
+        "p": "FS Passion を使えば、MOD のコピーを元のフォルダーに 1 つだけ残したまま、Farming Simulator の構成を好きなだけ、すばやく簡単に作成できます。"
+      },
+      {
+        "p": "構成から構成へ 1 クリックで切り替え！"
+      },
+      {
+        "h": "インストール"
+      },
+      {
+        "p": "MOD フォルダーはどのドライブにあってもかまいません。FS Passion が合わせます。手作業で作成・移動・名前変更するものはありません。ドライブがいっぱい？ ほかのドライブに MOD フォルダーを最大 2 つ追加できます（設定 → ゲームとパス）。その MOD もほかと同じように構成に加わります。"
+      },
+      {
+        "h": "はじめての使い方"
+      },
+      {
+        "ul": [
+          "マップにある魔法の「＋ 構成」ボタンで構成を作成します。マップとその依存 MOD が 1 クリックで構成になります。",
+          "次に、ほかの MOD を、すべての構成に含まれる共通 MOD に振り分けます。",
+          "「適用」をクリック：次回の起動時に、選んだ構成をゲームが読み込みます。"
+        ]
+      },
+      {
+        "h": "MOD の追加・名前変更・削除"
+      },
+      {
+        "ul": [
+          "新しい MOD：いつもどおりダウンロードし、リスト上部の「新しい MOD を探す」をクリックします。FS Passion が正しいゲームバージョンの MOD フォルダーに入れます。",
+          "MOD を削除するときは、エクスプローラーではなく FS Passion（アクションバーの「完全に削除」）で行ってください。リストと構成から同時に外され、ごみ箱に移動します。",
+          "MOD の名前を変更する（F2 キー）と ModHub から切り離され、アップデートが届かなくなります。"
+        ]
+      },
+      {
+        "h": "アップデート"
+      },
+      {
+        "p": "何もする必要はありません。ゲームがダウンロードしたアップデートは、ゲーム終了時または次回 FS Passion 起動時に回収されます。古いバージョンは「Old versions」に退避されます。ゲームがあなたのものより古いバージョン番号をダウンロードした場合（多くはあなたが改変した MOD）、FS Passion がどちらを残すか尋ねます。"
+      },
+      {
+        "p": "FS Passion 自体：新しいバージョンが出ると、設定の歯車に点が付き、下部のバージョン番号の横に「新バージョン」と表示されます。設定 → アプリケーション → 「アップデートをインストール」。"
+      },
+      {
+        "h": "構成を保存する"
+      },
+      {
+        "p": "設定 → アプリケーション → 「エクスポート」で、構成、共通 MOD、設定をファイルに保存します。「インポート」で、再インストール後や別の PC で元に戻せます。"
+      },
+      {
+        "h": "やめるには"
+      },
+      {
+        "p": "「FS Passion の使用をやめる」（設定 → アプリケーション）で、ゲームの設定が元に戻り、構成フォルダーが削除されます。MOD には一切触れません。"
+      }
+    ]
+  },
+  "atelier": {
+    "title": "テーマ工房",
+    "id": "識別子",
+    "name": "名前",
+    "dark": "ウィンドウの背景",
+    "light": "メインカラー",
+    "mica": "Mica の光",
+    "grain": "粒子",
+    "effect": "効果",
+    "effect_none": "なし",
+    "effect_metal": "金属光沢",
+    "intensity": "強さ",
+    "save": "保存",
+    "copy": "定義をコピー",
+    "new": "新規",
+    "copied": "定義をコピーしました",
+    "saved": "テーマを ui/themes.json に保存しました",
+    "contrast_low": "コントラスト {ratio}:1、4.5:1 未満です。小さな文字には {color} を使います。",
+    "contrast_ok": "コントラスト {ratio}:1",
+    "mode": "モード",
+    "mode_dark": "ダーク",
+    "mode_light": "ライト",
+    "text": "文字",
+    "multi": "複数のアクセントカラー（領域ごとに 1 色）",
+    "accent_n": "アクセント {n}",
+    "pair": "対のテーマ（太陽/月）",
+    "pair_none": "なし",
+    "gradient": "2 色グラデーション（見出し、「適用」「起動」ボタン）",
+    "gradient_from": "グラデーション：開始",
+    "gradient_to": "グラデーション：終了",
+    "style": "スタイル",
+    "style_duo": "2 色",
+    "style_palette": "公式パレット",
+    "style_classic": "計算による半透明",
+    "surface_1": "ウィンドウの背景",
+    "surface_2": "リストとウィンドウ",
+    "surface_3": "セクション",
+    "surface_4": "サブセクション",
+    "text_n": "文字 {n}",
+    "neon": "ネオン",
+    "neon_help": "見出し、アイコン、輪郭を各領域の色で光らせます（0：効果なし）。「光の効果」でオフになります。"
+  },
+  "error": {
+    "bad_request": "無効なリクエストです。",
+    "forbidden": "アクセスが拒否されました。",
+    "not_found": "項目が見つかりません。",
+    "unexpected": "予期しないエラーです。診断情報をコピーし（設定 → ヘルプと情報）、報告に添付してください。",
+    "offline": "FS Passion のコアが応答しません。",
+    "internal": "安全のため操作を拒否しました。診断情報をコピーし（設定 → ヘルプと情報）、報告に添付してください。"
+  },
+  "detect": {
+    "busy": "すでに検出を実行中です。"
+  },
+  "parties": {
+    "not_configured": "構成を作成するには、設定で {game} の MOD フォルダーを指定してください。",
+    "name_label": "構成名",
+    "name_empty": "名前を空にはできません。",
+    "name_too_long": "最大 {max} 文字です。",
+    "name_taken": "「{name}」という構成はすでにあります。",
+    "special_locked": "全 MOD 構成と空の構成は、変更・名前変更・複製・削除できません。",
+    "not_found": "この構成はもう存在しません。",
+    "write_failed": "構成を {path} に保存できませんでした。このドライブに書き込めるか確認してください。",
+    "recovered": "{game} の構成ファイルを読み込めなかったため、最新のバックアップ（{backup}）を読み込みました。破損したファイルは退避しました。",
+    "lost": "{game} の構成ファイルを読み込めず、バックアップも読み込めませんでした。破損したファイルは退避し、何も削除していません。",
+    "running_rename": "この構成の名前を変更する前に {game} を終了してください。ゲーム実行中はフォルダーを変更できません。",
+    "running_delete": "この構成を削除する前に {game} を終了してください。ゲーム実行中はフォルダーを変更できません。",
+    "map_not_found": "マップが見つかりません：{name}",
+    "mod_not_found": "MOD が見つかりません：{name}",
+    "create_title": "新しい構成",
+    "create_help": "共通 MOD を含む空の構成です。その後「すべての MOD」から MOD を追加してください。",
+    "create_ok": "作成",
+    "created": "構成「{name}」を作成しました",
+    "duplicate_title": "構成を複製",
+    "duplicate_help": "コピーには「{name}」の MOD と「共通 MOD」の設定が引き継がれます。",
+    "copy_name": "{name}（コピー）",
+    "duplicate_ok": "複製",
+    "duplicated": "構成「{name}」を作成しました",
+    "rename_title": "構成の名前を変更",
+    "rename_ok": "名前を変更",
+    "renamed": "「{old}」を「{name}」に名前変更しました",
+    "delete_title": "構成を削除",
+    "delete_text": {
+      "zero": "構成「{name}」を削除しますか？ MOD は含まれていません。",
+      "one": "構成「{name}」を削除しますか？ MOD は MOD フォルダーに残ります。消えるのは構成とそのリンク用フォルダーだけです。",
+      "other": "構成「{name}」を削除しますか？ {count} 個の MOD は MOD フォルダーに残ります。消えるのは構成とそのリンク用フォルダーだけです。"
+    },
+    "delete_ok": "削除",
+    "deleted": "構成「{name}」を削除しました",
+    "deleted_applied": "構成 {name} を削除しました。ゲームは今後、構成 {other} を使います。"
+  },
+  "actions": {
+    "selected": {
+      "one": "個の MOD を選択中",
+      "other": "個の MOD を選択中"
+    },
+    "add_party": "構成の MOD に追加",
+    "add_common": "共通 MOD に追加",
+    "remove_party": "構成の MOD から外す",
+    "remove_common": "共通 MOD から外す",
+    "rename": "名前を変更…",
+    "rename_help": "「すべての MOD」で選んだ MOD 1 個のみ。",
+    "delete": "完全に削除…",
+    "close": "バーを閉じて選択を解除（Esc）",
+    "added_party": {
+      "one": "{count} 個の MOD を構成「{name}」に追加しました",
+      "other": "{count} 個の MOD を構成「{name}」に追加しました"
+    },
+    "added_common": {
+      "one": "{count} 個の MOD を共通 MOD に追加しました",
+      "other": "{count} 個の MOD を共通 MOD に追加しました"
+    },
+    "moved_party": {
+      "one": "{count} 個の MOD を構成「{name}」に移動しました",
+      "other": "{count} 個の MOD を構成「{name}」に移動しました"
+    },
+    "moved_common": {
+      "one": "{count} 個の MOD を共通 MOD に移動しました",
+      "other": "{count} 個の MOD を共通 MOD に移動しました"
+    },
+    "removed_party": {
+      "one": "{count} 個の MOD を構成「{name}」から外しました",
+      "other": "{count} 個の MOD を構成「{name}」から外しました"
+    },
+    "removed_common": {
+      "one": "{count} 個の MOD を共通 MOD から外しました",
+      "other": "{count} 個の MOD を共通 MOD から外しました"
+    },
+    "nothing_party": "これらの MOD はすでに構成「{name}」に含まれています",
+    "nothing_common": "これらの MOD はすでに共通 MOD に含まれています"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "依存 MOD も追加しますか？",
+      "other": "{count} 個の依存 MOD も追加しますか？"
+    },
+    "ask_yes": {
+      "one": "依存 MOD も追加",
+      "other": "{count} 個の依存 MOD も追加"
+    },
+    "ask_no": "選んだ MOD のみ",
+    "missing_warn": {
+      "one": "手元の MOD にない依存 MOD：{list}",
+      "other": "手元の MOD にない依存 MOD {count} 個：{list}"
+    },
+    "needed_by_map": "マップ「{name}」に必要なもの：",
+    "needed_by_mod": "MOD「{name}」に必要なもの：",
+    "needed": "依存 MOD：",
+    "where_common": "共通 MOD",
+    "where_party": "構成「{name}」",
+    "ask_intro": {
+      "one": "この MOD は選んだ MOD の依存 MOD ですが、{where} に含まれていません。",
+      "other": "これら {count} 個の MOD は選んだ MOD の依存 MOD ですが、{where} に含まれていません。"
+    },
+    "missing_for": "{list}（「{name}」に必要）",
+    "optional_title": {
+      "one": "オプション MOD も追加しますか？",
+      "other": "オプション MOD も追加しますか？"
+    },
+    "optional_intro": {
+      "one": "手元にすでにあるオプション MOD 1 個：",
+      "other": "手元にすでにあるオプション MOD {count} 個："
+    },
+    "optional_for": "「{name}」のオプション",
+    "optional_note": "オプション：ゲームには不要です。{where} に追加されるのはチェックしたものだけです。",
+    "optional_continue": "続ける"
+  },
+  "commonguard": {
+    "title_maps": "注意：マップが共通 MOD に入ろうとしています",
+    "title_classified": "注意：分類済みの MOD が共通 MOD に入ろうとしています",
+    "maps_intro": {
+      "one": "おそらく間違いです。選択にマップが 1 つ含まれており、それを共通 MOD に追加しようとしています：",
+      "other": "おそらく間違いです。選択にマップが {count} 個含まれており、それらを共通 MOD に追加しようとしています："
+    },
+    "classified_intro": {
+      "one": "選択には、いずれかの構成にすでに分類済みの MOD も 1 個含まれています。",
+      "other": "選択には、構成にすでに分類済みの MOD も {count} 個含まれています。"
+    },
+    "why_maps": "おそらく意図した操作ではありません。共通 MOD に入れたものはすべての構成で読み込まれます。これらのマップがどこでも読み込まれることになり、まさに FS Passion が避ける手助けをしている状態です。",
+    "why_classified": "おそらく意図した操作ではありません。共通 MOD に入れたものはすべての構成で読み込まれます。これらの MOD は自分の構成に限定されなくなり、リストの意味がなくなります。",
+    "unclassified_offer": {
+      "one": "選択には未分類の MOD が 1 個だけ含まれています（マップを除く）。それだけを追加できます。",
+      "other": "選択には未分類の MOD が {count} 個含まれています（マップを除く）。それらだけを追加できます。"
+    },
+    "tip": "ヒント：Ctrl+A は、マップや分類済みの MOD も含めて「すべての MOD」リスト全体を選択します。",
+    "continue": "それでも続ける",
+    "only_unclassified": {
+      "one": "未分類の MOD だけを追加",
+      "other": "未分類の MOD {count} 個だけを追加"
+    }
+  },
+  "plus": {
+    "title": "マップから新しい構成",
+    "deps_title": {
+      "one": "依存 MOD {count} 個",
+      "other": "依存 MOD {count} 個"
+    },
+    "dlc_title": "必要な DLC",
+    "dlc_note": "参考：インストール済みの DLC は常にゲームが読み込みます。構成には追加されません。",
+    "missing_note": "不足している依存 MOD は追加されません。ダウンロードしてから構成に追加してください。",
+    "no_deps": "依存 MOD の指定はありません。構成にはマップだけが含まれます。",
+    "summary": {
+      "zero": "構成にはマップだけと共通 MOD が含まれます。",
+      "one": "構成にはマップとその依存 MOD、そして共通 MOD が含まれます。",
+      "other": "構成にはマップとその依存 MOD {count} 個、そして共通 MOD が含まれます。"
+    },
+    "create": "構成を作成",
+    "created": {
+      "one": "構成「{name}」を作成しました：MOD {count} 個",
+      "other": "構成「{name}」を作成しました：MOD {count} 個"
+    },
+    "created_missing": {
+      "one": "ダウンロードが必要な依存 MOD：{list}",
+      "other": "ダウンロードが必要な依存 MOD {count} 個：{list}"
+    },
+    "optional_title": {
+      "one": "オプション MOD {count} 個",
+      "other": "オプション MOD {count} 個"
+    },
+    "optional_note": "オプション：ゲームには不要です。構成に追加するものにチェックしてください。",
+    "optional_none_present": "これらのオプション MOD はどれも手元にありません。ゲームには不要です。"
+  },
+  "replace": {
+    "title": "置き換え…",
+    "help": "{name} は MOD フォルダーにもうありません。作者が名前を変えた場合は新しいバージョンを選んでください。すべてのリストでこれと入れ替わります。",
+    "done": {
+      "one": "{count} 個のリストで {old} を {name} に置き換えました",
+      "other": "{count} 個のリストで {old} を {name} に置き換えました"
+    }
+  },
+  "notifications": {
+    "title": "通知",
+    "unread": {
+      "one": "通知：新着メッセージ 1 件",
+      "other": "通知：新着メッセージ {count} 件"
+    },
+    "clear": "すべて消去",
+    "none": "まだ通知はありません。右下に表示されたメッセージは、FS Passion を終了するまでここに残ります。"
+  },
+  "tray": {
+    "show": "FS Passion を表示",
+    "quit": "FS Passion を終了",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion はここで動作を続けています。アイコンをクリックすると戻ります。「終了」で完全に終了します。"
+  },
+  "apply": {
+    "unsupported": "このバージョンのゲームは MOD フォルダーを変更できません。",
+    "not_ready": "先に設定でゲームの MOD フォルダーとマイドキュメントフォルダーを指定してください。",
+    "running": "構成を適用する前に {game} を終了してください。",
+    "no_gamesettings": "{game} の gameSettings.xml が見つかりません。一度ゲームを起動するか、設定でマイドキュメントフォルダーを確認してください。",
+    "busy": "別の構成操作を実行中です。少ししてからもう一度お試しください。",
+    "library_busy": "MOD をまだ読み込み中です。少ししてからもう一度お試しください。",
+    "done": {
+      "zero": "構成 {name} を適用しました：MOD なし。",
+      "one": "構成 {name} を適用しました：MOD {count} 個。",
+      "other": "構成 {name} を適用しました：MOD {count} 個。"
+    },
+    "missing": {
+      "one": "構成の MOD 1 個が MOD フォルダーにありません：{list}",
+      "other": "構成の MOD {count} 個が MOD フォルダーにありません：{list}"
+    },
+    "updated": {
+      "one": "ゲームが残したアップデート 1 件を MOD フォルダーに移動しました。",
+      "other": "ゲームが残したアップデート {count} 件を MOD フォルダーに移動しました。"
+    },
+    "added": {
+      "one": "ゲームが残した MOD 1 個が MOD フォルダーと構成 {name} に加わりました。",
+      "other": "ゲームが残した MOD {count} 個が MOD フォルダーと構成 {name} に加わりました。"
+    },
+    "set_aside": {
+      "one": "ファイル 1 個を退避しました。何も削除していません（構成の隣の「Recovered」または「Old versions」フォルダー）。",
+      "other": "ファイル {count} 個を退避しました。何も削除していません（構成の隣の「Recovered」と「Old versions」フォルダー）。"
+    },
+    "empty_party": "構成 {name} には MOD がありません。ゲームは MOD なしで起動します。",
+    "not_same_disk": "{name} をリンクできません。構成フォルダーは MOD フォルダーと同じドライブにある必要があります。",
+    "no_hardlinks": "このドライブはハードリンクに対応していません。MOD フォルダーは NTFS ドライブにある必要があります。何も変更していません。",
+    "too_many_links": "{name} をリンクできません。このファイルは Windows のリンク数の上限に達しました。",
+    "access_denied": "{name} のリンク中にアクセスが拒否されました。何も変更していません。",
+    "link_failed": "{name} のリンクを作成できませんでした（{detail}）。何も変更していません。",
+    "junction_failed": "展開済み MOD {name} のジャンクションを作成できませんでした（{detail}）。何も変更していません。",
+    "folder_busy": "フォルダー {path} はほかのプログラム（エクスプローラー？）が使用中です。閉じてからもう一度お試しください。何も変更していません。",
+    "folder_exists": "フォルダー {path} はすでに存在します。別の名前を選んでください。",
+    "failed": "構成を適用できませんでした（{detail}）。何も変更していません。",
+    "recovered_finished": "{game} の構成操作が中断されていました（停電？）。完了させました。",
+    "recovered_cancelled": "{game} の構成操作が中断されていました（停電？）。取り消しました。何も変わっていません。",
+    "symlink_denied": "Windows が {name} へのシンボリックリンクを拒否しています。Windows の開発者モードまたは管理者権限が必要です。",
+    "blocked": {
+      "one": "別のドライブの MOD 1 個を構成に加えられませんでした（シンボリックリンクの権限なし）：{list}。設定 → ゲームとパス を参照してください。",
+      "other": "別のドライブの MOD {count} 個を構成に加えられませんでした（シンボリックリンクの権限なし）：{list}。設定 → ゲームとパス を参照してください。"
+    }
+  },
+  "override": {
+    "title": "ゲームが不明なフォルダーを読み込んでいます",
+    "text": "{game} は FS Passion の知らないフォルダーから MOD を読み込んでいます（手動または別のツールで変更）：",
+    "help": "このフォルダーを MOD フォルダーとして採用するか、構成をもう一度適用するか、ゲームをそのままにしてください。",
+    "adopt": "MOD フォルダーとして採用",
+    "reapply": "{name} をもう一度適用",
+    "ignore": "何もしない",
+    "adopted": "新しい MOD フォルダー：{path}",
+    "read_failed": "gameSettings.xml を読み込めません（{path}）。何も変更していません。",
+    "backup_failed": "gameSettings.xml のバックアップを書き込めませんでした（{path}）。何も変更していません。",
+    "write_failed": "gameSettings.xml を書き込めませんでした（{path}）。ゲームが開いていませんか？",
+    "check_failed": "gameSettings.xml の確認に失敗しました。元のファイルを復元しました。",
+    "no_root": "gameSettings.xml はゲームの設定ファイルではないようです。何も変更していません。"
+  },
+  "demo": {
+    "title": "デモモード",
+    "pill": "デモ",
+    "quit": "終了",
+    "banner": "デモモード：これらの MOD はダミーです。本来のフォルダーとゲームには触れません。",
+    "badge": "ダミー MOD（デモ）",
+    "installing": "デモ用 MOD を準備中…",
+    "started": "デモモード：何でも試せます。ゲームには一切触れません。",
+    "stopped": "デモモードを終了しました。すべて消去しました。",
+    "stop_title": "デモモードを終了",
+    "stop_text": "ダミー MOD、テスト用の構成、デモフォルダー全体が消去されます。本来の設定は元どおりに戻ります。",
+    "stop_ok": "終了してすべて消去",
+    "offer_title": "ゲームなしで FS Passion を試しますか？",
+    "offer_text": "この PC では Farming Simulator が見つかりませんでした。ダミー MOD で FS Passion を試せます。構成の作成、分類、適用… すべてテスト用フォルダーで動作し、ゲームには一切触れません。",
+    "offer_local": "デモパックはすでにこの PC にあります（約 2 MB）。",
+    "offer_download": "デモパック（約 2 MB）をプロジェクトの GitHub ページからダウンロードし、検証します。",
+    "offer_yes": "試す",
+    "offer_no": "後で",
+    "unavailable": "デモパックはまだ利用できません。",
+    "bad_pack": "デモパックが破損しているか、オリジナルと一致しないため拒否しました。",
+    "download_failed": "デモパックをダウンロードできませんでした（{detail}）。",
+    "install_failed": "デモパックをインストールできませんでした（{detail}）。",
+    "remove_failed": "デモフォルダーを完全には消去できませんでした：{path}",
+    "no_detect": "デモモードではゲームの検出はオフです。"
+  },
+  "delete": {
+    "title": {
+      "one": "この MOD を完全に削除しますか？",
+      "other": "これら {count} 個の MOD を完全に削除しますか？"
+    },
+    "intro": {
+      "one": "この MOD はすべてのリストとすべての構成フォルダーから外され、その後 MOD フォルダーから削除されます：",
+      "other": "これら {count} 個の MOD はすべてのリストとすべての構成フォルダーから外され、その後 MOD フォルダーから削除されます："
+    },
+    "irreversible": "元に戻せません。",
+    "recycle": "ファイルは Windows のごみ箱に移動します。そこから復元することもできます。",
+    "no_recycle": "このドライブにはごみ箱がありません。削除は完全なものになります。",
+    "understand": {
+      "one": "このファイルが削除されることを理解しました",
+      "other": "これらのファイルが削除されることを理解しました"
+    },
+    "ok": "完全に削除",
+    "done_recycled": {
+      "one": "MOD 1 個をごみ箱に送りました",
+      "other": "MOD {count} 個をごみ箱に送りました"
+    },
+    "done_deleted": {
+      "one": "MOD 1 個を完全に削除しました",
+      "other": "MOD {count} 個を完全に削除しました"
+    },
+    "failed": {
+      "one": "MOD 1 個を削除できませんでした：{list}。リストからは外しました。使用中のプログラムを閉じてからもう一度お試しください。",
+      "other": "MOD {count} 個を削除できませんでした：{list}。リストからは外しました。使用中のプログラムを閉じてからもう一度お試しください。"
+    },
+    "nothing": "削除する MOD はありません。",
+    "running": "MOD を削除する前に {game} を終了してください。"
+  },
+  "rename": {
+    "title": "MOD の名前を変更",
+    "label": "新しい名前",
+    "prefix_tip": "バージョンの接頭辞は維持されます",
+    "final": "ファイル名：{file}",
+    "rule": "アクセント記号のない英字、数字、「_」のみ。ほかの文字はゲームが受け付けません。",
+    "where": "含まれる場所：{list}。リストはあなたの同意がある場合のみ変更されます。FS Passion が新しい名前に合わせるか後で尋ねます。",
+    "warning_modhub": "ModHub の MOD の場合、アップデートが届かなくなります。それが名前変更の目的です。",
+    "warning_save": "ゲーム内で、この MOD を使うセーブデータは古い名前でこれを探します。",
+    "warning_save_map": "これはマップです。ゲーム内で、このマップのセーブデータは古い名前でこれを探し、読み込めなくなります。",
+    "warning_deps": {
+      "one": "MOD 1 個がこれを依存 MOD として指定しています（{list}）。古い名前でこれを探します。",
+      "other": "MOD {count} 個がこれを依存 MOD として指定しています（{list}）。古い名前でこれを探します。"
+    },
+    "ok": "名前を変更",
+    "done": {
+      "zero": "{old} を {name} に名前変更しました",
+      "one": "{old} を {name} に名前変更しました（構成 1 個）",
+      "other": "{old} を {name} に名前変更しました（構成 {count} 個）"
+    },
+    "renamed": "{old} を {name} に名前変更しました",
+    "lists_title": "リストを更新しますか？",
+    "lists_ask": "「{old}」はまだ次の場所にあります：{list}。新しい名前「{name}」に合わせますか？",
+    "lists_yes": "リストを更新",
+    "lists_no": "何もしない",
+    "lists_done": "リストを更新しました（{count}）。",
+    "empty": "名前を入力してください。",
+    "too_long": "名前が長すぎます。最大 {max} 文字です。",
+    "invalid": "アクセント記号のない英字、数字、「_」のみ。スペースは使えません。",
+    "same": "すでにその名前です。",
+    "taken": "「{name}」はすでに MOD フォルダーにあります。",
+    "not_found": "MOD {name} が MOD フォルダーに見つかりません。",
+    "failed": "{name} の名前を変更できませんでした。ほかのプログラムで開かれている可能性があります。",
+    "running": "MOD の名前を変更する前に {game} を終了してください。",
+    "no_list": "リストなし"
+  },
+  "downloads": {
+    "title": "新しい MOD が見つかりました",
+    "intro": "場所：{folder}。「取り込む」で、チェックした各ファイルをそのゲームバージョンの MOD フォルダーに移動します。",
+    "count": {
+      "one": "MOD が 1 個見つかりました",
+      "other": "MOD が {count} 個見つかりました"
+    },
+    "col_mod": "MOD",
+    "col_version": "ゲームのバージョン",
+    "col_state": "状態",
+    "col_dest": "移動先",
+    "state": {
+      "new": "新規",
+      "update": "アップデート（{from} → {to}）",
+      "older": "インストール済みより古い（{to} < {from}）",
+      "present": "既存",
+      "conflict": "同じ名前の展開済み MOD があります",
+      "unconfigured": "バージョン未設定：設定で設定してください"
+    },
+    "older_confirm": "チェック済み：インストール済みのバージョンを置き換えます（古い方は退避）。",
+    "postpone": "{game} を実行中：終了時に取り込みます",
+    "not_configured": "{game}（未設定）",
+    "suffix": "{name} として取り込みます（ブラウザーが付けた接尾辞を削除）",
+    "dest_none": "なし（未分類）",
+    "dest_unclassified": "未分類",
+    "dest_party": "構成「{name}」",
+    "ignore": "これらのファイルを無視",
+    "ignored": {
+      "one": "ファイル 1 個を無視しました。今後は表示されません",
+      "other": "ファイル {count} 個を無視しました。今後は表示されません"
+    },
+    "later": "後で",
+    "integrate": {
+      "zero": "取り込む",
+      "one": "MOD 1 個を取り込む",
+      "other": "MOD {count} 個を取り込む"
+    },
+    "none": "{folder} に新しい MOD はありません。",
+    "done": {
+      "one": "MOD 1 個を取り込みました：{list}",
+      "other": "MOD {count} 個を取り込みました：{list}"
+    },
+    "in_version": {
+      "one": "{game} に 1 個",
+      "other": "{game} に {count} 個"
+    },
+    "skipped": {
+      "one": "ファイル 1 個はそのままにしました（既存または古い）",
+      "other": "ファイル {count} 個はそのままにしました（既存または古い）"
+    },
+    "postponed": {
+      "one": "MOD 1 個を {game} の終了時に取り込みます",
+      "other": "MOD {count} 個を {game} の終了時に取り込みます"
+    },
+    "postponed_done": {
+      "one": "{game} の終了後にダウンロード 1 件を取り込みました",
+      "other": "{game} の終了後にダウンロード {count} 件を取り込みました"
+    },
+    "failed": "{file} を取り込めませんでした。ファイルはダウンロードフォルダーに残っています。",
+    "gone": "{file} はダウンロードフォルダーにもうありません。",
+    "unconfigured": "{file}：選んだゲームバージョンは未設定です。",
+    "no_folder": "ダウンロードフォルダーが見つかりません。設定 → アプリケーション → ダウンロード で指定してください。",
+    "demo": "デモ中はダウンロードを取り込みません。",
+    "done_in": {
+      "one": "MOD 1 個を {game} に取り込みました",
+      "other": "MOD {count} 個を {game} に取り込みました"
+    },
+    "col_storage": "保存場所"
+  },
+  "move": {
+    "exists": "{file}：同じ名前のファイルがすでにあります。",
+    "no_space": "{file}：MOD フォルダーのドライブに十分な空き容量がありません。",
+    "check_failed": "{file}：検証したコピーがオリジナルと一致しません。何も置き換えていません。",
+    "failed": "{file} を移動できませんでした。ほかのプログラムで開かれている可能性があります。"
+  },
+  "missing": {
+    "title": "MOD フォルダーにない MOD",
+    "intro": {
+      "one": "この MOD は構成に含まれていますが、MOD フォルダーにありません。どうしますか？",
+      "other": "これら {count} 個の MOD は構成に含まれていますが、MOD フォルダーにありません。どうしますか？"
+    },
+    "in": "含まれる場所：{list}",
+    "copy": "MOD フォルダーからは削除されましたが、リンクを通じてコピーがまだ残っています：{list}",
+    "no_copy": "コピーなし：もう一度ダウンロードするか、作者が名前を変えた MOD に置き換えてください",
+    "restore": "Mods に復元",
+    "restore_tip": "構成にまだ残っているコピーを、再び MOD フォルダーの MOD にします（何もコピーしません）。",
+    "remove": "リストから外す",
+    "remove_all": "すべてリストから外す",
+    "later": "後で",
+    "notice": "MOD を削除するときは FS Passion で行ってください（アクションバーの「完全に削除」ボタン）。リストと構成から同時に外れます。",
+    "removed": {
+      "one": "MOD 1 個をすべてのリストから外しました",
+      "other": "MOD {count} 個をすべてのリストから外しました"
+    },
+    "restored": {
+      "one": "MOD 1 個を MOD フォルダーに復元しました",
+      "other": "MOD {count} 個を MOD フォルダーに復元しました"
+    },
+    "deleted": {
+      "one": "MOD 1 個を削除し、リストから外しました",
+      "other": "MOD {count} 個を削除し、リストから外しました"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "アップデート 1 件を回収しました：{list}",
+      "other": "アップデート {count} 件を回収しました：{list}"
+    },
+    "added": {
+      "one": "ゲームがダウンロードした MOD 1 個を構成「{name}」に追加しました",
+      "other": "ゲームがダウンロードした MOD {count} 個を構成「{name}」に追加しました"
+    },
+    "unclassified": {
+      "one": "ゲームがダウンロードした MOD 1 個が MOD フォルダーに加わりました（未分類）",
+      "other": "ゲームがダウンロードした MOD {count} 個が MOD フォルダーに加わりました（未分類）"
+    },
+    "errors": {
+      "one": "フォルダー 1 個を整理できませんでした：{list}。ログを確認してください。",
+      "other": "フォルダー {count} 個を整理できませんでした：{list}。ログを確認してください。"
+    },
+    "reshaped": {
+      "one": "MOD 1 個が展開または再圧縮されました。構成は新しい形式に合わせます（{list}）",
+      "other": "MOD {count} 個が展開または再圧縮されました。構成は新しい形式に合わせます（{list}）"
+    }
+  },
+  "rights": {
+    "title": "別のドライブの MOD に必要な権限",
+    "intro": "別のドライブに保存された MOD を構成に加えるため、FS Passion はシンボリックリンクを作成します。Windows がこれを許可するのは開発者モードか管理者権限がある場合だけで、どちらも有効になっていません。",
+    "standard": "あなたの Windows アカウントは標準アカウントです。管理者権限を得ると FS Passion は別のアカウントで、別のフォルダーと設定で動作してしまいます。開発者モードが正しい選択です。",
+    "admin_title": "常に管理者として FS Passion を実行",
+    "admin_text": "FS Passion があなたのアカウントに限り「管理者としてこのプログラムを実行する」（プロパティ → 互換性）にチェックを入れ、再起動します。影響：",
+    "uac": "FS Passion を起動するたびに Windows が確認を求めます。",
+    "game_normal": "ゲームとそのプラットフォームは、エクスプローラー経由で引き続き通常の権限で起動します。起動オプションはいつもどおりプラットフォーム（Steam、Epic Games）経由になります。",
+    "no_drop": "Windows はエクスプローラーから FS Passion へのファイルのドラッグをブロックします。現時点では影響はありません。FS Passion はこの操作を使いません。",
+    "dev_title": "または：Windows の開発者モードをオンにする",
+    "dev_text": "Windows の設定 → システム → 開発者向け → 「開発者モード」。FS Passion へのほかの影響はありません。その後ここに戻り「再確認」をクリックしてください。",
+    "without": "これらの権限がなくても追加のフォルダーは保存されたままです。その MOD は一覧に表示されますが、どの構成にも加わりません。",
+    "later": "後で",
+    "dev_mode": "開発者モードを開く",
+    "admin": "常に管理者として実行",
+    "missing": "Windows がシンボリックリンクを拒否しています。別のドライブの MOD は一覧に表示されますが、どの構成にも加わりません。",
+    "get": "権限を取得…",
+    "check": "再確認",
+    "ok": "シンボリックリンクが許可されています（FS Passion は管理者として実行中）。別のドライブの MOD は構成に加わります。",
+    "ok_dev": "シンボリックリンクが許可されています（Windows の開発者モード）。別のドライブの MOD は構成に加わります。",
+    "unknown": "シンボリックリンクの権限はまだ確認していません。",
+    "admin_on": "FS Passion は常に管理者として実行する設定です。",
+    "admin_off": "管理者としての実行をやめる",
+    "restarting": "FS Passion を管理者として再起動しています。Windows の確認画面で許可してください。",
+    "now_ok": "シンボリックリンクが許可されました。別のドライブの MOD を加えるため、構成をもう一度適用してください。",
+    "still_missing": "Windows はまだシンボリックリンクを拒否しています。",
+    "flag_failed": "「管理者として実行」の設定を変更できませんでした。",
+    "ok_plain": "シンボリックリンクが許可されています。別のドライブの MOD は構成に加わります。",
+    "admin_once_title": "FS Passion を管理者として再起動",
+    "admin_once_text": "FS Passion を今回だけ管理者として再起動します。起動のたびにやり直す必要があります。開発者モードならその必要はありません。影響：",
+    "admin_once": "管理者として再起動"
+  },
+  "older": {
+    "title": "ゲームが古いバージョンをダウンロードしました",
+    "intro": {
+      "one": "ゲームが、あなたのものより古いバージョン番号の MOD をダウンロードしました。それは退避し、何も置き換えていません。どうしますか？",
+      "other": "ゲームが、あなたのものより古いバージョン番号の MOD を {count} 個ダウンロードしました。それらは退避し、何も置き換えていません。どうしますか？"
+    },
+    "versions": "あなたのバージョン：{mine} · ゲームがダウンロードしたバージョン：{game}",
+    "keep": "自分のバージョンを残す（{version}）",
+    "use": "ゲームのバージョンを使う（{version}）",
+    "use_tip": "ゲームのバージョンが MOD フォルダー内であなたのものと入れ替わり、あなたのものは「Old versions」に退避されます。すべての構成がこれに合わせます。",
+    "help": "多くはあなたが改変した MOD です。ModHub はバージョン番号を比較せず、オリジナルを提供します。いずれにしても何も削除されません。残さなかったファイルは、構成の隣の「Recovered」または「Old versions」フォルダーに残ります。",
+    "later": "後で",
+    "gone": "このファイルは「Recovered」フォルダーにもうありません。何も変更していません。",
+    "failed": "{name} のゲーム版を配置できませんでした（{detail}）。あなたのバージョンは変わっていません。"
+  },
+  "stop": {
+    "running": "先に {game} を終了してください。設定はゲームを閉じた状態で元に戻す必要があります。",
+    "folders_failed": "構成フォルダーを削除できませんでした。",
+    "closed": "FS Passion を終了しました。ゲームの設定は元に戻りました。",
+    "export_first": "続ける前に設定をエクスポートしてください。FS Passion に戻ってきたときに構成を復元できます。",
+    "intro": "FS Passion はゲームの設定を元に戻し、その後構成フォルダーを削除します（リンクしか入っていません）：",
+    "no_version": "設定済みのゲームバージョンはありません。元に戻すものはありません。",
+    "mods_safe": "MOD フォルダーには一切触れません。退避した MOD が入っている「Old versions」と「Recovered」にも触れません。",
+    "admin_flag": "FS Passion が設定した「管理者としてこのプログラムを実行する」は解除されます。",
+    "understand": "理解しました：ゲームは今後 FS Passion の構成を読み込みません。",
+    "plan": {
+      "restore": "ゲームは再び元のフォルダーを読み込みます：{dir}",
+      "deactivate": "カスタム MOD フォルダーをオフにします。ゲームは通常の「mods」フォルダーに戻ります。",
+      "missing": "gameSettings.xml が見つかりません。元に戻すものはありません。",
+      "none": "ゲームの設定はすでに元のままです。",
+      "folders": {
+        "one": "構成フォルダー {count} 個を削除",
+        "other": "構成フォルダー {count} 個を削除"
+      },
+      "kept": {
+        "one": "「{name}」は残します（ファイル {count} 個）。",
+        "other": "「{name}」は残します（ファイル {count} 個）。"
+      }
+    },
+    "options": {
+      "title": "あわせて削除：",
+      "parties": "構成と共通 MOD（parties.json）",
+      "caches": "キャッシュ（変換済みアイコン、DLC カタログ）",
+      "settings": "FS Passion の設定",
+      "logs": "ログ",
+      "langs": "個人用言語"
+    },
+    "done": {
+      "title": "FS Passion の使用をやめました",
+      "text": "完了しました。ゲームの設定は元に戻りました。",
+      "partial": "完了しましたが、少なくとも 1 つのバージョンを除きます。以下を参照してください。詳細はログにあります。",
+      "version": {
+        "zero": "元の設定に戻しました",
+        "one": "元の設定に戻し、構成フォルダー {count} 個を削除しました",
+        "other": "元の設定に戻し、構成フォルダー {count} 個を削除しました"
+      },
+      "set_aside": {
+        "one": "構成フォルダー内で見つかったファイル {count} 個を「Recovered」に退避しました。",
+        "other": "構成フォルダー内で見つかったファイル {count} 個を「Recovered」に退避しました。"
+      },
+      "close": "FS Passion を閉じる",
+      "uninstaller": "続けて FS Passion のアンインストールを開始",
+      "error": {
+        "override": "ゲームの設定を元に戻せませんでした（gameSettings.xml を変更できません）。構成フォルダーは残しています",
+        "folders": "元の設定には戻しましたが、構成フォルダーを削除できませんでした"
+      }
+    },
+    "stopped": "FS Passion の使用をやめました。閉じてください。"
+  },
+  "tour": {
+    "button": "ガイドツアー",
+    "title": "ガイドツアー",
+    "count": "{n} / {total}",
+    "prev": "前へ",
+    "next": "次へ",
+    "replay": "もう一度",
+    "finish": "完了",
+    "quit": "ツアーを終了",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "ガイドツアーはいかがですか？",
+      "body": "電球をクリック：1 分で FS Passion がインターフェースの要点を紹介します。電球はそのまま残るので、いつでもツアーを見直せます。",
+      "start": "ツアーを開始",
+      "later": "後で"
+    },
+    "versions": {
+      "caption": "ゲームのバージョン",
+      "body": "このロゴにカーソルを合わせると、Farming Simulator のバージョンが表示されます。管理したいバージョンをクリックしてください。\n未インストールのバージョンは灰色で表示されます。各バージョンに専用の MOD と構成があります。",
+      "picked": "選択中：その MOD と構成を表示しています"
+    },
+    "parties": {
+      "caption": "構成：FS Passion の中心",
+      "body": "1 クリックで構成を切り替え：マップとすべての依存 MOD がついてきます。\n全 MOD 構成：すべての MOD。ゲーム内で更新するために。\n空の構成：MOD なし。素のゲームを試すために。",
+      "full_tip": "すべての MOD：ゲーム内で MOD を更新するために",
+      "empty_tip": "MOD なし：素のゲームを試すために"
+    },
+    "tools": {
+      "caption": "作成、複製、名前変更、削除",
+      "body": "選択中の構成に対する操作です。\nヒント：「すべての MOD」のマップにある「＋ 構成」ボタンで、マップとすべての依存 MOD を含む構成を 1 クリックで作成できます。"
+    },
+    "common": {
+      "caption": "共通 MOD",
+      "body": "すべての構成で使いたい車両、作業機、ゲームプレイ用スクリプト。\n初期状態でオンです。必要なら特定の構成だけオフにできます。",
+      "on": "この構成に共通 MOD を含める",
+      "off": "この構成だけオフ"
+    },
+    "apply": {
+      "caption": "適用",
+      "body": "選択中の構成を適用します。次回の起動時にゲームが読み込むのはこの構成です。\n選択中の構成が適用されていない間、ボタンが光ります。",
+      "done": "適用済み：次回の起動時にゲームが読み込みます"
+    },
+    "buttons": {
+      "caption": "テーマ、通知、設定",
+      "body": "ライト/ダークモード、メッセージ履歴、設定… そして電球で、このツアーをいつでも見直せます。",
+      "theme": "ライト/ダークモード"
+    },
+    "list1": {
+      "caption": "すべての MOD",
+      "body": "MOD フォルダー全体をカテゴリー別に：DLC、マップ、その他の MOD…\nほかのリストで何をしても、MOD は常にここに残ります。「未分類」の MOD はどのリストにも入っておらず、ゲームからは見えません。\n[Ctrl] + [F]：MOD または作者を検索。",
+      "search_tip": "検索：Ctrl + F"
+    },
+    "downloads": {
+      "caption": "ダウンロードしたばかりの MOD",
+      "body": "このボタンで、ダウンロードフォルダーにダウンロードしたばかりの MOD を探します。\nFS Passion がそれぞれのゲームバージョンを検出し、あなたの同意を得て正しい MOD フォルダーに入れます。\n起動時にも行います：設定 → アプリケーション → ダウンロード を参照してください。",
+      "found": "それぞれ自分のゲームバージョンの MOD フォルダーへ"
+    },
+    "list2": {
+      "caption": "構成の MOD",
+      "body": "選択中の構成の MOD：マップ、依存 MOD、構成専用の MOD。\nゲームは共通 MOD に加えてこれらを読み込みます。"
+    },
+    "list3": {
+      "caption": "共通 MOD",
+      "body": "すべての構成に含まれる MOD：トラクター、作業機、スクリプト…\nここに一度振り分ければ、すべての構成に入ります。"
+    },
+    "select": {
+      "caption": "複数選択",
+      "body": "[Ctrl] + クリック：MOD を選択に追加または選択から外す。\n[Shift] + クリック：範囲をまとめて選択。\n[Ctrl] + [A]：リストのすべてを選択。[Esc]：選択を解除。\nMOD を選択すると、下部にアクションバーが表示されます。"
+    },
+    "move": {
+      "caption": "ドラッグ＆ドロップ",
+      "body": "「構成の MOD」または「共通 MOD」へ：コピーです。MOD は「すべての MOD」に残ります。\nこの 2 つのリストの間：移動です。コピーするにはドロップ時に [Ctrl] を押したままにします。\n「すべての MOD」へ、または [Del] キー：MOD をリストから外します。ファイルが削除されることはありません。",
+      "copy": "コピー",
+      "move": "移動 · [Ctrl]：コピー",
+      "remove": "リストから外す · [Del]"
+    },
+    "keys": {
+      "caption": "キーボードショートカット",
+      "body": "すばやく操作するために：",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "MOD または作者を検索"
+        },
+        {
+          "k": "[Ctrl] + クリック",
+          "d": "MOD を選択に追加または選択から外す"
+        },
+        {
+          "k": "[Shift] + クリック",
+          "d": "MOD を範囲選択"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "リストのすべてを選択"
+        },
+        {
+          "k": "[Esc]",
+          "d": "選択を解除、またはドラッグを取り消す"
+        },
+        {
+          "k": "ドロップ時に [Ctrl]",
+          "d": "移動ではなくコピー（リスト 2 と 3 の間）"
+        },
+        {
+          "k": "[Del]",
+          "d": "リスト 2 または 3 から外す（ファイルは残る）"
+        },
+        {
+          "k": "マップで [Enter]",
+          "d": "マップと依存 MOD で構成を作成"
+        },
+        {
+          "k": "[F2]",
+          "d": "MOD の名前を変更"
+        },
+        {
+          "k": "[I]",
+          "d": "MOD のカードを固定"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "キーボードで選択・移動"
+        }
+      ]
+    },
+    "close": {
+      "caption": "終了せずに閉じる",
+      "body": "× でウィンドウは閉じますが、FS Passion は時計の横の通知領域でバックグラウンド動作を続けます。\n戻すには：タスクバーの「^」矢印から FS アイコン。完全に終了するには：右下の「終了」、またはアイコンを右クリック。\nこれは 設定 → アプリケーション → ウィンドウ で変更できます。",
+      "tip_close": "閉じる：FS Passion は通知領域へ",
+      "tip_more": "隠れているインジケーターを表示",
+      "tip_icon": "クリック：FS Passion が戻る · 右クリック：終了"
+    },
+    "end": {
+      "caption": "さあ、始めましょう！",
+      "body": "このツアーは、電球または 設定 → ヘルプと情報 からいつでも見直せます。"
+    },
+    "demo": {
+      "parties": [
+        "グリーンバレー — 畜産",
+        "丘陵地 — 畑作",
+        "南の水田"
+      ],
+      "party_sub": {
+        "one": "マップ + MOD {count} 個",
+        "other": "マップ + MOD {count} 個"
+      },
+      "mods": [
+        "6 気筒トラクター",
+        "コンバイン",
+        "6 m 播種機",
+        "農業用トレーラー",
+        "作業機パック",
+        "天候スクリプト"
+      ]
+    }
+  }
+}

@@ -105,8 +105,11 @@ def test_translations_follow_the_english_structure():
         bullets = [ln for ln in head.splitlines() if ln.startswith("- ")]
         assert len(bullets) == len(en_bullets), path.name
         languages = bullets[8]  # le point « Langues » suit les huit premiers points, comme dans README.md
-        assert re.search(rf"(?<!\d){len(rt.SOON)}(?!\d)", languages), path.name
-        assert all(rt.NAMES[c] in languages for c in rt.SOON), path.name
+        if rt.SOON:  # 1.0.0 : plus aucune langue à venir
+            assert re.search(rf"(?<!\d){len(rt.SOON)}(?!\d)", languages), path.name
+            assert all(rt.NAMES[c] in languages for c in rt.SOON), path.name
+        else:
+            assert all(rt.NAMES[c] in languages for c in rt.NAMES), path.name
         # Section d'aide complète (0.9.10) : six étapes, dossier lang et chemin des langues personnelles.
         assert "](../lang/)" in text and "%APPDATA%\\FSPassion\\lang\\" in text, path.name
         assert all(f"\n{n}. " in text for n in range(1, 7)), path.name

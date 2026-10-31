@@ -45,7 +45,8 @@ T: dict[str, dict] = {}
 
 # Langues de readme/ sans interface dans lang/ (point « à venir »), dans l'ordre
 # du README anglais. main() vérifie qu'elles correspondent à lang/.
-SOON = ["hu", "ro", "ru", "uk", "tr", "vi", "id", "es-419", "ja", "ko", "zh-Hans", "zh-Hant"]
+# 1.0.0 : les 26 langues sont traduites, il n'y en a plus à venir.
+SOON: list[str] = []
 
 T["de"] = dict(
     sub="Mod-Manager für Farming Simulator (FS2011 bis FS25), für Windows 10 und 11.",
@@ -1465,7 +1466,8 @@ LANG_BULLET = {
 
 # Ordre des langues de l'interface dans le point « Langues » (celles absentes
 # de lang/ sont ignorées, celles qui manquent ici sont ajoutées à la fin).
-UI_ORDER = ["en", "fr", "de", "es", "it", "pt-BR", "pt-PT", "nl", "pl", "cs", "da", "fi", "nb", "sv"]
+UI_ORDER = ["en", "fr", "de", "es", "es-419", "it", "pt-BR", "pt-PT", "nl", "pl", "cs", "da", "fi", "hu", "nb",
+            "ro", "ru", "sv", "tr", "uk", "vi", "id", "ja", "ko", "zh-Hans", "zh-Hant"]
 
 
 def ui_languages() -> list[str]:
@@ -1563,7 +1565,8 @@ def render(code: str, d: dict) -> str:
     links = dict(releases=RELEASES, issues=ISSUES, bmac=BMAC, stripe=STRIPE, themes=THEMES,
                  nlang=len(langs), langs=", ".join(langs),
                  nsoon=len(SOON), soonlist=", ".join(NAMES[c] for c in SOON))
-    lang_item = f"{LANG_BULLET[code]} **{d['soon']}**: {{soonlist}}."
+    # Point « Langues » : la mention des langues à venir disparaît quand il n'y en a plus.
+    lang_item = f"{LANG_BULLET[code]} **{d['soon']}**: {{soonlist}}." if SOON else LANG_BULLET[code]
     features = [*d["f"][:8], lang_item, *d["f"][8:]]
     # Même ligne de liens que README.md (l.13), avec la langue courante en gras.
     nav = " · ".join(["[English](../README.md)"] + [

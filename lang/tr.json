@@ -1,0 +1,1451 @@
+{
+  "_meta": {
+    "code": "tr",
+    "name": "Türkçe",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion kapatıldı",
+    "closed_help": "Bu sekmeyi kapatabilirsiniz. Devam etmek için FS Passion'ı yeniden başlatın."
+  },
+  "common": {
+    "close": "Kapat",
+    "cancel": "İptal",
+    "ok": "Tamam",
+    "copy": "Kopyala",
+    "copied": "Panoya kopyalandı",
+    "soon": "{version} sürümünde geliyor",
+    "soon_action": "{action}: {version} sürümünde geliyor"
+  },
+  "window": {
+    "minimize": "Simge durumuna küçült",
+    "maximize": "Ekranı kapla",
+    "restore": "Önceki boyut",
+    "close": "FS Passion'ı kapat"
+  },
+  "header": {
+    "settings": "Ayarlar",
+    "version": "Oyun sürümü: {name}",
+    "current_party": "Geçerli kurulum",
+    "create": "Kurulum oluştur",
+    "duplicate": "Kurulumu çoğalt",
+    "rename": "Kurulumu yeniden adlandır",
+    "delete": "Kurulumu sil",
+    "common_mods": "Ortak modlar",
+    "common_mods_tip": "Ortak modları bu kuruluma dahil et",
+    "apply": "Uygula",
+    "apply_tip": "Oyunun bu kurulumu yüklemesini sağla",
+    "apply_done_tip": "Bu kurulum uygulandı ve güncel: oyunun yüklediği kurulum bu",
+    "theme_light": "Açık arayüz",
+    "theme_dark": "Koyu arayüz"
+  },
+  "versions": {
+    "coming": "Yakında",
+    "ready": "Yapılandırıldı",
+    "installed": "Yüklü",
+    "not_installed": "Yüklü değil",
+    "absent_help": "Başka bir yere mi yüklü? Ayarlar → Oyun ve yollar"
+  },
+  "party": {
+    "full": "Tam kurulum",
+    "empty": "Boş kurulum",
+    "other": "Özel klasör",
+    "unsupported": "Kurulum yok",
+    "unknown": "Bilinmiyor",
+    "none_yet": "Henüz kurulum yok. ＋ ile veya bir haritadaki “＋ Kurulum” düğmesiyle bir tane oluşturun.",
+    "full_count": {
+      "one": "Tüm modlar ({count})",
+      "other": "Tüm modlar ({count})"
+    },
+    "empty_sub": "Modsuz, temel oyunu denemek için",
+    "applied_tag": "uygulandı",
+    "mods_count": {
+      "zero": "Mod yok",
+      "one": "{count} mod",
+      "other": "{count} mod"
+    },
+    "full_tip": "Modları oyun içinde güncellemek için ideal"
+  },
+  "status": {
+    "running": "{game} çalışıyor",
+    "other_folder": "Oyun modlarını başka bir klasörden yüklüyor:",
+    "applied": "Uygulanan kurulum: {name}",
+    "other_folder_path": "Oyun başka bir klasörü yüklüyor: {path}",
+    "stale": "Kurulum son uygulamadan bu yana değişti"
+  },
+  "path": {
+    "empty": "",
+    "found": "Bulundu",
+    "not_found": "Bu klasör mevcut değil",
+    "not_game_exe": "Bu dosya bir {game} yürütülebilir dosyası değil",
+    "no_gamesettings": "gameSettings.xml bulunamadı: oyunu bir kez başlatın, sonra geri gelin",
+    "not_ntfs": "Bu sürücü NTFS değil: kurulumlar mümkün değil",
+    "onedrive": "Bu klasör OneDrive içinde: önerilmez",
+    "storage_overlap": "Bu klasör ana mod klasörünü (veya onun FSPassion klasörünü) içeriyor ya da onun içinde: başka bir klasör seçin",
+    "storage_duplicate": "Bu klasör zaten diğer depolama klasörü tarafından kullanılıyor veya onu içeriyor",
+    "storage_same_disk": "Bulundu · ana klasörle aynı sürücü: özel izin gerekmez",
+    "storage_other_disk": "Bulundu · başka sürücü: sembolik bağlantılar"
+  },
+  "list1": {
+    "title": "Tüm modlar",
+    "search": "Mod veya yazar ara",
+    "search_clear": "Aramayı temizle",
+    "cat_unclassified": "Sınıflandırılmamış",
+    "cat_dlc": "DLC",
+    "cat_maps": "Haritalar",
+    "cat_others": "Diğer modlar",
+    "cat_by_author": "Yazar adına göre",
+    "dlc_note": "Oyun bunları her kurulumda yükler",
+    "selected": "seçili",
+    "active": "etkin",
+    "all": "toplam",
+    "scanning": "Modlar okunuyor: {done} / {total}",
+    "icons_pending": {
+      "one": "Simgeler hazırlanıyor: {count} kaldı",
+      "other": "Simgeler hazırlanıyor: {count} kaldı"
+    },
+    "anomalies": {
+      "one": "{count} sorun: ayrıntıları göster",
+      "other": "{count} sorun: ayrıntıları göster"
+    },
+    "find_new": "İndirilenlerde yeni mod ara",
+    "open_settings": "Ayarları aç",
+    "not_configured": "{game} henüz yapılandırılmadı",
+    "not_configured_help": "Mod klasörünü ayarlardan belirleyin veya FS Passion'ın kurulumu algılamasına izin verin.",
+    "reading": "Modlar okunuyor…",
+    "no_match": "“{query}” ile eşleşen mod yok",
+    "empty": "Bu mod klasörü boş",
+    "empty_help": "Modlar (.zip) ve açılmış modlar (modDesc.xml içeren klasörler) burada görünecek.",
+    "unclassified_note": "Sınıflandırılana kadar oyun bunları görmez",
+    "plus_party": "Kurulum",
+    "plus_party_tip": "Bu harita ve bağımlılıklarıyla bir kurulum oluştur (Enter)",
+    "mark_party": "Geçerli kurulumda",
+    "mark_common": "Ortak modlarda",
+    "info_tip": "Mod ayrıntılarını sabitle (I tuşu)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Mod klasörü bulunamadı",
+      "unexpected": "Modlar okunamadı: {error}"
+    }
+  },
+  "mod": {
+    "map": "Harita",
+    "unpacked": "Açılmış mod",
+    "multiplayer": "Çok oyunculu",
+    "version": "Sürüm",
+    "author": "Yazar",
+    "game_version": "Oyun",
+    "gv_unknown": "Oyun sürümü bilinmiyor",
+    "size": "Boyut",
+    "kind": "Biçim",
+    "kind_dir": "Klasör (açılmış)",
+    "kind_zip": ".zip arşivi",
+    "parties": "Bulunduğu listeler",
+    "parties_none": "Hiçbiri",
+    "storage": "Depolama",
+    "dependencies": {
+      "one": "{count} bağımlılık",
+      "other": "{count} bağımlılık"
+    },
+    "more": {
+      "one": "ve {count} tane daha",
+      "other": "ve {count} tane daha"
+    },
+    "no_dependencies": "Bildirilmiş bağımlılık yok",
+    "unpacked_tip": "Açılmış mod: ModHub tarafından güncellenmez ve çok oyunculu modda kullanılamaz. FS Passion içine asla yazmaz.",
+    "gv_conflict": "Ad öneki ve descVersion iki farklı sürümü gösteriyor: önek kullanılır.",
+    "unpin": "Kapat (Esc)",
+    "optional": {
+      "one": "{count} isteğe bağlı mod",
+      "other": "{count} isteğe bağlı mod"
+    },
+    "searchmods_note": "Eski oyun sürümü (SearchMods etiketi): gerekli bir mod eksik olsa bile kayıt yüklenir; oyun bunu sonradan bildirir.",
+    "links_hint": "Bu ayrıntıları sabitlemek ve bağlantıları açmak için “i” simgesine tıklayın.",
+    "links_old": "Modun yazarının verdiği, çoğu zaman eski bağlantılar: sayfa artık mevcut olmayabilir.",
+    "link_open": "Tarayıcıda aç",
+    "link_failed": "Bağlantı açılamadı."
+  },
+  "dep": {
+    "present": "mevcut",
+    "absent": "eksik",
+    "dlc_owned": "DLC sahip olunan",
+    "dlc_missing": "DLC sahip olunmayan"
+  },
+  "dlc": {
+    "free": "Ücretsiz DLC",
+    "paid": "DLC",
+    "info": "Oyun yüklü DLC'leri her zaman, her kurulumda yükler."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} kurulumları desteklemiyor",
+    "missing": "Mod klasörlerinde yok",
+    "missing_tip": "{name} artık mod klasörlerinizde değil. Yazarı yeniden adlandırdıysa “Şununla değiştir…” seçeneğini kullanın.",
+    "replace": "Şununla değiştir…"
+  },
+  "list2": {
+    "title": "Kurulum modları",
+    "full": {
+      "one": "Tam kurulum: tüm modlar ({count})",
+      "other": "Tam kurulum: tüm modlar ({count})"
+    },
+    "full_help": "Oyun, FS Passion öncesinde olduğu gibi tüm mod klasörünü yükler.",
+    "empty_party": "Boş kurulum: mod yok",
+    "empty_help": "Temel oyunu hiç mod olmadan denemek için.",
+    "no_mods": "Bu kurulumda mod yok",
+    "no_mods_help": "“Tüm modlar” listesinden mod sürükleyin veya seçip eylem çubuğunu kullanın."
+  },
+  "list3": {
+    "title": "Ortak modlar",
+    "empty": "Henüz ortak mod yok",
+    "empty_help": "Ortak modlar her kurulumda bulunur: traktörler, ekipmanlar, betikler…",
+    "not_included": "Bu kuruluma dahil değil"
+  },
+  "footer": {
+    "github_tip": "Projenin GitHub sayfası",
+    "github_soon": "Projenin GitHub adresi yakında eklenecek",
+    "running": "Oyun çalışıyor",
+    "launch": "Oyunu başlat",
+    "launch_unconfigured": "{game} yürütülebilir dosyasını ayarlardan belirleyin",
+    "launch_tip": "Oyunu uygulanan kurulumla başlat",
+    "quit": "Çıkış"
+  },
+  "launch": {
+    "started": "{game} başlatılıyor…",
+    "failed": "{game} başlatılamadı. Ayarlardaki yürütülebilir dosyayı ve başlatma yöntemini kontrol edin.",
+    "no_exe": "{game} yürütülebilir dosyası bulunamadı: ayarlardan belirleyin.",
+    "already_running": "{game} zaten çalışıyor.",
+    "apply_title": "“{name}” uygulansın mı?",
+    "apply_text": "“{name}” kurulumu uygulanmamış veya o zamandan beri değişmiş. {name} kurulumu uygulanıp ardından {game} başlatılsın mı?",
+    "apply_and_launch": "Uygula ve başlat",
+    "without_apply": "Uygulamadan başlat"
+  },
+  "backup": {
+    "created": "{game} için gameSettings.xml dosyasının özgün yedeği oluşturuldu",
+    "exported": "Yapılandırma dışa aktarıldı: {file}",
+    "demo_active": "Önce tanıtım modundan çıkın: sizinkinden farklı klasörler kullanır.",
+    "unreadable": "Bu dosya okunamıyor: {path}",
+    "too_big": "Bu dosya bir FS Passion dışa aktarımı olamayacak kadar büyük: {path}",
+    "not_export": "Bu dosya bir FS Passion dışa aktarımı değil: {path}",
+    "too_new": "Bu dosya FS Passion'ın daha yeni bir sürümünden geliyor ({version}). İçe aktarmak için FS Passion'ı güncelleyin.",
+    "write_failed": "Dosya kaydedilemedi: {path}",
+    "expired": "İçe aktarmanın süresi doldu: dosyayı yeniden seçin.",
+    "running": "İçe aktarmadan önce {game} oyununu kapatın: kurulumları değişmek üzere.",
+    "import": {
+      "title": "Yapılandırmayı içe aktar",
+      "from": "{date} tarihli dışa aktarım, FS Passion {version}.",
+      "parties": {
+        "one": "{count} kurulum",
+        "other": "{count} kurulum"
+      },
+      "common": {
+        "one": "{count} ortak mod",
+        "other": "{count} ortak mod"
+      },
+      "no_parties": "Bu dosya kurulum içermiyor: yalnızca ayarlar içe aktarılacak.",
+      "keep": "Geçerli yolları koru (önerilen)",
+      "keep_help": "Bu bilgisayarın oyun, mod ve indirme klasörleri değişmez. Yalnızca kurulumlar, ortak modlar ve genel ayarlar (dil, tema, seçenekler) içe aktarılır.",
+      "replace_help": "Dosyadaki yollar bu bilgisayarınkilerin yerini alır: bunu yalnızca dosya aynı sürücülerle bu bilgisayardan geliyorsa seçin.",
+      "paths_differ": "Bu dosyadaki mod klasörleri bu bilgisayarınkiler değil.",
+      "warning": "Yukarıdaki sürümlerin geçerli kurulumları değiştirilecek. Geçerli durum önce otomatik olarak yedeklenir. Hiçbir şey uygulanmaz: kurulum klasörleri bir sonraki “Uygula” işleminde yeniden oluşturulur.",
+      "ok": "İçe aktar"
+    },
+    "result": {
+      "title": "Yapılandırma içe aktarıldı",
+      "done": "İçe aktarma tamamlandı.",
+      "parties": {
+        "one": "{count} kurulum içe aktarıldı",
+        "other": "{count} kurulum içe aktarıldı"
+      },
+      "skipped": "içe aktarılmadı (oyun sürümü bu bilgisayarda yapılandırılmamış)",
+      "fallback": "Oyun artık mevcut olmayan bir kurulumu yüklüyordu: artık Tam kurulumu yüklüyor.",
+      "apply": "Bu bilgisayarda olmayan modlar kurulumlarda eksik mod olarak görünür. Oyunun içe aktarılan bir kurulumu yüklemesi için “Uygula”ya tıklayın.",
+      "backup": "İçe aktarma öncesi durum %APPDATA%\\FSPassion\\backups\\{file} konumuna kaydedildi."
+    }
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "game": {
+      "title": "Oyun ve yollar"
+    },
+    "look": {
+      "title": "Görünüm"
+    },
+    "app": {
+      "title": "Uygulama"
+    },
+    "help": {
+      "title": "Yardım ve hakkında"
+    },
+    "paths": {
+      "versions": "Oyun sürümleri",
+      "game_exe": "Oyunun yürütülebilir dosyası",
+      "user_dir": "Belgeler'deki oyun klasörü",
+      "mods_dir": "Ana mod klasörü",
+      "mods_dirs": "Mod klasörleri",
+      "browse": "Gözat…",
+      "fixed_fs2011": "FS2011 mod klasörü taşınamaz.",
+      "add_storage": "Başka bir sürücüye mod klasörü ekle",
+      "derived": "Türetilmiş yollar",
+      "not_applicable": "Bu sürüm için geçerli değil",
+      "d_game_dir": "Oyun klasörü",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (oyun klasörü)",
+      "d_dlc_user": "DLC (Belgeler)",
+      "detect": "Kurulumu algıla",
+      "detect_all": "Tüm sürümleri algıla",
+      "detect_all_help": "Tüm sürümlerin kurulumlarını arar ve boş alanlarını doldurur.",
+      "detect_one": "Bu sürümü algıla",
+      "detect_one_help": "Yalnızca yukarıda seçili sürümü değiştirir. Diğer sürümler olduğu gibi kalır.",
+      "detect_help": "Özelleştirdiğiniz alanlar asla değiştirilmez.",
+      "detect_found": "Bulunan kurulumlar: {list}",
+      "detect_none": "Kurulum bulunamadı. Yolları “Gözat…” ile belirleyin.",
+      "launch_method": "Oyun başlatma yöntemi",
+      "launch_auto": "Otomatik",
+      "launch_platform": "Platform",
+      "launch_exe": "Yürütülebilir dosya",
+      "launch_help": "Otomatik, doğru yöntemi seçer (Steam, Epic Games, Microsoft Store, Xbox veya yürütülebilir dosya). Diğer ikisi yedek seçeneklerdir.",
+      "minimize_on_launch": "Oyun başlarken FS Passion'ı simge durumuna küçült",
+      "minimize_on_launch_help": "“Bildirim alanına kapat” açıksa (Uygulama → Pencere) bildirim alanına, değilse görev çubuğuna.",
+      "args_title": "Başlatma parametreleri",
+      "args_show": "Başlatma parametrelerini göster",
+      "args_hide": "Başlatma parametrelerini gizle",
+      "args_skip": "Giriş videosunu atla",
+      "args_skip_info": "Giriş videosunu ve açılış ekranlarını atlar.",
+      "args_cheats": "Geliştirici konsolu",
+      "args_cheats_info": "Oyun içi geliştirici konsolunu etkinleştirir. Ayrıca gameSettings.xml yanındaki game.xml içinde <controls> öğesini ayarlar.",
+      "args_game_xml_absent": "game.xml bulunamadı: konsol ancak oyun bir kez başlatıldıktan sonra etkinleşir.",
+      "args_game_xml_error": "game.xml değiştirilemedi: geliştirici konsolu devre dışı kalıyor.",
+      "args_help_command": "FS Passion bunları {game} başlatma komutuna ekler.",
+      "args_help_steam": "{game} Steam tarafından başlatılıyor. Steam başka bir programın gönderdiği parametreleri reddeder (her başlatmada onay isterdi), bu yüzden FS Passion oyunu parametresiz başlatır. Bunları aşağıda anlatıldığı gibi Steam'e bir kez girin.",
+      "args_help_epic": "{game} Epic Games tarafından başlatılıyor; Epic Games başka bir programdan parametre kabul etmez: bunları aşağıda anlatıldığı gibi Epic Games Launcher'a bir kez girin.",
+      "args_help_unsupported": "{game} Microsoft Store'dan veya Xbox'tan yüklenmiş.",
+      "args_store": "Microsoft Store ve Xbox uygulaması başlatma parametrelerine izin vermez: yalnızca geliştirici konsolu (game.xml) etkinleştirilebilir. Parametreler için, kurulumunuz izin veriyorsa başlatma yöntemi olarak “Yürütülebilir dosya”yı seçin.",
+      "args_steam_where": "Steam'de nereye girilir",
+      "args_steam_steps": "Steam kitaplığı: {game} üzerinde sağ tık → Özellikler…\nGenel sekmesi → “Başlatma seçenekleri” alanı\nAşağıdaki metni yapıştırın, sonra pencereyi kapatın",
+      "args_epic_where": "Epic Games Launcher'da nereye girilir",
+      "args_epic_steps": "Kitaplık: {game} altındaki “…” → Yönet\n“Ek Komut Satırı Argümanları” seçeneğini işaretleyin\nAşağıdaki metni yapıştırın (eski launcher'larda: profil resmi → Ayarlar → {game})",
+      "args_none": "İşaretli parametre yok",
+      "args_copy_label": "Kopyalanacak parametreler",
+      "args_copy_help": "Yalnızca bir parametreyi işaretlediğinizde veya kaldırdığınızda yeniden gerekir.",
+      "console_on": "Konsol game.xml içinde etkin",
+      "console_off": "Konsol game.xml içinde devre dışı",
+      "console_enable": "game.xml içinde etkinleştir",
+      "console_done": "{game} için geliştirici konsolu game.xml içinde etkinleştirildi",
+      "add_storage_help": "En fazla iki klasör daha. Modları listelenir ve diğerleri gibi kurulumlara katılır; FS Passion oraya başka hiçbir şey yazmaz.",
+      "extra_dir": "Ek mod klasörü",
+      "extra_help": "Bu klasörü kaldırmak modlarına dokunmaz: yalnızca artık listelenmezler.",
+      "remove_storage": "Bu klasörü listeden kaldır (modlarına dokunulmaz)"
+    },
+    "downloads": {
+      "title": "İndirilenler",
+      "folder": "İndirilenler klasörü",
+      "help": "Tarayıcınızın indirilen modları kaydettiği klasör.",
+      "scan_at_start": "Başlangıçta yeni mod ara",
+      "scan_now": "Şimdi ara"
+    },
+    "language": {
+      "title": "Dil",
+      "personal": "kişisel",
+      "open_folder": "Kişisel diller klasörünü aç",
+      "personal_help": "Orada FS Passion'ı kendi dilinize çevirebilirsiniz: bir şablon ve talimatlar dahildir.",
+      "rejected": "Yok sayılan dil dosyaları (geçersiz veya çok büyük): {list}"
+    },
+    "theme": {
+      "title": "Tema",
+      "help": "Önizlemek için bir örneğin üzerine gelin, seçmek için tıklayın. İki renkli temalarda yalnızca iki renk vardır; diğerleri popüler temaların resmî renklerini kullanır, her biri koyu ve açık sürümüyle. Başlıktaki güneş/ay düğmesi aralarında geçiş yapar.",
+      "contrast": "Kontrast {ratio}:1",
+      "loop": "Tema döngüsü: her dakika temayı değiştir",
+      "light_effects": "Işık efektleri (parlaklık, parlayan kenarlar, neon)",
+      "reduce_motion": "Animasyonları azalt",
+      "follows_windows": "Windows “Animasyon efektleri” ayarını izler.",
+      "follow_windows": "Windows ayarını izle",
+      "atelier": "Tema atölyesini aç",
+      "mode_dark": "Koyu",
+      "mode_light": "Açık",
+      "group_duo": "İki renkli"
+    },
+    "backup": {
+      "title": "Yapılandırma yedeği",
+      "help": "Kurulumlarınızı, ortak modlarınızı ve ayarlarınızı bir dosyaya aktarın; yeniden kurulumdan sonra veya başka bir bilgisayarda geri almak için. Hiçbir mod kopyalanmaz: yalnızca adları.",
+      "export": "Dışa aktar",
+      "import": "İçe aktar"
+    },
+    "notice": {
+      "title": "Kılavuz",
+      "open": "Kılavuzu aç",
+      "at_start": "Başlangıçta göster",
+      "tour": "Arayüz turu"
+    },
+    "anomalies": {
+      "title": "Sorunlar",
+      "show": "Sorunları göster",
+      "reset": {
+        "zero": "Gizlenmiş sorun yok",
+        "one": "Gizlenen sorunu yeniden göster",
+        "other": "Gizlenen {count} sorunu yeniden göster"
+      },
+      "reset_done": "Gizlenen sorunlar yeniden gösteriliyor"
+    },
+    "internet": {
+      "title": "İnternet bağlantısı",
+      "allow": "FS Passion'ın DLC kataloğunu GitHub'dan indirmesine izin ver",
+      "help": "DLC kataloğu (adlar ve simgeler) GitHub'dan günde en fazla bir kez okunur. Yalnızca bu bilgisayardaki DLC'lerin simgeleri indirilir. Hiçbir kişisel veri gönderilmez.",
+      "catalog_off": "DLC kataloğu: FS Passion ile gelen (bağlantı kapalı).",
+      "catalog_remote": "{date} tarihli DLC kataloğu, GitHub'dan indirildi.",
+      "catalog_embedded": "{date} tarihli DLC kataloğu, FS Passion ile birlikte gelir.",
+      "check": "Şimdi denetle",
+      "checking": "Denetleniyor…",
+      "error_not_found": "Katalog henüz GitHub'da yayımlanmadı.",
+      "error_unreachable": "Son denetim başarısız oldu (bağlantı yok mu?).",
+      "error_invalid": "Yayımlanan katalog okunamıyor: FS Passion içindeki kullanılıyor.",
+      "error_too_new": "Yayımlanan katalog FS Passion'ın daha yeni bir sürümünü gerektiriyor.",
+      "error_too_big": "Yayımlanan katalog çok büyük: yok sayıldı."
+    },
+    "updates": {
+      "title": "FS Passion güncellemeleri",
+      "allow": "FS Passion güncellemelerini GitHub'da denetle",
+      "help": "Her başlatmada (ve açık kaldığı sürece günde bir kez) FS Passion, GitHub'da yayımlanan en son sürümün numarasını okur. Hiçbir kişisel veri gönderilmez.",
+      "off": "Güncelleme denetimi kapalı.",
+      "checking": "Denetleniyor…",
+      "last_check": "Son denetim: {date}.",
+      "up_to_date": "FS Passion güncel (sürüm {version}).",
+      "never": "Yüklü sürüm: {version}.",
+      "available": "Yeni sürüm mevcut: {version}",
+      "published": "Yayımlanma: {date}",
+      "current": "Yüklü sürüm: {version}",
+      "install": "Güncellemeyi yükle",
+      "download_portable": "Taşınabilir sürümü indir",
+      "downloading": "İndiriliyor… %{percent}",
+      "closing": "Yükleniyor…",
+      "closing_help": "FS Passion kapanır, yeni sürümü yükler, sonra yeniden açılır.",
+      "see_release": "Yenilikleri gör",
+      "check": "Şimdi denetle",
+      "how_installed": "Yükleyici GitHub'dan indirilir ve doğrulanır (SHA-256 sağlama toplamı). FS Passion yükleme sırasında kapanır, sonra yeniden açılır. Ayarlarınız, kurulumlarınız ve modlarınız korunur.",
+      "how_portable": ".zip dosyası indirilenler klasörünüze indirilir ve doğrulanır. FS Passion'ı kapatın, sonra klasöründeki dosyaları .zip içindekilerle değiştirin; “data” klasörünü (ayarlarınızı) koruyun.",
+      "how_source": "Yeni sürümü GitHub sayfasından indirin.",
+      "note": "Yeni FS Passion sürümü mevcut: {version}",
+      "pill": "Yeni sürüm {version}",
+      "pill_tip": "FS Passion güncellemesi mevcut: Ayarlar → Uygulama",
+      "portable_ready": "Taşınabilir sürüm indirildi ve doğrulandı: {file}",
+      "error_not_found": "GitHub'da henüz yayımlanmış bir sürüm yok.",
+      "error_unreachable": "Denetim başarısız oldu (bağlantı yok mu?).",
+      "error_rate_limited": "GitHub şimdilik denetimleri sınırlıyor: daha sonra yeniden denenecek.",
+      "error_invalid": "GitHub'daki sürüm okunamıyor.",
+      "error_no_source": "GitHub deposunun adresi eksik.",
+      "error_checksum": "İndirilen dosya sağlama toplamıyla eşleşmiyor: silindi, hiçbir şey yüklenmedi.",
+      "error_no_checksum": "Sürüm bu dosya için SHA-256 sağlama toplamı vermiyor: güvenlik için hiçbir şey yüklenmedi.",
+      "error_missing_file": "Bu sürüm beklenen dosyayı içermiyor: GitHub sayfasından indirin.",
+      "error_disabled": "Güncelleme denetimi kapalı.",
+      "error_busy": "Zaten bir indirme sürüyor.",
+      "error_none": "Yüklenecek güncelleme yok.",
+      "error_unsupported": "Otomatik yükleme burada mümkün değil: güncellemeyi GitHub sayfasından indirin.",
+      "error_launch": "Yükleyici başlatılamadı: güncellemeyi GitHub sayfasından indirin.",
+      "error_game_running": "Önce Farming Simulator'ı kapatın: FS Passion oyun kapanınca kurulumlarınızı düzenler."
+    },
+    "logs": {
+      "title": "Günlükler ve tanılama",
+      "open_logs": "Günlükler klasörünü aç",
+      "copy_diag": "Tanılamayı kopyala",
+      "diag_copied": "Tanılama kopyalandı: raporunuza yapıştırın"
+    },
+    "donate": {
+      "title": "Projeyi destekleyin",
+      "text": "FS Passion güvenilir, açık kaynaklı ve ücretsiz bir projedir ve öyle kalacaktır. Yazarına teşekkür etmek isterseniz, tek seferlik bir bağış birkaç saniye sürer, hesap oluşturmanız gerekmez. Teşekkürler!",
+      "no_link": "Bağlantı yakında"
+    },
+    "about": {
+      "title": "Hakkında",
+      "version": "Sürüm",
+      "author": "Yazar",
+      "license": "Lisans",
+      "github_soon": "adres yakında",
+      "official": "Tek resmî indirme bağlantısı projenin GitHub sayfasıdır.",
+      "unofficial": "FS Passion bağımsız bir projedir, GIANTS Software ile bağlantılı değildir. Farming Simulator, GIANTS Software'in ticari markasıdır.",
+      "privacy": "FS Passion hiçbir veri göndermez. İzin verirseniz yalnızca herkese açık DLC listesini GitHub'dan indirir.",
+      "window_mode": "Pencere tekniği (geliştirme)",
+      "window_native": "Yerel",
+      "window_script": "Hesaplanan",
+      "window_thin": "İnce çerçeve",
+      "window_restart": "FS Passion bir sonraki başlatıldığında geçerli olur",
+      "window_help": "Geçerli teknik: {current}. Yalnızca kenarlardan yeniden boyutlandırma çalışmıyorsa değiştirin."
+    },
+    "stop": {
+      "title": "FS Passion'ı kullanmayı bırak",
+      "show": "Ayrıntıları göster",
+      "hide": "Ayrıntıları gizle",
+      "text": "Oyuna özgün ayarını geri verir ve kurulum klasörlerini kaldırır. Modlarınıza asla dokunulmaz.",
+      "button": "FS Passion'ı kullanmayı bırak"
+    },
+    "window": {
+      "title": "Pencere",
+      "close_to_tray": "Bildirim alanına kapat",
+      "close_to_tray_help": "Pencerenin kapat düğmesi FS Passion'ı Windows saatinin yanına gizler. Geri getirmek için simgesine tıklayın; “Çıkış” (sağ altta veya simgenin menüsünde) onu gerçekten kapatır.",
+      "tray_off": "Bildirim alanı yalnızca FS Passion penceresinde, Windows'ta kullanılabilir.",
+      "focus_after_game": "Oyun kapanınca öne gel",
+      "focus_after_game_help": "Farming Simulator kapandığında FS Passion, bildirim alanında gizli olsa bile yeniden görünür."
+    },
+    "demo": {
+      "title": "Oyun olmadan dene",
+      "help": "FS Passion'ın tüm özelliklerini bir test klasöründe denemek için sahte modlar: gerçek yollarınız bir kenara konur, çıkışta geri yüklenir.",
+      "start": "FS Passion'ı oyun olmadan dene",
+      "active_help": "Tanıtım modu açık: bu yollar test klasörüne ait. Çıktığınızda gerçek yollarınız geri gelir."
+    }
+  },
+  "themes": {
+    "lime": "Misket limonu",
+    "jade": "Yeşim",
+    "cuivre": "Bakır",
+    "blue": "Beyaz"
+  },
+  "anomalies": {
+    "title": "Bulunan sorunlar",
+    "none": "Sorun yok. Her şey yolunda.",
+    "intro": "Mod klasörünüzdeki bu öğeler oyun tarafından olduğu gibi kullanılamaz. Ciddi bir şey değil ve FS Passion onlara dokunmaz.",
+    "new": "yeni",
+    "hide_type": "Bu sorun türünü artık gösterme",
+    "hide_folder": "Bu klasörü artık gösterme",
+    "rename": "Yeniden adlandır…",
+    "others": {
+      "one": "Diğer yok sayılan dosyalar ({count})",
+      "other": "Diğer yok sayılan dosyalar ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": ".rar veya .7z arşivi",
+        "other": ".rar veya .7z arşivleri ({count})"
+      },
+      "explain": "Oyun yalnızca .zip dosyalarını okur. Arşivi çıkarın, gerekirse modu yeniden zip olarak sıkıştırın."
+    },
+    "A2": {
+      "title": {
+        "one": "modDesc.xml içermeyen .zip",
+        "other": "modDesc.xml içermeyen .zip dosyaları ({count})"
+      },
+      "explain": "Çoğu zaman çıkarılması gereken birkaç modluk bir paket.",
+      "nested": "modDesc.xml bir alt klasörde bulundu ({path}): mod yanlış sıkıştırılmış."
+    },
+    "A3": {
+      "title": {
+        "one": "Okunamayan arşiv",
+        "other": "Okunamayan arşivler ({count})"
+      },
+      "explain": "Hasarlı arşiv veya geçersiz modDesc.xml. Modu yeniden indirin.",
+      "zip": "Arşiv açılamıyor.",
+      "xml": "modDesc.xml dosyası geçersiz."
+    },
+    "A4": {
+      "title": {
+        "one": "modDesc.xml içermeyen klasör",
+        "other": "modDesc.xml içermeyen klasörler ({count})"
+      },
+      "explain": "Kökünde bir modDesc.xml olmadan oyun bu klasörü kullanamaz. FS Passion ona asla dokunmaz."
+    },
+    "A5": {
+      "title": {
+        "one": "Oyunun reddettiği ad",
+        "other": "Oyunun reddettiği adlar ({count})"
+      },
+      "explain": "Oyun yalnızca aksansız harfleri, rakamları ve “_” karakterini kabul eder.",
+      "suggestion": "Önerilen ad: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Başka bir oyun sürümüne ait mod",
+        "other": "Başka bir oyun sürümüne ait modlar ({count})"
+      },
+      "explain": "Bu mod, oyunun bu sürümü tarafından yüklenmeyecek.",
+      "detected": "{game} için mod"
+    },
+    "A7": {
+      "title": {
+        "one": "Eksik mod",
+        "other": "Eksik modlar ({count})"
+      },
+      "explain": "Bir kurulum bu moda başvuruyor ancak mod artık mod klasörlerinde değil.",
+      "in": "Bulunduğu yer: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Silinmiş ama hâlâ bağlı mod",
+        "other": "Silinmiş ama hâlâ bağlı modlar ({count})"
+      },
+      "explain": "Bu mod mod klasöründen silinmiş ancak bazı kurulumlar onu hâlâ içeriyor.",
+      "copy": "Bir kopyası hâlâ şurada var: {list}",
+      "delete_title": "Kalan kopya silinsin mi?",
+      "delete_text": "Kurulum klasörlerinde hâlâ bulunan “{name}” modunun son kopyası Geri Dönüşüm Kutusu'na gönderilecek ve mod tüm listelerden kaldırılacak."
+    },
+    "A9": {
+      "title": {
+        "one": "Yinelenen mod",
+        "other": "Yinelenen modlar ({count})"
+      },
+      "explain": "Aynı mod iki kez var: iki depolama klasöründe veya yan yana .zip ve klasör olarak. Oyun yalnızca birini yükler. FS Passion ana klasördekini, klasör yerine de arşivi kullanır.",
+      "zip_and_dir": "“{name}” hem .zip hem de açılmış klasör olarak var: oyun yalnızca birini yükler ve ModHub onu güncelleyemez. Tek bir biçim tutun (diğerini “Kalıcı olarak sil” ile silin veya mod klasörünün dışına taşıyın).",
+      "files": "Dosyalar: {list}"
+    },
+    "game": "{game}",
+    "folder": "Mod klasörü: {path}",
+    "show_in_folder": "Dosya Gezgini'nde göster",
+    "open_folder": "Mod klasörünü Dosya Gezgini'nde aç (mod artık orada değil)"
+  },
+  "welcome": {
+    "subtitle": "Modlarınız tek bir kez saklanır. İstediğiniz kadar kurulum.",
+    "language": "Dilinizi seçin"
+  },
+  "notice": {
+    "title": "FS Passion nasıl çalışır",
+    "at_start": "Uygulama başladığında bu pencereyi göster",
+    "understood": "Anladım",
+    "blocks": [
+      {
+        "key": "Her şeyden önce: tüm modlarınızın başka bir sürücüye yedek kopyasını almanızı öneririz. Önemli dosyalar üzerindeki her işlemden önce olduğu gibi, bu çok önemlidir."
+      },
+      {
+        "h": "Fikir"
+      },
+      {
+        "p": "FS Passion, modlarınızın tek bir kopyasını özgün klasöründe tutarken istediğiniz kadar Farming Simulator kurulumunu hızlı ve kolayca oluşturmanızı sağlar."
+      },
+      {
+        "p": "Kurulumlar arasında 1 tıkla geçin!"
+      },
+      {
+        "h": "Kurulum"
+      },
+      {
+        "p": "Mod klasörünüz herhangi bir sürücüde olabilir: FS Passion uyum sağlar. Elle oluşturulacak, taşınacak veya yeniden adlandırılacak bir şey yok. Sürücü dolu mu? Başka sürücülere en fazla iki mod klasörü ekleyin (Ayarlar → Oyun ve yollar): modları diğerleri gibi kurulumlara katılır."
+      },
+      {
+        "h": "İlk kullanım"
+      },
+      {
+        "ul": [
+          "Kurulumlarınızı haritalardaki sihirli “＋ Kurulum” düğmesiyle oluşturun: harita ve bağımlılıkları tek tıkla kurulum olur.",
+          "Ardından diğer modları, her kurulumda bulunan ortak modlara yerleştirin.",
+          "“Uygula”ya tıklayın: oyun bir sonraki başlatmada seçilen kurulumu yükler."
+        ]
+      },
+      {
+        "h": "Mod ekleme, yeniden adlandırma, silme"
+      },
+      {
+        "ul": [
+          "Yeni modlar: bunları her zamanki gibi indirin, ardından listenin üstündeki “Yeni mod ara” düğmesine tıklayın. FS Passion onları doğru oyun sürümünün mod klasörüne koyar.",
+          "Modları silmek için bunu Dosya Gezgini yerine FS Passion'da yapın (eylem çubuğunda “Kalıcı olarak sil”): böylece aynı anda listelerden ve kurulumlardan kaldırılır ve Geri Dönüşüm Kutusu'na gider.",
+          "Bir modu yeniden adlandırmak (F2 tuşu) onu ModHub'dan ayırır: artık güncelleme almaz."
+        ]
+      },
+      {
+        "h": "Güncellemeler"
+      },
+      {
+        "p": "Yapacak bir şey yok: oyunun indirdiği güncellemeler oyun kapanınca veya FS Passion bir sonraki başlatıldığında alınır. Eski sürüm “Old versions” klasörüne ayrılır. Oyun sizinkinden daha eski bir sürüm numarası indirirse (çoğu zaman sizin değiştirdiğiniz bir mod), FS Passion hangisinin tutulacağını size sorar."
+      },
+      {
+        "p": "FS Passion'ın kendisi: yeni bir sürüm çıktığında Ayarlar dişlisinde bir nokta ve altta sürüm numarasının yanında “Yeni sürüm” görünür. Ayarlar → Uygulama → “Güncellemeyi yükle”."
+      },
+      {
+        "h": "Kurulumlarınızı korumak"
+      },
+      {
+        "p": "Ayarlar → Uygulama → “Dışa aktar”, kurulumlarınızı, ortak modlarınızı ve ayarlarınızı bir dosyaya kaydeder. “İçe aktar” bunları yeniden kurulumdan sonra veya başka bir bilgisayarda geri getirir."
+      },
+      {
+        "h": "Bırakmak için"
+      },
+      {
+        "p": "“FS Passion'ı kullanmayı bırak” (Ayarlar → Uygulama), oyuna özgün ayarını geri verir ve kurulum klasörlerini kaldırır. Modlarınıza asla dokunulmaz."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Tema atölyesi",
+    "id": "Tanımlayıcı",
+    "name": "Ad",
+    "dark": "Pencere arka planı",
+    "light": "Baskın renk",
+    "mica": "Mica parıltısı",
+    "grain": "Gren",
+    "effect": "Efekt",
+    "effect_none": "Yok",
+    "effect_metal": "Metalik parlaklık",
+    "intensity": "Yoğunluk",
+    "save": "Kaydet",
+    "copy": "Tanımı kopyala",
+    "new": "Yeni",
+    "copied": "Tanım kopyalandı",
+    "saved": "Tema ui/themes.json dosyasına kaydedildi",
+    "contrast_low": "Kontrast {ratio}:1, 4.5:1'in altında. Küçük metinlerde {color} kullanılacak.",
+    "contrast_ok": "Kontrast {ratio}:1",
+    "mode": "Mod",
+    "mode_dark": "Koyu",
+    "mode_light": "Açık",
+    "text": "Metin",
+    "multi": "Birkaç vurgu rengi (alan başına bir)",
+    "accent_n": "Vurgu {n}",
+    "pair": "İkiz tema (güneş/ay)",
+    "pair_none": "Yok",
+    "gradient": "İki renkli geçiş (başlıklar, Uygula ve Başlat düğmeleri)",
+    "gradient_from": "Geçiş: başlangıç",
+    "gradient_to": "Geçiş: bitiş",
+    "style": "Stil",
+    "style_duo": "İki renkli",
+    "style_palette": "Resmî palet",
+    "style_classic": "Hesaplanan perdeler",
+    "surface_1": "Pencere arka planı",
+    "surface_2": "Listeler ve pencereler",
+    "surface_3": "Bölümler",
+    "surface_4": "Alt bölümler",
+    "text_n": "Metin {n}",
+    "neon": "Neon",
+    "neon_help": "Başlıkların, simgelerin ve kenarların her alanın renginde parlaması (0: efekt yok). “Işık efektleri” ile kapatılır."
+  },
+  "error": {
+    "bad_request": "Geçersiz istek.",
+    "forbidden": "Erişim reddedildi.",
+    "not_found": "Öğe bulunamadı.",
+    "unexpected": "Beklenmeyen hata. Tanılamayı kopyalayın (Ayarlar → Yardım ve hakkında) ve raporunuza ekleyin.",
+    "offline": "FS Passion çekirdeği yanıt vermiyor.",
+    "internal": "İşlem güvenlik nedeniyle reddedildi. Tanılamayı kopyalayın (Ayarlar → Yardım ve hakkında) ve raporunuza ekleyin."
+  },
+  "detect": {
+    "busy": "Zaten bir algılama sürüyor."
+  },
+  "parties": {
+    "not_configured": "Kurulum oluşturmak için {game} mod klasörünü ayarlardan belirleyin.",
+    "name_label": "Kurulum adı",
+    "name_empty": "Ad boş olamaz.",
+    "name_too_long": "En fazla {max} karakter.",
+    "name_taken": "Zaten “{name}” adlı bir kurulum var.",
+    "special_locked": "Tam kurulum ve Boş kurulum değiştirilemez, yeniden adlandırılamaz, çoğaltılamaz veya silinemez.",
+    "not_found": "Bu kurulum artık mevcut değil.",
+    "write_failed": "Kurulumlar {path} konumuna kaydedilemedi. Bu sürücüye yazılabildiğini kontrol edin.",
+    "recovered": "{game} kurulum dosyası okunamadı: en son yedeği ({backup}) yüklendi. Hasarlı dosya bir kenara ayrıldı.",
+    "lost": "{game} kurulum dosyası okunamadı ve hiçbir yedek yüklenemedi. Hasarlı dosya bir kenara ayrıldı, hiçbir şey silinmedi.",
+    "running_rename": "Bu kurulumu yeniden adlandırmadan önce {game} oyununu kapatın: oyun çalışırken klasörü değişemez.",
+    "running_delete": "Bu kurulumu silmeden önce {game} oyununu kapatın: oyun çalışırken klasörü değişemez.",
+    "map_not_found": "Harita bulunamadı: {name}",
+    "mod_not_found": "Mod bulunamadı: {name}",
+    "create_title": "Yeni kurulum",
+    "create_help": "Ortak modları içeren boş bir kurulum. Ardından “Tüm modlar” listesinden mod ekleyin.",
+    "create_ok": "Oluştur",
+    "created": "“{name}” kurulumu oluşturuldu",
+    "duplicate_title": "Kurulumu çoğalt",
+    "duplicate_help": "Kopya, “{name}” kurulumunun modlarını ve “Ortak modlar” ayarını korur.",
+    "copy_name": "{name} (kopya)",
+    "duplicate_ok": "Çoğalt",
+    "duplicated": "“{name}” kurulumu oluşturuldu",
+    "rename_title": "Kurulumu yeniden adlandır",
+    "rename_ok": "Yeniden adlandır",
+    "renamed": "“{old}” → “{name}” olarak yeniden adlandırıldı",
+    "delete_title": "Kurulumu sil",
+    "delete_text": {
+      "zero": "“{name}” kurulumu silinsin mi? Hiç mod içermiyor.",
+      "one": "“{name}” kurulumu silinsin mi? Modu mod klasörünüzde kalır: yalnızca kurulum ve bağlantı klasörü kaybolur.",
+      "other": "“{name}” kurulumu silinsin mi? {count} modu mod klasörünüzde kalır: yalnızca kurulum ve bağlantı klasörü kaybolur."
+    },
+    "delete_ok": "Sil",
+    "deleted": "“{name}” kurulumu silindi",
+    "deleted_applied": "{name} kurulumu silindi. Oyun artık {other} kurulumunu kullanıyor."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod seçili",
+      "other": "mod seçili"
+    },
+    "add_party": "Kurulum modlarına ekle",
+    "add_common": "Ortak modlara ekle",
+    "remove_party": "Kurulum modlarından kaldır",
+    "remove_common": "Ortak modlardan kaldır",
+    "rename": "Yeniden adlandır…",
+    "rename_help": "“Tüm modlar” içinde seçili tek bir mod.",
+    "delete": "Kalıcı olarak sil…",
+    "close": "Çubuğu kapat ve seçimi temizle (Esc)",
+    "added_party": {
+      "one": "{count} mod “{name}” kurulumuna eklendi",
+      "other": "{count} mod “{name}” kurulumuna eklendi"
+    },
+    "added_common": {
+      "one": "{count} mod ortak modlara eklendi",
+      "other": "{count} mod ortak modlara eklendi"
+    },
+    "moved_party": {
+      "one": "{count} mod “{name}” kurulumuna taşındı",
+      "other": "{count} mod “{name}” kurulumuna taşındı"
+    },
+    "moved_common": {
+      "one": "{count} mod ortak modlara taşındı",
+      "other": "{count} mod ortak modlara taşındı"
+    },
+    "removed_party": {
+      "one": "{count} mod “{name}” kurulumundan kaldırıldı",
+      "other": "{count} mod “{name}” kurulumundan kaldırıldı"
+    },
+    "removed_common": {
+      "one": "{count} mod ortak modlardan kaldırıldı",
+      "other": "{count} mod ortak modlardan kaldırıldı"
+    },
+    "nothing_party": "Bu modlar zaten “{name}” kurulumunda",
+    "nothing_common": "Bu modlar zaten ortak modlarda"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Bağımlılığı da eklensin mi?",
+      "other": "{count} bağımlılığı da eklensin mi?"
+    },
+    "ask_yes": {
+      "one": "Bağımlılığı da ekle",
+      "other": "{count} bağımlılığı da ekle"
+    },
+    "ask_no": "Yalnızca seçilen modlar",
+    "missing_warn": {
+      "one": "Modlarınızda eksik bağımlılık: {list}",
+      "other": "Modlarınızda eksik {count} bağımlılık: {list}"
+    },
+    "needed_by_map": "“{name}” haritasının gereksinimleri:",
+    "needed_by_mod": "“{name}” modunun gereksinimleri:",
+    "needed": "Bağımlılıklar:",
+    "where_common": "ortak modlar",
+    "where_party": "“{name}” kurulumu",
+    "ask_intro": {
+      "one": "Bu mod, seçtiğiniz bir modun bağımlılığı ama şurada değil: {where}.",
+      "other": "Bu {count} mod, seçtiğiniz modların bağımlılıkları ama şurada değiller: {where}."
+    },
+    "missing_for": "{list} (“{name}” için gerekli)",
+    "optional_title": {
+      "one": "İsteğe bağlı bir mod da eklensin mi?",
+      "other": "İsteğe bağlı modlar da eklensin mi?"
+    },
+    "optional_intro": {
+      "one": "İsteğe bağlı bir mod, modlarınızda zaten var:",
+      "other": "İsteğe bağlı {count} mod, modlarınızda zaten var:"
+    },
+    "optional_for": "“{name}” için isteğe bağlı",
+    "optional_note": "İsteğe bağlı: oyunun bunlara ihtiyacı yok. Yalnızca işaretledikleriniz eklenir: {where}.",
+    "optional_continue": "Devam"
+  },
+  "commonguard": {
+    "title_maps": "Dikkat: haritalar Ortak modlara girmek üzere",
+    "title_classified": "Dikkat: zaten sınıflandırılmış modlar Ortak modlara girmek üzere",
+    "maps_intro": {
+      "one": "Bu muhtemelen bir hata: seçiminiz bir harita içeriyor ve onu Ortak modlara eklemek üzeresiniz:",
+      "other": "Bu muhtemelen bir hata: seçiminiz {count} harita içeriyor ve bunları Ortak modlara eklemek üzeresiniz:"
+    },
+    "classified_intro": {
+      "one": "Seçiminiz, kurulumlarınızdan birine zaten sınıflandırılmış bir mod da içeriyor.",
+      "other": "Seçiminiz, kurulumlarınıza zaten sınıflandırılmış {count} mod da içeriyor."
+    },
+    "why_maps": "Muhtemelen istediğiniz bu değil: Ortak modlardaki her şey tüm kurulumlarınızda yüklenir. Bu haritalar her yerde yüklenirdi; FS Passion'ın kaçınmanıza yardım ettiği şey tam olarak bu.",
+    "why_classified": "Muhtemelen istediğiniz bu değil: Ortak modlardaki her şey tüm kurulumlarınızda yüklenir. Bu modlar artık kendi kurulumlarıyla sınırlı kalmaz ve listeleriniz anlamsızlaşır.",
+    "unclassified_offer": {
+      "one": "Seçiminiz yalnızca bir sınıflandırılmamış mod içeriyor (haritalar hariç): yalnızca onu ekleyebilirsiniz.",
+      "other": "Seçiminiz {count} sınıflandırılmamış mod içeriyor (haritalar hariç): yalnızca bunları ekleyebilirsiniz."
+    },
+    "tip": "İpucu: Ctrl+A, haritalar ve zaten sınıflandırılmış modlar dahil tüm “Tüm modlar” listesini seçer.",
+    "continue": "Yine de devam et",
+    "only_unclassified": {
+      "one": "Yalnızca sınıflandırılmamış modu ekle",
+      "other": "Yalnızca sınıflandırılmamış {count} modu ekle"
+    }
+  },
+  "plus": {
+    "title": "Bir haritadan yeni kurulum",
+    "deps_title": {
+      "one": "{count} bağımlılık",
+      "other": "{count} bağımlılık"
+    },
+    "dlc_title": "Gerekli DLC'ler",
+    "dlc_note": "Bilgi için: oyun yüklü DLC'leri her zaman yükler. Kuruluma eklenmezler.",
+    "missing_note": "Eksik bağımlılıklar eklenmez: bunları indirin, ardından kuruluma ekleyin.",
+    "no_deps": "Bildirilmiş bağımlılık yok: kurulum yalnızca haritayı içerecek.",
+    "summary": {
+      "zero": "Kurulum yalnızca haritayı, artı ortak modları içerecek.",
+      "one": "Kurulum haritayı ve bağımlılığını, artı ortak modları içerecek.",
+      "other": "Kurulum haritayı ve {count} bağımlılığını, artı ortak modları içerecek."
+    },
+    "create": "Kurulumu oluştur",
+    "created": {
+      "one": "“{name}” kurulumu oluşturuldu: {count} mod",
+      "other": "“{name}” kurulumu oluşturuldu: {count} mod"
+    },
+    "created_missing": {
+      "one": "İndirilecek bağımlılık: {list}",
+      "other": "İndirilecek {count} bağımlılık: {list}"
+    },
+    "optional_title": {
+      "one": "{count} isteğe bağlı mod",
+      "other": "{count} isteğe bağlı mod"
+    },
+    "optional_note": "İsteğe bağlı: oyunun bunlara ihtiyacı yok. Kuruluma eklenecekleri işaretleyin.",
+    "optional_none_present": "Bu isteğe bağlı modların hiçbiri modlarınızda yok. Oyunun bunlara ihtiyacı yok."
+  },
+  "replace": {
+    "title": "Şununla değiştir…",
+    "help": "{name} artık mod klasörlerinizde değil. Yazarı yeniden adlandırdıysa yeni sürümünü seçin: her listede onun yerini alır.",
+    "done": {
+      "one": "{old}, {count} listede {name} ile değiştirildi",
+      "other": "{old}, {count} listede {name} ile değiştirildi"
+    }
+  },
+  "notifications": {
+    "title": "Bildirimler",
+    "unread": {
+      "one": "Bildirimler: 1 yeni ileti",
+      "other": "Bildirimler: {count} yeni ileti"
+    },
+    "clear": "Tümünü temizle",
+    "none": "Henüz bildirim yok. Sağ altta gösterilen iletiler FS Passion kapanana kadar burada tutulur."
+  },
+  "tray": {
+    "show": "FS Passion'ı göster",
+    "quit": "FS Passion'dan çık",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion burada çalışmaya devam ediyor. Geri getirmek için simgeye tıklayın; “Çıkış” onu gerçekten kapatır."
+  },
+  "apply": {
+    "unsupported": "Oyunun bu sürümü mod klasörünü değiştiremez.",
+    "not_ready": "Önce ayarlardan oyunun mod klasörünü ve Belgelerim klasörünü belirleyin.",
+    "running": "Bir kurulumu uygulamadan önce {game} oyununu kapatın.",
+    "no_gamesettings": "{game} için gameSettings.xml bulunamadı: oyunu bir kez başlatın veya ayarlardaki Belgelerim klasörünü kontrol edin.",
+    "busy": "Başka bir kurulum işlemi sürüyor. Biraz sonra yeniden deneyin.",
+    "library_busy": "Modlar hâlâ okunuyor. Biraz sonra yeniden deneyin.",
+    "done": {
+      "zero": "{name} kurulumu uygulandı: mod yok.",
+      "one": "{name} kurulumu uygulandı: {count} mod.",
+      "other": "{name} kurulumu uygulandı: {count} mod."
+    },
+    "missing": {
+      "one": "Kurulumun 1 modu mod klasörünüzde eksik: {list}",
+      "other": "Kurulumun {count} modu mod klasörünüzde eksik: {list}"
+    },
+    "updated": {
+      "one": "Oyunun bıraktığı 1 güncelleme mod klasörünüze taşındı.",
+      "other": "Oyunun bıraktığı {count} güncelleme mod klasörünüze taşındı."
+    },
+    "added": {
+      "one": "Oyunun bıraktığı 1 mod mod klasörünüze ve {name} kurulumuna katıldı.",
+      "other": "Oyunun bıraktığı {count} mod mod klasörünüze ve {name} kurulumuna katıldı."
+    },
+    "set_aside": {
+      "one": "1 dosya bir kenara ayrıldı, hiçbir şey silinmedi (kurulumlarınızın yanındaki “Recovered” veya “Old versions” klasörü).",
+      "other": "{count} dosya bir kenara ayrıldı, hiçbir şey silinmedi (kurulumlarınızın yanındaki “Recovered” ve “Old versions” klasörleri)."
+    },
+    "empty_party": "{name} kurulumu mod içermiyor: oyun modsuz başlayacak.",
+    "not_same_disk": "{name} bağlanamıyor: kurulumlar klasörü mod klasörüyle aynı sürücüde olmalı.",
+    "no_hardlinks": "Bu sürücü sabit bağlantıları desteklemiyor: mod klasörü bir NTFS sürücüsünde olmalı. Hiçbir şey değiştirilmedi.",
+    "too_many_links": "{name} bağlanamıyor: bu dosya Windows bağlantı sınırına ulaştı.",
+    "access_denied": "{name} bağlanırken erişim reddedildi. Hiçbir şey değiştirilmedi.",
+    "link_failed": "{name} bağlantısı oluşturulamadı ({detail}). Hiçbir şey değiştirilmedi.",
+    "junction_failed": "Açılmış mod {name} için bağlantı noktası oluşturulamadı ({detail}). Hiçbir şey değiştirilmedi.",
+    "folder_busy": "{path} klasörü başka bir program tarafından kullanılıyor (Dosya Gezgini?). Kapatıp yeniden deneyin. Hiçbir şey değiştirilmedi.",
+    "folder_exists": "Zaten bir {path} klasörü var: başka bir ad seçin.",
+    "failed": "Kurulum uygulanamadı ({detail}). Hiçbir şey değiştirilmedi.",
+    "recovered_finished": "{game} için bir kurulum işlemi yarıda kalmıştı (elektrik kesintisi?). Tamamlandı.",
+    "recovered_cancelled": "{game} için bir kurulum işlemi yarıda kalmıştı (elektrik kesintisi?). İptal edildi: hiçbir şey değişmedi.",
+    "symlink_denied": "Windows {name} için sembolik bağlantıyı reddediyor: Windows Geliştirici Modu veya yönetici hakları gerekir.",
+    "blocked": {
+      "one": "Başka bir sürücüdeki 1 mod kuruluma katılamadı (sembolik bağlantı izni yok): {list}. Bkz. Ayarlar → Oyun ve yollar.",
+      "other": "Başka bir sürücüdeki {count} mod kuruluma katılamadı (sembolik bağlantı izni yok): {list}. Bkz. Ayarlar → Oyun ve yollar."
+    }
+  },
+  "override": {
+    "title": "Oyun bilinmeyen bir klasörü yüklüyor",
+    "text": "{game}, modlarını FS Passion'ın bilmediği bir klasörden yüklüyor (elle veya başka bir araçla değiştirilmiş):",
+    "help": "Bu klasörü mod klasörünüz olarak benimseyin, kurulumunuzu yeniden uygulayın veya oyunu olduğu gibi bırakın.",
+    "adopt": "Mod klasörü olarak benimse",
+    "reapply": "{name} kurulumunu yeniden uygula",
+    "ignore": "Hiçbir şey yapma",
+    "adopted": "Yeni mod klasörü: {path}",
+    "read_failed": "gameSettings.xml okunamıyor ({path}). Hiçbir şey değiştirilmedi.",
+    "backup_failed": "gameSettings.xml yedeği yazılamadı ({path}). Hiçbir şey değiştirilmedi.",
+    "write_failed": "gameSettings.xml yazılamadı ({path}). Oyun açık mı?",
+    "check_failed": "gameSettings.xml denetimi başarısız oldu: özgün dosya geri yüklendi.",
+    "no_root": "gameSettings.xml bir oyun ayarları dosyasına benzemiyor. Hiçbir şey değiştirilmedi."
+  },
+  "demo": {
+    "title": "Tanıtım modu",
+    "pill": "Tanıtım",
+    "quit": "Çık",
+    "banner": "Tanıtım modu: bu modlar sahte. Gerçek klasörlerinize ve oyuna dokunulmaz.",
+    "badge": "Sahte mod (tanıtım)",
+    "installing": "Tanıtım modları hazırlanıyor…",
+    "started": "Tanıtım modu: her şeyi deneyin, hiçbir şey oyuna dokunmaz.",
+    "stopped": "Tanıtım modu kapatıldı: her şey silindi.",
+    "stop_title": "Tanıtım modundan çık",
+    "stop_text": "Sahte modlar, test kurulumları ve tüm tanıtım klasörü silinecek. Gerçek ayarlarınız eskisi gibi geri gelir.",
+    "stop_ok": "Çık ve her şeyi sil",
+    "offer_title": "FS Passion'ı oyun olmadan denemek ister misiniz?",
+    "offer_text": "Bu bilgisayarda Farming Simulator bulunamadı. FS Passion'ı sahte modlarla deneyebilirsiniz: kurulum oluşturun, sınıflandırın, uygulayın… her şey bir test klasöründe çalışır, asla bir oyunda değil.",
+    "offer_local": "Tanıtım paketi zaten bu bilgisayarda (yaklaşık 2 MB).",
+    "offer_download": "Tanıtım paketi (yaklaşık 2 MB) projenin GitHub sayfasından indirilecek, ardından doğrulanacak.",
+    "offer_yes": "Dene",
+    "offer_no": "Sonra",
+    "unavailable": "Tanıtım paketi henüz kullanılamıyor.",
+    "bad_pack": "Tanıtım paketi hasarlı veya özgünüyle eşleşmiyor: reddedildi.",
+    "download_failed": "Tanıtım paketi indirilemedi ({detail}).",
+    "install_failed": "Tanıtım paketi yüklenemedi ({detail}).",
+    "remove_failed": "Tanıtım klasörü tamamen silinemedi: {path}",
+    "no_detect": "Tanıtım modunda oyun algılama kapalı."
+  },
+  "delete": {
+    "title": {
+      "one": "Bu mod kalıcı olarak silinsin mi?",
+      "other": "Bu {count} mod kalıcı olarak silinsin mi?"
+    },
+    "intro": {
+      "one": "Bu mod her listeden ve her kurulum klasöründen kaldırılacak, ardından mod klasörünüzden silinecek:",
+      "other": "Bu {count} mod her listeden ve her kurulum klasöründen kaldırılacak, ardından mod klasörünüzden silinecek:"
+    },
+    "irreversible": "Bu işlem geri alınamaz.",
+    "recycle": "Dosyalar Windows Geri Dönüşüm Kutusu'na gidecek: oradan yine de geri yükleyebilirsiniz.",
+    "no_recycle": "Bu sürücüde Geri Dönüşüm Kutusu yok: silme kalıcı olacak.",
+    "understand": {
+      "one": "Bu dosyanın silineceğini anlıyorum",
+      "other": "Bu dosyaların silineceğini anlıyorum"
+    },
+    "ok": "Kalıcı olarak sil",
+    "done_recycled": {
+      "one": "1 mod Geri Dönüşüm Kutusu'na gönderildi",
+      "other": "{count} mod Geri Dönüşüm Kutusu'na gönderildi"
+    },
+    "done_deleted": {
+      "one": "1 mod kalıcı olarak silindi",
+      "other": "{count} mod kalıcı olarak silindi"
+    },
+    "failed": {
+      "one": "1 mod silinemedi: {list}. Listelerden kaldırıldı; onu kullanan programı kapatıp yeniden deneyin.",
+      "other": "{count} mod silinemedi: {list}. Listelerden kaldırıldılar; onları kullanan programı kapatıp yeniden deneyin."
+    },
+    "nothing": "Silinecek mod yok.",
+    "running": "Mod silmeden önce {game} oyununu kapatın."
+  },
+  "rename": {
+    "title": "Modu yeniden adlandır",
+    "label": "Yeni ad",
+    "prefix_tip": "Sürüm öneki korunur",
+    "final": "Dosya adı: {file}",
+    "rule": "Yalnızca aksansız harfler, rakamlar ve “_”: oyun diğer karakterleri reddeder.",
+    "where": "Bulunduğu yer: {list}. Listeler yalnızca onayınızla değişir: FS Passion ardından yeni adı izleyip izlemeyeceklerini sorar.",
+    "warning_modhub": "ModHub'dan geliyorsa bu mod artık güncelleme almaz: yeniden adlandırmanın amacı da budur.",
+    "warning_save": "Oyunda bu modu kullanan kayıtlar onu eski adıyla arayacak.",
+    "warning_save_map": "Bu bir harita: oyunda üzerinde yapılan kayıtlar onu eski adıyla arayacak ve artık yüklenmeyecek.",
+    "warning_deps": {
+      "one": "1 mod onu bağımlılık olarak bildiriyor ({list}): onu eski adıyla arayacak.",
+      "other": "{count} mod onu bağımlılık olarak bildiriyor ({list}): onu eski adıyla arayacaklar."
+    },
+    "ok": "Yeniden adlandır",
+    "done": {
+      "zero": "{old} → {name} olarak yeniden adlandırıldı",
+      "one": "{old} → {name} olarak yeniden adlandırıldı, 1 kurulumda",
+      "other": "{old} → {name} olarak yeniden adlandırıldı, {count} kurulumda"
+    },
+    "renamed": "{old} → {name} olarak yeniden adlandırıldı",
+    "lists_title": "Listeler güncellensin mi?",
+    "lists_ask": "“{old}” hâlâ şurada: {list}. Yeni ad “{name}” izlensin mi?",
+    "lists_yes": "Listeleri güncelle",
+    "lists_no": "Hiçbir şey yapma",
+    "lists_done": "Listeler güncellendi ({count}).",
+    "empty": "Bir ad girin.",
+    "too_long": "Ad çok uzun: en fazla {max} karakter.",
+    "invalid": "Yalnızca aksansız harfler, rakamlar ve “_”, boşluk yok.",
+    "same": "Zaten adı bu.",
+    "taken": "“{name}” mod klasörlerinizde zaten var.",
+    "not_found": "{name} modu mod klasörlerinizde bulunamıyor.",
+    "failed": "{name} yeniden adlandırılamadı: başka bir programda açık olabilir.",
+    "running": "Bir modu yeniden adlandırmadan önce {game} oyununu kapatın.",
+    "no_list": "liste yok"
+  },
+  "downloads": {
+    "title": "Yeni modlar bulundu",
+    "intro": "Konum: {folder}. Entegre et, işaretli her dosyayı oyun sürümünün mod klasörüne taşır.",
+    "count": {
+      "one": "1 mod bulundu",
+      "other": "{count} mod bulundu"
+    },
+    "col_mod": "Mod",
+    "col_version": "Oyun sürümü",
+    "col_state": "Durum",
+    "col_dest": "Hedef",
+    "state": {
+      "new": "Yeni",
+      "update": "Güncelleme ({from} → {to})",
+      "older": "Yüklü sürümden eski ({to} < {from})",
+      "present": "Zaten mevcut",
+      "conflict": "Açılmış bir mod zaten bu adı taşıyor",
+      "unconfigured": "Sürüm yapılandırılmamış: ayarlardan yapılandırın"
+    },
+    "older_confirm": "İşaretli: yüklü sürümün yerini alacak (o sürüm bir kenara ayrılır).",
+    "postpone": "{game} çalışıyor: kapanınca entegre edilecek",
+    "not_configured": "{game} (yapılandırılmamış)",
+    "suffix": "{name} olarak entegre edilecek (tarayıcı eki kaldırıldı)",
+    "dest_none": "Yok (sınıflandırılmamış)",
+    "dest_unclassified": "Sınıflandırılmamış",
+    "dest_party": "“{name}” kurulumu",
+    "ignore": "Bu dosyaları yok say",
+    "ignored": {
+      "one": "1 dosya yok sayıldı: artık önerilmeyecek",
+      "other": "{count} dosya yok sayıldı: artık önerilmeyecekler"
+    },
+    "later": "Sonra",
+    "integrate": {
+      "zero": "Entegre et",
+      "one": "1 modu entegre et",
+      "other": "{count} modu entegre et"
+    },
+    "none": "{folder} içinde yeni mod yok.",
+    "done": {
+      "one": "1 mod entegre edildi: {list}",
+      "other": "{count} mod entegre edildi: {list}"
+    },
+    "in_version": {
+      "one": "1 tanesi {game} içine",
+      "other": "{count} tanesi {game} içine"
+    },
+    "skipped": {
+      "one": "1 dosya yerinde bırakıldı (zaten mevcut veya daha eski)",
+      "other": "{count} dosya yerinde bırakıldı (zaten mevcut veya daha eski)"
+    },
+    "postponed": {
+      "one": "1 mod, {game} kapandığında entegre edilecek",
+      "other": "{count} mod, {game} kapandığında entegre edilecek"
+    },
+    "postponed_done": {
+      "one": "{game} kapandıktan sonra 1 indirme entegre edildi",
+      "other": "{game} kapandıktan sonra {count} indirme entegre edildi"
+    },
+    "failed": "{file} entegre edilemedi. Dosya indirilenlerinizde kaldı.",
+    "gone": "{file} artık indirilenler klasöründe değil.",
+    "unconfigured": "{file}: seçilen oyun sürümü yapılandırılmamış.",
+    "no_folder": "İndirilenler klasörü bulunamadı: Ayarlar → Uygulama → İndirilenler bölümünden belirleyin.",
+    "demo": "Tanıtım sırasında indirmeler entegre edilmez.",
+    "done_in": {
+      "one": "1 mod {game} içine entegre edildi",
+      "other": "{count} mod {game} içine entegre edildi"
+    },
+    "col_storage": "Depolama"
+  },
+  "move": {
+    "exists": "{file}: aynı adda bir dosya zaten var.",
+    "no_space": "{file}: mod klasörü sürücüsünde yeterli boş alan yok.",
+    "check_failed": "{file}: doğrulanan kopya özgünüyle eşleşmiyor. Hiçbir şey değiştirilmedi.",
+    "failed": "{file} taşınamadı: başka bir programda açık olabilir."
+  },
+  "missing": {
+    "title": "Mod klasörünüzde eksik modlar",
+    "intro": {
+      "one": "Bu mod kurulumlarda olduğu hâlde mod klasörünüzde eksik. Ne yapmak istersiniz?",
+      "other": "Bu {count} mod kurulumlarda olduğu hâlde mod klasörünüzde eksik. Ne yapmak istersiniz?"
+    },
+    "in": "Bulunduğu yer: {list}",
+    "copy": "Mod klasöründen silindi, ancak bağlantıları sayesinde bir kopyası hâlâ şurada var: {list}",
+    "no_copy": "Kopya yok: yeniden indirin veya yazarı tarafından yeniden adlandırılmış bir modla değiştirin",
+    "restore": "Mods'a geri yükle",
+    "restore_tip": "Kurulumda hâlâ bulunan kopya yeniden mod klasörünüzün modu olur (hiçbir şey kopyalanmaz).",
+    "remove": "Listelerden kaldır",
+    "remove_all": "Tümünü listelerden kaldır",
+    "later": "Sonra",
+    "notice": "Bir modu silmek için bunu FS Passion'da yapın (eylem çubuğundaki “Kalıcı olarak sil” düğmesi): böylece aynı anda listelerden ve kurulumlardan kaldırılır.",
+    "removed": {
+      "one": "1 mod tüm listelerden kaldırıldı",
+      "other": "{count} mod tüm listelerden kaldırıldı"
+    },
+    "restored": {
+      "one": "1 mod mod klasörünüze geri yüklendi",
+      "other": "{count} mod mod klasörünüze geri yüklendi"
+    },
+    "deleted": {
+      "one": "1 mod silindi ve listelerden kaldırıldı",
+      "other": "{count} mod silindi ve listelerden kaldırıldı"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "1 güncelleme alındı: {list}",
+      "other": "{count} güncelleme alındı: {list}"
+    },
+    "added": {
+      "one": "Oyunun indirdiği 1 mod “{name}” kurulumuna eklendi",
+      "other": "Oyunun indirdiği {count} mod “{name}” kurulumuna eklendi"
+    },
+    "unclassified": {
+      "one": "Oyunun indirdiği 1 mod mod klasörünüze katıldı (sınıflandırılmamış)",
+      "other": "Oyunun indirdiği {count} mod mod klasörünüze katıldı (sınıflandırılmamış)"
+    },
+    "errors": {
+      "one": "1 klasör düzene sokulamadı: {list}. Günlüğe bakın.",
+      "other": "{count} klasör düzene sokulamadı: {list}. Günlüğe bakın."
+    },
+    "reshaped": {
+      "one": "1 mod açıldı veya yeniden paketlendi: kurulum yeni biçimini izliyor ({list})",
+      "other": "{count} mod açıldı veya yeniden paketlendi: kurulumlar yeni biçimlerini izliyor ({list})"
+    }
+  },
+  "rights": {
+    "title": "Diğer sürücülerdeki modlar için izinler",
+    "intro": "Başka bir sürücüde depolanan bir modun kuruluma katılması için FS Passion sembolik bir bağlantı oluşturur. Windows buna yalnızca Geliştirici Modu veya yönetici haklarıyla izin verir ve ikisi de etkin değil.",
+    "standard": "Windows hesabınız standart bir hesap: yönetici hakları almak FS Passion'ı başka klasörler ve ayarlarla başka bir hesap altında çalıştırır. Doğru seçim Geliştirici Modu'dur.",
+    "admin_title": "FS Passion'ı her zaman yönetici olarak çalıştır",
+    "admin_text": "FS Passion sizin için “Bu programı yönetici olarak çalıştır” seçeneğini işaretler (Özellikler → Uyumluluk), yalnızca sizin hesabınız için, ardından yeniden başlar. Sonuçlar:",
+    "uac": "Windows, FS Passion her başladığında onay ister.",
+    "game_normal": "Oyun ve platformu yine Windows Gezgini üzerinden normal haklarla başlatılır. Başlatma parametreleri her zamanki gibi platform (Steam, Epic Games) üzerinden geçer.",
+    "no_drop": "Windows, Gezgin'den FS Passion'a dosya sürüklemeyi engeller. Bugün etkisi yok: FS Passion bu hareketi kullanmıyor.",
+    "dev_title": "Ya da: Windows Geliştirici Modu'nu açın",
+    "dev_text": "Windows Ayarları → Sistem → Geliştiriciler için → “Geliştirici Modu”. FS Passion için başka bir sonucu yok. Sonra buraya dönüp “Yeniden denetle”ye tıklayın.",
+    "without": "Bu haklar olmadan ek klasörler kayıtlı kalır: modları listelenir ama hiçbir kuruluma katılmaz.",
+    "later": "Sonra",
+    "dev_mode": "Geliştirici Modu'nu aç",
+    "admin": "Her zaman yönetici olarak çalıştır",
+    "missing": "Windows sembolik bağlantıları reddediyor: diğer sürücülerdeki modlar listelenir ama hiçbir kuruluma katılmaz.",
+    "get": "İzinleri al…",
+    "check": "Yeniden denetle",
+    "ok": "Sembolik bağlantılara izin var (FS Passion yönetici olarak çalışıyor): diğer sürücülerdeki modlar kurulumlara katılır.",
+    "ok_dev": "Sembolik bağlantılara izin var (Windows Geliştirici Modu): diğer sürücülerdeki modlar kurulumlara katılır.",
+    "unknown": "Sembolik bağlantı izinleri henüz denetlenmedi.",
+    "admin_on": "FS Passion her zaman yönetici olarak çalışacak şekilde ayarlandı.",
+    "admin_off": "Yönetici olarak çalıştırmayı bırak",
+    "restarting": "FS Passion yönetici olarak yeniden başlıyor. Windows isteğini onaylayın.",
+    "now_ok": "Sembolik bağlantılara izin var: diğer sürücülerdeki modların katılabilmesi için kurulumlarınızı yeniden uygulayın.",
+    "still_missing": "Windows hâlâ sembolik bağlantıları reddediyor.",
+    "flag_failed": "“Yönetici olarak çalıştır” ayarı değiştirilemedi.",
+    "ok_plain": "Sembolik bağlantılara izin var: diğer sürücülerdeki modlar kurulumlara katılır.",
+    "admin_once_title": "FS Passion'ı yönetici olarak yeniden başlat",
+    "admin_once_text": "FS Passion yalnızca bu seferlik yönetici olarak yeniden başlar; her başlatmada yinelenmesi gerekir. Geliştirici Modu bunu önler. Sonuçlar:",
+    "admin_once": "Yönetici olarak yeniden başlat"
+  },
+  "older": {
+    "title": "Oyunun indirdiği eski sürüm",
+    "intro": {
+      "one": "Oyun, sürüm numarası sizinkinden eski olan bir mod indirdi. Bir kenara ayrıldı, hiçbir şey değiştirilmedi. Ne yapmak istersiniz?",
+      "other": "Oyun, sürüm numarası sizinkinden eski olan {count} mod indirdi. Bir kenara ayrıldılar, hiçbir şey değiştirilmedi. Ne yapmak istersiniz?"
+    },
+    "versions": "Sizin sürümünüz: {mine} · oyunun indirdiği sürüm: {game}",
+    "keep": "Benim sürümümü koru ({version})",
+    "use": "Oyunun sürümünü kullan ({version})",
+    "use_tip": "Oyunun sürümü, mod klasöründe sizinkinin yerini alır; sizinki “Old versions” klasörüne ayrılır. Tüm kurulumlar bunu izler.",
+    "help": "Bu çoğu zaman sizin değiştirdiğiniz bir moddur: ModHub sürüm numaralarını karşılaştırmaz, özgününü sunar. Her durumda hiçbir şey silinmez: tutmadığınız dosya, kurulumlarınızın yanındaki “Recovered” veya “Old versions” klasöründe kalır.",
+    "later": "Sonra",
+    "gone": "Bu dosya artık “Recovered” klasöründe değil: hiçbir şey değiştirilmedi.",
+    "failed": "{name} için oyunun sürümü yerine konamadı ({detail}). Sizin sürümünüz değişmedi."
+  },
+  "stop": {
+    "running": "Önce {game} oyununu kapatın: ayarı oyun kapalıyken geri yüklenmelidir.",
+    "folders_failed": "Kurulum klasörleri silinemedi.",
+    "closed": "FS Passion kapatıldı. Oyun özgün ayarına geri döndü.",
+    "export_first": "Devam etmeden önce yapılandırmanızı dışa aktarın: FS Passion'a geri dönerseniz kurulumlarınızı geri alırsınız.",
+    "intro": "FS Passion oyuna özgün ayarını geri verecek, ardından kurulum klasörlerini kaldıracak (yalnızca bağlantı içerirler):",
+    "no_version": "Yapılandırılmış oyun sürümü yok: geri yüklenecek bir şey yok.",
+    "mods_safe": "Mod klasörlerinize, bir kenara ayrılmış modları içeren “Old versions” ve “Recovered” klasörlerine asla dokunulmaz.",
+    "admin_flag": "FS Passion'ın ayarladığı “Bu programı yönetici olarak çalıştır” ayarı kaldırılacak.",
+    "understand": "Anlıyorum: oyun artık FS Passion kurulumlarını yüklemeyecek.",
+    "plan": {
+      "restore": "Oyun yeniden özgün klasörünü yüklüyor: {dir}",
+      "deactivate": "Özel mod klasörü kapatıldı: oyun her zamanki “mods” klasörüne döner.",
+      "missing": "gameSettings.xml bulunamadı: geri yüklenecek bir şey yok.",
+      "none": "Oyun ayarı zaten özgün.",
+      "folders": {
+        "one": "{count} kurulum klasörü kaldırıldı",
+        "other": "{count} kurulum klasörü kaldırıldı"
+      },
+      "kept": {
+        "one": "“{name}” korunuyor ({count} dosya).",
+        "other": "“{name}” korunuyor ({count} dosya)."
+      }
+    },
+    "options": {
+      "title": "Ayrıca sil:",
+      "parties": "kurulumlar ve ortak modlar (parties.json)",
+      "caches": "önbellekler (dönüştürülmüş simgeler, DLC kataloğu)",
+      "settings": "FS Passion ayarları",
+      "logs": "günlükler",
+      "langs": "kişisel diller"
+    },
+    "done": {
+      "title": "FS Passion artık kullanılmıyor",
+      "text": "Bitti. Oyun özgün ayarına geri döndü.",
+      "partial": "Bitti, en az bir sürüm hariç: aşağıya bakın. Ayrıntılar günlükte.",
+      "version": {
+        "zero": "özgün ayar geri yüklendi",
+        "one": "özgün ayar geri yüklendi, {count} kurulum klasörü kaldırıldı",
+        "other": "özgün ayar geri yüklendi, {count} kurulum klasörü kaldırıldı"
+      },
+      "set_aside": {
+        "one": "Kurulum klasörlerinde bulunan {count} dosya “Recovered” klasörüne ayrıldı.",
+        "other": "Kurulum klasörlerinde bulunan {count} dosya “Recovered” klasörüne ayrıldı."
+      },
+      "close": "FS Passion'ı kapat",
+      "uninstaller": "Ardından FS Passion'ı kaldırmayı başlat",
+      "error": {
+        "override": "oyun ayarı geri yüklenMEDİ (gameSettings.xml değiştirilemedi); kurulum klasörleri korunuyor",
+        "folders": "özgün ayar geri yüklendi, ancak kurulum klasörleri silinemedi"
+      }
+    },
+    "stopped": "FS Passion artık kullanılmıyor: kapatın."
+  },
+  "tour": {
+    "button": "Rehberli tur",
+    "title": "Rehberli tur",
+    "count": "{n} / {total}",
+    "prev": "Geri",
+    "next": "İleri",
+    "replay": "Yeniden oynat",
+    "finish": "Bitir",
+    "quit": "Turdan çık",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Rehberli bir tur ister misiniz?",
+      "body": "Ampule tıklayın: FS Passion bir dakikada size arayüzünün temellerini gösterir. Ampul orada kalır, böylece turu istediğiniz zaman yeniden izleyebilirsiniz.",
+      "start": "Turu başlat",
+      "later": "Sonra"
+    },
+    "versions": {
+      "caption": "Oyun sürümünüz",
+      "body": "Bu logonun üzerine gelin: Farming Simulator sürümleri görünür. Yönetmek istediğinize tıklayın.\nYüklü olmayan sürümler soluk gösterilir. Her sürümün kendi modları ve kendi kurulumları vardır.",
+      "picked": "Seçildi: modları ve kurulumları gösteriliyor"
+    },
+    "parties": {
+      "caption": "Kurulumlarınız: FS Passion'ın kalbi",
+      "body": "Tek tıkla bir kurulumdan diğerine geçersiniz: haritası ve tüm bağımlılıkları da gelir.\nTam kurulum: tüm modlarınız, onları oyunda güncellemek için.\nBoş kurulum: modsuz, özgün oyunu denemek için.",
+      "full_tip": "Tüm modlar: mod güncellemelerini oyunda çalıştırmak için",
+      "empty_tip": "Mod yok: özgün oyunu denemek için"
+    },
+    "tools": {
+      "caption": "Oluştur, çoğalt, yeniden adlandır, sil",
+      "body": "Seçili kurulum üzerindeki eylemler.\nİpucu: “Tüm modlar” içindeki bir haritada “＋ Kurulum” düğmesi, harita ve tüm bağımlılıklarıyla kurulumu tek tıkla oluşturur."
+    },
+    "common": {
+      "caption": "Ortak modlar",
+      "body": "Tüm kurulumlarınızda istediğiniz araçlar, ekipmanlar ve oynanış betikleri.\nVarsayılan olarak açıktır; gerekirse tek bir kurulum için kapatın.",
+      "on": "Ortak modlar bu kuruluma dahil",
+      "off": "Yalnızca bu kurulum için kapalı"
+    },
+    "apply": {
+      "caption": "Uygula",
+      "body": "Seçili kurulumu uygular: oyunun bir sonraki başlatmada yükleyeceği kurulum budur.\nSeçili kurulum uygulanmadığı sürece düğme yanar.",
+      "done": "Uygulandı: oyun bir sonraki başlatmada bunu yükleyecek"
+    },
+    "buttons": {
+      "caption": "Tema, bildirimler, ayarlar",
+      "body": "Açık veya koyu arayüz, ileti geçmişi, ayarlar… Ve bu turu istediğiniz zaman yeniden izlemek için ampul.",
+      "theme": "Açık veya koyu arayüz"
+    },
+    "list1": {
+      "caption": "Tüm modlar",
+      "body": "Tüm mod klasörünüz, kategorilere göre: DLC'ler, haritalar, diğer modlar…\nDiğer listelerde ne yaparsanız yapın bir mod her zaman burada kalır. “Sınıflandırılmamış” modlar hiçbir listede değildir: oyun onları görmez.\n[Ctrl] + [F]: mod veya yazar ara.",
+      "search_tip": "Ara: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Yeni indirilen modlar",
+      "body": "Bu düğme, az önce İndirilenler klasörünüze indirdiğiniz modları arar.\nFS Passion her birinin oyun sürümünü algılar ve onayınızla doğru mod klasörüne koyar.\nBunu başlangıçta da yapar: bkz. Ayarlar → Uygulama → İndirilenler.",
+      "found": "Her biri kendi oyun sürümünün mod klasörüne gider"
+    },
+    "list2": {
+      "caption": "Kurulum modları",
+      "body": "Seçili kurulumun modları: haritası, bağımlılıkları, kendi modları.\nOyun bunları ortak modlarla birlikte yükler."
+    },
+    "list3": {
+      "caption": "Ortak modlar",
+      "body": "Tüm kurulumlarınızda bulunan modlar: traktörler, ekipmanlar, betikler…\nBunları bir kez buraya yerleştirin: her kurulum alır."
+    },
+    "select": {
+      "caption": "Çoklu seçim",
+      "body": "[Ctrl] + tık: seçime mod ekleyin veya çıkarın.\n[Shift] + tık: bütün bir aralığı seçin.\n[Ctrl] + [A]: listedeki her şeyi seçin; [Esc]: seçimi temizleyin.\nBir mod seçilir seçilmez altta bir eylem çubuğu görünür."
+    },
+    "move": {
+      "caption": "Sürükle ve bırak",
+      "body": "“Kurulum modları” veya “Ortak modlar” listesine: bu bir kopyalamadır, mod “Tüm modlar” listesinde kalır.\nBu iki liste arasında: bu bir taşımadır. Kopyalamak için bırakırken [Ctrl] tuşunu basılı tutun.\n“Tüm modlar” listesine veya [Del] tuşu: mod listeden kaldırılır. Dosyası asla silinmez.",
+      "copy": "Kopyala",
+      "move": "Taşı · [Ctrl]: kopyala",
+      "remove": "Listeden kaldır · [Del]"
+    },
+    "keys": {
+      "caption": "Klavye kısayolları",
+      "body": "Daha hızlı çalışmak için:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Mod veya yazar ara"
+        },
+        {
+          "k": "[Ctrl] + tık",
+          "d": "Seçime mod ekle veya çıkar"
+        },
+        {
+          "k": "[Shift] + tık",
+          "d": "Bir mod aralığı seç"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Listedeki her şeyi seç"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Seçimi temizle veya sürüklemeyi iptal et"
+        },
+        {
+          "k": "Bırakırken [Ctrl]",
+          "d": "Taşımak yerine kopyala (2. ve 3. listeler arasında)"
+        },
+        {
+          "k": "[Del]",
+          "d": "2. veya 3. listeden kaldır (dosya kalır)"
+        },
+        {
+          "k": "Bir haritada [Enter]",
+          "d": "Harita ve bağımlılıklarıyla bir kurulum oluştur"
+        },
+        {
+          "k": "[F2]",
+          "d": "Bir modu yeniden adlandır"
+        },
+        {
+          "k": "[I]",
+          "d": "Bir modun kartını sabitle"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "Klavyeyle seç ve gezin"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Çıkmadan kapat",
+      "body": "Çarpı pencereyi kapatır, ancak FS Passion arka planda, saatin yanındaki bildirim alanında çalışmaya devam eder.\nGeri getirmek için: görev çubuğundaki “^” oku, ardından FS simgesi. Gerçekten kapatmak için: sağ alttaki “Çıkış” veya simgeye sağ tık.\nBunu Ayarlar → Uygulama → Pencere bölümünden değiştirebilirsiniz.",
+      "tip_close": "Kapat: FS Passion bildirim alanına geçer",
+      "tip_more": "Gizli simgeleri göster",
+      "tip_icon": "Tık: FS Passion geri gelir · Sağ tık: Çıkış"
+    },
+    "end": {
+      "caption": "Sıra sizde!",
+      "body": "Bu turu ampul ile veya Ayarlar → Yardım ve hakkında bölümünden istediğiniz zaman yeniden izleyin."
+    },
+    "demo": {
+      "parties": [
+        "Yeşil Vadi — Hayvancılık",
+        "Tepeler — Tarla bitkileri",
+        "Güney Pirinç Tarlaları"
+      ],
+      "party_sub": {
+        "one": "Harita + {count} mod",
+        "other": "Harita + {count} mod"
+      },
+      "mods": [
+        "Altı silindirli traktör",
+        "Biçerdöver",
+        "6 m mibzer",
+        "Tarım römorku",
+        "Ekipman paketi",
+        "Hava durumu betiği"
+      ]
+    }
+  }
+}

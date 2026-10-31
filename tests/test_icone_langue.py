@@ -28,7 +28,8 @@ def test_welcome_uses_the_same_language_select():
 
 def test_readme_announces_languages_and_explains_corrections():
     md = _read("README.md")
-    assert "Coming soon: 12 more languages" in md
+    # 1.0.0 : les 12 langues annoncées sont traduites
+    assert "interface in 26 languages" in md and "Coming soon" not in md
     for name in ("Magyar", "Русский", "日本語", "한국어", "简体中文", "繁體中文", "Español (Latinoamérica)"):
         assert name in md
     assert "## Help improve the translations" in md

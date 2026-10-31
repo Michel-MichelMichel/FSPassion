@@ -3,8 +3,8 @@
 
 /* Police « écrite à la main » des titres du tour : Caveat (SIL OFL 1.1),
    graisse 400. Quatre sous-ensembles : latin, latin étendu, cyrillique et
-   cyrillique étendu. Les autres écritures (japonais, chinois, coréen,
-   vietnamien…) prennent la police de l'interface. */
+   cyrillique étendu. Les autres écritures (japonais, chinois, coréen)
+   prennent la police de l'interface ; le vietnamien aussi, en entier (plus bas). */
 @font-face {
   font-family: "Caveat";
   src: url("/assets/fonts/Caveat-latin.woff2") format("woff2");
@@ -112,6 +112,11 @@
 .tour-note.on { opacity: 1; translate: 0 0; transition: opacity 320ms var(--ease) 180ms, translate 420ms var(--ease-out) 180ms; }
 .tour-note.is-quiet.on { transition: none; }
 
+/* 1.0.0 : Caveat n'a pas les lettres vietnamiennes (ạ, ế, ư…) : les titres
+   mêleraient deux polices dans un même mot. Le vietnamien garde la police de
+   l'interface. */
+:root:lang(vi) .tour { --font-hand: var(--font-display); }
+
 .tour-caption {
   font-family: var(--font-hand);
   font-size: 46px;
@@ -121,6 +126,11 @@
 }
 .tour-caption.is-long { font-size: 40px; }
 .tour-caption .tw { display: inline-block; white-space: nowrap; }
+/* 1.0.0 : chinois et japonais s'écrivent sans espaces. Une « phrase » entière
+   formerait un seul mot insécable et déborderait de la note : la coupure est
+   permise entre deux caractères. */
+:root:lang(ja) .tour-caption .tw,
+:root:lang(zh) .tour-caption .tw { display: inline; white-space: normal; }
 /* Écriture : chaque lettre apparaît à son tour, comme tracée à la plume. */
 .tour-caption .tc {
   display: inline-block;

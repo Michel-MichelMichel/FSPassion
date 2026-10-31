@@ -18,7 +18,7 @@ FS Passion'ın özü bu sorunu şaşırtıcı bir verimlilikle çözmektir: birk
 - **Rehberli tur**: başlıktaki ampul, arayüzü bir dakikada canlandırılmış örneklerle tanıtır (sürümler, kurulumlar, listeler, çoklu seçim, sürükle-bırak, klavye kısayolları).
 - **FS Passion'ı kullanmayı bırak**: oyun özgün ayarına geri döner, kurulum klasörleri kaldırılır; modlarınıza asla dokunulmaz.
 - İki renkli **temalar** ve popüler temalardan esinlenen koyu ve açık temalar (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Diller**: 14 dilde arayüz (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska); Windows diline göre seçilir ve Ayarlar'dan değiştirilebilir; kendi çevirinizi ekleyebilirsiniz. **Yakında: 12 dil daha**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **Diller**: 26 dilde arayüz (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文); Windows diline göre seçilir ve Ayarlar'dan değiştirilebilir; kendi çevirinizi ekleyebilirsiniz.
 - **Demo**: uygulama yalnızca Farming Simulator oyunlarına sahip olanlar içindir. Merak ediyorsanız ve özellikleri oyuna sahip olmadan denemek istiyorsanız, Ayarlar'da bir tanıtım paketi bulunur.
 
 > ⚠️ Geliştirme aşamasında bir proje (sürüm: [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) sayfasına bakın). Denemeden önce mod klasörünüzün tam bir yedeğini alın. Bu GitHub sayfası tek resmî indirme kaynağıdır.
@@ -55,17 +55,17 @@ Dosyalar henüz imzalı değildir: ilk açılışta Windows SmartScreen bir uyar
 Çeviriler ilk sürümdür: ana dili konuşanların düzeltmeleri, hem mevcut diller hem de gelecek diller için memnuniyetle karşılanır. Kodlama bilgisi gerekmez, yalnızca bir metin düzenleyici yeterlidir (Not Defteri olur).
 
 1. Bu depoda [`lang`](../lang/) klasörünü açın ve dilinizin dosyasını indirin (`tr.json`). Henüz yoksa `en.json` dosyasını indirin.
-2. Dosyayı FS Passion kurulumunuzun kişisel diller klasörüne koyun (Settings → Display → Language altındaki **Open the personal languages folder** düğmesi bu klasörü açar):
+2. Dosyayı FS Passion kurulumunuzun kişisel diller klasörüne koyun (Ayarlar → Görünüm → Dil altındaki **Kişisel diller klasörünü aç** düğmesi bu klasörü açar):
    - kurulu sürüm: `%APPDATA%\FSPassion\lang\`;
    - taşınabilir sürüm: `FSPassion.exe` dosyasının yanındaki `data\lang\`.
 3. Dosyayı yeniden adlandırın, örneğin `tr_corrected.json` (ad `_` ile başlamamalıdır). Dosyanın başındaki `"code"` satırını değiştirmeyin: böylece dosyanız yerleşik dilin yerini alır. `en.json` dosyasından başlıyorsanız: `"code"` satırına `"tr"`, `"name"` satırına `"Türkçe"` yazın.
 4. `:` işaretlerinin sağındaki tırnak içindeki metinleri düzeltin ve dosyayı kaydedin (UTF-8 kodlaması). Soldaki anahtarlara ve `{count}` gibi süslü parantez içindeki sözcüklere dokunmayın.
-5. FS Passion'ı yeniden başlatın ve Settings → Display → Language altında dilinizi seçin: “personal” olarak işaretlenmiştir. Düzeltmelerinizi arayüzde kontrol edin.
+5. FS Passion'ı yeniden başlatın ve Ayarlar → Görünüm → Dil altında dilinizi seçin: “kişisel” olarak işaretlenmiştir. Düzeltmelerinizi arayüzde kontrol edin.
 6. Düzeltilmiş dosyayı [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) sekmesinden gönderin: örneğin “Translation: Türkçe” başlıklı bir issue oluşturun ve dosyayı ekleyin (GitHub `.json` uzantısını kabul etmezse ZIP olarak sıkıştırın).
 
 ## Sorun bildirin, fikir önerin
 
-[Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) sekmesi. Bir sorun için “Copy diagnostics” metnini ekleyin (Settings → Help and about → Logs and diagnostics).
+[Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) sekmesi. Bir sorun için “Tanılamayı kopyala” metnini ekleyin (Ayarlar → Yardım ve hakkında → Günlükler ve tanılama).
 
 ## Projeyi destekleyin
 
@@ -73,7 +73,7 @@ FS Passion güvenilir, açık kaynaklı ve ücretsiz bir projedir ve öyle kalac
 
 ## İnternet bağlantısı
 
-FS Passion yalnızca DLC kataloğunu (adlar ve simgeler, herkese açık `FSPassion-data` deposu) okumak için GitHub'a bağlanır, günde en fazla bir kez. Hiçbir kişisel veri gönderilmez. “Internet connection” ayarı (Settings → Application) bunu kapatır. Ayrıca her açılışta (sonra günde bir kez) GitHub'da FS Passion'ın yeni bir sürümünü arar: “FS Passion updates” ayarı (Settings → Application) bunu kapatır.
+FS Passion yalnızca DLC kataloğunu (adlar ve simgeler, herkese açık `FSPassion-data` deposu) okumak için GitHub'a bağlanır, günde en fazla bir kez. Hiçbir kişisel veri gönderilmez. “İnternet bağlantısı” ayarı (Ayarlar → Uygulama) bunu kapatır. Ayrıca her açılışta (sonra günde bir kez) GitHub'da FS Passion'ın yeni bir sürümünü arar: “FS Passion güncellemeleri” ayarı (Ayarlar → Uygulama) bunu kapatır.
 
 ## Lisans
 

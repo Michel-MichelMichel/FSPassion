@@ -18,7 +18,7 @@ Az FS Passion lényege, hogy ezt a problémát meglepő hatékonysággal oldja m
 - **Bemutató**: a fejléc villanykörtéje egy perc alatt bemutatja a felületet, animált példákkal (verziók, összeállítások, listák, többes kijelölés, húzás és ejtés, billentyűparancsok).
 - **Az FS Passion használatának befejezése**: a játék visszakapja eredeti beállítását, az összeállítások mappái törlődnek; a modjaidhoz sosem nyúl.
 - Kétszínű **témák**, valamint népszerű témák ihlette témák sötét és világos változatban (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Nyelvek**: a felület 14 nyelven érhető el (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska), a Windows nyelve alapján választva, és a Beállításokban módosítható; saját fordítás is hozzáadható. **Hamarosan: még 12 nyelv**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **Nyelvek**: a felület 26 nyelven érhető el (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文), a Windows nyelve alapján választva, és a Beállításokban módosítható; saját fordítás is hozzáadható.
 - **Demó**: az alkalmazás kizárólag a Farming Simulator játékok tulajdonosainak készült. Ha kíváncsi vagy, és játék nélkül szeretnéd kipróbálni a funkciókat, a Beállításokban találsz egy bemutatócsomagot.
 
 > ⚠️ Fejlesztés alatt álló projekt (verzió: lásd a [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) oldalt). Kipróbálás előtt készíts teljes biztonsági mentést a modmappádról. Ez a GitHub-oldal az egyetlen hivatalos letöltési hely.
@@ -55,17 +55,17 @@ A fájlok még nincsenek aláírva: első indításkor a Windows SmartScreen fig
 A fordítások első változatok: az anyanyelvi beszélők javításait nagy örömmel fogadjuk, a jelenlegi és a hamarosan érkező nyelvekhez is. Nem kell programozni tudni, csak egy szövegszerkesztő kell (a Jegyzettömb is megfelel).
 
 1. Ebben a tárolóban nyisd meg a [`lang`](../lang/) mappát, és töltsd le a nyelved fájlját (`hu.json`). Ha még nincs ott, töltsd le az `en.json` fájlt.
-2. Tedd az FS Passion-telepítésed saját nyelveinek mappájába (a Settings → Display → Language alatti **Open the personal languages folder** gomb megnyitja):
+2. Tedd az FS Passion-telepítésed saját nyelveinek mappájába (a Beállítások → Megjelenés → Nyelv alatti **A saját nyelvek mappájának megnyitása** gomb megnyitja):
    - telepített változat: `%APPDATA%\FSPassion\lang\`;
    - hordozható változat: `data\lang\`, a `FSPassion.exe` mellett.
 3. Nevezd át, például `hu_corrected.json` névre (a név nem kezdődhet `_` jellel). A fájl elején lévő `"code"` sort ne módosítsd: így a fájlod a beépített nyelv helyére lép. Ha az `en.json` fájlból indulsz: a `"code"` sorba írd be: `"hu"`, a `"name"` sorba: `"Magyar"`.
 4. Javítsd ki az idézőjelek közötti szövegeket a `:` jelektől jobbra, majd mentsd a fájlt (UTF-8 kódolással). A bal oldali kulcsokat és a kapcsos zárójelek közötti szavakat, például `{count}`, hagyd változatlanul.
-5. Indítsd újra az FS Passiont, és válaszd ki a nyelvedet itt: Settings → Display → Language. A nyelv „personal” jelölést kap. Ellenőrizd a javításaidat a felületen.
+5. Indítsd újra az FS Passiont, és válaszd ki a nyelvedet itt: Beállítások → Megjelenés → Nyelv. A nyelv „saját” jelölést kap. Ellenőrizd a javításaidat a felületen.
 6. Küldd el a javított fájlt az [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) lapon: hozz létre egy issue-t például „Translation: Magyar” címmel, és csatold a fájlt (ZIP-be tömörítve, ha a GitHub nem fogadja el a `.json` kiterjesztést).
 
 ## Hiba bejelentése, ötlet javaslása
 
-[Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) fül. Hiba esetén csatold a „Copy diagnostics” szövegét (Settings → Help and about → Logs and diagnostics).
+[Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) fül. Hiba esetén csatold a „Diagnosztika másolása” szövegét (Beállítások → Súgó és névjegy → Naplók és diagnosztika).
 
 ## A projekt támogatása
 
@@ -73,7 +73,7 @@ Az FS Passion megbízható, nyílt forráskódú és ingyenes projekt, és az is
 
 ## Internetkapcsolat
 
-Az FS Passion csak a GitHubhoz csatlakozik, hogy beolvassa a DLC-katalógust (nevek és ikonok, nyilvános `FSPassion-data` tároló), legfeljebb naponta egyszer. Személyes adatot nem küld. Az „Internet connection” beállítás (Settings → Application) kikapcsolja. Emellett minden indításkor (utána naponta egyszer) megnézi a GitHubon, van-e új FS Passion-verzió: az „FS Passion updates” beállítás (Settings → Application) kikapcsolja.
+Az FS Passion csak a GitHubhoz csatlakozik, hogy beolvassa a DLC-katalógust (nevek és ikonok, nyilvános `FSPassion-data` tároló), legfeljebb naponta egyszer. Személyes adatot nem küld. Az „Internetkapcsolat” beállítás (Beállítások → Alkalmazás) kikapcsolja. Emellett minden indításkor (utána naponta egyszer) megnézi a GitHubon, van-e új FS Passion-verzió: az „FS Passion-frissítések” beállítás (Beállítások → Alkalmazás) kikapcsolja.
 
 ## Licenc
 

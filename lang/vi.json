@@ -1,0 +1,1451 @@
+{
+  "_meta": {
+    "code": "vi",
+    "name": "Tiếng Việt",
+    "author": "MichelMichel"
+  },
+  "app": {
+    "closed": "FS Passion đã đóng",
+    "closed_help": "Bạn có thể đóng thẻ này. Khởi động lại FS Passion để tiếp tục."
+  },
+  "common": {
+    "close": "Đóng",
+    "cancel": "Hủy",
+    "ok": "OK",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép vào bộ nhớ tạm",
+    "soon": "Sẽ có trong phiên bản {version}",
+    "soon_action": "{action}: sẽ có trong phiên bản {version}"
+  },
+  "window": {
+    "minimize": "Thu nhỏ",
+    "maximize": "Phóng to",
+    "restore": "Khôi phục",
+    "close": "Đóng FS Passion"
+  },
+  "header": {
+    "settings": "Cài đặt",
+    "version": "Phiên bản trò chơi: {name}",
+    "current_party": "Bộ cấu hình hiện tại",
+    "create": "Tạo bộ cấu hình",
+    "duplicate": "Nhân bản bộ cấu hình",
+    "rename": "Đổi tên bộ cấu hình",
+    "delete": "Xóa bộ cấu hình",
+    "common_mods": "Mod chung",
+    "common_mods_tip": "Đưa mod chung vào bộ cấu hình này",
+    "apply": "Áp dụng",
+    "apply_tip": "Để trò chơi tải bộ cấu hình này",
+    "apply_done_tip": "Bộ cấu hình này đã được áp dụng và cập nhật: đây là bộ trò chơi đang tải",
+    "theme_light": "Giao diện sáng",
+    "theme_dark": "Giao diện tối"
+  },
+  "versions": {
+    "coming": "Sắp ra mắt",
+    "ready": "Đã cấu hình",
+    "installed": "Đã cài đặt",
+    "not_installed": "Chưa cài đặt",
+    "absent_help": "Cài ở nơi khác? Cài đặt → Trò chơi và đường dẫn"
+  },
+  "party": {
+    "full": "Bộ cấu hình đầy đủ",
+    "empty": "Bộ cấu hình trống",
+    "other": "Thư mục tùy chỉnh",
+    "unsupported": "Không có bộ cấu hình",
+    "unknown": "Không xác định",
+    "none_yet": "Chưa có bộ cấu hình nào. Hãy tạo bằng nút ＋, hoặc nút “＋ Bộ cấu hình” trên một bản đồ.",
+    "full_count": {
+      "one": "Tất cả mod ({count})",
+      "other": "Tất cả mod ({count})"
+    },
+    "empty_sub": "Không có mod, để thử trò chơi gốc",
+    "applied_tag": "đã áp dụng",
+    "mods_count": {
+      "zero": "Không có mod",
+      "one": "{count} mod",
+      "other": "{count} mod"
+    },
+    "full_tip": "Lý tưởng để cập nhật mod trong trò chơi"
+  },
+  "status": {
+    "running": "{game} đang chạy",
+    "other_folder": "Trò chơi tải mod từ một thư mục khác:",
+    "applied": "Bộ cấu hình đã áp dụng: {name}",
+    "other_folder_path": "Trò chơi tải một thư mục khác: {path}",
+    "stale": "Bộ cấu hình đã thay đổi kể từ lần áp dụng cuối"
+  },
+  "path": {
+    "empty": "",
+    "found": "Đã tìm thấy",
+    "not_found": "Thư mục này không tồn tại",
+    "not_game_exe": "Tệp này không phải tệp thực thi của {game}",
+    "no_gamesettings": "Không tìm thấy gameSettings.xml: hãy khởi động trò chơi một lần rồi quay lại",
+    "not_ntfs": "Ổ đĩa này không phải NTFS: không thể dùng bộ cấu hình",
+    "onedrive": "Thư mục này nằm trong OneDrive: không khuyến nghị",
+    "storage_overlap": "Thư mục này chứa thư mục mod chính (hoặc thư mục FSPassion của nó), hoặc nằm bên trong nó: hãy chọn thư mục khác",
+    "storage_duplicate": "Thư mục này đã được thư mục lưu trữ kia sử dụng, hoặc chứa thư mục đó",
+    "storage_same_disk": "Đã tìm thấy · cùng ổ đĩa với thư mục chính: không cần quyền đặc biệt",
+    "storage_other_disk": "Đã tìm thấy · ổ đĩa khác: liên kết tượng trưng"
+  },
+  "list1": {
+    "title": "Tất cả mod",
+    "search": "Tìm mod hoặc tác giả",
+    "search_clear": "Xóa tìm kiếm",
+    "cat_unclassified": "Chưa phân loại",
+    "cat_dlc": "DLC",
+    "cat_maps": "Bản đồ",
+    "cat_others": "Mod khác",
+    "cat_by_author": "Theo tên tác giả",
+    "dlc_note": "Trò chơi tải trong mọi bộ cấu hình",
+    "selected": "đã chọn",
+    "active": "đang dùng",
+    "all": "tổng cộng",
+    "scanning": "Đang đọc mod: {done} / {total}",
+    "icons_pending": {
+      "one": "Đang chuẩn bị biểu tượng: còn {count}",
+      "other": "Đang chuẩn bị biểu tượng: còn {count}"
+    },
+    "anomalies": {
+      "one": "{count} vấn đề: xem chi tiết",
+      "other": "{count} vấn đề: xem chi tiết"
+    },
+    "find_new": "Tìm mod mới trong thư mục tải xuống",
+    "open_settings": "Mở cài đặt",
+    "not_configured": "{game} chưa được cấu hình",
+    "not_configured_help": "Đặt thư mục mod của nó trong cài đặt, hoặc để FS Passion tự phát hiện bản cài đặt.",
+    "reading": "Đang đọc mod…",
+    "no_match": "Không có mod nào khớp với “{query}”",
+    "empty": "Thư mục mod này trống",
+    "empty_help": "Mod (.zip) và mod đã giải nén (thư mục có modDesc.xml) sẽ xuất hiện ở đây.",
+    "unclassified_note": "Trò chơi sẽ không thấy chúng cho đến khi được phân loại",
+    "plus_party": "Bộ cấu hình",
+    "plus_party_tip": "Tạo bộ cấu hình với bản đồ này và các phụ thuộc của nó (Enter)",
+    "mark_party": "Trong bộ cấu hình hiện tại",
+    "mark_common": "Trong mod chung",
+    "info_tip": "Ghim thông tin của mod (phím I)"
+  },
+  "library": {
+    "error": {
+      "no_mods_dir": "Không tìm thấy thư mục mod",
+      "unexpected": "Đọc mod thất bại: {error}"
+    }
+  },
+  "mod": {
+    "map": "Bản đồ",
+    "unpacked": "Mod đã giải nén",
+    "multiplayer": "Nhiều người chơi",
+    "version": "Phiên bản",
+    "author": "Tác giả",
+    "game_version": "Trò chơi",
+    "gv_unknown": "Không rõ phiên bản trò chơi",
+    "size": "Kích thước",
+    "kind": "Định dạng",
+    "kind_dir": "Thư mục (đã giải nén)",
+    "kind_zip": "Tệp nén .zip",
+    "parties": "Có trong danh sách",
+    "parties_none": "Không có",
+    "storage": "Lưu trữ",
+    "dependencies": {
+      "one": "{count} phụ thuộc",
+      "other": "{count} phụ thuộc"
+    },
+    "more": {
+      "one": "và {count} mục khác",
+      "other": "và {count} mục khác"
+    },
+    "no_dependencies": "Không khai báo phụ thuộc",
+    "unpacked_tip": "Mod đã giải nén: không được ModHub cập nhật và không dùng được khi chơi nhiều người. FS Passion không bao giờ ghi vào đó.",
+    "gv_conflict": "Tiền tố tên và descVersion chỉ ra hai phiên bản khác nhau: tiền tố được sử dụng.",
+    "unpin": "Đóng (Esc)",
+    "optional": {
+      "one": "{count} mod tùy chọn",
+      "other": "{count} mod tùy chọn"
+    },
+    "searchmods_note": "Phiên bản trò chơi cũ (thẻ SearchMods): bản lưu vẫn tải dù thiếu một mod bắt buộc; trò chơi sẽ báo sau.",
+    "links_hint": "Nhấp “i” để ghim thông tin này và mở các liên kết.",
+    "links_old": "Liên kết do tác giả mod cung cấp, thường đã cũ: trang có thể không còn tồn tại.",
+    "link_open": "Mở trong trình duyệt",
+    "link_failed": "Không thể mở liên kết."
+  },
+  "dep": {
+    "present": "có",
+    "absent": "thiếu",
+    "dlc_owned": "Đã sở hữu DLC",
+    "dlc_missing": "Chưa sở hữu DLC"
+  },
+  "dlc": {
+    "free": "DLC miễn phí",
+    "paid": "DLC",
+    "info": "Trò chơi luôn tải các DLC đã cài, trong mọi bộ cấu hình."
+  },
+  "units": {
+    "B": "{value} B",
+    "KB": "{value} KB",
+    "MB": "{value} MB",
+    "GB": "{value} GB"
+  },
+  "lists": {
+    "no_parties": "{game} không hỗ trợ bộ cấu hình",
+    "missing": "Không có trong thư mục mod",
+    "missing_tip": "{name} không còn trong thư mục mod của bạn. Nếu tác giả đã đổi tên, hãy dùng “Thay bằng…”.",
+    "replace": "Thay bằng…"
+  },
+  "list2": {
+    "title": "Mod của bộ cấu hình",
+    "full": {
+      "one": "Bộ cấu hình đầy đủ: tất cả mod ({count})",
+      "other": "Bộ cấu hình đầy đủ: tất cả mod ({count})"
+    },
+    "full_help": "Trò chơi tải toàn bộ thư mục mod, như trước khi có FS Passion.",
+    "empty_party": "Bộ cấu hình trống: không có mod",
+    "empty_help": "Để thử trò chơi gốc, không có mod nào.",
+    "no_mods": "Bộ cấu hình này chưa có mod",
+    "no_mods_help": "Kéo mod từ “Tất cả mod”, hoặc chọn chúng rồi dùng thanh thao tác."
+  },
+  "list3": {
+    "title": "Mod chung",
+    "empty": "Chưa có mod chung",
+    "empty_help": "Mod chung có mặt trong mọi bộ cấu hình: máy kéo, nông cụ, script…",
+    "not_included": "Không đưa vào bộ cấu hình này"
+  },
+  "footer": {
+    "github_tip": "Trang GitHub của dự án",
+    "github_soon": "Địa chỉ GitHub của dự án sẽ sớm được thêm",
+    "running": "Trò chơi đang chạy",
+    "launch": "Khởi động trò chơi",
+    "launch_unconfigured": "Đặt tệp thực thi của {game} trong cài đặt",
+    "launch_tip": "Khởi động trò chơi với bộ cấu hình đã áp dụng",
+    "quit": "Thoát"
+  },
+  "launch": {
+    "started": "Đang khởi động {game}…",
+    "failed": "Không thể khởi động {game}. Hãy kiểm tra tệp thực thi và cách khởi động trong cài đặt.",
+    "no_exe": "Không tìm thấy tệp thực thi của {game}: hãy đặt nó trong cài đặt.",
+    "already_running": "{game} đang chạy rồi.",
+    "apply_title": "Áp dụng “{name}”?",
+    "apply_text": "Bộ cấu hình “{name}” chưa được áp dụng, hoặc đã thay đổi từ đó. Áp dụng bộ cấu hình {name} rồi khởi động {game}?",
+    "apply_and_launch": "Áp dụng và khởi động",
+    "without_apply": "Khởi động không áp dụng"
+  },
+  "backup": {
+    "created": "Đã tạo bản sao lưu gốc của gameSettings.xml cho {game}",
+    "exported": "Đã xuất cấu hình: {file}",
+    "demo_active": "Hãy thoát chế độ trình diễn trước: chế độ này dùng các thư mục khác với của bạn.",
+    "unreadable": "Không thể đọc tệp này: {path}",
+    "too_big": "Tệp này quá lớn để là một bản xuất của FS Passion: {path}",
+    "not_export": "Tệp này không phải bản xuất của FS Passion: {path}",
+    "too_new": "Tệp này đến từ phiên bản FS Passion mới hơn ({version}). Hãy cập nhật FS Passion để nhập nó.",
+    "write_failed": "Không thể lưu tệp: {path}",
+    "expired": "Phiên nhập đã hết hạn: hãy chọn lại tệp.",
+    "running": "Đóng {game} trước khi nhập: các bộ cấu hình của nó sắp thay đổi.",
+    "import": {
+      "title": "Nhập cấu hình",
+      "from": "Bản xuất ngày {date}, FS Passion {version}.",
+      "parties": {
+        "one": "{count} bộ cấu hình",
+        "other": "{count} bộ cấu hình"
+      },
+      "common": {
+        "one": "{count} mod chung",
+        "other": "{count} mod chung"
+      },
+      "no_parties": "Tệp này không chứa bộ cấu hình nào: chỉ cài đặt được nhập.",
+      "keep": "Giữ đường dẫn hiện tại (khuyến nghị)",
+      "keep_help": "Các thư mục trò chơi, mod và tải xuống của máy này không thay đổi. Chỉ nhập bộ cấu hình, mod chung và các cài đặt trung lập (ngôn ngữ, giao diện, tùy chọn).",
+      "replace_help": "Đường dẫn trong tệp thay thế đường dẫn của máy này: chỉ chọn khi tệp đến từ chính máy này, với cùng các ổ đĩa.",
+      "paths_differ": "Các thư mục mod trong tệp này không phải của máy này.",
+      "warning": "Các bộ cấu hình hiện tại của các phiên bản trên sẽ bị thay thế. Trạng thái hiện tại được tự động sao lưu trước. Không có gì được áp dụng: thư mục bộ cấu hình sẽ được tạo lại ở lần “Áp dụng” tiếp theo.",
+      "ok": "Nhập"
+    },
+    "result": {
+      "title": "Đã nhập cấu hình",
+      "done": "Nhập hoàn tất.",
+      "parties": {
+        "one": "Đã nhập {count} bộ cấu hình",
+        "other": "Đã nhập {count} bộ cấu hình"
+      },
+      "skipped": "không nhập (phiên bản trò chơi chưa được cấu hình trên máy này)",
+      "fallback": "Trò chơi đang tải một bộ cấu hình không còn tồn tại: giờ nó tải Bộ cấu hình đầy đủ.",
+      "apply": "Các mod không có trên máy này hiển thị là mod bị thiếu trong bộ cấu hình. Nhấp “Áp dụng” để trò chơi tải một bộ cấu hình đã nhập.",
+      "backup": "Trạng thái trước khi nhập đã được lưu tại %APPDATA%\\FSPassion\\backups\\{file}."
+    }
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "game": {
+      "title": "Trò chơi và đường dẫn"
+    },
+    "look": {
+      "title": "Hiển thị"
+    },
+    "app": {
+      "title": "Ứng dụng"
+    },
+    "help": {
+      "title": "Trợ giúp và giới thiệu"
+    },
+    "paths": {
+      "versions": "Các phiên bản trò chơi",
+      "game_exe": "Tệp thực thi của trò chơi",
+      "user_dir": "Thư mục trò chơi trong Documents",
+      "mods_dir": "Thư mục mod chính",
+      "mods_dirs": "Các thư mục mod",
+      "browse": "Duyệt…",
+      "fixed_fs2011": "Không thể di chuyển thư mục mod của FS2011.",
+      "add_storage": "Thêm thư mục mod trên ổ đĩa khác",
+      "derived": "Đường dẫn suy ra",
+      "not_applicable": "Không áp dụng cho phiên bản này",
+      "d_game_dir": "Thư mục trò chơi",
+      "d_gamesettings": "gameSettings.xml",
+      "d_pending_downloads": "pending_downloads",
+      "d_dlc_game": "DLC (thư mục trò chơi)",
+      "d_dlc_user": "DLC (Documents)",
+      "detect": "Phát hiện bản cài đặt",
+      "detect_all": "Phát hiện mọi phiên bản",
+      "detect_all_help": "Tìm bản cài đặt của mọi phiên bản và điền vào các ô còn trống.",
+      "detect_one": "Phát hiện phiên bản này",
+      "detect_one_help": "Chỉ thay đổi phiên bản đã chọn ở trên. Các phiên bản khác giữ nguyên.",
+      "detect_help": "Các ô bạn đã tùy chỉnh không bao giờ bị thay đổi.",
+      "detect_found": "Bản cài đặt tìm thấy: {list}",
+      "detect_none": "Không tìm thấy bản cài đặt nào. Hãy đặt đường dẫn bằng “Duyệt…”.",
+      "launch_method": "Cách khởi động trò chơi",
+      "launch_auto": "Tự động",
+      "launch_platform": "Nền tảng",
+      "launch_exe": "Tệp thực thi",
+      "launch_help": "Tự động sẽ chọn cách phù hợp (Steam, Epic Games, Microsoft Store, Xbox hoặc tệp thực thi). Hai cách còn lại là phương án dự phòng.",
+      "minimize_on_launch": "Thu nhỏ FS Passion khi trò chơi khởi động",
+      "minimize_on_launch_help": "Vào vùng thông báo nếu “Đóng vào vùng thông báo” đang bật (Ứng dụng → Cửa sổ), nếu không thì vào thanh tác vụ.",
+      "args_title": "Tham số khởi động",
+      "args_show": "Hiện tham số khởi động",
+      "args_hide": "Ẩn tham số khởi động",
+      "args_skip": "Bỏ qua video mở đầu",
+      "args_skip_info": "Bỏ qua video mở đầu và các màn hình chào.",
+      "args_cheats": "Bảng điều khiển phát triển",
+      "args_cheats_info": "Bật bảng điều khiển phát triển trong trò chơi. Đồng thời đặt <controls> trong game.xml, cạnh gameSettings.xml.",
+      "args_game_xml_absent": "Không tìm thấy game.xml: bảng điều khiển chỉ được bật sau khi trò chơi đã khởi động một lần.",
+      "args_game_xml_error": "Không thể sửa game.xml: bảng điều khiển phát triển vẫn tắt.",
+      "args_help_command": "FS Passion thêm chúng vào lệnh khởi động {game}.",
+      "args_help_steam": "{game} được khởi động bởi Steam. Steam từ chối tham số do chương trình khác truyền vào (nó sẽ hỏi xác nhận mỗi lần khởi động), nên FS Passion khởi động trò chơi không kèm tham số. Hãy nhập chúng một lần trong Steam, như bên dưới.",
+      "args_help_epic": "{game} được khởi động bởi Epic Games, vốn không nhận tham số từ chương trình khác: hãy nhập chúng một lần trong Epic Games Launcher, như bên dưới.",
+      "args_help_unsupported": "{game} được cài từ Microsoft Store hoặc Xbox.",
+      "args_store": "Microsoft Store và ứng dụng Xbox không cho phép tham số khởi động: chỉ có thể bật bảng điều khiển phát triển (game.xml). Để dùng tham số, hãy chọn “Tệp thực thi” làm cách khởi động, nếu bản cài đặt của bạn cho phép.",
+      "args_steam_where": "Nhập chúng ở đâu trong Steam",
+      "args_steam_steps": "Thư viện Steam: nhấp chuột phải vào {game} → Thuộc tính…\nThẻ Chung → ô “Tùy chọn khởi động”\nDán văn bản bên dưới rồi đóng cửa sổ",
+      "args_epic_where": "Nhập chúng ở đâu trong Epic Games Launcher",
+      "args_epic_steps": "Thư viện: “…” dưới {game} → Quản lý\nĐánh dấu “Tham số dòng lệnh bổ sung”\nDán văn bản bên dưới (launcher cũ: ảnh hồ sơ → Cài đặt → {game})",
+      "args_none": "Chưa đánh dấu tham số nào",
+      "args_copy_label": "Tham số cần sao chép",
+      "args_copy_help": "Chỉ cần làm lại khi bạn đánh dấu hoặc bỏ đánh dấu một tham số.",
+      "console_on": "Bảng điều khiển đã bật trong game.xml",
+      "console_off": "Bảng điều khiển đã tắt trong game.xml",
+      "console_enable": "Bật trong game.xml",
+      "console_done": "Đã bật bảng điều khiển phát triển trong game.xml cho {game}",
+      "add_storage_help": "Thêm tối đa hai thư mục. Mod trong đó được liệt kê và tham gia bộ cấu hình như các mod khác; FS Passion không ghi gì khác vào đó.",
+      "extra_dir": "Thư mục mod bổ sung",
+      "extra_help": "Gỡ thư mục này không ảnh hưởng đến các mod của nó: chúng chỉ không còn được liệt kê.",
+      "remove_storage": "Gỡ thư mục này khỏi danh sách (mod của nó không bị động đến)"
+    },
+    "downloads": {
+      "title": "Tải xuống",
+      "folder": "Thư mục tải xuống",
+      "help": "Thư mục nơi trình duyệt lưu các mod đã tải.",
+      "scan_at_start": "Tìm mod mới khi khởi động",
+      "scan_now": "Tìm ngay"
+    },
+    "language": {
+      "title": "Ngôn ngữ",
+      "personal": "cá nhân",
+      "open_folder": "Mở thư mục ngôn ngữ cá nhân",
+      "personal_help": "Ở đó bạn có thể dịch FS Passion sang ngôn ngữ của mình: có sẵn mẫu và hướng dẫn.",
+      "rejected": "Tệp ngôn ngữ bị bỏ qua (không hợp lệ hoặc quá lớn): {list}"
+    },
+    "theme": {
+      "title": "Giao diện",
+      "help": "Rê chuột lên một mẫu để xem trước, nhấp để chọn. Giao diện hai màu chỉ có hai màu; các giao diện khác dùng màu chính thức của những giao diện phổ biến, mỗi cái có bản tối và bản sáng. Nút mặt trời/mặt trăng ở đầu trang chuyển đổi giữa chúng.",
+      "contrast": "Độ tương phản {ratio}:1",
+      "loop": "Vòng lặp giao diện: đổi giao diện mỗi phút",
+      "light_effects": "Hiệu ứng ánh sáng (bóng loáng, viền phát sáng, neon)",
+      "reduce_motion": "Giảm hoạt ảnh",
+      "follows_windows": "Theo cài đặt “Hiệu ứng hoạt ảnh” của Windows.",
+      "follow_windows": "Theo cài đặt Windows",
+      "atelier": "Mở xưởng giao diện",
+      "mode_dark": "Tối",
+      "mode_light": "Sáng",
+      "group_duo": "Hai màu"
+    },
+    "backup": {
+      "title": "Sao lưu cấu hình",
+      "help": "Xuất bộ cấu hình, mod chung và cài đặt ra một tệp, để lấy lại sau khi cài lại hoặc trên máy khác. Không sao chép mod nào: chỉ tên của chúng.",
+      "export": "Xuất",
+      "import": "Nhập"
+    },
+    "notice": {
+      "title": "Hướng dẫn",
+      "open": "Mở hướng dẫn",
+      "at_start": "Hiển thị khi khởi động",
+      "tour": "Tham quan giao diện"
+    },
+    "anomalies": {
+      "title": "Vấn đề",
+      "show": "Hiện các vấn đề",
+      "reset": {
+        "zero": "Không có vấn đề bị ẩn",
+        "one": "Hiện lại vấn đề đã ẩn",
+        "other": "Hiện lại {count} vấn đề đã ẩn"
+      },
+      "reset_done": "Các vấn đề đã ẩn được hiện lại"
+    },
+    "internet": {
+      "title": "Kết nối Internet",
+      "allow": "Cho phép FS Passion tải danh mục DLC từ GitHub",
+      "help": "Danh mục DLC (tên và biểu tượng) được đọc từ GitHub tối đa một lần mỗi ngày. Chỉ tải biểu tượng của các DLC có trên máy này. Không gửi dữ liệu cá nhân nào.",
+      "catalog_off": "Danh mục DLC: bản đi kèm FS Passion (kết nối đã tắt).",
+      "catalog_remote": "Danh mục DLC ngày {date}, tải từ GitHub.",
+      "catalog_embedded": "Danh mục DLC ngày {date}, đi kèm FS Passion.",
+      "check": "Kiểm tra ngay",
+      "checking": "Đang kiểm tra…",
+      "error_not_found": "Danh mục chưa được đăng trên GitHub.",
+      "error_unreachable": "Lần kiểm tra cuối thất bại (không có kết nối?).",
+      "error_invalid": "Không đọc được danh mục đã đăng: dùng danh mục trong FS Passion.",
+      "error_too_new": "Danh mục đã đăng cần phiên bản FS Passion mới hơn.",
+      "error_too_big": "Danh mục đã đăng quá lớn: bị bỏ qua."
+    },
+    "updates": {
+      "title": "Cập nhật FS Passion",
+      "allow": "Kiểm tra cập nhật FS Passion trên GitHub",
+      "help": "Mỗi lần khởi động (sau đó mỗi ngày một lần khi vẫn mở), FS Passion đọc số phiên bản mới nhất đã phát hành trên GitHub. Không gửi dữ liệu cá nhân nào.",
+      "off": "Đã tắt kiểm tra cập nhật.",
+      "checking": "Đang kiểm tra…",
+      "last_check": "Lần kiểm tra cuối: {date}.",
+      "up_to_date": "FS Passion đã là bản mới nhất (phiên bản {version}).",
+      "never": "Phiên bản đã cài: {version}.",
+      "available": "Có phiên bản mới: {version}",
+      "published": "Phát hành ngày {date}",
+      "current": "Phiên bản đã cài: {version}",
+      "install": "Cài đặt bản cập nhật",
+      "download_portable": "Tải bản di động",
+      "downloading": "Đang tải… {percent}%",
+      "closing": "Đang cài đặt…",
+      "closing_help": "FS Passion đóng lại, cài phiên bản mới rồi mở lại.",
+      "see_release": "Xem có gì mới",
+      "check": "Kiểm tra ngay",
+      "how_installed": "Trình cài đặt được tải từ GitHub và xác minh (mã băm SHA-256). FS Passion đóng trong lúc cài đặt rồi mở lại. Cài đặt, bộ cấu hình và mod của bạn được giữ nguyên.",
+      "how_portable": "Tệp .zip được tải và xác minh trong thư mục tải xuống của bạn. Đóng FS Passion, rồi thay các tệp trong thư mục của nó bằng các tệp từ .zip, giữ lại thư mục “data” (cài đặt của bạn).",
+      "how_source": "Tải phiên bản mới từ trang GitHub của nó.",
+      "note": "Có phiên bản FS Passion mới: {version}",
+      "pill": "Phiên bản mới {version}",
+      "pill_tip": "Có bản cập nhật FS Passion: Cài đặt → Ứng dụng",
+      "portable_ready": "Đã tải và xác minh bản di động: {file}",
+      "error_not_found": "Chưa có phiên bản nào được phát hành trên GitHub.",
+      "error_unreachable": "Kiểm tra thất bại (không có kết nối?).",
+      "error_rate_limited": "GitHub đang tạm giới hạn việc kiểm tra: sẽ thử lại sau.",
+      "error_invalid": "Không đọc được bản phát hành trên GitHub.",
+      "error_no_source": "Thiếu địa chỉ kho GitHub.",
+      "error_checksum": "Tệp đã tải không khớp mã băm: tệp đã bị xóa, không cài gì.",
+      "error_no_checksum": "Bản phát hành không cung cấp mã băm SHA-256 cho tệp này: vì an toàn, không cài gì.",
+      "error_missing_file": "Bản phát hành này không chứa tệp mong đợi: hãy tải từ trang GitHub của nó.",
+      "error_disabled": "Kiểm tra cập nhật đang tắt.",
+      "error_busy": "Đang có một lượt tải xuống.",
+      "error_none": "Không có bản cập nhật để cài.",
+      "error_unsupported": "Không thể tự động cài đặt ở đây: hãy tải bản cập nhật từ trang GitHub của nó.",
+      "error_launch": "Không thể khởi động trình cài đặt: hãy tải bản cập nhật từ trang GitHub của nó.",
+      "error_game_running": "Hãy đóng Farming Simulator trước: FS Passion sắp xếp lại bộ cấu hình khi trò chơi đóng."
+    },
+    "logs": {
+      "title": "Nhật ký và chẩn đoán",
+      "open_logs": "Mở thư mục nhật ký",
+      "copy_diag": "Sao chép chẩn đoán",
+      "diag_copied": "Đã sao chép chẩn đoán: hãy dán vào báo cáo của bạn"
+    },
+    "donate": {
+      "title": "Ủng hộ dự án",
+      "text": "FS Passion là và sẽ mãi là một dự án đáng tin cậy, mã nguồn mở và miễn phí. Nếu muốn cảm ơn tác giả, một lần ủng hộ chỉ mất vài giây, không cần tạo tài khoản. Cảm ơn bạn!",
+      "no_link": "Liên kết sắp có"
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "version": "Phiên bản",
+      "author": "Tác giả",
+      "license": "Giấy phép",
+      "github_soon": "địa chỉ sắp có",
+      "official": "Liên kết tải xuống chính thức duy nhất là trang GitHub của dự án.",
+      "unofficial": "FS Passion là dự án độc lập, không liên kết với GIANTS Software. Farming Simulator là nhãn hiệu của GIANTS Software.",
+      "privacy": "FS Passion không gửi dữ liệu nào. Nó chỉ tải, nếu bạn cho phép, danh sách DLC công khai từ GitHub.",
+      "window_mode": "Kỹ thuật cửa sổ (phát triển)",
+      "window_native": "Gốc",
+      "window_script": "Tính toán",
+      "window_thin": "Khung mỏng",
+      "window_restart": "Có hiệu lực ở lần khởi động FS Passion tiếp theo",
+      "window_help": "Kỹ thuật hiện tại: {current}. Chỉ đổi nếu không thể kéo mép để đổi kích thước."
+    },
+    "stop": {
+      "title": "Ngừng dùng FS Passion",
+      "show": "Hiện chi tiết",
+      "hide": "Ẩn chi tiết",
+      "text": "Trả lại cài đặt gốc cho trò chơi và gỡ các thư mục bộ cấu hình. Mod của bạn không bao giờ bị động đến.",
+      "button": "Ngừng dùng FS Passion"
+    },
+    "window": {
+      "title": "Cửa sổ",
+      "close_to_tray": "Đóng vào vùng thông báo",
+      "close_to_tray_help": "Nút đóng cửa sổ sẽ ẩn FS Passion cạnh đồng hồ Windows. Nhấp vào biểu tượng để mở lại; “Thoát” (góc dưới bên phải, hoặc trong menu của biểu tượng) mới thật sự đóng nó.",
+      "tray_off": "Vùng thông báo chỉ khả dụng trong cửa sổ FS Passion, trên Windows.",
+      "focus_after_game": "Hiện lên trước khi trò chơi đóng",
+      "focus_after_game_help": "Khi Farming Simulator đóng, FS Passion xuất hiện lại, kể cả khi đang ẩn trong vùng thông báo."
+    },
+    "demo": {
+      "title": "Dùng thử không cần trò chơi",
+      "help": "Mod giả để thử mọi tính năng của FS Passion trong một thư mục thử nghiệm: đường dẫn thật của bạn được cất sang một bên, rồi khôi phục khi bạn thoát.",
+      "start": "Dùng thử FS Passion không cần trò chơi",
+      "active_help": "Chế độ trình diễn đang bật: các đường dẫn này thuộc thư mục thử nghiệm. Đường dẫn thật của bạn sẽ trở lại khi bạn thoát."
+    }
+  },
+  "themes": {
+    "lime": "Chanh",
+    "jade": "Ngọc bích",
+    "cuivre": "Đồng",
+    "blue": "Trắng"
+  },
+  "anomalies": {
+    "title": "Vấn đề phát hiện",
+    "none": "Không có vấn đề. Mọi thứ đều ổn.",
+    "intro": "Những mục này trong thư mục mod của bạn không thể được trò chơi dùng nguyên trạng. Không có gì nghiêm trọng, và FS Passion không động đến chúng.",
+    "new": "mới",
+    "hide_type": "Không hiện loại vấn đề này nữa",
+    "hide_folder": "Không hiện thư mục này nữa",
+    "rename": "Đổi tên…",
+    "others": {
+      "one": "Các tệp khác bị bỏ qua ({count})",
+      "other": "Các tệp khác bị bỏ qua ({count})"
+    },
+    "A1": {
+      "title": {
+        "one": "Tệp nén .rar hoặc .7z ({count})",
+        "other": "Tệp nén .rar hoặc .7z ({count})"
+      },
+      "explain": "Trò chơi chỉ đọc tệp .zip. Hãy giải nén, rồi nén lại mod thành zip nếu cần."
+    },
+    "A2": {
+      "title": {
+        "one": ".zip không có modDesc.xml ({count})",
+        "other": ".zip không có modDesc.xml ({count})"
+      },
+      "explain": "Thường là một gói gồm nhiều mod cần giải nén.",
+      "nested": "Tìm thấy modDesc.xml trong một thư mục con ({path}): mod đã bị nén sai."
+    },
+    "A3": {
+      "title": {
+        "one": "Tệp nén không đọc được ({count})",
+        "other": "Tệp nén không đọc được ({count})"
+      },
+      "explain": "Tệp nén bị hỏng hoặc modDesc.xml không hợp lệ. Hãy tải lại mod.",
+      "zip": "Không thể mở tệp nén.",
+      "xml": "Tệp modDesc.xml không hợp lệ."
+    },
+    "A4": {
+      "title": {
+        "one": "Thư mục không có modDesc.xml ({count})",
+        "other": "Thư mục không có modDesc.xml ({count})"
+      },
+      "explain": "Không có modDesc.xml ở gốc, trò chơi không thể dùng thư mục này. FS Passion không bao giờ động đến nó."
+    },
+    "A5": {
+      "title": {
+        "one": "Tên bị trò chơi từ chối ({count})",
+        "other": "Tên bị trò chơi từ chối ({count})"
+      },
+      "explain": "Trò chơi chỉ chấp nhận chữ cái không dấu, chữ số và “_”.",
+      "suggestion": "Tên gợi ý: {name}"
+    },
+    "A6": {
+      "title": {
+        "one": "Mod cho phiên bản trò chơi khác ({count})",
+        "other": "Mod cho phiên bản trò chơi khác ({count})"
+      },
+      "explain": "Phiên bản trò chơi này sẽ không tải mod này.",
+      "detected": "Mod cho {game}"
+    },
+    "A7": {
+      "title": {
+        "one": "Mod bị thiếu ({count})",
+        "other": "Mod bị thiếu ({count})"
+      },
+      "explain": "Một bộ cấu hình tham chiếu mod này, nhưng nó không còn trong thư mục mod.",
+      "in": "Trong: {list}"
+    },
+    "A8": {
+      "title": {
+        "one": "Mod đã xóa nhưng vẫn còn liên kết ({count})",
+        "other": "Mod đã xóa nhưng vẫn còn liên kết ({count})"
+      },
+      "explain": "Mod này đã bị xóa khỏi thư mục mod, nhưng một số bộ cấu hình vẫn chứa nó.",
+      "copy": "Vẫn còn một bản sao trong: {list}",
+      "delete_title": "Xóa bản sao còn lại?",
+      "delete_text": "Bản sao cuối cùng của “{name}”, vẫn còn trong các thư mục bộ cấu hình, sẽ được đưa vào Thùng rác, và mod bị gỡ khỏi mọi danh sách."
+    },
+    "A9": {
+      "title": {
+        "one": "Mod trùng lặp ({count})",
+        "other": "Mod trùng lặp ({count})"
+      },
+      "explain": "Cùng một mod xuất hiện hai lần: trong hai thư mục lưu trữ, hoặc dạng .zip và thư mục cạnh nhau. Trò chơi chỉ tải một. FS Passion dùng bản trong thư mục chính, và ưu tiên tệp nén hơn thư mục.",
+      "zip_and_dir": "“{name}” tồn tại cả dạng .zip lẫn thư mục đã giải nén: trò chơi chỉ tải một, và ModHub không thể cập nhật nó. Hãy giữ một dạng duy nhất (xóa dạng kia bằng “Xóa vĩnh viễn”, hoặc chuyển nó ra khỏi thư mục mod).",
+      "files": "Tệp: {list}"
+    },
+    "game": "{game}",
+    "folder": "Thư mục mod: {path}",
+    "show_in_folder": "Hiện trong File Explorer",
+    "open_folder": "Mở thư mục mod trong File Explorer (mod không còn ở đó)"
+  },
+  "welcome": {
+    "subtitle": "Mod của bạn, lưu một lần. Bao nhiêu bộ cấu hình tùy thích.",
+    "language": "Chọn ngôn ngữ của bạn"
+  },
+  "notice": {
+    "title": "FS Passion hoạt động như thế nào",
+    "at_start": "Hiển thị cửa sổ này khi ứng dụng khởi động",
+    "understood": "Đã hiểu",
+    "blocks": [
+      {
+        "key": "Trước hết: chúng tôi khuyên bạn nên sao lưu toàn bộ mod sang một ổ đĩa khác. Điều này rất cần thiết, như trước mọi thao tác với tệp quan trọng."
+      },
+      {
+        "h": "Ý tưởng"
+      },
+      {
+        "p": "FS Passion giúp bạn tạo, nhanh và dễ dàng, bao nhiêu bộ cấu hình Farming Simulator tùy thích, trong khi chỉ giữ một bản duy nhất của mod trong thư mục gốc của chúng."
+      },
+      {
+        "p": "Chuyển từ bộ cấu hình này sang bộ khác chỉ với 1 cú nhấp!"
+      },
+      {
+        "h": "Cài đặt"
+      },
+      {
+        "p": "Thư mục mod của bạn có thể nằm trên bất kỳ ổ đĩa nào: FS Passion tự thích ứng. Không cần tự tạo, di chuyển hay đổi tên gì. Ổ đĩa đầy? Thêm tối đa hai thư mục mod trên các ổ đĩa khác (Cài đặt → Trò chơi và đường dẫn): mod của chúng tham gia bộ cấu hình như các mod khác."
+      },
+      {
+        "h": "Lần dùng đầu tiên"
+      },
+      {
+        "ul": [
+          "Tạo bộ cấu hình bằng nút thần kỳ “＋ Bộ cấu hình” trên các bản đồ: bản đồ và các phụ thuộc của nó trở thành bộ cấu hình chỉ với một cú nhấp.",
+          "Sau đó sắp xếp các mod còn lại vào mod chung, có mặt trong mọi bộ cấu hình.",
+          "Nhấp “Áp dụng”: trò chơi sẽ tải bộ cấu hình đã chọn ở lần khởi động tiếp theo."
+        ]
+      },
+      {
+        "h": "Thêm, đổi tên, xóa mod"
+      },
+      {
+        "ul": [
+          "Mod mới: tải chúng như thường lệ, rồi nhấp “Tìm mod mới” ở đầu danh sách. FS Passion đặt chúng vào thư mục mod của đúng phiên bản trò chơi.",
+          "Để xóa mod, hãy làm trong FS Passion (“Xóa vĩnh viễn” trên thanh thao tác) thay vì trong File Explorer: khi đó chúng được gỡ khỏi danh sách và bộ cấu hình cùng lúc, và vào Thùng rác.",
+          "Đổi tên một mod (phím F2) sẽ tách nó khỏi ModHub: nó sẽ không còn nhận cập nhật."
+        ]
+      },
+      {
+        "h": "Cập nhật"
+      },
+      {
+        "p": "Không cần làm gì: các bản cập nhật do trò chơi tải về được thu lại khi trò chơi đóng, hoặc ở lần khởi động FS Passion tiếp theo. Phiên bản cũ được cất vào “Old versions”. Nếu trò chơi tải về số phiên bản cũ hơn của bạn (thường là mod bạn đã chỉnh sửa), FS Passion sẽ hỏi bạn giữ bản nào."
+      },
+      {
+        "p": "Bản thân FS Passion: khi có phiên bản mới, một chấm xuất hiện trên bánh răng Cài đặt và “Phiên bản mới” cạnh số phiên bản ở phía dưới. Cài đặt → Ứng dụng → “Cài đặt bản cập nhật”."
+      },
+      {
+        "h": "Giữ bộ cấu hình"
+      },
+      {
+        "p": "Cài đặt → Ứng dụng → “Xuất” lưu bộ cấu hình, mod chung và cài đặt vào một tệp. “Nhập” lấy chúng lại sau khi cài lại hoặc trên máy khác."
+      },
+      {
+        "h": "Để ngừng"
+      },
+      {
+        "p": "“Ngừng dùng FS Passion” (Cài đặt → Ứng dụng) trả lại cài đặt gốc cho trò chơi và gỡ các thư mục bộ cấu hình. Mod của bạn không bao giờ bị động đến."
+      }
+    ]
+  },
+  "atelier": {
+    "title": "Xưởng giao diện",
+    "id": "Mã định danh",
+    "name": "Tên",
+    "dark": "Nền cửa sổ",
+    "light": "Màu chủ đạo",
+    "mica": "Ánh sáng Mica",
+    "grain": "Hạt nhiễu",
+    "effect": "Hiệu ứng",
+    "effect_none": "Không",
+    "effect_metal": "Ánh kim loại",
+    "intensity": "Cường độ",
+    "save": "Lưu",
+    "copy": "Sao chép định nghĩa",
+    "new": "Mới",
+    "copied": "Đã sao chép định nghĩa",
+    "saved": "Đã lưu giao diện vào ui/themes.json",
+    "contrast_low": "Độ tương phản {ratio}:1, dưới 4.5:1. Chữ nhỏ sẽ dùng {color}.",
+    "contrast_ok": "Độ tương phản {ratio}:1",
+    "mode": "Chế độ",
+    "mode_dark": "Tối",
+    "mode_light": "Sáng",
+    "text": "Chữ",
+    "multi": "Nhiều màu nhấn (mỗi vùng một màu)",
+    "accent_n": "Màu nhấn {n}",
+    "pair": "Giao diện cặp (mặt trời/mặt trăng)",
+    "pair_none": "Không",
+    "gradient": "Dải màu hai sắc (tiêu đề, nút Áp dụng và Khởi động)",
+    "gradient_from": "Dải màu: bắt đầu",
+    "gradient_to": "Dải màu: kết thúc",
+    "style": "Kiểu",
+    "style_duo": "Hai màu",
+    "style_palette": "Bảng màu chính thức",
+    "style_classic": "Lớp phủ tính toán",
+    "surface_1": "Nền cửa sổ",
+    "surface_2": "Danh sách và cửa sổ",
+    "surface_3": "Mục",
+    "surface_4": "Mục con",
+    "text_n": "Chữ {n}",
+    "neon": "Neon",
+    "neon_help": "Ánh sáng của tiêu đề, biểu tượng và viền theo màu của từng vùng (0: không hiệu ứng). Bị tắt bởi “Hiệu ứng ánh sáng”."
+  },
+  "error": {
+    "bad_request": "Yêu cầu không hợp lệ.",
+    "forbidden": "Truy cập bị từ chối.",
+    "not_found": "Không tìm thấy mục.",
+    "unexpected": "Lỗi không mong muốn. Hãy sao chép chẩn đoán (Cài đặt → Trợ giúp và giới thiệu) và đính kèm vào báo cáo của bạn.",
+    "offline": "Lõi FS Passion không phản hồi.",
+    "internal": "Thao tác bị từ chối vì lý do an toàn. Hãy sao chép chẩn đoán (Cài đặt → Trợ giúp và giới thiệu) và đính kèm vào báo cáo của bạn."
+  },
+  "detect": {
+    "busy": "Đang có một lượt phát hiện."
+  },
+  "parties": {
+    "not_configured": "Đặt thư mục mod của {game} trong cài đặt để tạo bộ cấu hình.",
+    "name_label": "Tên bộ cấu hình",
+    "name_empty": "Tên không được để trống.",
+    "name_too_long": "Tối đa {max} ký tự.",
+    "name_taken": "Đã có bộ cấu hình tên “{name}”.",
+    "special_locked": "Bộ cấu hình đầy đủ và Bộ cấu hình trống không thể sửa, đổi tên, nhân bản hay xóa.",
+    "not_found": "Bộ cấu hình này không còn tồn tại.",
+    "write_failed": "Không thể lưu bộ cấu hình vào {path}. Hãy kiểm tra ổ đĩa này có ghi được không.",
+    "recovered": "Không đọc được tệp bộ cấu hình của {game}: đã tải bản sao lưu gần nhất ({backup}). Tệp hỏng đã được cất sang một bên.",
+    "lost": "Không đọc được tệp bộ cấu hình của {game} và không tải được bản sao lưu nào. Tệp hỏng đã được cất sang một bên, không xóa gì.",
+    "running_rename": "Đóng {game} trước khi đổi tên bộ cấu hình này: thư mục của nó không thể thay đổi khi trò chơi đang chạy.",
+    "running_delete": "Đóng {game} trước khi xóa bộ cấu hình này: thư mục của nó không thể thay đổi khi trò chơi đang chạy.",
+    "map_not_found": "Không tìm thấy bản đồ: {name}",
+    "mod_not_found": "Không tìm thấy mod: {name}",
+    "create_title": "Bộ cấu hình mới",
+    "create_help": "Một bộ cấu hình trống có kèm mod chung. Sau đó thêm mod vào từ “Tất cả mod”.",
+    "create_ok": "Tạo",
+    "created": "Đã tạo bộ cấu hình “{name}”",
+    "duplicate_title": "Nhân bản bộ cấu hình",
+    "duplicate_help": "Bản sao giữ các mod của “{name}” và cài đặt “Mod chung” của nó.",
+    "copy_name": "{name} (bản sao)",
+    "duplicate_ok": "Nhân bản",
+    "duplicated": "Đã tạo bộ cấu hình “{name}”",
+    "rename_title": "Đổi tên bộ cấu hình",
+    "rename_ok": "Đổi tên",
+    "renamed": "Đã đổi tên “{old}” thành “{name}”",
+    "delete_title": "Xóa bộ cấu hình",
+    "delete_text": {
+      "zero": "Xóa bộ cấu hình “{name}”? Nó không chứa mod nào.",
+      "one": "Xóa bộ cấu hình “{name}”? Mod của nó vẫn ở trong thư mục mod: chỉ bộ cấu hình và thư mục liên kết của nó biến mất.",
+      "other": "Xóa bộ cấu hình “{name}”? {count} mod của nó vẫn ở trong thư mục mod: chỉ bộ cấu hình và thư mục liên kết của nó biến mất."
+    },
+    "delete_ok": "Xóa",
+    "deleted": "Đã xóa bộ cấu hình “{name}”",
+    "deleted_applied": "Bộ cấu hình {name} đã bị xóa. Trò chơi giờ dùng bộ cấu hình {other}."
+  },
+  "actions": {
+    "selected": {
+      "one": "mod đã chọn",
+      "other": "mod đã chọn"
+    },
+    "add_party": "Thêm vào Mod của bộ cấu hình",
+    "add_common": "Thêm vào Mod chung",
+    "remove_party": "Gỡ khỏi Mod của bộ cấu hình",
+    "remove_common": "Gỡ khỏi Mod chung",
+    "rename": "Đổi tên…",
+    "rename_help": "Một mod duy nhất, được chọn trong “Tất cả mod”.",
+    "delete": "Xóa vĩnh viễn…",
+    "close": "Đóng thanh và bỏ chọn (Esc)",
+    "added_party": {
+      "one": "Đã thêm {count} mod vào bộ cấu hình “{name}”",
+      "other": "Đã thêm {count} mod vào bộ cấu hình “{name}”"
+    },
+    "added_common": {
+      "one": "Đã thêm {count} mod vào mod chung",
+      "other": "Đã thêm {count} mod vào mod chung"
+    },
+    "moved_party": {
+      "one": "Đã chuyển {count} mod sang bộ cấu hình “{name}”",
+      "other": "Đã chuyển {count} mod sang bộ cấu hình “{name}”"
+    },
+    "moved_common": {
+      "one": "Đã chuyển {count} mod sang mod chung",
+      "other": "Đã chuyển {count} mod sang mod chung"
+    },
+    "removed_party": {
+      "one": "Đã gỡ {count} mod khỏi bộ cấu hình “{name}”",
+      "other": "Đã gỡ {count} mod khỏi bộ cấu hình “{name}”"
+    },
+    "removed_common": {
+      "one": "Đã gỡ {count} mod khỏi mod chung",
+      "other": "Đã gỡ {count} mod khỏi mod chung"
+    },
+    "nothing_party": "Các mod này đã có trong bộ cấu hình “{name}”",
+    "nothing_common": "Các mod này đã có trong mod chung"
+  },
+  "deps": {
+    "ask_title": {
+      "one": "Thêm cả phụ thuộc của nó?",
+      "other": "Thêm cả {count} phụ thuộc của nó?"
+    },
+    "ask_yes": {
+      "one": "Thêm cả phụ thuộc",
+      "other": "Thêm cả {count} phụ thuộc"
+    },
+    "ask_no": "Chỉ các mod đã chọn",
+    "missing_warn": {
+      "one": "Phụ thuộc bị thiếu trong mod của bạn: {list}",
+      "other": "{count} phụ thuộc bị thiếu trong mod của bạn: {list}"
+    },
+    "needed_by_map": "Bản đồ “{name}” cần:",
+    "needed_by_mod": "Mod “{name}” cần:",
+    "needed": "Phụ thuộc:",
+    "where_common": "mod chung",
+    "where_party": "bộ cấu hình “{name}”",
+    "ask_intro": {
+      "one": "Mod này là phụ thuộc của một mod bạn đã chọn, nhưng nó không có trong {where}.",
+      "other": "{count} mod này là phụ thuộc của các mod bạn đã chọn, nhưng chúng không có trong {where}."
+    },
+    "missing_for": "{list} (cần cho “{name}”)",
+    "optional_title": {
+      "one": "Thêm cả một mod tùy chọn?",
+      "other": "Thêm cả các mod tùy chọn?"
+    },
+    "optional_intro": {
+      "one": "Một mod tùy chọn, đã có trong mod của bạn:",
+      "other": "{count} mod tùy chọn, đã có trong mod của bạn:"
+    },
+    "optional_for": "tùy chọn cho “{name}”",
+    "optional_note": "Tùy chọn: trò chơi không cần chúng. Chỉ những mod bạn đánh dấu được thêm vào {where}.",
+    "optional_continue": "Tiếp tục"
+  },
+  "commonguard": {
+    "title_maps": "Cảnh báo: bản đồ sắp được đưa vào Mod chung",
+    "title_classified": "Cảnh báo: các mod đã phân loại sắp được đưa vào Mod chung",
+    "maps_intro": {
+      "one": "Có lẽ đây là nhầm lẫn: lựa chọn của bạn có một bản đồ, và bạn sắp thêm nó vào Mod chung:",
+      "other": "Có lẽ đây là nhầm lẫn: lựa chọn của bạn có {count} bản đồ, và bạn sắp thêm chúng vào Mod chung:"
+    },
+    "classified_intro": {
+      "one": "Lựa chọn của bạn còn có một mod đã được phân loại vào một trong các bộ cấu hình của bạn.",
+      "other": "Lựa chọn của bạn còn có {count} mod đã được phân loại vào các bộ cấu hình của bạn."
+    },
+    "why_maps": "Có lẽ đây không phải điều bạn muốn: mọi thứ trong Mod chung được tải trong tất cả bộ cấu hình. Các bản đồ này sẽ được tải ở khắp nơi, chính là điều FS Passion giúp bạn tránh.",
+    "why_classified": "Có lẽ đây không phải điều bạn muốn: mọi thứ trong Mod chung được tải trong tất cả bộ cấu hình. Các mod này sẽ không còn giới hạn trong bộ cấu hình của chúng, và danh sách của bạn sẽ mất ý nghĩa.",
+    "unclassified_offer": {
+      "one": "Lựa chọn của bạn chỉ có một mod chưa phân loại (không tính bản đồ): bạn có thể chỉ thêm mod đó.",
+      "other": "Lựa chọn của bạn có {count} mod chưa phân loại (không tính bản đồ): bạn có thể chỉ thêm những mod đó."
+    },
+    "tip": "Mẹo: Ctrl+A chọn toàn bộ danh sách “Tất cả mod”, gồm cả bản đồ và các mod đã phân loại.",
+    "continue": "Vẫn tiếp tục",
+    "only_unclassified": {
+      "one": "Chỉ thêm mod chưa phân loại",
+      "other": "Chỉ thêm {count} mod chưa phân loại"
+    }
+  },
+  "plus": {
+    "title": "Bộ cấu hình mới từ một bản đồ",
+    "deps_title": {
+      "one": "{count} phụ thuộc",
+      "other": "{count} phụ thuộc"
+    },
+    "dlc_title": "DLC cần thiết",
+    "dlc_note": "Để tham khảo: trò chơi luôn tải các DLC đã cài. Chúng không được thêm vào bộ cấu hình.",
+    "missing_note": "Phụ thuộc bị thiếu không được thêm: hãy tải chúng, rồi thêm vào bộ cấu hình.",
+    "no_deps": "Không khai báo phụ thuộc: bộ cấu hình sẽ chỉ chứa bản đồ.",
+    "summary": {
+      "zero": "Bộ cấu hình sẽ chỉ chứa bản đồ, cộng với mod chung.",
+      "one": "Bộ cấu hình sẽ chứa bản đồ và phụ thuộc của nó, cộng với mod chung.",
+      "other": "Bộ cấu hình sẽ chứa bản đồ và {count} phụ thuộc của nó, cộng với mod chung."
+    },
+    "create": "Tạo bộ cấu hình",
+    "created": {
+      "one": "Đã tạo bộ cấu hình “{name}”: {count} mod",
+      "other": "Đã tạo bộ cấu hình “{name}”: {count} mod"
+    },
+    "created_missing": {
+      "one": "Phụ thuộc cần tải: {list}",
+      "other": "{count} phụ thuộc cần tải: {list}"
+    },
+    "optional_title": {
+      "one": "{count} mod tùy chọn",
+      "other": "{count} mod tùy chọn"
+    },
+    "optional_note": "Tùy chọn: trò chơi không cần chúng. Đánh dấu những mod cần thêm vào bộ cấu hình.",
+    "optional_none_present": "Không có mod tùy chọn nào trong số này trong mod của bạn. Trò chơi không cần chúng."
+  },
+  "replace": {
+    "title": "Thay bằng…",
+    "help": "{name} không còn trong thư mục mod của bạn. Nếu tác giả đã đổi tên, hãy chọn phiên bản mới: nó sẽ thế chỗ trong mọi danh sách.",
+    "done": {
+      "one": "Đã thay {old} bằng {name} trong {count} danh sách",
+      "other": "Đã thay {old} bằng {name} trong {count} danh sách"
+    }
+  },
+  "notifications": {
+    "title": "Thông báo",
+    "unread": {
+      "one": "Thông báo: 1 tin nhắn mới",
+      "other": "Thông báo: {count} tin nhắn mới"
+    },
+    "clear": "Xóa tất cả",
+    "none": "Chưa có thông báo. Các tin nhắn hiện ở góc dưới bên phải được giữ ở đây cho đến khi đóng FS Passion."
+  },
+  "tray": {
+    "show": "Hiện FS Passion",
+    "quit": "Thoát FS Passion",
+    "tooltip": "FS Passion",
+    "hint": "FS Passion vẫn chạy ở đây. Nhấp vào biểu tượng để mở lại; “Thoát” mới thật sự đóng nó."
+  },
+  "apply": {
+    "unsupported": "Phiên bản trò chơi này không thể đổi thư mục mod.",
+    "not_ready": "Trước hết hãy đặt thư mục mod và thư mục Documents của trò chơi trong cài đặt.",
+    "running": "Đóng {game} trước khi áp dụng bộ cấu hình.",
+    "no_gamesettings": "Không tìm thấy gameSettings.xml của {game}: hãy khởi động trò chơi một lần, hoặc kiểm tra thư mục Documents trong cài đặt.",
+    "busy": "Đang có một thao tác bộ cấu hình khác. Hãy thử lại sau giây lát.",
+    "library_busy": "Mod vẫn đang được đọc. Hãy thử lại sau giây lát.",
+    "done": {
+      "zero": "Đã áp dụng bộ cấu hình {name}: không có mod.",
+      "one": "Đã áp dụng bộ cấu hình {name}: {count} mod.",
+      "other": "Đã áp dụng bộ cấu hình {name}: {count} mod."
+    },
+    "missing": {
+      "one": "1 mod của bộ cấu hình bị thiếu trong thư mục mod của bạn: {list}",
+      "other": "{count} mod của bộ cấu hình bị thiếu trong thư mục mod của bạn: {list}"
+    },
+    "updated": {
+      "one": "1 bản cập nhật do trò chơi để lại đã được chuyển vào thư mục mod của bạn.",
+      "other": "{count} bản cập nhật do trò chơi để lại đã được chuyển vào thư mục mod của bạn."
+    },
+    "added": {
+      "one": "1 mod do trò chơi để lại đã vào thư mục mod của bạn và bộ cấu hình {name}.",
+      "other": "{count} mod do trò chơi để lại đã vào thư mục mod của bạn và bộ cấu hình {name}."
+    },
+    "set_aside": {
+      "one": "1 tệp đã được cất sang một bên, không xóa gì (thư mục “Recovered” hoặc “Old versions”, cạnh các bộ cấu hình của bạn).",
+      "other": "{count} tệp đã được cất sang một bên, không xóa gì (thư mục “Recovered” và “Old versions”, cạnh các bộ cấu hình của bạn)."
+    },
+    "empty_party": "Bộ cấu hình {name} không chứa mod: trò chơi sẽ khởi động không có mod.",
+    "not_same_disk": "Không thể liên kết {name}: thư mục bộ cấu hình phải nằm cùng ổ đĩa với thư mục mod.",
+    "no_hardlinks": "Ổ đĩa này không hỗ trợ liên kết cứng: thư mục mod phải nằm trên ổ NTFS. Không có gì thay đổi.",
+    "too_many_links": "Không thể liên kết {name}: tệp này đã đạt giới hạn liên kết của Windows.",
+    "access_denied": "Truy cập bị từ chối khi liên kết {name}. Không có gì thay đổi.",
+    "link_failed": "Không thể tạo liên kết cho {name} ({detail}). Không có gì thay đổi.",
+    "junction_failed": "Không thể tạo điểm nối cho mod đã giải nén {name} ({detail}). Không có gì thay đổi.",
+    "folder_busy": "Thư mục {path} đang được chương trình khác dùng (File Explorer?). Hãy đóng nó và thử lại. Không có gì thay đổi.",
+    "folder_exists": "Đã có thư mục {path}: hãy chọn tên khác.",
+    "failed": "Không thể áp dụng bộ cấu hình ({detail}). Không có gì thay đổi.",
+    "recovered_finished": "Một thao tác bộ cấu hình của {game} đã bị gián đoạn (mất điện?). Nó đã được hoàn tất.",
+    "recovered_cancelled": "Một thao tác bộ cấu hình của {game} đã bị gián đoạn (mất điện?). Nó đã bị hủy: không có gì thay đổi.",
+    "symlink_denied": "Windows từ chối liên kết tượng trưng tới {name}: cần Chế độ nhà phát triển của Windows hoặc quyền quản trị.",
+    "blocked": {
+      "one": "1 mod từ ổ đĩa khác không thể tham gia bộ cấu hình (không có quyền liên kết tượng trưng): {list}. Xem Cài đặt → Trò chơi và đường dẫn.",
+      "other": "{count} mod từ ổ đĩa khác không thể tham gia bộ cấu hình (không có quyền liên kết tượng trưng): {list}. Xem Cài đặt → Trò chơi và đường dẫn."
+    }
+  },
+  "override": {
+    "title": "Trò chơi đang tải một thư mục lạ",
+    "text": "{game} tải mod từ một thư mục mà FS Passion không biết (bị đổi thủ công, hoặc bởi công cụ khác):",
+    "help": "Nhận thư mục này làm thư mục mod, áp dụng lại bộ cấu hình, hoặc để nguyên trò chơi.",
+    "adopt": "Nhận làm thư mục mod",
+    "reapply": "Áp dụng lại {name}",
+    "ignore": "Không làm gì",
+    "adopted": "Thư mục mod mới: {path}",
+    "read_failed": "Không đọc được gameSettings.xml ({path}). Không có gì thay đổi.",
+    "backup_failed": "Không thể ghi bản sao lưu gameSettings.xml ({path}). Không có gì thay đổi.",
+    "write_failed": "Không thể ghi gameSettings.xml ({path}). Trò chơi đang mở?",
+    "check_failed": "Kiểm tra gameSettings.xml thất bại: tệp gốc đã được khôi phục.",
+    "no_root": "gameSettings.xml không giống tệp cài đặt của trò chơi. Không có gì thay đổi."
+  },
+  "demo": {
+    "title": "Chế độ trình diễn",
+    "pill": "Trình diễn",
+    "quit": "Thoát",
+    "banner": "Chế độ trình diễn: các mod này là giả. Thư mục thật của bạn và trò chơi không bị động đến.",
+    "badge": "Mod giả (trình diễn)",
+    "installing": "Đang chuẩn bị mod trình diễn…",
+    "started": "Chế độ trình diễn: thử mọi thứ, không gì động đến trò chơi.",
+    "stopped": "Đã đóng chế độ trình diễn: mọi thứ đã được xóa.",
+    "stop_title": "Thoát chế độ trình diễn",
+    "stop_text": "Mod giả, bộ cấu hình thử nghiệm và toàn bộ thư mục trình diễn sẽ bị xóa. Cài đặt thật của bạn trở lại như cũ.",
+    "stop_ok": "Thoát và xóa hết",
+    "offer_title": "Dùng thử FS Passion không cần trò chơi?",
+    "offer_text": "Không tìm thấy Farming Simulator nào trên máy này. Bạn có thể dùng thử FS Passion với mod giả: tạo bộ cấu hình, sắp xếp, áp dụng… mọi thứ đều chạy, trong một thư mục thử nghiệm, không bao giờ trong trò chơi.",
+    "offer_local": "Gói trình diễn đã có trên máy này (khoảng 2 MB).",
+    "offer_download": "Gói trình diễn (khoảng 2 MB) sẽ được tải từ trang GitHub của dự án, rồi được kiểm tra.",
+    "offer_yes": "Dùng thử",
+    "offer_no": "Để sau",
+    "unavailable": "Gói trình diễn chưa có sẵn.",
+    "bad_pack": "Gói trình diễn bị hỏng hoặc không khớp với bản gốc: đã bị từ chối.",
+    "download_failed": "Không thể tải gói trình diễn ({detail}).",
+    "install_failed": "Không thể cài gói trình diễn ({detail}).",
+    "remove_failed": "Không thể xóa hoàn toàn thư mục trình diễn: {path}",
+    "no_detect": "Phát hiện trò chơi bị tắt trong chế độ trình diễn."
+  },
+  "delete": {
+    "title": {
+      "one": "Xóa vĩnh viễn mod này?",
+      "other": "Xóa vĩnh viễn {count} mod này?"
+    },
+    "intro": {
+      "one": "Mod này sẽ bị gỡ khỏi mọi danh sách và mọi thư mục bộ cấu hình, rồi bị xóa khỏi thư mục mod của bạn:",
+      "other": "{count} mod này sẽ bị gỡ khỏi mọi danh sách và mọi thư mục bộ cấu hình, rồi bị xóa khỏi thư mục mod của bạn:"
+    },
+    "irreversible": "Không thể hoàn tác.",
+    "recycle": "Các tệp sẽ vào Thùng rác của Windows: bạn vẫn có thể khôi phục chúng từ đó.",
+    "no_recycle": "Ổ đĩa này không có Thùng rác: việc xóa sẽ là vĩnh viễn.",
+    "understand": {
+      "one": "Tôi hiểu rằng tệp này sẽ bị xóa",
+      "other": "Tôi hiểu rằng các tệp này sẽ bị xóa"
+    },
+    "ok": "Xóa vĩnh viễn",
+    "done_recycled": {
+      "one": "Đã chuyển 1 mod vào Thùng rác",
+      "other": "Đã chuyển {count} mod vào Thùng rác"
+    },
+    "done_deleted": {
+      "one": "Đã xóa vĩnh viễn 1 mod",
+      "other": "Đã xóa vĩnh viễn {count} mod"
+    },
+    "failed": {
+      "one": "Không thể xóa 1 mod: {list}. Nó đã được gỡ khỏi danh sách; hãy đóng chương trình đang dùng nó rồi thử lại.",
+      "other": "Không thể xóa {count} mod: {list}. Chúng đã được gỡ khỏi danh sách; hãy đóng chương trình đang dùng chúng rồi thử lại."
+    },
+    "nothing": "Không có mod nào để xóa.",
+    "running": "Đóng {game} trước khi xóa mod."
+  },
+  "rename": {
+    "title": "Đổi tên mod",
+    "label": "Tên mới",
+    "prefix_tip": "Giữ tiền tố phiên bản",
+    "final": "Tên tệp: {file}",
+    "rule": "Chỉ chữ cái không dấu, chữ số và “_”: trò chơi từ chối các ký tự khác.",
+    "where": "Trong: {list}. Danh sách chỉ thay đổi khi bạn đồng ý: FS Passion sẽ hỏi bạn có muốn chúng theo tên mới không.",
+    "warning_modhub": "Nếu đến từ ModHub, mod này sẽ không còn nhận cập nhật: đó chính là mục đích của việc đổi tên.",
+    "warning_save": "Trong trò chơi, các bản lưu dùng mod này sẽ tìm nó theo tên cũ.",
+    "warning_save_map": "Đây là một bản đồ: trong trò chơi, các bản lưu trên bản đồ này sẽ tìm nó theo tên cũ và sẽ không tải được nữa.",
+    "warning_deps": {
+      "one": "1 mod khai báo nó là phụ thuộc ({list}): mod đó sẽ tìm nó theo tên cũ.",
+      "other": "{count} mod khai báo nó là phụ thuộc ({list}): chúng sẽ tìm nó theo tên cũ."
+    },
+    "ok": "Đổi tên",
+    "done": {
+      "zero": "Đã đổi tên {old} thành {name}",
+      "one": "Đã đổi tên {old} thành {name}, trong 1 bộ cấu hình",
+      "other": "Đã đổi tên {old} thành {name}, trong {count} bộ cấu hình"
+    },
+    "renamed": "Đã đổi tên {old} thành {name}",
+    "lists_title": "Cập nhật danh sách?",
+    "lists_ask": "“{old}” vẫn còn trong: {list}. Chúng có nên theo tên mới “{name}” không?",
+    "lists_yes": "Cập nhật danh sách",
+    "lists_no": "Không làm gì",
+    "lists_done": "Đã cập nhật danh sách ({count}).",
+    "empty": "Hãy nhập tên.",
+    "too_long": "Tên quá dài: tối đa {max} ký tự.",
+    "invalid": "Chỉ chữ cái không dấu, chữ số và “_”, không có khoảng trắng.",
+    "same": "Đó đã là tên của nó.",
+    "taken": "“{name}” đã tồn tại trong thư mục mod của bạn.",
+    "not_found": "Không tìm thấy mod {name} trong thư mục mod của bạn.",
+    "failed": "Không thể đổi tên {name}: có thể nó đang mở trong chương trình khác.",
+    "running": "Đóng {game} trước khi đổi tên mod.",
+    "no_list": "không có danh sách"
+  },
+  "downloads": {
+    "title": "Tìm thấy mod mới",
+    "intro": "Trong {folder}. Tích hợp sẽ chuyển từng tệp đã đánh dấu vào thư mục mod của phiên bản trò chơi tương ứng.",
+    "count": {
+      "one": "Tìm thấy 1 mod",
+      "other": "Tìm thấy {count} mod"
+    },
+    "col_mod": "Mod",
+    "col_version": "Phiên bản trò chơi",
+    "col_state": "Trạng thái",
+    "col_dest": "Đích",
+    "state": {
+      "new": "Mới",
+      "update": "Cập nhật ({from} → {to})",
+      "older": "Cũ hơn phiên bản đã cài ({to} < {from})",
+      "present": "Đã có",
+      "conflict": "Một mod đã giải nén đã mang tên này",
+      "unconfigured": "Phiên bản chưa cấu hình: hãy thiết lập trong cài đặt"
+    },
+    "older_confirm": "Đã đánh dấu: sẽ thay thế phiên bản đã cài (bản đó được cất sang một bên).",
+    "postpone": "{game} đang chạy: sẽ tích hợp khi trò chơi đóng",
+    "not_configured": "{game} (chưa cấu hình)",
+    "suffix": "Sẽ được tích hợp thành {name} (đã bỏ hậu tố của trình duyệt)",
+    "dest_none": "Không (chưa phân loại)",
+    "dest_unclassified": "Chưa phân loại",
+    "dest_party": "Bộ cấu hình “{name}”",
+    "ignore": "Bỏ qua các tệp này",
+    "ignored": {
+      "one": "Đã bỏ qua 1 tệp: nó sẽ không được đề xuất nữa",
+      "other": "Đã bỏ qua {count} tệp: chúng sẽ không được đề xuất nữa"
+    },
+    "later": "Để sau",
+    "integrate": {
+      "zero": "Tích hợp",
+      "one": "Tích hợp 1 mod",
+      "other": "Tích hợp {count} mod"
+    },
+    "none": "Không có mod mới trong {folder}.",
+    "done": {
+      "one": "Đã tích hợp 1 mod: {list}",
+      "other": "Đã tích hợp {count} mod: {list}"
+    },
+    "in_version": {
+      "one": "1 vào {game}",
+      "other": "{count} vào {game}"
+    },
+    "skipped": {
+      "one": "1 tệp được giữ nguyên chỗ (đã có hoặc cũ hơn)",
+      "other": "{count} tệp được giữ nguyên chỗ (đã có hoặc cũ hơn)"
+    },
+    "postponed": {
+      "one": "1 mod sẽ được tích hợp khi {game} đóng",
+      "other": "{count} mod sẽ được tích hợp khi {game} đóng"
+    },
+    "postponed_done": {
+      "one": "Đã tích hợp 1 bản tải sau khi {game} đóng",
+      "other": "Đã tích hợp {count} bản tải sau khi {game} đóng"
+    },
+    "failed": "Không thể tích hợp {file}. Tệp vẫn nằm trong thư mục tải xuống của bạn.",
+    "gone": "{file} không còn trong thư mục tải xuống.",
+    "unconfigured": "{file}: phiên bản trò chơi đã chọn chưa được cấu hình.",
+    "no_folder": "Không tìm thấy thư mục tải xuống: hãy đặt nó trong Cài đặt → Ứng dụng → Tải xuống.",
+    "demo": "Không tích hợp các bản tải trong lúc trình diễn.",
+    "done_in": {
+      "one": "Đã tích hợp 1 mod vào {game}",
+      "other": "Đã tích hợp {count} mod vào {game}"
+    },
+    "col_storage": "Lưu trữ"
+  },
+  "move": {
+    "exists": "{file}: đã có tệp cùng tên.",
+    "no_space": "{file}: không đủ dung lượng trống trên ổ đĩa của thư mục mod.",
+    "check_failed": "{file}: bản sao đã kiểm tra không khớp với bản gốc. Không thay thế gì.",
+    "failed": "Không thể di chuyển {file}: có thể nó đang mở trong chương trình khác."
+  },
+  "missing": {
+    "title": "Mod bị thiếu trong thư mục mod",
+    "intro": {
+      "one": "Mod này bị thiếu trong thư mục mod dù có trong các bộ cấu hình. Bạn muốn làm gì?",
+      "other": "{count} mod này bị thiếu trong thư mục mod dù có trong các bộ cấu hình. Bạn muốn làm gì?"
+    },
+    "in": "Trong: {list}",
+    "copy": "Đã bị xóa khỏi thư mục mod, nhưng vẫn còn một bản sao qua các liên kết trong: {list}",
+    "no_copy": "Không có bản sao: hãy tải lại, hoặc thay bằng một mod đã được tác giả đổi tên",
+    "restore": "Khôi phục vào Mods",
+    "restore_tip": "Bản sao còn trong bộ cấu hình sẽ lại trở thành mod của thư mục mod (không sao chép gì).",
+    "remove": "Gỡ khỏi danh sách",
+    "remove_all": "Gỡ tất cả khỏi danh sách",
+    "later": "Để sau",
+    "notice": "Để xóa một mod, hãy làm trong FS Passion (nút “Xóa vĩnh viễn” trên thanh thao tác): khi đó nó được gỡ khỏi danh sách và bộ cấu hình cùng lúc.",
+    "removed": {
+      "one": "Đã gỡ 1 mod khỏi mọi danh sách",
+      "other": "Đã gỡ {count} mod khỏi mọi danh sách"
+    },
+    "restored": {
+      "one": "Đã khôi phục 1 mod vào thư mục mod",
+      "other": "Đã khôi phục {count} mod vào thư mục mod"
+    },
+    "deleted": {
+      "one": "Đã xóa 1 mod và gỡ khỏi danh sách",
+      "other": "Đã xóa {count} mod và gỡ khỏi danh sách"
+    }
+  },
+  "reconcile": {
+    "updated": {
+      "one": "Đã thu 1 bản cập nhật: {list}",
+      "other": "Đã thu {count} bản cập nhật: {list}"
+    },
+    "added": {
+      "one": "1 mod do trò chơi tải về đã được thêm vào bộ cấu hình “{name}”",
+      "other": "{count} mod do trò chơi tải về đã được thêm vào bộ cấu hình “{name}”"
+    },
+    "unclassified": {
+      "one": "1 mod do trò chơi tải về đã vào thư mục mod (chưa phân loại)",
+      "other": "{count} mod do trò chơi tải về đã vào thư mục mod (chưa phân loại)"
+    },
+    "errors": {
+      "one": "Không thể sắp xếp lại 1 thư mục: {list}. Xem nhật ký.",
+      "other": "Không thể sắp xếp lại {count} thư mục: {list}. Xem nhật ký."
+    },
+    "reshaped": {
+      "one": "1 mod đã được giải nén hoặc nén lại: bộ cấu hình theo dạng mới của nó ({list})",
+      "other": "{count} mod đã được giải nén hoặc nén lại: các bộ cấu hình theo dạng mới của chúng ({list})"
+    }
+  },
+  "rights": {
+    "title": "Quyền cho mod trên ổ đĩa khác",
+    "intro": "Để một mod lưu trên ổ đĩa khác tham gia bộ cấu hình, FS Passion tạo một liên kết tượng trưng. Windows chỉ cho phép khi bật Chế độ nhà phát triển hoặc có quyền quản trị, và hiện không có cái nào.",
+    "standard": "Tài khoản Windows của bạn là tài khoản tiêu chuẩn: dùng quyền quản trị sẽ chạy FS Passion dưới một tài khoản khác, với thư mục và cài đặt khác. Chế độ nhà phát triển là lựa chọn đúng.",
+    "admin_title": "Luôn chạy FS Passion với quyền quản trị",
+    "admin_text": "FS Passion sẽ đánh dấu giúp bạn “Chạy chương trình này với quyền quản trị” (Thuộc tính → Tương thích), chỉ cho tài khoản của bạn, rồi khởi động lại. Hệ quả:",
+    "uac": "Windows yêu cầu xác nhận mỗi lần FS Passion khởi động.",
+    "game_normal": "Trò chơi và nền tảng của nó vẫn được khởi động với quyền thường, qua Windows Explorer. Tham số khởi động khi đó đi qua nền tảng (Steam, Epic Games), như thường lệ.",
+    "no_drop": "Windows chặn kéo tệp từ Explorer vào FS Passion. Hiện chưa ảnh hưởng gì: FS Passion không dùng thao tác này.",
+    "dev_title": "Hoặc: bật Chế độ nhà phát triển của Windows",
+    "dev_text": "Cài đặt Windows → Hệ thống → Dành cho nhà phát triển → “Chế độ nhà phát triển”. Không có hệ quả nào khác với FS Passion. Sau đó quay lại đây và nhấp “Kiểm tra lại”.",
+    "without": "Không có các quyền này, các thư mục bổ sung vẫn được lưu: mod của chúng được liệt kê, nhưng không tham gia bộ cấu hình nào.",
+    "later": "Để sau",
+    "dev_mode": "Mở Chế độ nhà phát triển",
+    "admin": "Luôn chạy với quyền quản trị",
+    "missing": "Windows từ chối liên kết tượng trưng: mod trên ổ đĩa khác được liệt kê nhưng không tham gia bộ cấu hình nào.",
+    "get": "Lấy quyền…",
+    "check": "Kiểm tra lại",
+    "ok": "Đã cho phép liên kết tượng trưng (FS Passion chạy với quyền quản trị): mod trên ổ đĩa khác tham gia các bộ cấu hình.",
+    "ok_dev": "Đã cho phép liên kết tượng trưng (Chế độ nhà phát triển của Windows): mod trên ổ đĩa khác tham gia các bộ cấu hình.",
+    "unknown": "Chưa kiểm tra quyền liên kết tượng trưng.",
+    "admin_on": "FS Passion được đặt luôn chạy với quyền quản trị.",
+    "admin_off": "Ngừng chạy với quyền quản trị",
+    "restarting": "FS Passion đang khởi động lại với quyền quản trị. Hãy xác nhận yêu cầu của Windows.",
+    "now_ok": "Đã cho phép liên kết tượng trưng: hãy áp dụng lại các bộ cấu hình để mod trên ổ đĩa khác tham gia.",
+    "still_missing": "Windows vẫn từ chối liên kết tượng trưng.",
+    "flag_failed": "Không thể thay đổi cài đặt “Chạy với quyền quản trị”.",
+    "ok_plain": "Đã cho phép liên kết tượng trưng: mod trên ổ đĩa khác tham gia các bộ cấu hình.",
+    "admin_once_title": "Khởi động lại FS Passion với quyền quản trị",
+    "admin_once_text": "FS Passion chỉ khởi động lại với quyền quản trị lần này; phải làm lại mỗi lần khởi động. Chế độ nhà phát triển giúp tránh điều này. Hệ quả:",
+    "admin_once": "Khởi động lại với quyền quản trị"
+  },
+  "older": {
+    "title": "Trò chơi đã tải phiên bản cũ hơn",
+    "intro": {
+      "one": "Trò chơi đã tải một mod có số phiên bản cũ hơn của bạn. Nó đã được cất sang một bên, không thay thế gì. Bạn muốn làm gì?",
+      "other": "Trò chơi đã tải {count} mod có số phiên bản cũ hơn của bạn. Chúng đã được cất sang một bên, không thay thế gì. Bạn muốn làm gì?"
+    },
+    "versions": "Phiên bản của bạn: {mine} · phiên bản trò chơi tải: {game}",
+    "keep": "Giữ phiên bản của tôi ({version})",
+    "use": "Dùng phiên bản của trò chơi ({version})",
+    "use_tip": "Phiên bản của trò chơi thế chỗ phiên bản của bạn trong thư mục mod; bản của bạn được cất vào “Old versions”. Mọi bộ cấu hình đều theo.",
+    "help": "Đây thường là mod bạn đã chỉnh sửa: ModHub không so sánh số phiên bản, nó đưa ra bản gốc. Dù sao cũng không có gì bị xóa: tệp bạn không giữ vẫn nằm trong thư mục “Recovered” hoặc “Old versions”, cạnh các bộ cấu hình của bạn.",
+    "later": "Để sau",
+    "gone": "Tệp này không còn trong thư mục “Recovered”: không có gì thay đổi.",
+    "failed": "Không thể đặt phiên bản của trò chơi cho {name} ({detail}). Phiên bản của bạn không thay đổi."
+  },
+  "stop": {
+    "running": "Đóng {game} trước: cài đặt của trò chơi phải được khôi phục khi trò chơi đã đóng.",
+    "folders_failed": "Không thể xóa các thư mục bộ cấu hình.",
+    "closed": "FS Passion đã đóng. Trò chơi đã lấy lại cài đặt gốc.",
+    "export_first": "Trước khi tiếp tục, hãy xuất cấu hình của bạn: bạn sẽ lấy lại bộ cấu hình nếu quay lại dùng FS Passion.",
+    "intro": "FS Passion sẽ trả lại cài đặt gốc cho trò chơi, rồi gỡ các thư mục bộ cấu hình (chúng chỉ chứa liên kết):",
+    "no_version": "Chưa cấu hình phiên bản trò chơi nào: không có gì để khôi phục.",
+    "mods_safe": "Thư mục mod của bạn không bao giờ bị động đến, cả “Old versions” và “Recovered” vốn chứa các mod đã cất sang một bên.",
+    "admin_flag": "Cài đặt “Chạy chương trình này với quyền quản trị” do FS Passion đặt sẽ được gỡ bỏ.",
+    "understand": "Tôi hiểu: trò chơi sẽ không còn tải các bộ cấu hình của FS Passion.",
+    "plan": {
+      "restore": "Trò chơi lại tải thư mục gốc của nó: {dir}",
+      "deactivate": "Thư mục mod tùy chỉnh bị tắt: trò chơi quay lại thư mục “mods” quen thuộc.",
+      "missing": "Không tìm thấy gameSettings.xml: không có gì để khôi phục.",
+      "none": "Cài đặt của trò chơi đã là bản gốc.",
+      "folders": {
+        "one": "Đã gỡ {count} thư mục bộ cấu hình",
+        "other": "Đã gỡ {count} thư mục bộ cấu hình"
+      },
+      "kept": {
+        "one": "“{name}” được giữ lại ({count} tệp).",
+        "other": "“{name}” được giữ lại ({count} tệp)."
+      }
+    },
+    "options": {
+      "title": "Đồng thời xóa:",
+      "parties": "bộ cấu hình và mod chung (parties.json)",
+      "caches": "bộ nhớ đệm (biểu tượng đã chuyển đổi, danh mục DLC)",
+      "settings": "cài đặt của FS Passion",
+      "logs": "nhật ký",
+      "langs": "ngôn ngữ cá nhân"
+    },
+    "done": {
+      "title": "Đã ngừng dùng FS Passion",
+      "text": "Xong. Trò chơi đã lấy lại cài đặt gốc.",
+      "partial": "Xong, trừ ít nhất một phiên bản: xem bên dưới. Nhật ký có chi tiết.",
+      "version": {
+        "zero": "đã khôi phục cài đặt gốc",
+        "one": "đã khôi phục cài đặt gốc, đã gỡ {count} thư mục bộ cấu hình",
+        "other": "đã khôi phục cài đặt gốc, đã gỡ {count} thư mục bộ cấu hình"
+      },
+      "set_aside": {
+        "one": "{count} tệp tìm thấy trong thư mục bộ cấu hình đã được cất vào “Recovered”.",
+        "other": "{count} tệp tìm thấy trong thư mục bộ cấu hình đã được cất vào “Recovered”."
+      },
+      "close": "Đóng FS Passion",
+      "uninstaller": "Sau đó bắt đầu gỡ cài đặt FS Passion",
+      "error": {
+        "override": "KHÔNG khôi phục được cài đặt trò chơi (không thể sửa gameSettings.xml); các thư mục bộ cấu hình được giữ lại",
+        "folders": "đã khôi phục cài đặt gốc, nhưng không thể xóa các thư mục bộ cấu hình"
+      }
+    },
+    "stopped": "Đã ngừng dùng FS Passion: hãy đóng nó."
+  },
+  "tour": {
+    "button": "Tham quan",
+    "title": "Tham quan",
+    "count": "{n} / {total}",
+    "prev": "Trước",
+    "next": "Tiếp",
+    "replay": "Xem lại",
+    "finish": "Kết thúc",
+    "quit": "Rời chuyến tham quan",
+    "key_esc": "Esc",
+    "key_ctrl": "Ctrl",
+    "key_shift": "Shift",
+    "hint": {
+      "caption": "Muốn tham quan một vòng?",
+      "body": "Nhấp vào bóng đèn: trong một phút, FS Passion cho bạn xem những điều cốt yếu của giao diện. Bóng đèn vẫn ở đó để bạn xem lại bất cứ lúc nào.",
+      "start": "Bắt đầu tham quan",
+      "later": "Để sau"
+    },
+    "versions": {
+      "caption": "Phiên bản trò chơi của bạn",
+      "body": "Rê chuột lên logo này: các phiên bản Farming Simulator hiện ra. Nhấp vào phiên bản bạn muốn quản lý.\nCác phiên bản chưa cài sẽ bị làm mờ. Mỗi phiên bản có mod riêng và bộ cấu hình riêng.",
+      "picked": "Đã chọn: hiển thị mod và bộ cấu hình của nó"
+    },
+    "parties": {
+      "caption": "Bộ cấu hình: trái tim của FS Passion",
+      "body": "Một cú nhấp để chuyển từ bộ cấu hình này sang bộ khác: bản đồ và mọi phụ thuộc đi theo.\nBộ cấu hình đầy đủ: tất cả mod của bạn, để cập nhật chúng trong trò chơi.\nBộ cấu hình trống: không có mod, để thử trò chơi gốc.",
+      "full_tip": "Tất cả mod: để chạy cập nhật mod trong trò chơi",
+      "empty_tip": "Không có mod: để thử trò chơi gốc"
+    },
+    "tools": {
+      "caption": "Tạo, nhân bản, đổi tên, xóa",
+      "body": "Các thao tác trên bộ cấu hình đã chọn.\nMẹo: trên một bản đồ trong “Tất cả mod”, nút “＋ Bộ cấu hình” tạo bộ cấu hình với bản đồ và mọi phụ thuộc của nó, chỉ một cú nhấp."
+    },
+    "common": {
+      "caption": "Mod chung",
+      "body": "Xe, nông cụ và script lối chơi mà bạn muốn có trong mọi bộ cấu hình.\nChúng được bật mặc định; nếu cần, hãy tắt cho riêng một bộ cấu hình.",
+      "on": "Mod chung có trong bộ cấu hình này",
+      "off": "Chỉ tắt cho bộ cấu hình này"
+    },
+    "apply": {
+      "caption": "Áp dụng",
+      "body": "Áp dụng bộ cấu hình đã chọn: đây là bộ trò chơi sẽ tải ở lần khởi động tiếp theo.\nNút sáng lên chừng nào bộ cấu hình đã chọn chưa được áp dụng.",
+      "done": "Đã áp dụng: trò chơi sẽ tải nó ở lần khởi động tiếp theo"
+    },
+    "buttons": {
+      "caption": "Giao diện, thông báo, cài đặt",
+      "body": "Giao diện sáng hoặc tối, lịch sử tin nhắn, cài đặt… Và bóng đèn, để xem lại chuyến tham quan này bất cứ lúc nào.",
+      "theme": "Giao diện sáng hoặc tối"
+    },
+    "list1": {
+      "caption": "Tất cả mod",
+      "body": "Toàn bộ thư mục mod của bạn, theo danh mục: DLC, bản đồ, mod khác…\nMột mod luôn ở lại đây, dù bạn làm gì trong các danh sách khác. Mod “chưa phân loại” không có trong danh sách nào: trò chơi không thấy chúng.\n[Ctrl] + [F]: tìm mod hoặc tác giả.",
+      "search_tip": "Tìm kiếm: Ctrl + F"
+    },
+    "downloads": {
+      "caption": "Mod vừa tải về",
+      "body": "Nút này tìm các mod bạn vừa tải về trong thư mục Tải xuống.\nFS Passion phát hiện phiên bản trò chơi của từng mod và, khi bạn đồng ý, đặt nó vào đúng thư mục mod.\nNó cũng làm vậy khi khởi động: xem Cài đặt → Ứng dụng → Tải xuống.",
+      "found": "Mỗi mod vào thư mục mod của phiên bản trò chơi tương ứng"
+    },
+    "list2": {
+      "caption": "Mod của bộ cấu hình",
+      "body": "Các mod của bộ cấu hình đã chọn: bản đồ, các phụ thuộc, mod riêng của nó.\nTrò chơi tải chúng cùng với mod chung."
+    },
+    "list3": {
+      "caption": "Mod chung",
+      "body": "Các mod có trong mọi bộ cấu hình: máy kéo, nông cụ, script…\nSắp xếp chúng vào đây một lần: mọi bộ cấu hình đều có."
+    },
+    "select": {
+      "caption": "Chọn nhiều",
+      "body": "[Ctrl] + nhấp: thêm hoặc bỏ một mod khỏi lựa chọn.\n[Shift] + nhấp: chọn cả một dải.\n[Ctrl] + [A]: chọn mọi thứ trong danh sách; [Esc]: bỏ chọn.\nNgay khi có mod được chọn, một thanh thao tác xuất hiện ở phía dưới."
+    },
+    "move": {
+      "caption": "Kéo và thả",
+      "body": "Vào “Mod của bộ cấu hình” hoặc “Mod chung”: đây là sao chép, mod vẫn ở trong “Tất cả mod”.\nGiữa hai danh sách này: đây là di chuyển. Giữ [Ctrl] khi thả để sao chép.\nVào “Tất cả mod”, hoặc phím [Del]: mod bị gỡ khỏi danh sách. Tệp của nó không bao giờ bị xóa.",
+      "copy": "Sao chép",
+      "move": "Di chuyển · [Ctrl]: sao chép",
+      "remove": "Gỡ khỏi danh sách · [Del]"
+    },
+    "keys": {
+      "caption": "Phím tắt",
+      "body": "Để thao tác nhanh hơn:",
+      "rows": [
+        {
+          "k": "[Ctrl] + [F]",
+          "d": "Tìm mod hoặc tác giả"
+        },
+        {
+          "k": "[Ctrl] + nhấp",
+          "d": "Thêm hoặc bỏ một mod khỏi lựa chọn"
+        },
+        {
+          "k": "[Shift] + nhấp",
+          "d": "Chọn một dải mod"
+        },
+        {
+          "k": "[Ctrl] + [A]",
+          "d": "Chọn mọi thứ trong danh sách"
+        },
+        {
+          "k": "[Esc]",
+          "d": "Bỏ chọn, hoặc hủy thao tác kéo"
+        },
+        {
+          "k": "[Ctrl] khi thả",
+          "d": "Sao chép thay vì di chuyển (giữa danh sách 2 và 3)"
+        },
+        {
+          "k": "[Del]",
+          "d": "Gỡ khỏi danh sách 2 hoặc 3 (tệp vẫn giữ)"
+        },
+        {
+          "k": "[Enter] trên một bản đồ",
+          "d": "Tạo bộ cấu hình với bản đồ và các phụ thuộc của nó"
+        },
+        {
+          "k": "[F2]",
+          "d": "Đổi tên mod"
+        },
+        {
+          "k": "[I]",
+          "d": "Ghim thẻ thông tin của mod"
+        },
+        {
+          "k": "[Space]  [↑] [↓] [←] [→]",
+          "d": "Chọn và di chuyển bằng bàn phím"
+        }
+      ]
+    },
+    "close": {
+      "caption": "Đóng mà không thoát",
+      "body": "Dấu X đóng cửa sổ, nhưng FS Passion vẫn chạy nền, trong vùng thông báo cạnh đồng hồ.\nĐể mở lại: mũi tên “^” trên thanh tác vụ, rồi biểu tượng FS. Để thật sự đóng: “Thoát” ở góc dưới bên phải, hoặc nhấp chuột phải vào biểu tượng.\nBạn có thể đổi điều này trong Cài đặt → Ứng dụng → Cửa sổ.",
+      "tip_close": "Đóng: FS Passion chuyển vào vùng thông báo",
+      "tip_more": "Hiện biểu tượng ẩn",
+      "tip_icon": "Nhấp: FS Passion trở lại · Nhấp chuột phải: Thoát"
+    },
+    "end": {
+      "caption": "Đến lượt bạn!",
+      "body": "Xem lại chuyến tham quan này bất cứ lúc nào bằng bóng đèn, hoặc trong Cài đặt → Trợ giúp và giới thiệu."
+    },
+    "demo": {
+      "parties": [
+        "Thung lũng Xanh — Chăn nuôi",
+        "Những ngọn đồi — Trồng trọt",
+        "Ruộng lúa phương Nam"
+      ],
+      "party_sub": {
+        "one": "Bản đồ + {count} mod",
+        "other": "Bản đồ + {count} mod"
+      },
+      "mods": [
+        "Máy kéo sáu xi-lanh",
+        "Máy gặt đập liên hợp",
+        "Máy gieo hạt 6 m",
+        "Rơ-moóc nông trại",
+        "Gói nông cụ",
+        "Script thời tiết"
+      ]
+    }
+  }
+}

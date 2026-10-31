@@ -18,7 +18,7 @@ FS Passion의 핵심은 이 문제를 놀라울 만큼 효율적으로 해결하
 - **가이드 투어**: 헤더의 전구가 애니메이션 예시(버전, 구성, 목록, 다중 선택, 끌어서 놓기, 단축키)로 1분 만에 인터페이스를 소개합니다.
 - **FS Passion 사용 중지**: 게임이 원래 설정으로 돌아가고 구성 폴더가 제거됩니다. 모드는 절대 건드리지 않습니다.
 - 2색 **테마**와 인기 테마에서 영감을 받은 다크·라이트 테마(Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **언어**: 인터페이스는 14개 언어를 지원합니다(English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska). Windows 언어에 따라 선택되며 설정에서 바꿀 수 있고, 직접 번역을 추가할 수도 있습니다. **곧 추가: 12개 언어 더**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **언어**: 인터페이스는 26개 언어를 지원합니다(English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文). Windows 언어에 따라 선택되며 설정에서 바꿀 수 있고, 직접 번역을 추가할 수도 있습니다.
 - **데모**: 이 앱은 Farming Simulator 게임 소유자만을 위한 것입니다. 게임 없이 기능을 체험해 보고 싶다면 설정에서 데모 팩을 이용할 수 있습니다.
 
 > ⚠️ 개발 중인 프로젝트입니다(버전: [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases) 페이지 참고). 사용해 보기 전에 모드 폴더를 완전히 백업하세요. 공식 다운로드 위치는 이 GitHub 페이지뿐입니다.
@@ -55,17 +55,17 @@ FS Passion의 핵심은 이 문제를 놀라울 만큼 효율적으로 해결하
 번역은 아직 첫 버전입니다. 원어민의 수정을 언제나 환영합니다. 현재 언어와 앞으로 추가될 언어 모두 해당됩니다. 프로그래밍 지식은 필요 없고 텍스트 편집기(메모장이면 충분)만 있으면 됩니다.
 
 1. 이 저장소에서 [`lang`](../lang/) 폴더를 열고 자신의 언어 파일(`ko.json`)을 내려받습니다. 아직 없다면 `en.json`을 내려받습니다.
-2. FS Passion 설치의 개인 언어 폴더에 파일을 넣습니다(Settings → Display → Language의 **Open the personal languages folder** 버튼으로 열 수 있습니다).
+2. FS Passion 설치의 개인 언어 폴더에 파일을 넣습니다(설정 → 화면 → 언어의 **개인 언어 폴더 열기** 버튼으로 열 수 있습니다).
    - 설치 버전: `%APPDATA%\FSPassion\lang\`;
    - 포터블 버전: `FSPassion.exe` 옆의 `data\lang\`.
 3. 파일 이름을 바꿉니다. 예: `ko_corrected.json` (이름은 `_`로 시작하면 안 됩니다). 파일 맨 위의 `"code"` 줄은 바꾸지 마세요. 그러면 이 파일이 기본 제공 언어를 대신합니다. `en.json`에서 시작한다면 `"code"` 줄에 `"ko"`, `"name"` 줄에 `"한국어"`을 적습니다.
 4. `:` 기호 오른쪽의 따옴표 안 텍스트를 고치고 파일을 저장합니다(UTF-8 인코딩). 왼쪽의 키와 `{count}`처럼 중괄호 안에 있는 단어는 그대로 두세요.
-5. FS Passion을 다시 시작하고 Settings → Display → Language에서 언어를 선택합니다. 해당 언어에는 'personal' 표시가 붙습니다. 화면에서 수정 내용을 확인하세요.
+5. FS Passion을 다시 시작하고 설정 → 화면 → 언어에서 언어를 선택합니다. 해당 언어에는 '개인' 표시가 붙습니다. 화면에서 수정 내용을 확인하세요.
 6. 수정한 파일을 [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 탭으로 보내 주세요. 'Translation: 한국어' 같은 제목으로 issue를 만들고 파일을 첨부합니다(GitHub가 `.json` 확장자를 거부하면 ZIP으로 압축하세요).
 
 ## 문제 신고, 아이디어 제안
 
-[Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 탭. 문제를 신고할 때는 “Copy diagnostics”(Settings → Help and about → Logs and diagnostics)의 텍스트를 첨부해 주세요.
+[Issues](https://github.com/Michel-MichelMichel/FSPassion/issues) 탭. 문제를 신고할 때는 “진단 정보 복사”(설정 → 도움말 및 정보 → 로그 및 진단)의 텍스트를 첨부해 주세요.
 
 ## 프로젝트 후원
 
@@ -73,7 +73,7 @@ FS Passion은 신뢰할 수 있는 무료 오픈 소스 프로젝트이며 앞�
 
 ## 인터넷 연결
 
-FS Passion은 DLC 카탈로그(이름과 아이콘, 공개 저장소 `FSPassion-data`)를 읽기 위해 GitHub에만 하루 최대 한 번 연결합니다. 개인 데이터는 전송되지 않습니다. “Internet connection” 설정(Settings → Application)으로 끌 수 있습니다. 또한 실행할 때마다(이후 하루 한 번) GitHub에서 FS Passion의 새 버전을 확인합니다. “FS Passion updates” 설정(Settings → Application)으로 끌 수 있습니다.
+FS Passion은 DLC 카탈로그(이름과 아이콘, 공개 저장소 `FSPassion-data`)를 읽기 위해 GitHub에만 하루 최대 한 번 연결합니다. 개인 데이터는 전송되지 않습니다. “인터넷 연결” 설정(설정 → 애플리케이션)으로 끌 수 있습니다. 또한 실행할 때마다(이후 하루 한 번) GitHub에서 FS Passion의 새 버전을 확인합니다. “FS Passion 업데이트” 설정(설정 → 애플리케이션)으로 끌 수 있습니다.
 
 ## 라이선스
 

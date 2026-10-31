@@ -18,7 +18,7 @@ Inima FS Passion rezolvă această problemă cu o eficiență surprinzătoare: c
 - **Tur ghidat**: becul din antet prezintă interfața într-un minut, cu exemple animate (versiuni, configurații, liste, selecție multiplă, glisare și plasare, comenzi rapide).
 - **Nu mai folosi FS Passion**: jocul își recapătă setarea originală, iar folderele configurațiilor sunt eliminate; modurile tale nu sunt atinse niciodată.
 - **Teme** bicolore și teme inspirate de teme populare, întunecate și luminoase (Catppuccin, Nord, Solarized, Monokai Pro, Gruvbox, Dracula, Tokyo Night, Synthwave '84).
-- **Limbi**: interfață în 14 limbi (English, Français, Deutsch, Español, Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Norsk bokmål, Svenska), aleasă după limba Windows și modificabilă din Setări; poți adăuga propria traducere. **În curând: încă 12 limbi**: Magyar, Română, Русский, Українська, Türkçe, Tiếng Việt, Bahasa Indonesia, Español (Latinoamérica), 日本語, 한국어, 简体中文, 繁體中文.
+- **Limbi**: interfață în 26 limbi (English, Français, Deutsch, Español, Español (Latinoamérica), Italiano, Português (Brasil), Português (Portugal), Nederlands, Polski, Čeština, Dansk, Suomi, Magyar, Norsk bokmål, Română, Русский, Svenska, Türkçe, Українська, Tiếng Việt, Bahasa Indonesia, 日本語, 한국어, 简体中文, 繁體中文), aleasă după limba Windows și modificabilă din Setări; poți adăuga propria traducere.
 - **Demo**: aplicația se adresează exclusiv celor care dețin jocurile Farming Simulator. Dacă ești curios și vrei să-i încerci funcțiile fără să ai jocul, în Setări găsești un pachet demonstrativ.
 
 > ⚠️ Proiect în dezvoltare (versiune: vezi pagina [Releases](https://github.com/Michel-MichelMichel/FSPassion/releases)). Fă o copie de siguranță completă a folderului de moduri înainte de a-l încerca. Această pagină GitHub este singura sursă oficială de descărcare.
@@ -55,17 +55,17 @@ Fișierele nu sunt încă semnate: la prima pornire, Windows SmartScreen poate a
 Traducerile sunt o primă versiune: corecturile vorbitorilor nativi sunt foarte binevenite, pentru limbile actuale și pentru cele care urmează. Nu e nevoie să știi programare, doar un editor de text (Notepad e suficient).
 
 1. În acest depozit, deschide folderul [`lang`](../lang/) și descarcă fișierul limbii tale (`ro.json`). Dacă nu există încă, descarcă `en.json`.
-2. Pune-l în folderul de limbi personale al instalării tale FS Passion (butonul **Open the personal languages folder** din Settings → Display → Language îl deschide):
+2. Pune-l în folderul de limbi personale al instalării tale FS Passion (butonul **Deschide folderul limbilor personale** din Setări → Afișare → Limbă îl deschide):
    - versiunea instalată: `%APPDATA%\FSPassion\lang\`;
    - versiunea portabilă: `data\lang\`, lângă `FSPassion.exe`.
 3. Redenumește-l, de exemplu `ro_corrected.json` (numele nu trebuie să înceapă cu `_`). Nu modifica linia `"code"` de la începutul fișierului: astfel fișierul tău înlocuiește limba inclusă. Dacă pornești de la `en.json`: scrie `"ro"` pe linia `"code"` și `"Română"` pe linia `"name"`.
 4. Corectează textele dintre ghilimele, din dreapta semnelor `:`, și salvează fișierul (codificare UTF-8). Lasă neschimbate cheile din stânga și cuvintele dintre acolade, precum `{count}`.
-5. Repornește FS Passion și alege-ți limba din Settings → Display → Language: este marcată „personal”. Verifică-ți corecturile în interfață.
+5. Repornește FS Passion și alege-ți limba din Setări → Afișare → Limbă: este marcată „personală”. Verifică-ți corecturile în interfață.
 6. Trimite fișierul corectat în fila [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues): creează un issue cu un titlu precum „Translation: Română” și atașează fișierul (arhivat ZIP dacă GitHub refuză extensia `.json`).
 
 ## Raportează o problemă, propune o idee
 
-Fila [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues). Pentru o problemă, atașează textul din „Copy diagnostics” (Settings → Help and about → Logs and diagnostics).
+Fila [Issues](https://github.com/Michel-MichelMichel/FSPassion/issues). Pentru o problemă, atașează textul din „Copiază diagnosticarea” (Setări → Ajutor și despre → Jurnale și diagnosticare).
 
 ## Susține proiectul
 
@@ -73,7 +73,7 @@ FS Passion este și va rămâne un proiect de încredere, open source și gratui
 
 ## Conexiunea la internet
 
-FS Passion se conectează doar la GitHub, pentru a citi catalogul DLC (nume și pictograme, depozitul public `FSPassion-data`), cel mult o dată pe zi. Nu se trimit date personale. Setarea „Internet connection” (Settings → Application) o dezactivează. De asemenea, la fiecare pornire (apoi o dată pe zi) caută pe GitHub o versiune nouă de FS Passion: setarea „FS Passion updates” (Settings → Application) o dezactivează.
+FS Passion se conectează doar la GitHub, pentru a citi catalogul DLC (nume și pictograme, depozitul public `FSPassion-data`), cel mult o dată pe zi. Nu se trimit date personale. Setarea „Conexiune la internet” (Setări → Aplicație) o dezactivează. De asemenea, la fiecare pornire (apoi o dată pe zi) caută pe GitHub o versiune nouă de FS Passion: setarea „Actualizări FS Passion” (Setări → Aplicație) o dezactivează.
 
 ## Licență
 

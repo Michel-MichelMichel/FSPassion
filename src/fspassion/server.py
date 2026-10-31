@@ -566,6 +566,24 @@ class _RequestHandler(BaseHTTPRequestHandler):
     def _error(self, status: int, key: str, **params: Any) -> None:
         self._json(status, {"error": key, "params": params})
 
+    def _discard_body(self) -> None:
+        """Lit et jette un corps de requête refusé (taille annoncée, plafonnée).
+
+        1.0.0 : sous Windows, fermer une connexion dont le corps n'a pas été lu
+        fait envoyer un « reset » TCP ; le client perd alors la réponse
+        (WinError 10053) au lieu de recevoir l'erreur. Un corps trop grand ou
+        sans taille n'est pas lu : la connexion est simplement fermée.
+        """
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except ValueError:
+            return
+        if 0 < length <= MAX_BODY and not self.headers.get("Transfer-Encoding"):
+            try:
+                self.rfile.read(length)
+            except OSError:
+                pass
+
     # -- méthodes HTTP --------------------------------------------------------
 
     def do_GET(self) -> None:  # noqa: N802
@@ -639,8 +657,9 @@ class _RequestHandler(BaseHTTPRequestHandler):
             return
         handler = self.app.routes.get((method, path))
         if handler is None:
-            # Corps éventuel non lu : la connexion ne doit pas resservir.
+            # Corps éventuel jeté : la connexion ne doit pas resservir.
             self.close_connection = True
+            self._discard_body()
             self._error(404, "error.not_found")
             return
         body: dict[str, Any] = {}
@@ -648,6 +667,7 @@ class _RequestHandler(BaseHTTPRequestHandler):
             ctype = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
             if ctype != "application/json":
                 self.close_connection = True
+                self._discard_body()
                 # Oblige un navigateur tiers à une requête de contrôle (CORS), refusée.
                 self._error(415, "error.bad_request")
                 return

@@ -16,7 +16,8 @@ Dernière version du projet.
 2. **Polices asiatiques** : le japonais, le coréen, le chinois simplifié et le chinois traditionnel s'affichent avec les polices FS Passion CJK (Sarasa Gothic réduite, déjà chargées seulement pour leur langue). La police du chinois simplifié a été refabriquée (`tools/build_cjk_fonts.py`) : deux caractères des nouveaux textes y manquaient (浏, 翡). Le russe, l'ukrainien, le vietnamien, le turc, le roumain et le hongrois sont couverts par Iosevka Etoile Compact.
 3. **Tour guidé** : en japonais et en chinois, les titres écrits à la main peuvent passer à la ligne entre deux caractères (ces langues n'ont pas d'espaces). En vietnamien, les titres gardent la police de l'interface : Caveat n'a pas les lettres vietnamiennes.
 4. **README** : les 26 langues sont listées ; la mention « bientôt : 12 autres langues » est retirée (`tools/readme_translations.py`, `README.md`, `readme/README.fr.md`, et les 24 traductions régénérées).
-5. Numéro de version : **1.0.0**.
+5. **Serveur local** : une requête refusée (format non JSON, adresse inconnue) voit son contenu lu avant la réponse. Sous Windows, la connexion était sinon coupée net et le client perdait le message d'erreur ; cela faisait échouer par moments le test `test_post_needs_json` sur la machine Windows de GitHub.
+6. Numéro de version : **1.0.0**.
 
 ## 0.9.12 — 30 octobre 2026 — avertissement avant d'envoyer des maps ou des mods déjà classés dans les Mods communs
 

@@ -2,7 +2,7 @@
 
 Les versions sont numérotées x.y.z : 0.x.y pendant le développement, 1.0.0 pour la version finale.
 
-## Prochaine version — consommation au repos
+## 1.0.2 — 9 novembre 2026 — consommation au repos
 
 **Aucun fichier du jeu ni des mods n'est touché.**
 

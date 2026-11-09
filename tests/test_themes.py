@@ -126,6 +126,18 @@ def test_two_color_style_uses_outlines_and_running_glow():
     assert 'href="css/themes.css"' in _read("ui", "index.html")
 
 
+def test_gradient_animation_pauses_when_window_is_idle():
+    # Le dégradé animé (logo, « Lancer le jeu », « Appliquer ») redessine à
+    # chaque image : il s'arrête quand la fenêtre n'est pas au premier plan.
+    css = _read("ui", "css", "base.css")
+    rule = re.search(r"html\.is-idle :is\(([^)]*)\) \{ animation-play-state: paused !important; \}", css)
+    assert rule
+    for sel in (".apply-btn.btn-primary", ".launch-btn.btn-primary", ".app-logo.app-logo-art"):
+        assert sel in rule.group(1)
+    js = _read("ui", "js", "theme.js")
+    assert "if (!document.hasFocus()) root.classList.add('is-idle');" in js
+
+
 def test_palette_style_uses_official_surfaces():
     css = _read("ui", "css", "themes.css")
     assert ":root[data-surfaces]" in css

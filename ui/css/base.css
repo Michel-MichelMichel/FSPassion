@@ -324,6 +324,9 @@
   animation: grad-flow 6s linear infinite;
 }
 html.reduce-motion .apply-btn.btn-primary, html.reduce-motion .launch-btn.btn-primary { animation: none !important; }
+/* Fenêtre au second plan : le dégradé s'arrête (il redessine les boutons et
+   le logo à chaque image, environ 60 fois par seconde). */
+html.is-idle :is(.apply-btn.btn-primary, .launch-btn.btn-primary, .app-logo.app-logo-art) { animation-play-state: paused !important; }
 
 *, *::before, *::after { box-sizing: border-box; }
 

@@ -383,6 +383,8 @@ export function initMetal(el) {
     updateMetal();
     root.classList.remove('is-idle');
   });
+  // Fenêtre ouverte sans le focus : inactive dès le départ.
+  if (!document.hasFocus()) root.classList.add('is-idle');
   document.documentElement.addEventListener('pointerleave', () => metalEl && metalEl.classList.remove('lit'));
   document.documentElement.addEventListener('pointerenter', () => metalEl && metalOn && metalEl.classList.add('lit'));
   updateMetal();

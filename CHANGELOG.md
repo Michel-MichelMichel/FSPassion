@@ -2,6 +2,18 @@
 
 Les versions sont numérotées x.y.z : 0.x.y pendant le développement, 1.0.0 pour la version finale.
 
+## Prochaine version — consommation au repos
+
+**Aucun fichier du jeu ni des mods n'est touché.**
+
+### Ce qui s'est passé
+
+1. **FS Passion travaillait au repos** : avec un thème à dégradé (Tokyo Night par exemple), environ 13 % de processeur et 20 % de carte graphique, même fenêtre au second plan. Un gestionnaire de tâches affichait environ 5 Mo/s d'« I/O » : ce n'était pas du réseau (aucune connexion vers Internet), mais les images envoyées par l'affichage WebView2 à la carte graphique. En cause : l'animation du dégradé du logo et des boutons « Lancer le jeu » et « Appliquer », qui redessinait ces éléments environ 60 fois par seconde, sans jamais s'arrêter.
+
+### Ce qui change
+
+1. **Fenêtre au second plan** : le dégradé s'arrête, comme les lueurs des thèmes bicolores ; il repart dès que la fenêtre revient au premier plan. Une fenêtre qui s'ouvre sans le focus est aussi considérée comme au second plan.
+
 ## 1.0.1 — 31 octobre 2026 — liste des langues, installation des mises à jour
 
 **Aucun fichier du jeu ni des mods n'est touché.**

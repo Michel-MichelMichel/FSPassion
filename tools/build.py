@@ -6,6 +6,8 @@
 
 1. icône de l'application (build\\fspassion.ico) et informations de version
    de l'exécutable (build\\version_info.txt), d'après src/fspassion/__init__.py ;
+   puis le catalogue des DLC publié sur GitHub (dépôt FSPassion-data),
+   recopié dans assets\\fallback\\ : c'est le catalogue embarqué (hors ligne) ;
 2. tests automatiques (sauf --skip-tests) ;
 3. FSPassion.exe avec PyInstaller, en mode dossier (build\\dist\\FSPassion\\) ;
 4. pack de démonstration (faux mods) à côté de l'exécutable ;
@@ -25,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import re
 import shutil
@@ -185,6 +188,55 @@ def make_version_info(v: str) -> Path:
     out = BUILD / "version_info.txt"
     out.write_text(text, encoding="utf-8")
     return out
+
+
+FALLBACK_CATALOG = ROOT / "assets" / "fallback" / "dlc_catalog.json"
+
+
+def embed_dlc_catalog(strict: bool) -> None:
+    """Catalogue embarqué = catalogue publié sur GitHub (FSPassion-data).
+
+    FS Passion garde le plus récent des deux catalogues (date « updated »).
+    Embarquer exactement le catalogue publié évite qu'une copie locale plus
+    récente, jamais publiée, fasse ignorer le catalogue en ligne.
+    Hors ligne : le catalogue déjà présent est gardé (sur GitHub Actions,
+    `strict`, la fabrication s'arrête)."""
+    sys.path.insert(0, str(ROOT / "src"))
+    from fspassion import config, dlcremote
+
+    base = dlcremote.base_url(config.load_app_info())
+    try:
+        if base is None:
+            raise dlcremote.RemoteError("unreachable", detail="remote_data.base_url absent")
+        for attempt in range(3):
+            try:
+                data = dlcremote.fetch(base + dlcremote.CATALOG_PATH, dlcremote.MAX_CATALOG)
+                break
+            except dlcremote.RemoteError:
+                if attempt == 2:
+                    raise
+        raw = json.loads(data.decode("utf-8-sig"))
+        clean = dlcremote.validate_catalog(raw)
+        if not any(v["dlc"] for v in clean["versions"].values()):
+            raise dlcremote.RemoteError("invalid", detail="catalogue vide")
+    except (dlcremote.RemoteError, ValueError) as exc:
+        detail = getattr(exc, "params", {}).get("detail", "") if isinstance(exc, dlcremote.RemoteError) else ""
+        msg = f"Catalogue des DLC publié illisible ({exc} {detail}).".replace(" )", ")")
+        if strict:
+            raise SystemExit(msg) from exc
+        print(msg + " Catalogue embarqué inchangé.")
+        return
+    old = json.loads(FALLBACK_CATALOG.read_text(encoding="utf-8-sig")) if FALLBACK_CATALOG.is_file() else {}
+    if str(old.get("updated") or "") > str(raw.get("updated") or ""):
+        print(f"Attention : le catalogue embarqué ({old.get('updated')}) était plus récent que le catalogue "
+              f"publié ({raw.get('updated')}) : FSPassion-data n'a pas été publié ? Le catalogue publié est gardé.")
+    count = sum(len(v["dlc"]) for v in clean["versions"].values())
+    if old == raw:
+        print(f"Catalogue des DLC : déjà à jour ({raw.get('updated')}, {count} DLC).")
+        return
+    FALLBACK_CATALOG.write_text(json.dumps(raw, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Catalogue des DLC publié recopié : {FALLBACK_CATALOG} "
+          f"({raw.get('updated')}, {count} DLC). À commiter.")
 
 
 def run_tests() -> None:
@@ -363,6 +415,7 @@ def main(argv: list[str] | None = None) -> None:
     step("1. Icône et informations de version")
     make_icon()
     make_version_info(v)
+    embed_dlc_catalog(strict=bool(os.environ.get("GITHUB_ACTIONS")))
     if not args.skip_tests:
         step("2. Tests automatiques")
         run_tests()
